@@ -59,11 +59,14 @@ Note that the tutor sessions are voluntary.
 
 # Syllabus
 The course covers 6 units:
+<!-- vermutlich besser Teil 3 zu 2 vorzuziehen, damit die Studis schon Mal Daten in der Hand hatten (Aufgabe dann in Datenmanagement: Findet die Daten der letzten ~ 6 sessions wieder) -->
+
+<!-- statt Karten (ist schon in QGIS) noch andere open source + coding/scriptsteuerung Möglichkeiten anteasen, bsp. R/python. Hier nur wirklich ganz grob das Prinip solcher programmiersprachen als Möglichkeit der automatisierung darstellen, Level "Hello World", einbinden wie zB im R Kurs, auf die Aufbauenden Kurse (BaseR, python, Grass: Chris? Christiane vllt?) verweisen -->
 
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Einführung** |
-| 01 | ??.??.2026 | Einführung | Orga & Überblick |
+| 01 | ??.??.2026 | Einführung | Orga & Überblick & Computerbasics |
 ||| **01 Methoden Excel, deskriptive Statistik** |
 | 02 | ??.??.2026 | Tabellenverarbeitung I | Excel basics & Koordinaten |
 | 03 | ??.??.2026 | Tabellenverarbeitung II | mehr Excel & Graphiken |

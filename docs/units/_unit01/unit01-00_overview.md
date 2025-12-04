@@ -10,6 +10,8 @@ header:
 
 Introduction to the topic **Methods in Excel and deskriptive statistics**.
 
+- computer basics: wie funktioniert ein Computer, Dateipfade, Explorer, Orientierung, nützliche Shortcuts, versteckte Datein, Dateiendungen, Laufwerke! (:H), root, Benutzer: Admin/User/Accounts, opsi, Uniinfrastruktur, Uni Marburg App, Mails mit students account - NUTZE DEN, NICHT DEINE PRIVATE!
+
 <!--more-->
 
 ## Concepts of the topic
