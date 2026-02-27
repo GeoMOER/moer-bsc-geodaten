@@ -22,29 +22,27 @@ feature_row_ilos:
 {% include feature_row id="feature_row_intro" type="center" %}
 
 ## Motivation
-“Everything is related to everything else, but near things are more related than distant things” [(Tobler, 1970)](https://www.tandfonline.com/doi/abs/10.2307/143141). <br>
-With this sentence, Waldo R. Tobler ... <br>
-  
-... probably meant to change the introduction text for a new one to introduce this fresh new course. Additionally, he should decide on the language of this webpage.
 
-<!-- made geographic history, although his main concern was to reduce the complexity of his population simulation model so that it could be calculated at all on the IT infrastructure of the 1970s.
+Daten mit Raumbezug liefern wichtige Daten für alle Bereiche des Lebens; sie helfen Enscheidungsträgern, können in der Prognose zukünftiger Bedingungen eingestetzt werden 
+Mit fortschreitenden technologischen Möglichkeiten - sowohl in der Datenaufnahme, als auch in Analysemöglichkeiten, ist die Menge an Daten allerdings exponentiell gestiegen. Das Potential, dass mit diesem  sog. Datalake / Datensee, also Datendepot, in dem all diese Daten herinfließen, kann sich aber nur entfalten, wenn die Daten nutzbar gemacht werden - und auch so bleiben.
+In der Realität sieht das aber häufig anders - wichtige Informationen gehen verloren, so dass zB keine informationen zu Daenherkunft mehr vorhanden sind, sie sind nicht gut strukturiert oder auffindbar. Damit "versumpft" der datalake schnell - und wird zu einem dataswamp, durch den es kein Durchkommen gibt. Deswegen ist vernünftiges Datenmanagement entscheident - sowohl im wissenschaftlichen, wirtschaftlichen als auch im Kontext eines möglichst effizienten Studiums, immerhin wollen Sie Daten, die sie in späteren Übungen und ihrer Abschlussarbeit bearbeiten, nicht erst lange suchen müssen / allzeit für ihre reports wissen, was sie wann mit den Daten gemacht haben, relevante Informatuionen auffinden.,   
+
+<!-- “Everything is related to everything else, but near things are more related than distant things” [(Tobler, 1970)](https://www.tandfonline.com/doi/abs/10.2307/143141). <br>
+With this sentence, Waldo R. Tobler ... <br> made geographic history, although his main concern was to reduce the complexity of his population simulation model so that it could be calculated at all on the IT infrastructure of the 1970s.
 Fifty years later, society is facing other major challenges. Environmental and climate change is leading to species loss rates comparable only to the great mass extinctions. Ecosystem functionality will change, with consequences for ecosystem services such as food production, climate regulation, or recreation.
 Understanding environmental change and assessing consequences requires spatial information from landscapes. The crucial question is not whether a landscape contains forest, meadow, field, and river, but how they relate to each other spatially. Simply put, if a strip of forest separates the river from the cropland, the forest acts as an important barrier to the input of nutrients from the cropland into the river. If a clearing is present in the forest, habitat complexity increases, increasing the likelihood of biodiversity and resilience to environmental change. 
 When collecting spatial information in the field, a tradeoff must be made between level of detail, scale, and temporal repetition. Selected processes can either be studied in detail at a very limited number of observation sites or estimated at a generalized scale for a landscape. The constraints loosen when linking local surveys with area-wide remote sensing observations and predicting the locally collected information in space with artificial intelligence methods. -->
 
 
 ## Learning objectives
-The participants will be able to:
 
-* do a thing;
+Nach Abschluss können Studierende:
 
-* and another thing;
-
-* and something else;
-
-* and of course important stuff;
-
-* but also interesting stuff.
+* Daten strukturiert organisieren, Methoden zur Datenbereinigung anwenden
+* einfache statistische Analysen durchführen
+* Punkt-, Raster- und Vektordaten unterscheiden
+~~* QGIS grundlegend bedienen~~
+* Datensätze FAIR dokumentieren
 
 
 # Setting
@@ -58,7 +56,40 @@ Note that the tutor sessions are voluntary.
 
 
 # Syllabus
-The course covers 6 units:
+The course covers 9 units:
+
+<!-- Datalake flowchart einfügen -->
+
+1) Von bits zu Informationen
+   wie Daten und Computer funktionieren
+
+2) Daten basics
+   Datentypen - und Formate (in Excel)
+
+3) Daten organisieren
+   Aufbereitung von Daten mit Textfunktionen, Sortieren, Filterfunktion
+
+4) Daten verstehen
+   deskriptive Statistik (Streuung, Mittelwerte, Korrelationen)
+   Übersicht mittels Pivot
+5) Zusammenhänge erkennen
+   <!-- Recap: Dateinamen der letzten Übungen, Zeit messen, ohne in das vorherige Chapter zu schauen; was wurde gemacht? / Quiz und wordbubble -->
+    Korrelationen und Zusammenhänge
+
+6) Exkurs: Fuktionen und Automatisierung
+
+7) Daten zugänglich machen
+    FAIR Prinzipien
+    Dokumentation / ReadMe
+    Git
+
+8) QGIS & WMS
+
+9) Besonderheiten Geodaten: point, raster und vector Daten
+   (3 Kurstage)
+
+
+
 <!-- vermutlich besser Teil 3 zu 2 vorzuziehen, damit die Studis schon Mal Daten in der Hand hatten (Aufgabe dann in Datenmanagement: Findet die Daten der letzten ~ 6 sessions wieder) -->
 
 <!-- statt Karten (ist schon in QGIS) noch andere open source + coding/scriptsteuerung Möglichkeiten anteasen, bsp. R/python. Hier nur wirklich ganz grob das Prinip solcher programmiersprachen als Möglichkeit der automatisierung darstellen, Level "Hello World", einbinden wie zB im R Kurs, auf die Aufbauenden Kurse (BaseR, python, Grass: Chris? Christiane vllt?) verweisen -->
@@ -69,8 +100,8 @@ The course covers 6 units:
 | 01 | ??.??.2026 | Einführung | Orga & Überblick & Computerbasics |
 ||| **01 Methoden Excel, deskriptive Statistik** |
 | 02 | ??.??.2026 | Tabellenverarbeitung I | Excel basics & Koordinaten |
-| 03 | ??.??.2026 | Tabellenverarbeitung II | mehr Excel & Graphiken |
-| 04 | ??.??.2026 | Tabellenverarbeitung III | Excel Datenanalyse, Funktionen, etc. |
+| 03 | ??.??.2026 | Tabellenverarbeitung II | mehr Excel & Datenanalyse |
+| 04 | ??.??.2026 | Tabellenverarbeitung III | Funktionen, Protokolle |
 ||| **02 Umgang mit Daten und Datenmanagement** |
 | 05 | ??.??.2026 | Forschungsdatenmanagement I | Ordnerstruktur, Dateinamen, FAIR, Metadaten |
 | 06 | ??.??.2026 | Forschungsdatenmanagement II | Ordnerstruktur, Dateinamen, FAIR, Metadaten |

@@ -19,8 +19,5 @@ header:
 
 At the end of this unit you should be able to
 
-* Mittelwert, Median und Modus berechnen und interpretieren
-* Varianz und Standardabweichung erklären
-* Verteilungen interpretieren
-* Pivot-Tabellen erstellen
-* Häufigkeitstabellen erzeugen
+* Pearson-Korrelation berechnen
+* Scatterplots interpretieren

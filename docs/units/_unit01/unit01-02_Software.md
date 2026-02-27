@@ -1,5 +1,5 @@
 ---
-title: LM | Tabellenverarbeitung II
+title: LM | Datentypen
 published: true
 toc: true
 header:
@@ -8,7 +8,7 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-This part is about more Excel and graphs.
+Datatypes
 
 <!--more-->
 
