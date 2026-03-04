@@ -25,5 +25,5 @@ At the end of this unit you should be able to
 * Encoding-Probleme (z.B. Umlaute) erkennen
 * „Tidy Data“-Prinzip verstehen (eine Beobachtung pro Zeile)
 * Koordinatenformate (dezimal vs. Grad/Minute/Sekunde) unterscheiden
-* Metadaten anlegen können
-* grundlegende Excel-Funktionalitäten beherrschen zB Absolute vs. relative Zellbezüge
+* Metadaten anzulegen
+* grundlegende Excel-Funktionalitäten zu beherrschen (zB. absolute vs. relative Zellbezüge)

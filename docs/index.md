@@ -39,12 +39,11 @@ When collecting spatial information in the field, a tradeoff must be made betwee
 Nach Abschluss können Studierende:
 
 * Daten strukturiert organisieren, Methoden zur Datenbereinigung anwenden
-* einfache statistische Analysen durchführen
-* Punkt-, Raster- und Vektordaten unterscheiden
-~~* QGIS grundlegend bedienen~~
-* Datensätze FAIR dokumentieren
+* Einfache deskriptive Statistik anwenden
+* Punkt-, Raster- und Vektordaten unterscheiden  
+* Datensätze nach FAIR-Prinzipien dokumentieren
 
-
+<!--
 # Setting
 
 This course will take place in a hybrid synchronous setting in presence in room F 14 | 00A19 and online. 
@@ -60,30 +59,61 @@ The course covers 9 units:
 
 <!-- Datalake flowchart einfügen -->
 
-1) Von bits zu Informationen
-   wie Daten und Computer funktionieren
+Der Kurs umfasst 9 Units:
 
-2) Daten basics
-   Datentypen - und Formate (in Excel)
+1) Von bits zu Informationen - Wie Daten und Computer funktionieren
+   Am Ende der Unit sind Sie in der Lage
+   * Binärsystem, Bits & Bytes erklären
+   * Unterschied zwischen Speicher, RAM und Prozessor verstehen
+   * Kodierung (Text, Zahlen, Bilder) grundlegend erklären
+   * Dateiformate als Strukturierungsprinzip verstehen
 
-3) Daten organisieren
-   Aufbereitung von Daten mit Textfunktionen, Sortieren, Filterfunktion
+2) Daten basics - Datentypen und -Formate (in Excel)
+   Am Ende der Unit sind Sie in der Lage
+   * Unterschiede zwischen verschiedenen Datentypen zu erklären
+   * Encoding-Probleme (z.B. Umlaute) erkennen
+   * „Tidy Data“-Prinzip verstehen (eine Beobachtung pro Zeile)
+   * Koordinatenformate (dezimal vs. Grad/Minute/Sekunde) unterscheiden
+   * Metadaten anzulegen
+   * grundlegende Excel-Funktionalitäten zu beherrschen (zB. absolute vs. relative Zellbezüge)
 
-4) Daten verstehen
-   deskriptive Statistik (Streuung, Mittelwerte, Korrelationen)
-   Übersicht mittels Pivot
-5) Zusammenhänge erkennen
-   <!-- Recap: Dateinamen der letzten Übungen, Zeit messen, ohne in das vorherige Chapter zu schauen; was wurde gemacht? / Quiz und wordbubble -->
-    Korrelationen und Zusammenhänge
+3) Daten organisieren - Aufbereitung von Daten mit Textfunktionen, Sortieren, Filterfunktion
+   Am Ende dieser Unit sind Sie in der Lage:
+   * Sinnvolle Ordnerstrukturen anzulegen
+   * Daten zu sortieren und filtern
+   * Doppelte Einträge zu identifizieren
+   * Textfunktionen anwenden (z.B. TEIL, GLÄTTEN, ERSETZEN)
+   * Fehlende Werte identifizieren
+   * einfache Qualitätskontrollen durchzuführen
+   * Bereinigungsschritte zu dokumentieren (ReadMe)
+
+4) Daten verstehen - deskriptive Statistik (Streuung, Mittelwerte, Korrelationen)
+   Am Ende dieser Unit sind Sie in der Lage:
+   * Mittelwert, Median und Modus zu berechnen und zu interpretieren
+   * Varianz und Standardabweichung zu erklären
+   * Verteilungen zu interpretieren
+
+
+5) Zusammenhänge erkennen - Korrelationen und Zusammenhänge
+   <!-- Recap: Dateinamen der letzten Übungen, Zeit messen, ohne in das vorherige Chapter zu schauen; was wurde gemacht? / Quiz und wordbubble /  -->
+   Am Ende dieser Unit sind Sie in der Lage
+   * Pearson-Korrelation zu berechnen
+   * Scatterplots zu interpretieren
+   * Pivot-Tabellen zu erstellen
+   * Häufigkeitstabellen zu erzeugen
 
 6) Exkurs: Fuktionen und Automatisierung
+   Am Ende dieser Unit sind Sie in der Lage:
+   * Einfache Automatisierung (Formeln, Kopieren, Serien)
 
 7) Daten zugänglich machen
-    FAIR Prinzipien
-    Dokumentation / ReadMe
-    Git
+   Am Ende dieser Unit sind Sie in der Lage:
+   * FAIR Prinzipien zu erklären
+   * Dokumentation / ReadMe zu erstellen
+   * Git nachzuvollziehen
 
 8) QGIS & WMS
+   eine Einführung
 
 9) Besonderheiten Geodaten: point, raster und vector Daten
    (3 Kurstage)
