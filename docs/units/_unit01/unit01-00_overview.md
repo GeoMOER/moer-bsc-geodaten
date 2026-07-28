@@ -1,32 +1,35 @@
 ---
-title: Overview
-published: true
+title: Von bits zu Informationen - Überblick
+published: false
 toc: true
 header:
   image: /assets/images/01-splash.jpg
   image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Welcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-Allgemeiner Text
+Zunächst geht es um die Frage, wie Daten auf unseren Computern überhaupt gespeichert und bearbeitet werden,
 
 
+## Lernziele
 
-
-## Limitation of the topic
-Descriptive text about the overall limitations of the topic.
-
-
-## This session
-This unit serves ... something that should be described here. 
-
-  
-## Learning objectives
 Am Ende dieser Unit sind Studierende in der Lage
 * Binärsystem, Bits & Bytes erklären
 * Unterschied zwischen Speicher, RAM und Prozessor verstehen
 * Kodierung (Text, Zahlen, Bilder) grundlegend erklären
 * Dateiformate als Strukturierungsprinzip verstehen
+
+
+Um diese Lernziele zu erreichen, werden wir Daten von der Eingabe hin zum Speichern der Daten verfolgen.
+
+
+> Bevor wir starten, nehmen Sie bitte an dem VotingSession 01 in Ilias teil.
+
+
+
+
+<!-- DATENFLUSS ÜBER HARDWARE  -->
+
 
 {% include video id="W9KHVlnJLjQ" provider="youtube" %}
 

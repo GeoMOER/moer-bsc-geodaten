@@ -23,18 +23,15 @@ feature_row_ilos:
 
 ## Motivation
 
-Daten mit Raumbezug liefern wichtige Daten für alle Bereiche des Lebens; sie helfen Enscheidungsträgern, können in der Prognose zukünftiger Bedingungen eingestetzt werden 
-Mit fortschreitenden technologischen Möglichkeiten - sowohl in der Datenaufnahme, als auch in Analysemöglichkeiten, ist die Menge an Daten allerdings exponentiell gestiegen. Das Potential, dass mit diesem  sog. Datalake / Datensee, also Datendepot, in dem all diese Daten herinfließen, kann sich aber nur entfalten, wenn die Daten nutzbar gemacht werden - und auch so bleiben.
-In der Realität sieht das aber häufig anders - wichtige Informationen gehen verloren, so dass zB keine informationen zu Daenherkunft mehr vorhanden sind, sie sind nicht gut strukturiert oder auffindbar. Damit "versumpft" der datalake schnell - und wird zu einem dataswamp, durch den es kein Durchkommen gibt. Deswegen ist vernünftiges Datenmanagement entscheident - sowohl im wissenschaftlichen, wirtschaftlichen als auch im Kontext eines möglichst effizienten Studiums, immerhin wollen Sie Daten, die sie in späteren Übungen und ihrer Abschlussarbeit bearbeiten, nicht erst lange suchen müssen / allzeit für ihre reports wissen, was sie wann mit den Daten gemacht haben, relevante Informatuionen auffinden.,   
+Daten mit Raumbezug liefern betreffen alle Bereiche des Lebens; sie helfen z.B. Enscheidungsträgern oder können in der Prognose zukünftiger Bedingungen eingesetzt werden. 
 
-<!-- “Everything is related to everything else, but near things are more related than distant things” [(Tobler, 1970)](https://www.tandfonline.com/doi/abs/10.2307/143141). <br>
-With this sentence, Waldo R. Tobler ... <br> made geographic history, although his main concern was to reduce the complexity of his population simulation model so that it could be calculated at all on the IT infrastructure of the 1970s.
-Fifty years later, society is facing other major challenges. Environmental and climate change is leading to species loss rates comparable only to the great mass extinctions. Ecosystem functionality will change, with consequences for ecosystem services such as food production, climate regulation, or recreation.
-Understanding environmental change and assessing consequences requires spatial information from landscapes. The crucial question is not whether a landscape contains forest, meadow, field, and river, but how they relate to each other spatially. Simply put, if a strip of forest separates the river from the cropland, the forest acts as an important barrier to the input of nutrients from the cropland into the river. If a clearing is present in the forest, habitat complexity increases, increasing the likelihood of biodiversity and resilience to environmental change. 
-When collecting spatial information in the field, a tradeoff must be made between level of detail, scale, and temporal repetition. Selected processes can either be studied in detail at a very limited number of observation sites or estimated at a generalized scale for a landscape. The constraints loosen when linking local surveys with area-wide remote sensing observations and predicting the locally collected information in space with artificial intelligence methods. -->
+Mit fortschreitenden technologischen Möglichkeiten - sowohl in der Datenaufnahme, als auch in Analysemöglichkeiten, ist die Menge an Daten allerdings exponentiell gestiegen. Das Potential, dass mit diesem  sog. "Datalake" (Datensee, also Datendepot), in dem all diese Daten herinfließen, kann aber nur genutzt werden, wenn die Daten nutzbar gemacht werden - und auch so bleiben.
 
+In der Realität sieht das aber häufig anders - wichtige Informationen gehen verloren, so dass z.B. keine Informationen zur Datenherkunft mehr vorhanden sind, sie sind nicht gut strukturiert oder auffindbar. Damit "versumpft" der datalake schnell - und wird zu einem dataswamp, durch den es kein Durchkommen gibt. Deswegen ist vernünftiges Datenmanagement entscheident - sowohl im wissenschaftlichen, wirtschaftlichen als auch im Kontext eines möglichst effizienten Studiums, immerhin wollen Sie Daten, die sie in späteren Übungen und ihrer Abschlussarbeit bearbeiten, nicht erst lange suchen müssen und noch  wissen, was sie wann mit den Daten gemacht haben, sowie relevante Informationen parat haben.  
 
-## Learning objectives
+In diesem Kurs werden Sie....
+
+## Lernziele
 
 Nach Abschluss können Studierende:
 
@@ -42,23 +39,175 @@ Nach Abschluss können Studierende:
 * Einfache deskriptive Statistik anwenden
 * Punkt-, Raster- und Vektordaten unterscheiden  
 * Datensätze nach FAIR-Prinzipien dokumentieren
+<!-- Dirk: bitte Lernziele ergänzen -->
+
+
+## Syllabus
+
+<!-- muss noch zu html umformatiert werden damit es nicer aussieht -->
+
+<details markdown="1">
+<summary><strong>Termin 1 – Mittwoch, 14.10.2026: Bits & Bytes - ein Einstieg in digitale Daten </strong></summary>
+| Uhrzeit       | Einheit                | Inhalt  |
+|---------------|------------------------|---------|
+| 09:15 – 09:45 | Input: Intro & Erwartungsmanagement   | unit 00 |
+| 09:45 – 10:15 | Input & Übung: Hard- & Software       | unit 01 |
+| 10:15 – 10:45 | Input & Übung: Laufwerke              | unit 01 |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 2 – Mittwoch, 21.10.2026: Dateneinträge & -Typen in Excel</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 3 – Mittwoch, 28.10.2026: Datenübersicht  in Excel </strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 4 – Mittwoch, 04.11.2026: Datenübersicht II </strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 5 – Mittwoch, 11.11.2026: Datencleaning </strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 6 – Mittwoch, 18.11.2026: Daten nutzbar machen  - mit großer Übung </strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 7 – Mittwoch, 25.11.2026: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 8 – Mittwoch, 02.12.2026: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 9 – Mittwoch, 09.12.2026: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 10 – Mittwoch, 16.12.2026: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+> **Hinweis:** In der Zeit vom 23.12.2026 bis 06.01.2027 finden keine Kurstermine statt (Weihnachtspause). Ausfalltermine: 23.12.2026, 30.12.2026, 06.01.2027.
+ 
+<details markdown="1">
+<summary><strong>Termin 11 – Mittwoch, 13.01.2027: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 12 – Mittwoch, 20.01.2027: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 13 – Mittwoch, 27.01.2027: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 14 – Mittwoch, 03.02.2027: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+<details markdown="1">
+<summary><strong>Termin 15 – Mittwoch, 10.02.2027: Hauptthema ??</strong></summary>
+| Uhrzeit       | Einheit               | Inhalt |
+|---------------|------------------------|--------|
+| ??:00 – ??:00 | Input                  | ??     |
+| ??:00 – ??:00 | Demonstration          | ??     |
+| ??:00 – ??:00 | Übung                  | ??     |
+| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
+ 
+</details>
+
+
+
+
+
+
+
+
 
 <!--
-# Setting
-
-This course will take place in a hybrid synchronous setting in presence in room F 14 | 00A19 and online. 
-In addition, there will be regular meetings with a tutor. 
-Details on the additional tutor sessions will be provided in the first regular session, which will take place on **Dayday ??.10.2026 at 9:15 am** (German time) in room F 14 | 00A19. 
-The virtual room for online participants must be accessed via [ILIAS](please insert ILIAS link). 
-Note that the tutor sessions are voluntary.
-{: .notice--info}
-
-
-# Syllabus
-The course covers 9 units:
-
-<!-- Datalake flowchart einfügen -->
-
 Der Kurs umfasst 9 Units:
 
 1) Von bits zu Informationen - Wie Daten und Computer funktionieren
@@ -74,7 +223,7 @@ Der Kurs umfasst 9 Units:
    * Encoding-Probleme (z.B. Umlaute) erkennen
    * „Tidy Data“-Prinzip verstehen (eine Beobachtung pro Zeile)
    * Koordinatenformate (dezimal vs. Grad/Minute/Sekunde) unterscheiden
-   * Metadaten anzulegen
+   (* Metadaten anzulegen)
    * grundlegende Excel-Funktionalitäten zu beherrschen (zB. absolute vs. relative Zellbezüge)
 
 3) Daten organisieren - Aufbereitung von Daten mit Textfunktionen, Sortieren, Filterfunktion
@@ -117,8 +266,12 @@ Der Kurs umfasst 9 Units:
 
 9) Besonderheiten Geodaten: point, raster und vector Daten
    (3 Kurstage)
+-->
+<!-- Probleme: anfangs zur Übung, shortcuts, Datenorganisation -->
+<!-- nur als Idee (nicht einbauen) QField, Laptop oder nur Tablets? -> vllt. Umfrage erstellen, bis jetzt noch keine Beschwerde dass es daheim kein Laptop/PC vorhanden ist, einen link zu Android oder IOS erstellen vs. keine Tür öffnen, Anspruchshaltung auch in anderen Kursen -->
 
-
+<!-- Datenverknüpfung (als Verweis gespeichert) in QGIS als wichtiger Punkt wenn Dateipfade erklärt werden,
+H Laufwerk, Beispiel: Daten die auf einem Server gespeichert sind, gleichnamige Datei ein Mal auf Server, ein Mal lokal, Verknüpfung zu Server -->
 
 <!-- vermutlich besser Teil 3 zu 2 vorzuziehen, damit die Studis schon Mal Daten in der Hand hatten (Aufgabe dann in Datenmanagement: Findet die Daten der letzten ~ 6 sessions wieder) -->
 
