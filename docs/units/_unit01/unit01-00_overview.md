@@ -5,7 +5,7 @@ toc: true
 header:
   image: /assets/images/01-splash.jpg
   image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Welcome Library via wikimedia](https://w.wiki/QtV)"
+  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
 Zunächst geht es um die Frage, wie Daten auf unseren Computern überhaupt gespeichert und bearbeitet werden,
@@ -17,7 +17,6 @@ Am Ende dieser Unit sind Studierende in der Lage
 * Binärsystem, Bits & Bytes erklären
 * Unterschied zwischen Speicher, RAM und Prozessor verstehen
 * Kodierung (Text, Zahlen, Bilder) grundlegend erklären
-* Dateiformate als Strukturierungsprinzip verstehen
 
 
 Um diese Lernziele zu erreichen, werden wir Daten von der Eingabe hin zum Speichern der Daten verfolgen.

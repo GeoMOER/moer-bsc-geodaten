@@ -8,15 +8,6 @@ header:
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---
 
-## Input
-
-## Demonstration
-
-## Übung
-
-## Aufgabe
-
----
 ## Just-in-time / Wiederholung & Fragen
 
 
@@ -24,23 +15,17 @@ header:
 Zeit für feedback unsererseits
 
 
-
-
-...
-
-<!--more-->
-
 ## This session
 ...
 
 ## Learning objectives
 At the end of this unit you should be able to
 
-* Ordnerstrukturen anlegen können
+* Mittelwert, Median und Modus zu berechnen und zu interpretieren
+* Varianz und Standardabweichung zu erklären
+* Verteilungen zu interpretieren
 * Daten sortieren und filtern
 * Doppelte Einträge identifizieren
-* Textfunktionen anwenden (z.B. TEIL, GLÄTTEN, ERSETZEN)
-* Daten konsistent formatieren (Datum, Dezimaltrennzeichen)
 * Fehlende Werte identifizieren
 * einfache Qualitätskontrollen durchführen
 * Bereinigungsschritte dokumentieren

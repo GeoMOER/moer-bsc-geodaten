@@ -8,4 +8,5 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-* 
+
+- Temperaturen heraus schreiben

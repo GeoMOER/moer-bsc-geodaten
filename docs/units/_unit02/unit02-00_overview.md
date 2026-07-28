@@ -18,12 +18,10 @@ In the last session, you learned ...
 You will learn...
 
 ## Learning objectives
-At the end of this unit you should be able to
-
-
 * Unterschied zwischen numerischen, kategorialen, ordinalen und Datumsdaten erklären
 * Encoding-Probleme (z.B. Umlaute) erkennen
 * „Tidy Data“-Prinzip verstehen (eine Beobachtung pro Zeile)
 * Koordinatenformate (dezimal vs. Grad/Minute/Sekunde) unterscheiden
-* Metadaten anzulegen
 * grundlegende Excel-Funktionalitäten zu beherrschen (zB. absolute vs. relative Zellbezüge)
+* Textfunktionen anwenden (z.B. TEIL, GLÄTTEN, ERSETZEN)
+* Daten konsistent formatieren (Datum, Dezimaltrennzeichen)

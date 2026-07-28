@@ -5,7 +5,7 @@ toc: true
 header:
   image: /assets/images/01-splash.jpg
   image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Welcome Library via wikimedia](https://w.wiki/QtV)"
+  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
 ## Codierung
@@ -33,6 +33,10 @@ Genau das passiert bereits in Ihrem Beispiel: Der Scan Code der Tastatur ist sel
 Nicht nur Text, auch Zahlen, Bilder, Töne – alles, was im Computer verarbeitet wird, liegt letztlich als Folge von Bits vor, nur die Interpretationsregel (der Code) unterscheidet sich
 
 <!-- überarbeiten
+
+- hinzufügen wie Bilder etc codiert werden
+
+
 ## BIOS
 Was ist das BIOS – kurz zusammengefasst
 Das BIOS (Basic Input/Output System) ist eine kleine, fest auf einem Chip des Mainboards gespeicherte Firmware – kein Programm, das "irgendwo" auf der Festplatte liegt
