@@ -22,20 +22,37 @@ feature_row_ilos:
 {% include feature_row id="feature_row_intro" type="center" %}
 
 ## Motivation
-
-Daten mit Raumbezug liefern betreffen alle Bereiche des Lebens; sie helfen z.B. Enscheidungsträgern oder können in der Prognose zukünftiger Bedingungen eingesetzt werden. 
+<!-- Ursprünglicher Text: Daten mit Raumbezug liefern betreffen alle Bereiche des Lebens; sie helfen z.B. Enscheidungsträgern oder können in der Prognose zukünftiger Bedingungen eingesetzt werden. 
 
 Mit fortschreitenden technologischen Möglichkeiten - sowohl in der Datenaufnahme, als auch in Analysemöglichkeiten, ist die Menge an Daten allerdings exponentiell gestiegen. Das Potential, dass mit diesem  sog. "Datalake" (Datensee, also Datendepot), in dem all diese Daten hereinfließen, kann aber nur genutzt werden, wenn die Daten nutzbar gemacht werden - und auch so bleiben.
 
 In der Realität sieht das aber häufig anders - wichtige Informationen gehen verloren, so dass z.B. keine Informationen zur Datenherkunft mehr vorhanden sind, sie sind nicht gut strukturiert oder auffindbar. Damit "versumpft" der datalake schnell - und wird zu einem dataswamp, durch den es kein Durchkommen gibt. Deswegen ist vernünftiges Datenmanagement entscheident - sowohl im wissenschaftlichen, wirtschaftlichen als auch im Kontext eines möglichst effizienten Studiums, immerhin wollen Sie Daten, die sie in späteren Übungen und ihrer Abschlussarbeit bearbeiten, nicht erst lange suchen müssen und noch  wissen, was sie wann mit den Daten gemacht haben, sowie relevante Informationen parat haben.  
 
-In diesem Kurs werden Sie....
+In diesem Kurs werden Sie.... -->
+
+<!-- Textvorschlag: -->
+Raumbezogene Daten betreffen nahezu alle Bereiche unseres Lebens. Sie erleichtern die Planung von Infrastruktur, optimieren das Management von Ressourcen und liefern die Basis für Umweltprognosen.
+
+Mit foranschreitenden technologischen Möglichkeiten in der Datenerhebung und den Analysemöglichkeiten wächst die verfügbare Datenmenge jedoch exponentiell. Das Potential dieses sogenannten "Data Lake" (einem zentralen Datenspeicher in den sämtliche Daten fließen) lässt sich allerdings nur nutzen, wenn die Daten auch strukturiert nutzbar gemacht werden und langfristig nutzbar bleiben.
+
+Die Realität sieht häufig anders aus. Fehlen Metadaten, sind Formate chaotisch oder Dateien unauffindbar, „versumpft“ der Data Lake rasch zu einem unzugänglichen "Data Swamp". So gehen wichtige Zusammenhänge verloren oder es entstehen falsche Rückschlüsse.
+Ein gutes Datenmanagement wirkt dem Informationsverlust entgegen und schont die Nerven. Ob in der Wissenschaft, der Wirtschaft oder in Ihrem Studium: Wer Daten nicht erst stundenlang suchen muss, behält den Kopf frei für das Wesentliche!
+
+In diesem Kurs lernen Sie ... :
+
+* ...wo und wie Daten gespeichert werden.
+* ...die Handhabung von Daten in Excel.
+* ...die Darstellung von Datenübersichten.
+* ...das Reinigen von Datensätzen.
+* ...die Beschaffung und Nutzbarmachung von Daten.
+* ...die Verarbeitung von Daten mit QGIS.
+
 
 ## Lernziele
 
 Nach Abschluss können Studierende:
 
-* Daten strukturiert organisieren, Methoden zur Datenbereinigung anwenden
+* Daten strukturiert organisieren & Methoden zur Datenbereinigung anwenden
 * Einfache deskriptive Statistik anwenden
 * Punkt-, Raster- und Vektordaten unterscheiden  
 * Datensätze nach FAIR-Prinzipien dokumentieren
@@ -44,157 +61,81 @@ Nach Abschluss können Studierende:
 
 ## Syllabus
 
-<!-- muss noch zu html umformatiert werden damit es nicer aussieht -->
-
-<details markdown="1">
-<summary><strong>Termin 1 – Mittwoch, 14.10.2026: Bits & Bytes - ein Einstieg in digitale Daten </strong></summary>
-| Uhrzeit       | Einheit                | Inhalt  |
-|---------------|------------------------|---------|
-| 09:15 – 09:45 | Input: Intro & Erwartungsmanagement   | unit 00 |
-| 09:45 – 10:15 | Input & Übung: Hard- & Software       | unit 01 |
-| 10:15 – 10:45 | Input & Übung: Laufwerke              | unit 01 |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 2 – Mittwoch, 21.10.2026: Dateneinträge & -Typen in Excel</strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| 09:15 – 09:30 | Recap & offene Fragen              | unit 01 |
-| 09:30 – 10:00 | Input & Übung: Datentypen und -strukturen  | unit 02 |
-| 10:00 – 10:15 | Input & Übung: Zellbezüge                  | unit 02 |
-| 10:15 – 10:45 | Input & Übung: Koordinatenformate          | unit 02 |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 3 – Mittwoch, 28.10.2026: Datenübersicht  in Excel I </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| 09:15 – 09:30 | Recap & offene Fragen              | unit 02 |
-| 09:30 – 10:15 | Input & Übung: Mittelwert und Co   | unit 03 |
-| 10:15 – 10:45 | Input & Übung: Zusammenfassen      | unit 03 |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 4 – Mittwoch, 04.11.2026: Datenübersicht in Excel II</strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| 09:15 – 09:30 | Recap & offene Fragen              | unit 03 |
-| 09:30 – 10:15 | Input & Übung: Histogram & Co      | unit 03 |
-| 10:15 – 10:45 | Input & Übung: Zusammenfassen      | unit 03 |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 5 – Mittwoch, 11.11.2026: Datencleaning & Protokollierung  </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| 09:15 – 09:30 | Recap & offene Fragen                         | unit 03 |
-| 09:30 – 10:15 | Input & Übung: Daten filtern                  | unit 04 |
-| 10:15 – 10:45 | Input & Übung: Änderungen Protokollieren      | unit 04 |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 6 – Mittwoch, 18.11.2026: Daten nutzbar machen  - offline Erfahrung </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 7 – Mittwoch, 25.11.2026: FAIR & Metadaten</strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 8 – Mittwoch, 02.12.2026: Automatisierung </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 9 – Mittwoch, 09.12.2026: Eigenschaften von Geodaten, Projektionen </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 10 – Mittwoch, 16.12.2026: räuml. Autokorrelation & Datentypen </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-> **Hinweis:** In der Zeit vom 23.12.2026 bis 06.01.2027 finden keine Kurstermine statt (Weihnachtspause). Ausfalltermine: 23.12.2026, 30.12.2026, 06.01.2027.
- 
-<details markdown="1">
-<summary><strong>Termin 11 – Mittwoch, 13.01.2027: QGIS </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 12 – Mittwoch, 20.01.2027: Punktdaten </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 13 – Mittwoch, 27.01.2027: Rasterdaten </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 14 – Mittwoch, 03.02.2027: Vectordaten </strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-<details markdown="1">
-<summary><strong>Termin 15 – Mittwoch, 10.02.2027: Abschluss</strong></summary>
-| Uhrzeit       | Einheit               | Inhalt |
-|---------------|------------------------|--------|
-| ??:00 – ??:00 | Input                  | ??     |
-| ??:00 – ??:00 | Demonstration          | ??     |
-| ??:00 – ??:00 | Übung                  | ??     |
-| ??:00 – ??:00 | Wiederholung & Fragen  | ??     |
- 
-</details>
-
+| Termin | Datum | Thema | Uhrzeit | Einheit | Inhalt |
+|---|---|---|---|---|---|
+| 01 | 14.10.2026 | Bits & Bytes - ein Einstieg in digitale Daten | 09:15 – 09:45 | Input: Intro & Erwartungsmanagement | Unit 00 |
+|   |   |   | 09:45 – 10:15 | Input & Übung: Hard- & Software       | Unit 01 |
+|   |   |   | 10:15 – 10:45 | Input & Übung: Laufwerke              | Unit 01 |
+|---|---|---|---|---|---| 
+| 02 | 21.10.2026 | Dateneinträge & -Typen in Excel | 09:15 – 09:30 | Recap & offene Fragen | Unit 01 |
+|   |   |   | 09:30 – 10:00 | Input & Übung: Datentypen und -strukturen | Unit 02 |
+|   |   |   | 10:00 – 10:15 | Input & Übung: Zellbezüge | Unit 02 |
+|   |   |   | 10:15 – 10:45 | Input & Übung: Koordinatenformate | Unit 02 |
+|---|---|---|---|---|---| 
+| 03 | 28.10.2026 | Datenübersicht in Excel I | 09:15 – 09:30 | Recap & offene Fragen | Unit 02 |
+|   |   |   | 09:30 – 10:15 | Input & Übung: Mittelwert und Co | Unit 03 |
+|   |   |   | 10:15 – 10:45 | Input & Übung: Zusammenfassen | Unit 03 |
+|---|---|---|---|---|---| 
+| 04 | 04.11.2026 | Datenübersicht in Excel II | 09:15 – 09:30 | Recap & offene Fragen | Unit 03 |
+|   |   |   | 09:30 – 10:15 | Input & Übung: Histogram & Co | Unit 03 |
+|   |   |   | 10:15 – 10:45 | Input & Übung: Zusammenfassen | Unit 03 |
+|---|---|---|---|---|---|
+| 05 | 11.11.2026 | Datencleaning & Protokollierung | 09:15 – 09:30 | Recap & offene Fragen | Unit 03 |
+|   |   |   | 09:30 – 10:15 | Input & Übung: Daten filtern | Unit 04 |
+|   |   |   | 10:15 – 10:45 | Input & Übung: Änderungen Protokollieren | Unit 04 |
+|---|---|---|---|---|---|
+| 06 | 18.11.2026 | Daten nutzbar machen - offline Erfahrung | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| 07 | 25.11.2026 | FAIR & Metadaten | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| 08 | 02.12.2026| Automatisierung | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| 09 | 09.12.2026 | Eigenschaften von Geodaten, Projektionen | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| 10 | 16.12.2026 | räuml. Autokorrelation & Datentypen | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| **Hinweis:** | Winterpause vom 23.12.2026 bis 06.01.2027 | Es finden keine Kurstermine statt! | Ausfalltermine: | 23.12.2026, 30.12.2026, 06.01.2027. |   |
+|---|---|---|---|---|---|
+| 11 | 13.01.2027 | QGIS | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| 12 | 20.01.2027 | Punktdaten | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| 13 | 27.01.2027 | Rasterdaten | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| 14 | 03.02.2027 | Vectordaten | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
+| 15 | 10.02.2027 | Abschluss | ??:00 – ??:00 | Input | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
+|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
+|---|---|---|---|---|---|
 
 
 
