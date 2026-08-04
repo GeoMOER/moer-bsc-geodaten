@@ -1,5 +1,5 @@
 ---
-title: Von bits zu Informationen - Überblick
+title: Überblick
 published: false
 toc: true
 header:
