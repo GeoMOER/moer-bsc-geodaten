@@ -1,5 +1,6 @@
 ---
 title: Digital learning
+published: true
 toc: true
 header:
   image: "/assets/images/title.png"

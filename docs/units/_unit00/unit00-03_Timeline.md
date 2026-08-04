@@ -1,7 +1,6 @@
 ---
 title: Timeline
-published: false
-permalink: /unit00/unit00-03_Timeline.html
+published: true
 toc: true
 header:
   image: "/assets/images/title.png"

@@ -1,5 +1,6 @@
 ---
 title: Geodaten
+published: true
 layout: splash
 date: '2026-10-12 09:15:00 +0100'
 header:

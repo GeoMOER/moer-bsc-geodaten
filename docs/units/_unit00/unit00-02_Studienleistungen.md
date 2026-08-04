@@ -1,5 +1,6 @@
 ---
 title: Prüfungs- und Studienleistungen
+published: true
 toc: true
 header:
   image: "/assets/images/title.png"
