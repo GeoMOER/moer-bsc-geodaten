@@ -61,7 +61,7 @@ Nach Abschluss können Studierende:
 
 
 ## Syllabus
-
+<!--
 | Termin | Datum | Thema | Uhrzeit | Einheit | Inhalt |
 |---|---|---|---|---|---|
 | 01 | 14.10.2026 | Bits & Bytes - ein Einstieg in digitale Daten | 09:15 – 09:45 | Input: Intro & Erwartungsmanagement | Unit 00 |
@@ -137,8 +137,448 @@ Nach Abschluss können Studierende:
 |   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
 |   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
 |---|---|---|---|---|---|
+-->
 
+<!-- HTML Vorschlag -->
+<style>
+.syllabus-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+  color: inherit;
+}
 
+.syllabus-table th {
+  background-color: inherit;
+  color: inherit;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--border-color, #e2e8f0);
+}
+
+.syllabus-table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+  vertical-align: middle;
+}
+
+.syllabus-table td:nth-child(4) {
+  white-space: nowrap;
+}
+
+.term-number {
+  font-weight: normal;
+  text-align: center;
+  border-right: 1px solid var(--border-color, #e2e8f0);
+  background-color: var(--block-bg, rgba(0, 0, 0, 0.01));
+}
+
+.date-cell {
+  white-space: nowrap;
+  font-weight: normal;
+  border-right: 1px solid var(--border-color, #e2e8f0);
+  background-color: var(--block-bg, rgba(0, 0, 0, 0.01));
+}
+
+.topic-cell {
+  font-weight: normal;
+  border-right: 2px solid var(--border-color, #e2e8f0);
+  background-color: var(--block-bg, rgba(0, 0, 0, 0.01));
+}
+
+.syllabus-table tbody tr td[rowspan] {
+  border-bottom: 2px solid var(--border-color, #cbd5e1);
+}
+
+.syllabus-table tbody tr:has(+ tr td[rowspan]) td {
+  border-bottom: 2px solid var(--border-color, #cbd5e1);
+}
+
+.unit-tag {
+  display: inline-block;
+  white-space:nowrap;
+  background-color: var(--tag-bg, rgba(0, 0, 0, 0.06));
+  color: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color, transparent);
+}
+
+.break-row td {
+  background-color: var(--break-bg, rgba(239, 68, 68, 0.08)) !important;
+  color: inherit;
+  text-align: center;
+  padding: 1rem !important;
+  border-top: 2px solid var(--border-color, #e2e8f0);
+  border-bottom: 2px solid var(--border-color, #e2e8f0) !important;
+}
+</style>
+
+<div>
+  <table class="syllabus-table">
+    <thead>
+      <tr>
+        <th>Termin</th>
+        <th>Datum</th>
+        <th>Thema</th>
+        <th>Uhrzeit</th>
+        <th>Einheit</th>
+        <th>Inhalt</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Termin 01 -->
+      <tr>
+        <td rowspan="3" class="term-number">01</td>
+        <td rowspan="3" class="date-cell">14.10.2026</td>
+        <td rowspan="3" class="topic-cell">Bits & Bytes - ein Einstieg in digitale Daten</td>
+        <td>09:15 – 09:45</td>
+        <td>Input: Intro & Erwartungsmanagement</td>
+        <td><span class="unit-tag"><a href="/moer-bsc-geodaten/unit00/unit00-01_Digitales_Lernen.html">Unit 00</a></span></td>
+      </tr>
+      <tr>
+        <td>09:45 – 10:15</td>
+        <td>Input & Übung: Hard- & Software</td>
+        <td><span class="unit-tag">Unit 01</span></td>
+      </tr>
+      <tr>
+        <td>10:15 – 10:45</td>
+        <td>Input & Übung: Laufwerke</td>
+        <td><span class="unit-tag">Unit 01</span></td>
+      </tr>
+      <!-- Termin 02 -->
+      <tr>
+        <td rowspan="4" class="term-number">02</td>
+        <td rowspan="4" class="date-cell">21.10.2026</td>
+        <td rowspan="4" class="topic-cell">Dateneinträge & -Typen in Excel</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 01</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input & Übung: Datentypen und -strukturen</td>
+        <td><span class="unit-tag">Unit 02</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:15</td>
+        <td>Input & Übung: Zellbezüge</td>
+        <td><span class="unit-tag">Unit 02</span></td>
+      </tr>
+      <tr>
+        <td>10:15 – 10:45</td>
+        <td>Input & Übung: Koordinatenformate</td>
+        <td><span class="unit-tag">Unit 02</span></td>
+      </tr>
+      <!-- Termin 03 -->
+      <tr>
+        <td rowspan="3" class="term-number">03</td>
+        <td rowspan="3" class="date-cell">28.10.2026</td>
+        <td rowspan="3" class="topic-cell">Datenübersicht in Excel I</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 02</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:15</td>
+        <td>Input & Übung: Mittelwert und Co</td>
+        <td><span class="unit-tag">Unit 03</span></td>
+      </tr>
+      <tr>
+        <td>10:15 – 10:45</td>
+        <td>Input & Übung: Zusammenfassen</td>
+        <td><span class="unit-tag">Unit 03</span></td>
+      </tr>
+      <!-- Termin 04 -->
+      <tr>
+        <td rowspan="3" class="term-number">04</td>
+        <td rowspan="3" class="date-cell">04.11.2026</td>
+        <td rowspan="3" class="topic-cell">Datenübersicht in Excel II</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 03</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:15</td>
+        <td>Input & Übung: Histogram & Co</td>
+        <td><span class="unit-tag">Unit 03</span></td>
+      </tr>
+      <tr>
+        <td>10:15 – 10:45</td>
+        <td>Input & Übung: Zusammenfassen</td>
+        <td><span class="unit-tag">Unit 03</span></td>
+      </tr>
+      <!-- Termin 05 -->
+      <tr>
+        <td rowspan="3" class="term-number">05</td>
+        <td rowspan="3" class="date-cell">11.11.2026</td>
+        <td rowspan="3" class="topic-cell">Datencleaning & Protokollierung</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 03</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:15</td>
+        <td>Input & Übung: Daten filtern</td>
+        <td><span class="unit-tag">Unit 04</span></td>
+      </tr>
+      <tr>
+        <td>10:15 – 10:45</td>
+        <td>Input & Übung: Änderungen Protokollieren</td>
+        <td><span class="unit-tag">Unit 04</span></td>
+      </tr>
+      <!-- Termin 06 -->
+      <tr>
+        <td rowspan="4" class="term-number">06</td>
+        <td rowspan="4" class="date-cell">18.11.2026</td>
+        <td rowspan="4" class="topic-cell">Daten nutzbar machen - offline Erfahrung</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 05</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 05</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 05</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 05</span></td>
+      </tr>
+      <!-- Termin 07 -->
+      <tr>
+        <td rowspan="4" class="term-number">07</td>
+        <td rowspan="4" class="date-cell">25.11.2026</td>
+        <td rowspan="4" class="topic-cell">FAIR & Metadaten</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 06</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 06</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 06</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 06</span></td>
+      </tr>
+      <!-- Termin 08 -->
+      <tr>
+        <td rowspan="4" class="term-number">08</td>
+        <td rowspan="4" class="date-cell">02.12.2026</td>
+        <td rowspan="4" class="topic-cell">Automatisierung</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 07</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 07</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 07</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 07</span></td>
+      </tr>
+      <!-- Termin 09 -->
+      <tr>
+        <td rowspan="4" class="term-number">09</td>
+        <td rowspan="4" class="date-cell">09.12.2026</td>
+        <td rowspan="4" class="topic-cell">Eigenschaften von Geodaten, Projektionen</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 08</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 08</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 08</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 08</span></td>
+      </tr>
+      <!-- Termin 10 -->
+      <tr>
+        <td rowspan="4" class="term-number">10</td>
+        <td rowspan="4" class="date-cell">16.12.2026</td>
+        <td rowspan="4" class="topic-cell">räuml. Autokorrelation & Datentypen</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 08</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 09</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 09</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 09</span></td>
+      </tr>
+      <!-- Winterpause Row -->
+      <tr class="break-row">
+        <td colspan="6">
+          <strong>Winterpause:</strong> 23.12.2026 bis 06.01.2027 (Ausfalltermine: 23.12., 30.12.2026 & 06.01.2027)
+        </td>
+      </tr>
+      <!-- Termin 11 -->
+      <tr>
+        <td rowspan="4" class="term-number">11</td>
+        <td rowspan="4" class="date-cell">13.01.2027</td>
+        <td rowspan="4" class="topic-cell">QGIS</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 09</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 10</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 10</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 10</span></td>
+      </tr>
+      <!-- Termin 12 -->
+      <tr>
+        <td rowspan="4" class="term-number">12</td>
+        <td rowspan="4" class="date-cell">20.01.2027</td>
+        <td rowspan="4" class="topic-cell">Punktdaten</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 10</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 11</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 11</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 11</span></td>
+      </tr>
+      <!-- Termin 13 -->
+      <tr>
+        <td rowspan="4" class="term-number">13</td>
+        <td rowspan="4" class="date-cell">27.01.2027</td>
+        <td rowspan="4" class="topic-cell">Rasterdaten</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 11</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <!-- Termin 14 -->
+      <tr>
+        <td rowspan="4" class="term-number">14</td>
+        <td rowspan="4" class="date-cell">03.02.2027</td>
+        <td rowspan="4" class="topic-cell">Vectordaten</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Fragen</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <!-- Termin 15 -->
+      <tr>
+        <td rowspan="4" class="term-number">15</td>
+        <td rowspan="4" class="date-cell">10.02.2027</td>
+        <td rowspan="4" class="topic-cell">Abschluss</td>
+        <td>09:15 – 09:30</td>
+        <td>Recap & offene Fragen</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:00</td>
+        <td>Input</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <tr>
+        <td>10:00 – 10:30</td>
+        <td>Demonstration & Übung</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Wiederholung & Abschlussfragen</td>
+        <td><span class="unit-tag">Unit 12</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 
