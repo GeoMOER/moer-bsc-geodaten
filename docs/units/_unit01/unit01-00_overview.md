@@ -8,12 +8,13 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
+<!-- Introtext: Allgemeine Einleitung zum Thema in diesem Lernabschnitt. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 Zunächst geht es um die Frage, wie Daten auf unseren Computern überhaupt gespeichert und bearbeitet werden,
 
-
+<!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
 ## Lernziele
+Am Ende dieser Unit sind Studierende in der Lage ...
 
-Am Ende dieser Unit sind Studierende in der Lage
 * Binärsystem, Bits & Bytes erklären
 * Unterschied zwischen Speicher, RAM und Prozessor verstehen
 * Kodierung (Text, Zahlen, Bilder) grundlegend erklären
@@ -21,7 +22,8 @@ Am Ende dieser Unit sind Studierende in der Lage
 
 Um diese Lernziele zu erreichen, werden wir Daten von der Eingabe hin zum Speichern der Daten verfolgen.
 
-
+<!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden müssen? -->
+## Organisatorisches
 > Bevor wir starten, nehmen Sie bitte an dem VotingSession 01 in Ilias teil.
 
 
@@ -31,6 +33,9 @@ Um diese Lernziele zu erreichen, werden wir Daten von der Eingabe hin zum Speich
 
 
 {% include video id="W9KHVlnJLjQ" provider="youtube" %}
+
+
+
 
 <!--
 Lernziele

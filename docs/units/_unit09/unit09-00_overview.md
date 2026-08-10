@@ -9,21 +9,25 @@ header:
  
 ---
 
-...
+<!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
+## Rückblick & Fragen
+In der letzten Kurssitzung habe ich gelernt, dass ...
 
-<!--more-->
+<!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
+## Einführung in Lernabschnitt 09
+Hier könnte Ihr Intro zum Lernabschnitt 09 stehen ...
 
-## Recap
-...
+<!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
+## In dieser Lerneinheit...
+Heute lernen wir, dass ...
 
-## This session
-...
+<!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
+## Lernziele
+Am Ende dieser Unit sind Studierende in der Lage ...
 
-## Learning objectives
-At the end of this unit you should be able to
+* das Gelernte anzuwenden
+* auf älteren Lerneinheiten aufzubauen
 
-* README erstellen
-* FAIR-Prinzipien erklären
-* Versionierung mit Git verstehen
-
-{% include video id="B6Yn-U1Ff60" provider="youtube" %}
+<!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
+## Organisatorisches
+Diese administrativen Verwaltungsfragen gehören noch verklärt ...
