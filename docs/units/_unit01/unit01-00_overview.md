@@ -8,7 +8,7 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Introtext: Allgemeine Einleitung zum Thema in diesem Lernabschnitt. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
+<!-- Introtext: Allgemeine Einleitung zum Thema "Wie Daten und Computer funktionieren". Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 Zunächst geht es um die Frage, wie Daten auf unseren Computern überhaupt gespeichert und bearbeitet werden,
 
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
@@ -16,9 +16,10 @@ Zunächst geht es um die Frage, wie Daten auf unseren Computern überhaupt gespe
 Am Ende dieser Unit sind Studierende in der Lage ...
 
 * Binärsystem, Bits & Bytes erklären
-* Unterschied zwischen Speicher, RAM und Prozessor verstehen
 * Kodierung (Text, Zahlen, Bilder) grundlegend erklären
-
+* Dateiformate als Strukturierungsprinzip verstehen
+* Unterschied zwischen Speicher, RAM und Prozessor verstehen
+* Funktionen von Laufwerken, Netzwerken und Pfaden verstehen
 
 Um diese Lernziele zu erreichen, werden wir Daten von der Eingabe hin zum Speichern der Daten verfolgen.
 
@@ -27,23 +28,13 @@ Um diese Lernziele zu erreichen, werden wir Daten von der Eingabe hin zum Speich
 > Bevor wir starten, nehmen Sie bitte an dem VotingSession 01 in Ilias teil.
 
 
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
-
-<!-- DATENFLUSS ÜBER HARDWARE  -->
-
-
-{% include video id="W9KHVlnJLjQ" provider="youtube" %}
-
-
-
+<!-- DATENFLUSS ÜBER HARDWARE
+{% include video id="W9KHVlnJLjQ" provider="youtube" %} -->
 
 <!--
 Lernziele
-
-
-
-
-
 
 Introduction to the topic **Methods in Excel and deskriptive statistics**.
 

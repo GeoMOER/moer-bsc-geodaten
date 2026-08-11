@@ -14,8 +14,8 @@ header:
 In der letzten Kurssitzung habe ich gelernt, dass ...
 
 <!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
-## Einführung in Lernabschnitt 07
-Hier könnte Ihr Intro zum Lernabschnitt 07 stehen ...
+## Einführung in Lernabschnitt 08
+Hier könnte Ihr Intro zum Lernabschnitt 08 stehen ...
 
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...
@@ -25,8 +25,9 @@ Heute lernen wir, dass ...
 ## Lernziele
 Am Ende dieser Unit sind Studierende in der Lage ...
 
-* einfache Automatisierung (Formeln, Kopieren, Serien) anzuwenden
-* bestimmt noch ein paar Dinge umzusetzen
+* README erstellen
+* FAIR-Prinzipien erklären
+* Versionierung mit Git verstehen
 
 {% include video id="B6Yn-U1Ff60" provider="youtube" %}
 
@@ -34,5 +35,5 @@ Am Ende dieser Unit sind Studierende in der Lage ...
 ## Organisatorisches
 Diese administrativen Verwaltungsfragen gehören noch verklärt ...
 
-
-
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

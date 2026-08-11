@@ -31,3 +31,6 @@ Am Ende dieser Unit sind Studierende in der Lage ...
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 ## Organisatorisches
 Diese administrativen Verwaltungsfragen gehören noch verklärt ...
+
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

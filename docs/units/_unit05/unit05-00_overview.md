@@ -23,11 +23,14 @@ Heute lernen wir, dass ...
 ## Lernziele
 Am Ende dieser Unit sind Studierende in der Lage ...
 
-* Pearson-Korrelation berechnen
-* Scatterplots interpretieren
+* Pearson-Korrelation zu berechnen
+* Scatterplots zu interpretieren
+* Pivot-Tabellen zu erstellen
+* Häufigkeitstabellen zu erzeugen
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 ## Organisatorisches
 Diese administrativen Verwaltungsfragen gehören noch verklärt ...
 
-
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

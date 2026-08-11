@@ -12,7 +12,7 @@ header:
 ## Rückblick & Fragen (Just-in-time)
 In der letzten Kurssitzung habe ich gelernt, dass ...
 
-<!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
+<!-- Introtext: Allgemeine Einleitung zum Thema "Aufbereitung von Daten mit Textfunktionen, Sortieren, Filterfunktion" und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 ## Einführung in Lernabschnitt 03
 Hier könnte Ihr Intro zum Lernabschnitt 03 stehen ...
 
@@ -24,9 +24,8 @@ Heute lernen wir, dass ...
 ## Lernziele
 Am Ende dieser Unit sind Studierende in der Lage ...
 
-* Mittelwert, Median und Modus zu berechnen und zu interpretieren
-* Varianz und Standardabweichung zu erklären
-* Verteilungen zu interpretieren
+* Daten filtern
+* Bereinigungsschritte dokumentieren
 * Daten sortieren und filtern
 * Doppelte Einträge identifizieren
 * Fehlende Werte identifizieren
@@ -39,3 +38,5 @@ Am Ende dieser Unit sind Studierende in der Lage ...
 ## Organisatorisches
 Zeit für Feedback unsererseits!
 
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
