@@ -8,6 +8,9 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
+<!-- Themenblock 01-03: Laufwerke, Netzwerke und Pfade -->
+Hier sollte ein Einführungstext zum Thema "Laufwerke, Netzwerke und Pfade" stehen.
+
 Ein Laufwerk ist ganz allgemein ein Gerät bzw. eine Speichereinheit, auf der Daten dauerhaft abgelegt und wieder gelesen werden können
 Der Name kommt historisch daher, dass früher Speichermedien tatsächlich mechanisch liefen – also rotierten, während ein Lese-/Schreibkopf darüber "fuhr"
 Heute wird der Begriff weiter genutzt, auch wenn SSDs (s. unten) gar keine beweglichen Teile mehr haben – "Laufwerk" ist eher zu einem Oberbegriff für "Speicherort, den das Betriebssystem als eigenständige Einheit erkennt" geworden.
@@ -54,3 +57,5 @@ Dafür sorgen Protokolle wie TCP/IP – feste Regeln, nach denen Geräte im Netz
 
 ## Pfade
 
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

@@ -8,6 +8,11 @@ header:
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
 
+<!-- Themenblock 02-01: Einführung in Excel, Grundlagen -->
+Hier sollte ein Einführungstext zum Thema "Einführung in Excel, Grundlagen" stehen.
+
+## Themenüberschrift 01
+
 A brief introduction to Excel
 
 - Geschichte
@@ -42,4 +47,5 @@ Makros/VBA: Automatisierung wiederkehrender Arbeitsschritte per aufgezeichnetem 
 Solver / Zielwertsuche: Werkzeuge zur Optimierung – Excel sucht automatisch den Eingabewert, der zu einem gewünschten Ergebnis führt
 
 
-<!--more-->
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

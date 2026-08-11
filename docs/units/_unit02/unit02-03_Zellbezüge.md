@@ -8,6 +8,11 @@ header:
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
 
+<!-- Themenblock 02-03: Grundlegende Excel-Funktionalitäten (absolute vs. relative Zellbezüge) -->
+Hier sollte ein Einführungstext zum Thema "Grundlegende Excel-Funktionalitäten (absolute vs. relative Zellbezüge)" stehen.
+
+## Themenüberschrift 01
+
 - **Relativer Bezug** (`B6`): passt sich beim Kopieren an die neue Zeile/Spalte an – Standardverhalten in Excel
 - **Absoluter Bezug** (`$B$3`): bleibt beim Kopieren immer gleich, unabhängig davon, wohin die Formel kopiert wird – erkennbar am `$`-Zeichen vor Spalte und/oder Zeile
 - **Gemischter Bezug** (`$B3` oder `B$3`): nur Spalte *oder* nur Zeile wird fixiert
@@ -22,3 +27,7 @@ header:
 
 
 ## Additional resources
+
+
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

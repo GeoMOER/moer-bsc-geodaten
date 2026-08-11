@@ -1,5 +1,5 @@
 --- 
-title: hardware basics
+title: Hardware Grundlagen
 published: false
 toc: true
 header:
@@ -7,6 +7,11 @@ header:
   image_description: "Dr. John Snow's map"
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
+
+<!-- Themenblock 01-02: Unterschied zwischen Speicher, RAM und Prozessor -->
+Hier sollte ein Einführungstext zum Thema "Unterschied zwischen Speicher, RAM und Prozessor" stehen.
+
+## Themenüberschrift 01
 
 Stellen Sie sich vor, Sie messen in einem Kurs händisch Temperaturen quer durch Marburg. Das Gerät, das Sie dazu benutzen, speichert die Daten nicht ab, weswegen Sie diese händisch in eine Tabelle eintragen müssen.
 
@@ -73,4 +78,5 @@ Sobald Sie die Datei speichern, wird sie dauerhaft auf der Festplatte bzw. SSD a
 
 > Rufen Sie den Taskmanager mittels shortcut (STR + ALT + ENTF) auf
 
-
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

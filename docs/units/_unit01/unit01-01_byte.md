@@ -1,5 +1,5 @@
 --- 
-title: software basics
+title: Software Grundlagen
 published: false
 toc: true
 header:
@@ -7,6 +7,9 @@ header:
   image_description: "Dr. John Snow's map"
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
+
+<!-- Themenblock 01-01: Binärsystem, Bits & Bytes / Grundlegende Kodierung (Text, Zahlen, Bilder) / Dateiformate als Strukturierungsprinzip -->
+Hier sollte ein Einführungstext zum Thema "Binärsystem, Bits & Bytes / Grundlegende Kodierung (Text, Zahlen, Bilder) / Dateiformate als Strukturierungsprinzip" stehen.
 
 ## Codierung
 
@@ -32,6 +35,8 @@ Damit 01000001 als Buchstabe "A" erscheint, braucht es eine feste Zuordnungstabe
 Genau das passiert bereits in Ihrem Beispiel: Der Scan Code der Tastatur ist selbst schon eine Binärzahl, die über USB übertragen wird – der Treiber ordnet sie dann per Tabelle einem Zeichen zu
 Nicht nur Text, auch Zahlen, Bilder, Töne – alles, was im Computer verarbeitet wird, liegt letztlich als Folge von Bits vor, nur die Interpretationsregel (der Code) unterscheidet sich
 
+
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- überarbeiten
 
 - hinzufügen wie Bilder etc codiert werden

@@ -8,6 +8,11 @@ header:
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
 
+<!-- Themenblock 02-03: Koordinatenformate bearbeiten/vereinheitlichen -->
+Hier sollte ein Einführungstext zum Thema "Koordinatenformate bearbeiten/vereinheitlichen" stehen.
+
+## Themenüberschrift 01
+
 - Rohdaten liefern Koordinaten selten einheitlich – je nach Quelle (GPS-Gerät, Website, händische Erfassung) unterschiedlich formatiert
 - Umrechnung in der Praxis meist in zwei Schritten: (1) Grad-, Minuten- (ggf. Sekunden-)Anteil aus dem Text herauslösen, (2) daraus die Dezimalzahl berechnen
 - Dafür sind Textfunktionen nötig, die einzelne Zeichen bzw. Positionen innerhalb eines Textstrings ansprechen können – siehe nächster Abschnitt
@@ -29,3 +34,7 @@ header:
 - Empfehlung: Datensätze früh in ein einheitliches Format bringen (idealerweise ISO 8601 für Daten, Punkt als Dezimaltrennzeichen für den internationalen Austausch), bevor weiterverarbeitet oder mit anderen Datensätzen kombiniert wird
 
 ## Additional resources
+
+
+<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
+<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
