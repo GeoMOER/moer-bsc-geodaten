@@ -1,5 +1,5 @@
 --- 
-title: HA | Hausaufgabe Abschnitt 01
+title: HA | Hausaufgabe Abschnitt 04
 published: false
 toc: true
 header:
@@ -8,12 +8,11 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Hausaufgabe 01: Temperaturen heraus schreiben -->
-## Hausaufgabe 01
+<!-- Hausaufgabe 04: Deskriptive Statistik -->
+## Hausaufgabe 04
 
 In dieser Hausaufgabe sollen Studierende ...
 
-- Temperaturen heraus schreiben
 - das gelernte selbstständig anwenden
 
 
