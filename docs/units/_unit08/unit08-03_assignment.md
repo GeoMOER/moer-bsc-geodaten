@@ -1,6 +1,6 @@
 --- 
 title: HA | Hausaufgabe Abschnitt 08
-published: false
+published: true
 toc: true
 header:
   image: /assets/images/01-splash.jpg

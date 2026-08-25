@@ -22,6 +22,11 @@ feature_row_ilos:
 
 {% include feature_row id="feature_row_intro" type="center" %}
 
+
+## Diese Seite ist in Bearbeitung! Bitte bis auf weiteres nicht verwenden!
+
+## This page is under construction! Do not use!
+
 ## Motivation
 <!-- Ursprünglicher Text: Daten mit Raumbezug liefern betreffen alle Bereiche des Lebens; sie helfen z.B. Enscheidungsträgern oder können in der Prognose zukünftiger Bedingungen eingesetzt werden. 
 

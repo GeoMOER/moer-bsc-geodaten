@@ -1,6 +1,6 @@
 ---
 title: ReadMe Dokumentation
-published: false
+published: true
 toc: true
 header:
   image: /assets/images/unit04/streuobst.jpg

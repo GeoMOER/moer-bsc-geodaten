@@ -1,6 +1,6 @@
 ---
 title: Überblick
-published: false
+published: true
 toc: true
 header:
   image: /assets/images/unit03/streuobst.jpg
