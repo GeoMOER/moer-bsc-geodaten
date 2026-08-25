@@ -226,6 +226,7 @@ defaults:
 
 # Plugins
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-admin
