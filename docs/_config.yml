@@ -23,8 +23,8 @@
 #baseurl: "/data/UNIMR/lm_data/lm_2287352"
 
 # Serve on GitHub
-url: https://ECM102.github.io
-baseurl: "/moer-bsc-geodaten-temp/"
+url: https://geomoer.github.io
+baseurl: "/moer-bsc-geodaten/"
 
 search: true
 ##### Title ###################################################################
@@ -46,7 +46,7 @@ description: >- # this means to ignore newlines until next item
 title_separator          : "|"
 excerpt_separator        : <!--more-->
 locale                   : "en-EN"
-repository               : "ECM102/moer-bsc-geodaten-temp"
+repository               : "geomoer/moer-bsc-geodaten"
 
 
 # Build settings
