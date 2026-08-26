@@ -98,6 +98,24 @@ collections:
   unit09:
     output: true
     permalink: /:collection/:title.html
+  unit10:
+    output: true
+    permalink: /:collection/:title.html
+  unit11:
+    output: true
+    permalink: /:collection/:title.html
+  unit12:
+    output: true
+    permalink: /:collection/:title.html
+  unit13:
+    output: true
+    permalink: /:collection/:title.html
+  unit14:
+    output: true
+    permalink: /:collection/:title.html
+  unit15:
+    output: true
+    permalink: /:collection/:title.html                        
   worksheets:
     output: true
     permalink: /:collection/:title.html
@@ -199,7 +217,7 @@ defaults:
       path: ""
       type: unit08
     values:
-      category: "08 QGIS & WMS"
+      category: "08 Automatisierung"
       tags: "Unit 08"
       layout: single
       sidebar:
@@ -209,11 +227,71 @@ defaults:
       path: ""
       type: unit09
     values:
-      category: "09 Besonderheiten der Geodaten: Point-, Raster- und Vector-Daten"
+      category: "09 Eigenschaften von Geodaten, Koordinaten & Projektionen"
       tags: "Unit 09"
       layout: single
       sidebar:
         nav: "course_unit"
+  # unit10
+  - scope:
+      path: ""
+      type: unit10
+    values:
+      category: "10 Geodatenmodelle & Einstieg in QGIS"
+      tags: "Unit 10"
+      layout: single
+      sidebar:
+        nav: "course_unit"
+  # unit11
+  - scope:
+      path: ""
+      type: unit11
+    values:
+      category: "11 Vektordaten I: Punkte & Beobachtungen"
+      tags: "Unit 11"
+      layout: single
+      sidebar:
+        nav: "course_unit"   
+  # unit12
+  - scope:
+      path: ""
+      type: unit12
+    values:
+      category: "12 Vektordaten II: Linien & Flächen"
+      tags: "Unit 12"
+      layout: single
+      sidebar:
+        nav: "course_unit"
+  # unit13
+  - scope:
+      path: ""
+      type: unit13
+    values:
+      category: "13 Rasterdaten"
+      tags: "Unit 13"
+      layout: single
+      sidebar:
+        nav: "course_unit"
+  # unit14
+  - scope:
+      path: ""
+      type: unit14
+    values:
+      category: "14 Karten & Geo-Workflow"
+      tags: "Unit 14"
+      layout: single
+      sidebar:
+        nav: "course_unit"
+  # unit15
+  - scope:
+      path: ""
+      type: unit15
+    values:
+      category: "15 Abschluss"
+      tags: "Unit 15"
+      layout: single
+      sidebar:
+        nav: "course_unit"                                                            
        
   # pages
   - scope:

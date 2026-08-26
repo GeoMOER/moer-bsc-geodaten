@@ -66,85 +66,9 @@ Nach Abschluss können Studierende:
 
 
 ## Syllabus
-<!--
-| Termin | Datum | Thema | Uhrzeit | Einheit | Inhalt |
-|---|---|---|---|---|---|
-| 01 | 14.10.2026 | Bits & Bytes - ein Einstieg in digitale Daten | 09:15 – 09:45 | Input: Intro & Erwartungsmanagement | Unit 00 |
-|   |   |   | 09:45 – 10:15 | Input & Übung: Hard- & Software       | Unit 01 |
-|   |   |   | 10:15 – 10:45 | Input & Übung: Laufwerke              | Unit 01 |
-|---|---|---|---|---|---| 
-| 02 | 21.10.2026 | Dateneinträge & -Typen in Excel | 09:15 – 09:30 | Recap & offene Fragen | Unit 01 |
-|   |   |   | 09:30 – 10:00 | Input & Übung: Datentypen und -strukturen | Unit 02 |
-|   |   |   | 10:00 – 10:15 | Input & Übung: Zellbezüge | Unit 02 |
-|   |   |   | 10:15 – 10:45 | Input & Übung: Koordinatenformate | Unit 02 |
-|---|---|---|---|---|---| 
-| 03 | 28.10.2026 | Datenübersicht in Excel I | 09:15 – 09:30 | Recap & offene Fragen | Unit 02 |
-|   |   |   | 09:30 – 10:15 | Input & Übung: Mittelwert und Co | Unit 03 |
-|   |   |   | 10:15 – 10:45 | Input & Übung: Zusammenfassen | Unit 03 |
-|---|---|---|---|---|---| 
-| 04 | 04.11.2026 | Datenübersicht in Excel II | 09:15 – 09:30 | Recap & offene Fragen | Unit 03 |
-|   |   |   | 09:30 – 10:15 | Input & Übung: Histogram & Co | Unit 03 |
-|   |   |   | 10:15 – 10:45 | Input & Übung: Zusammenfassen | Unit 03 |
-|---|---|---|---|---|---|
-| 05 | 11.11.2026 | Datencleaning & Protokollierung | 09:15 – 09:30 | Recap & offene Fragen | Unit 03 |
-|   |   |   | 09:30 – 10:15 | Input & Übung: Daten filtern | Unit 04 |
-|   |   |   | 10:15 – 10:45 | Input & Übung: Änderungen Protokollieren | Unit 04 |
-|---|---|---|---|---|---|
-| 06 | 18.11.2026 | Daten nutzbar machen - offline Erfahrung | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| 07 | 25.11.2026 | FAIR & Metadaten | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| 08 | 02.12.2026| Automatisierung | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| 09 | 09.12.2026 | Eigenschaften von Geodaten, Projektionen | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| 10 | 16.12.2026 | räuml. Autokorrelation & Datentypen | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| **Hinweis:** | Winterpause vom 23.12.2026 bis 06.01.2027 | Es finden keine Kurstermine statt! | Ausfalltermine: | 23.12.2026, 30.12.2026, 06.01.2027. |   |
-|---|---|---|---|---|---|
-| 11 | 13.01.2027 | QGIS | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| 12 | 20.01.2027 | Punktdaten | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| 13 | 27.01.2027 | Rasterdaten | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| 14 | 03.02.2027 | Vectordaten | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
-| 15 | 10.02.2027 | Abschluss | ??:00 – ??:00 | Input | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Demonstration | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Übung | Unit ?? |
-|   |   |   | ??:00 – ??:00 | Wiederholung & Fragen | Unit ?? |
-|---|---|---|---|---|---|
--->
 
-<!-- HTML Vorschlag -->
+## Syllabus
+
 <style>
 .syllabus-table {
   width: 100%;
@@ -230,8 +154,8 @@ Nach Abschluss können Studierende:
         <th>Datum</th>
         <th>Thema</th>
         <th>Uhrzeit</th>
-        <th>Einheit</th>
         <th>Inhalt</th>
+        <th>Link</th>
       </tr>
     </thead>
     <tbody>
@@ -246,12 +170,12 @@ Nach Abschluss können Studierende:
       </tr>
       <tr>
         <td>09:45 – 10:15</td>
-        <td>Input & Übung: Hard- & Software</td>
+        <td>Hard- & Software</td>
         <td><span class="unit-tag"><a href="unit01/unit01-01_byte.html">Einheit 01</a></span></td>
       </tr>
       <tr>
         <td>10:15 – 10:45</td>
-        <td>Input & Übung: Laufwerke</td>
+        <td>Laufwerke</td>
         <td><span class="unit-tag"><a href="unit01/unit01-03_Laufwerke.html">Einheit 01</a></span></td>
       </tr>
       <!-- Termin 02 -->
@@ -265,17 +189,17 @@ Nach Abschluss können Studierende:
       </tr>
       <tr>
         <td>09:30 – 10:00</td>
-        <td>Input & Übung: Datentypen und -strukturen</td>
+        <td>Datentypen und -strukturen</td>
         <td><span class="unit-tag"><a href="unit02/unit02-02_Datenformate.html">Einheit 02</a></span></td>
       </tr>
       <tr>
         <td>10:00 – 10:15</td>
-        <td>Input & Übung: Zellbezüge</td>
+        <td>Zellbezüge</td>
         <td><span class="unit-tag"><a href="unit02/unit02-03_Zellbezüge.html">Einheit 02</a></span></td>
       </tr>
       <tr>
         <td>10:15 – 10:45</td>
-        <td>Input & Übung: Koordinatenformate</td>
+        <td>Koordinatenformate</td>
         <td><span class="unit-tag"><a href="unit02/unit02-04_Koordinatenformate.html">Einheit 02</a></span></td>
       </tr>
       <!-- Termin 03 -->
@@ -289,12 +213,12 @@ Nach Abschluss können Studierende:
       </tr>
       <tr>
         <td>09:30 – 10:15</td>
-        <td>Input & Übung: Mittelwert und Co</td>
+        <td>Mittelwert und Co</td>
         <td><span class="unit-tag"><a href="unit03/unit03-01_wichtigeWerte.html">Einheit 03</a></span></td>
       </tr>
       <tr>
         <td>10:15 – 10:45</td>
-        <td>Input & Übung: Zusammenfassen</td>
+        <td>Zusammenfassen</td>
         <td><span class="unit-tag"><a href="unit03/unit03-02_Zusammenfassen.html">Einheit 03</a></span></td>
       </tr>
       <!-- Termin 04 -->
@@ -308,12 +232,12 @@ Nach Abschluss können Studierende:
       </tr>
       <tr>
         <td>09:30 – 10:15</td>
-        <td>Input & Übung: Histogram & Co</td>
+        <td>Histogram & Co</td>
         <td><span class="unit-tag"><a href="unit03/unit03-05_GraphischeKontrolle.html">Einheit 03</a></span></td>
       </tr>
       <tr>
         <td>10:15 – 10:45</td>
-        <td>Input & Übung: Zusammenfassen</td>
+        <td>Zusammenfassen</td>
         <td><span class="unit-tag"><a href="unit03/unit03-02_Zusammenfassen.html">Einheit 03</a></span></td>
       </tr>
       <!-- Termin 05 -->
@@ -327,12 +251,12 @@ Nach Abschluss können Studierende:
       </tr>
       <tr>
         <td>09:30 – 10:15</td>
-        <td>Input & Übung: Daten filtern</td>
+        <td>Daten filtern</td>
         <td><span class="unit-tag"><a href="unit04/unit04-01_DatenFiltern.html">Einheit 04</a></span></td>
       </tr>
       <tr>
         <td>10:15 – 10:45</td>
-        <td>Input & Übung: Änderungen Protokollieren</td>
+        <td>Änderungen Protokollieren</td>
         <td><span class="unit-tag"><a href="unit04/unit04-02_Protokollieren.html">Einheit 04</a></span></td>
       </tr>
       <!-- Termin 06 -->
@@ -411,49 +335,49 @@ Nach Abschluss können Studierende:
       <tr>
         <td rowspan="4" class="term-number">09</td>
         <td rowspan="4" class="date-cell">09.12.2026</td>
-        <td rowspan="4" class="topic-cell">Eigenschaften von Geodaten, Projektionen</td>
+        <td rowspan="4" class="topic-cell">Eigenschaften von Geodaten, Koordinaten & Projektionen</td>
         <td>09:15 – 09:30</td>
         <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit07/unit07-00_overview.html">Einheit 07</a></span></td>
+        <td><span class="unit-tag"><a href="unit09/unit09-00_overview.html">Einheit 09</a></span></td>
       </tr>
       <tr>
         <td>09:30 – 10:00</td>
         <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 08</a></span></td>
+        <td><span class="unit-tag"><a href="unit09/unit09-01_geodaten.html">Einheit 09</a></span></td>
       </tr>
       <tr>
         <td>10:00 – 10:30</td>
         <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 08</a></span></td>
+        <td><span class="unit-tag"><a href="unit09/unit09-02_koordinaten.html">Einheit 09</a></span></td>
       </tr>
       <tr>
         <td>10:30 – 10:45</td>
         <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 08</a></span></td>
+        <td><span class="unit-tag"><a href="unit09/unit09-03_projektionen.html">Einheit 09</a></span></td>
       </tr>
       <!-- Termin 10 -->
       <tr>
         <td rowspan="4" class="term-number">10</td>
         <td rowspan="4" class="date-cell">16.12.2026</td>
-        <td rowspan="4" class="topic-cell">räuml. Autokorrelation & Datentypen</td>
+        <td rowspan="4" class="topic-cell">Geodatenmodelle & Einstieg in QGIS</td>
         <td>09:15 – 09:30</td>
         <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit08/unit08-00_overview.html">Einheit 08</a></span></td>
+        <td><span class="unit-tag"><a href="unit08/unit08-00_overview.html">Einheit 10</a></span></td>
       </tr>
       <tr>
         <td>09:30 – 10:00</td>
         <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 09</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 10</a></span></td>
       </tr>
       <tr>
         <td>10:00 – 10:30</td>
         <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 09</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 10</a></span></td>
       </tr>
       <tr>
         <td>10:30 – 10:45</td>
         <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 09</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 10</a></span></td>
       </tr>
       <!-- Winterpause Row -->
       <tr class="break-row">
@@ -465,49 +389,49 @@ Nach Abschluss können Studierende:
       <tr>
         <td rowspan="4" class="term-number">11</td>
         <td rowspan="4" class="date-cell">13.01.2027</td>
-        <td rowspan="4" class="topic-cell">QGIS</td>
+        <td rowspan="4" class="topic-cell">Vektordaten I: Punkte & Beobachtungen</td>
         <td>09:15 – 09:30</td>
         <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit09/unit09-00_overview.html">Einheit 09</a></span></td>
+        <td><span class="unit-tag"><a href="unit09/unit09-00_overview.html">Einheit 11</a></span></td>
       </tr>
       <tr>
         <td>09:30 – 10:00</td>
         <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 11</a></span></td>
       </tr>
       <tr>
         <td>10:00 – 10:30</td>
         <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 11</a></span></td>
       </tr>
       <tr>
         <td>10:30 – 10:45</td>
         <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 11</a></span></td>
       </tr>
       <!-- Termin 12 -->
       <tr>
         <td rowspan="4" class="term-number">12</td>
         <td rowspan="4" class="date-cell">20.01.2027</td>
-        <td rowspan="4" class="topic-cell">Punktdaten</td>
+        <td rowspan="4" class="topic-cell">Vektordaten II: Linien & Flächen</td>
         <td>09:15 – 09:30</td>
         <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit 12</a></span></td>
       </tr>
       <tr>
         <td>09:30 – 10:00</td>
         <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 12</a></span></td>
       </tr>
       <tr>
         <td>10:00 – 10:30</td>
         <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 12</a></span></td>
       </tr>
       <tr>
         <td>10:30 – 10:45</td>
         <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 12</a></span></td>
       </tr>
       <!-- Termin 13 -->
       <tr>
@@ -516,46 +440,46 @@ Nach Abschluss können Studierende:
         <td rowspan="4" class="topic-cell">Rasterdaten</td>
         <td>09:15 – 09:30</td>
         <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit 13</a></span></td>
       </tr>
       <tr>
         <td>09:30 – 10:00</td>
         <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 13</a></span></td>
       </tr>
       <tr>
         <td>10:00 – 10:30</td>
         <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 13</a></span></td>
       </tr>
       <tr>
         <td>10:30 – 10:45</td>
         <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 13</a></span></td>
       </tr>
       <!-- Termin 14 -->
       <tr>
         <td rowspan="4" class="term-number">14</td>
         <td rowspan="4" class="date-cell">03.02.2027</td>
-        <td rowspan="4" class="topic-cell">Vectordaten</td>
+        <td rowspan="4" class="topic-cell">Karten & Geo-Workflow</td>
         <td>09:15 – 09:30</td>
         <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit 14</a></span></td>
       </tr>
       <tr>
         <td>09:30 – 10:00</td>
         <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 14</a></span></td>
       </tr>
       <tr>
         <td>10:00 – 10:30</td>
         <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 14</a></span></td>
       </tr>
       <tr>
         <td>10:30 – 10:45</td>
         <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 14</a></span></td>
       </tr>
       <!-- Termin 15 -->
       <tr>
@@ -564,22 +488,22 @@ Nach Abschluss können Studierende:
         <td rowspan="4" class="topic-cell">Abschluss</td>
         <td>09:15 – 09:30</td>
         <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit 15</a></span></td>
       </tr>
       <tr>
         <td>09:30 – 10:00</td>
         <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 15</a></span></td>
       </tr>
       <tr>
         <td>10:00 – 10:30</td>
         <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 15</a></span></td>
       </tr>
       <tr>
         <td>10:30 – 10:45</td>
         <td>Wiederholung & Abschlussfragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit ??</a></span></td>
+        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 15</a></span></td>
       </tr>
     </tbody>
   </table>
@@ -587,7 +511,7 @@ Nach Abschluss können Studierende:
 
 
 
-
+ 
 
 
 <!--

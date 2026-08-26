@@ -1,5 +1,5 @@
 ---
-title: Geographische Rasterdaten
+title: Automation
 published: true
 toc: true
 header:
@@ -8,12 +8,12 @@ header:
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---
 
-<!-- Themenblock 09-03: Geographische Rasterdaten -->
-Hier sollte ein Einführungstext zum Thema "Geographische Rasterdaten" stehen.
+<!-- Themenblock 08-01: Einführung in QGIS -->
+Automation
 
 ## Themenüberschrift 01
 
-Raste = Gitter, also Rasengittersteine ...
+Automation
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
