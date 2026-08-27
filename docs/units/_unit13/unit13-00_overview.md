@@ -3,34 +3,104 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/unit03/streuobst.jpg
-  image_description: "Fallen apples under a tree"
-  caption: "Image: manfredrichter via [pixabay.com](https://pixabay.com/de/photos/%C3%A4pfel-streuobst-obstbaum-apfelbaum-3684775/)"
- 
+  image: /assets/images/spotlight01/jekyll_github_pages.png
+  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
+  caption: "Bild: [jekyll](https://jekyllrb.com/)"
 ---
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
+
 ## Rückblick & Fragen
-In der letzten Kurssitzung habe ich gelernt, dass ...
+
+In der letzten Kurssitzung haben wir das Vektormodell vervollständigt. Wir haben Punkte, Linien und Polygone gemeinsam in QGIS untersucht, reale Datensätze aus Geoportalen eingebunden und Features anhand ihrer Attribute und räumlichen Lage ausgewählt.
+
+Bevor wir mit dem neuen Lernabschnitt beginnen, klären wir offene Fragen zu Vektorgeometrien, Geoportalen, räumlichen Beziehungen und der Auswahl nach Position.
 
 <!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
-## Einführung
-Hier könnte Ihr Intro zum Lernabschnitt 09 stehen ...
+
+## Einführung in Lernabschnitt 13
+
+Das Vektormodell eignet sich besonders für einzelne räumliche Objekte: eine Beobachtung, einen Fluss oder ein Schutzgebiet. Manche Phänomene lassen sich jedoch nicht sinnvoll in klar voneinander getrennte Objekte zerlegen. Höhe, Temperatur oder Niederschlag verändern sich kontinuierlich im Raum.
+
+Für solche Daten wird häufig ein **Rastermodell** verwendet. Ein Raster teilt den Raum in ein regelmäßiges Gitter aus Zellen. Jede Zelle speichert einen Wert – beispielsweise die mittlere Geländehöhe in diesem Bereich.
+
+In dieser Unit untersuchen wir ein digitales Geländemodell und verbinden es mit den GBIF-Punkten aus Unit 11. Damit beantworten wir die Leitfrage:
+
+> **Auf welcher Geländehöhe liegen die dokumentierten Artenbeobachtungen?**
+
+So lernen wir nicht nur einen neuen Geodatentyp kennen, sondern führen erstmals Vektor- und Rasterdaten in einer gemeinsamen Auswertung zusammen.
 
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
-## In dieser Lerneinheit...
-Heute lernen wir, dass ...
+
+## In dieser Lerneinheit ...
+
+In dieser Lerneinheit beschäftigen wir uns mit drei aufeinander aufbauenden Fragen:
+
+1. **Wie funktioniert das Rastermodell?**  
+   Wir betrachten Rasterzellen, Zeilen, Spalten und Zellwerte und unterscheiden kontinuierliche von kategorialen Rasterdaten.
+
+2. **Welche Eigenschaften bestimmen die Aussagekraft eines Rasters?**  
+   Wir untersuchen Zellgröße, räumliche Auflösung, Ausdehnung, Ausrichtung, Datentyp, Bänder und NoData-Werte.
+
+3. **Wie untersuchen und kombinieren wir Rasterdaten in QGIS?**  
+   Wir laden ein digitales Geländemodell, prüfen seine Eigenschaften, gestalten eine Farbskala, fragen Zellwerte ab und übertragen Höhenwerte auf Beobachtungspunkte.
+
+Die wiederkehrende Arbeitslogik lautet:
+
+> **Fragestellung → Rasterquelle → Rastereigenschaften → Darstellung → Werte abfragen → Ergebnis prüfen und interpretieren**
 
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
-## Lernziele
-Am Ende dieser Unit sind Studierende in der Lage ...
 
-* das Gelernte anzuwenden
-* auf älteren Lerneinheiten aufzubauen
+## Lernziele
+
+Am Ende dieser Unit sind Studierende in der Lage, ...
+
+* Vektor- und Rasterdaten anhand ihres Datenmodells zu unterscheiden,
+* den Aufbau eines Rasters aus Zeilen, Spalten, Zellen und Zellwerten zu erklären,
+* kontinuierliche und kategoriale Rasterdaten zu unterscheiden,
+* ein digitales Geländemodell von einem digitalen Oberflächenmodell abzugrenzen,
+* Zellgröße, Auflösung, Ausdehnung und Rasterausrichtung zu beschreiben,
+* zu erklären, weshalb räumliche Auflösung und räumliche Genauigkeit nicht dasselbe sind,
+* NoData-Werte von fachlich gültigen Werten wie null zu unterscheiden,
+* Rasterlayer in QGIS zu laden und ihre Metadaten und Eigenschaften zu prüfen,
+* ein kontinuierliches Raster mit einer geeigneten Farbskala darzustellen,
+* einzelne Rasterwerte in QGIS abzufragen,
+* Rasterwerte an Punktpositionen zu ermitteln und als neue Attribute zu speichern und
+* die Aussagekraft und Unsicherheit der ermittelten Werte angemessen zu beurteilen.
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
+
 ## Organisatorisches
-Diese administrativen Verwaltungsfragen gehören noch verklärt ...
+
+Für die praktische Arbeit benötigen Sie QGIS, den geprüften GBIF-Punktlayer aus Unit 11 und das bereitgestellte digitale Geländemodell. Falls Ihr eigener Punktlayer nicht verfügbar ist, wird ein einheitlicher Ersatzlayer bereitgestellt.
+
+Rasterdateien können deutlich größer als Vektordateien sein. Kopieren Sie die benötigten Daten deshalb vor Beginn der Übung in Ihren Arbeitsordner und verwenden Sie erneut getrennte Ordner für unveränderte Eingangsdaten, Ergebnisse und Dokumentation.
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
-<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
+
+<!--
+Möglicher Einstieg:
+- Nur die GBIF-Punkte zeigen und fragen: „Welche Geländehöhe gehört zu jedem Punkt?“
+- Danach ein DGM einblenden und zunächst die sichtbaren Zellen beziehungsweise Zellwerte untersuchen.
+
+Didaktische Schwerpunkte:
+- Raster nicht als „Bild“, sondern als georeferenziertes Wertefeld einführen.
+- Zellgröße nicht mit Genauigkeit gleichsetzen.
+- NoData ausdrücklich von 0 unterscheiden.
+- Farbe ist Darstellung; der Zellwert ist die gespeicherte Information.
+- Beim Übertragen der Höhe auf GBIF-Punkte auch die Koordinatenunsicherheit der Beobachtungen diskutieren.
+
+Vor Veröffentlichung ergänzen:
+- konkreter DGM-Datensatz und Download
+- Datenstand, Lizenz und Quellenangabe
+- Zellgröße, Höhenbezug und Einheit
+- Projekt- und Ausgabe-CRS
+- bereitgestellter GBIF-Punktlayer
+- erwartete Ergebniswerte für die Übungen
+
+Geplante Unterseiten:
+- unit13-01_rasterdaten.md
+- unit13-02_rastereigenschaften.md
+- unit13-03_raster_qgis.md
+- unit13-04_assignment.md
+-->
