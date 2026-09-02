@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Schematische QGIS-Oberfläche</title>
+  <desc id="desc">Eine vereinfachte Programmoberfläche zeigt Menü und Werkzeugleisten, Browser, Layer-Bereich, Kartenansicht und Statusleiste.</desc>
+  <rect width="1000" height="560" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="35" y="40" font-size="28" font-weight="700">Die wichtigsten Bereiche der QGIS-Oberfläche</text>
+    <rect x="35" y="65" width="930" height="450" rx="8" fill="#fff" stroke="#37474f" stroke-width="4"/>
+    <rect x="38" y="68" width="924" height="55" fill="#eceff1"/><text x="55" y="103" font-size="18">Projekt   Bearbeiten   Ansicht   Layer   Einstellungen   Erweiterungen   Vektor   Raster</text>
+    <rect x="38" y="123" width="924" height="48" fill="#cfd8dc"/><g fill="#607d8b"><circle cx="65" cy="147" r="12"/><rect x="100" y="135" width="25" height="25"/><circle cx="165" cy="147" r="12"/><rect x="205" y="135" width="25" height="25"/></g>
+    <rect x="38" y="171" width="235" height="170" fill="#e8f5e9" stroke="#90a4ae"/><text x="55" y="202" font-size="21" font-weight="700">Browser</text><text x="65" y="238" font-size="17">▸ Favoriten</text><text x="65" y="270" font-size="17">▾ Arbeitsordner</text><text x="85" y="300" font-size="17">  data_raw</text>
+    <rect x="38" y="341" width="235" height="130" fill="#fff3e0" stroke="#90a4ae"/><text x="55" y="372" font-size="21" font-weight="700">Layer-Bereich</text><text x="65" y="408" font-size="17">☑ Beobachtungen</text><text x="65" y="440" font-size="17">☑ Höhenmodell</text>
+    <rect x="273" y="171" width="689" height="300" fill="#e3f2fd" stroke="#90a4ae"/><path d="M320 420C430 250 590 410 880 220" fill="none" stroke="#1976d2" stroke-width="10"/><path d="M590 215l225 30 40 105-150 75-140-90z" fill="#81c784" fill-opacity=".7" stroke="#2e7d32" stroke-width="3"/><g fill="#c62828" stroke="#fff" stroke-width="3"><circle cx="420" cy="280" r="10"/><circle cx="520" cy="350" r="10"/><circle cx="750" cy="285" r="10"/></g><text x="555" y="195" font-size="21" font-weight="700">Kartenansicht</text>
+    <rect x="38" y="471" width="924" height="41" fill="#eceff1"/><text x="55" y="497" font-size="17">Koordinate: …        Maßstab: 1:25 000                         Projekt-CRS: EPSG:25832</text>
+    <text x="395" y="548" font-size="16">Schematische Darstellung; Anordnung und Symbole können abweichen.</text>
+  </g>
+</svg>

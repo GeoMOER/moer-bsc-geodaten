@@ -3,9 +3,9 @@ title: Punktdaten
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit11/hero-unit11.jpg
+  image_description: "Wald- und Kulturlandschaft mit verteilten Beobachtungspunkten und angedeuteten Unsicherheitsbereichen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Punktdaten als ersten konkreten Geometrietyp des Vektormodells einführen. -->

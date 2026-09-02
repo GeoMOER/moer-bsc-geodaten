@@ -3,9 +3,9 @@ title: Geodaten finden und einbinden
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit10/hero-unit10.jpg
+  image_description: "Luftbildlandschaft mit überlagerten Punkten, Linien, Polygonflächen und Rasterzellen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Von lokalen Übungsdaten zu realen Geodatenquellen und webbasierten Diensten. -->
@@ -43,7 +43,7 @@ Typische Funktionen sind:
 
 **Open Data** bezeichnet Daten, die unter festgelegten offenen Bedingungen genutzt und weiterverwendet werden dürfen. „Im Internet sichtbar“ bedeutet jedoch nicht automatisch „frei verwendbar“. Prüfen Sie deshalb immer Lizenz, Quellenangabe und mögliche Einschränkungen.
 
-<!-- Vor Veröffentlichung konkrete Geoportale ergänzen, beispielsweise Geoportal Hessen, BKG, BfN oder kommunale Portale. -->
+Für diese Unit wird das Geoportal `[Name und Portalseite ergänzen]` verwendet. Ein zweites Portal kann zum Vergleich gezeigt werden, ist aber nicht Bestandteil der Pflichtaufgabe.
 
 ## Metadaten prüfen
 
@@ -66,6 +66,8 @@ Prüfen Sie möglichst mindestens folgende Angaben:
 > **Wichtig:** Speichern Sie Metadaten und Quellenangaben gemeinsam mit den verwendeten Daten. Ein nicht mehr nachvollziehbarer Datensatz verliert einen großen Teil seines wissenschaftlichen Wertes.
 
 ## Download oder Webdienst?
+
+![Ein Download erzeugt eine lokale, dokumentierbare Kopie; ein Webdienst liefert seine Antwort bei jeder Anfrage von einem externen Server.]({{ '/assets/images/unit10/download-webdienst.svg' | relative_url }})
 
 Geodaten können auf unterschiedliche Weise bereitgestellt werden.
 
@@ -158,6 +160,8 @@ Für die Übung wird folgende Verbindung verwendet:
 | Name der Verbindung | `[Name ergänzen]` |
 | WMS-Dienstadresse | `[URL ergänzen]` |
 | auszuwählender Layer | `[Layername ergänzen]` |
+| Metadatenseite | `[URL ergänzen]` |
+| Ersatzmaterial bei Ausfall | `[Pfad zum Screenshot und Metadatenblatt ergänzen]` |
 
 ### 1. Datenquellenmanager öffnen
 
@@ -262,7 +266,7 @@ Diese Informationen gehören zur wissenschaftlichen Dokumentation und werden sp�
 7. Dokumentieren Sie Quelle, Layername, URL, CRS, Lizenz und Zugriffsdatum.
 8. Erklären Sie in zwei Sätzen, warum der WMS für die Darstellung geeignet ist, für eine weitergehende Vektoranalyse aber möglicherweise nicht ausreicht.
 
-<!-- Konkretes Geoportal, Suchbegriff, Dienst und lokaler Vergleichslayer vor Veröffentlichung ergänzen. -->
+Falls der Dienst während der Sitzung nicht erreichbar ist, verwenden Sie das bereitgestellte Ersatzmaterial. Dokumentieren Sie den Ausfall und beantworten Sie die Vergleichsfragen anhand von Screenshot, Capabilities-Auszug und Metadatenblatt. Ein externer Dienstausfall darf nicht als studentischer Fehler bewertet werden.
 
 ## Zusammenfassung
 
@@ -290,7 +294,7 @@ Didaktische Hinweise:
 - WMS bewusst mit einem lokalen Vektorlayer vergleichen.
 - WFS nur konzeptionell abgrenzen; praktische Vertiefung kann später folgen.
 
-Vor Veröffentlichung ergänzen:
+Vor Durchführung ergänzen:
 - Geoportal und Suchbegriff
 - WMS-Verbindungsname und URL
 - auszuwählender Layer

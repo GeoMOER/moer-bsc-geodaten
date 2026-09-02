@@ -3,9 +3,9 @@ title: Das Rastermodell
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit13/hero-unit13.jpg
+  image_description: "Ein Rasterwert wird als neues Attribut an einen Beobachtungspunkt übertragen"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Introtext: Das bisher behandelte Vektormodell um das Rastermodell ergänzen. -->
@@ -182,6 +182,8 @@ Auch beim Rastermodell hängt die Darstellung von der Fragestellung ab.
 Es gibt daher auch hier nicht das eine grundsätzlich richtige Datenmodell. Entscheidend sind Fragestellung, Datengrundlage, Maßstab und benötigte Genauigkeit.
 
 ## Was bedeutet ein Zellwert?
+
+![Beim Abtasten erhält ein Beobachtungspunkt den Wert der Rasterzelle an seiner Position als neues Attribut.]({{ '/assets/images/unit13/raster-workflow.svg' | relative_url }})
 
 Ein Zellwert kann auf unterschiedliche Weise entstanden sein:
 

@@ -3,9 +3,9 @@ title: HA | Hausaufgabe Abschnitt 12
 published: true
 toc: true
 header:
-  image: /assets/images/01-splash.jpg
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image: /assets/images/unit12/hero-unit12.jpg
+  image_description: "Flusslandschaft mit Schutzgebietsfläche und Beobachtungspunkten innerhalb und außerhalb des Gebietes"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Hausaufgabe 12: Linien, Polygone, Geoportale und räumliche Auswahl -->
@@ -14,7 +14,13 @@ header:
 
 In dieser Hausaufgabe wenden Sie die Inhalte aus Unit 12 selbstständig an. Sie dokumentieren zwei Vektordatenquellen, kombinieren Punkt-, Linien- und Polygondaten in QGIS und beantworten eine einfache räumliche Fragestellung.
 
-Planen Sie für die Bearbeitung ungefähr **60 bis 75 Minuten** ein.
+| Rahmenbedingung | Festlegung |
+|---|---|
+| Bearbeitungszeit | etwa 90 Minuten |
+| Abgabeformat | vollständiger Arbeitsordner als `unit12_nachname_vorname.zip` |
+| Abgabeort | `[ILIAS-Ordner beziehungsweise Abgabeort ergänzen]` |
+| Abgabetermin | `[Datum und Uhrzeit ergänzen]` |
+| Arbeitsform | Einzelarbeit; räumliche Beziehungen und Entscheidungen müssen selbst dokumentiert werden. |
 
 ## Fragestellung
 
@@ -28,12 +34,20 @@ Beachten Sie: Eine räumliche Überschneidung beschreibt zunächst nur die Lage 
 
 Für die Aufgabe benötigen Sie:
 
-- den in Unit 11 geprüften GBIF-Punktlayer,
+- `unit11_results.gpkg/gbif_checked` oder den schemaidentischen Ersatzlayer,
 - den bereitgestellten Schutzgebiets-Layer,
 - den bereitgestellten Gewässer-Layer,
 - die Metadatenseiten oder Quellenangaben der beiden neuen Datensätze.
 
 Falls Sie Unit 11 mit einer anderen Art bearbeitet haben, können Sie diesen Punktlayer weiterverwenden.
+
+| Verbindliche Angabe | Festlegung |
+|---|---|
+| QGIS-Version | `[dieselbe verbindliche QGIS-LTR-Version wie in Unit 10 ergänzen]` |
+| Gewässerdaten | `[Datei, Layer und Downloadlink ergänzen]` |
+| Schutzgebietsdaten | `[Datei, Layer und Downloadlink ergänzen]` |
+| Auswahlfeld und Zielwert | `[Feldname und Schutzgebietskategorie ergänzen]` |
+| Ersatzdatenpaket | `[Downloadlink ergänzen]` |
 
 ## 1. Arbeitsumgebung vorbereiten
 
@@ -52,7 +66,7 @@ Speichern Sie Ihr QGIS-Projekt als:
 hausaufgabe12.qgz
 ```
 
-Verwenden Sie das im Kurs vorgegebene Projekt-CRS: **`[EPSG-Code ergänzen]`**.
+Verwenden Sie das seit Unit 10 eingesetzte Projekt-CRS: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
 
 ## 2. Datenquellen dokumentieren
 
@@ -112,7 +126,7 @@ Wählen Sie über ein geeignetes Attribut die im Kurs vorgegebene Gruppe von Sch
 Exportieren Sie die Auswahl in das GeoPackage:
 
 ```text
-data_output/hausaufgabe12.gpkg
+data_output/unit12_results.gpkg
 ```
 
 Verwenden Sie den Layernamen:
@@ -134,7 +148,7 @@ Wählen Sie alle GBIF-Beobachtungen aus, die den Layer `schutzgebiete_auswahl` s
 - Anzahl aller Beobachtungen: **`[eintragen]`**
 - Anzahl ausgewählter Beobachtungen: **`[eintragen]`**
 
-Exportieren Sie die ausgewählten Punkte in `hausaufgabe12.gpkg` als:
+Exportieren Sie die ausgewählten Punkte in `unit12_results.gpkg` als:
 
 ```text
 gbif_in_schutzgebieten
@@ -147,7 +161,7 @@ Wählen Sie alle Gewässer-Features aus, die den Layer `schutzgebiete_auswahl` s
 - Anzahl aller Gewässer-Features: **`[eintragen]`**
 - Anzahl ausgewählter Gewässer-Features: **`[eintragen]`**
 
-Exportieren Sie die ausgewählten Linien in `hausaufgabe12.gpkg` als:
+Exportieren Sie die ausgewählten Linien in `unit12_results.gpkg` als:
 
 ```text
 gewaesser_an_schutzgebieten
@@ -196,10 +210,10 @@ Die Beschreibung soll so genau sein, dass eine andere Person Ihre grundlegenden 
 
 ## Abgabe
 
-Geben Sie den vollständigen Ordner `hausaufgabe12/` als ZIP-Archiv ab. Er soll mindestens enthalten:
+Geben Sie den vollständigen Ordner `hausaufgabe12/` als `unit12_nachname_vorname.zip` ab. Er soll mindestens enthalten:
 
 - `hausaufgabe12.qgz`,
-- `data_output/hausaufgabe12.gpkg` mit den drei Ergebnislayern,
+- `data_output/unit12_results.gpkg` mit den drei Ergebnislayern,
 - `documentation/processing_notes.md`,
 - die ausgefüllten Tabellen und Antworten,
 - einen Screenshot der gestalteten Kartenansicht.
@@ -219,6 +233,19 @@ Kontrollieren Sie vor der Abgabe, ob sich das QGIS-Projekt öffnen lässt und al
 | Interpretation | Ergebniszahlen korrekt und Einschränkungen reflektiert |
 | Reproduzierbarkeit | Projekt, Daten und Arbeitsschritte geordnet abgegeben |
 
+## Punkteverteilung
+
+| Bereich | Punkte |
+|---|---:|
+| Datenquellen und Eingangskontrolle | 10 |
+| Darstellung und Attributauswahl | 8 |
+| räumliche Auswahl der Punkte | 8 |
+| räumliche Auswahl der Gewässer | 8 |
+| Interpretation und Unsicherheiten | 8 |
+| Reproduzierbarkeit und Abgabe | 8 |
+
+Gesamt: **50 Punkte**. Für das Bestehen sind **`[Mindestpunktzahl ergänzen, Vorschlag: 25 von 50 Punkten]`** erforderlich. Fachlich gleichwertige räumliche Beziehungen sind nur dann zulässig, wenn sie zur formulierten Frage passen und dokumentiert werden. Folgefehler werden nicht mehrfach bewertet.
+
 ## Checkliste
 
 - [ ] Datenquellen und Lizenzen dokumentiert
@@ -227,7 +254,7 @@ Kontrollieren Sie vor der Abgabe, ob sich das QGIS-Projekt öffnen lässt und al
 - [ ] Schutzgebiete nach Attribut ausgewählt
 - [ ] Beobachtungen räumlich ausgewählt
 - [ ] Gewässer räumlich ausgewählt
-- [ ] drei Ergebnislayer in `hausaufgabe12.gpkg` gespeichert
+- [ ] drei Ergebnislayer in `unit12_results.gpkg` gespeichert
 - [ ] Ergebnisse und Unsicherheiten beschrieben
 - [ ] `processing_notes.md` erstellt
 - [ ] QGIS-Projekt gespeichert und getestet
@@ -235,13 +262,13 @@ Kontrollieren Sie vor der Abgabe, ob sich das QGIS-Projekt öffnen lässt und al
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-TODO Lehrende:
+TODO Lehrende vor Durchführung:
 - Projekt-CRS und EPSG-Code ergänzen.
 - Konkrete Schutzgebietskategorie und Feldnamen vorgeben.
 - Datendateien beziehungsweise belastbare Downloadlinks bereitstellen.
 - Erwartete Featurezahlen mit dem finalen Datenstand berechnen.
 - Musterlösung mit Auswahlparametern und Ergebnis-Screenshots erstellen.
-- Prüfen, ob 60 bis 75 Minuten mit der gewählten Datengröße realistisch sind.
+- Prüfen, ob 90 Minuten mit der gewählten Datengröße realistisch sind.
 
 Musterlösung – intern:
 - Schutzgebiete ausgewählt: [Anzahl ergänzen]

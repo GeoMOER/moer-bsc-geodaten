@@ -3,9 +3,9 @@ title: Koordinatenreferenzsysteme & Projektionen
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit09/hero-unit09.jpg
+  image_description: "Breiter Blick auf Europa auf einer gekrümmten Erde mit feinem Koordinatengitter und markiertem Ort"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: An die vorherige Unterseite zu geographischen Koordinaten anknüpfen. -->
@@ -17,6 +17,8 @@ Auf der vorherigen Seite haben wir die Position Marburgs ungefähr durch das Koo
 Ein Koordinatenpaar ist daher nur dann eindeutig interpretierbar, wenn bekannt ist, auf welches räumliche Bezugssystem es sich bezieht.
 
 > **Merksatz:** Koordinatenwerte und Koordinatenreferenzsystem gehören immer zusammen.
+
+![Derselbe Referenzpunkt wird in einem geographischen und einem projizierten CRS durch unterschiedliche Zahlen und Einheiten beschrieben.]({{ '/assets/images/unit09/crs-vergleich.svg' | relative_url }})
 
 <!-- Möglicher Einstieg: Zwei unterschiedlich aussehende Koordinatenpaare desselben Ortes zeigen. -->
 
@@ -58,7 +60,9 @@ Welche Verzerrung problematisch ist, hängt von der Fragestellung ab. Eine Weltk
 
 > **Wichtig:** Es gibt nicht die eine „beste“ Projektion. Es gibt nur Projektionen, die für einen bestimmten Raum und Zweck besser oder schlechter geeignet sind.
 
-<!-- Besonders anschaulich: dieselbe Weltkarte in zwei bis drei Projektionen oder Tissotsche Indikatrix zeigen. -->
+![Schematischer Vergleich: Eine Mercator-ähnliche Darstellung erhält lokale Winkel, vergrößert aber polnahe Flächen; eine flächentreue Darstellung erhält Flächenverhältnisse, verändert dafür Formen.]({{ '/assets/images/unit09/projektionsvergleich.svg' | relative_url }})
+
+Die Abbildung zeigt das Prinzip schematisch und ist nicht für Messungen geeignet.
 
 ## Geographische und projizierte Koordinatensysteme
 
@@ -70,7 +74,7 @@ Ein **geographisches Koordinatensystem** beschreibt Positionen auf dem Erdmodell
 
 Typische Merkmale:
 
-* Koordinaten werden in **Grad** angegeben.
+* Koordinaten sind Winkel und werden in **Grad** angegeben.
 * Die Werte beschreiben Winkel und keine direkten Entfernungen.
 * Das System kann große Teile der Erde oder die gesamte Erde abdecken.
 * Ein bekanntes Beispiel ist **WGS 84**.
@@ -81,7 +85,7 @@ Ein **projiziertes Koordinatensystem** überträgt Positionen mithilfe einer Kar
 
 Typische Merkmale:
 
-* Koordinaten werden häufig in **Metern** angegeben.
+* Koordinaten besitzen lineare Einheiten, in den hier behandelten Systemen **Meter**.
 * Positionen werden als x- und y-Koordinaten beziehungsweise Rechts- und Hochwerte beschrieben.
 * Entfernungen und Flächen lassen sich im geeigneten System sinnvoller berechnen.
 * Das System ist meist für einen bestimmten Teil der Erde optimiert.
@@ -128,7 +132,7 @@ Die vollständigen Namen von Koordinatenreferenzsystemen können lang und ähnli
 
 Ein EPSG-Code ist eine eindeutige Kennung. Er ist keine Qualitätsbewertung und sagt nicht, dass ein CRS für jede Fragestellung geeignet ist.
 
-**Web Mercator** (`EPSG:3857`) ist für die schnelle Darstellung von Karten im Internet praktisch. Für genaue Flächen- oder Entfernungsmessungen ist dieses CRS jedoch insbesondere über größere Gebiete nicht die erste Wahl.
+**Web Mercator** (`EPSG:3857`) ist für die schnelle Darstellung vieler Kartenkacheln im Internet praktisch. Daraus folgt nicht, dass die darüber dargestellten Fachdaten ursprünglich in diesem CRS gespeichert sein müssen. Für genaue Flächen- oder Entfernungsmessungen ist Web Mercator insbesondere über größere Gebiete nicht die erste Wahl.
 
 <!-- Die konkreten EPSG-Beispiele vor Veröffentlichung bei Änderungen des regionalen Anwendungsbeispiels prüfen. -->
 
@@ -214,7 +218,7 @@ Begründen Sie Ihre Auswahl jeweils mit Einheit, räumlichem Einsatzbereich und 
 
 ### 3. Projektionen vergleichen
 
-Betrachten Sie dieselben Weltgeodaten in mindestens zwei unterschiedlichen Kartenprojektionen.
+Betrachten Sie die Projektionsdarstellungen auf dieser Seite. Optional kann die Lehrperson zusätzlich dieselben Weltgeodaten in zwei Projektionen demonstrieren.
 
 * Welche Regionen erscheinen besonders stark vergrößert oder verkleinert?
 * Welche Formen unterscheiden sich sichtbar?
@@ -240,7 +244,7 @@ Betrachten Sie dieselben Weltgeodaten in mindestens zwei unterschiedlichen Karte
 
 * Ein Koordinatenreferenzsystem legt fest, wie Koordinaten mit Positionen auf der Erde verknüpft werden.
 * Bei der Übertragung der gekrümmten Erdoberfläche auf eine Ebene entstehen immer Verzerrungen.
-* Geographische CRS verwenden häufig Grad, projizierte CRS häufig Meter.
+* Geographische CRS verwenden Winkelkoordinaten; projizierte CRS verwenden lineare Koordinaten.
 * WGS 84 ist ein global verbreitetes Referenzsystem; UTM arbeitet mit regionalen Zonen.
 * EPSG-Codes identifizieren Koordinatenreferenzsysteme eindeutig.
 * Das geeignete CRS hängt von Untersuchungsgebiet, Fragestellung und gewünschter Berechnung ab.

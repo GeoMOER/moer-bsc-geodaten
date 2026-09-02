@@ -3,9 +3,9 @@ title: Was sind Geodaten?
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit09/hero-unit09.jpg
+  image_description: "Breiter Blick auf Europa auf einer gekrümmten Erde mit feinem Koordinatengitter und markiertem Ort"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Verbindung zu den zuvor behandelten Tabellen und Dateien herstellen. -->
@@ -18,7 +18,7 @@ Enthalten Daten einen Bezug zu einem Ort oder einem räumlichen Objekt, sprechen
 
 > **Merksatz:** Geodaten sind Daten, die Informationen über die Lage, Form oder räumliche Ausdehnung von Objekten und Phänomenen enthalten.
 
-<!-- Optional: Abbildung mit Beispielen für Tabelle ohne und mit Raumbezug ergänzen. -->
+![Eine Temperaturtabelle erhält durch ergänzte Koordinaten einen nutzbaren Raumbezug.]({{ '/assets/images/unit09/raumbezug.svg' | relative_url }})
 
 ## Wodurch erhalten Daten einen Raumbezug?
 
@@ -58,7 +58,7 @@ In dieser vereinfachten Tabelle enthalten die Spalten `breite` und `länge` den 
 
 > **Wichtig:** Eine Karte zeigt nicht nur, **was** gemessen oder beobachtet wurde, sondern auch, **wo** dies geschehen ist.
 
-<!-- Die Beispielwerte sind didaktische Beispieldaten und sollten vor Veröffentlichung bei Bedarf durch reale Daten ersetzt werden. -->
+Die Werte sind didaktisch vereinfachte Beispieldaten. Sie beschreiben keine reale Messreihe.
 
 ## Geodaten beschreiben nicht die Realität selbst
 

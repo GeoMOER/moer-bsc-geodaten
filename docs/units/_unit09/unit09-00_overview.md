@@ -3,9 +3,9 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit09/hero-unit09.jpg
+  image_description: "Breiter Blick auf Europa auf einer gekrümmten Erde mit feinem Koordinatengitter und markiertem Ort"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
@@ -62,11 +62,53 @@ Am Ende dieser Unit sind Studierende in der Lage, ...
 
 ## Organisatorisches
 
-Für diese Lerneinheit sind keine zusätzlichen organisatorischen Vorbereitungen erforderlich. Bitte bringen Sie offene Fragen aus den vorherigen Kurssitzungen mit.
+Für die kurzen Recherche- und Vergleichsaufgaben benötigen Sie einen Webbrowser. Ein GIS ist in dieser Unit noch nicht erforderlich. Die praktische Arbeit mit QGIS beginnt in Unit 10.
+
+Verbindliche Arbeitsmittel:
+
+* Kursseiten dieser Unit,
+* [OpenStreetMap](https://www.openstreetmap.org/){:target="_blank"} zum Auffinden eines öffentlich bekannten Ortes,
+* [EPSG.io](https://epsg.io/){:target="_blank"} zum Nachschlagen von CRS-Definitionen und
+* die auf den Kursseiten bereitgestellten Abbildungen zum Projektionsvergleich.
+
+Beachten Sie bei externen Diensten, dass die Projektion der sichtbaren Webkarte nicht zwingend mit dem CRS der angezeigten oder ausgegebenen Positionskoordinaten identisch ist.
+
+## Ablauf der Sitzung
+
+Die Unit ist für eine Sitzung von ungefähr **90 Minuten** ausgelegt.
+
+| Zeit | Aktivität |
+|---:|---|
+| 0–10 Minuten | Einstieg mit dem unbeschrifteten Zahlenpaar `50,81 / 8,77` |
+| 10–25 Minuten | Raumbezug und Eigenschaften von Geodaten |
+| 25–40 Minuten | Breite, Länge, Wertebereiche und Reihenfolge |
+| 40–55 Minuten | Plausibilitätsprüfung einer Koordinatentabelle |
+| 55–70 Minuten | Kartenprojektionen und unvermeidbare Verzerrungen |
+| 70–82 Minuten | WGS 84, UTM, Web Mercator und EPSG-Codes |
+| 82–90 Minuten | Zuweisen und Transformieren; Exit-Ticket |
+
+## Exit-Ticket
+
+Beantworten Sie zum Abschluss ohne Nachschlagen:
+
+1. Welche Angaben fehlen, wenn nur das Zahlenpaar `(8.77, 50.81)` vorliegt?
+2. Welches der behandelten CRS würden Sie für Entfernungsmessungen rund um Marburg zuerst prüfen – und warum?
+3. Was ändert sich beim Transformieren eines Datensatzes, und was bleibt gleich?
+
+## Transfer für Lehramtsstudierende
+
+Wählen Sie eine der beiden Projektionsdarstellungen aus dieser Unit und entwerfen Sie einen kurzen Arbeitsauftrag für Schülerinnen und Schüler der Sekundarstufe I oder II. Halten Sie fest:
+
+* angestrebtes Lernziel,
+* erwartete Fehlvorstellung,
+* zwei Beobachtungsfragen und
+* eine fachlich angemessene Ergebnissicherung.
+
+Der Arbeitsauftrag soll verdeutlichen, dass eine vertraute Weltkarte keine neutrale oder in allen Eigenschaften korrekte Abbildung der Erde ist.
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
-<!--
+<!-- Hinweise für Lehrende:
 Mögliche Einstiegsfrage: Was bedeuten die beiden Zahlen 50.8 und 8.8 – und reichen sie aus, um einen Ort eindeutig zu beschreiben?
 
 Mögliche Demonstrationen:
@@ -75,7 +117,7 @@ Mögliche Demonstrationen:
 - Verzerrungen verschiedener Weltkarten gegenüberstellen
 - einen Datensatz mit falsch zugewiesenem CRS zeigen
 
-Geplante Unterseiten:
+Unterseiten:
 - unit09-01_geodaten.html
 - unit09-02_koordinaten.html
 - unit09-03_projektionen.html

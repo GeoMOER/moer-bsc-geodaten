@@ -3,9 +3,9 @@ title: Werte klassifizieren
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit14/hero-unit14.jpg
+  image_description: "Workflow von der Fragestellung zur dokumentierten Karte"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Introtext: Zeigen, dass Klassengrenzen das sichtbare Muster und damit die Interpretation einer Karte beeinflussen. -->
@@ -220,7 +220,7 @@ Für den Layer `gbif_mit_hoehe`:
 
 1. Öffnen Sie **Layereigenschaften → Symbolisierung**.
 2. Wählen Sie **Abgestuft** beziehungsweise **Graduated**.
-3. Wählen Sie das Höhenfeld, beispielsweise `hoehe_1`.
+3. Wählen Sie das verbindliche Höhenfeld `hoehe_m`.
 4. Verwenden Sie eine sequentielle Farbpalette.
 5. Stellen Sie zunächst vier oder fünf Klassen ein.
 6. Wählen Sie eine Klassifizierungsmethode.

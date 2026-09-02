@@ -3,14 +3,16 @@ title: Biodiversitätsdaten von GBIF
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit11/hero-unit11.jpg
+  image_description: "Wald- und Kulturlandschaft mit verteilten Beobachtungspunkten und angedeuteten Unsicherheitsbereichen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Reale Punktdaten anhand einer wissenschaftlich relevanten Dateninfrastruktur kennenlernen. -->
 
 ## Was ist GBIF?
+
+![Die Arbeit mit GBIF-Daten umfasst Download und DOI, Tabellenprüfung, Punktimport, Qualitätsbeurteilung und dokumentierten Export.]({{ '/assets/images/unit11/gbif-workflow.svg' | relative_url }})
 
 Die **Global Biodiversity Information Facility (GBIF)** ist eine internationale Dateninfrastruktur für Informationen zur biologischen Vielfalt. Einrichtungen und Projekte aus vielen Ländern veröffentlichen darüber Daten zu Arten und anderen Organismen nach gemeinsamen Standards.
 
@@ -280,7 +282,7 @@ Welche der folgenden Aussagen ist fachlich angemessener? Begründen Sie.
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-Vor Veröffentlichung zwingend ergänzen:
+Vor Durchführung zwingend ergänzen:
 - tatsächliche GBIF-Filter
 - Download-Datum und DOI
 - Dateiname und gegebenenfalls entpackte Teildatei

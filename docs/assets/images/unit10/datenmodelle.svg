@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+  <title id="title">Vektor- und Rastermodell im Vergleich</title>
+  <desc id="desc">Links modellieren Punkte, Linien und ein Polygon einzelne räumliche Objekte. Rechts bildet ein regelmäßiges Zellgitter ein flächenhaftes Phänomen ab.</desc>
+  <rect width="1000" height="500" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="35" y="42" font-size="28" font-weight="700">Zwei Modelle räumlicher Wirklichkeit</text>
+    <text x="90" y="90" font-size="23" font-weight="700">Vektor: Features</text>
+    <rect x="55" y="110" width="400" height="290" rx="8" fill="#e8f5e9" stroke="#455a64" stroke-width="3"/>
+    <path d="M90 330C160 210 230 350 420 165" fill="none" stroke="#1976d2" stroke-width="10"/>
+    <path d="M260 150l125 18 20 90-95 55-85-72z" fill="#81c784" fill-opacity=".65" stroke="#2e7d32" stroke-width="4"/>
+    <g fill="#c62828" stroke="#fff" stroke-width="3"><circle cx="125" cy="165" r="11"/><circle cx="180" cy="255" r="11"/><circle cx="350" cy="340" r="11"/></g>
+    <text x="95" y="435" font-size="18">Punkt · Linie · Polygon + Attribute</text>
+    <text x="610" y="90" font-size="23" font-weight="700">Raster: Zellen und Werte</text>
+    <g transform="translate(545 110)" stroke="#fff" stroke-width="2">
+      <rect width="400" height="290" rx="8" fill="#e3f2fd" stroke="#455a64" stroke-width="3"/>
+      <g fill="#bbdefb"><rect x="2" y="2" width="78" height="56"/><rect x="82" y="2" width="78" height="56"/><rect x="162" y="2" width="78" height="56"/></g>
+      <g fill="#90caf9"><rect x="242" y="2" width="78" height="56"/><rect x="322" y="2" width="76" height="56"/><rect x="2" y="60" width="78" height="56"/></g>
+      <g fill="#64b5f6"><rect x="82" y="60" width="78" height="56"/><rect x="162" y="60" width="78" height="56"/><rect x="242" y="60" width="78" height="56"/></g>
+      <g fill="#42a5f5"><rect x="322" y="60" width="76" height="56"/><rect x="2" y="118" width="78" height="56"/><rect x="82" y="118" width="78" height="56"/></g>
+      <g fill="#1e88e5"><rect x="162" y="118" width="78" height="56"/><rect x="242" y="118" width="78" height="56"/><rect x="322" y="118" width="76" height="56"/></g>
+      <g fill="#1976d2"><rect x="2" y="176" width="78" height="56"/><rect x="82" y="176" width="78" height="56"/><rect x="162" y="176" width="78" height="56"/></g>
+      <g fill="#1565c0"><rect x="242" y="176" width="78" height="56"/><rect x="322" y="176" width="76" height="56"/><rect x="2" y="234" width="78" height="54"/></g>
+      <g fill="#0d47a1"><rect x="82" y="234" width="78" height="54"/><rect x="162" y="234" width="78" height="54"/><rect x="242" y="234" width="78" height="54"/><rect x="322" y="234" width="76" height="54"/></g>
+    </g>
+    <text x="585" y="435" font-size="18">Jede Zelle speichert einen Wert.</text>
+    <text x="245" y="478" font-size="19" font-weight="700">Die Fragestellung entscheidet – nicht das Modell allein.</text>
+  </g>
+</svg>

@@ -3,9 +3,9 @@ title: Vektordaten aus Geoportalen
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit12/hero-unit12.jpg
+  image_description: "Flusslandschaft mit Schutzgebietsfläche und Beobachtungspunkten innerhalb und außerhalb des Gebietes"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Rückblick: Welche Inhalte aus der vorherigen Seite werden benötigt? -->
@@ -194,7 +194,7 @@ Dokumentieren Sie anschließend den ausgewählten Datensatz in der Tabelle oben.
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-TODO Lehrende:
+TODO Lehrende vor Durchführung:
 - Konkreten Polygon- und Liniendatensatz auswählen.
 - Metadatenlinks, Lizenz und Datenstand prüfen und in die Tabelle eintragen.
 - Einen kleinen räumlichen Ausschnitt als lokale Sicherung bereitstellen.

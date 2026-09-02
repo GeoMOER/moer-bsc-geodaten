@@ -3,9 +3,9 @@ title: Koordinaten
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit09/hero-unit09.jpg
+  image_description: "Breiter Blick auf Europa auf einer gekrümmten Erde mit feinem Koordinatengitter und markiertem Ort"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: An die vorherige Unterseite zum Raumbezug anknüpfen. -->
@@ -16,9 +16,9 @@ Auf der vorherigen Seite haben wir gesehen, dass Daten durch einen Bezug zu eine
 
 Koordinaten bestehen aus Zahlen, welche die Position eines Punktes innerhalb eines festgelegten räumlichen Bezugssystems beschreiben. Ähnlich wie Zeile und Spalte in einer Tabelle werden mindestens zwei Angaben benötigt, um eine Position auf einer Fläche zu bestimmen.
 
-> **Merksatz:** Eine einzelne Koordinate beschreibt noch keinen Ort. Erst mehrere Koordinatenwerte und das zugehörige Bezugssystem ergeben gemeinsam eine räumliche Position.
+> **Merksatz:** Ein einzelner Koordinatenwert beschreibt noch keinen Ort. Erst ein vollständiges Koordinatenpaar und das zugehörige Bezugssystem ergeben gemeinsam eine räumliche Position.
 
-<!-- Optional: Ein einfaches Koordinatengitter mit x- und y-Achse ergänzen. -->
+![Breitenkreise, Meridiane und die ungefähre Position Marburgs im Gradnetz.]({{ '/assets/images/unit09/gradnetz.svg' | relative_url }})
 
 ## Koordinaten in einem ebenen Gitter
 
@@ -136,6 +136,8 @@ Für Marburg wären dies:
 | `(x, y)` beziehungsweise `(lon, lat)` | `(8.77, 50.81)` |
 
 Vertauschte Koordinaten sind eine häufige Fehlerquelle. Ein Datensatz mit Marburger Punktdaten kann dadurch an einer vollkommen anderen Stelle erscheinen.
+
+> **Kurskonvention:** In Datentabellen und beim späteren GIS-Import schreiben wir geographische Koordinaten als `(longitude, latitude)`, entsprechend `(x, y)`. Diese Reihenfolge ist nicht in allen Standards, Diensten und Programmdialogen identisch. Prüfen Sie daher immer Spaltennamen, Metadaten und die erwartete Achsenreihenfolge der jeweiligen Schnittstelle. Verlassen Sie sich nicht allein auf die Position der Werte.
 
 > **Prüffrage:** Stehen die Werte für Deutschland ungefähr bei einem Breitengrad zwischen 47 und 55 sowie einem Längengrad zwischen 5 und 16?
 

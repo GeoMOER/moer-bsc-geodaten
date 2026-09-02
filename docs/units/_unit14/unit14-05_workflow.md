@@ -3,9 +3,9 @@ title: Vom Datensatz zur räumlichen Aussage
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit14/hero-unit14.jpg
+  image_description: "Workflow von der Fragestellung zur dokumentierten Karte"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Introtext: Die bisher einzeln erlernten Schritte zu einem vollständigen, nachvollziehbaren Geo-Workflow verbinden. -->
@@ -95,6 +95,8 @@ Verändern Sie die Originaldaten nicht direkt.
 
 ## 4. Dateninventar erstellen
 
+Verbindlicher Eingang für die Hauptinformation ist `unit13_results.gpkg/gbif_mit_hoehe` mit dem numerischen Feld `hoehe_m`. Falls Sie den Ersatzlayer verwenden, muss er dasselbe Schema besitzen.
+
 Dokumentieren Sie alle tatsächlich verwendeten Daten:
 
 | Layer | Quelle | Datenstand | Geometrietyp | CRS | wichtige Felder/Werte | Lizenz |
@@ -117,7 +119,7 @@ Prüfen Sie für jeden Layer:
 
 1. Erstellen Sie ein neues QGIS-Projekt.
 2. Speichern Sie es als `unit14_workflow.qgz`.
-3. Stellen Sie das vorgegebene Projekt-CRS ein: **`[EPSG-Code ergänzen]`**.
+3. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
 4. Prüfen Sie, ob relative Pfade für das gemeinsam abgegebene Projekt verwendet werden sollen.
 5. Laden Sie zunächst nur die notwendigen Layer.
 6. Benennen Sie die Layer fachlich verständlich.
@@ -212,7 +214,7 @@ Eine mögliche visuelle Hierarchie:
 
 1. Beobachtungspunkte mit Höhenklassen,
 2. Untersuchungsgebiets- oder Schutzgebietsgrenzen,
-3. DGM in einer hellen, zurückhaltenden Darstellung,
+3. DGM gemäß Aufgabenstellung entweder in einer hellen, zurückhaltenden Darstellung oder nur als dokumentierte Analysequelle,
 4. Gewässer oder Hintergrundkarte nur bei erkennbarem Mehrwert.
 
 Prüfen Sie die Karte sowohl in Gesamtansicht als auch in der späteren Layoutgröße.
@@ -371,7 +373,7 @@ Tauschen Sie die exportierte Karte mit einer anderen Person. Ohne zusätzliche E
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-TODO Lehrende:
+TODO Lehrende vor Durchführung:
 - finale Leitfrage, Art, Untersuchungsgebiet und Zielgruppe vorgeben.
 - Ersatzdatensätze und verbindliches Projekt-CRS bereitstellen.
 - Feldname des Höhenwertes und zulässige Datenqualitätsfilter ergänzen.

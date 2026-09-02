@@ -3,9 +3,9 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit10/hero-unit10.jpg
+  image_description: "Luftbildlandschaft mit überlagerten Punkten, Linien, Polygonflächen und Rasterzellen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
@@ -65,13 +65,54 @@ Am Ende dieser Unit sind Studierende in der Lage, ...
 
 ## Organisatorisches
 
-In dieser Lerneinheit arbeiten wir erstmals praktisch mit QGIS. Stellen Sie vor Beginn sicher, dass QGIS auf dem verwendeten Rechner gestartet werden kann. Die benötigten Übungsdaten und Angaben zum verwendeten Webdienst werden in der Lehrveranstaltung bereitgestellt.
+In dieser Lerneinheit arbeiten wir erstmals praktisch mit QGIS. Stellen Sie vor Beginn sicher, dass **QGIS `[verbindliche QGIS-LTR-Version ergänzen]`** auf dem verwendeten Rechner gestartet werden kann. Die Sprache der Oberfläche darf Deutsch oder Englisch sein; die Anleitung nennt zentrale Begriffe bei Bedarf in beiden Sprachen.
+
+Benötigt werden:
+
+* Übungsdaten: `[Downloadlink ergänzen]`,
+* lokaler Vektorlayer: `[Dateiname und Layer ergänzen]`,
+* lokaler Rasterlayer: `[Dateiname ergänzen]`,
+* Projekt-CRS: `[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`,
+* WMS-Verbindung: `[Name, Dienstadresse und Layer ergänzen]` und
+* ein vorbereiteter Ersatz-Screenshot samt Metadatenblatt für den Fall, dass der WMS während der Sitzung ausfällt.
 
 Bitte speichern Sie Ihr QGIS-Projekt und alle zugehörigen Dateien in einem gemeinsamen, eindeutig benannten Arbeitsordner. Ein Projekt speichert Verweise auf die verwendeten Daten; es enthält die eingebundenen Datensätze in der Regel nicht selbst.
 
+## Ablauf der Sitzung
+
+Die Unit ist für eine Sitzung von ungefähr **120 Minuten** ausgelegt. Bei nur 90 Minuten sollte die WMS-Dokumentation in die Hausaufgabe verschoben werden.
+
+| Zeit | Aktivität |
+|---:|---|
+| 0–15 Minuten | Einstieg: dieselbe Realität als Punkt, Linie, Polygon oder Raster |
+| 15–35 Minuten | Vektor- und Rastermodell; Features und Attribute |
+| 35–50 Minuten | Projekt, Layer und Datendatei unterscheiden |
+| 50–70 Minuten | QGIS-Oberfläche und Arbeitsordner kennenlernen |
+| 70–90 Minuten | lokale Vektor- und Rasterdaten laden und prüfen |
+| 90–110 Minuten | WMS verbinden und mit lokalen Daten vergleichen |
+| 110–120 Minuten | Projekt erneut öffnen, Ergebnissicherung und Exit-Ticket |
+
+## Exit-Ticket
+
+1. Was enthält eine `.qgz`-Projektdatei, und was enthält sie normalerweise nicht?
+2. Woran erkennen Sie in QGIS, ob ein Layer Vektor- oder Rasterdaten enthält?
+3. Weshalb eignet sich ein WMS als Hintergrund, aber meist nicht für eine Vektoranalyse?
+
+## Transfer für Lehramtsstudierende
+
+Entwerfen Sie eine kurze schulische Aufgabe, in der Lernende denselben geographischen Inhalt in zwei Datenmodellen darstellen. Legen Sie fest:
+
+* Jahrgangsstufe und Lernziel,
+* verwendetes Beispiel,
+* zwei mögliche Modellierungen,
+* erwartete Begründung der Lernenden und
+* eine Hilfestellung für Lernende mit geringer GIS-Erfahrung.
+
+Die Aufgabe soll deutlich machen, dass das Datenmodell von Fragestellung und Maßstab abhängt.
+
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
-<!--
+<!-- Hinweise für Lehrende:
 Mögliche Einstiegsfrage:
 - Wie könnte dieselbe Stadt auf einer Deutschlandkarte, einer Stadtkarte und in einem Satellitenbild dargestellt werden?
 
@@ -85,12 +126,12 @@ Didaktische Schwerpunkte:
 - QGIS-Oberfläche nur so weit einführen, wie sie für die ersten Arbeitsschritte benötigt wird.
 - Projektdatei und Datendatei von Beginn an sprachlich sauber trennen.
 
-Vor Veröffentlichung prüfen beziehungsweise ergänzen:
+Vor Durchführung prüfen beziehungsweise ergänzen:
 - verwendete QGIS-Installation und Arbeitsumgebung
 - Downloadpfad der Übungsdaten
 - URL und Name des verwendeten WMS
 
-Geplante Unterseiten:
+Unterseiten:
 - unit10-01_datenmodelle.html
 - unit10-02_qgis.html
 - unit10-03_datenquellen.html

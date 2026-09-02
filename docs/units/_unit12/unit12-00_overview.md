@@ -3,9 +3,9 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit12/hero-unit12.jpg
+  image_description: "Flusslandschaft mit Schutzgebietsfläche und Beobachtungspunkten innerhalb und außerhalb des Gebietes"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
@@ -74,6 +74,38 @@ Für die praktische Arbeit benötigen Sie QGIS, den geprüften GBIF-Punktlayer a
 
 Speichern Sie die unveränderten Eingangsdaten, eigene Ausgaben und Metadaten erneut in getrennten Unterordnern. Verwenden Sie für räumliche Messungen und Auswahlen das vorgegebene Projekt- und Ausgabe-CRS.
 
+Verwenden Sie dasselbe Projekt-CRS wie seit Unit 10: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**. Erwarteter Eingang ist `unit11_results.gpkg/gbif_checked`; der Ersatzlayer muss dasselbe Schema besitzen.
+
+Das verbindliche Übergabeprodukt ist `data_output/unit12_results.gpkg` mit:
+
+* `schutzgebiete_auswahl`,
+* `gbif_in_schutzgebieten` und
+* `gewaesser_an_schutzgebieten`.
+
+## Ablauf der Sitzung
+
+Die Unit ist für ungefähr **120 Minuten** ausgelegt.
+
+| Zeit | Aktivität |
+|---:|---|
+| 0–20 Minuten | Linien, Polygone, Multipart und Generalisierung |
+| 20–40 Minuten | räumliche Beziehungen und Grenzfälle |
+| 40–60 Minuten | Geoportal, Metadaten, Download und WFS |
+| 60–80 Minuten | Layer laden, prüfen und gestalten |
+| 80–105 Minuten | Attribut- und räumliche Auswahl durchführen |
+| 105–115 Minuten | Ergebnisse exportieren und kontrollieren |
+| 115–120 Minuten | Exit-Ticket |
+
+## Exit-Ticket
+
+1. Wodurch unterscheiden sich Auswahl und neu gespeicherter Ergebnislayer?
+2. Welche räumliche Beziehung wurde für Punkte beziehungsweise Gewässer verwendet?
+3. Warum benötigen Messungen ein geeignetes projiziertes CRS?
+
+## Transfer für Lehramtsstudierende
+
+Entwerfen Sie ein einfaches Schulbeispiel, in dem Punkte, Linien und Polygone gemeinsam eine räumliche Frage beantworten. Benennen Sie Lernziel, Layer, räumliche Beziehung, einen Grenzfall und eine gestufte Hilfestellung.
+
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
@@ -88,7 +120,7 @@ Didaktische Schwerpunkte:
 - „innerhalb“ und „schneidet“ an Grenzfällen anschaulich unterscheiden.
 - Messungen nur in einem geeigneten projizierten CRS durchführen.
 
-Vor Veröffentlichung ergänzen:
+Vor Durchführung ergänzen:
 - Gewässer- und Schutzgebietsdatensatz
 - Geoportal- und Metadatenlinks
 - Datenstand, Lizenz und Quellenangabe

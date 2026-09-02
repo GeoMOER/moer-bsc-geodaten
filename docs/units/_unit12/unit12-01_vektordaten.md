@@ -3,9 +3,9 @@ title: Linien und Polygone
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit12/hero-unit12.jpg
+  image_description: "Flusslandschaft mit Schutzgebietsfläche und Beobachtungspunkten innerhalb und außerhalb des Gebietes"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Das in Unit 11 behandelte Punktmodell um Linien und Polygone erweitern. -->
@@ -152,6 +152,8 @@ Ein Polygon vermittelt häufig den Eindruck einer scharf festgelegten Grenze. In
 Die Linie im Datensatz zeigt deshalb nicht automatisch, wie genau, aktuell oder eindeutig die reale Grenze ist. Dafür müssen Erhebungsmethode, Maßstab und Lagegenauigkeit geprüft werden.
 
 ## Räumliche Beziehungen
+
+![Beobachtungspunkte und Gewässerlinien können anhand ihrer räumlichen Beziehung zu Schutzgebietspolygonen ausgewählt werden.]({{ '/assets/images/unit12/vektor-workflow.svg' | relative_url }})
 
 Vektorgeometrien erlauben Fragen nach ihrer Lage zueinander. Wichtige räumliche Beziehungen sind:
 

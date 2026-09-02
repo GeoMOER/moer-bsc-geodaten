@@ -3,9 +3,9 @@ title: Geodatenmodelle
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit10/hero-unit10.jpg
+  image_description: "Luftbildlandschaft mit überlagerten Punkten, Linien, Polygonflächen und Rasterzellen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Von der räumlichen Wirklichkeit zu einer für Computer verarbeitbaren Darstellung. -->
@@ -18,7 +18,7 @@ Ein **Geodatenmodell** legt fest, wie räumliche Objekte und Phänomene digital 
 
 > **Merksatz:** Geodaten sind Modelle der Realität. Das geeignete Modell hängt von Fragestellung, Maßstab und benötigtem Detailgrad ab.
 
-<!-- Optional: Abbildung „Realität → Auswahl und Vereinfachung → Geodatenmodell“ ergänzen. -->
+![Vektorfeatures und Rasterzellen modellieren unterschiedliche Aspekte räumlicher Wirklichkeit.]({{ '/assets/images/unit10/datenmodelle.svg' | relative_url }})
 
 ## Objekte und kontinuierliche Phänomene
 
@@ -133,7 +133,7 @@ Wichtige Eigenschaften eines Rasters sind:
 * die Bedeutung und Einheit der Zellwerte und
 * die Kennzeichnung fehlender Werte als **NoData**.
 
-Die Zellgröße bestimmt den räumlichen Detailgrad. Kleine Zellen können feinere Strukturen abbilden, führen aber meist zu größeren Datenmengen.
+Die Zellgröße beeinflusst den räumlichen Detailgrad. Kleine Zellen können feinere Strukturen abbilden, führen aber meist zu größeren Datenmengen. Eine kleine Zellgröße beweist jedoch nicht automatisch eine hohe räumliche oder inhaltliche Genauigkeit.
 
 <!-- Die Eigenschaften von Rasterdaten werden in Unit 13 ausführlich behandelt. -->
 
@@ -152,7 +152,7 @@ Raster ist daher nicht gleichbedeutend mit „kontinuierlich“. Das Datenmodell
 |---|---|---|
 | Grundelement | Punkt, Linie oder Polygon | Rasterzelle |
 | besonders anschaulich für | einzelne Objekte | flächenhafte Phänomene |
-| räumliche Genauigkeit | durch Koordinaten der Geometrie | durch Lage und Größe der Zellen |
+| räumliche Repräsentation | Koordinaten der Geometrie | Lage, Ausrichtung und Größe der Zellen |
 | Eigenschaften | Attribute je Feature | Wert je Zelle, gegebenenfalls mehrere Bänder |
 | typische Beispiele | Straßen, Gebäude, Schutzgebiete | Höhe, Temperatur, Satellitenbilder |
 

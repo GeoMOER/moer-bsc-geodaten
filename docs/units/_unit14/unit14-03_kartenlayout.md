@@ -3,14 +3,16 @@ title: Eine Karte erstellen
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit14/hero-unit14.jpg
+  image_description: "Workflow von der Fragestellung zur dokumentierten Karte"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Introtext: Von der QGIS-Kartenansicht zum zielgerichteten, exportierbaren Kartenlayout. -->
 
 ## Kartenansicht und Kartenlayout
+
+![Ein vollständiger Kartenworkflow verbindet Fragestellung, Datenprüfung, Analyse, Gestaltung, Export und Interpretation.]({{ '/assets/images/unit14/karten-workflow.svg' | relative_url }})
 
 In der QGIS-Kartenansicht untersuchen und bearbeiten wir Layer. Für ein fertiges Kartenprodukt benötigen wir zusätzlich ein **Kartenlayout**.
 
@@ -276,8 +278,8 @@ Für eine druckfähige Abgabe kann beispielsweise eine Auflösung von **300 dpi*
 Exportieren Sie die Abschlusskarte beispielsweise als:
 
 ```text
-data_output/abschlusskarte_unit14.pdf
-data_output/abschlusskarte_unit14.png
+figures/abschlusskarte_unit14.pdf
+figures/abschlusskarte_unit14.png
 ```
 
 Öffnen und prüfen Sie beide exportierten Dateien. Ein erfolgreicher Export bedeutet nicht automatisch, dass Schrift, Legende und Farben lesbar sind.
@@ -348,7 +350,7 @@ Didaktisch wichtig:
 - Quellenangabe bereits im Template verbindlich vorsehen.
 - Kartenexport im Unterricht tatsächlich öffnen und prüfen lassen.
 
-TODO Lehrende:
+TODO Lehrende vor Durchführung:
 - Seitenformat, Ausrichtung und gewünschte Exportauflösung festlegen.
 - verbindliche Quellenformulierung für die bereitgestellten Daten vorbereiten.
 - Musterlayout mit finalen Layernamen und Klassen erstellen.

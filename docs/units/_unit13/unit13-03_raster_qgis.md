@@ -3,9 +3,9 @@ title: Rasterdaten in QGIS
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit13/hero-unit13.jpg
+  image_description: "Ein Rasterwert wird als neues Attribut an einen Beobachtungspunkt übertragen"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Rückblick: Welche Inhalte aus den vorherigen Seiten werden benötigt? -->
@@ -40,7 +40,7 @@ Benötigt werden:
 | geprüfte GBIF-Beobachtungen | Punktvektor | Positionen der Beobachtungen |
 | optional: Untersuchungsgebiet | Polygonvektor | räumliche Orientierung |
 
-Speichern Sie ein neues QGIS-Projekt als **`unit13_raster.qgz`** und stellen Sie das im Kurs vorgegebene Projekt-CRS ein: **`[EPSG-Code ergänzen]`**.
+Speichern Sie ein neues QGIS-Projekt als **`unit13_raster.qgz`** und stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
 
 <!-- Lehrende: DGM-Ausschnitt, Höhenbezug, Einheit, Zellgröße, Lizenz und EPSG-Code verbindlich dokumentieren. -->
 
@@ -200,7 +200,7 @@ Mit dem Werkzeug **Rasterwerte abtasten** beziehungsweise **Sample raster values
 
 8. Führen Sie das Werkzeug aus und öffnen Sie die Attributtabelle des Ergebnislayers.
 
-Bei einem einbändigen Raster wird ein neues Feld für Band 1 angelegt. Abhängig von QGIS-Version und gewähltem Präfix kann es beispielsweise **`hoehe_1`** heißen. Prüfen Sie den tatsächlichen Feldnamen.
+Bei einem einbändigen Raster wird ein neues Feld für Band 1 angelegt. Abhängig von QGIS-Version und gewähltem Präfix kann es beispielsweise **`hoehe_1`** heißen. Prüfen Sie den tatsächlichen Feldnamen. Das verbindliche Feld für die Übergabe an Unit 14 heißt **`hoehe_m`**. Erstellen Sie es bei Bedarf kontrolliert als numerisches Feld, übernehmen Sie die Werte und dokumentieren Sie den Schritt.
 
 > Der Punkt wird durch das Werkzeug nicht verschoben. Er erhält lediglich den Wert der Rasterzelle an seiner Position als zusätzliches Attribut.
 
@@ -298,7 +298,7 @@ Speichern Sie das Projekt und den Ergebnislayer `gbif_mit_hoehe`.
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-TODO Lehrende:
+TODO Lehrende vor Durchführung:
 - DGM-Ausschnitt und GBIF-Ersatzlayer festlegen und gemeinsam testen.
 - Projekt-CRS, DGM-CRS, Zellgröße, Einheit und Höhenbezug ergänzen.
 - Dateinamen und Download-/Quellenlink eintragen.

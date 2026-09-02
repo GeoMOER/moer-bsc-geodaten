@@ -3,9 +3,9 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit14/hero-unit14.jpg
+  image_description: "Prozesskette von Fragestellung und Zielgruppe bis zu Export, Interpretation und Unsicherheiten"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
@@ -83,6 +83,42 @@ Für die praktische Arbeit benötigen Sie QGIS sowie die vorbereiteten oder selb
 
 Falls einzelne Ergebnisse fehlen, werden einheitliche Ersatzlayer bereitgestellt. Verwenden Sie für die Abschlusskarte nur Layer, die zur Fragestellung beitragen. Eine größere Zahl sichtbarer Layer macht eine Karte nicht automatisch informativer.
 
+Verwenden Sie dasselbe Projekt-CRS wie in Units 10–13: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**. Verbindlicher Eingang ist `unit13_results.gpkg/gbif_mit_hoehe` mit dem Feld `hoehe_m`.
+
+Die Abschlussprodukte sind:
+
+```text
+data_output/unit14_results.gpkg
+└── gbif_mit_hoehe_final
+figures/abschlusskarte_unit14.pdf
+figures/abschlusskarte_unit14.png
+documentation/processing_notes.md
+```
+
+## Ablauf der Sitzung
+
+Die Unit ist für ungefähr **150 Minuten** oder zwei kürzere Sitzungen ausgelegt.
+
+| Zeit | Aktivität |
+|---:|---|
+| 0–25 Minuten | Datenart, visuelle Variablen und Farbpaletten |
+| 25–50 Minuten | Klassifizierungen vergleichen und begründen |
+| 50–75 Minuten | visuelle Hierarchie der Layer herstellen |
+| 75–110 Minuten | Kartenlayout für eine Zielgruppe erstellen |
+| 110–130 Minuten | PDF und PNG exportieren und kontrollieren |
+| 130–145 Minuten | Peer-Check und Überarbeitung |
+| 145–150 Minuten | Exit-Ticket |
+
+## Exit-Ticket
+
+1. Wie beeinflusst die Klassifizierung die sichtbare Aussage?
+2. Welche drei Kartenelemente benötigen fast immer eine bewusste redaktionelle Überarbeitung?
+3. Welche Aussage darf aus den dokumentierten Beobachtungen nicht abgeleitet werden?
+
+## Transfer für Lehramtsstudierende
+
+Überarbeiten Sie die Abschlusskarte für eine konkret benannte schulische Zielgruppe. Formulieren Sie Lernziel, didaktische Reduktion, Arbeitsauftrag, Hilfestellung und Kriterien, anhand derer Lernende eine irreführende Kartengestaltung erkennen können.
+
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
@@ -98,7 +134,7 @@ Didaktische Schwerpunkte:
 - lieber eine klare Aussage mit wenigen Layern als eine überladene „Alles-Karte“.
 - Workflow und Unsicherheit gemeinsam mit dem Endprodukt abgeben lassen.
 
-Vor Veröffentlichung ergänzen:
+Vor Durchführung ergänzen:
 - verbindliche Leitfrage und Zielgruppe
 - finale Eingabedaten und Ersatzlayer
 - Feldname des abgetasteten Höhenwertes

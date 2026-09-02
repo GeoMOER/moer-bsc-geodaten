@@ -3,9 +3,9 @@ title: Punktdaten in QGIS
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit11/hero-unit11.jpg
+  image_description: "Wald- und Kulturlandschaft mit verteilten Beobachtungspunkten und angedeuteten Unsicherheitsbereichen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Eine tabellarische GBIF-Auswahl kontrolliert in einen Punktlayer überführen. -->
@@ -69,7 +69,7 @@ GBIF stellt einfache Occurrence-Downloads häufig als tabulatorgetrennte Textdat
 1. Starten Sie QGIS.
 2. Erstellen Sie ein neues Projekt.
 3. Speichern Sie es als `unit11_punktdaten.qgz` im Arbeitsordner.
-4. Stellen Sie das für die Übung vorgegebene Projekt-CRS ein: `[Projekt-CRS ergänzen]`.
+4. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: `[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`.
 5. Laden Sie den bereitgestellten Grenzlayer für Deutschland beziehungsweise das Untersuchungsgebiet.
 
 Der Grenzlayer hilft, die Lage der importierten Punkte unmittelbar auf Plausibilität zu prüfen.
@@ -212,15 +212,15 @@ Der importierte Textlayer verweist weiterhin auf die Ausgangsdatei. Speichern Si
 1. Wählen beziehungsweise filtern Sie die Records nach den für die Übung festgelegten Kriterien.
 2. Öffnen Sie im Kontextmenü des Layers **Exportieren → Objekte speichern als**.
 3. Wählen Sie das Format **GeoPackage**.
-4. Speichern Sie die Datei im Ordner `data_output`, beispielsweise als `unit11_points.gpkg`.
-5. Verwenden Sie einen eindeutigen Layernamen, beispielsweise `gbif_feuersalamander_checked`.
-6. Wählen Sie das vorgegebene Ausgabe-CRS: `[Ausgabe-CRS ergänzen]`.
+4. Speichern Sie die Datei als `data_output/unit11_results.gpkg`.
+5. Verwenden Sie den verbindlichen Layernamen `gbif_checked`.
+6. Verwenden Sie das gemeinsame Ausgabe-CRS: `[EPSG-Code ergänzen; identisch mit dem Projekt-CRS]`.
 7. Prüfen Sie, ob nur ausgewählte Features oder alle aktuell gefilterten Features exportiert werden sollen.
 8. Fügen Sie den gespeicherten Layer dem Projekt hinzu.
 
 Deaktivieren Sie anschließend testweise den Rohdatenlayer. Der neue GeoPackage-Layer sollte weiterhin sichtbar und vollständig nutzbar sein.
 
-<!-- Falls kein regionales metrisches CRS benötigt wird, kann EPSG:4326 als Ausgabe-CRS beibehalten werden. Eine Transformation muss bewusst entschieden und dokumentiert werden. -->
+Das Import-CRS `EPSG:4326` beschreibt die vorhandenen Tabellenkoordinaten. Das Ausgabe-CRS beschreibt dagegen die exportierte Geometrie. Eine Transformation muss bewusst gewählt und dokumentiert werden; ein CRS darf nicht nur neu zugewiesen werden.
 
 ## Quelle und Verarbeitung dokumentieren
 
@@ -286,7 +286,7 @@ Formulieren Sie das Ergebnis als Beschreibung der **dokumentierten Nachweise**, 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-Vor Veröffentlichung ergänzen:
+Vor Durchführung ergänzen:
 - bereitgestellte GBIF-Datei und tatsächliches Trennzeichen
 - Grenzlayer
 - Projekt- und Ausgabe-CRS

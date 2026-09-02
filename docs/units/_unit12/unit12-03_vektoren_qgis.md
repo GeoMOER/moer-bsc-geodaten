@@ -3,9 +3,9 @@ title: Linien und Polygone in QGIS
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit12/hero-unit12.jpg
+  image_description: "Flusslandschaft mit Schutzgebietsfläche und Beobachtungspunkten innerhalb und außerhalb des Gebietes"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Rückblick: Welche Inhalte aus den vorherigen Seiten werden benötigt? -->
@@ -38,7 +38,7 @@ unit12/
 
 1. Öffnen Sie QGIS und erstellen Sie ein neues Projekt.
 2. Speichern Sie es als **`unit12_vectors.qgz`**.
-3. Stellen Sie das vorgegebene Projekt-CRS ein: **`[EPSG-Code ergänzen]`**.
+3. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
 4. Speichern Sie das Projekt erneut.
 
 Für Messungen in Metern beziehungsweise Quadratmetern benötigen wir ein geeignetes **projiziertes CRS**. Für Daten in Deutschland kann – abhängig vom Untersuchungsgebiet – beispielsweise ein UTM-Koordinatensystem geeignet sein.
@@ -51,7 +51,7 @@ Laden Sie diese drei Layer:
 
 | Layer | Geometrie | Herkunft |
 |---|---|---|
-| geprüfte GBIF-Beobachtungen | Punkt | Ergebnis aus Unit 11 |
+| `unit11_results.gpkg/gbif_checked` | Punkt | Ergebnis aus Unit 11 oder schemaidentischer Ersatzlayer |
 | Gewässer | Linie | bereitgestellter Download oder Feature-Dienst |
 | Schutzgebiete | Polygon | bereitgestellter Download oder Feature-Dienst |
 
@@ -179,7 +179,7 @@ Wenn Sie die ausgewählten Features dauerhaft speichern möchten:
 
 1. Klicken Sie mit der rechten Maustaste auf den Layer.
 2. Wählen Sie **Exportieren → Ausgewählte Objekte speichern als …**.
-3. Verwenden Sie ein GeoPackage im Ordner `data_output/`.
+3. Verwenden Sie `data_output/unit12_results.gpkg`.
 4. Geben Sie dem neuen Layer einen eindeutigen Namen.
 
 Geeignete Namen sind beispielsweise:
@@ -242,7 +242,7 @@ Speichern Sie das QGIS-Projekt und exportieren Sie die beiden Auswahlergebnisse 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-TODO Lehrende:
+TODO Lehrende vor Durchführung:
 - Projektion und EPSG-Code verbindlich festlegen.
 - Dateinamen und Feldnamen an die tatsächlich bereitgestellten Daten anpassen.
 - Erwartete Featurezahlen für die Kontrollpunkte ermitteln.

@@ -3,9 +3,9 @@ title: HA | Hausaufgabe Abschnitt 14
 published: true
 toc: true
 header:
-  image: /assets/images/01-splash.jpg
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image: /assets/images/unit14/hero-unit14.jpg
+  image_description: "Workflow von der Fragestellung zur dokumentierten Karte"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Hausaufgabe 14: Integrierter Geo-Workflow und Abschlusskarte -->
@@ -14,7 +14,13 @@ header:
 
 In dieser Abschlussaufgabe verbinden Sie die Inhalte der Units 09–14 zu einem vollständigen kleinen Geo-Workflow. Sie wählen und prüfen Geodaten, vergleichen Klassifizierungen, gestalten ein Kartenlayout und dokumentieren Ihre räumliche Aussage einschließlich ihrer Grenzen.
 
-Planen Sie für die Bearbeitung ungefähr **90 Minuten** ein.
+| Rahmenbedingung | Festlegung |
+|---|---|
+| Bearbeitungszeit | etwa 180 Minuten |
+| Abgabeformat | vollständiger Arbeitsordner als `unit14_nachname_vorname.zip` |
+| Abgabeort | `[ILIAS-Ordner beziehungsweise Abgabeort ergänzen]` |
+| Abgabetermin | `[Datum und Uhrzeit ergänzen]` |
+| Arbeitsform | Einzelarbeit; ein Peer-Feedback vor der finalen Überarbeitung ist ausdrücklich erlaubt. |
 
 ## Fragestellung
 
@@ -28,13 +34,22 @@ Die Karte richtet sich an fachlich interessierte Personen ohne genaue Kenntnis d
 
 Verwenden Sie mindestens:
 
-* die geprüften GBIF-Beobachtungspunkte mit abgetastetem Höhenwert,
+* `unit13_results.gpkg/gbif_mit_hoehe` mit dem numerischen Feld `hoehe_m` oder den schemaidentischen Ersatzlayer,
 * das bereitgestellte digitale Geländemodell und
 * eine Grenze des Untersuchungsgebiets oder einen anderen begründeten räumlichen Kontextlayer.
 
 Optional können Schutzgebiete, Gewässer oder eine Hintergrundkarte ergänzt werden. Jeder sichtbare Layer muss zur Fragestellung oder Orientierung beitragen.
 
 Falls Ihre eigenen Ergebnisse aus den vorherigen Units fehlen, verwenden Sie die bereitgestellten Ersatzdaten.
+
+| Verbindliche Angabe | Festlegung |
+|---|---|
+| QGIS-Version | `[dieselbe verbindliche QGIS-LTR-Version wie in Unit 10 ergänzen]` |
+| Ersatzdatenpaket | `[Downloadlink ergänzen]` |
+| Untersuchungsgebiet und Zeitraum | `[ergänzen]` |
+| Seitenformat | `[zum Beispiel A4 quer ergänzen]` |
+| PNG-Auflösung | `[zum Beispiel 300 dpi ergänzen]` |
+| DGM im finalen Layout | `[verbindlich sichtbar oder nur als Analysequelle festlegen]` |
 
 ## 1. Arbeitsumgebung vorbereiten
 
@@ -55,7 +70,7 @@ Speichern Sie Ihr QGIS-Projekt als:
 hausaufgabe14.qgz
 ```
 
-Verwenden Sie das im Kurs vorgegebene Projekt-CRS: **`[EPSG-Code ergänzen]`**.
+Verwenden Sie das seit Unit 10 eingesetzte Projekt-CRS: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
 
 ## 2. Aussage und Zielgruppe festlegen
 
@@ -105,7 +120,7 @@ Falls dieser noch nicht vorliegt:
 4. speichern Sie das Ergebnis in:
 
    ```text
-   data_output/hausaufgabe14.gpkg
+   data_output/unit14_results.gpkg
    ```
 
 5. nennen Sie den Layer:
@@ -158,7 +173,7 @@ Anforderungen:
 
 * sequentielle, gut unterscheidbare Farbpalette für die Höhenklassen,
 * verständliche und gerundete Klassenbezeichnungen mit Einheit,
-* DGM als zurückhaltender räumlicher Kontext,
+* DGM gemäß der verbindlichen Vorgabe entweder als zurückhaltender Kontext oder ausschließlich als dokumentierte Analysequelle,
 * Untersuchungsgebiets- oder Schutzgebietsgrenzen ohne verdeckende Füllung,
 * optionale Gewässer oder Hintergrundkarte nur bei erkennbarem Mehrwert,
 * keine unnötigen Beschriftungen oder Layer.
@@ -279,10 +294,10 @@ Beantworten Sie vor der Abgabe mit ja oder nein:
 
 ## Abgabe
 
-Geben Sie den vollständigen Ordner `hausaufgabe14/` als ZIP-Archiv ab. Er soll mindestens enthalten:
+Geben Sie den vollständigen Ordner `hausaufgabe14/` als `unit14_nachname_vorname.zip` ab. Er soll mindestens enthalten:
 
 * `hausaufgabe14.qgz`,
-* `data_output/hausaufgabe14.gpkg` mit `gbif_mit_hoehe_final`,
+* `data_output/unit14_results.gpkg` mit `gbif_mit_hoehe_final`,
 * `figures/abschlusskarte_unit14.pdf`,
 * `figures/abschlusskarte_unit14.png`,
 * `documentation/processing_notes.md`,
@@ -308,6 +323,20 @@ Kontrollieren Sie vor der Abgabe, ob sich das QGIS-Projekt öffnen lässt und ke
 | Unsicherheit | mindestens drei relevante Einschränkungen reflektiert |
 | Reproduzierbarkeit | Projekt, Daten, Parameter und Entscheidungen geordnet dokumentiert |
 
+## Punkteverteilung
+
+| Bereich | Punkte |
+|---|---:|
+| Fragestellung, Zielgruppe und Dateninventar | 10 |
+| Eingangskontrolle und Verarbeitung | 10 |
+| Klassifizierungsvergleich und Methodenwahl | 15 |
+| Symbolisierung und visuelle Hierarchie | 15 |
+| Layout, Quellenangabe und Exportprüfung | 20 |
+| Interpretation und Unsicherheiten | 20 |
+| Reproduzierbarkeit und vollständige Abgabe | 10 |
+
+Gesamt: **100 Punkte**. Für das Bestehen sind **`[Mindestpunktzahl ergänzen, Vorschlag: 50 von 100 Punkten]`** erforderlich. Kartographische Alternativen sind zulässig, wenn sie zur Datenart, Leitfrage und Zielgruppe passen und nachvollziehbar begründet werden. Folgefehler werden nicht mehrfach bewertet.
+
 ## Checkliste
 
 - [ ] Fragestellung und Zielgruppe festgelegt
@@ -328,7 +357,7 @@ Kontrollieren Sie vor der Abgabe, ob sich das QGIS-Projekt öffnen lässt und ke
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-TODO Lehrende:
+TODO Lehrende vor Durchführung:
 - Art, Untersuchungsgebiet, Zeitraum und Zielgruppe endgültig festlegen.
 - Projekt-CRS, Seitenformat und Exportauflösung ergänzen.
 - vollständige Ersatzdaten samt Metadaten und Lizenzen bereitstellen.
@@ -336,7 +365,7 @@ TODO Lehrende:
 - festlegen, ob DGM zwingend sichtbar sein muss oder nur als Analysequelle verwendet werden darf.
 - Mustervergleich für gleiche Intervalle und Quantile vorbereiten.
 - Musterlayout, Quellenzeile und Bewertungsraster erstellen.
-- prüfen, ob 90 Minuten für die konkrete Datengröße und Abgabeform realistisch sind.
+- prüfen, ob 180 Minuten für die konkrete Datengröße und Abgabeform realistisch sind.
 
 Musterlösung – intern:
 - erwartete Punktzahl: [ergänzen]

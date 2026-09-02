@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+  <title id="title">Gradnetz mit Breiten- und Längengraden</title>
+  <desc id="desc">Eine schematische Erdkugel zeigt waagerechte Breitenkreise, senkrechte Meridiane, Äquator, Nullmeridian und einen Punkt für Marburg.</desc>
+  <rect width="1000" height="520" fill="#f7f8fa"/>
+  <g transform="translate(105 45)" fill="none">
+    <circle cx="215" cy="215" r="200" fill="#e3f2fd" stroke="#37474f" stroke-width="4"/>
+    <ellipse cx="215" cy="215" rx="80" ry="200" stroke="#90a4ae" stroke-width="2"/>
+    <ellipse cx="215" cy="215" rx="150" ry="200" stroke="#90a4ae" stroke-width="2"/>
+    <ellipse cx="215" cy="215" rx="200" ry="68" stroke="#90a4ae" stroke-width="2"/>
+    <ellipse cx="215" cy="215" rx="174" ry="36" stroke="#90a4ae" stroke-width="2"/>
+    <path d="M15 215h400" stroke="#2e7d32" stroke-width="5"/>
+    <path d="M215 15v400" stroke="#1565c0" stroke-width="5"/>
+    <circle cx="248" cy="104" r="10" fill="#c62828" stroke="#fff" stroke-width="3"/>
+  </g>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="35" y="35" font-size="27" font-weight="700">Geographische Koordinaten</text>
+    <text x="535" y="120" font-size="23" font-weight="700" fill="#c62828">Marburg (ungefähr)</text>
+    <text x="535" y="155" font-size="21">Breite / Latitude: 50,81° N</text>
+    <text x="535" y="190" font-size="21">Länge / Longitude: 8,77° E</text>
+    <line x1="495" y1="145" x2="365" y2="149" stroke="#c62828" stroke-width="3"/>
+    <text x="535" y="275" font-size="21" fill="#2e7d32">Äquator: Breite 0°</text>
+    <text x="535" y="320" font-size="21" fill="#1565c0">Nullmeridian: Länge 0°</text>
+    <text x="535" y="390" font-size="19">Breitenkreise verlaufen parallel zum Äquator.</text>
+    <text x="535" y="425" font-size="19">Meridiane verbinden Nord- und Südpol.</text>
+  </g>
+</svg>

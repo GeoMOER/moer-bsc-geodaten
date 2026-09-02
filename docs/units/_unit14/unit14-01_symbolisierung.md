@@ -3,9 +3,9 @@ title: Daten sinnvoll symbolisieren
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit14/hero-unit14.jpg
+  image_description: "Workflow von der Fragestellung zur dokumentierten Karte"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Introtext: Symbolisierung als fachliche Entscheidung und nicht als dekorativen Arbeitsschritt einführen. -->

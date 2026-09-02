@@ -3,9 +3,9 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit13/hero-unit13.jpg
+  image_description: "Ein Höhenwert aus einer Rasterzelle wird als neues Attribut an einen Beobachtungspunkt übertragen"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
@@ -76,6 +76,40 @@ Für die praktische Arbeit benötigen Sie QGIS, den geprüften GBIF-Punktlayer a
 
 Rasterdateien können deutlich größer als Vektordateien sein. Kopieren Sie die benötigten Daten deshalb vor Beginn der Übung in Ihren Arbeitsordner und verwenden Sie erneut getrennte Ordner für unveränderte Eingangsdaten, Ergebnisse und Dokumentation.
 
+Verwenden Sie dasselbe Projekt-CRS wie in Units 10–12: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**. Erwarteter Punkteingang ist `unit11_results.gpkg/gbif_checked`; ein Ersatzlayer muss identische Feldnamen und Datentypen besitzen.
+
+Das verbindliche Übergabeprodukt ist:
+
+```text
+data_output/unit13_results.gpkg
+└── gbif_mit_hoehe
+```
+
+Das neue Höhenfeld heißt im gesamten weiteren Kurs **`hoehe_m`**. Falls das QGIS-Werkzeug zunächst einen anderen Feldnamen erzeugt, benennen oder berechnen Sie das finale Feld kontrolliert und dokumentiert.
+
+## Ablauf der Sitzung
+
+Die Unit ist für ungefähr **120 Minuten** ausgelegt.
+
+| Zeit | Aktivität |
+|---:|---|
+| 0–20 Minuten | Rastermodell, Zellwert, DGM und DOM |
+| 20–45 Minuten | Zellgröße, Auflösung, Ausdehnung, NoData und Genauigkeit |
+| 45–70 Minuten | DGM laden, Metadaten und Werte prüfen |
+| 70–90 Minuten | Raster darstellen und Histogramm untersuchen |
+| 90–110 Minuten | Werte an `gbif_checked` abtasten und kontrollieren |
+| 110–120 Minuten | Unsicherheiten, Export und Exit-Ticket |
+
+## Exit-Ticket
+
+1. Warum ist eine kleine Rasterzelle kein Beweis für hohe Genauigkeit?
+2. Warum darf NoData nicht als Höhenwert null interpretiert werden?
+3. Welche Unsicherheiten treffen beim Feld `hoehe_m` zusammen?
+
+## Transfer für Lehramtsstudierende
+
+Entwerfen Sie eine kurze Aufgabe, mit der Schülerinnen und Schüler den Unterschied zwischen Auflösung und Genauigkeit erklären. Verwenden Sie ein Höhenraster, formulieren Sie eine typische Fehlvorstellung und beschreiben Sie eine anschauliche Hilfestellung.
+
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
@@ -90,7 +124,7 @@ Didaktische Schwerpunkte:
 - Farbe ist Darstellung; der Zellwert ist die gespeicherte Information.
 - Beim Übertragen der Höhe auf GBIF-Punkte auch die Koordinatenunsicherheit der Beobachtungen diskutieren.
 
-Vor Veröffentlichung ergänzen:
+Vor Durchführung ergänzen:
 - konkreter DGM-Datensatz und Download
 - Datenstand, Lizenz und Quellenangabe
 - Zellgröße, Höhenbezug und Einheit

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-labelledby="title desc">
+  <title id="title">Beziehung zwischen QGIS-Projekt, Layern und Datendateien</title>
+  <desc id="desc">Ein QGIS-Projekt speichert Einstellungen und Verweise auf Layer. Die Layer beziehen ihre eigentlichen Daten aus lokalen Dateien oder Webdiensten.</desc>
+  <rect width="1000" height="430" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="35" y="43" font-size="28" font-weight="700">Projekt, Layer und Datenquelle</text>
+    <rect x="55" y="90" width="270" height="255" rx="12" fill="#ede7f6" stroke="#5e35b1" stroke-width="4"/>
+    <text x="85" y="135" font-size="23" font-weight="700">QGIS-Projekt (.qgz)</text>
+    <text x="85" y="175" font-size="18">• Layerverweise</text><text x="85" y="207" font-size="18">• Reihenfolge</text><text x="85" y="239" font-size="18">• Darstellung</text><text x="85" y="271" font-size="18">• Kartenausschnitt</text><text x="85" y="303" font-size="18">• Projekt-CRS</text>
+    <rect x="420" y="90" width="225" height="255" rx="12" fill="#e8f5e9" stroke="#2e7d32" stroke-width="4"/>
+    <text x="485" y="135" font-size="23" font-weight="700">Layer</text>
+    <text x="450" y="180" font-size="18">Gemeinden</text><text x="450" y="220" font-size="18">Höhenraster</text><text x="450" y="260" font-size="18">Hintergrundkarte</text>
+    <rect x="740" y="70" width="220" height="130" rx="12" fill="#e3f2fd" stroke="#1565c0" stroke-width="4"/>
+    <text x="770" y="115" font-size="22" font-weight="700">lokale Dateien</text><text x="770" y="155" font-size="18">.gpkg · .tif · .geojson</text>
+    <rect x="740" y="235" width="220" height="130" rx="12" fill="#fff3e0" stroke="#ef6c00" stroke-width="4"/>
+    <text x="770" y="280" font-size="22" font-weight="700">Webdienste</text><text x="770" y="320" font-size="18">WMS · WFS · …</text>
+    <path d="M325 215h70" stroke="#5e35b1" stroke-width="7"/><path d="m393 197 25 18-25 18" fill="#5e35b1"/>
+    <path d="M645 175h70" stroke="#1565c0" stroke-width="7"/><path d="m713 157 25 18-25 18" fill="#1565c0"/>
+    <path d="M645 260h70" stroke="#ef6c00" stroke-width="7"/><path d="m713 242 25 18-25 18" fill="#ef6c00"/>
+    <text x="60" y="402" font-size="18">Die Projektdatei enthält die referenzierten Daten normalerweise nicht vollständig.</text>
+  </g>
+</svg>

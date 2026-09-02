@@ -3,9 +3,9 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit11/hero-unit11.jpg
+  image_description: "Wald- und Kulturlandschaft mit verteilten Beobachtungspunkten und angedeuteten Unsicherheitsbereichen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
@@ -69,7 +69,40 @@ Am Ende dieser Unit sind Studierende in der Lage, ...
 
 Für die praktische Arbeit benötigen Sie QGIS sowie die bereitgestellte Auswahl von GBIF-Beobachtungen. Verwenden Sie während der Lehrveranstaltung den vorbereiteten Datensatz, damit alle mit derselben dokumentierten Datenversion arbeiten.
 
-Legen Sie für Unit 11 einen neuen Arbeitsordner mit Unterordnern für unveränderte Eingangsdaten und eigene Ergebnisse an. Bewahren Sie die mitgelieferte Quellen- und Zitationsinformation gemeinsam mit dem GBIF-Datensatz auf.
+Verwenden Sie **QGIS `[dieselbe verbindliche QGIS-LTR-Version wie in Unit 10 ergänzen]`** und das gemeinsame Projekt-CRS **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
+
+Das verbindliche Übergabeprodukt dieser Unit ist:
+
+```text
+data_output/unit11_results.gpkg
+└── gbif_checked
+```
+
+Falls das eigene Ergebnis nicht verwendbar ist, steht ein schemaidentischer Ersatzlayer bereit: `[Downloadlink ergänzen]`.
+
+## Ablauf der Sitzung
+
+Die Unit ist für ungefähr **120 Minuten** ausgelegt.
+
+| Zeit | Aktivität |
+|---:|---|
+| 0–15 Minuten | Einstieg: Beobachtung oder Verbreitung? |
+| 15–35 Minuten | Punktfeatures, Attribute und räumliche Unsicherheit |
+| 35–55 Minuten | GBIF, Herkunftsebenen, DOI und Lizenz |
+| 55–75 Minuten | Tabelle und Importparameter prüfen |
+| 75–100 Minuten | Punkte importieren und Qualitätsfelder untersuchen |
+| 100–115 Minuten | Auswahl dokumentieren und `gbif_checked` exportieren |
+| 115–120 Minuten | Exit-Ticket und Übergabeprüfung |
+
+## Exit-Ticket
+
+1. Weshalb ist ein GBIF-Punkt nicht automatisch eine exakt lokalisierte Lebendbeobachtung?
+2. Welche drei Angaben müssen beim Import von `decimalLongitude` und `decimalLatitude` stimmen?
+3. Warum beschreibt `gbif_checked` dokumentierte Nachweise und nicht die vollständige Verbreitung einer Art?
+
+## Transfer für Lehramtsstudierende
+
+Entwerfen Sie einen kurzen Unterrichtsimpuls zur kritischen Interpretation einer Punktkarte. Formulieren Sie Lernziel, zwei Leitfragen, eine erwartbare Fehlinterpretation und eine Ergebnissicherung. Die Lernenden sollen zwischen „kein Nachweis vorhanden“ und „Art nachweislich abwesend“ unterscheiden.
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
@@ -84,7 +117,7 @@ Didaktische Schwerpunkte:
 - Datenqualität nicht als nachträgliches Spezialthema, sondern bei jedem Arbeitsschritt behandeln.
 - Keine Verbreitungskarte im strengen Sinn versprechen; zunächst Nachweisdaten kartieren.
 
-Vor Veröffentlichung ergänzen:
+Vor Durchführung ergänzen:
 - GBIF-Download und DOI
 - Datenstand und Filter des Downloads
 - verwendeter Artenname beziehungsweise alternatives Beispiel

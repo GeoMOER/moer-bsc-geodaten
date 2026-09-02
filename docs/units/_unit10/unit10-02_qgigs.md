@@ -3,9 +3,9 @@ title: Einführung in QGIS
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit10/hero-unit10.jpg
+  image_description: "Luftbildlandschaft mit überlagerten Punkten, Linien, Polygonflächen und Rasterzellen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Vom konzeptionellen Datenmodell zur praktischen Arbeit in einem GIS. -->
@@ -61,6 +61,8 @@ Die **Datendatei** enthält die eigentlichen Geodaten. Eine Datei kann einen ode
 
 > **Wichtig:** Wird nur die Projektdatei weitergegeben, fehlen auf einem anderen Rechner möglicherweise die zugehörigen Datendateien.
 
+![Ein QGIS-Projekt speichert Einstellungen und Verweise; Layer beziehen ihre eigentlichen Daten aus Dateien oder Webdiensten.]({{ '/assets/images/unit10/projekt-layer-datei.svg' | relative_url }})
+
 ## Die QGIS-Oberfläche
 
 Die genaue Anordnung kann je nach Betriebssystem und persönlicher Einstellung etwas unterschiedlich aussehen. Die grundlegenden Bereiche bleiben jedoch gleich.
@@ -104,7 +106,9 @@ Die **Kartenansicht** zeigt die sichtbaren Layer. Der dargestellte Ausschnitt ka
 
 Die **Statusleiste** enthält unter anderem Informationen zu Maßstab, Mauskoordinaten und dem CRS des Projekts. Diese Angaben helfen dabei, die aktuelle Darstellung räumlich einzuordnen.
 
-<!-- Optional: Aktuellen Screenshot der QGIS-Oberfläche mit Beschriftung der fünf Bereiche ergänzen. -->
+![Schematische Übersicht der wichtigsten Bereiche einer QGIS-Oberfläche.]({{ '/assets/images/unit10/qgis-oberflaeche.svg' | relative_url }})
+
+Die Darstellung ist absichtlich vereinfacht. Position und Symbole einzelner Werkzeuge können je nach QGIS-Version, Betriebssystem und persönlicher Konfiguration abweichen.
 
 ## Einen Arbeitsordner vorbereiten
 
@@ -112,13 +116,15 @@ Eine klare Dateiablage verhindert viele spätere Probleme. Legen Sie für die Ü
 
 ```text
 unit10_qgis/
-  data/
-  output/
+  data_raw/
+  data_output/
+  documentation/
   unit10_qgis.qgz
 ```
 
-* In `data` liegen unveränderte Ausgangsdaten.
-* In `output` werden neu erzeugte Dateien gespeichert.
+* In `data_raw` liegen unveränderte Ausgangsdaten.
+* In `data_output` werden neu erzeugte Dateien gespeichert.
+* In `documentation` liegen Quellenangaben und Arbeitsnotizen.
 * Die Projektdatei liegt im übergeordneten Arbeitsordner.
 
 Verwenden Sie eindeutige Dateinamen und vermeiden Sie es, Eingabedaten versehentlich zu überschreiben.
@@ -145,7 +151,7 @@ QGIS bietet mehrere Wege, lokale Geodaten zu öffnen. Zwei besonders wichtige si
 ### Über den Browser
 
 1. Navigieren Sie im Browser zum Arbeitsordner.
-2. Öffnen Sie den Ordner `data`.
+2. Öffnen Sie den Ordner `data_raw`.
 3. Prüfen Sie, welche Datensätze QGIS erkennt.
 4. Ziehen Sie einen Datensatz in die Kartenansicht oder doppelklicken Sie auf den gewünschten Layer.
 
@@ -216,7 +222,14 @@ Notieren Sie den EPSG-Code des Layers und vergleichen Sie ihn mit dem Projekt-CR
 
 ## Praktische Übung
 
-Verwenden Sie die in der Lehrveranstaltung bereitgestellten Daten.
+Verwenden Sie die in der Lehrveranstaltung bereitgestellten Daten:
+
+| Material | Festlegung |
+|---|---|
+| Datenpaket | `[Downloadlink ergänzen]` |
+| Vektorlayer | `[Datei und Layername ergänzen]` |
+| Rasterlayer | `[Dateiname ergänzen]` |
+| Projekt-CRS | `[gemeinsamen EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]` |
 
 1. Legen Sie den beschriebenen Arbeitsordner an.
 2. Erstellen und speichern Sie ein neues QGIS-Projekt.
@@ -234,7 +247,7 @@ Verwenden Sie die in der Lehrveranstaltung bereitgestellten Daten.
 9. Speichern Sie das Projekt und schließen Sie QGIS.
 10. Öffnen Sie das Projekt erneut und prüfen Sie, ob alle Layer weiterhin gefunden werden.
 
-<!-- Vor Veröffentlichung konkrete Daten, Downloadpfad und erwartete Layernamen ergänzen. -->
+Notieren Sie alle Ergebnisse in `documentation/processing_notes.md`. Verwenden Sie dafür mindestens die Überschriften „Projekt“, „Vektorlayer“, „Rasterlayer“, „CRS-Prüfung“ und „Öffnungstest“.
 
 ## Typische Probleme
 
@@ -280,7 +293,7 @@ Benötigte Screenshots:
 - Datenquellenmanager für Vektor und Raster
 - Layer-Eigenschaften mit hervorgehobenem CRS
 
-Vor Veröffentlichung ergänzen:
+Vor Durchführung ergänzen:
 - konkrete Übungsdaten
 - erwartetes Projekt-CRS
 - betriebssystemspezifische Hinweise nur bei tatsächlichem Bedarf

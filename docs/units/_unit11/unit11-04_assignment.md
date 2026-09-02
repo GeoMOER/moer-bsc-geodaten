@@ -3,9 +3,9 @@ title: HA | Hausaufgabe Abschnitt 11
 published: true
 toc: true
 header:
-  image: /assets/images/01-splash.jpg
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image: /assets/images/unit11/hero-unit11.jpg
+  image_description: "Wald- und Kulturlandschaft mit verteilten Beobachtungspunkten und angedeuteten Unsicherheitsbereichen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Hausaufgabe 11: GBIF-Punktdaten importieren, prüfen und interpretieren -->
@@ -14,8 +14,13 @@ header:
 
 In dieser Hausaufgabe erstellen Sie aus einer tabellarischen GBIF-Auswahl einen dokumentierten Punktlayer. Sie prüfen die Datenquelle und Tabellenstruktur, importieren die Koordinaten korrekt in QGIS, untersuchen Qualitätsinformationen und speichern eine nachvollziehbar gefilterte Auswahl als GeoPackage.
 
-**Bearbeitungszeit:** etwa 60 Minuten  
-**Abgabe:** [Abgabeformat und Abgabetermin ergänzen]
+| Rahmenbedingung | Festlegung |
+|---|---|
+| Bearbeitungszeit | etwa 90 Minuten |
+| Abgabeformat | vollständiger Arbeitsordner als `unit11_nachname_vorname.zip` |
+| Abgabeort | `[ILIAS-Ordner beziehungsweise Abgabeort ergänzen]` |
+| Abgabetermin | `[Datum und Uhrzeit ergänzen]` |
+| Arbeitsform | Einzelarbeit; Projekt, Entscheidungen und Dokumentation müssen selbst erstellt sein. |
 
 ## Lernziele
 
@@ -35,13 +40,15 @@ Für die Hausaufgabe benötigen Sie:
 
 | Material | Angabe |
 |---|---|
+| QGIS-Version | `[dieselbe verbindliche QGIS-LTR-Version wie in Unit 10 ergänzen]` |
 | GBIF-Teildatensatz | `[Datei und Downloadlink ergänzen]` |
 | GBIF-Download-DOI | `[DOI ergänzen]` |
 | verwendete GBIF-Filter | `[Filter ergänzen]` |
 | Grenzlayer | `[Datei beziehungsweise Layer ergänzen]` |
 | Hintergrundkarte / WMS | `[Dienst oder Layer ergänzen]` |
-| Projekt-CRS | `[EPSG-Code ergänzen]` |
-| Ausgabe-CRS | `[EPSG-Code ergänzen]` |
+| Projekt-CRS | `[gemeinsamen EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]` |
+| Ausgabe-CRS | `[identisch mit dem Projekt-CRS ergänzen]` |
+| schemaidentischer Ersatzlayer | `[Downloadlink ergänzen]` |
 
 Legen Sie folgende Ordnerstruktur an:
 
@@ -153,9 +160,9 @@ Erstellen Sie eine Auswahl beziehungsweise einen Filter nach den vorgegebenen Kr
 Exportieren Sie die resultierenden Features:
 
 * Format: **GeoPackage**
-* Datei: `data_output/hausaufgabe11.gpkg`
+* Datei: `data_output/unit11_results.gpkg`
 * Layername: `gbif_checked`
-* CRS: `[Ausgabe-CRS ergänzen]`
+* CRS: `[gemeinsames Ausgabe-CRS ergänzen]`
 
 Prüfen Sie nach dem Export:
 
@@ -202,13 +209,15 @@ Erstellen Sie im Ordner `documentation` eine Textdatei `processing_notes.md` mit
 
 ## Einzureichende Ergebnisse
 
-Reichen Sie folgende Bestandteile ein:
+Reichen Sie den vollständigen Arbeitsordner als `unit11_nachname_vorname.zip` ein. Er enthält mindestens:
 
 1. `hausaufgabe11_nachname.qgz`,
-2. `hausaufgabe11.gpkg` mit dem Layer `gbif_checked`,
+2. `data_output/unit11_results.gpkg` mit dem Layer `gbif_checked`,
 3. `processing_notes.md`,
 4. ausgefüllte Tabellen und Antworten sowie
 5. beide Screenshots.
+
+Öffnen Sie das ZIP-Archiv probeweise und kontrollieren Sie Ordnerstruktur, Dateinamen und Projektpfade. Die bereitgestellte GBIF-Teilmenge soll im Ordner `data_raw` enthalten bleiben.
 
 <!-- Je nach Kursplattform als einzelne Dateien oder gesamter Arbeitsordner als ZIP abgeben lassen. Die unveränderte GBIF-Rohdatei muss bei zentral bereitgestellten Daten nicht erneut eingereicht werden. -->
 
@@ -226,6 +235,21 @@ Prüfen Sie vor der Abgabe, ob ...
 * `gbifID` im Ergebnis erhalten ist,
 * die Karte von dokumentierten Nachweisen und nicht pauschal von Verbreitung spricht und
 * das QGIS-Projekt nach erneutem Öffnen funktioniert.
+
+## Bewertung
+
+Die Hausaufgabe wird anhand von **50 Punkten** bewertet.
+
+| Bereich | Punkte | vollständig erfüllt, wenn ... |
+|---|---:|---|
+| Quelle und Tabellenprüfung | 10 | DOI, Filter, Zitation, Lizenz, Struktur und zentrale Felder sind nachvollziehbar dokumentiert. |
+| Punktimport | 8 | `decimalLongitude` ist x, `decimalLatitude` ist y und das Import-CRS ist `EPSG:4326`; Lage und Anzahl werden geprüft. |
+| Qualitätsprüfung | 12 | Regeln, betroffene Records, auffällige Beispiele und Entscheidungen sind fachlich begründet. |
+| Export `gbif_checked` | 8 | Ergebnis, Featurezahl, Felder und gemeinsames Ausgabe-CRS sind korrekt und kontrolliert. |
+| Darstellung und Interpretation | 7 | Darstellung ist lesbar; Beobachtungsbias und fehlende Absenzdaten werden berücksichtigt. |
+| Reproduzierbarkeit und Abgabe | 5 | Projekt, Daten, `processing_notes.md`, Screenshots und ZIP-Struktur sind vollständig und funktionieren. |
+
+Für das Bestehen sind **`[Mindestpunktzahl ergänzen, Vorschlag: 25 von 50 Punkten]`** erforderlich. Fachlich gleichwertige Entscheidungen sind zulässig, wenn sie dokumentiert und begründet sind. Folgefehler werden nicht mehrfach bewertet.
 
 <!-- Lösungshinweise für Lehrende:
 
@@ -262,22 +286,15 @@ Aufgabe 7:
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-Vor Veröffentlichung ergänzen:
+Vor Durchführung ergänzen:
 - Eingangsdatei, DOI, Filter und Lizenzangaben
 - Grenzlayer und Hintergrunddienst
 - Projekt- und Ausgabe-CRS
 - Mindestjahr
 - Regel und Grenzwert für coordinateUncertaintyInMeters
 - erwartete Recordzahlen für jede Prüfregel
-- Abgabetermin und Abgabeform
-
-Mögliche Punkteverteilung:
-- Aufgabe 1 und 2: 20 %
-- Aufgabe 3: 15 %
-- Aufgabe 4: 25 %
-- Aufgabe 5: 15 %
-- Aufgabe 6: 15 %
-- Dokumentation und saubere Abgabe: 10 %
+- Abgabetermin, Abgabeort und Mindestpunktzahl
+- schemaidentischen Ersatzlayer erzeugen und testen
 
 Mögliche Vereinfachung:
 - nur drei Qualitätsregeln prüfen lassen und Aufgabe 7 als vorgegebenes Formular bereitstellen.

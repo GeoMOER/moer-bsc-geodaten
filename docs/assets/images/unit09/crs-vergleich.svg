@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-labelledby="title desc">
+  <title id="title">Dieselbe Position in zwei Koordinatenreferenzsystemen</title>
+  <desc id="desc">Zwei Koordinatengitter zeigen denselben Referenzpunkt einmal mit Winkelkoordinaten in WGS 84 und einmal mit Meterkoordinaten in ETRS89 UTM Zone 32N.</desc>
+  <rect width="1000" height="430" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="40" y="43" font-size="27" font-weight="700">Dieselbe Position – andere Zahlen</text>
+    <g transform="translate(65 85)" stroke="#90a4ae" fill="#e3f2fd">
+      <rect width="350" height="230" rx="8"/>
+      <path d="M70 0v230M140 0v230M210 0v230M280 0v230M0 46h350M0 92h350M0 138h350M0 184h350" fill="none"/>
+      <circle cx="230" cy="75" r="10" fill="#c62828" stroke="#fff" stroke-width="3"/>
+    </g>
+    <g transform="translate(585 85)" stroke="#90a4ae" fill="#fff3e0">
+      <rect width="350" height="230" rx="8"/>
+      <path d="M70 0v230M140 0v230M210 0v230M280 0v230M0 46h350M0 92h350M0 138h350M0 184h350" fill="none"/>
+      <circle cx="230" cy="75" r="10" fill="#c62828" stroke="#fff" stroke-width="3"/>
+    </g>
+    <text x="85" y="350" font-size="21" font-weight="700">WGS 84 · EPSG:4326</text>
+    <text x="85" y="383" font-size="19">8,77° E · 50,81° N (Winkel)</text>
+    <text x="605" y="350" font-size="21" font-weight="700">ETRS89 / UTM 32N · EPSG:25832</text>
+    <text x="605" y="383" font-size="19">Rechts-/Hochwert in Metern</text>
+    <path d="M450 195h80" stroke="#1565c0" stroke-width="7"/><path d="m528 175 25 20-25 20" fill="#1565c0"/>
+  </g>
+</svg>

@@ -3,9 +3,9 @@ title: HA | Hausaufgabe Abschnitt 13
 published: true
 toc: true
 header:
-  image: /assets/images/01-splash.jpg
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image: /assets/images/unit13/hero-unit13.jpg
+  image_description: "Übertragung eines Rasterwertes auf einen Beobachtungspunkt"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Hausaufgabe 13: Rastereigenschaften und Höhenwerte an Beobachtungspunkten -->
@@ -14,7 +14,13 @@ header:
 
 In dieser Hausaufgabe wenden Sie die Inhalte aus Unit 13 selbstständig an. Sie prüfen und dokumentieren ein digitales Geländemodell, stellen seine Höhenwerte in QGIS dar und übertragen Rasterwerte auf die GBIF-Beobachtungspunkte.
 
-Planen Sie für die Bearbeitung ungefähr **60 bis 75 Minuten** ein.
+| Rahmenbedingung | Festlegung |
+|---|---|
+| Bearbeitungszeit | etwa 90 Minuten |
+| Abgabeformat | vollständiger Arbeitsordner als `unit13_nachname_vorname.zip` |
+| Abgabeort | `[ILIAS-Ordner beziehungsweise Abgabeort ergänzen]` |
+| Abgabetermin | `[Datum und Uhrzeit ergänzen]` |
+| Arbeitsform | Einzelarbeit; Kontrollen und Unsicherheitsbeurteilung müssen selbst dokumentiert werden. |
 
 ## Fragestellung
 
@@ -31,6 +37,13 @@ Für die Aufgabe benötigen Sie:
 * den in Unit 11 geprüften GBIF-Punktlayer oder den bereitgestellten Ersatzlayer,
 * das bereitgestellte digitale Geländemodell,
 * die Metadaten und Quellenangaben des Höhenmodells.
+
+| Verbindliche Angabe | Festlegung |
+|---|---|
+| QGIS-Version | `[dieselbe verbindliche QGIS-LTR-Version wie in Unit 10 ergänzen]` |
+| DGM-Datei und Download | `[Dateiname und Downloadlink ergänzen]` |
+| DGM-Einheit und Höhenbezug | `[ergänzen]` |
+| Ersatzlayer `gbif_checked` | `[Downloadlink ergänzen]` |
 
 Falls Sie Unit 11 mit einer anderen Art bearbeitet haben, können Sie diesen Punktlayer verwenden, sofern er im Gebiet des Höhenrasters liegt.
 
@@ -51,7 +64,7 @@ Speichern Sie Ihr QGIS-Projekt als:
 hausaufgabe13.qgz
 ```
 
-Verwenden Sie das im Kurs vorgegebene Projekt-CRS: **`[EPSG-Code ergänzen]`**.
+Verwenden Sie das seit Unit 10 eingesetzte Projekt-CRS: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
 
 ## 2. Datenquelle dokumentieren
 
@@ -139,8 +152,10 @@ Verwenden Sie das Werkzeug **Rasterwerte abtasten** beziehungsweise **Sample ras
 1. Eingabelayer: geprüfte GBIF-Punkte,
 2. Rasterlayer: digitales Geländemodell,
 3. Spaltenpräfix: `hoehe_`,
-4. Ausgabe: `data_output/hausaufgabe13.gpkg`,
+4. Ausgabe: `data_output/unit13_results.gpkg`,
 5. Layername: `gbif_mit_hoehe`.
+
+Das verbindliche finale Höhenfeld heißt **`hoehe_m`**. Falls QGIS zunächst einen anderen Feldnamen erzeugt, erstellen Sie `hoehe_m` kontrolliert als numerisches Feld, übernehmen Sie die Werte und dokumentieren Sie diesen Schritt.
 
 Öffnen Sie die Attributtabelle des Ergebnislayers und tragen Sie ein:
 
@@ -216,10 +231,10 @@ Dokumentieren Sie darin:
 
 ## Abgabe
 
-Geben Sie den vollständigen Ordner `hausaufgabe13/` als ZIP-Archiv ab. Er soll mindestens enthalten:
+Geben Sie den vollständigen Ordner `hausaufgabe13/` als `unit13_nachname_vorname.zip` ab. Er soll mindestens enthalten:
 
 * `hausaufgabe13.qgz`,
-* `data_output/hausaufgabe13.gpkg` mit dem Layer `gbif_mit_hoehe`,
+* `data_output/unit13_results.gpkg` mit dem Layer `gbif_mit_hoehe` und dem Feld `hoehe_m`,
 * `documentation/processing_notes.md`,
 * die ausgefüllten Tabellen und Antworten und
 * einen Screenshot der gestalteten Kartenansicht.
@@ -240,6 +255,19 @@ Kontrollieren Sie vor der Abgabe, ob sich das QGIS-Projekt öffnen lässt und de
 | Unsicherheit | Auflösung, NoData und Punktunsicherheit fachlich reflektiert |
 | Reproduzierbarkeit | Projekt, Ergebnis und Arbeitsschritte geordnet abgegeben |
 
+## Punkteverteilung
+
+| Bereich | Punkte |
+|---|---:|
+| DGM-Quelle und Rasterprüfung | 10 |
+| Darstellung und direkte Wertabfrage | 7 |
+| Punktkontrolle und Rasterabtastung | 10 |
+| Ergebnis- und Feldkontrolle `hoehe_m` | 8 |
+| Beschreibung und Unsicherheiten | 10 |
+| Reproduzierbarkeit und Abgabe | 5 |
+
+Gesamt: **50 Punkte**. Für das Bestehen sind **`[Mindestpunktzahl ergänzen, Vorschlag: 25 von 50 Punkten]`** erforderlich. Ein dokumentierter NoData-Fall oder fehlender Höhenwert ist nicht automatisch ein Fehler. Folgefehler werden nicht mehrfach bewertet.
+
 ## Checkliste
 
 - [ ] DGM-Quelle und Lizenz dokumentiert
@@ -249,6 +277,7 @@ Kontrollieren Sie vor der Abgabe, ob sich das QGIS-Projekt öffnen lässt und de
 - [ ] GBIF-Punkte räumlich kontrolliert
 - [ ] Höhenwerte auf Punkte übertragen
 - [ ] Ergebnislayer als `gbif_mit_hoehe` gespeichert
+- [ ] verbindliches numerisches Feld `hoehe_m` vorhanden und geprüft
 - [ ] fünf Ergebniswerte kontrolliert
 - [ ] Höhenverteilung beschrieben
 - [ ] Unsicherheiten diskutiert
@@ -258,7 +287,7 @@ Kontrollieren Sie vor der Abgabe, ob sich das QGIS-Projekt öffnen lässt und de
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-TODO Lehrende:
+TODO Lehrende vor Durchführung:
 - Projekt-CRS und EPSG-Code ergänzen.
 - DGM und GBIF-Punktlayer bereitstellen und gemeinsam testen.
 - Quellenangabe, Datenstand, Höhenbezug, Einheit und Lizenz vorgeben.
@@ -267,7 +296,7 @@ TODO Lehrende:
 - Musterwerte für Minimum, Maximum, Median und Spannweite berechnen.
 - festlegen, ob Median oder ein anderer bereits eingeführter Kennwert verwendet wird.
 - Musterlösung mit Kontrollpunkten und Screenshots erstellen.
-- prüfen, ob 60 bis 75 Minuten mit der Datengröße realistisch sind.
+- prüfen, ob 90 Minuten mit der Datengröße realistisch sind.
 
 Musterlösung – intern:
 - Rasterzeilen/-spalten: [ergänzen]

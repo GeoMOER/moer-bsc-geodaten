@@ -3,9 +3,9 @@ title: Eigenschaften von Rasterdaten
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
-  image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
-  caption: "Bild: [jekyll](https://jekyllrb.com/)"
+  image: /assets/images/unit13/hero-unit13.jpg
+  image_description: "Ein Rasterwert wird als neues Attribut an einen Beobachtungspunkt übertragen"
+  caption: "Eigene Darstellung"
 ---
 
 <!-- Introtext: Eigenschaften erklären, die vor Anzeige, Kombination und Interpretation eines Rasters geprüft werden müssen. -->

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450" role="img" aria-labelledby="title desc">
+  <title id="title">Lokaler Download und Webdienst im Vergleich</title>
+  <desc id="desc">Bei einem Download liegt eine versionierbare Kopie lokal. Ein Webdienst liefert bei jeder Anfrage Inhalte von einem externen Server und benötigt eine Verbindung.</desc>
+  <rect width="1000" height="450" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="35" y="43" font-size="28" font-weight="700">Download oder Webdienst?</text>
+    <rect x="55" y="85" width="390" height="275" rx="12" fill="#e8f5e9" stroke="#2e7d32" stroke-width="4"/>
+    <text x="90" y="130" font-size="24" font-weight="700">Download</text>
+    <text x="90" y="175" font-size="19">1. Datei lokal speichern</text><text x="90" y="210" font-size="19">2. dokumentierte Kopie behalten</text><text x="90" y="245" font-size="19">3. offline bearbeiten und analysieren</text><text x="90" y="295" font-size="18" fill="#455a64">Aktualisierung erfolgt bewusst</text><text x="90" y="325" font-size="18" fill="#455a64">durch einen neuen Download.</text>
+    <rect x="555" y="85" width="390" height="275" rx="12" fill="#fff3e0" stroke="#ef6c00" stroke-width="4"/>
+    <text x="590" y="130" font-size="24" font-weight="700">Webdienst</text>
+    <text x="590" y="175" font-size="19">1. QGIS sendet eine Anfrage</text><text x="590" y="210" font-size="19">2. Server liefert aktuelle Antwort</text><text x="590" y="245" font-size="19">3. Internet und Server nötig</text><text x="590" y="295" font-size="18" fill="#455a64">Inhalt oder Verfügbarkeit können</text><text x="590" y="325" font-size="18" fill="#455a64">sich zwischen Sitzungen ändern.</text>
+    <text x="225" y="410" font-size="19" font-weight="700">In beiden Fällen: Metadaten, Datenstand, Lizenz und Quelle dokumentieren.</text>
+  </g>
+</svg>

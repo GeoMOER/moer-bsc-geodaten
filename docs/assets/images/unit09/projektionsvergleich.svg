@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+  <title id="title">Schematischer Vergleich zweier Weltkartenprojektionen</title>
+  <desc id="desc">Links vergrößert eine rechteckige Mercator-ähnliche Darstellung polnahe Gebiete. Rechts zeigt eine flächentreue, ovale Darstellung vergleichbare Flächen angemessener, verändert aber Formen.</desc>
+  <rect width="1000" height="470" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="40" y="42" font-size="27" font-weight="700">Projektionen erhalten unterschiedliche Eigenschaften</text>
+    <text x="80" y="82" font-size="21" font-weight="700">winkeltreu / Mercator-ähnlich</text>
+    <rect x="55" y="100" width="400" height="270" fill="#e3f2fd" stroke="#37474f" stroke-width="3"/>
+    <g stroke="#90a4ae" fill="none"><path d="M55 145h400M55 190h400M55 235h400M55 280h400M55 325h400"/><path d="M105 100v270M155 100v270M205 100v270M255 100v270M305 100v270M355 100v270M405 100v270"/></g>
+    <path d="M105 112l100 5 35 55-95 16-60-30zM285 230l75-10 42 65-55 72-66-50z" fill="#66bb6a" stroke="#2e7d32"/>
+    <text x="595" y="82" font-size="21" font-weight="700">flächentreu / oval</text>
+    <ellipse cx="725" cy="235" rx="220" ry="135" fill="#e3f2fd" stroke="#37474f" stroke-width="3"/>
+    <g stroke="#90a4ae" fill="none"><ellipse cx="725" cy="235" rx="110" ry="135"/><ellipse cx="725" cy="235" rx="45" ry="135"/><path d="M520 190q205 42 410 0M510 235h430M520 280q205-42 410 0"/></g>
+    <path d="M595 165l85 5 30 35-75 13-50-20zM760 235l65-8 35 45-47 56-55-38z" fill="#66bb6a" stroke="#2e7d32"/>
+    <text x="55" y="408" font-size="17">Lokale Winkel und Formen bleiben gut erhalten.</text>
+    <text x="55" y="435" font-size="17">Polnahe Flächen werden stark vergrößert.</text>
+    <text x="530" y="408" font-size="17">Flächen bleiben vergleichbar.</text>
+    <text x="530" y="435" font-size="17">Formen und Winkel werden verändert.</text>
+  </g>
+</svg>

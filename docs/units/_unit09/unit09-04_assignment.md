@@ -3,9 +3,9 @@ title: HA | Hausaufgabe Abschnitt 09
 published: true
 toc: true
 header:
-  image: /assets/images/01-splash.jpg
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image: /assets/images/unit09/hero-unit09.jpg
+  image_description: "Breiter Blick auf Europa auf einer gekrümmten Erde mit feinem Koordinatengitter und markiertem Ort"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Hausaufgabe 09: Geodaten, Koordinaten und Projektionen -->
@@ -14,10 +14,24 @@ header:
 
 In dieser Hausaufgabe wenden Sie die Inhalte aus Abschnitt 09 selbstständig an. Sie untersuchen, wie Orte durch Koordinaten beschrieben werden, prüfen fehlerhafte Koordinatendaten und wählen für verschiedene Aufgaben ein geeignetes Koordinatenreferenzsystem aus.
 
-Für die Bearbeitung benötigen Sie noch kein GIS. Verwenden Sie die Inhalte dieser Unit und bei Bedarf einen frei zugänglichen Online-Kartendienst.
+Für die Bearbeitung benötigen Sie noch kein GIS. Verwenden Sie die Inhalte dieser Unit sowie die unten genannten Arbeitsmittel.
 
-**Bearbeitungszeit:** etwa 30–45 Minuten  
-**Abgabe:** [Abgabeformat und Abgabetermin ergänzen]
+| Rahmenbedingung | Festlegung |
+|---|---|
+| Bearbeitungszeit | etwa 45–60 Minuten |
+| Abgabeformat | eine PDF-Datei mit dem Namen `unit09_nachname_vorname.pdf` |
+| Abgabeort | `[ILIAS-Ordner beziehungsweise Abgabeort ergänzen]` |
+| Abgabetermin | `[Datum und Uhrzeit ergänzen]` |
+| Arbeitsform | Einzelarbeit; ein fachlicher Austausch ist erlaubt, die eingereichten Antworten müssen selbst formuliert sein. |
+
+## Arbeitsmittel
+
+* Kursseiten der Unit 9,
+* [OpenStreetMap](https://www.openstreetmap.org/){:target="_blank"} zum Auffinden eines öffentlich bekannten Ortes,
+* [EPSG.io](https://epsg.io/){:target="_blank"} zum Prüfen von CRS-Bezeichnungen und EPSG-Codes und
+* die Abbildungen auf der Seite „Koordinatenreferenzsysteme & Projektionen“.
+
+Ein anderer Kartendienst darf verwendet werden, wenn Koordinaten, CRS beziehungsweise Koordinatenkonvention und Quelle nachvollziehbar dokumentiert werden. Beachten Sie: Das CRS der sichtbaren Webkarte und das CRS ausgegebener Positionskoordinaten können verschieden sein.
 
 ## Lernziele
 
@@ -41,7 +55,8 @@ Ermitteln Sie die geographischen Koordinaten dieses Ortes in Dezimalgrad und dok
 3. den Längengrad (*Longitude*),
 4. das Koordinatenpaar in der Reihenfolge `(Längengrad, Breitengrad)`,
 5. das verwendete Koordinatenreferenzsystem beziehungsweise den EPSG-Code und
-6. die verwendete Datenquelle als Link.
+6. die verwendete Datenquelle als Link und
+7. das Zugriffsdatum.
 
 Verwenden Sie für Ihre Antwort folgende Tabelle:
 
@@ -54,10 +69,13 @@ Verwenden Sie für Ihre Antwort folgende Tabelle:
 | Koordinatenpaar `(lon, lat)` |  |
 | CRS / EPSG-Code |  |
 | Datenquelle |  |
+| Zugriffsdatum |  |
 
 Beantworten Sie anschließend in einem Satz:
 
 > Welche Informationen würden fehlen, wenn Sie lediglich das Zahlenpaar ohne Spaltennamen, Reihenfolge, Einheit und CRS weitergeben würden?
+
+> **Kurskonvention:** Geben Sie das Koordinatenpaar in dieser Aufgabe als `(longitude, latitude)` beziehungsweise `(x, y)` an. Andere Dienste oder Standards können eine andere Achsenreihenfolge erwarten; übernehmen Sie Werte deshalb nie ohne Prüfung der Beschriftung.
 
 ## Aufgabe 2: Koordinaten prüfen
 
@@ -134,26 +152,41 @@ Prüfen Sie vor der Abgabe, ob ...
 * alle vier Aufgaben bearbeitet sind,
 * Koordinaten eindeutig beschriftet und in der geforderten Reihenfolge angegeben sind,
 * Datenquelle und CRS des selbst gewählten Ortes dokumentiert sind,
+* das Zugriffsdatum angegeben ist,
 * Auffälligkeiten in der Koordinatentabelle nachvollziehbar begründet sind und
 * die CRS-Auswahl nicht nur genannt, sondern mit dem jeweiligen Zweck begründet wurde.
+
+## Bewertung
+
+Die Hausaufgabe wird anhand von **20 Punkten** bewertet.
+
+| Bereich | Punkte | vollständig erfüllt, wenn ... |
+|---|---:|---|
+| Aufgabe 1: Ort dokumentieren | 4 | Ort, Latitude, Longitude, Paar, CRS, Quelle und Zugriffsdatum sind eindeutig und plausibel angegeben. |
+| Aufgabe 2: Koordinaten prüfen | 6 | Alle Zeilen werden auf Wertebereich, Reihenfolge und räumliche Plausibilität geprüft; Vermutungen und Korrekturen werden nachvollziehbar getrennt. |
+| Aufgabe 3: CRS auswählen | 6 | Für alle Szenarien wird ein grundsätzlich geeignetes CRS gewählt und mit Raum, Einheit und Zweck begründet. |
+| Aufgabe 4: Begriffe erklären | 4 | Projektion, CRS-Gruppen sowie Zuweisen und Transformieren werden fachlich korrekt unterschieden. |
+
+Für das Bestehen sind **`[Mindestpunktzahl ergänzen, Vorschlag: 10 von 20 Punkten]`** erforderlich. Fachlich gleichwertige, nachvollziehbar begründete Lösungen sind zulässig. Ein Fehler wird nicht mehrfach abgezogen, wenn spätere Antworten auf einem klar dokumentierten vorherigen Ergebnis aufbauen.
 
 <!-- Lösungshinweise für Lehrende:
 
 Aufgabe 1:
 - Erwartet wird eine eindeutige Dokumentation von Latitude, Longitude, Reihenfolge, Einheit, CRS und Quelle.
+- Das Zugriffsdatum muss enthalten sein.
 - Bei einem üblichen Online-Kartendienst muss geprüft werden, ob ausgegebene Positionsangaben tatsächlich WGS 84 / EPSG:4326 sind. Die Projektion der sichtbaren Hintergrundkarte kann davon abweichen.
 
 Aufgabe 2:
-- ID 1: plausibel.
-- ID 2: Longitude und Latitude sind vermutlich vertauscht. Plausible Reihenfolge wäre ungefähr 9.49, 51.31.
-- ID 3: plausibel.
+- ID 1: formal und räumlich plausibel.
+- ID 2: Beide Werte liegen in ihren allgemeinen Wertebereichen, für die ausdrücklich angegebene Reihenfolge und Kassel sind sie aber unplausibel. Longitude und Latitude wurden vermutlich vertauscht. Plausible Werte wären ungefähr 9.49, 51.31; eine Korrektur muss anhand der Quelle geprüft werden.
+- ID 3: formal und räumlich plausibel.
 - ID 4: Latitude 91.15 liegt außerhalb des zulässigen Wertebereichs. Die korrekte Position muss anhand der Quelle geprüft werden; aus der Tabelle allein ist keine sichere Korrektur möglich.
 - ID 5: formal gültiges Koordinatenpaar im Golf von Guinea, für Hessen aber unplausibel. Vermutlich Platzhalter für fehlende Werte; Originaldaten oder Metadaten prüfen und gegebenenfalls als fehlend kennzeichnen.
 
 Aufgabe 3:
-- A: EPSG:4326
-- B: EPSG:25832
-- C: EPSG:3857
+- A: EPSG:4326, weil globale Längen- und Breitengrade in Grad gespeichert werden sollen.
+- B: EPSG:25832, weil Marburg in UTM-Zone 32N liegt und lineare Einheiten für regionale Entfernungs- und Flächenberechnungen benötigt werden.
+- C: EPSG:3857 für die hier vereinfachte gemeinsame Darstellung mit üblichen Webkartenkacheln; keine präzisen Flächenberechnungen damit durchführen.
 - Die Begründung ist wichtiger als die bloße Nennung des Codes.
 
 Aufgabe 4:
@@ -165,14 +198,14 @@ Aufgabe 4:
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen, aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
 <!--
-Vor Veröffentlichung ergänzen:
-- konkretes Abgabeformat
+Vor Durchführung ergänzen:
 - Abgabefrist
 - Abgabeort beziehungsweise Lernplattform
-- gegebenenfalls Punkteverteilung
+- verbindliche Mindestpunktzahl
+- prüfen, ob PDF-Erzeugung für alle Studierenden barrierearm möglich ist
 
 Mögliche Kürzung:
-- Wenn die Bearbeitungszeit unter 30 Minuten bleiben soll, Aufgabe 4 auf eine der drei Fragen reduzieren.
+- Wenn die Bearbeitungszeit unter 45 Minuten bleiben soll, Aufgabe 4 auf eine der drei Fragen reduzieren.
 
 Mögliche Erweiterung:
 - Studierende vergleichen den gewählten Ort zusätzlich in zwei Kartenprojektionen und beschreiben sichtbare Unterschiede.
