@@ -3,8 +3,8 @@ title: Tutorium
 published: true
 toc: true
 header:
-  image: "/assets/images/title.png"
-  caption: 'Image: [solar.empire via flickr.com](https://www.flickr.com/photos/solar-empire/23815961328/) [CC BY-NC 2.0 DEED](https://creativecommons.org/licenses/by-nc/2.0/)'
+  image: "/assets/images/unit00/hero-unit00-digital-learning.png"
+  caption: 'KI-generierte Illustration für digitales Lernen und How-to-Materialien'
 ---
 Das Tutorium ist eine offene Gelegenheit, Fragen zum Kurs zu stellen, für die Sie anderweitig keine Lösung finden konnten.
 
@@ -16,4 +16,3 @@ Das Tutorium ist eine offene Gelegenheit, Fragen zum Kurs zu stellen, für die S
 * Vergessen Sie nicht, vor dem Tutorium auch im Internet nach Lösungen für Ihr Problem zu suchen
 * Beschreiben Sie Ihr Problem klar und konkret ("es hat nicht funktioniert" reicht nicht aus!)
 * Die Teilnahme ist freiwillig
-

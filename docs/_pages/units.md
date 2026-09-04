@@ -2,22 +2,45 @@
 title: Course units
 id: Units
 header:
-  image: "/assets/images/title.png"
-  caption: 'Image: [solar.empire via flickr.com](https://www.flickr.com/photos/solar-empire/23815961328/) [CC BY-NC 2.0 DEED](https://creativecommons.org/licenses/by-nc/2.0/)'
+  image: "/assets/images/hero-units.png"
+  caption: 'KI-generierte Illustration für den Kursbereich Geodaten'
 
 permalink: /units.html
 sidebar:
   nav: "units"
 ---
 
-This course introduces you to work with geo data. Over 6 units, you will learn about alot stuff that has to be described here..................................... One of the units can be covered by several course sessions.
+Dieser Kurs vermittelt die Grundlagen der Arbeit mit Geodaten. Er führt von der Organisation und Dokumentation von Daten über die räumliche Analyse bis zur Gestaltung aussagekräftiger Karten.
 
-The first two units introduce concepts and approaches that are crucial to work with geo data. The next 3 units build upon this basis by introducing more interesting stuff ..................................................
+Die Units bauen aufeinander auf:
 
-Finally, the last unit guids you through the process of visualising that stuff ...............................
+- digitale Daten, Tabellen und Datenmanagement,
+- Geodaten, Koordinatenreferenzsysteme und GIS,
+- Vektor- und Rasterdaten, räumliche Analyse und Kartengestaltung.
 
-This course assumes some basic interest in those topics.
-If you are keen on anticipate advanced knowledge about R, we recommend checking some of the instructors' other online coursework available at OER Marburg, such as [Base R](https://geomoer.github.io/moer-base-r/){:target="_blank"} and a more advanced [Data Analysis in R](https://geomoer.github.io/moer-mpg-data-analysis/){:target="_blank"}.
+**Zur Navigation verwenden Sie bitte die Navigationsleiste hier auf der linken Seite oder die Links im Syllabus auf der Startseite.**
 
+
+
+<!--
+
+Ist irgendwie redundant
+
+## Kurs-Units
+
+<style>
+.units-list a {
+  display: block;
+  margin: 0.6rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 4px;
+  background-color: var(--block-bg, rgba(0, 0, 0, 0.02));
+}
+</style>
+
+<div class="units-list">
 {% include units_page %}
+</div>
 
+-->

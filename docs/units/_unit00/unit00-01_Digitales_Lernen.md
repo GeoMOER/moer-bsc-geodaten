@@ -3,8 +3,8 @@ title: Digital learning
 published: true
 toc: true
 header:
-  image: "/assets/images/title.png"
-  caption: 'Image: [solar.empire via flickr.com](https://www.flickr.com/photos/solar-empire/23815961328/) [CC BY-NC 2.0 DEED](https://creativecommons.org/licenses/by-nc/2.0/)'
+  image: "/assets/images/unit00/hero-unit00-digital-learning.png"
+  caption: 'KI-generierte Illustration für digitales Lernen und How-to-Materialien'
 ---
 
 Dieser Kurs ist als sogenanntes "Blended-Learning"-Modul konzipiert, auch wenn die bereitgestellten Einführungen, Erklärungen und Beispiele auch für das Selbststudium nützlich sein können.

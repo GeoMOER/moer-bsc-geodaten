@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit13/hero-unit13.jpg
-  image_description: "Ein Rasterwert wird als neues Attribut an einen Beobachtungspunkt übertragen"
-  caption: "Eigene Darstellung"
+  image_description: "Digitales Geländemodell, das in sichtbare Rasterzellen mit markierten Beobachtungspunkten übergeht"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Rückblick: Welche Inhalte aus den vorherigen Seiten werden benötigt? -->

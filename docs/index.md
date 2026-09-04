@@ -28,44 +28,33 @@ feature_row_ilos:
 ## This page is under construction! Do not use!
 
 ## Motivation
-<!-- Ursprünglicher Text: Daten mit Raumbezug liefern betreffen alle Bereiche des Lebens; sie helfen z.B. Enscheidungsträgern oder können in der Prognose zukünftiger Bedingungen eingesetzt werden. 
 
-Mit fortschreitenden technologischen Möglichkeiten - sowohl in der Datenaufnahme, als auch in Analysemöglichkeiten, ist die Menge an Daten allerdings exponentiell gestiegen. Das Potential, dass mit diesem  sog. "Datalake" (Datensee, also Datendepot), in dem all diese Daten hereinfließen, kann aber nur genutzt werden, wenn die Daten nutzbar gemacht werden - und auch so bleiben.
 
-In der Realität sieht das aber häufig anders - wichtige Informationen gehen verloren, so dass z.B. keine Informationen zur Datenherkunft mehr vorhanden sind, sie sind nicht gut strukturiert oder auffindbar. Damit "versumpft" der datalake schnell - und wird zu einem dataswamp, durch den es kein Durchkommen gibt. Deswegen ist vernünftiges Datenmanagement entscheident - sowohl im wissenschaftlichen, wirtschaftlichen als auch im Kontext eines möglichst effizienten Studiums, immerhin wollen Sie Daten, die sie in späteren Übungen und ihrer Abschlussarbeit bearbeiten, nicht erst lange suchen müssen und noch  wissen, was sie wann mit den Daten gemacht haben, sowie relevante Informationen parat haben.  
+Raumbezogene Daten spielen in Wissenschaft, Planung und Gesellschaft eine zentrale Rolle. Sie helfen dabei, räumliche Zusammenhänge zu erkennen, Entwicklungen zu analysieren und Entscheidungen zu unterstützen.
 
-In diesem Kurs werden Sie.... -->
+Durch neue Möglichkeiten der Datenerhebung und -analyse wächst die verfügbare Datenmenge stetig. Gleichzeitig steigt auch die Bedeutung eines guten Datenmanagements. Häufig wird dafür das Bild eines **Data Lake** verwendet: Unterschiedliche Daten fließen in einen gemeinsamen Datenspeicher und stehen dort für vielfältige Auswertungen bereit. Sein Potenzial lässt sich jedoch nur ausschöpfen, wenn die Daten auffindbar, verständlich, technisch nutzbar und hinsichtlich ihrer Qualität einschätzbar sind.
 
-<!-- Textvorschlag: -->
-Raumbezogene Daten betreffen nahezu alle Bereiche unseres Lebens. Sie erleichtern die Planung von Infrastruktur, optimieren das Management von Ressourcen und liefern die Basis für Umweltprognosen.
+Fehlen dagegen aussagekräftige Dateinamen, klare Strukturen, geeignete Formate, Metadaten oder nachvollziehbare Bearbeitungsschritte, kann aus dem Data Lake schnell ein **Data Swamp** werden. In diesem „Datensumpf“ sind Daten zwar vorhanden, lassen sich aber nur schwer finden, verlässlich interpretieren oder erneut verwenden. Schlimmstenfalls führen unklare Herkunft, ungeprüfte Qualität oder ein falsch verstandener Raumbezug zu fehlerhaften Ergebnissen.
 
-Mit foranschreitenden technologischen Möglichkeiten in der Datenerhebung und den Analysemöglichkeiten wächst die verfügbare Datenmenge jedoch exponentiell. Das Potential dieses sogenannten "Data Lake" (einem zentralen Datenspeicher in den sämtliche Daten fließen) lässt sich allerdings nur nutzen, wenn die Daten auch strukturiert nutzbar gemacht werden und langfristig nutzbar bleiben.
+Gutes Datenmanagement verhindert dieses Versumpfen. Es verbindet die strukturierte Ablage und Dokumentation von Daten mit ihrer kritischen Prüfung, Aufbereitung, Analyse und Visualisierung. Diese Fähigkeiten sind für wissenschaftliches und berufliches Arbeiten ebenso wichtig wie für das Studium: Wer Daten und Arbeitsschritte nachvollziehbar organisiert, kann Ergebnisse überprüfen, reproduzieren und später weiterverwenden.
 
-Die Realität sieht häufig anders aus. Fehlen Metadaten, sind Formate chaotisch oder Dateien unauffindbar, „versumpft“ der Data Lake rasch zu einem unzugänglichen "Data Swamp". So gehen wichtige Zusammenhänge verloren oder es entstehen falsche Rückschlüsse.
-Ein gutes Datenmanagement wirkt dem Informationsverlust entgegen und schont die Nerven. Ob in der Wissenschaft, der Wirtschaft oder in Ihrem Studium: Wer Daten nicht erst stundenlang suchen muss, behält den Kopf frei für das Wesentliche!
-
-In diesem Kurs lernen Sie ... :
-
-* ...wo und wie Daten gespeichert werden.
-* ...die Handhabung von Daten in Excel.
-* ...die Darstellung von Datenübersichten.
-* ...das Reinigen von Datensätzen.
-* ...die Beschaffung und Nutzbarmachung von Daten.
-* ...die Verarbeitung von Daten mit QGIS.
+Der Kurs vermittelt deshalb grundlegende Kompetenzen für den strukturierten und kritischen Umgang mit Daten. Von digitalen Grundlagen über Tabellen, Datenbereinigung und Dokumentation führt er bis zur Arbeit mit Geodaten in QGIS. Anhand geographischer Fragestellungen lernen Sie, Daten zu recherchieren, zu beurteilen, aufzubereiten, zu analysieren und aussagekräftig zu visualisieren.
 
 
 ## Lernziele
 
-Nach Abschluss können Studierende:
+Nach erfolgreichem Abschluss des Moduls sind Studierende in der Lage, 
 
-* Daten strukturiert organisieren & Methoden zur Datenbereinigung anwenden
-* Einfache deskriptive Statistik anwenden
-* Punkt-, Raster- und Vektordaten unterscheiden  
-* Datensätze nach FAIR-Prinzipien dokumentieren
-<!-- Dirk: bitte Lernziele ergänzen -->
+* grundlegende Konzepte digitaler Daten, ihrer Speicherung, Formate und technischen Verarbeitung zu erklären,
+* tabellarische Daten strukturiert aufzubauen, zu bereinigen, zu transformieren und mit Tabellenkalkulationssoftware auszuwerten,
+* Datenqualität, Herkunft, Dokumentation und Eignung für eine Fragestellung kritisch zu beurteilen,
+* grundlegende Verfahren der deskriptiven Statistik anzuwenden und Ergebnisse angemessen zu interpretieren,
+* Daten, Metadaten und Bearbeitungsschritte nachvollziehbar und nach grundlegenden FAIR-Prinzipien zu organisieren,
+* Geodaten zu recherchieren sowie Raumbezug, Koordinatenreferenzsysteme, Vektor- und Rasterdaten zu verstehen und zu unterscheiden,
+* Geodaten in QGIS zu laden, aufzubereiten, zu analysieren und in geeigneten Formaten zu speichern,
+* Geodaten angemessen zu symbolisieren, zu klassifizieren und in übersichtlichen Karten zu visualisieren und
+* geographische Fragestellungen in einen nachvollziehbaren Arbeitsprozess von der Datenrecherche bis zur dokumentierten räumlichen Aussage zu übersetzen.
 
-
-## Syllabus
 
 ## Syllabus
 
@@ -92,7 +81,7 @@ Nach Abschluss können Studierende:
   vertical-align: middle;
 }
 
-.syllabus-table td:nth-child(4) {
+.syllabus-table td:nth-child(2) {
   white-space: nowrap;
 }
 
@@ -153,357 +142,120 @@ Nach Abschluss können Studierende:
         <th>Termin</th>
         <th>Datum</th>
         <th>Thema</th>
-        <th>Uhrzeit</th>
         <th>Inhalt</th>
-        <th>Link</th>
       </tr>
     </thead>
     <tbody>
       <!-- Termin 01 -->
       <tr>
-        <td rowspan="3" class="term-number">01</td>
-        <td rowspan="3" class="date-cell">14.10.2026</td>
-        <td rowspan="3" class="topic-cell">Bits & Bytes - ein Einstieg in digitale Daten</td>
-        <td>09:15 – 09:45</td>
-        <td>Input: Intro & Erwartungsmanagement</td>
-        <td><span class="unit-tag"><a href="unit00/unit00-01_Digitales_Lernen.html">Einheit 00</a></span></td>
-      </tr>
-      <tr>
-        <td>09:45 – 10:15</td>
-        <td>Hard- & Software</td>
-        <td><span class="unit-tag"><a href="unit01/unit01-01_byte.html">Einheit 01</a></span></td>
-      </tr>
-      <tr>
-        <td>10:15 – 10:45</td>
-        <td>Laufwerke</td>
-        <td><span class="unit-tag"><a href="unit01/unit01-03_Laufwerke.html">Einheit 01</a></span></td>
+        <td class="term-number"><a href="unit01/unit01-00_overview.html">01</a></td>
+        <td class="date-cell">14.10.2026</td>
+        <td class="topic-cell">Bits & Bytes - ein Einstieg in digitale Daten</td>
+        <td>Intro & Erwartungsmanagement, Hard- & Software, Laufwerke</td>
       </tr>
       <!-- Termin 02 -->
       <tr>
-        <td rowspan="4" class="term-number">02</td>
-        <td rowspan="4" class="date-cell">21.10.2026</td>
-        <td rowspan="4" class="topic-cell">Dateneinträge & -Typen in Excel</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit01/unit01-00_overview.html">Einheit 01</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Datentypen und -strukturen</td>
-        <td><span class="unit-tag"><a href="unit02/unit02-02_Datenformate.html">Einheit 02</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:15</td>
-        <td>Zellbezüge</td>
-        <td><span class="unit-tag"><a href="unit02/unit02-03_Zellbezüge.html">Einheit 02</a></span></td>
-      </tr>
-      <tr>
-        <td>10:15 – 10:45</td>
-        <td>Koordinatenformate</td>
-        <td><span class="unit-tag"><a href="unit02/unit02-04_Koordinatenformate.html">Einheit 02</a></span></td>
+        <td class="term-number"><a href="unit02/unit02-00_overview.html">02</a></td>
+        <td class="date-cell">21.10.2026</td>
+        <td class="topic-cell">Dateneinträge & -Typen in Excel</td>
+        <td>Datentypen und -strukturen, Zellbezüge, Koordinatenformate</td>
       </tr>
       <!-- Termin 03 -->
       <tr>
-        <td rowspan="3" class="term-number">03</td>
-        <td rowspan="3" class="date-cell">28.10.2026</td>
-        <td rowspan="3" class="topic-cell">Datenübersicht in Excel I</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit02/unit02-00_overview.html">Einheit 02</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:15</td>
-        <td>Mittelwert und Co</td>
-        <td><span class="unit-tag"><a href="unit03/unit03-01_wichtigeWerte.html">Einheit 03</a></span></td>
-      </tr>
-      <tr>
-        <td>10:15 – 10:45</td>
-        <td>Zusammenfassen</td>
-        <td><span class="unit-tag"><a href="unit03/unit03-02_Zusammenfassen.html">Einheit 03</a></span></td>
+        <td class="term-number"><a href="unit03/unit03-00_overview.html">03</a></td>
+        <td class="date-cell">28.10.2026</td>
+        <td class="topic-cell">Datenübersicht in Excel I</td>
+        <td>Mittelwert und Co, Zusammenfassen</td>
       </tr>
       <!-- Termin 04 -->
       <tr>
-        <td rowspan="3" class="term-number">04</td>
-        <td rowspan="3" class="date-cell">04.11.2026</td>
-        <td rowspan="3" class="topic-cell">Datenübersicht in Excel II</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit03/unit03-00_overview.html">Einheit 03</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:15</td>
-        <td>Histogram & Co</td>
-        <td><span class="unit-tag"><a href="unit03/unit03-05_GraphischeKontrolle.html">Einheit 03</a></span></td>
-      </tr>
-      <tr>
-        <td>10:15 – 10:45</td>
-        <td>Zusammenfassen</td>
-        <td><span class="unit-tag"><a href="unit03/unit03-02_Zusammenfassen.html">Einheit 03</a></span></td>
+        <td class="term-number"><a href="unit04/unit04-00_overview.html">04</a></td>
+        <td class="date-cell">04.11.2026</td>
+        <td class="topic-cell">Datenübersicht in Excel II</td>
+        <td>Histogram & Co, Zusammenfassen</td>
       </tr>
       <!-- Termin 05 -->
       <tr>
-        <td rowspan="3" class="term-number">05</td>
-        <td rowspan="3" class="date-cell">11.11.2026</td>
-        <td rowspan="3" class="topic-cell">Datencleaning & Protokollierung</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit03/unit03-00_overview.html">Einheit 03</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:15</td>
-        <td>Daten filtern</td>
-        <td><span class="unit-tag"><a href="unit04/unit04-01_DatenFiltern.html">Einheit 04</a></span></td>
-      </tr>
-      <tr>
-        <td>10:15 – 10:45</td>
-        <td>Änderungen Protokollieren</td>
-        <td><span class="unit-tag"><a href="unit04/unit04-02_Protokollieren.html">Einheit 04</a></span></td>
+        <td class="term-number"><a href="unit05/unit05-00_overview.html">05</a></td>
+        <td class="date-cell">11.11.2026</td>
+        <td class="topic-cell">Datencleaning & Protokollierung</td>
+        <td>Daten filtern, Änderungen Protokollieren</td>
       </tr>
       <!-- Termin 06 -->
       <tr>
-        <td rowspan="4" class="term-number">06</td>
-        <td rowspan="4" class="date-cell">18.11.2026</td>
-        <td rowspan="4" class="topic-cell">Daten nutzbar machen - offline Erfahrung</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit04/unit04-00_overview.html">Einheit 04</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 05</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 05</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <<td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 05</a></span></td>
+        <td class="term-number"><a href="unit06/unit06-00_overview.html">06</a></td>
+        <td class="date-cell">18.11.2026</td>
+        <td class="topic-cell">Daten nutzbar machen - offline Erfahrung</td>
+        <td>Pearson-Korrelation, Scatterplots, Pivot-Tabellen, Häufigkeitstabellen und Histogramme</td>
       </tr>
       <!-- Termin 07 -->
       <tr>
-        <td rowspan="4" class="term-number">07</td>
-        <td rowspan="4" class="date-cell">25.11.2026</td>
-        <td rowspan="4" class="topic-cell">FAIR & Metadaten</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit05/unit05-00_overview.html">Einheit 05</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 06</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 06</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 06</a></span></td>
+        <td class="term-number"><a href="unit07/unit07-00_overview.html">07</a></td>
+        <td class="date-cell">25.11.2026</td>
+        <td class="topic-cell">FAIR & Metadaten</td>
+        <td>Formeln in Excel, Kopieren in Excel, Serien in Excel</td>
       </tr>
       <!-- Termin 08 -->
       <tr>
-        <td rowspan="4" class="term-number">08</td>
-        <td rowspan="4" class="date-cell">02.12.2026</td>
-        <td rowspan="4" class="topic-cell">Automatisierung</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit06/unit06-00_overview.html">Einheit 06</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 07</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 07</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 07</a></span></td>
+        <td class="term-number"><a href="unit08/unit08-00_overview.html">08</a></td>
+        <td class="date-cell">02.12.2026</td>
+        <td class="topic-cell">Automatisierung</td>
+        <td>FAIR-Prinzipien, README-Dokumentation, Versionskontrolle mit Git</td>
       </tr>
       <!-- Termin 09 -->
       <tr>
-        <td rowspan="4" class="term-number">09</td>
-        <td rowspan="4" class="date-cell">09.12.2026</td>
-        <td rowspan="4" class="topic-cell">Eigenschaften von Geodaten, Koordinaten & Projektionen</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit09/unit09-00_overview.html">Einheit 09</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit09/unit09-01_geodaten.html">Einheit 09</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit09/unit09-02_koordinaten.html">Einheit 09</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit09/unit09-03_projektionen.html">Einheit 09</a></span></td>
+        <td class="term-number"><a href="unit09/unit09-00_overview.html">09</a></td>
+        <td class="date-cell">09.12.2026</td>
+        <td class="topic-cell">Eigenschaften von Geodaten, Koordinaten & Projektionen</td>
+        <td>Eigenschaften von Geodaten, Koordinaten, Kartenprojektionen</td>
       </tr>
       <!-- Termin 10 -->
       <tr>
-        <td rowspan="4" class="term-number">10</td>
-        <td rowspan="4" class="date-cell">16.12.2026</td>
-        <td rowspan="4" class="topic-cell">Geodatenmodelle & Einstieg in QGIS</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit08/unit08-00_overview.html">Einheit 10</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 10</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 10</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 10</a></span></td>
+        <td class="term-number"><a href="unit10/unit10-00_overview.html">10</a></td>
+        <td class="date-cell">16.12.2026</td>
+        <td class="topic-cell">Geodatenmodelle & Einstieg in QGIS</td>
+        <td>Geodatenmodelle, QGIS-Oberfläche und Projekte, lokale Datenquellen, Web Map Services</td>
       </tr>
       <!-- Winterpause Row -->
       <tr class="break-row">
-        <td colspan="6">
+        <td colspan="4">
           <strong>Winterpause:</strong> 23.12.2026 bis 06.01.2027 (Ausfalltermine: 23.12., 30.12.2026 & 06.01.2027)
         </td>
       </tr>
       <!-- Termin 11 -->
       <tr>
-        <td rowspan="4" class="term-number">11</td>
-        <td rowspan="4" class="date-cell">13.01.2027</td>
-        <td rowspan="4" class="topic-cell">Vektordaten I: Punkte & Beobachtungen</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit09/unit09-00_overview.html">Einheit 11</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 11</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 11</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 11</a></span></td>
+        <td class="term-number"><a href="unit11/unit11-00_overview.html">11</a></td>
+        <td class="date-cell">13.01.2027</td>
+        <td class="topic-cell">Vektordaten I: Punkte & Beobachtungen</td>
+        <td>Punktdaten, GBIF-Occurrence-Records, Koordinaten in QGIS importieren, Punktlayer prüfen und interpretieren</td>
       </tr>
       <!-- Termin 12 -->
       <tr>
-        <td rowspan="4" class="term-number">12</td>
-        <td rowspan="4" class="date-cell">20.01.2027</td>
-        <td rowspan="4" class="topic-cell">Vektordaten II: Linien & Flächen</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit 12</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 12</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 12</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 12</a></span></td>
+        <td class="term-number"><a href="unit12/unit12-00_overview.html">12</a></td>
+        <td class="date-cell">20.01.2027</td>
+        <td class="topic-cell">Vektordaten II: Linien & Flächen</td>
+        <td>Linien- und Polygongeometrien, Geoportale und Metadaten, Vektordaten in QGIS, räumliche Auswahl</td>
       </tr>
       <!-- Termin 13 -->
       <tr>
-        <td rowspan="4" class="term-number">13</td>
-        <td rowspan="4" class="date-cell">27.01.2027</td>
-        <td rowspan="4" class="topic-cell">Rasterdaten</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit 13</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 13</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 13</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 13</a></span></td>
+        <td class="term-number"><a href="unit13/unit13-00_overview.html">13</a></td>
+        <td class="date-cell">27.01.2027</td>
+        <td class="topic-cell">Rasterdaten</td>
+        <td>Rastermodell, Rastereigenschaften, digitales Geländemodell, Rasterwerte in QGIS abfragen, Raster- und Vektordaten kombinieren</td>
       </tr>
       <!-- Termin 14 -->
       <tr>
-        <td rowspan="4" class="term-number">14</td>
-        <td rowspan="4" class="date-cell">03.02.2027</td>
-        <td rowspan="4" class="topic-cell">Karten & Geo-Workflow</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit 14</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 14</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 14</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 14</a></span></td>
+        <td class="term-number"><a href="unit14/unit14-00_overview.html">14</a></td>
+        <td class="date-cell">03.02.2027</td>
+        <td class="topic-cell">Karten & Geo-Workflow</td>
+        <td>Symbolisierung, Klassifizierung, Kartenlayout, vollständiger Geo-Workflow</td>
       </tr>
       <!-- Termin 15 -->
       <tr>
-        <td rowspan="4" class="term-number">15</td>
-        <td rowspan="4" class="date-cell">10.02.2027</td>
-        <td rowspan="4" class="topic-cell">Abschluss</td>
-        <td>09:15 – 09:30</td>
-        <td>Recap & offene Fragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_overview.html">Einheit 15</a></span></td>
-      </tr>
-      <tr>
-        <td>09:30 – 10:00</td>
-        <td>Input</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 15</a></span></td>
-      </tr>
-      <tr>
-        <td>10:00 – 10:30</td>
-        <td>Demonstration & Übung</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 15</a></span></td>
-      </tr>
-      <tr>
-        <td>10:30 – 10:45</td>
-        <td>Wiederholung & Abschlussfragen</td>
-        <td><span class="unit-tag"><a href="unit??/unit??-??_?????.html">Einheit 15</a></span></td>
+        <td class="term-number"><a href="unit15/unit15-00_overview.html">15</a></td>
+        <td class="date-cell">10.02.2027</td>
+        <td class="topic-cell">Abschluss</td>
+        <td>Ergebnisse zusammenführen, Karten und Analysen dokumentieren, Abschluss und Ausblick</td>
       </tr>
     </tbody>
   </table>

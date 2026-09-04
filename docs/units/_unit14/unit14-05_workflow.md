@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit14/hero-unit14.jpg
-  image_description: "Workflow von der Fragestellung zur dokumentierten Karte"
-  caption: "Eigene Darstellung"
+  image_description: "Fertig gestaltete thematische Karte mit Höhenrelief, Flusslauf und kartographischen Nebenelementen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Introtext: Die bisher einzeln erlernten Schritte zu einem vollständigen, nachvollziehbaren Geo-Workflow verbinden. -->

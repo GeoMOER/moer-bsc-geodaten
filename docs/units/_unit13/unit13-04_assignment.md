@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit13/hero-unit13.jpg
-  image_description: "Übertragung eines Rasterwertes auf einen Beobachtungspunkt"
-  caption: "Eigene Darstellung"
+  image_description: "Digitales Geländemodell, das in sichtbare Rasterzellen mit markierten Beobachtungspunkten übergeht"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Hausaufgabe 13: Rastereigenschaften und Höhenwerte an Beobachtungspunkten -->

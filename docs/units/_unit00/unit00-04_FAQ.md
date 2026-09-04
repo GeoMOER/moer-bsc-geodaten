@@ -3,8 +3,8 @@ title: FAQ
 published: true
 permalink: /unit00/unit00-04_FAQ.html
 header:
-  image: "/assets/images/title.png"
-  caption: 'Image: [solar.empire via flickr.com](https://www.flickr.com/photos/solar-empire/23815961328/) [CC BY-NC 2.0 DEED](https://creativecommons.org/licenses/by-nc/2.0/)'
+  image: "/assets/images/unit00/hero-unit00-digital-learning.png"
+  caption: 'KI-generierte Illustration für digitales Lernen und How-to-Materialien'
 ---
 
 <!-- auszufüllen -->

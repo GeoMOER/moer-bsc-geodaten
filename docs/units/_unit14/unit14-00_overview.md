@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit14/hero-unit14.jpg
-  image_description: "Prozesskette von Fragestellung und Zielgruppe bis zu Export, Interpretation und Unsicherheiten"
-  caption: "Eigene Darstellung"
+  image_description: "Fertig gestaltete thematische Karte mit Höhenrelief, Flusslauf und kartographischen Nebenelementen"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
