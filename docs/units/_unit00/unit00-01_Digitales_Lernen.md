@@ -1,5 +1,5 @@
 ---
-title: Digital learning
+title: Lehr- und Lernumgebung
 published: true
 toc: true
 header:
@@ -7,27 +7,37 @@ header:
   caption: 'KI-generierte Illustration für digitales Lernen und How-to-Materialien'
 ---
 
-Dieser Kurs ist als sogenanntes "Blended-Learning"-Modul konzipiert, auch wenn die bereitgestellten Einführungen, Erklärungen und Beispiele auch für das Selbststudium nützlich sein können.
+Dieser Kurs verbindet selbstständiges Lernen mit gemeinsamen Präsenzterminen. Diese Kombination wird **Blended Learning** genannt.
 
-Sie können hier die Inhalte, die im Kurs besprochen werden, nachholen und vorbereiten.
-Bitte beachten Sie jedoch, dass Übungen, die Beantwortung offener Fragen sowie der direkte Austausch und interaktive Diskussionen ausschließlich in den Präsenzterminen stattfinden. 
-Die Materialien auf dieser Seite dienen der Vor- und Nachbereitung, können den Kursbesuch selbst aber nicht ersetzen: Nur im Kurs haben Sie die Möglichkeit, Missverständnisse sofort zu klären. Wir empfehlen daher ausdrücklich die aktive Teilnahme am Kurs.
+Zur Lehr- und Lernumgebung gehören diese öffentliche Kurswebseite (=HTML Lernumgebung), der geschützte ILIAS-Kurs und die Präsenztermine. Diese drei Bestandteile erfüllen unterschiedliche Aufgaben.
 
-## Ilias
+## HTML Lernumgebung
 
-Ilias ist der von der Universität Marburg angebotene Kursraum.
-Wir nutzen Ilias hauptsächlich zur Verwaltung des Kurses und zur Bereitstellung kleinerer statischer Dokumente. Studierende laden ihre Aufgaben ebenfalls auf die Ilias-Kursseite hoch.
+Diese Kurswebseite ist Ihre wichtigste Lernumgebung. Hier finden Sie Einführungen, Erklärungen, Beispiele und Aufgabenstellungen. Sie können damit die Präsenztermine vor- und nachbereiten oder einzelne Inhalte noch einmal wiederholen.
 
-Den Link zum Ilias-Bereich dieses Kurses findest du [hier](New ILIAS Link){:target="_blank"}.
+Die Kurswebseite ist öffentlich zugänglich. Für den Zugriff benötigen Sie keinen Studierendenaccount.
 
-Bitte beachte, dass du dich mit deinem Studierendenaccount anmelden musst.
+## ILIAS
 
+ILIAS ist der geschützte digitale Kursraum der Universität Marburg. Dort bearbeiten Sie die 14 Hausaufgaben und die vier Tests. Außerdem finden Sie dort organisatorische Informationen und weitere Kursdokumente.
 
-## HTML-Lernumgebung
+Für den Zugriff auf ILIAS benötigen Sie Ihren Studierendenaccount.
 
-Deine primäre Lernumgebung ist diese öffentliche Homepage, die auf GitHub erstellt wurde.
-Hier findest du Lernmaterialien, Aufgaben und Informationen zum Kurssyllabus.
+**[PLATZHALTER: Link zum ILIAS-Kurs]**
+
+## Warum gibt es regelmäßig Hausaufgaben?
+
+Die Hausaufgaben helfen Ihnen, die Inhalte des letzten Termins nachzubereiten und sich auf den nächsten Termin vorzubereiten. Ihre Antworten zeigen uns, bei welchen Themen noch Verständnisprobleme bestehen. Diese greifen wir zu Beginn des folgenden Präsenztermins auf und klären sie gemeinsam.
+
+Dieses Vorgehen wird **Just-in-Time Teaching (JiTT)** genannt. Ihre Bearbeitung der Hausaufgaben hilft uns somit, gezielt auf auftretende Schwierigkeiten einzugehen.
+
+## Präsenztermine
+
+In den Präsenzterminen werden Ihnen die Lerninhalte praktisch vermittelt. Dort können Sie Fragen stellen, Verständnisprobleme klären und sich je nach Format mit anderen Studierenden austauschen. Die Materialien auf der Kurswebseite unterstützen Sie beim Lernen, ersetzen aber nicht die aktive Teilnahme am Kurs.
 
 ## Tutorium
 
-Zusätzlich zum Kurs bieten wir auch ein Tutorium auf freiwilliger Basis an. Sollten Sie Hilfe bei Ihren Arbeitsblättern benötigen, werden unsere Tutor*innen Ihnen weiterhelfen.
+Zusätzlich zum Kurs bieten wir ein freiwilliges Tutorium an. Dort erhalten Sie Unterstützung bei Fragen zu den Lerninhalten und Hausaufgaben.
+
+- Termin: **[PLATZHALTER]**
+- Raum oder Zugangslink: **[PLATZHALTER]**
