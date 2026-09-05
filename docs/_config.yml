@@ -24,7 +24,7 @@
 
 # Serve on GitHub
 url: https://geomoer.github.io
-baseurl: "/moer-bsc-geodaten/"
+baseurl: "/moer-bsc-geodaten"
 
 search: true
 ##### Title ###################################################################
