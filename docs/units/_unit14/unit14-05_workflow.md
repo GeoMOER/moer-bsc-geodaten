@@ -12,6 +12,19 @@ header:
 
 ## Der vollständige Workflow
 
+Diese Seite bündelt den gesamten Arbeitsweg als Nachschlagewerk. In der 90-Minuten-Sitzung wiederholen wir die Analysen aus Units 11–13 nicht. Wir verwenden das [Marburger Übungspaket]({{ '/material/marburg.html' | relative_url }}) und das Projekt `unit14_start.qgz`. Darin liegen die 35 Nachweise mit gültiger Höhe bereits als Ersatzdaten vor. Die folgenden ausführlichen Schritte dienen auch der freiwilligen Vertiefung und eigenen Weiterarbeit.
+
+### Verbindlicher Weg in der gemeinsamen Sitzung
+
+1. `unit14_start.qgz` öffnen und als `unit14_abschluss.qgz` speichern,
+2. die beiden vorbereiteten Klassifizierungen vergleichen und eine Methode mit fünf Klassen umsetzen,
+3. Titel und Legende im vorhandenen Layout überarbeiten sowie Kartenausschnitt, Maßstab und Quellen kontrollieren,
+4. `abschlusskarte_unit14.pdf` und `abschlusskarte_unit14.png` (150 dpi) exportieren und öffnen,
+5. im Partnercheck eine wichtige Verbesserung übernehmen und den betroffenen Export erneuern und
+6. Klassifizierung, Quellen und eine Aussagegrenze im vorhandenen `documentation/processing_notes.md` festhalten.
+
+Die Schritte 1–7 des vollständigen Workflows unten beschreiben, wie die vorbereiteten Eingangsdaten entstanden sind. Ihre eigenständige Wiederholung sowie ein neu angelegtes Kartenlayout sind Vertiefung.
+
 In den vorherigen Units haben wir einzelne Bestandteile räumlicher Datenarbeit kennengelernt:
 
 * Geodaten, Koordinaten und Projektionen,
@@ -76,7 +89,7 @@ Wenn darauf keine klare Antwort möglich ist, sollte der Layer nicht in der Absc
 Verwenden Sie eine vollständige Projektstruktur:
 
 ```text
-unit14_workflow/
+marburg_geodaten/
   data_raw/
   data_intermediate/
   data_output/
@@ -119,8 +132,8 @@ Prüfen Sie für jeden Layer:
 
 1. Erstellen Sie ein neues QGIS-Projekt.
 2. Speichern Sie es als `unit14_workflow.qgz`.
-3. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
-4. Prüfen Sie, ob relative Pfade für das gemeinsam abgegebene Projekt verwendet werden sollen.
+3. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`EPSG:25832`**.
+4. Verwenden Sie relative Datenpfade, damit der gesamte Arbeitsordner verschoben werden kann.
 5. Laden Sie zunächst nur die notwendigen Layer.
 6. Benennen Sie die Layer fachlich verständlich.
 
@@ -164,7 +177,7 @@ Verwenden Sie möglichst bereits geprüfte Ergebnisse aus den vorherigen Units. 
 
 1. GBIF-Daten nach Art, Zeitraum oder Datenqualität filtern,
 2. Rasterwerte an den geprüften Punkten abtasten,
-3. Punkte ohne gültigen Höhenwert kennzeichnen oder begründet ausschließen,
+3. für die Höhenklassenkarte nur `"hoehe_m" IS NOT NULL` auswählen; die 21 Nachweise ohne Höhe bleiben im ursprünglichen Unit-13-Layer erhalten,
 4. Kontextlayer auf das Untersuchungsgebiet beschränken,
 5. Ergebnisse in einem GeoPackage speichern.
 
@@ -221,7 +234,7 @@ Prüfen Sie die Karte sowohl in Gesamtansicht als auch in der späteren Layoutgr
 
 ## 10. Kartenlayout erstellen
 
-Erstellen Sie ein Drucklayout mit dem vorgegebenen Seitenformat.
+Passen Sie in der Sitzung das vorbereitete A4-Querformatlayout `abschlusskarte_unit14` an. Ein eigenes neues Layout ist eine mögliche Vertiefung.
 
 Mindestens erforderlich sind:
 
@@ -246,9 +259,11 @@ Die Legende darf nur Informationen enthalten, die in der Karte benötigt werden.
 Exportieren Sie die Karte als:
 
 ```text
-figures/beobachtungen_hoehenlagen.pdf
-figures/beobachtungen_hoehenlagen.png
+figures/abschlusskarte_unit14.pdf
+figures/abschlusskarte_unit14.png
 ```
+
+Verwenden Sie für das PNG in der gemeinsamen Sitzung **150 dpi**. Eine höhere Auflösung für den Druck gehört zur späteren Anpassung an ein konkretes Ausgabeformat.
 
 Prüfen Sie beide Dateien außerhalb von QGIS:
 
@@ -292,6 +307,8 @@ Nennen Sie mindestens:
 Die Klassifizierung ist selbst eine Quelle möglicher Interpretationsunterschiede. Eine andere Methode kann ein anderes sichtbares Muster erzeugen.
 
 ## 14. Workflow dokumentieren
+
+In der gemeinsamen Sitzung ergänzen Sie nur den Abschnitt **Unit 14: Abschlusskarte** in der vorhandenen Datei `documentation/processing_notes.md`. Die folgende vollständige Struktur dient der eigenständigen Rekonstruktion des gesamten Workflows.
 
 Erstellen Sie `documentation/processing_notes.md` mit dieser Struktur:
 

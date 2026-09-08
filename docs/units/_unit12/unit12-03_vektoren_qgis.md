@@ -26,10 +26,10 @@ Unsere Leitfrage lautet:
 
 ## Projekt vorbereiten
 
-Verwenden Sie eine übersichtliche Ordnerstruktur:
+Verwenden Sie den entpackten Ordner aus dem [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}):
 
 ```text
-unit12/
+marburg_geodaten/
   data_raw/
   data_output/
   documentation/
@@ -38,7 +38,7 @@ unit12/
 
 1. Öffnen Sie QGIS und erstellen Sie ein neues Projekt.
 2. Speichern Sie es als **`unit12_vectors.qgz`**.
-3. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
+3. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`EPSG:25832`**.
 4. Speichern Sie das Projekt erneut.
 
 Für Messungen in Metern beziehungsweise Quadratmetern benötigen wir ein geeignetes **projiziertes CRS**. Für Daten in Deutschland kann – abhängig vom Untersuchungsgebiet – beispielsweise ein UTM-Koordinatensystem geeignet sein.
@@ -52,8 +52,8 @@ Laden Sie diese drei Layer:
 | Layer | Geometrie | Herkunft |
 |---|---|---|
 | `unit11_results.gpkg/gbif_checked` | Punkt | Ergebnis aus Unit 11 oder schemaidentischer Ersatzlayer |
-| Gewässer | Linie | bereitgestellter Download oder Feature-Dienst |
-| Schutzgebiete | Polygon | bereitgestellter Download oder Feature-Dienst |
+| `gewaesser` | Linie | `data_raw/marburg_basis.gpkg` |
+| `schutzgebiete` | Polygon | `data_raw/marburg_basis.gpkg` |
 
 Je nach Datenquelle können Sie die Layer über **Layer hinzufügen**, den **Browser** oder die **Datenquellenverwaltung** laden.
 
@@ -102,19 +102,21 @@ Eine Attributauswahl nutzt Angaben aus der Tabelle. Damit können wir beispielsw
 - Beobachtungen aus einem bestimmten Zeitraum auswählen.
 
 1. Öffnen Sie die Attributtabelle des Polygonlayers.
-2. Untersuchen Sie die Werte des vorgegebenen Feldes **`[Feldname ergänzen]`**.
-3. Wählen Sie mit einem Ausdruck die vorgegebene Kategorie aus.
+2. Untersuchen Sie die Werte des vorgegebenen Feldes **`kategorie`**.
+3. Wählen Sie mit einem Ausdruck die Kategorie **FFH** aus.
 4. Prüfen Sie die Auswahl sowohl in der Tabelle als auch auf der Karte.
 
 Ein beispielhafter Ausdruck sieht so aus:
 
 ```text
-"feldname" = 'Wert'
+"kategorie" = 'FFH'
 ```
 
-Feldname und Wert müssen an den verwendeten Datensatz angepasst werden.
+Die Auswahl umfasst 10 FFH-Features. Exportieren Sie **nur die ausgewählten Features** nach `data_output/unit12_results.gpkg` als `schutzgebiete_auswahl`. Laden Sie diesen Layer und verwenden Sie ihn in den folgenden räumlichen Auswahlen als Vergleichslayer.
 
 ## Längen und Flächen bestimmen
+
+Dieser zusätzliche Arbeitsschritt ist freiwillige Vertiefung. Für die Kernübung gehen wir direkt zur räumlichen Auswahl über.
 
 Linien besitzen eine Länge; Polygone besitzen Fläche und Umfang. Diese Größen können wir mit dem Werkzeug **Geometrieattribute hinzufügen** berechnen.
 
@@ -144,7 +146,7 @@ Wir nutzen das Werkzeug **Nach Position selektieren**. Es benötigt:
 1. Öffnen Sie **Nach Position selektieren**.
 2. Wählen Sie die GBIF-Beobachtungen als Eingabelayer.
 3. Verwenden Sie die räumliche Beziehung **schneidet** (`intersects`).
-4. Wählen Sie die Schutzgebiete als Vergleichslayer.
+4. Wählen Sie `schutzgebiete_auswahl` als Vergleichslayer.
 5. Führen Sie das Werkzeug aus.
 6. Öffnen Sie die Attributtabelle des Punktlayers und zeigen Sie nur ausgewählte Features an.
 
@@ -162,7 +164,7 @@ Wiederholen Sie die räumliche Auswahl:
 
 1. Gewässer als Eingabelayer,
 2. **schneidet** als räumliche Beziehung,
-3. Schutzgebiete als Vergleichslayer.
+3. `schutzgebiete_auswahl` als Vergleichslayer.
 
 Notieren Sie:
 

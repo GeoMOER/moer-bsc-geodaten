@@ -233,7 +233,9 @@ Speichern Sie vor dem Vergleich gegebenenfalls Screenshots oder notieren Sie die
 
 ## Methoden vergleichen
 
-Erstellen Sie für denselben Punktlayer drei Varianten:
+In der Sitzung vergleichen wir `ersatz/klassifizierung_intervalle.png` und `ersatz/klassifizierung_quantile.png` aus dem [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}). Beide zeigen dieselben 35 Nachweise mit fünf Klassen und derselben Farbpalette. Dadurch untersuchen wir gezielt den Einfluss der Methode. Anschließend setzen wir eine der beiden Methoden mit ebenfalls fünf Klassen in QGIS um; weitere Varianten gehören nicht zum Pflichtumfang.
+
+Als freiwillige Vertiefung können Sie für denselben Punktlayer drei Varianten erstellen:
 
 1. gleiche Intervalle,
 2. Quantile,

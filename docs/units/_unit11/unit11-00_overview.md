@@ -14,7 +14,7 @@ header:
 
 In der letzten Kurssitzung haben wir Vektor und Raster als grundlegende Modelle räumlicher Daten kennengelernt. Wir haben erste lokale Layer in QGIS geladen, ein Projekt organisiert und einen WMS aus einem Geoportal eingebunden. Dabei wurde deutlich, dass Datenmodell, Datenquelle und Darstellungsform voneinander unterschieden werden müssen.
 
-Bevor wir mit dem neuen Lernabschnitt beginnen, klären wir offene Fragen zu QGIS, Layern, Attributtabellen, CRS und webbasierten Geodatendiensten.
+Zu Beginn besprechen wir **10 Minuten lang die JiTT-Antworten zu Unit 10**. An ein bis zwei ausgewählten Verständnisfragen klären wir die wichtigsten offenen Punkte und knüpfen an die vorige Sitzung an.
 
 <!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 
@@ -49,27 +49,33 @@ Die wiederkehrende Arbeitslogik lautet:
 
 ## Lernziele
 
-Am Ende dieser Unit sind Studierende in der Lage, ...
+### Verbindliche Kernziele
 
-* Punktdaten als Teil des Vektormodells einzuordnen,
-* Geometrie und Attribute eines Punktfeatures zu unterscheiden,
-* geeignete und ungeeignete Anwendungen des Punktmodells zu benennen,
-* tabellarische Koordinatenfelder zu erkennen und auf Plausibilität zu prüfen,
-* einen GBIF Occurrence Record als dokumentierten Artnachweis zu erklären,
-* zentrale GBIF-Felder wie Artname, Datum, Koordinaten, Datengrundlage und Koordinatenunsicherheit zu interpretieren,
-* typische Einschränkungen von Beobachtungsdaten wie räumliche Verzerrung, Dubletten und fehlende Nachweise zu beschreiben,
-* eine koordinatenhaltige Textdatei korrekt als Punktlayer in QGIS zu importieren,
-* Punktfeatures über die Attributtabelle auszuwählen und zu filtern,
-* einen importierten Punktlayer als GeoPackage zu speichern und
-* GBIF-Datenquelle, Download-DOI, Lizenz und Verarbeitungsschritte nachvollziehbar zu dokumentieren.
+Am Ende der gemeinsamen Sitzung sind Studierende in der Lage, ...
+
+* Geometrie und Attribute eines Punktfeatures zu unterscheiden und einen GBIF Occurrence Record als dokumentierten Nachweis einzuordnen,
+* Koordinatenfelder einer Textdatei zu erkennen, auf Plausibilität zu prüfen und mit dem richtigen Import-CRS als Punktlayer in QGIS zu laden,
+* zentrale GBIF-Felder und Einschränkungen der Beobachtungsdaten zu beurteilen und eine begründete Qualitätsregel als Auswahl anzuwenden,
+* die ausgewählten Punktfeatures in das gemeinsame Ausgabe-CRS zu transformieren, als GeoPackage zu speichern und das Ergebnis zu kontrollieren und
+* Datenquelle, Lizenz, Auswahlregel und Verarbeitung zu dokumentieren sowie eine durch die Daten gedeckte Aussage zur Punktkarte zu formulieren.
+
+### Vertiefung und Nachschlagen
+
+Die ausführlichen Unterseiten ermöglichen außerdem, ...
+
+* weitere Anwendungen und Grenzen des Punktmodells zu vergleichen,
+* eigene GBIF-Suchen und Downloads einschließlich DOI und Zitation vorzubereiten und
+* zusätzliche zeitliche und fachliche Filter, Dublettenprüfungen, Qualitätsflags und Symbolisierungen zu untersuchen.
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 
 ## Organisatorisches
 
+[Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}). Entpacken Sie das gesamte Paket in einen lokalen Arbeitsordner. Alle folgenden Dateipfade beziehen sich auf diesen Ordner; Quellen und vorbereitete Dokumentationsvorlagen liegen in `documentation/`.
+
 Für die praktische Arbeit benötigen Sie QGIS sowie die bereitgestellte Auswahl von GBIF-Beobachtungen. Verwenden Sie während der Lehrveranstaltung den vorbereiteten Datensatz, damit alle mit derselben dokumentierten Datenversion arbeiten.
 
-Verwenden Sie **QGIS `[dieselbe verbindliche QGIS-LTR-Version wie in Unit 10 ergänzen]`** und das gemeinsame Projekt-CRS **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
+Verwenden Sie **QGIS `3.40`** und das gemeinsame Projekt-CRS **`EPSG:25832`**.
 
 Das verbindliche Übergabeprodukt dieser Unit ist:
 
@@ -78,31 +84,58 @@ data_output/unit11_results.gpkg
 └── gbif_checked
 ```
 
-Falls das eigene Ergebnis nicht verwendbar ist, steht ein schemaidentischer Ersatzlayer bereit: `[Downloadlink ergänzen]`.
+Falls das eigene Ergebnis nicht verwendbar ist, steht ein schemaidentischer Ersatzlayer bereit: `ersatz/unit11_results.gpkg`, Layer `gbif_checked`, im Übungspaket.
 
 ## Ablauf der Sitzung
 
-Die Unit ist für ungefähr **120 Minuten** ausgelegt.
+Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für neue Inhalte und angeleitete Übungen sowie 5 Minuten Abschluss. Erklärungen und Beispiele setzen keine vorherige Lektüre der Kursseiten voraus. Kurze Austauschrunden finden mit den Sitznachbarinnen und Sitznachbarn statt.
 
 | Zeit | Aktivität |
 |---:|---|
-| 0–15 Minuten | Einstieg: Beobachtung oder Verbreitung? |
-| 15–35 Minuten | Punktfeatures, Attribute und räumliche Unsicherheit |
-| 35–55 Minuten | GBIF, Herkunftsebenen, DOI und Lizenz |
-| 55–75 Minuten | Tabelle und Importparameter prüfen |
-| 75–100 Minuten | Punkte importieren und Qualitätsfelder untersuchen |
-| 100–115 Minuten | Auswahl dokumentieren und `gbif_checked` exportieren |
-| 115–120 Minuten | Exit-Ticket und Übergabeprüfung |
+| 0–10 Minuten | JiTT-Antworten zu Unit 10 besprechen und Verständnisfragen klären |
+| 10–25 Minuten | Punktfeature, Beobachtung und Verbreitung an einer Karte und einem GBIF-Record unterscheiden |
+| 25–35 Minuten | Vorbereitete Tabelle, Koordinatenfelder, Import-CRS und Quellenangabe gemeinsam prüfen |
+| 35–60 Minuten | Tabelle angeleitet importieren, Lage prüfen und eine begründete Qualitätsregel anwenden |
+| 60–75 Minuten | Auswahl als `gbif_checked` exportieren, erneut laden und kontrollieren |
+| 75–85 Minuten | Qualitätsentscheidung dokumentieren und eine vorsichtige Aussage zur Punktkarte formulieren |
+| 85–90 Minuten | Zentrale Ergebnisse sichern, eine Exit-Ticket-Frage gemeinsam beantworten und auf JiTT hinweisen |
+
+### Schwerpunkt und Umfang
+
+* **Kernübung:** Wir importieren die bereitgestellte GBIF-Tabelle und prüfen Koordinatenreihenfolge, Import-CRS und Lage. Eine gemeinsame Qualitätsregel wird auf den Datensatz angewendet; die Entscheidung und betroffene Recordzahl werden dokumentiert.
+* **Gemeinsame Besprechung:** An einem GBIF-Record erläutern wir Herkunft, DOI, Lizenz und Koordinatenunsicherheit. Fehlende Unsicherheitsangaben bedeuten nicht automatisch hohe Genauigkeit.
+* **Freiwillige Vertiefung:** Eigene GBIF-Suche und Downloads, weitere Filtervarianten, systematische Dublettenprüfung und zusätzliche Symbolisierungen sind nicht Teil der Kernübung.
+* **Ergebnissicherung:** `unit11_results.gpkg/gbif_checked` sowie Quellenangabe, Auswahlregel und Recordzahlen werden in der Sitzung gesichert. Die Punktkarte wird als Karte dokumentierter Nachweise interpretiert.
+
+Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Hausaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 11 in ILIAS**.
+
+<!-- Hinweise für Lehrende zur 90-Minuten-Sitzung:
+Einen kleinen dokumentierten GBIF-Ausschnitt, eine passende Qualitätsregel und eine Dokumentationsvorlage mit DOI und Lizenz vorbereiten. Die Regel muss zum tatsächlichen Schema passen; keine pauschale Löschung aller Records mit Qualitätsflags. Schemaidentischen Ersatzlayer für technische Probleme bereithalten, damit Exportprüfung und Interpretation gemeinsam abgeschlossen werden können.
+Bei mehr Klärungsbedarf im JiTT-Block einen zusätzlichen Vergleich oder eine Übungsvariante kürzen. Ergebnissicherung und Abschluss beibehalten. Aus den folgenden Exit-Ticket-Fragen eine passend zur Sitzung auswählen und kurz gemeinsam auflösen.
+-->
 
 ## Exit-Ticket
+
+Wir wählen zum Abschluss eine der folgenden Fragen aus und beantworten sie gemeinsam ohne Nachschlagen:
 
 1. Weshalb ist ein GBIF-Punkt nicht automatisch eine exakt lokalisierte Lebendbeobachtung?
 2. Welche drei Angaben müssen beim Import von `decimalLongitude` und `decimalLatitude` stimmen?
 3. Warum beschreibt `gbif_checked` dokumentierte Nachweise und nicht die vollständige Verbreitung einer Art?
 
-## Transfer für Lehramtsstudierende
+<a id="transfer-für-lehramtsstudierende"></a>
 
-Entwerfen Sie einen kurzen Unterrichtsimpuls zur kritischen Interpretation einer Punktkarte. Formulieren Sie Lernziel, zwei Leitfragen, eine erwartbare Fehlinterpretation und eine Ergebnissicherung. Die Lernenden sollen zwischen „kein Nachweis vorhanden“ und „Art nachweislich abwesend“ unterscheiden.
+## Gemeinsam eine Punktkarte interpretieren
+
+Diese Aktivität bearbeiten alle Studierenden im Zeitblock **75–85 Minuten** anhand der erzeugten Punktkarte oder des bereitgestellten Ersatzes. Prüfen Sie **2 Minuten zu zweit** die Aussage:
+
+> „In Bereichen ohne Punkte kommt der Feuersalamander nicht vor.“
+
+1. Erklären Sie, warum die Karte diese Aussage nicht belegt.
+2. Ersetzen Sie die Aussage durch einen fachlich angemessenen Satz über die dargestellten Nachweise.
+
+Wir besprechen **3 Minuten im Plenum** ausgewählte Formulierungen. Halten Sie den gemeinsam geklärten Satz im kurzen Ergebnisprotokoll fest.
+
+<!-- Erwartung: Die Karte zeigt dokumentierte Nachweise des verwendeten Datenausschnitts. Fehlende Punkte können unter anderem auf fehlende Erfassung oder die Datenauswahl zurückgehen; sie belegen keine Abwesenheit. -->
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 
@@ -118,11 +151,11 @@ Didaktische Schwerpunkte:
 - Keine Verbreitungskarte im strengen Sinn versprechen; zunächst Nachweisdaten kartieren.
 
 Vor Durchführung ergänzen:
-- GBIF-Download und DOI
+- API-Snapshot und Quelldatensatz-DOI
 - Datenstand und Filter des Downloads
 - verwendeter Artenname beziehungsweise alternatives Beispiel
 - Deutschland- oder Hessen-Grenzlayer
-- Abgabe- und Datenpfade
+- lokale Arbeits- und Datenpfade
 
 Geplante Unterseiten:
 - unit11-01_punktdaten.md

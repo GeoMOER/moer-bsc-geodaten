@@ -57,7 +57,19 @@ Bereiten Sie die Kartenansicht vor dem Layout vor:
 
 Unnötige Layer sollten nicht allein deshalb sichtbar bleiben, weil sie im Projekt vorhanden sind.
 
-## Neues Drucklayout anlegen
+## Vorbereitetes Drucklayout verwenden
+
+Für die gemeinsame Sitzung öffnen Sie `unit14_start.qgz` aus dem [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}) und speichern sofort eine Arbeitskopie als `unit14_abschluss.qgz` im selben Hauptordner. Öffnen Sie darin das vorhandene Layout `abschlusskarte_unit14`. Es verwendet die vorbereitete Auswahl mit gültigen Höhenwerten aus `ersatz/unit14_results.gpkg`.
+
+Verändern Sie in der Sitzung die Klassifizierung, den Titel und die Legende. Kontrollieren Sie Kartenausschnitt, Maßstab und Quellen und korrigieren Sie diese nur, wenn Sie einen konkreten Fehler feststellen. Fügen Sie keine weiteren Layer oder Layoutelemente hinzu. So bleibt genügend Zeit, beide Exporte zu prüfen und eine Rückmeldung einzuarbeiten.
+
+Die Verwendung eigener Ergebnisse ist freiwillige Vertiefung: Wählen Sie im Layer `gbif_mit_hoehe` zunächst `"hoehe_m" IS NOT NULL` aus und exportieren Sie nur diese Auswahl nach `data_output/unit14_results.gpkg` als `gbif_mit_hoehe_final`. Ersetzen Sie dann die Datenquelle des vorbereiteten Punktlayers durch diesen Layer und prüfen Sie Karte, Legende und die angegebenen Recordzahlen. Der ursprüngliche Unit-13-Layer mit den fehlenden Werten bleibt erhalten.
+
+<a id="neues-drucklayout-anlegen"></a>
+
+### Ein neues Drucklayout anlegen – Vertiefung
+
+Die folgenden Schritte zum vollständigen Neuanlegen eines Layouts dienen als Nachschlagewerk und freiwillige Vertiefung:
 
 1. Öffnen Sie **Projekt → Neues Drucklayout**.
 2. Geben Sie einen eindeutigen Namen ein, beispielsweise `abschlusskarte_unit14`.
@@ -65,7 +77,7 @@ Unnötige Layer sollten nicht allein deshalb sichtbar bleiben, weil sie im Proje
 4. Entscheiden Sie zwischen Hoch- und Querformat passend zur Form des Untersuchungsgebiets.
 5. Speichern Sie das QGIS-Projekt.
 
-Das Drucklayout ist Bestandteil des QGIS-Projekts. Ein Projekt kann mehrere Layouts enthalten.
+Das Drucklayout ist Bestandteil des QGIS-Projekts. Ein Projekt kann mehrere Layouts enthalten. Die folgenden Abschnitte erklären seine Bestandteile ausführlich; in der gemeinsamen Sitzung dienen sie als Checkliste für das bereits vorhandene Layout.
 
 ## Kartenelement hinzufügen
 
@@ -273,7 +285,7 @@ Geeignet für:
 * Webseiten,
 * schnelle Vorschau.
 
-Für eine druckfähige Abgabe kann beispielsweise eine Auflösung von **300 dpi** sinnvoll sein. Für reine Bildschirmdarstellung genügt häufig weniger. Beachten Sie die konkrete Aufgabenstellung.
+Exportieren Sie das PNG in der gemeinsamen Sitzung mit **150 dpi**. Das genügt für Bildschirmdarstellung und hält den Export zügig. Für eine spätere druckfähige Ausgabe können beispielsweise **300 dpi** sinnvoll sein.
 
 Exportieren Sie die Abschlusskarte beispielsweise als:
 
@@ -299,14 +311,15 @@ figures/abschlusskarte_unit14.png
 
 ## Kurze Übung
 
-Erstellen Sie ein A4-Layout mit:
+Überarbeiten Sie das vorbereitete A4-Layout mit:
 
 * einem Kartenelement,
 * einem aussagekräftigen Titel,
 * einer überarbeiteten Legende,
 * einem Maßstabsbalken,
-* einer Quellenangabe und
-* optional einem begründeten Nordpfeil.
+* einer Quellenangabe.
+
+Titel und Legende werden aktiv verändert. Kartenelement, Maßstabsbalken und Quellenangabe werden anhand der Leitfrage kontrolliert. Das Hinzufügen eines Nordpfeils oder weiterer Elemente gehört zur freiwilligen Vertiefung.
 
 Beantworten Sie anschließend:
 

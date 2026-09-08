@@ -22,10 +22,10 @@ Unsere Leitfrage lautet:
 
 ## Daten und Projekt vorbereiten
 
-Verwenden Sie eine übersichtliche Ordnerstruktur:
+Verwenden Sie den entpackten Ordner aus dem [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}):
 
 ```text
-unit13/
+marburg_geodaten/
   data_raw/
   data_output/
   documentation/
@@ -40,14 +40,16 @@ Benötigt werden:
 | geprüfte GBIF-Beobachtungen | Punktvektor | Positionen der Beobachtungen |
 | optional: Untersuchungsgebiet | Polygonvektor | räumliche Orientierung |
 
-Speichern Sie ein neues QGIS-Projekt als **`unit13_raster.qgz`** und stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**.
+Speichern Sie ein neues QGIS-Projekt als **`unit13_raster.qgz`** und stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: **`EPSG:25832`**.
 
 <!-- Lehrende: DGM-Ausschnitt, Höhenbezug, Einheit, Zellgröße, Lizenz und EPSG-Code verbindlich dokumentieren. -->
 
 ## Rasterlayer laden
 
+Das Lehrprodukt enthält 10-m-Mittelwerte aus den DGM1-Kacheln des amtlichen Marburger Downloadpakets. Es deckt nur einen Teil unseres 20-km-Rechtecks ab. Außerhalb der verfügbaren Kacheln steht NoData (-9999); dies ist keine Geländehöhe. Quellen, Befliegungsdaten und Bearbeitung sind in `documentation/quellen.md` und `documentation/dgm_kacheln.json` festgehalten.
+
 1. Öffnen Sie die **Datenquellenverwaltung** oder den QGIS-Browser.
-2. Wählen Sie die bereitgestellte Rasterdatei **`[Dateiname ergänzen].tif`**.
+2. Wählen Sie die bereitgestellte Rasterdatei **`data_raw/dgm_marburg_10m.tif`**.
 3. Fügen Sie den Rasterlayer zum Projekt hinzu.
 4. Benennen Sie den Layer im Layerfenster eindeutig, zum Beispiel **`DGM – Geländehöhe`**.
 5. Zoomen Sie auf den Layer.
@@ -154,6 +156,8 @@ Die letzte Antwort lautet **nein**: Die Symbolisierung verändert nur die sichtb
 
 ## Histogramm untersuchen
 
+Der ausführliche Histogrammvergleich ist freiwillige Vertiefung. In der Kernübung gehen wir nach der Darstellung zum Hinzufügen und Abtasten der GBIF-Punkte über.
+
 Öffnen Sie in den Rastereigenschaften den Bereich **Histogramm**. Falls nötig, lassen Sie das Histogramm berechnen.
 
 Beantworten Sie:
@@ -200,13 +204,15 @@ Mit dem Werkzeug **Rasterwerte abtasten** beziehungsweise **Sample raster values
 
 8. Führen Sie das Werkzeug aus und öffnen Sie die Attributtabelle des Ergebnislayers.
 
-Bei einem einbändigen Raster wird ein neues Feld für Band 1 angelegt. Abhängig von QGIS-Version und gewähltem Präfix kann es beispielsweise **`hoehe_1`** heißen. Prüfen Sie den tatsächlichen Feldnamen. Das verbindliche Feld für die Übergabe an Unit 14 heißt **`hoehe_m`**. Erstellen Sie es bei Bedarf kontrolliert als numerisches Feld, übernehmen Sie die Werte und dokumentieren Sie den Schritt.
+Bei einem einbändigen Raster wird ein neues Feld für Band 1 angelegt. Mit QGIS 3.40 und dem Präfix `hoehe_` heißt es **`hoehe_1`**. Prüfen Sie den tatsächlichen Feldnamen. Das verbindliche Feld für die Übergabe an Unit 14 heißt **`hoehe_m`**. Benennen Sie `hoehe_1` in `hoehe_m` um und behalten Sie den Typ Dezimalzahl bei. Dafür können Sie das Werkzeug **Felder überarbeiten** verwenden: Ändern Sie nur diesen Feldnamen und erhalten Sie die übrigen Felder. Falls Sie stattdessen ein neues Feld berechnen, entfernen Sie anschließend das überflüssige Zwischenfeld `hoehe_1`. Dokumentieren Sie den Schritt, damit eigenes Ergebnis und Ersatzlayer dasselbe Schema besitzen.
+
+Für den bereitgestellten Snapshot erwarten wir 35 gültige Höhenwerte und 21 `NULL`-Werte. Alle 56 Punkte bleiben im Ergebnis dieser Unit erhalten. Fehlende Werte werden nicht durch null ersetzt.
 
 > Der Punkt wird durch das Werkzeug nicht verschoben. Er erhält lediglich den Wert der Rasterzelle an seiner Position als zusätzliches Attribut.
 
 ## Ergebnis kontrollieren
 
-Prüfen Sie mindestens fünf Punkte einzeln:
+In der Sitzung prüfen wir einen Punkt mit gültiger Höhe und einen Punkt ohne Höhenwert gemeinsam. Die Kontrolle weiterer Punkte ist freiwillige Vertiefung:
 
 1. Wählen Sie einen Punkt in der Karte aus.
 2. Lesen Sie seinen neuen Höhenwert in der Attributtabelle ab.

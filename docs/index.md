@@ -32,13 +32,13 @@ feature_row_ilos:
 
 Raumbezogene Daten spielen in Wissenschaft, Planung und Gesellschaft eine zentrale Rolle. Sie helfen dabei, räumliche Zusammenhänge zu erkennen, Entwicklungen zu analysieren und Entscheidungen zu unterstützen.
 
-Durch neue Möglichkeiten der Datenerhebung und -analyse wächst die verfügbare Datenmenge stetig. Gleichzeitig steigt auch die Bedeutung eines guten Datenmanagements. Häufig wird dafür das Bild eines **Data Lake** verwendet: Unterschiedliche Daten fließen in einen gemeinsamen Datenspeicher und stehen dort für vielfältige Auswertungen bereit. Sein Potenzial lässt sich jedoch nur ausschöpfen, wenn die Daten auffindbar, verständlich, technisch nutzbar und hinsichtlich ihrer Qualität einschätzbar sind.
+Durch neue Möglichkeiten der Datenerhebung und -analyse wächst die verfügbare Datenmenge stetig. Gleichzeitig wird gutes Datenmanagement immer wichtiger. Ein **Data Lake** ist ein gemeinsamer Speicher für unterschiedliche Daten, die sich für verschiedene Auswertungen nutzen lassen. Dafür müssen die Daten auffindbar, verständlich und technisch nutzbar sein. Auch ihre Qualität muss sich beurteilen lassen.
 
-Fehlen dagegen aussagekräftige Dateinamen, klare Strukturen, geeignete Formate, Metadaten oder nachvollziehbare Bearbeitungsschritte, kann aus dem Data Lake schnell ein **Data Swamp** werden. In diesem „Datensumpf“ sind Daten zwar vorhanden, lassen sich aber nur schwer finden, verlässlich interpretieren oder erneut verwenden. Schlimmstenfalls führen unklare Herkunft, ungeprüfte Qualität oder ein falsch verstandener Raumbezug zu fehlerhaften Ergebnissen.
+Fehlen dagegen aussagekräftige Dateinamen, klare Strukturen, geeignete Formate, Metadaten (beschreibende Angaben zu den Daten) oder nachvollziehbare Bearbeitungsschritte, kann aus dem Data Lake schnell ein **Data Swamp** werden. In diesem „Datensumpf“ sind Daten zwar vorhanden, lassen sich aber nur schwer finden, verlässlich interpretieren oder erneut verwenden. Schlimmstenfalls führen unklare Herkunft, ungeprüfte Qualität oder ein falsch verstandener Raumbezug zu fehlerhaften Ergebnissen.
 
 Gutes Datenmanagement verhindert dieses Versumpfen. Es verbindet die strukturierte Ablage und Dokumentation von Daten mit ihrer kritischen Prüfung, Aufbereitung, Analyse und Visualisierung. Diese Fähigkeiten sind für wissenschaftliches und berufliches Arbeiten ebenso wichtig wie für das Studium: Wer Daten und Arbeitsschritte nachvollziehbar organisiert, kann Ergebnisse überprüfen, reproduzieren und später weiterverwenden.
 
-Der Kurs vermittelt deshalb grundlegende Kompetenzen für den strukturierten und kritischen Umgang mit Daten. Von digitalen Grundlagen über Tabellen, Datenbereinigung und Dokumentation führt er bis zur Arbeit mit Geodaten in QGIS. Anhand geographischer Fragestellungen lernen Sie, Daten zu recherchieren, zu beurteilen, aufzubereiten, zu analysieren und aussagekräftig zu visualisieren.
+Der Kurs vermittelt deshalb grundlegende Kompetenzen für den strukturierten und kritischen Umgang mit Daten. Von digitalen Grundlagen über Tabellen, Datenbereinigung und Dokumentation führt er bis zur Arbeit mit Geodaten im Geoinformationssystem QGIS. Anhand geographischer Fragestellungen lernen Sie, Daten zu recherchieren, zu beurteilen, aufzubereiten, zu analysieren und aussagekräftig zu visualisieren.
 
 
 ## Lernziele
@@ -48,12 +48,12 @@ Nach erfolgreichem Abschluss des Moduls sind Studierende in der Lage,
 * grundlegende Konzepte digitaler Daten, ihrer Speicherung, Formate und technischen Verarbeitung zu erklären,
 * tabellarische Daten strukturiert aufzubauen, zu bereinigen, zu transformieren und mit Tabellenkalkulationssoftware auszuwerten,
 * Datenqualität, Herkunft, Dokumentation und Eignung für eine Fragestellung kritisch zu beurteilen,
-* grundlegende Verfahren der deskriptiven Statistik anzuwenden und Ergebnisse angemessen zu interpretieren,
+* grundlegende Verfahren der deskriptiven (beschreibenden) Statistik anzuwenden und Ergebnisse angemessen zu interpretieren,
 * Daten, Metadaten und Bearbeitungsschritte nachvollziehbar und nach grundlegenden FAIR-Prinzipien zu organisieren,
 * Geodaten zu recherchieren sowie Raumbezug, Koordinatenreferenzsysteme, Vektor- und Rasterdaten zu verstehen und zu unterscheiden,
 * Geodaten in QGIS zu laden, aufzubereiten, zu analysieren und in geeigneten Formaten zu speichern,
 * Geodaten angemessen zu symbolisieren, zu klassifizieren und in übersichtlichen Karten zu visualisieren und
-* geographische Fragestellungen in einen nachvollziehbaren Arbeitsprozess von der Datenrecherche bis zur dokumentierten räumlichen Aussage zu übersetzen.
+* geographische Fragestellungen in nachvollziehbaren Schritten zu bearbeiten – von der Datenrecherche bis zur Dokumentation der räumlichen Ergebnisse.
 
 
 ## Syllabus
@@ -151,13 +151,13 @@ Nach erfolgreichem Abschluss des Moduls sind Studierende in der Lage,
         <td class="term-number"><a href="unit01/unit01-00_overview.html">01</a></td>
         <td class="date-cell">14.10.2026</td>
         <td class="topic-cell">Bits & Bytes - ein Einstieg in digitale Daten</td>
-        <td>Intro & Erwartungsmanagement, Hard- & Software, Laufwerke</td>
+        <td>Einführung und Erwartungen an den Kurs, Hardware und Software, Laufwerke</td>
       </tr>
       <!-- Termin 02 -->
       <tr>
         <td class="term-number"><a href="unit02/unit02-00_overview.html">02</a></td>
         <td class="date-cell">21.10.2026</td>
-        <td class="topic-cell">Dateneinträge & -Typen in Excel</td>
+        <td class="topic-cell">Dateneinträge und Datentypen in Excel</td>
         <td>Datentypen und -strukturen, Zellbezüge, Koordinatenformate</td>
       </tr>
       <!-- Termin 03 -->
@@ -172,21 +172,21 @@ Nach erfolgreichem Abschluss des Moduls sind Studierende in der Lage,
         <td class="term-number"><a href="unit04/unit04-00_overview.html">04</a></td>
         <td class="date-cell">04.11.2026</td>
         <td class="topic-cell">Datenübersicht in Excel II</td>
-        <td>Histogram & Co, Zusammenfassen</td>
+        <td>Histogramme und weitere Diagramme, Daten zusammenfassen</td>
       </tr>
       <!-- Termin 05 -->
       <tr>
         <td class="term-number"><a href="unit05/unit05-00_overview.html">05</a></td>
         <td class="date-cell">11.11.2026</td>
-        <td class="topic-cell">Datencleaning & Protokollierung</td>
-        <td>Daten filtern, Änderungen Protokollieren</td>
+        <td class="topic-cell">Datenbereinigung und Protokollierung</td>
+        <td>Daten filtern, Änderungen protokollieren</td>
       </tr>
       <!-- Termin 06 -->
       <tr>
         <td class="term-number"><a href="unit06/unit06-00_overview.html">06</a></td>
         <td class="date-cell">18.11.2026</td>
         <td class="topic-cell">Daten nutzbar machen - offline Erfahrung</td>
-        <td>Pearson-Korrelation, Scatterplots, Pivot-Tabellen, Häufigkeitstabellen und Histogramme</td>
+        <td>Pearson-Korrelation, Streudiagramme (Scatterplots), Pivot-Tabellen, Häufigkeitstabellen und Histogramme</td>
       </tr>
       <!-- Termin 07 -->
       <tr>

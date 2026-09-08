@@ -93,21 +93,22 @@ Fehlt eine wichtige Angabe, ist das ebenfalls eine Information: Wir können die 
 
 ## Zwei Datensätze für unser Beispiel
 
-Für die folgenden Übungen werden zwei vorbereitete Datensätze verwendet. Ergänzen Sie die Angaben anhand der jeweiligen Metadatenseite.
+Wir betrachten zwei amtliche Quellen gemeinsam. Die lokalen Ausschnitte sind bereits im [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}) enthalten.
 
 | Merkmal | Schutzgebiete | Gewässer |
 |---|---|---|
-| Titel | `[ergänzen]` | `[ergänzen]` |
-| Herausgeber | `[ergänzen]` | `[ergänzen]` |
+| Titel | Schutzgebiete Hessen: NSG und FFH | Gewässernetz 1:25.000 |
+| Herausgeber | HMLU; Bereitstellung HLNUG | HLNUG |
 | Geometrietyp | Polygon | Linie |
-| räumliche Abdeckung | `[ergänzen]` | `[ergänzen]` |
-| Datenstand | `[ergänzen]` | `[ergänzen]` |
-| CRS | `[ergänzen]` | `[ergänzen]` |
-| Zugang/Format | `[ergänzen]` | `[ergänzen]` |
-| Lizenz | `[ergänzen]` | `[ergänzen]` |
-| Quelle/URL | `[ergänzen]` | `[ergänzen]` |
+| räumliche Auswahl | Features, die das 20-km-Rechteck um Marburg schneiden | Features, die dasselbe Rechteck schneiden |
+| Abrufstand | 08.09.2026 | 08.09.2026 |
+| CRS | EPSG:25832 | EPSG:25832 |
+| lokale Datei | `data_raw/marburg_basis.gpkg`, Layer `schutzgebiete` | dieselbe Datei, Layer `gewaesser` |
+| Umfang | 22 Features: 12 NSG, 10 FFH | 412 Linienfeatures |
+| Nutzungsangaben | kostenfreie Nutzung mit Quellenvermerk; Bedingungen in `documentation/quellen.md` | CC BY 4.0; Quellenvermerk in `documentation/quellen.md` |
+| Quelle | [HLNUG Naturschutz](https://www.hlnug.de/themen/geografische-informationssysteme/geodienste/naturschutz) | [HLNUG Wasser](https://www.hlnug.de/themen/geografische-informationssysteme/geodienste/wasser) |
 
-<!-- Lehrende: Hier die im Kurs tatsächlich eingesetzten Datensätze und Metadatenlinks ergänzen. Wenn möglich, zusätzlich eine lokale Kopie als Ausweichlösung bereitstellen. -->
+Die Originalgeometrien bleiben vollständig erhalten und können über das Rechteck hinausreichen. Das Abrufdatum beschreibt den Snapshot, nicht das fachliche Erfassungsdatum. Die Attribute wurden für die Lehre ausgewählt und einheitlich benannt.
 
 ## Download oder Webdienst?
 
@@ -163,6 +164,8 @@ Nach dem Download oder Einbinden kontrollieren wir in QGIS:
 Erst danach verwenden wir den Datensatz für eine räumliche Auswertung.
 
 ## Übung: Einen Datensatz beurteilen
+
+Die eigenständige Suche und der Vergleich unten sind freiwillige Vertiefung. Im Zeitplan der Sitzung beurteilen wir gemeinsam die oben genannten Quellen.
 
 Suchen Sie in einem Geoportal nach einem Linien- oder Polygondatensatz für Hessen. Vergleichen Sie zwei Suchergebnisse und beantworten Sie für beide:
 

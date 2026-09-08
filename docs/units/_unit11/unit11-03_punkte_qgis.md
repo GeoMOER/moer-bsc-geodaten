@@ -34,10 +34,10 @@ Für die GBIF-Koordinaten dieser Übung gilt:
 
 ## Arbeitsordner vorbereiten
 
-Legen Sie für die Übung eine übersichtliche Ordnerstruktur an:
+Verwenden Sie den entpackten Ordner aus dem [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}). Speichern Sie das neue Projekt im Hauptordner:
 
 ```text
-unit11_punktdaten/
+marburg_geodaten/
   data_raw/
   data_output/
   documentation/
@@ -46,7 +46,7 @@ unit11_punktdaten/
 
 * `data_raw` enthält den unveränderten GBIF-Download oder die bereitgestellte Teilmenge.
 * `data_output` enthält von Ihnen erzeugte Geodaten.
-* `documentation` enthält DOI, Zitation, Filterbeschreibung und eigene Bearbeitungsnotizen.
+* `documentation` enthält Quelldatensatz-DOI, Zitation, Filterbeschreibung und eigene Bearbeitungsnotizen.
 
 Verändern Sie die Originaldatei in `data_raw` nicht. Korrekturen und Ausschlüsse werden in einer neuen Datei beziehungsweise einem neuen Layer gespeichert.
 
@@ -69,8 +69,8 @@ GBIF stellt einfache Occurrence-Downloads häufig als tabulatorgetrennte Textdat
 1. Starten Sie QGIS.
 2. Erstellen Sie ein neues Projekt.
 3. Speichern Sie es als `unit11_punktdaten.qgz` im Arbeitsordner.
-4. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: `[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`.
-5. Laden Sie den bereitgestellten Grenzlayer für Deutschland beziehungsweise das Untersuchungsgebiet.
+4. Stellen Sie das seit Unit 10 verwendete Projekt-CRS ein: `EPSG:25832`.
+5. Laden Sie aus `data_raw/marburg_basis.gpkg` den Layer `untersuchungsgebiet`. Er zeigt das didaktische Untersuchungsrechteck, keine Verwaltungsgrenze.
 
 Der Grenzlayer hilft, die Lage der importierten Punkte unmittelbar auf Plausibilität zu prüfen.
 
@@ -82,9 +82,9 @@ Der Grenzlayer hilft, die Lage der importierten Punkte unmittelbar auf Plausibil
 
 ### 2. Datei und Zeichencodierung wählen
 
-1. Wählen Sie die bereitgestellte GBIF-Datei aus.
+1. Wählen Sie `data_raw/gbif_feuersalamander_marburg.csv` aus. Lassen Sie die gleichnamige CSVT-Datei daneben liegen.
 2. Verwenden Sie, sofern nicht anders angegeben, `UTF-8` als Zeichencodierung.
-3. Wählen Sie das tatsächlich verwendete Trennzeichen.
+3. Wählen Sie **Komma** als Trennzeichen und aktivieren Sie die Erkennung der Feldtypen. Koordinaten und `coordinateUncertaintyInMeters` müssen Dezimalzahlen sein; `gbifID` und `occurrenceID` sind Kennungen.
 4. Prüfen Sie in der Vorschau, ob jede Variable in einer eigenen Spalte erscheint.
 
 Wenn die gesamte Zeile in einer einzigen Spalte steht, wurde sehr wahrscheinlich das falsche Trennzeichen gewählt.
@@ -176,6 +176,14 @@ Die genaue Feldbezeichnung und der erkannte Datentyp müssen zum bereitgestellte
 
 ## Eine Qualitätsentscheidung dokumentieren
 
+Für den gemeinsamen räumlichen Vergleich verwenden wir die Regel:
+
+```text
+"coordinateUncertaintyInMeters" > 0 AND "coordinateUncertaintyInMeters" <= 100
+```
+
+Damit wählen wir 56 der 79 Records aus; 23 Records mit 250 m angegebener Unsicherheit bleiben im Original erhalten. Die Schwelle ist eine begründbare Übungsentscheidung, kein allgemeingültiger Qualitätsstandard. Die vorhandenen Qualitätsflags werden besprochen und nicht pauschal als Ausschlussgrund verwendet. Weitere Regeln in der folgenden Tabelle sind freiwillige Vertiefung.
+
 Definieren Sie vor einem Ausschluss nachvollziehbare Regeln. Ein einfaches Prüfprotokoll kann so aussehen:
 
 | Regel | betroffene Records | Entscheidung | Begründung |
@@ -214,7 +222,7 @@ Der importierte Textlayer verweist weiterhin auf die Ausgangsdatei. Speichern Si
 3. Wählen Sie das Format **GeoPackage**.
 4. Speichern Sie die Datei als `data_output/unit11_results.gpkg`.
 5. Verwenden Sie den verbindlichen Layernamen `gbif_checked`.
-6. Verwenden Sie das gemeinsame Ausgabe-CRS: `[EPSG-Code ergänzen; identisch mit dem Projekt-CRS]`.
+6. Verwenden Sie das gemeinsame Ausgabe-CRS: `EPSG:25832`.
 7. Prüfen Sie, ob nur ausgewählte Features oder alle aktuell gefilterten Features exportiert werden sollen.
 8. Fügen Sie den gespeicherten Layer dem Projekt hinzu.
 
@@ -226,7 +234,7 @@ Das Import-CRS `EPSG:4326` beschreibt die vorhandenen Tabellenkoordinaten. Das A
 
 Speichern Sie im Ordner `documentation` eine kurze Textdatei mit:
 
-* GBIF-Download-DOI und vorgeschlagener Zitation,
+* Quelldatensatz-DOI `10.15468/uc1apo`, Quellenangabe und Hinweis auf den API-Snapshot ohne eigenen Download-DOI,
 * Datum des Zugriffs,
 * ursprünglichem Dateinamen,
 * verwendeten GBIF-Filtern,

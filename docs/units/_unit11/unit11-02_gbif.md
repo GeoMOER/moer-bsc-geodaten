@@ -184,25 +184,22 @@ Außerdem gilt:
 
 Für wissenschaftliche Arbeiten sollte eine gefilterte Auswahl als dokumentierter **GBIF Occurrence Download** erzeugt werden. Dafür ist ein GBIF-Benutzerkonto erforderlich. Der Download wird vorbereitet und erhält eine dauerhafte Kennung in Form eines **DOI**.
 
-Für die Lehrveranstaltung verwenden wir einen vorbereiteten Download:
+Für die Lehrveranstaltung verwenden wir einen kleinen, festgehaltenen **API-Snapshot** aus einem Quelldatensatz. Er lässt sich ohne GBIF-Benutzerkonto als Bestandteil des [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}) herunterladen.
 
 | Angabe | Wert |
 |---|---|
-| Taxon | *Salamandra salamandra* |
-| räumlicher Filter | `[ergänzen]` |
-| zeitlicher Filter | `[ergänzen]` |
-| weitere Filter | `[ergänzen]` |
-| Erstellungsdatum | `[ergänzen]` |
-| Download-DOI | `[ergänzen]` |
-| bereitgestellte Datei | `[ergänzen]` |
+| Taxon | *Salamandra salamandra*, GBIF-Schlüssel 2431776 |
+| Quelle | NABU&#124;naturgucker, Datensatz `6ac3f774-d9fb-4796-b3e9-92bf6c81c084` |
+| räumlicher Filter | 20 × 20 km um Marburg; Grenzen in `documentation/quellen.md` |
+| zeitlicher Filter | keine zusätzliche zeitliche Einschränkung |
+| weitere Filter | Nachweis vorhanden, Koordinaten vorhanden; einheitlicher Quelldatensatz |
+| Abrufdatum | 08.09.2026 |
+| Datensatz-DOI | [10.15468/uc1apo](https://doi.org/10.15468/uc1apo) |
+| eigener Download-DOI | keiner; der DOI oben bezeichnet den Quelldatensatz |
+| bereitgestellte Datei | `data_raw/gbif_feuersalamander_marburg.csv`, 79 Nachweise |
+| Lizenz | CC BY 4.0 |
 
-Bewahren Sie das vollständige Downloadarchiv beziehungsweise mindestens folgende Bestandteile auf:
-
-* verwendete Datendatei,
-* Download-DOI und vorgeschlagene Zitation,
-* Filterbeschreibung,
-* Informationen zu enthaltenen Datensätzen und
-* Lizenzangaben.
+Die genaue API-Abfrage, räumliche Auswahl und Eingangsprüfsummen sind im Paket dokumentiert. Bewahren Sie CSV, CSVT und den Ordner `documentation/` gemeinsam auf. In Unit 11 wenden wir darauf eine zusätzliche, begründete Regel zur Koordinatenunsicherheit an.
 
 ## GBIF-Daten korrekt zitieren
 
@@ -224,6 +221,8 @@ Unabhängig von der konkreten Lizenz gehören zu guter wissenschaftlicher Praxis
 * Beachtung möglicher Einschränkungen für sensible Daten.
 
 ## Kurze Übung
+
+In der Sitzung lesen wir einen bereitgestellten Record gemeinsam. Eigene Recordsuchen und weitere Filtervarianten dienen der freiwilligen Vertiefung.
 
 ### 1. Einen Record lesen
 

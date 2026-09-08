@@ -14,7 +14,7 @@ header:
 
 In der letzten Kurssitzung haben wir Punktdaten als Teil des Vektormodells untersucht. Aus tabellarischen GBIF-Nachweisen haben wir in QGIS einen Punktlayer erzeugt, Attribute und Qualitätsinformationen geprüft und eine dokumentierte Auswahl als GeoPackage gespeichert.
 
-Bevor wir mit dem neuen Lernabschnitt beginnen, klären wir offene Fragen zu Punktgeometrien, GBIF-Daten, Koordinatenimport, Attributfiltern und der vorsichtigen Interpretation von Beobachtungskarten.
+Zu Beginn besprechen wir **10 Minuten lang die JiTT-Antworten zu Unit 11**. An ein bis zwei ausgewählten Verständnisfragen klären wir die wichtigsten offenen Punkte und knüpfen an die vorige Sitzung an.
 
 <!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 
@@ -51,30 +51,35 @@ Die wiederkehrende Arbeitslogik lautet:
 
 ## Lernziele
 
-Am Ende dieser Unit sind Studierende in der Lage, ...
+### Verbindliche Kernziele
 
-* Punkt, Linie und Polygon als Geometrietypen des Vektormodells zu unterscheiden,
-* zu erklären, wie Linien und Polygone aus Koordinaten beziehungsweise Stützpunkten aufgebaut sind,
-* Geometrie, Feature und Attribut voneinander zu unterscheiden,
-* für eine Fragestellung einen geeigneten Vektorgeometrietyp auszuwählen,
-* den Einfluss von Maßstab, Generalisierung und Grenzdefinition auf Vektordaten zu beschreiben,
-* Geoportale nach geeigneten Vektordaten zu durchsuchen,
-* Metadaten, Downloadoptionen, WMS und WFS fachlich zu unterscheiden,
-* GeoPackage, GeoJSON und Shapefile grundlegend einzuordnen,
-* Linien- und Polygonlayer in QGIS zu laden, zu untersuchen und sinnvoll darzustellen,
-* Features über Attribute auszuwählen,
-* Punkte und Linien anhand ihrer räumlichen Beziehung zu Polygonen auszuwählen und
-* Datenquellen, Auswahlregeln, CRS und Ergebnisse nachvollziehbar zu dokumentieren.
+Am Ende der gemeinsamen Sitzung sind Studierende in der Lage, ...
+
+* Punkt, Linie und Polygon zu unterscheiden und für eine einfache Fragestellung einen passenden Vektorgeometrietyp auszuwählen,
+* die Eignung einer Vektordatenquelle anhand zentraler Metadaten zu prüfen und einen WMS von einem analysierbaren Download beziehungsweise WFS zu unterscheiden,
+* Linien- und Polygonlayer in QGIS zu laden und eine vorgegebene Attributauswahl durchzuführen,
+* Punkte und Linien mit der räumlichen Beziehung „schneidet“ (`intersects`) zu Polygonen auszuwählen, die Behandlung eines Grenzfalls zu erklären und die Ergebnisse dauerhaft zu speichern und
+* Datenquellen, CRS, Auswahlregeln, Featurezahlen und fachliche Grenzen des Ergebnisses nachvollziehbar zu dokumentieren.
+
+### Vertiefung und Nachschlagen
+
+Die ausführlichen Unterseiten ermöglichen außerdem, ...
+
+* Aufbau, Multipart-Geometrien, Generalisierung und Grenzdefinitionen von Linien und Polygonen genauer zu untersuchen,
+* GeoPackage, GeoJSON und Shapefile mit ihren jeweiligen Eigenschaften einzuordnen und
+* selbst nach Daten in Geoportalen zu suchen, einen WFS einzubinden sowie Längen- und Flächenattribute zu berechnen.
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 
 ## Organisatorisches
 
+[Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}). Entpacken Sie das gesamte Paket in einen lokalen Arbeitsordner. Alle folgenden Dateipfade beziehen sich auf diesen Ordner; Quellen und vorbereitete Dokumentationsvorlagen liegen in `documentation/`.
+
 Für die praktische Arbeit benötigen Sie QGIS, den geprüften GBIF-Punktlayer aus Unit 11 sowie die bereitgestellten Linien- und Polygondaten. Falls Ihr Ergebnis aus Unit 11 nicht verfügbar ist, wird ein einheitlicher Ersatzlayer bereitgestellt.
 
 Speichern Sie die unveränderten Eingangsdaten, eigene Ausgaben und Metadaten erneut in getrennten Unterordnern. Verwenden Sie für räumliche Messungen und Auswahlen das vorgegebene Projekt- und Ausgabe-CRS.
 
-Verwenden Sie dasselbe Projekt-CRS wie seit Unit 10: **`[EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]`**. Erwarteter Eingang ist `unit11_results.gpkg/gbif_checked`; der Ersatzlayer muss dasselbe Schema besitzen.
+Verwenden Sie dasselbe Projekt-CRS wie seit Unit 10: **`EPSG:25832`**. Erwarteter Eingang ist `unit11_results.gpkg/gbif_checked`; der Ersatzlayer muss dasselbe Schema besitzen.
 
 Das verbindliche Übergabeprodukt ist `data_output/unit12_results.gpkg` mit:
 
@@ -84,27 +89,53 @@ Das verbindliche Übergabeprodukt ist `data_output/unit12_results.gpkg` mit:
 
 ## Ablauf der Sitzung
 
-Die Unit ist für ungefähr **120 Minuten** ausgelegt.
+Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für neue Inhalte und angeleitete Übungen sowie 5 Minuten Abschluss. Erklärungen und Beispiele setzen keine vorherige Lektüre der Kursseiten voraus. Kurze Austauschrunden finden mit den Sitznachbarinnen und Sitznachbarn statt.
 
 | Zeit | Aktivität |
 |---:|---|
-| 0–20 Minuten | Linien, Polygone, Multipart und Generalisierung |
-| 20–40 Minuten | räumliche Beziehungen und Grenzfälle |
-| 40–60 Minuten | Geoportal, Metadaten, Download und WFS |
-| 60–80 Minuten | Layer laden, prüfen und gestalten |
-| 80–105 Minuten | Attribut- und räumliche Auswahl durchführen |
-| 105–115 Minuten | Ergebnisse exportieren und kontrollieren |
-| 115–120 Minuten | Exit-Ticket |
+| 0–10 Minuten | JiTT-Antworten zu Unit 11 besprechen und Verständnisfragen klären |
+| 10–25 Minuten | Linien, Polygone und räumliche Beziehungen einschließlich eines Grenzfalls gemeinsam klären |
+| 25–35 Minuten | An einem Geoportal Metadaten, Download und WFS unterscheiden |
+| 35–50 Minuten | Vorbereitete Layer laden, Schutzgebiete über Attribute auswählen und als Vergleichslayer speichern |
+| 50–70 Minuten | GBIF-Punkte und Gewässer mit „schneidet“ räumlich auswählen |
+| 70–80 Minuten | Beide räumlichen Ergebnisse exportieren und prüfen |
+| 80–85 Minuten | Ergebniszahlen und Unsicherheit an einer Schutzgebietsgrenze besprechen |
+| 85–90 Minuten | Zentrale Ergebnisse sichern, eine Exit-Ticket-Frage gemeinsam beantworten und auf JiTT hinweisen |
+
+### Schwerpunkt und Umfang
+
+* **Kernübung:** Wir arbeiten mit einem vorgegebenen Schutzgebiets- und Gewässerdatensatz. Nach einer angeleiteten Attributauswahl der Schutzgebiete wählen wir zuerst Punkte und anschließend Gewässer räumlich aus.
+* **Gemeinsame Besprechung:** Der Weg vom Geoportal zum Datenpaket wird demonstriert. „Schneidet“ und „liegt innerhalb“ vergleichen wir an einem Punkt auf der Polygongrenze.
+* **Freiwillige Vertiefung:** Eigene Portalsuche, WFS-Einrichtung, das Berechnen zusätzlicher Längen- und Flächenattribute sowie weitere Auswahlvarianten gehören nicht zum Pflichtumfang.
+* **Ergebnissicherung:** `schutzgebiete_auswahl`, `gbif_in_schutzgebieten` und `gewaesser_an_schutzgebieten` werden in `unit12_results.gpkg` gespeichert. Auswahlregeln und Featurezahlen werden kurz protokolliert.
+
+Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Hausaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 12 in ILIAS**.
+
+<!-- Hinweise für Lehrende zur 90-Minuten-Sitzung:
+Kleine räumliche Ausschnitte, eine konkrete Attributregel und ein Quellenblatt vorbereiten. Die ausgewählten Schutzgebiete vor der räumlichen Auswahl als eigenen Layer sichern und als Vergleichslayer verwenden. Für Portalprobleme eine lokale Metadatenseite oder einen Screenshot sowie geprüfte Ergebnislayer bereithalten. Bei Zeitverlust die zweite räumliche Auswahl gemeinsam demonstrieren und das geprüfte Ergebnis bereitstellen.
+Bei mehr Klärungsbedarf im JiTT-Block einen zusätzlichen Vergleich oder eine Übungsvariante kürzen. Ergebnissicherung und Abschluss beibehalten. Aus den folgenden Exit-Ticket-Fragen eine passend zur Sitzung auswählen und kurz gemeinsam auflösen.
+-->
 
 ## Exit-Ticket
+
+Wir wählen zum Abschluss eine der folgenden Fragen aus und beantworten sie gemeinsam ohne Nachschlagen:
 
 1. Wodurch unterscheiden sich Auswahl und neu gespeicherter Ergebnislayer?
 2. Welche räumliche Beziehung wurde für Punkte beziehungsweise Gewässer verwendet?
 3. Warum benötigen Messungen ein geeignetes projiziertes CRS?
 
-## Transfer für Lehramtsstudierende
+<a id="transfer-für-lehramtsstudierende"></a>
 
-Entwerfen Sie ein einfaches Schulbeispiel, in dem Punkte, Linien und Polygone gemeinsam eine räumliche Frage beantworten. Benennen Sie Lernziel, Layer, räumliche Beziehung, einen Grenzfall und eine gestufte Hilfestellung.
+## Gemeinsam einen räumlichen Grenzfall erklären
+
+Diese Aktivität bearbeiten alle Studierenden im Zeitblock **80–85 Minuten**. Betrachten Sie einen schematischen Beobachtungspunkt genau auf einer Schutzgebietsgrenze. Besprechen Sie **2 Minuten zu zweit**:
+
+1. Wird der Punkt bei „schneidet“ berücksichtigt, und wie unterscheidet sich das von „liegt innerhalb“?
+2. Was können wir über die tatsächliche Lage der Beobachtung sagen, wenn ihre Koordinate unsicher ist?
+
+Wir klären die Antworten **3 Minuten im Plenum** und beziehen sie auf die Auswahlregel unserer Übung. Halten Sie eine Einschränkung der räumlichen Aussage im Ergebnisprotokoll fest.
+
+<!-- Erwartung: intersects berücksichtigt den Randpunkt, within für einen Punkt auf dem Polygonrand nicht. Eine rechnerisch eindeutige Auswahl beseitigt die Unsicherheit der Beobachtungskoordinate nicht. -->
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 

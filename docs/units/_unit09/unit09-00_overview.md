@@ -14,7 +14,7 @@ header:
 
 In der letzten Kurssitzung haben wir uns damit beschäftigt, wie sich wiederkehrende Arbeitsschritte automatisieren und dadurch schneller, zuverlässiger und nachvollziehbarer ausführen lassen. Dabei haben wir gesehen, warum ein gut strukturierter und reproduzierbarer Arbeitsablauf meist besser ist als die wiederholte manuelle Bearbeitung einzelner Daten.
 
-Bevor wir mit dem neuen Lernabschnitt beginnen, klären wir offene Fragen zur letzten Sitzung.
+Zu Beginn besprechen wir **10 Minuten lang die JiTT-Antworten zu Unit 08**. An ein bis zwei ausgewählten Verständnisfragen klären wir die wichtigsten offenen Punkte und knüpfen an die vorige Sitzung an.
 
 <!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 
@@ -47,16 +47,23 @@ Dabei arbeiten wir mit anschaulichen Beispielen und typischen Problemen aus der 
 
 ## Lernziele
 
-Am Ende dieser Unit sind Studierende in der Lage, ...
+### Verbindliche Kernziele
 
-* Geodaten von nicht räumlich referenzierten Daten zu unterscheiden,
-* den Raumbezug einfacher Datensätze zu erkennen und zu beschreiben,
-* geographische Koordinaten als Längen- und Breitengrad zu lesen,
-* die Reihenfolge und Einheit von Koordinatenangaben zu überprüfen,
-* den Unterschied zwischen geographischen und projizierten Koordinatensystemen grundlegend zu erklären,
-* zu erläutern, warum Kartenprojektionen zu Verzerrungen führen,
-* die Bedeutung eines Koordinatenreferenzsystems und eines EPSG-Codes für die Arbeit mit Geodaten zu beschreiben und
-* typische Probleme durch fehlende oder falsch zugewiesene Koordinatenreferenzsysteme zu erkennen.
+Am Ende der gemeinsamen Sitzung sind Studierende in der Lage, ...
+
+* den Raumbezug einfacher Datensätze zu erkennen und Geodaten von Daten ohne nutzbaren Raumbezug zu unterscheiden,
+* geographische Koordinaten zu lesen und ihre Achsenreihenfolge, Einheit und Wertebereiche auf Plausibilität zu prüfen,
+* zu erklären, weshalb Koordinaten nur mit einem bekannten Koordinatenreferenzsystem und einer eindeutigen CRS-Angabe, beispielsweise einem EPSG-Code, zuverlässig nutzbar sind,
+* geographische und projizierte Koordinatensysteme grundlegend zu unterscheiden und die unvermeidlichen Verzerrungen von Kartenprojektionen zu erläutern und
+* das Zuweisen eines CRS vom Transformieren von Daten zu unterscheiden und typische CRS-Fehler zu erkennen.
+
+### Vertiefung und Nachschlagen
+
+Die ausführlichen Unterseiten ermöglichen außerdem, ...
+
+* verschiedene Formen des Raumbezugs, räumliche Ausdehnung, Maßstab und Lagegenauigkeit genauer zu vergleichen,
+* Koordinaten zwischen Dezimalgrad und Grad-Minuten-Sekunden umzurechnen sowie weitere CRS über EPSG-Codes zu recherchieren und
+* Projektionen für unterschiedliche räumliche Gebiete und Verwendungszwecke differenzierter zu beurteilen.
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 
@@ -75,36 +82,54 @@ Beachten Sie bei externen Diensten, dass die Projektion der sichtbaren Webkarte 
 
 ## Ablauf der Sitzung
 
-Die Unit ist für eine Sitzung von ungefähr **90 Minuten** ausgelegt.
+Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für neue Inhalte und angeleitete Übungen sowie 5 Minuten Abschluss. Erklärungen und Beispiele setzen keine vorherige Lektüre der Kursseiten voraus. Kurze Austauschrunden finden mit den Sitznachbarinnen und Sitznachbarn statt.
 
 | Zeit | Aktivität |
 |---:|---|
-| 0–10 Minuten | Einstieg mit dem unbeschrifteten Zahlenpaar `50,81 / 8,77` |
-| 10–25 Minuten | Raumbezug und Eigenschaften von Geodaten |
-| 25–40 Minuten | Breite, Länge, Wertebereiche und Reihenfolge |
-| 40–55 Minuten | Plausibilitätsprüfung einer Koordinatentabelle |
-| 55–70 Minuten | Kartenprojektionen und unvermeidbare Verzerrungen |
-| 70–82 Minuten | WGS 84, UTM, Web Mercator und EPSG-Codes |
-| 82–90 Minuten | Zuweisen und Transformieren; Exit-Ticket |
+| 0–10 Minuten | JiTT-Antworten zu Unit 08 besprechen und Verständnisfragen klären |
+| 10–20 Minuten | Raumbezug am Zahlenpaar `50,81 / 8,77` gemeinsam erschließen |
+| 20–35 Minuten | Breite, Länge, Einheiten und Reihenfolge erklären; Koordinaten zu zweit lesen |
+| 35–45 Minuten | Fünf Koordinatenpaare auf Plausibilität prüfen und gemeinsam auflösen |
+| 45–60 Minuten | Zwei Projektionsdarstellungen vergleichen und Verzerrungen besprechen |
+| 60–75 Minuten | WGS 84, UTM und Web Mercator drei Verwendungszwecken zuordnen |
+| 75–85 Minuten | CRS zuweisen oder transformieren: zwei Fehlerfälle gemeinsam begründen |
+| 85–90 Minuten | Zentrale Ergebnisse sichern, eine Exit-Ticket-Frage gemeinsam beantworten und auf JiTT hinweisen |
+
+### Schwerpunkt und Umfang
+
+* **Kernübung:** In „Koordinaten“ bearbeiten wir „Koordinaten lesen“ und „Daten prüfen“. Entscheidend sind Reihenfolge, Einheit, Wertebereich und Raumbezug.
+* **Gemeinsame Besprechung:** Projektionsvergleich und CRS-Auswahl erfolgen an vorgegebenen Beispielen. Jede Entscheidung wird kurz zu zweit begründet und anschließend im Plenum geklärt.
+* **Freiwillige Vertiefung:** Eigenständige Ortsrecherche, weitere EPSG-Recherchen und das Umrechnen von Grad-Minuten-Sekunden gehören nicht zum Pflichtumfang der Sitzung.
+* **Ergebnissicherung:** Am Ende halten wir fest, welche Angaben Koordinaten eindeutig machen und wann Zuweisen beziehungsweise Transformieren erforderlich ist.
+
+Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Hausaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 09 in ILIAS**.
+
+<!-- Hinweise für Lehrende zur 90-Minuten-Sitzung:
+Zahlenpaare, zwei Projektionsdarstellungen und zwei CRS-Fehlerfälle vorab für den Beamer bereithalten. Keine Softwareinstallation oder individuelle Portalsuche in dieser Sitzung einplanen.
+Bei mehr Klärungsbedarf im JiTT-Block einen zusätzlichen Vergleich oder eine Übungsvariante kürzen. Ergebnissicherung und Abschluss beibehalten. Aus den folgenden Exit-Ticket-Fragen eine passend zur Sitzung auswählen und kurz gemeinsam auflösen.
+-->
 
 ## Exit-Ticket
 
-Beantworten Sie zum Abschluss ohne Nachschlagen:
+Wir wählen zum Abschluss eine der folgenden Fragen aus und beantworten sie gemeinsam ohne Nachschlagen:
 
 1. Welche Angaben fehlen, wenn nur das Zahlenpaar `(8.77, 50.81)` vorliegt?
 2. Welches der behandelten CRS würden Sie für Entfernungsmessungen rund um Marburg zuerst prüfen – und warum?
 3. Was ändert sich beim Transformieren eines Datensatzes, und was bleibt gleich?
 
-## Transfer für Lehramtsstudierende
+<a id="transfer-für-lehramtsstudierende"></a>
 
-Wählen Sie eine der beiden Projektionsdarstellungen aus dieser Unit und entwerfen Sie einen kurzen Arbeitsauftrag für Schülerinnen und Schüler der Sekundarstufe I oder II. Halten Sie fest:
+## Gemeinsam Projektionen beurteilen
 
-* angestrebtes Lernziel,
-* erwartete Fehlvorstellung,
-* zwei Beobachtungsfragen und
-* eine fachlich angemessene Ergebnissicherung.
+Diese Aktivität bearbeiten alle Studierenden im Zeitblock **45–60 Minuten**. Vergleichen Sie die beiden gezeigten Projektionsdarstellungen zunächst **2 Minuten zu zweit**:
 
-Der Arbeitsauftrag soll verdeutlichen, dass eine vertraute Weltkarte keine neutrale oder in allen Eigenschaften korrekte Abbildung der Erde ist.
+1. Benennen Sie eine sichtbare Veränderung der Form oder der relativen Größe einer Landfläche.
+2. Erklären Sie, warum die Fläche auf der Erde dadurch nicht größer oder kleiner geworden ist.
+3. Formulieren Sie einen Satz, der eine mögliche Fehlinterpretation der Karte verhindert.
+
+Anschließend vergleichen wir **3 Minuten im Plenum** ausgewählte Begründungen und ordnen sie den besprochenen Verzerrungen zu.
+
+<!-- Erwartung: Die Projektion beeinflusst die Kartendarstellung. Sichtbare Größenverhältnisse dürfen ohne Kenntnis der Projektion nicht als tatsächliche Flächenverhältnisse gelesen werden. -->
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 

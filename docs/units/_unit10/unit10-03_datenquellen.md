@@ -43,7 +43,7 @@ Typische Funktionen sind:
 
 **Open Data** bezeichnet Daten, die unter festgelegten offenen Bedingungen genutzt und weiterverwendet werden dürfen. „Im Internet sichtbar“ bedeutet jedoch nicht automatisch „frei verwendbar“. Prüfen Sie deshalb immer Lizenz, Quellenangabe und mögliche Einschränkungen.
 
-Für diese Unit wird das Geoportal `[Name und Portalseite ergänzen]` verwendet. Ein zweites Portal kann zum Vergleich gezeigt werden, ist aber nicht Bestandteil der Pflichtaufgabe.
+Für diese Unit verwenden wir das [Geoportal Hessen](https://www.geoportal.hessen.de/); die konkrete Dienstbeschreibung finden Sie beim [HLNUG](https://www.hlnug.de/themen/geografische-informationssysteme/geodienste/naturschutz). Ein zweites Portal kann zum Vergleich gezeigt werden, ist aber nicht Bestandteil der Pflichtaufgabe.
 
 ## Metadaten prüfen
 
@@ -132,7 +132,7 @@ Ein **Web Feature Service**, kurz **WFS**, stellt Vektorfeatures mit Geometrien 
 | typische Nutzung | Orientierung und Hintergrund | Abfrage und Analyse von Vektordaten |
 | Datenmenge | oft vergleichsweise klein pro Bild | kann bei vielen Features groß werden |
 
-WFS wird in dieser Unit nur zur Abgrenzung eingeführt. Der praktische Schwerpunkt liegt zunächst auf WMS.
+WFS wird in dieser Unit nur zur Abgrenzung eingeführt. Die gemeinsame Demonstration konzentriert sich auf den WMS.
 
 <!-- WMTS und WCS nur ergänzen, wenn sie im weiteren Kurs tatsächlich verwendet werden. -->
 
@@ -153,15 +153,19 @@ Kopieren Sie die angegebene Dienstadresse möglichst direkt aus den Metadaten. V
 
 ## Einen WMS in QGIS einbinden
 
+In der gemeinsamen Sitzung demonstriert die Lehrperson die folgenden Schritte am Beamer. Wenn Ihr lokales Projekt bereits geprüft ist, können Sie die Einrichtung auf dem eigenen Gerät mitvollziehen. Die vollständige Schrittfolge bleibt auch zum späteren Nachschlagen erhalten.
+
+Für Demonstration und Vergleich stehen insgesamt **7 Minuten** zur Verfügung. Ist der Dienst nicht unmittelbar erreichbar, verwenden wir ohne weitere Fehlersuche `ersatz/wms_schutzgebiete.png`, `ersatz/wms_capabilities.xml` und die Quellenbeschreibung. Der Unterschied zwischen einem Kartenbilddienst und lokalen analysierbaren Daten lässt sich damit ebenfalls untersuchen.
+
 Für die Übung wird folgende Verbindung verwendet:
 
 | Angabe | Wert |
 |---|---|
-| Name der Verbindung | `[Name ergänzen]` |
-| WMS-Dienstadresse | `[URL ergänzen]` |
-| auszuwählender Layer | `[Layername ergänzen]` |
-| Metadatenseite | `[URL ergänzen]` |
-| Ersatzmaterial bei Ausfall | `[Pfad zum Screenshot und Metadatenblatt ergänzen]` |
+| Name der Verbindung | HLNUG Schutzgebiete Hessen |
+| WMS-Dienstadresse | `https://geodienste-umwelt.hessen.de/arcgis/services/inspire/schutzgebiete/MapServer/WmsServer` |
+| auszuwählender Layer | `Naturschutzgebiete` |
+| Metadatenseite | [HLNUG: Geodienste Naturschutz](https://www.hlnug.de/themen/geografische-informationssysteme/geodienste/naturschutz) |
+| Ersatzmaterial bei Ausfall | `ersatz/wms_schutzgebiete.png`, `ersatz/wms_capabilities.xml`, `documentation/quellen.md` im [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}) |
 
 ### 1. Datenquellenmanager öffnen
 
@@ -257,6 +261,8 @@ Diese Informationen gehören zur wissenschaftlichen Dokumentation und werden sp�
 
 ## Kurze Übung
 
+In der Sitzung betrachten wir die Portalseite und Metadaten gemeinsam. Die Lehrperson demonstriert die Schritte 4–8 mit der angegebenen Dienstadresse oder dem Offline-Ersatz. Wer die lokale Kernübung bereits abgeschlossen hat, kann die Schritte am eigenen Gerät mitvollziehen. Die eigenständige Suche in Schritten 1–3 sowie eine spätere vollständige Wiederholung sind freiwillige Vertiefung.
+
 1. Öffnen Sie das in der Lehrveranstaltung ausgewählte Geoportal.
 2. Suchen Sie dort nach dem vorgegebenen Thema.
 3. Finden Sie die Metadatenseite und die WMS-Dienstadresse.
@@ -290,9 +296,10 @@ Falls der Dienst während der Sitzung nicht erreichbar ist, verwenden Sie das be
 <!--
 Didaktische Hinweise:
 - Mit einem realen, frei zugänglichen und erfahrungsgemäß stabilen WMS arbeiten.
-- Dienstadresse bereits bereithalten, Studierende aber zusätzlich im Geoportal danach suchen lassen.
+- Dienstadresse bereits bereithalten; die eigene Suche im Geoportal als Vertiefung behandeln.
 - WMS bewusst mit einem lokalen Vektorlayer vergleichen.
 - WFS nur konzeptionell abgrenzen; praktische Vertiefung kann später folgen.
+- Nach einem fehlgeschlagenen Verbindungsversuch unmittelbar auf das Offline-Ersatzmaterial wechseln und die Demonstration nach sieben Minuten beenden.
 
 Vor Durchführung ergänzen:
 - Geoportal und Suchbegriff

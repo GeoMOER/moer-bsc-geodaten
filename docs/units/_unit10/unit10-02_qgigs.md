@@ -222,18 +222,20 @@ Notieren Sie den EPSG-Code des Layers und vergleichen Sie ihn mit dem Projekt-CR
 
 ## Praktische Übung
 
+Die folgenden Schritte bilden den **verbindlichen Praxisweg dieser Sitzung**. Schließen Sie ihn vor der gemeinsamen WMS-Demonstration ab. Entscheidend ist, dass das lokale Projekt nach dem erneuten Öffnen beide Datenquellen wiederfindet.
+
 Verwenden Sie die in der Lehrveranstaltung bereitgestellten Daten:
 
 | Material | Festlegung |
 |---|---|
-| Datenpaket | `[Downloadlink ergänzen]` |
-| Vektorlayer | `[Datei und Layername ergänzen]` |
-| Rasterlayer | `[Dateiname ergänzen]` |
-| Projekt-CRS | `[gemeinsamen EPSG-Code ergänzen; für Marburg voraussichtlich EPSG:25832]` |
+| Datenpaket | [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}) |
+| Vektorlayer | `data_raw/marburg_basis.gpkg`, Layer `gewaesser` |
+| Rasterlayer | `data_raw/dgm_marburg_10m.tif` |
+| Projekt-CRS | `EPSG:25832` |
 
-1. Legen Sie den beschriebenen Arbeitsordner an.
+1. Verwenden Sie den entpackten Ordner des Marburger Übungspakets.
 2. Erstellen und speichern Sie ein neues QGIS-Projekt.
-3. Laden Sie mindestens einen Vektor- und einen Rasterlayer.
+3. Laden Sie den Gewässerlayer und das DGM.
 4. Ordnen Sie die Layer so an, dass beide sinnvoll sichtbar sind.
 5. Zoomen Sie auf die Ausdehnung des Vektorlayers.
 6. Öffnen Sie dessen Attributtabelle und wählen Sie ein Feature aus.
@@ -247,7 +249,9 @@ Verwenden Sie die in der Lehrveranstaltung bereitgestellten Daten:
 9. Speichern Sie das Projekt und schließen Sie QGIS.
 10. Öffnen Sie das Projekt erneut und prüfen Sie, ob alle Layer weiterhin gefunden werden.
 
-Notieren Sie alle Ergebnisse in `documentation/processing_notes.md`. Verwenden Sie dafür mindestens die Überschriften „Projekt“, „Vektorlayer“, „Rasterlayer“, „CRS-Prüfung“ und „Öffnungstest“.
+Notieren Sie alle Ergebnisse in `documentation/processing_notes.md`. Verwenden Sie dafür die vorbereitete Tabelle für Unit 10.
+
+> **Kontrollpunkt:** Erst wenn Gewässerlayer und DGM nach dem erneuten Öffnen wieder sichtbar und erreichbar sind, ist die Kernübung abgeschlossen. Die WMS-Einrichtung ist für das eigene Gerät eine freiwillige Vertiefung.
 
 ## Typische Probleme
 
