@@ -10,6 +10,9 @@ Gemfile.lock
 /lib/bundler/man/
 _site/
 
+/docs/slides/
+/docs/ilias/
+
 # History files
 .Rhistory
 .Rapp.history

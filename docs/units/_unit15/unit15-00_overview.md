@@ -12,7 +12,7 @@ header:
 
 In der letzten Sitzung blicken wir gemeinsam auf den Kurs zurück: von digitalen Daten und Tabellen über räumliche Analysen bis zur fertigen Karte. Wir wiederholen die wichtigsten Begriffe, Methoden und Erkenntnisse der vergangenen Units und klären offene Fragen. Zum Abschluss ist Zeit für Ihre Rückmeldung zum Kurs.
 
-**Es kommen keine neuen fachlichen Inhalte hinzu.** Für Bachelor- und Lehramtsstudierende ist derselbe gemeinsame Abschluss vorgesehen. Zu Unit 15 gibt es keine neue Hausaufgabe und keinen weiteren verpflichtenden ILIAS-Fragenpool. Bereits vereinbarte Aufgaben aus früheren Units bleiben davon unberührt.
+**Es kommen keine neuen fachlichen Inhalte hinzu.** Für Bachelor- und Lehramtsstudierende ist derselbe gemeinsame Abschluss vorgesehen. Zu Unit 15 gibt es keine neue Hausaufgabe und keinen weiteren verpflichtenden ILIAS-Fragenpool. Bereits geltende Fristen für die JiTT-Fragen früherer Units bleiben davon unberührt.
 
 ## Ziele der Abschlusssitzung
 

@@ -132,7 +132,7 @@ Didaktische Schwerpunkte:
 - Legende und Quellenangabe als fachliche Bestandteile der Karte verstehen.
 - Nordpfeil nicht als automatisches Pflichtsymbol darstellen.
 - lieber eine klare Aussage mit wenigen Layern als eine überladene „Alles-Karte“.
-- Workflow und Unsicherheit gemeinsam mit dem Endprodukt abgeben lassen.
+- Workflow und Unsicherheit gemeinsam mit dem Endprodukt in der Sitzung besprechen.
 
 Vor Durchführung ergänzen:
 - verbindliche Leitfrage und Zielgruppe
@@ -140,7 +140,7 @@ Vor Durchführung ergänzen:
 - Feldname des abgetasteten Höhenwertes
 - vorgegebenes Projekt-CRS und Untersuchungsgebiet
 - gewünschtes Seitenformat und Exportauflösung
-- Abgabeweg und Bearbeitungszeit
+- Bearbeitungszeit für die Übungen in der Sitzung
 
 Geplante Unterseiten:
 - unit14-01_symbolisierung.md

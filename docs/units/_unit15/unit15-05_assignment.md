@@ -10,7 +10,7 @@ header:
 
 ## Keine neue Hausaufgabe
 
-Unit 15 schließt den Kurs ab. Es gibt keine neue Hausaufgabe, keine zusätzliche Abgabe und keinen weiteren verpflichtenden ILIAS-Fragenpool zu dieser Unit. Bereits vereinbarte Aufgaben und Fristen aus früheren Units bleiben davon unberührt.
+Unit 15 schließt den Kurs ab. Es gibt keine neue Hausaufgabe, keine zusätzliche Abgabe und keinen weiteren verpflichtenden ILIAS-Fragenpool zu dieser Unit. Bereits geltende Fristen für die JiTT-Fragen früherer Units bleiben davon unberührt.
 
 Die folgenden Rückmeldungen gehören zur Abschlusssitzung. Sie sind freiwillig, werden nicht benotet und fließen nicht in den Mittelwert Ihrer Sitzungsprozente ein.
 

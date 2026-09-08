@@ -80,7 +80,7 @@ Bitte speichern Sie Ihr QGIS-Projekt und alle zugehörigen Dateien in einem geme
 
 ## Ablauf der Sitzung
 
-Die Unit ist für eine Sitzung von ungefähr **120 Minuten** ausgelegt. Bei nur 90 Minuten sollte die WMS-Dokumentation in die Hausaufgabe verschoben werden.
+Die Unit ist für eine Sitzung von ungefähr **120 Minuten** ausgelegt. Bei nur 90 Minuten wird die WMS-Dokumentation in der Sitzung gemeinsam an einem Beispiel besprochen. Als Hausaufgabe beantworten Sie ausschließlich die JiTT-Fragen zu Unit 10 in ILIAS.
 
 | Zeit | Aktivität |
 |---:|---|

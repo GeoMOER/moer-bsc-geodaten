@@ -308,5 +308,5 @@ Didaktisch wichtig:
 - Recordzahlen nur in Aufgabenlösung, nicht dauerhaft im allgemeinen Erklärungstext festschreiben.
 
 Anschluss an unit11-04_assignment.md:
-- GBIF-Teildatensatz selbstständig importieren, prüfen, dokumentieren und als Punktlayer sichern.
+- Zur Nachbereitung ausschließlich auf die JiTT-Fragen zu Unit 11 in ILIAS verweisen.
 -->

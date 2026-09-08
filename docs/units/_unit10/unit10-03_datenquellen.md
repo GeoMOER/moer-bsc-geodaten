@@ -303,5 +303,5 @@ Vor Durchführung ergänzen:
 - alternative Dienstadresse für den Fall eines Ausfalls
 
 Anschluss an unit10-04_assignment.md:
-- QGIS-Projekt selbstständig strukturieren, lokale Daten laden, einen WMS ergänzen und die Quellen dokumentieren.
+- Zur Nachbereitung ausschließlich auf die JiTT-Fragen zu Unit 10 in ILIAS verweisen.
 -->
