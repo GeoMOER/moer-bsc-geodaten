@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="370" viewBox="0 0 1000 370" role="img" aria-labelledby="title desc">
+  <title id="title">Qualitative, sequentielle und divergierende Farbpaletten</title>
+  <desc id="desc">Drei beschriftete Farbleisten zeigen die passende Logik. Eine qualitative Palette unterscheidet vier Kategorien A bis D ohne Reihenfolge. Eine sequentielle Palette ordnet niedrige bis hohe Werte von hell nach dunkel. Eine divergierende Palette läuft von negativen Werten über einen neutralen Nullpunkt zu positiven Werten.</desc>
+  <rect width="1000" height="370" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="35" y="42" font-size="27" font-weight="700">Die Palette muss zur Bedeutung der Daten passen</text>
+    <g font-size="18">
+      <text x="45" y="102" font-weight="700">Qualitativ</text><text x="45" y="128">Kategorien</text>
+      <rect x="230" y="78" width="95" height="48" fill="#0072b2"/><rect x="325" y="78" width="95" height="48" fill="#e69f00"/><rect x="420" y="78" width="95" height="48" fill="#009e73"/><rect x="515" y="78" width="95" height="48" fill="#cc79a7"/>
+      <g text-anchor="middle" font-size="15"><text x="277" y="151">A</text><text x="372" y="151">B</text><text x="467" y="151">C</text><text x="562" y="151">D</text></g>
+      <text x="680" y="102">verschieden,</text><text x="680" y="128">ohne Rangfolge</text>
+
+      <text x="45" y="207" font-weight="700">Sequentiell</text><text x="45" y="233">niedrig → hoch</text>
+      <rect x="230" y="183" width="76" height="48" fill="#fde725"/><rect x="306" y="183" width="76" height="48" fill="#5dc863"/><rect x="382" y="183" width="76" height="48" fill="#21918c"/><rect x="458" y="183" width="76" height="48" fill="#3b528b"/><rect x="534" y="183" width="76" height="48" fill="#440154"/>
+      <text x="680" y="207">sichtbare Ordnung</text><text x="680" y="233">durch Helligkeit</text>
+
+      <text x="45" y="312" font-weight="700">Divergierend</text><text x="45" y="338">unter 0 ↔ über 0</text>
+      <rect x="230" y="288" width="76" height="48" fill="#2166ac"/><rect x="306" y="288" width="76" height="48" fill="#67a9cf"/><rect x="382" y="288" width="76" height="48" fill="#f7f7f7" stroke="#90a4ae"/><rect x="458" y="288" width="76" height="48" fill="#ef8a62"/><rect x="534" y="288" width="76" height="48" fill="#b2182b"/>
+      <g text-anchor="middle" font-size="15"><text x="268" y="355">−</text><text x="420" y="355">0</text><text x="572" y="355">+</text></g>
+      <text x="680" y="312">neutraler Mittelpunkt</text><text x="680" y="338">mit zwei Richtungen</text>
+    </g>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-labelledby="title desc">
   <title id="title">Dieselbe Position in zwei Koordinatenreferenzsystemen</title>
-  <desc id="desc">Zwei Koordinatengitter zeigen denselben Referenzpunkt einmal mit Winkelkoordinaten in WGS 84 und einmal mit Meterkoordinaten in ETRS89 UTM Zone 32N.</desc>
+  <desc id="desc">Zwei Koordinatengitter zeigen denselben Referenzpunkt einmal als 8,77 Grad Ost und 50,81 Grad Nord in WGS 84 und einmal als 483795 Meter Ost und 5628722 Meter Nord in ETRS89 UTM Zone 32N.</desc>
   <rect width="1000" height="430" fill="#f7f8fa"/>
   <g font-family="sans-serif" fill="#263238">
     <text x="40" y="43" font-size="27" font-weight="700">Dieselbe Position – andere Zahlen</text>
@@ -17,7 +17,7 @@
     <text x="85" y="350" font-size="21" font-weight="700">WGS 84 · EPSG:4326</text>
     <text x="85" y="383" font-size="19">8,77° E · 50,81° N (Winkel)</text>
     <text x="605" y="350" font-size="21" font-weight="700">ETRS89 / UTM 32N · EPSG:25832</text>
-    <text x="605" y="383" font-size="19">Rechts-/Hochwert in Metern</text>
+    <text x="605" y="383" font-size="18">483 795 m E · 5 628 722 m N</text>
     <path d="M450 195h80" stroke="#1565c0" stroke-width="7"/><path d="m528 175 25 20-25 20" fill="#1565c0"/>
   </g>
 </svg>

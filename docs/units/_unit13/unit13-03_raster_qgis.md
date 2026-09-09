@@ -131,7 +131,7 @@ Notieren Sie drei Beispiele:
 | `[eintragen]` | `[eintragen]` | `[eintragen]` | ja / nein |
 | `[eintragen]` | `[eintragen]` | `[eintragen]` | ja / nein |
 
-Klicken Sie außerdem außerhalb des gültigen Datenbereichs oder in eine NoData-Zelle, falls eine solche Stelle im bereitgestellten Raster vorhanden ist. Vergleichen Sie die Ausgabe mit einem gültigen Höhenwert von null beziehungsweise einem niedrigen Wert.
+Klicken Sie außerdem außerhalb des gültigen Datenbereichs oder in eine NoData-Zelle. Vergleichen Sie die fehlende Ausgabe mit einem gültigen, niedrigen Höhenwert aus dem DGM. Ein gültiger Zahlenwert bleibt eine Zahl; NoData wird beim Abtasten als `NULL` übernommen. Der Begriffsklärung auf der Seite zu den Rastereigenschaften dient ein schematischer Nullwert, der kein Messwert aus dem Marburger Ausschnitt ist.
 
 ## Höhenwerte darstellen
 
@@ -185,6 +185,8 @@ Gestalten Sie die Punkte so, dass sie sich deutlich vom Raster abheben.
 
 ## Rasterwerte an Punkten abtasten
 
+![Ein Beobachtungspunkt liegt in einer Rasterzelle mit dem sichtbaren Wert 228 und erhält diesen Wert beim Abtasten als Attribut hoehe_m.]({{ '/assets/images/unit13/raster-workflow.svg' | relative_url }})
+
 Mit dem Werkzeug **Rasterwerte abtasten** beziehungsweise **Sample raster values** übertragen wir den Höhenwert der jeweils getroffenen Rasterzelle in die Attributtabelle eines neuen Punktlayers.
 
 1. Öffnen Sie die **Verarbeitungswerkzeuge**.
@@ -215,6 +217,15 @@ Für den bereitgestellten Snapshot erwarten wir 35 gültige Höhenwerte und 21 `
 ## Ergebnis kontrollieren
 
 In der Sitzung prüfen wir einen Punkt mit gültiger Höhe und einen Punkt ohne Höhenwert gemeinsam. Die Kontrolle weiterer Punkte ist freiwillige Vertiefung:
+
+Für den Ersatzlayer sind beispielsweise diese beiden Fälle belegt:
+
+| `gbifID` | `hoehe_m` | Kontrolle |
+|---|---:|---|
+| `5012616638` | `291,8 m` | gültiger Rasterwert |
+| `5012778768` | `NULL` | kein gültiger Rasterwert im DGM |
+
+Die Werte stammen aus dem Layer `gbif_mit_hoehe` in `ersatz/unit13_results.gpkg`. Der Ersatzlayer enthält insgesamt 35 gültige Höhenwerte und 21 `NULL`-Werte. Die Tabelle liefert Kontrollfälle, ersetzt aber nicht die Abfrage im eigenen Ergebnis.
 
 1. Wählen Sie einen Punkt in der Karte aus.
 2. Lesen Sie seinen neuen Höhenwert in der Attributtabelle ab.

@@ -12,6 +12,10 @@ header:
 
 > **Verbindlicher Praxisweg:** Die [QGIS-Kurzcheckliste für Unit 11]({{ '/material/qgis-kernpfade.html#unit11' | relative_url }}) bündelt Import, Qualitätsauswahl, Export und Kontrolle. Weitere Filter und Symbolisierungen sind freiwillige Vertiefung.
 
+## Kurzer Wiedereinstieg nach der Winterpause
+
+Öffnen Sie QGIS und finden Sie gemeinsam vier Bereiche wieder: Browser, Layer-Bereich, Kartenansicht und die Anzeige des Projekt-CRS. Legen Sie anschließend den entpackten Ordner `marburg_geodaten/` im Browser als Favoriten ab. Dieser kurze Wiederstart gehört zum Praxisweg; eine erneute vollständige Einführung in die Oberfläche ist nicht nötig.
+
 ## Von der Tabelle zur Karte
 
 Der vorbereitete GBIF-Datensatz enthält für jeden Nachweis eine Tabellenzeile. Die Spalten `decimalLongitude` und `decimalLatitude` beschreiben die räumliche Position. QGIS kann daraus Punktgeometrien erzeugen.
@@ -81,6 +85,10 @@ Der Grenzlayer hilft, die Lage der importierten Punkte unmittelbar auf Plausibil
 ### 1. Datenquellenmanager öffnen
 
 Öffnen Sie den **Datenquellenmanager** und wählen Sie **Getrennte Texte** beziehungsweise **Delimited Text**.
+
+![Schematische Ansicht des QGIS-3.40-Dialogs „Getrennte Texte“: Für die CSV-Datei sind UTF-8 und Komma eingestellt; die Vorschau zeigt getrennte Spalten. Als Punktkoordinaten sind decimalLongitude für x und decimalLatitude für y sowie EPSG:4326 als Geometrie-CRS gewählt.]({{ '/assets/images/unit11/qgis-csv-import.svg' | relative_url }})
+
+*Die schematische Dialogansicht hebt die fehleranfälligen Einstellungen hervor. Alle einzutragenden Werte stehen zusätzlich in den folgenden Schritten.*
 
 ### 2. Datei und Zeichencodierung wählen
 

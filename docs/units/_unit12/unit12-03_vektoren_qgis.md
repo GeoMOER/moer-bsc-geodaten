@@ -80,6 +80,8 @@ Prüfen Sie jeden Layer, bevor Sie ihn weiterverarbeiten.
 
 Zoomen Sie auf jeden Layer und öffnen Sie seine Attributtabelle. Ein formal korrekt geladener Layer kann inhaltlich trotzdem ungeeignet sein – etwa weil er ein anderes Gebiet oder einen unerwarteten Datenstand abbildet.
 
+> **Kontrollpunkt:** Im bereitgestellten Snapshot enthält der Punktlayer 56 Features, der Gewässerlayer 412 Features und der Schutzgebietslayer 22 Features. Abweichungen werden vor der Auswahl geklärt.
+
 ## Layer sinnvoll anordnen
 
 Die Reihenfolge im Layerfenster beeinflusst, was sichtbar ist. Eine sinnvolle Reihenfolge ist:
@@ -160,6 +162,8 @@ Notieren Sie:
 - Anzahl ausgewählter Beobachtungen: **`[eintragen]`**
 - Anteil ausgewählter Beobachtungen: **`[eintragen]`**
 
+> **Kontrollwert:** Mit der vorgegebenen Auswahlregel werden 4 der 56 Beobachtungen getroffen.
+
 ### Gewässer, die Schutzgebiete schneiden
 
 Wiederholen Sie die räumliche Auswahl:
@@ -172,6 +176,8 @@ Notieren Sie:
 
 - Anzahl aller Gewässer-Features: **`[eintragen]`**
 - Anzahl ausgewählter Gewässer-Features: **`[eintragen]`**
+
+> **Kontrollwert:** Mit der vorgegebenen Auswahlregel werden 106 der 412 Gewässer-Features getroffen.
 
 Ein ausgewähltes Linien-Feature kann ein Schutzgebiet nur kurz berühren oder vollständig hindurchführen. Die Auswahl beantwortet daher zunächst nur, **ob** eine räumliche Beziehung besteht – nicht, wie groß der betroffene Linienabschnitt ist.
 
@@ -186,7 +192,7 @@ Wenn Sie die ausgewählten Features dauerhaft speichern möchten:
 3. Verwenden Sie `data_output/unit12_results.gpkg`.
 4. Geben Sie dem neuen Layer einen eindeutigen Namen.
 
-Geeignete Namen sind beispielsweise:
+Die verbindlichen Layernamen sind:
 
 - `gbif_in_schutzgebieten`
 - `gewaesser_an_schutzgebieten`

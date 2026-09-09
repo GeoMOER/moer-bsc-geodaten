@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+  <title id="title">CSV-Punktimport im QGIS-3.40-Dialog Getrennte Texte</title>
+  <desc id="desc">Eine schematische Dialogansicht markiert die verbindlichen Einstellungen: Datei gbif_feuersalamander_marburg.csv, UTF-8, Komma als Trennzeichen, decimalLongitude als x-Feld, decimalLatitude als y-Feld und WGS 84 EPSG 4326 als Geometrie-CRS. Eine Vorschau zeigt zwei reale Zeilen des Kurssnapshots in getrennten Spalten.</desc>
+  <rect width="1000" height="570" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="35" y="42" font-size="27" font-weight="700">Getrennte Texte: die sechs verbindlichen Einstellungen</text>
+    <rect x="35" y="65" width="650" height="465" rx="8" fill="#fff" stroke="#546e7a" stroke-width="2"/>
+    <rect x="35" y="65" width="650" height="42" rx="8" fill="#e9ecef"/>
+    <text x="55" y="93" font-size="18" font-weight="700">QGIS 3.40 · Datenquellenverwaltung · Getrennte Texte</text>
+    <g font-size="16">
+      <text x="55" y="137" font-weight="700">Dateiname</text><rect x="185" y="116" width="470" height="30" rx="3" fill="#fff" stroke="#90a4ae"/><text x="197" y="137">gbif_feuersalamander_marburg.csv</text>
+      <text x="55" y="178" font-weight="700">Kodierung</text><rect x="185" y="157" width="180" height="30" rx="3" fill="#fff" stroke="#90a4ae"/><text x="197" y="178">UTF-8</text>
+      <text x="55" y="219" font-weight="700">Trennzeichen</text><circle cx="199" cy="214" r="8" fill="#1565c0"/><text x="218" y="219">Komma</text><circle cx="310" cy="214" r="8" fill="#fff" stroke="#78909c"/><text x="329" y="219">Semikolon</text><circle cx="443" cy="214" r="8" fill="#fff" stroke="#78909c"/><text x="462" y="219">Tabulator</text>
+      <line x1="55" y1="244" x2="655" y2="244" stroke="#cfd8dc"/>
+      <text x="55" y="274" font-weight="700">Geometrie</text><text x="185" y="274">Punktkoordinaten</text>
+      <text x="55" y="315" font-weight="700">x-Feld</text><rect x="185" y="294" width="210" height="30" rx="3" fill="#fff" stroke="#90a4ae"/><text x="197" y="315">decimalLongitude</text>
+      <text x="420" y="315" font-weight="700">y-Feld</text><rect x="490" y="294" width="165" height="30" rx="3" fill="#fff" stroke="#90a4ae"/><text x="502" y="315">decimalLatitude</text>
+      <text x="55" y="356" font-weight="700">Geometrie-CRS</text><rect x="185" y="335" width="470" height="30" rx="3" fill="#fff" stroke="#90a4ae"/><text x="197" y="356">EPSG:4326 · WGS 84</text>
+      <text x="55" y="397" font-weight="700">Datenvorschau</text>
+    </g>
+    <g font-size="13">
+      <rect x="55" y="408" width="600" height="96" fill="#fff" stroke="#90a4ae"/>
+      <path d="M55 440H655M55 472H655M165 408V504M325 408V504M455 408V504" stroke="#b0bec5"/>
+      <text x="67" y="430" font-weight="700">gbifID</text><text x="177" y="430" font-weight="700">species</text><text x="337" y="430" font-weight="700">decimalLongitude</text><text x="467" y="430" font-weight="700">decimalLatitude</text>
+      <text x="67" y="462">5012616638</text><text x="177" y="462">Salamandra salamandra</text><text x="337" y="462">8.817572</text><text x="467" y="462">50.807076</text>
+      <text x="67" y="494">5012778768</text><text x="177" y="494">Salamandra salamandra</text><text x="337" y="494">8.852982</text><text x="467" y="494">50.818302</text>
+    </g>
+    <g font-size="17">
+      <rect x="720" y="105" width="245" height="78" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/><text x="738" y="135" font-weight="700">1 · Datei lesen</text><text x="738" y="163">UTF-8 + Komma</text>
+      <rect x="720" y="235" width="245" height="103" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/><text x="738" y="266" font-weight="700">2 · Achsen zuordnen</text><text x="738" y="294">x = Longitude</text><text x="738" y="320">y = Latitude</text>
+      <rect x="720" y="385" width="245" height="78" rx="8" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/><text x="738" y="415" font-weight="700">3 · Quell-CRS</text><text x="738" y="443">WGS 84 · EPSG:4326</text>
+      <text x="720" y="505" font-size="15">Erst die Vorschau prüfen,</text><text x="720" y="528" font-size="15">dann den Layer hinzufügen.</text>
+    </g>
+    <g fill="none" stroke="#1565c0" stroke-width="3"><path d="M685 160H710"/><path d="M685 303H710"/><path d="M685 350Q705 350 710 415"/></g>
+    <g fill="#1565c0"><path d="m710 152 12 8-12 8z"/><path d="m710 295 12 8-12 8z"/><path d="m708 405 13 7-11 9z"/></g>
+  </g>
+</svg>

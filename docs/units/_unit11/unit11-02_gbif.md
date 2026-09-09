@@ -12,7 +12,7 @@ header:
 
 ## Was ist GBIF?
 
-![Die Arbeit mit GBIF-Daten umfasst Download und DOI, Tabellenprüfung, Punktimport, Qualitätsbeurteilung und dokumentierten Export.]({{ '/assets/images/unit11/gbif-workflow.svg' | relative_url }})
+![Der Kurs verwendet einen dokumentierten GBIF-API-Snapshot ohne eigenen Download-DOI. Der DOI 10.15468/uc1apo bezeichnet den Quelldatensatz; ein optionaler eigener Occurrence Download würde einen eigenen DOI erhalten. Danach folgen Tabellenprüfung, Punktimport, Qualitätsregel und dokumentierter Export.]({{ '/assets/images/unit11/gbif-workflow.svg' | relative_url }})
 
 Die **Global Biodiversity Information Facility (GBIF)** ist eine internationale Dateninfrastruktur für Informationen zur biologischen Vielfalt. Einrichtungen und Projekte aus vielen Ländern veröffentlichen darüber Daten zu Arten und anderen Organismen nach gemeinsamen Standards.
 

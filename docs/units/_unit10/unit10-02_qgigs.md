@@ -57,7 +57,7 @@ Die **Datendatei** enthält die eigentlichen Geodaten. Eine Datei kann einen ode
 
 | Begriff | enthält beziehungsweise beschreibt | Beispiel |
 |---|---|---|
-| Projekt | Arbeitsstand und Verweise | `uebung10.qgz` |
+| Projekt | Arbeitsstand und Verweise | `unit10_einstieg.qgz` |
 | Layer | in QGIS verwendete Informationsebene | `gemeinden` |
 | Datendatei | gespeicherte Geodaten | `hessen.gpkg` |
 
@@ -117,11 +117,11 @@ Die Darstellung ist absichtlich vereinfacht. Position und Symbole einzelner Werk
 Eine klare Dateiablage verhindert viele spätere Probleme. Legen Sie für die Übung einen eigenen Ordner an, beispielsweise:
 
 ```text
-unit10_qgis/
+marburg_geodaten/
   data_raw/
   data_output/
   documentation/
-  unit10_qgis.qgz
+  unit10_einstieg.qgz
 ```
 
 * In `data_raw` liegen unveränderte Ausgangsdaten.
@@ -135,7 +135,7 @@ Verwenden Sie eindeutige Dateinamen und vermeiden Sie es, Eingabedaten versehent
 
 1. Starten Sie QGIS.
 2. Erstellen Sie ein neues, leeres Projekt.
-3. Speichern Sie es sofort unter einem aussagekräftigen Namen im vorbereiteten Arbeitsordner.
+3. Speichern Sie es als `unit10_einstieg.qgz` im Hauptordner des entpackten Übungspakets.
 4. Prüfen Sie in der Statusleiste beziehungsweise in den Projekteigenschaften das **Projekt-CRS**.
 5. Speichern Sie das Projekt während der Arbeit regelmäßig.
 
@@ -236,7 +236,7 @@ Verwenden Sie die in der Lehrveranstaltung bereitgestellten Daten:
 | Projekt-CRS | `EPSG:25832` |
 
 1. Verwenden Sie den entpackten Ordner des Marburger Übungspakets.
-2. Erstellen und speichern Sie ein neues QGIS-Projekt.
+2. Erstellen Sie ein neues QGIS-Projekt und speichern Sie es im Hauptordner als `unit10_einstieg.qgz`.
 3. Laden Sie den Gewässerlayer und das DGM.
 4. Ordnen Sie die Layer so an, dass beide sinnvoll sichtbar sind.
 5. Zoomen Sie auf die Ausdehnung des Vektorlayers.

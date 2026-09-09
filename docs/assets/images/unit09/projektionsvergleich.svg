@@ -1,20 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
-  <title id="title">Schematischer Vergleich zweier Weltkartenprojektionen</title>
-  <desc id="desc">Links vergrößert eine rechteckige Mercator-ähnliche Darstellung polnahe Gebiete. Rechts zeigt eine flächentreue, ovale Darstellung vergleichbare Flächen angemessener, verändert aber Formen.</desc>
+  <title id="title">Berechneter Vergleich von World Mercator und Equal Earth</title>
+  <desc id="desc">Dieselben geodätischen Referenzflächen mit 1000 Kilometern Radius liegen am Äquator und bei 70 Grad Nord. World Mercator vergrößert die polnahe Fläche stark. Equal Earth erhält die Flächenverhältnisse, verändert jedoch ihre Form.</desc>
   <rect width="1000" height="470" fill="#f7f8fa"/>
   <g font-family="sans-serif" fill="#263238">
-    <text x="40" y="42" font-size="27" font-weight="700">Projektionen erhalten unterschiedliche Eigenschaften</text>
-    <text x="80" y="82" font-size="21" font-weight="700">winkeltreu / Mercator-ähnlich</text>
-    <rect x="55" y="100" width="400" height="270" fill="#e3f2fd" stroke="#37474f" stroke-width="3"/>
-    <g stroke="#90a4ae" fill="none"><path d="M55 145h400M55 190h400M55 235h400M55 280h400M55 325h400"/><path d="M105 100v270M155 100v270M205 100v270M255 100v270M305 100v270M355 100v270M405 100v270"/></g>
-    <path d="M105 112l100 5 35 55-95 16-60-30zM285 230l75-10 42 65-55 72-66-50z" fill="#66bb6a" stroke="#2e7d32"/>
-    <text x="595" y="82" font-size="21" font-weight="700">flächentreu / oval</text>
-    <ellipse cx="725" cy="235" rx="220" ry="135" fill="#e3f2fd" stroke="#37474f" stroke-width="3"/>
-    <g stroke="#90a4ae" fill="none"><ellipse cx="725" cy="235" rx="110" ry="135"/><ellipse cx="725" cy="235" rx="45" ry="135"/><path d="M520 190q205 42 410 0M510 235h430M520 280q205-42 410 0"/></g>
-    <path d="M595 165l85 5 30 35-75 13-50-20zM760 235l65-8 35 45-47 56-55-38z" fill="#66bb6a" stroke="#2e7d32"/>
-    <text x="55" y="408" font-size="17">Lokale Winkel und Formen bleiben gut erhalten.</text>
-    <text x="55" y="435" font-size="17">Polnahe Flächen werden stark vergrößert.</text>
-    <text x="530" y="408" font-size="17">Flächen bleiben vergleichbar.</text>
-    <text x="530" y="435" font-size="17">Formen und Winkel werden verändert.</text>
+    <text x="40" y="42" font-size="27" font-weight="700">Dieselben Flächen in zwei Projektionen</text>
+    <text x="35" y="82" font-size="20" font-weight="700">World Mercator · EPSG:3395</text>
+    <text x="520" y="82" font-size="20" font-weight="700">Equal Earth · EPSG:8857 · flächentreu</text>
+    <path d="M35 350V105H480V350Z" fill="#e3f2fd" stroke="#37474f" stroke-width="2"/>
+    <path d="M605.1 347.3 574.7 328.6 545.1 299.3 526.4 264.6 520 227.5 526.4 190.4 545.1 155.7 574.7 126.4 605.1 107.7 879.9 107.7 910.3 126.4 939.9 155.7 958.6 190.4 965 227.5 958.6 264.6 939.9 299.3 910.3 328.6 879.9 347.3Z" fill="#e3f2fd" stroke="#37474f" stroke-width="2"/>
+    <g fill="none" stroke="#90a4ae" stroke-width="1">
+      <path d="M109.2 350V105M183.3 350V105M257.5 350V105M331.7 350V105M405.8 350V105M35 293.6H480M35 255H480M35 227.5H480M35 200H480M35 161.4H480"/>
+      <path d="M650.9 347.3 630.6 328.6 610.9 299.3 598.4 264.6 594.2 227.5 598.4 190.4 610.9 155.7 630.6 126.4 650.9 107.7M696.7 347.3 686.6 328.6 676.7 299.3 670.5 264.6 668.3 227.5 670.5 190.4 676.7 155.7 686.6 126.4 696.7 107.7M742.5 347.3V107.7M788.3 347.3 798.4 328.6 808.3 299.3 814.5 264.6 816.7 227.5 814.5 190.4 808.3 155.7 798.4 126.4 788.3 107.7M834.1 347.3 854.4 328.6 874.1 299.3 886.6 264.6 890.8 227.5 886.6 190.4 874.1 155.7 854.4 126.4 834.1 107.7"/>
+      <path d="M574.7 328.6H910.3M534.3 282.4H950.7M520 227.5H965M534.3 172.6H950.7M574.7 126.4H910.3"/>
+    </g>
+    <g stroke-width="3">
+      <path d="M269.9 219.6 275.4 220.6 279.5 223.6 281 227.5 279.5 231.4 275.4 234.4 269.9 235.4 264.3 234.4 260.2 231.4 258.8 227.5 260.2 223.6 264.3 220.6Z" fill="#ffcc80" fill-opacity=".8" stroke="#ef6c00"/>
+      <path d="M269.9 110 294.9 118.3 303.2 132.8 300.4 144.9 292.3 153.2 281.6 158 269.9 159.6 258.1 158 247.4 153.2 239.3 144.9 236.5 132.8 244.8 118.3Z" fill="#ef9a9a" fill-opacity=".8" stroke="#c62828"/>
+      <path d="M754.8 210.6 760.4 212.9 764.5 219.1 766 227.5 764.5 235.9 760.4 242.1 754.8 244.4 749.2 242.1 745.2 235.9 743.8 227.5 745.2 219.1 749.2 212.9Z" fill="#ffcc80" fill-opacity=".8" stroke="#ef6c00"/>
+      <path d="M750.2 108.3 766.2 109.6 772.7 112.8 772.2 117.1 767.6 121.2 760.3 124.1 751.7 125.2 742.9 124.1 735.2 121.2 729.9 117.1 728.6 112.8 734.5 109.6Z" fill="#ef9a9a" fill-opacity=".8" stroke="#c62828"/>
+    </g>
+    <g font-size="16">
+      <rect x="35" y="375" width="18" height="13" fill="#ffcc80" stroke="#ef6c00"/><text x="62" y="387">Zentrum 0° N</text>
+      <rect x="190" y="375" width="18" height="13" fill="#ef9a9a" stroke="#c62828"/><text x="217" y="387">Zentrum 70° N</text>
+      <text x="520" y="387">Gleiche Flächen bleiben gleich groß, ihre Formen ändern sich.</text>
+      <text x="35" y="416">Beide Flächen: geodätischer Radius 1000 km auf WGS 84; rechnerisch transformiert.</text>
+      <text x="35" y="445">Mercator vergrößert polnah; Equal Earth erhält Flächenverhältnisse. Darstellung bis 80° N/S.</text>
+    </g>
   </g>
 </svg>

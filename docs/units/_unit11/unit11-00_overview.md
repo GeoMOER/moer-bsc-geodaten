@@ -93,10 +93,11 @@ Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für 
 | Zeit | Aktivität |
 |---:|---|
 | 0–10 Minuten | JiTT-Antworten zu Unit 10 besprechen und Verständnisfragen klären |
-| 10–25 Minuten | Punktfeature, Beobachtung und Verbreitung an einer Karte und einem GBIF-Record unterscheiden |
-| 25–35 Minuten | Vorbereitete Tabelle, Koordinatenfelder, Import-CRS und Quellenangabe gemeinsam prüfen |
-| 35–60 Minuten | Tabelle angeleitet importieren, Lage prüfen und eine begründete Qualitätsregel anwenden |
-| 60–75 Minuten | Auswahl als `gbif_checked` exportieren, erneut laden und kontrollieren |
+| 10–23 Minuten | Punktfeature, Beobachtung und Verbreitung an einer Karte und einem GBIF-Record unterscheiden |
+| 23–28 Minuten | Nach der Winterpause QGIS-Oberfläche, Projektablage und Projekt-CRS kurz wiederfinden |
+| 28–43 Minuten | Vorbereitete Tabelle, Koordinatenfelder, Import-CRS und Quellenangabe prüfen und Tabelle importieren |
+| 43–62 Minuten | Lage prüfen und die begründete Qualitätsregel anwenden |
+| 62–75 Minuten | Auswahl als `gbif_checked` exportieren, erneut laden und kontrollieren |
 | 75–85 Minuten | Qualitätsentscheidung dokumentieren und eine vorsichtige Aussage zur Punktkarte formulieren |
 | 85–90 Minuten | Zentrale Ergebnisse sichern, eine Exit-Ticket-Frage gemeinsam beantworten und auf JiTT hinweisen |
 

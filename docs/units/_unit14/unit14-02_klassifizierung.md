@@ -44,7 +44,7 @@ Werte werden zu wenigen Gruppen zusammengefasst. Dies eignet sich, wenn:
 * eine Legende mit klaren Gruppen benötigt wird oder
 * sehr viele Einzelwerte die Karte unübersichtlich machen.
 
-Für unsere Beobachtungspunkte können die abgetasteten Höhenwerte beispielsweise in vier oder fünf Höhenklassen dargestellt werden.
+Für unsere Beobachtungspunkte verwenden wir im verbindlichen Praxisweg fünf Höhenklassen. Andere Klassenzahlen dienen nur dem allgemeinen Vergleich und der Vertiefung.
 
 ## Kategorien sind keine Zahlenklassen
 
@@ -216,13 +216,13 @@ Für einzelne GBIF-Punkte mit bereits abgetasteter Höhe ist keine Normalisierun
 
 ## Klassifizierung in QGIS
 
-Für den Layer `gbif_mit_hoehe`:
+Für das Höhenfeld des vorbereiteten Punktlayers beziehungsweise in der Vertiefung für `unit13_results.gpkg/gbif_mit_hoehe`:
 
 1. Öffnen Sie **Layereigenschaften → Symbolisierung**.
 2. Wählen Sie **Abgestuft** beziehungsweise **Graduated**.
 3. Wählen Sie das verbindliche Höhenfeld `hoehe_m`.
 4. Verwenden Sie eine sequentielle Farbpalette.
-5. Stellen Sie zunächst vier oder fünf Klassen ein.
+5. Stellen Sie fünf Klassen ein.
 6. Wählen Sie eine Klassifizierungsmethode.
 7. Klicken Sie auf **Klassifizieren**.
 8. Prüfen Sie Grenzen, Anzahl der Features je Klasse und Legendenbeschriftungen.

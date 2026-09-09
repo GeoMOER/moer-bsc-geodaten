@@ -14,7 +14,9 @@ header:
 
 ## Kartenansicht und Kartenlayout
 
-![Ein vollständiger Kartenworkflow verbindet Fragestellung, Datenprüfung, Analyse, Gestaltung, Export und Interpretation.]({{ '/assets/images/unit14/karten-workflow.svg' | relative_url }})
+[![Beispiel eines fertigen A4-Kartenlayouts: dokumentierte Feuersalamander-Nachweise bei Marburg sind nach Geländehöhe klassifiziert; Titel, Legende, Maßstab, Quellen und Untersuchungsgebiet sind gemeinsam sichtbar.]({{ '/assets/data/marburg/abschlusskarte_beispiel.png' | relative_url }})]({{ '/assets/data/marburg/abschlusskarte_beispiel.png' | relative_url }})
+
+*Die Beispielkarte lässt sich für die Kontrolle der Details in voller Auflösung öffnen.*
 
 In der QGIS-Kartenansicht untersuchen und bearbeiten wir Layer. Für ein fertiges Kartenprodukt benötigen wir zusätzlich ein **Kartenlayout**.
 
@@ -65,7 +67,7 @@ Für die gemeinsame Sitzung öffnen Sie `unit14_start.qgz` aus dem [Marburger Ü
 
 Verändern Sie in der Sitzung die Klassifizierung, den Titel und die Legende. Kontrollieren Sie Kartenausschnitt, Maßstab und Quellen und korrigieren Sie diese nur, wenn Sie einen konkreten Fehler feststellen. Fügen Sie keine weiteren Layer oder Layoutelemente hinzu. So bleibt genügend Zeit, beide Exporte zu prüfen und eine Rückmeldung einzuarbeiten.
 
-Die Verwendung eigener Ergebnisse ist freiwillige Vertiefung: Wählen Sie im Layer `gbif_mit_hoehe` zunächst `"hoehe_m" IS NOT NULL` aus und exportieren Sie nur diese Auswahl nach `data_output/unit14_results.gpkg` als `gbif_mit_hoehe_final`. Ersetzen Sie dann die Datenquelle des vorbereiteten Punktlayers durch diesen Layer und prüfen Sie Karte, Legende und die angegebenen Recordzahlen. Der ursprüngliche Unit-13-Layer mit den fehlenden Werten bleibt erhalten.
+Die Verwendung eigener Ergebnisse ist freiwillige Vertiefung: Wählen Sie im Layer `unit13_results.gpkg/gbif_mit_hoehe` zunächst `"hoehe_m" IS NOT NULL` aus und exportieren Sie nur diese Auswahl nach `data_output/unit14_results.gpkg` als `gbif_mit_hoehe_final`. Ersetzen Sie dann die Datenquelle des vorbereiteten Punktlayers durch diesen Layer und prüfen Sie Karte, Legende und die angegebenen Recordzahlen. Der ursprüngliche Unit-13-Layer mit den fehlenden Werten bleibt erhalten.
 
 <a id="neues-drucklayout-anlegen"></a>
 

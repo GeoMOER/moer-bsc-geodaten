@@ -40,6 +40,8 @@ Nun verbinden wir diese Bestandteile zu einem vollständigen kleinen Workflow:
 
 > **Fragestellung → Zielgruppe → Daten → Prüfung → Verarbeitung → Visualisierung → Layout → Export → Interpretation → Dokumentation**
 
+![Der vollständige Kartenworkflow verbindet Fragestellung und Zielgruppe mit Datenprüfung, Verarbeitung, Symbolisierung, Klassifizierung, Layout, Export, Interpretation und Dokumentation.]({{ '/assets/images/unit14/karten-workflow.svg' | relative_url }})
+
 Das Ziel ist nicht, jeden verfügbaren Layer zu verwenden. Das Ziel ist eine nachvollziehbare räumliche Aussage.
 
 ## 1. Fragestellung präzisieren

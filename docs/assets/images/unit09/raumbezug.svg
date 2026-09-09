@@ -1,29 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-labelledby="title desc">
   <title id="title">Von Tabellendaten zu Geodaten</title>
-  <desc id="desc">Links steht eine Temperaturtabelle ohne Ortsangabe. Rechts ergänzt dieselbe Tabelle Koordinaten und verweist auf Punkte in einer schematischen Karte.</desc>
-  <rect width="1000" height="420" fill="#f7f8fa"/>
+  <desc id="desc">Links enthält eine Tabelle Beobachtungs-ID, Datum und Temperatur. Rechts enthält dieselbe Tabelle zusätzlich Breiten- und Längengrad. Identität, Zeitpunkt und Messwert bleiben beim Ergänzen des Raumbezugs erhalten.</desc>
+  <rect width="1000" height="430" fill="#f7f8fa"/>
   <g font-family="sans-serif" fill="#263238">
-    <text x="55" y="52" font-size="26" font-weight="700">Daten ohne nutzbaren Raumbezug</text>
-    <text x="565" y="52" font-size="26" font-weight="700">Geodaten</text>
+    <text x="45" y="48" font-size="25" font-weight="700">Tabelle ohne nutzbaren Raumbezug</text>
+    <text x="550" y="48" font-size="25" font-weight="700">Dieselbe Tabelle mit Koordinaten</text>
     <g stroke="#78909c" fill="#fff">
-      <rect x="55" y="85" width="360" height="205" rx="5"/>
-      <path d="M55 135h360M55 185h360M55 235h360M235 85v205"/>
-      <rect x="565" y="85" width="380" height="205" rx="5"/>
-      <path d="M565 135h380M565 185h380M565 235h380M685 85v205M815 85v205"/>
+      <rect x="45" y="78" width="385" height="205" rx="5"/>
+      <path d="M45 128H430M45 178H430M45 228H430M125 78V283M245 78V283"/>
+      <rect x="550" y="78" width="410" height="205" rx="5"/>
+      <path d="M550 128H960M550 178H960M550 228H960M605 78V283M685 78V283M755 78V283M855 78V283"/>
     </g>
-    <g font-size="19">
-      <text x="82" y="118" font-weight="700">Datum</text><text x="260" y="118" font-weight="700">Temperatur</text>
-      <text x="82" y="168">12.05.</text><text x="280" y="168">18,4 °C</text>
-      <text x="82" y="218">13.05.</text><text x="280" y="218">17,9 °C</text>
-      <text x="82" y="268">14.05.</text><text x="280" y="268">19,1 °C</text>
-      <text x="585" y="118" font-weight="700">Temp.</text><text x="710" y="118" font-weight="700">Latitude</text><text x="835" y="118" font-weight="700">Longitude</text>
-      <text x="590" y="168">18,4</text><text x="715" y="168">50.78</text><text x="845" y="168">8.77</text>
-      <text x="590" y="218">17,9</text><text x="715" y="218">50.82</text><text x="845" y="218">8.73</text>
-      <text x="590" y="268">19,1</text><text x="715" y="268">50.81</text><text x="845" y="268">8.79</text>
+    <g font-size="16">
+      <text x="65" y="110" font-weight="700">ID</text><text x="150" y="110" font-weight="700">Datum</text><text x="270" y="110" font-weight="700">Temperatur</text>
+      <text x="65" y="160">B01</text><text x="150" y="160">12.05.</text><text x="285" y="160">18,4 °C</text>
+      <text x="65" y="210">B02</text><text x="150" y="210">13.05.</text><text x="285" y="210">17,9 °C</text>
+      <text x="65" y="260">B03</text><text x="150" y="260">14.05.</text><text x="285" y="260">19,1 °C</text>
+      <text x="566" y="110" font-weight="700">ID</text><text x="618" y="110" font-weight="700">Datum</text><text x="697" y="110" font-weight="700">Temp.</text><text x="770" y="110" font-weight="700">Latitude</text><text x="869" y="110" font-weight="700">Longitude</text>
+      <text x="566" y="160">B01</text><text x="618" y="160">12.05.</text><text x="700" y="160">18,4</text><text x="773" y="160">50,78</text><text x="875" y="160">8,77</text>
+      <text x="566" y="210">B02</text><text x="618" y="210">13.05.</text><text x="700" y="210">17,9</text><text x="773" y="210">50,82</text><text x="875" y="210">8,73</text>
+      <text x="566" y="260">B03</text><text x="618" y="260">14.05.</text><text x="700" y="260">19,1</text><text x="773" y="260">50,81</text><text x="875" y="260">8,79</text>
     </g>
-    <path d="M445 188h82" stroke="#1565c0" stroke-width="7"/><path d="m525 168 25 20-25 20" fill="#1565c0"/>
-    <text x="58" y="335" font-size="20">Wann wurde wie viel gemessen?</text>
-    <text x="568" y="335" font-size="20">Zusätzlich: Wo wurde gemessen?</text>
-    <text x="568" y="374" font-size="17" fill="#455a64">Raumbezug + Sachdaten ermöglichen räumliche Fragen.</text>
+    <path d="M448 178H510" stroke="#1565c0" stroke-width="7"/><path d="m505 158 25 20-25 20" fill="#1565c0"/>
+    <text x="48" y="330" font-size="19">Wann wurde welcher Wert erfasst?</text>
+    <text x="553" y="330" font-size="19">Zusätzlich: Wo wurde erfasst?</text>
+    <text x="48" y="372" font-size="17" fill="#455a64">Beim Ergänzen des Raumbezugs bleiben ID, Datum und Messwert erhalten.</text>
+    <text x="48" y="402" font-size="17" fill="#455a64">Koordinaten und CRS ermöglichen danach räumliche Fragen.</text>
   </g>
 </svg>

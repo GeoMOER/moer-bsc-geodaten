@@ -198,6 +198,10 @@ Beispiele:
 
 Für ausschließlich positive Höhenwerte ohne besonderen Mittelpunkt ist meist eine sequentielle Palette geeigneter.
 
+![Vergleich von drei Farbpaletten: eine qualitative Palette mit vier gleichrangigen Kategorien A bis D, eine sequentielle Palette von niedrigen zu hohen Werten und eine divergierende Palette von negativen Werten über einen neutralen Nullpunkt zu positiven Werten.]({{ '/assets/images/unit14/farbpaletten.svg' | relative_url }})
+
+*Die Palette folgt der Bedeutung der Daten: Kategorien sind gleichrangig, geordnete Werte verlaufen in eine Richtung und Abweichungen um einen fachlichen Mittelpunkt in zwei Richtungen.*
+
 ## Farben zugänglich wählen
 
 Eine Karte sollte auch bei eingeschränktem Farbsehen und auf unterschiedlichen Bildschirmen möglichst verständlich bleiben.
@@ -225,6 +229,10 @@ Für unsere Abschlusskarte könnte die Hierarchie lauten:
 4. **Gewässer** – optionaler Orientierungslayer.
 
 Diese Hierarchie wird durch Kontrast, Größe, Farbe, Transparenz und Layerreihenfolge erzeugt.
+
+![Zwei schematische Karten desselben Ausschnitts und derselben Objekte: Links überlagert ein kontrastreicher Hintergrund die Beobachtungspunkte, rechts treten die Punkte durch einen zurückhaltenden Hintergrund als Hauptinformation hervor.]({{ '/assets/images/unit14/visuelle-hierarchie.svg' | relative_url }})
+
+*Ausschnitt und dargestellte Objekte sind in beiden Karten gleich. Nur Kontrast und Gewichtung ändern sich, sodass der Einfluss der visuellen Hierarchie sichtbar wird.*
 
 ## Hintergrundkarten
 
@@ -294,7 +302,7 @@ Welche Palette ist geeignet?
 
 ### 2. Visuelle Hierarchie herstellen
 
-Laden Sie DGM, Schutzgebiete, Gewässer und GBIF-Punkte. Gestalten Sie die Karte so, dass die Beobachtungspunkte zuerst auffallen und alle anderen Layer nur den notwendigen Kontext liefern.
+Verwenden Sie `unit14_start.qgz` mit den vorbereiteten GBIF-Punkten und höchstens dem dort vorhandenen zurückhaltenden Hintergrundlayer. Gestalten Sie die Karte so, dass die Beobachtungspunkte zuerst auffallen und der Hintergrund nur den notwendigen Kontext liefert. Das zusätzliche Laden und Vergleichen von DGM, Schutzgebieten und Gewässern gehört zur freiwilligen Vertiefung.
 
 ### 3. Entscheidung begründen
 

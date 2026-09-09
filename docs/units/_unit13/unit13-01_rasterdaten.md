@@ -128,6 +128,10 @@ Ein **digitales Oberflächenmodell (DOM)** beschreibt dagegen die sichtbare bezi
 
 Die beiden Datensätze können am selben Ort unterschiedliche Höhenwerte besitzen. Welcher Wert fachlich sinnvoll ist, hängt von der Fragestellung ab.
 
+![Schematisches Profil derselben Landschaft in DGM und DOM: Die DGM-Linie folgt dem Boden unter Baum und Haus, während die DOM-Linie über Baumkrone und Dach verläuft.]({{ '/assets/images/unit13/dgm-dom-profil.svg' | relative_url }})
+
+*Beide Profile zeigen denselben schematischen Landschaftsausschnitt. Der Vergleich verdeutlicht, welche Oberfläche das jeweilige Modell beschreibt; die Linien sind keine gemessenen Höhendaten.*
+
 ## Satelliten- und Luftbilder sind ebenfalls Raster
 
 Ein digitales Foto oder Satellitenbild ist regelmäßig in Bildpunkte gegliedert. Ein georeferenziertes Luft- oder Satellitenbild besitzt zusätzlich einen räumlichen Bezug und kann deshalb als Rasterlayer in einem GIS verwendet werden.

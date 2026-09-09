@@ -24,6 +24,7 @@ Für alle Units gilt: Entpacken Sie das [Marburger Übungspaket]({{ '/material/m
 <a id="unit11"></a>
 ## Unit 11: Tabelle in geprüfte Punkte überführen
 
+- [ ] Nach der Winterpause QGIS öffnen und Browser, Layer-Bereich, Kartenansicht und Projekt-CRS kurz wiederfinden.
 - [ ] Projekt als `unit11_punktdaten.qgz` speichern und die CSV-Struktur prüfen.
 - [ ] `decimalLongitude` als x und `decimalLatitude` als y mit dem Import-CRS `EPSG:4326` verwenden.
 - [ ] Lage und wichtige Attribute der 79 importierten Records prüfen.
@@ -36,7 +37,7 @@ Für alle Units gilt: Entpacken Sie das [Marburger Übungspaket]({{ '/material/m
 <a id="unit12"></a>
 ## Unit 12: Räumliche Auswahlen speichern
 
-- [ ] `gbif_checked`, `gewaesser` und `schutzgebiete` laden und Geometrietyp, CRS und Featurezahl prüfen.
+- [ ] `gbif_checked`, `gewaesser` und `schutzgebiete` laden und Geometrietyp sowie CRS prüfen; erwartet werden 56 Punkte, 412 Gewässer-Features und 22 Schutzgebiets-Features.
 - [ ] Mit `"kategorie" = 'FFH'` zehn Schutzgebiete auswählen und als `schutzgebiete_auswahl` speichern.
 - [ ] GBIF-Punkte mit **schneidet** gegen `schutzgebiete_auswahl` auswählen und vier Treffer als `gbif_in_schutzgebieten` speichern.
 - [ ] Gewässer ebenso auswählen und 106 Treffer als `gewaesser_an_schutzgebieten` speichern.

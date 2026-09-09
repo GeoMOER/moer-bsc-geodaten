@@ -18,7 +18,7 @@ Ein Koordinatenpaar ist daher nur dann eindeutig interpretierbar, wenn bekannt i
 
 > **Merksatz:** Koordinatenwerte und Koordinatenreferenzsystem gehören immer zusammen.
 
-![Derselbe Referenzpunkt wird in einem geographischen und einem projizierten CRS durch unterschiedliche Zahlen und Einheiten beschrieben.]({{ '/assets/images/unit09/crs-vergleich.svg' | relative_url }})
+![Derselbe Referenzpunkt hat in WGS 84 die Winkelkoordinaten 8,77 Grad Ost und 50,81 Grad Nord; in ETRS89 UTM Zone 32N lautet das gerundete Zahlenpaar 483 795 Meter Ost und 5 628 722 Meter Nord.]({{ '/assets/images/unit09/crs-vergleich.svg' | relative_url }})
 
 <!-- Möglicher Einstieg: Zwei unterschiedlich aussehende Koordinatenpaare desselben Ortes zeigen. -->
 
@@ -60,9 +60,9 @@ Welche Verzerrung problematisch ist, hängt von der Fragestellung ab. Eine Weltk
 
 > **Wichtig:** Es gibt nicht die eine „beste“ Projektion. Es gibt nur Projektionen, die für einen bestimmten Raum und Zweck besser oder schlechter geeignet sind.
 
-![Schematischer Vergleich: Eine Mercator-ähnliche Darstellung erhält lokale Winkel, vergrößert aber polnahe Flächen; eine flächentreue Darstellung erhält Flächenverhältnisse, verändert dafür Formen.]({{ '/assets/images/unit09/projektionsvergleich.svg' | relative_url }})
+![Berechneter Vergleich: Dieselben geodätischen Referenzflächen mit 1000 Kilometern Radius liegen am Äquator und bei 70 Grad Nord. World Mercator (EPSG:3395) vergrößert die polnahe Fläche stark; Equal Earth (EPSG:8857) erhält die Flächenverhältnisse und verändert die Formen.]({{ '/assets/images/unit09/projektionsvergleich.svg' | relative_url }})
 
-Die Abbildung zeigt das Prinzip schematisch und ist nicht für Messungen geeignet.
+Die Umrisse der Referenzflächen wurden auf WGS 84 berechnet und anschließend in die beiden genannten CRS transformiert. Die Abbildung dient dem Vergleich der Projektionswirkung; Längen dürfen daraus nicht abgelesen werden.
 
 ## Geographische und projizierte Koordinatensysteme
 
