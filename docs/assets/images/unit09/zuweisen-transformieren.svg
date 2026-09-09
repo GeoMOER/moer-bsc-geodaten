@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="840" viewBox="0 0 640 840" role="img" aria-labelledby="title description">
+<title id="title">Zuweisen oder umrechnen?</title>
+<desc id="description">Bekannte WGS-84-Koordinaten ohne CRS-Angabe erhalten EPSG:4326, ohne Zahlenänderung. Transformation nach EPSG:25832 ändert die Zahlen zu 483795 und 5628722 Metern. Bloßes Zuweisen von EPSG:25832 zu Gradwerten ist falsch.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Zuweisen oder umrechnen?</text>
+<rect x="24" y="68" width="592" height="158" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="104" font-size="25" font-weight="700" fill="#263238" text-anchor="start">1 · Vorhandenes CRS korrekt zuweisen</text>
+<text x="44" y="143" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Zahlen: (8,77; 50,81) bleiben gleich.</text>
+<text x="44" y="175" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Metadaten bestätigen: WGS 84 in Grad.</text>
+<text x="44" y="207" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Fehlende CRS-Angabe → EPSG:4326</text>
+<path d="M320 235L320 266" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="24" y="282" width="592" height="213" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="318" font-size="25" font-weight="700" fill="#263238" text-anchor="start">2 · In ein anderes CRS transformieren</text>
+<text x="44" y="356" font-size="24" font-weight="400" fill="#263238" text-anchor="start">EPSG:4326 → EPSG:25832</text>
+<text x="44" y="388" font-size="24" font-weight="400" fill="#263238" text-anchor="start">(8,77; 50,81) Grad</text>
+<text x="44" y="420" font-size="24" font-weight="400" fill="#263238" text-anchor="start">→ (483 795; 5 628 722) Meter</text>
+<text x="44" y="452" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Andere Zahlen, derselbe Ort.</text>
+<rect x="24" y="520" width="592" height="163" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="556" font-size="25" font-weight="700" fill="#263238" text-anchor="start">Fehler · Gradwerte als Meter etikettieren</text>
+<text x="44" y="596" font-size="24" font-weight="400" fill="#263238" text-anchor="start">(8,77; 50,81) + EPSG:25832</text>
+<text x="44" y="628" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Die Zahlen wurden nicht umgerechnet.</text>
+<text x="44" y="660" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Die Lage wird falsch interpretiert.</text>
+<text x="24" y="727" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Zuweisen setzt die passende Beschreibung.</text>
+<text x="24" y="759" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Transformieren berechnet neue Koordinaten.</text>
+<text x="24" y="791" font-size="24" font-weight="400" fill="#263238" text-anchor="start">UTM-Werte gerundet; Reihenfolge hier x, y.</text>
+</g>
+</svg>

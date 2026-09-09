@@ -118,6 +118,10 @@ Bei 100 Beobachtungspunkten und vier Klassen würden ungefähr 25 Punkte je Klas
 
 Quantile zeigen relative Positionen innerhalb des Datensatzes – nicht automatisch fachlich gleich große Unterschiede.
 
+[![Zehn Beispielhöhen werden auf derselben Zahlenachse mit fünf Farben klassifiziert. Gleiche Intervalle ergeben Klassenbesetzungen von 8, 1, 0, 0 und 1. Quantile mit Grenzen bei 118, 136, 154 und 174 Metern enthalten je zwei Werte, besitzen aber sehr unterschiedliche Breiten.]({{ '/assets/images/unit14/klassengrenzen-zahlen.svg' | relative_url }})]({{ '/assets/images/unit14/klassengrenzen-zahlen.svg' | relative_url }})
+
+*Dieses Rechenbeispiel verwendet zehn erfundene Höhen, nicht die 35 Marburger Nachweise. Quantile wurden hier durch lineare Interpolation der sortierten Werte berechnet; Softwarekonventionen können bei kleinen Datensätzen andere Grenzen ergeben. Die Tabelle zeigt ausdrücklich die verwendeten Grenzen. Der Wert 170 m gehört bei gleichen Intervallen zur ersten, bei Quantilen zur vierten Klasse: Seine Höhe bleibt unverändert.*
+
 ## Natürliche Unterbrechungen
 
 Die Methode **Natürliche Unterbrechungen** beziehungsweise **Natural Breaks (Jenks)** sucht Klassengrenzen an Stellen, an denen größere Lücken in der Werteverteilung liegen. Innerhalb der Klassen sollen die Werte möglichst ähnlich sein.

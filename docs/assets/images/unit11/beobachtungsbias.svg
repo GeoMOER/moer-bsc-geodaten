@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="858" viewBox="0 0 640 858" role="img" aria-labelledby="title description">
+<title id="title">Mehr Suche, mehr Nachweise?</title>
+<desc id="description">Gedankenexperiment mit denselben zwölf Vorkommensorten. Eine Suche entlang des Wegs findet vier, eine flächige Suche alle zwölf. Nur für dieses Schema wird jedes Vorkommen im Suchbereich entdeckt.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Mehr Suche, mehr Nachweise?</text>
+<text x="24" y="82" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Gedankenexperiment: Vorkommen unverändert.</text>
+<text x="24" y="114" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Im Suchbereich wird hier jeder Ort entdeckt.</text>
+<rect x="24" y="142" width="592" height="275" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="178" font-size="25" font-weight="700" fill="#263238" text-anchor="start">A · Suche nur am Weg: 4 Nachweise</text>
+<rect x="44" y="202" width="552" height="163" fill="#edf3ed" stroke="#b7c4cc" stroke-width="1.5" rx="0"/>
+<rect x="60" y="259" width="520" height="48" fill="#d0dfe9" stroke="none" stroke-width="1.5" rx="0"/>
+<path d="M60 284L580 284" fill="none" stroke="#52616b" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="131" cy="239" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<circle cx="251" cy="239" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<circle cx="371" cy="239" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<circle cx="491" cy="239" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<circle cx="131" cy="284" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="251" cy="284" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="371" cy="284" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="491" cy="284" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="131" cy="329" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<circle cx="251" cy="329" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<circle cx="371" cy="329" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<circle cx="491" cy="329" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<text x="44" y="395" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Suchbereich blau hinterlegt · Weg gestrichelt</text>
+<rect x="24" y="442" width="592" height="275" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="478" font-size="25" font-weight="700" fill="#263238" text-anchor="start">B · Suche im ganzen Gebiet: 12 Nachweise</text>
+<rect x="44" y="502" width="552" height="163" fill="#edf3ed" stroke="#b7c4cc" stroke-width="1.5" rx="0"/>
+<rect x="60" y="508" width="520" height="150" fill="#d0dfe9" stroke="none" stroke-width="1.5" rx="0"/>
+<path d="M60 584L580 584" fill="none" stroke="#52616b" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="131" cy="539" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="251" cy="539" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="371" cy="539" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="491" cy="539" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="131" cy="584" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="251" cy="584" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="371" cy="584" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="491" cy="584" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="131" cy="629" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="251" cy="629" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="371" cy="629" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="491" cy="629" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<text x="44" y="695" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Suchbereich blau hinterlegt · Weg gestrichelt</text>
+<circle cx="36" cy="754" r="8" fill="#1565a7" stroke="white" stroke-width="2"/>
+<text x="56" y="762" font-size="23" font-weight="400" fill="#263238" text-anchor="start">dokumentiert</text>
+<circle cx="298" cy="754" r="8" fill="white" stroke="#68777e" stroke-width="2"/>
+<text x="318" y="762" font-size="23" font-weight="400" fill="#263238" text-anchor="start">im Schema vorhanden</text>
+<text x="24" y="804" font-size="23" font-weight="400" fill="#263238" text-anchor="start">In echten Nachweisdaten sind unentdeckte</text>
+<text x="24" y="836" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Vorkommen und Suchaufwand oft unbekannt.</text>
+</g>
+</svg>

@@ -51,6 +51,10 @@ Die Zellgröße wird häufig als **räumliche Auflösung** bezeichnet. Ein Raste
 
 Eine kleinere Zellgröße führt bei gleicher Ausdehnung zu mehr Zellen und meist zu größeren Dateien und längeren Berechnungszeiten.
 
+[![Derselbe 40 mal 40 Meter große Ausschnitt wird von sechzehn 10-Meter-Zellen auf vier 20-Meter-Zellen vergröbert. Die Mittelwerte der Viererblöcke sind 120, 200, 140 und 260 Meter; lokale Spitzen von 180 und 320 Metern gehen im Mittelwert auf.]({{ '/assets/images/unit13/raster-vergroebern.svg' | relative_url }})]({{ '/assets/images/unit13/raster-vergroebern.svg' | relative_url }})
+
+*Die erfundenen Höhen dienen ausschließlich dem Rechenbeispiel. Jede neue Zelle erhält hier den Mittelwert aus vier gleich großen Ausgangszellen; NoData kommt im Beispiel nicht vor. Kleinräumige Unterschiede verschwinden. Ein nachträglich feineres Gitter kann diese verlorene Information nicht zurückholen.*
+
 ## Auflösung ist nicht Genauigkeit
 
 Ein Raster mit kleinen Zellen ist nicht automatisch genau.
@@ -102,6 +106,10 @@ Für eine zellenweise Berechnung sollten Raster normalerweise übereinstimmen in
 * relevantem räumlichen Ausschnitt.
 
 QGIS kann Raster neu projizieren und neu abtasten. Dabei werden jedoch neue Zellwerte berechnet. Solche Verarbeitungsschritte müssen deshalb bewusst gewählt und dokumentiert werden.
+
+[![Zwei Gitter mit 10-Meter-Zellen im selben lokalen Meterkoordinatensystem: Gitter A beginnt bei x gleich 0, Gitter B um 5 Meter nach Osten versetzt. Gleich nummerierte Zellen liegen deshalb über unterschiedlichen Flächen.]({{ '/assets/images/unit13/rasterausrichtung.svg' | relative_url }})]({{ '/assets/images/unit13/rasterausrichtung.svg' | relative_url }})
+
+*Das schematische Beispiel hält CRS und Zellgröße konstant. Vergleichen Sie die erste Spalte: 0 bis 10 m in A, aber 5 bis 15 m in B. Für zellenweise Berechnungen müssen auch die Gitter passend ausgerichtet sein; eine passende Zellgröße genügt nicht.*
 
 ## Koordinatenreferenzsystem
 
@@ -183,6 +191,10 @@ QGIS ordnet Zahlenwerten Farben zu. Ändern wir die Farbskala, verändern wir ni
 Für kontinuierliche Werte eignen sich häufig **sequentielle Farbverläufe**, die von hell nach dunkel oder von niedrigen zu hohen Farbwerten verlaufen. Eine kategoriale Landbedeckung benötigt dagegen einzelne, klar unterscheidbare Farben.
 
 Die Symbolisierung kann räumliche Muster sichtbar machen, sie kann aber auch Unterschiede verstärken oder verschleiern. Die Gestaltung wird deshalb in Unit 14 noch einmal systematisch behandelt.
+
+[![Dieselbe 3-mal-3-Matrix mit Höhen von 200 bis 240 Metern wird mit einer blauen und einer violetten Farbskala dargestellt. Alle Zahlen bleiben gleich, insbesondere die umrahmte mittlere Zelle mit 220 Metern.]({{ '/assets/images/unit13/rasterwerte-farben.svg' | relative_url }})]({{ '/assets/images/unit13/rasterwerte-farben.svg' | relative_url }})
+
+*Erfundene Beispielhöhen; Ausschnitt, Werte und Skalenenden sind identisch. Lesen Sie die umrahmte Zelle in beiden Darstellungen ab. Ihr gespeicherter Wert ändert sich durch die neue Farbe nicht.*
 
 ## Raster neu abtasten
 

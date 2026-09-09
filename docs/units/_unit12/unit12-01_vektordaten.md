@@ -84,6 +84,10 @@ Alle Teile gehören dabei zu derselben Zeile in der Attributtabelle. Die Anzahl 
 
 > **Prüffrage:** Beschreibt eine Zeile genau eine zusammenhängende Geometrie oder ein Feature mit mehreren Teilen?
 
+[![Ein Polygon mit Loch und ein Multipart-Feature mit zwei getrennten Polygonteilen besitzen jeweils eine Tabellenzeile. Die Lochfläche ist ausgespart; die beiden Multipart-Flächen gehören zusammen zu Feature B.]({{ '/assets/images/unit12/polygon-loch-multipart.svg' | relative_url }})]({{ '/assets/images/unit12/polygon-loch-multipart.svg' | relative_url }})
+
+*Beide Beispiele sind schematisch. Zählen Sie Features anhand der Tabellenzeilen und IDs, nicht anhand der sichtbaren Teilflächen. Ein Loch ist eine ausgesparte Innenfläche und kein zusätzlicher Teil des Polygons.*
+
 ## Features und Attribute
 
 Ein Gewässerlayer könnte für jeden Gewässerabschnitt eine Liniengeometrie und folgende Attribute enthalten:
@@ -138,6 +142,10 @@ Vektorgeometrien werden passend zu einem bestimmten Maßstab und Zweck erzeugt. 
 Eine Flusslinie kann in einem detaillierten Datensatz viele Windungen enthalten und in einer Übersichtskarte stark vereinfacht sein. Beide Darstellungen können für ihren jeweiligen Zweck korrekt sein.
 
 Für die gemeinsame Analyse sollten Daten deshalb einen passenden Detailgrad besitzen. Eine hochpräzise Schutzgebietsgrenze wird durch die Kombination mit einem sehr groben Gewässerdatensatz nicht automatisch zu einer hochpräzisen Gesamtanalyse.
+
+[![Derselbe schematische Linienzug wird mit neun und mit fünf übernommenen Stützpunkten dargestellt. Anfang und Ende bleiben erhalten, einige Windungen entfallen; die ursprüngliche Linie ist zum Vergleich gestrichelt eingezeichnet.]({{ '/assets/images/unit12/stuetzpunkte-generalisierung.svg' | relative_url }})]({{ '/assets/images/unit12/stuetzpunkte-generalisierung.svg' | relative_url }})
+
+*Jedes Segment verbindet zwei Stützpunkte. Der Vergleich hält die Endpunkte konstant und reduziert die Zwischenpunkte. Mehr Stützpunkte ermöglichen mehr Details, belegen aber allein keine bessere Lagegenauigkeit.*
 
 ## Grenzen sind Modelle
 
@@ -194,6 +202,8 @@ Die Geometrien der ausgewählten Punkte werden dabei nicht verändert.
 Eine Überlagerungsoperation kann neue Geometrien erzeugen. Eine Linie kann beispielsweise an der Grenze eines Polygons geschnitten werden, sodass nur der innerhalb liegende Abschnitt übrig bleibt.
 
 In dieser Unit liegt der Schwerpunkt zunächst auf der **Auswahl nach Position**. Komplexere Überlagerungen folgen in späteren GIS-Veranstaltungen.
+
+Der [Vergleich von Auswahl und Zuschneiden]({{ '/unit12/unit12-03_vektoren_qgis.html#auswahl-und-ergebnis-unterscheiden' | relative_url }}) zeigt den Unterschied an derselben Linie und demselben Polygon.
 
 ## Länge und Fläche messen
 

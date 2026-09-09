@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="735" viewBox="0 0 640 735" role="img" aria-labelledby="title description">
+<title id="title">Andere Farben, dieselben Werte</title>
+<desc id="description">Dieselbe 3-mal-3-Höhenmatrix von 200 bis 240 Metern wird blau und violett dargestellt. Die mittlere markierte Zelle bleibt bei 220 Metern; weder Werte noch Zellpositionen ändern sich.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Andere Farben, dieselben Werte</text>
+<rect x="24" y="76" width="592" height="255" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="112" font-size="25" font-weight="700" fill="#263238" text-anchor="start">A · blaue Farbskala</text>
+<rect x="48" y="140" width="54" height="54" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="75.0" y="175.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">200</text>
+<rect x="102" y="140" width="54" height="54" fill="#bdd7e7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="129.0" y="175.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">210</text>
+<rect x="156" y="140" width="54" height="54" fill="#7eb3d1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="183.0" y="175.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">220</text>
+<rect x="48" y="194" width="54" height="54" fill="#bdd7e7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="75.0" y="229.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">210</text>
+<rect x="102" y="194" width="54" height="54" fill="#7eb3d1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="129.0" y="229.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">220</text>
+<rect x="106" y="198" width="46" height="46" fill="none" stroke="#b45309" stroke-width="4" rx="0"/>
+<rect x="156" y="194" width="54" height="54" fill="#367fab" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="183.0" y="229.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">230</text>
+<rect x="48" y="248" width="54" height="54" fill="#7eb3d1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="75.0" y="283.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">220</text>
+<rect x="102" y="248" width="54" height="54" fill="#367fab" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="129.0" y="283.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">230</text>
+<rect x="156" y="248" width="54" height="54" fill="#164568" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="183.0" y="283.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">240</text>
+<rect x="278" y="159" width="57" height="27" fill="#e4eff7" stroke="none" stroke-width="1.5" rx="0"/>
+<rect x="335" y="159" width="57" height="27" fill="#bdd7e7" stroke="none" stroke-width="1.5" rx="0"/>
+<rect x="392" y="159" width="57" height="27" fill="#7eb3d1" stroke="none" stroke-width="1.5" rx="0"/>
+<rect x="449" y="159" width="57" height="27" fill="#367fab" stroke="none" stroke-width="1.5" rx="0"/>
+<rect x="506" y="159" width="57" height="27" fill="#164568" stroke="none" stroke-width="1.5" rx="0"/>
+<text x="278" y="216" font-size="23" font-weight="400" fill="#263238" text-anchor="start">200 m</text>
+<text x="564" y="216" font-size="23" font-weight="400" fill="#263238" text-anchor="end">240 m</text>
+<text x="278" y="259" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Markierte Zelle:</text>
+<text x="278" y="291" font-size="23" font-weight="400" fill="#263238" text-anchor="start">220 m in beiden Bildern</text>
+<rect x="24" y="351" width="592" height="255" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="387" font-size="25" font-weight="700" fill="#263238" text-anchor="start">B · violette Farbskala</text>
+<rect x="48" y="415" width="54" height="54" fill="#f0e7f1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="75.0" y="450.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">200</text>
+<rect x="102" y="415" width="54" height="54" fill="#d8bedc" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="129.0" y="450.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">210</text>
+<rect x="156" y="415" width="54" height="54" fill="#b389ba" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="183.0" y="450.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">220</text>
+<rect x="48" y="469" width="54" height="54" fill="#d8bedc" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="75.0" y="504.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">210</text>
+<rect x="102" y="469" width="54" height="54" fill="#b389ba" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="129.0" y="504.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">220</text>
+<rect x="106" y="473" width="46" height="46" fill="none" stroke="#b45309" stroke-width="4" rx="0"/>
+<rect x="156" y="469" width="54" height="54" fill="#80538a" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="183.0" y="504.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">230</text>
+<rect x="48" y="523" width="54" height="54" fill="#b389ba" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="75.0" y="558.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">220</text>
+<rect x="102" y="523" width="54" height="54" fill="#80538a" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="129.0" y="558.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">230</text>
+<rect x="156" y="523" width="54" height="54" fill="#4c2859" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="183.0" y="558.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">240</text>
+<rect x="278" y="434" width="57" height="27" fill="#f0e7f1" stroke="none" stroke-width="1.5" rx="0"/>
+<rect x="335" y="434" width="57" height="27" fill="#d8bedc" stroke="none" stroke-width="1.5" rx="0"/>
+<rect x="392" y="434" width="57" height="27" fill="#b389ba" stroke="none" stroke-width="1.5" rx="0"/>
+<rect x="449" y="434" width="57" height="27" fill="#80538a" stroke="none" stroke-width="1.5" rx="0"/>
+<rect x="506" y="434" width="57" height="27" fill="#4c2859" stroke="none" stroke-width="1.5" rx="0"/>
+<text x="278" y="491" font-size="23" font-weight="400" fill="#263238" text-anchor="start">200 m</text>
+<text x="564" y="491" font-size="23" font-weight="400" fill="#263238" text-anchor="end">240 m</text>
+<text x="278" y="534" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Markierte Zelle:</text>
+<text x="278" y="566" font-size="23" font-weight="400" fill="#263238" text-anchor="start">220 m in beiden Bildern</text>
+<text x="24" y="651" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Die Farbskala gehört zur Darstellung.</text>
+<text x="24" y="683" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Position und gespeicherte Höhe bleiben gleich.</text>
+<text x="24" y="715" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Erfundene Höhen; keine Marburger Messwerte.</text>
+</g>
+</svg>

@@ -143,6 +143,10 @@ Vertauschte Koordinaten sind eine häufige Fehlerquelle. Ein Datensatz mit Marbu
 
 Diese grobe Plausibilitätsprüfung ersetzt keine genaue Kontrolle, hilft aber dabei, vertauschte oder fehlerhafte Werte schnell zu erkennen.
 
+[![Im selben WGS-84-Gradgitter liegt A bei Länge 8,77 und Breite 50,81 Grad nahe Marburg; das vertauschte Paar B liegt bei Länge 50,81 und Breite 8,77 Grad weit entfernt.]({{ '/assets/images/unit09/achsenreihenfolge.svg' | relative_url }})]({{ '/assets/images/unit09/achsenreihenfolge.svg' | relative_url }})
+
+*Beide Paare liegen in den erlaubten Wertebereichen. Erst die Zuordnung zu den Achsen und die erwartete Lage zeigen den Fehler. Die Abbildung verwendet die Kursreihenfolge Länge, Breite; die Abstände im Gradgitter sind keine Entfernungen in Metern.*
+
 ## Koordinaten benötigen ein Bezugssystem
 
 Das Zahlenpaar `(8.77, 50.81)` reicht allein noch nicht vollständig aus. Wir müssen zusätzlich wissen:

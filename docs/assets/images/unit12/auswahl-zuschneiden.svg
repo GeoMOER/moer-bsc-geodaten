@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="852" viewBox="0 0 640 852" role="img" aria-labelledby="title description">
+<title id="title">Auswählen oder zuschneiden?</title>
+<desc id="description">Dieselbe waagerechte Linie L schneidet dasselbe rechteckige Polygon. Intersects wählt die vollständige Linie aus. Clip gibt nur den innerhalb des Polygons liegenden Abschnitt aus.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Auswählen oder zuschneiden?</text>
+<rect x="24" y="75" width="592" height="199" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="111" font-size="25" font-weight="700" fill="#263238" text-anchor="start">Eingang · Linie L und Polygon</text>
+<rect x="198" y="140" width="246" height="80" fill="#d0e5d9" stroke="#227564" stroke-width="2" rx="0"/>
+<path d="M64 181L575 181" fill="none" stroke="#1565a7" stroke-width="5"/>
+<text x="70" y="158" font-size="24" font-weight="700" fill="#263238" text-anchor="start">L</text>
+<text x="44" y="253" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Die Linie reicht über beide Grenzen hinaus.</text>
+<rect x="24" y="295" width="592" height="199" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="331" font-size="25" font-weight="700" fill="#263238" text-anchor="start">Auswahl mit intersects · ganze Linie</text>
+<rect x="198" y="360" width="246" height="80" fill="#d0e5d9" stroke="#227564" stroke-width="2" rx="0"/>
+<path d="M64 401L575 401" fill="none" stroke="#f1bd4f" stroke-width="13"/>
+<path d="M64 401L575 401" fill="none" stroke="#1565a7" stroke-width="5"/>
+<text x="70" y="378" font-size="24" font-weight="700" fill="#263238" text-anchor="start">L</text>
+<text x="44" y="473" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Auch der Auswahlexport behält die ganze Linie.</text>
+<rect x="24" y="515" width="592" height="199" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="551" font-size="25" font-weight="700" fill="#263238" text-anchor="start">Clip · nur Abschnitt im Polygon</text>
+<rect x="198" y="580" width="246" height="80" fill="#d0e5d9" stroke="#227564" stroke-width="2" rx="0"/>
+<path d="M64 621L575 621" fill="none" stroke="#aab4bb" stroke-width="2" stroke-dasharray="8 6"/>
+<path d="M198 621L444 621" fill="none" stroke="#1565a7" stroke-width="6"/>
+<text x="70" y="598" font-size="24" font-weight="700" fill="#263238" text-anchor="start">L</text>
+<text x="44" y="693" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Nur die Ausgabe erhält eine neue Geometrie.</text>
+<text x="24" y="758" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Unit 12 verwendet Auswahl und Auswahlexport.</text>
+<text x="24" y="790" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Zuschneiden ist hier nur der begriffliche Vergleich.</text>
+<text x="24" y="822" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Die Eingabedaten bleiben jeweils erhalten.</text>
+</g>
+</svg>

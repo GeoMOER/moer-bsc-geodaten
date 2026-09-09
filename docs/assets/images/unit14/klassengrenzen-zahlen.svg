@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1134" viewBox="0 0 640 1134" role="img" aria-labelledby="title description">
+<title id="title">Gleiche Werte, andere Klassen</title>
+<desc id="description">Zehn Höhen von 100,110,120,130,140,150,160,170,190,500 Metern in fünf Klassen. Gleiche Intervalle haben 8,1,0,0,1 Werte je Klasse, Quantile je zwei. Die Bandbreiten auf der Zahlenachse entsprechen den numerischen Klassenbreiten.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Gleiche Werte, andere Klassen</text>
+<text x="24" y="83" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Beispielhöhen in m: 100, 110, 120, 130, 140,</text>
+<text x="24" y="115" font-size="23" font-weight="400" fill="#263238" text-anchor="start">150, 160, 170, 190, 500 · immer fünf Klassen</text>
+<rect x="24" y="142" width="592" height="410" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="178" font-size="25" font-weight="700" fill="#263238" text-anchor="start">A · gleiche Intervalle</text>
+<rect x="55.0" y="205" width="104.0" height="34" fill="#e4eff7" stroke="#263238" stroke-width="1" rx="0"/>
+<rect x="159.0" y="205" width="104.0" height="34" fill="#bdd7e7" stroke="#263238" stroke-width="1" rx="0"/>
+<rect x="263.0" y="205" width="104.0" height="34" fill="#7eb3d1" stroke="#263238" stroke-width="1" rx="0"/>
+<rect x="367.0" y="205" width="104.0" height="34" fill="#367fab" stroke="#263238" stroke-width="1" rx="0"/>
+<rect x="471.0" y="205" width="104.0" height="34" fill="#164568" stroke="#263238" stroke-width="1" rx="0"/>
+<circle cx="55.0" cy="253" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="68.0" cy="266" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="81.0" cy="253" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="94.0" cy="266" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="107.0" cy="253" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="120.0" cy="266" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="133.0" cy="253" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="146.0" cy="266" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="172.0" cy="253" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="575.0" cy="266" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<text x="55.0" y="296" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">100</text>
+<text x="185.0" y="296" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">200</text>
+<text x="315.0" y="296" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">300</text>
+<text x="445.0" y="296" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">400</text>
+<text x="575.0" y="296" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">500</text>
+<text x="55" y="333" font-size="23" font-weight="700" fill="#263238" text-anchor="start">Klasse / Grenzen (m)</text>
+<text x="576" y="333" font-size="23" font-weight="700" fill="#263238" text-anchor="end">Anzahl</text>
+<rect x="45" y="352" width="23" height="23" fill="#e4eff7" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="371" font-size="23" font-weight="400" fill="#263238" text-anchor="start">1: 100 ≤ h &lt; 180</text>
+<text x="558" y="371" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">8</text>
+<rect x="45" y="386" width="23" height="23" fill="#bdd7e7" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="405" font-size="23" font-weight="400" fill="#263238" text-anchor="start">2: 180 ≤ h &lt; 260</text>
+<text x="558" y="405" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">1</text>
+<rect x="45" y="420" width="23" height="23" fill="#7eb3d1" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="439" font-size="23" font-weight="400" fill="#263238" text-anchor="start">3: 260 ≤ h &lt; 340</text>
+<text x="558" y="439" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">0</text>
+<rect x="45" y="454" width="23" height="23" fill="#367fab" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="473" font-size="23" font-weight="400" fill="#263238" text-anchor="start">4: 340 ≤ h &lt; 420</text>
+<text x="558" y="473" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">0</text>
+<rect x="45" y="488" width="23" height="23" fill="#164568" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="507" font-size="23" font-weight="400" fill="#263238" text-anchor="start">5: 420 ≤ h ≤ 500</text>
+<text x="558" y="507" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">1</text>
+<rect x="24" y="575" width="592" height="410" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="611" font-size="25" font-weight="700" fill="#263238" text-anchor="start">B · Quantile</text>
+<rect x="55.0" y="638" width="23.400000000000002" height="34" fill="#e4eff7" stroke="#263238" stroke-width="1" rx="0"/>
+<rect x="78.4" y="638" width="23.400000000000002" height="34" fill="#bdd7e7" stroke="#263238" stroke-width="1" rx="0"/>
+<rect x="101.80000000000001" y="638" width="23.400000000000002" height="34" fill="#7eb3d1" stroke="#263238" stroke-width="1" rx="0"/>
+<rect x="125.2" y="638" width="26.0" height="34" fill="#367fab" stroke="#263238" stroke-width="1" rx="0"/>
+<rect x="151.2" y="638" width="423.8" height="34" fill="#164568" stroke="#263238" stroke-width="1" rx="0"/>
+<circle cx="55.0" cy="686" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="68.0" cy="699" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="81.0" cy="686" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="94.0" cy="699" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="107.0" cy="686" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="120.0" cy="699" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="133.0" cy="686" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="146.0" cy="699" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="172.0" cy="686" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<circle cx="575.0" cy="699" r="4" fill="#263238" stroke="white" stroke-width="1"/>
+<text x="55.0" y="729" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">100</text>
+<text x="185.0" y="729" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">200</text>
+<text x="315.0" y="729" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">300</text>
+<text x="445.0" y="729" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">400</text>
+<text x="575.0" y="729" font-size="22" font-weight="400" fill="#263238" text-anchor="middle">500</text>
+<text x="55" y="766" font-size="23" font-weight="700" fill="#263238" text-anchor="start">Klasse / Grenzen (m)</text>
+<text x="576" y="766" font-size="23" font-weight="700" fill="#263238" text-anchor="end">Anzahl</text>
+<rect x="45" y="785" width="23" height="23" fill="#e4eff7" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="804" font-size="23" font-weight="400" fill="#263238" text-anchor="start">1: 100 ≤ h &lt; 118</text>
+<text x="558" y="804" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">2</text>
+<rect x="45" y="819" width="23" height="23" fill="#bdd7e7" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="838" font-size="23" font-weight="400" fill="#263238" text-anchor="start">2: 118 ≤ h &lt; 136</text>
+<text x="558" y="838" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">2</text>
+<rect x="45" y="853" width="23" height="23" fill="#7eb3d1" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="872" font-size="23" font-weight="400" fill="#263238" text-anchor="start">3: 136 ≤ h &lt; 154</text>
+<text x="558" y="872" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">2</text>
+<rect x="45" y="887" width="23" height="23" fill="#367fab" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="906" font-size="23" font-weight="400" fill="#263238" text-anchor="start">4: 154 ≤ h &lt; 174</text>
+<text x="558" y="906" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">2</text>
+<rect x="45" y="921" width="23" height="23" fill="#164568" stroke="#263238" stroke-width="1" rx="0"/>
+<text x="81" y="940" font-size="23" font-weight="400" fill="#263238" text-anchor="start">5: 174 ≤ h ≤ 500</text>
+<text x="558" y="940" font-size="23" font-weight="700" fill="#263238" text-anchor="middle">2</text>
+<text x="24" y="1028" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Punkte: identische Werte auf identischer Achse.</text>
+<text x="24" y="1060" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Quantile hier mit linearer Interpolation berechnet.</text>
+<text x="24" y="1092" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Leere Klassen sind bei gleichen Intervallen möglich.</text>
+<text x="24" y="1124" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Beispieldaten, nicht die 35 Marburger Nachweise.</text>
+</g>
+</svg>

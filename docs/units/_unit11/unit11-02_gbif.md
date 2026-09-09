@@ -180,6 +180,10 @@ Außerdem gilt:
 
 > **Das Fehlen eines GBIF-Records ist ohne dokumentierte Suche kein Nachweis der Abwesenheit.**
 
+[![Bei unveränderten zwölf Vorkommensorten erfasst eine Suche entlang eines Weges vier Nachweise, eine Suche im gesamten Ausschnitt zwölf. Offene Kreise markieren nur im Gedankenexperiment bekannte, nicht erfasste Vorkommen.]({{ '/assets/images/unit11/beobachtungsbias.svg' | relative_url }})]({{ '/assets/images/unit11/beobachtungsbias.svg' | relative_url }})
+
+*Das Gedankenexperiment setzt ausschließlich zur Veranschaulichung voraus, dass jedes Vorkommen im Suchbereich entdeckt wird. In echten Nachweisdaten sind die nicht entdeckten Vorkommen unbekannt; auch dokumentierte Suche garantiert keine vollständige Entdeckung. Eine dichtere Punktwolke kann daher aus höherem Suchaufwand entstehen.*
+
 ## Daten herunterladen
 
 Für wissenschaftliche Arbeiten sollte eine gefilterte Auswahl als dokumentierter **GBIF Occurrence Download** erzeugt werden. Dafür ist ein GBIF-Benutzerkonto erforderlich. Der Download wird vorbereitet und erhält eine dauerhafte Kennung in Form eines **DOI**.

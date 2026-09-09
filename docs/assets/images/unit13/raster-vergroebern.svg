@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="945" viewBox="0 0 640 945" role="img" aria-labelledby="title description">
+<title id="title">Gleicher Ausschnitt, gröbere Zellen</title>
+<desc id="description">Ein 40 mal 40 Meter großer Ausschnitt mit sechzehn 10-Meter-Zellen wird durch Blockmittelwerte zu vier 20-Meter-Zellen. Aus 100,100,100,180 wird 120; der Höchstwert 320 verschwindet im Mittelwert 260.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Gleicher Ausschnitt, gröbere Zellen</text>
+<rect x="24" y="76" width="592" height="334" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="112" font-size="25" font-weight="700" fill="#263238" text-anchor="start">10-m-Zellen · 4 × 4 Werte</text>
+<rect x="48" y="140" width="60" height="60" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="78.0" y="178.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">100</text>
+<rect x="108" y="140" width="60" height="60" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="138.0" y="178.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">100</text>
+<rect x="168" y="140" width="60" height="60" fill="#7eb3d1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="198.0" y="178.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">200</text>
+<rect x="228" y="140" width="60" height="60" fill="#7eb3d1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="258.0" y="178.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">200</text>
+<rect x="48" y="200" width="60" height="60" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="78.0" y="238.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">100</text>
+<rect x="108" y="200" width="60" height="60" fill="#bdd7e7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="138.0" y="238.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">180</text>
+<rect x="168" y="200" width="60" height="60" fill="#7eb3d1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="198.0" y="238.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">200</text>
+<rect x="228" y="200" width="60" height="60" fill="#7eb3d1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="258.0" y="238.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">200</text>
+<rect x="48" y="260" width="60" height="60" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="78.0" y="298.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">140</text>
+<rect x="108" y="260" width="60" height="60" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="138.0" y="298.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">140</text>
+<rect x="168" y="260" width="60" height="60" fill="#367fab" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="198.0" y="298.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">240</text>
+<rect x="228" y="260" width="60" height="60" fill="#367fab" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="258.0" y="298.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">240</text>
+<rect x="48" y="320" width="60" height="60" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="78.0" y="358.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">140</text>
+<rect x="108" y="320" width="60" height="60" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="138.0" y="358.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">140</text>
+<rect x="168" y="320" width="60" height="60" fill="#367fab" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="198.0" y="358.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">240</text>
+<rect x="228" y="320" width="60" height="60" fill="#164568" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="258.0" y="358.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">320</text>
+<text x="328" y="187" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Ausschnitt:</text>
+<text x="328" y="219" font-size="23" font-weight="400" fill="#263238" text-anchor="start">40 m × 40 m</text>
+<text x="328" y="251" font-size="23" font-weight="400" fill="#263238" text-anchor="start"></text>
+<text x="328" y="283" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Höhenwerte in m</text>
+<text x="328" y="315" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Maximum: 320 m</text>
+<rect x="24" y="438" width="592" height="334" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="474" font-size="25" font-weight="700" fill="#263238" text-anchor="start">20-m-Zellen · 2 × 2 Blockmittelwerte</text>
+<rect x="48" y="503" width="120" height="120" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="108.0" y="571.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">120</text>
+<rect x="168" y="503" width="120" height="120" fill="#7eb3d1" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="228.0" y="571.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">200</text>
+<rect x="48" y="623" width="120" height="120" fill="#e4eff7" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="108.0" y="691.0" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">140</text>
+<rect x="168" y="623" width="120" height="120" fill="#367fab" stroke="#52616b" stroke-width="1" rx="0"/>
+<text x="228.0" y="691.0" font-size="24" font-weight="700" fill="white" text-anchor="middle">260</text>
+<text x="328" y="552" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Gleicher Ausschnitt,</text>
+<text x="328" y="584" font-size="23" font-weight="400" fill="#263238" text-anchor="start">gleiche Farbskala.</text>
+<text x="328" y="616" font-size="23" font-weight="400" fill="#263238" text-anchor="start"></text>
+<text x="328" y="648" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Maximum jetzt: 260 m</text>
+<text x="24" y="818" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Beispiel links oben: (100 + 100 + 100 + 180)</text>
+<text x="24" y="850" font-size="23" font-weight="400" fill="#263238" text-anchor="start">/ 4 = 120 m. Kleine Details gehen verloren.</text>
+<text x="24" y="882" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Feineres Speichern holt die Details nicht zurück.</text>
+<text x="24" y="914" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Erfundene Höhen; keine Marburger Messwerte.</text>
+</g>
+</svg>

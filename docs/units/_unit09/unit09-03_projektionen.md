@@ -176,6 +176,10 @@ Beim **Transformieren** oder **Reprojizieren** werden die Koordinaten von einem 
 
 > **Häufiger Fehler:** Ein falsches CRS lässt sich nicht dadurch reparieren, dass nacheinander verschiedene Systeme ausprobiert werden. Zuerst muss anhand der Datenquelle, der Metadaten und der Werte ermittelt werden, welches CRS die Koordinaten tatsächlich besitzen.
 
+[![Zuweisen ergänzt bei unveränderten Zahlen das aus Metadaten bekannte EPSG:4326. Transformieren nach EPSG:25832 rechnet 8,77 und 50,81 Grad in gerundet 483 795 und 5 628 722 Meter um. Gradwerte nur als Meter zu etikettieren ist falsch.]({{ '/assets/images/unit09/zuweisen-transformieren.svg' | relative_url }})]({{ '/assets/images/unit09/zuweisen-transformieren.svg' | relative_url }})
+
+*Verfolgen Sie Zahlen und CRS-Angabe getrennt: Beim korrekten Zuweisen bleibt das Zahlenpaar erhalten; beim Transformieren bleibt der Ort erhalten. Das Zahlenbeispiel verwendet x, y und ist auf ganze Meter gerundet.*
+
 ## Typische CRS-Probleme erkennen
 
 Ein fehlendes, falsch zugewiesenes oder ungeeignetes CRS kann sich unterschiedlich bemerkbar machen:

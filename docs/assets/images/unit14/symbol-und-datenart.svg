@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="799" viewBox="0 0 640 799" role="img" aria-labelledby="title description">
+<title id="title">Welche Eigenschaft wird sichtbar?</title>
+<desc id="description">Dieselben drei Punkte A, B, C mit Typ Wald, Offenland, Wald und Höhen 200, 250, 300 Meter. Kategorien werden als Kreis beziehungsweise Dreieck dargestellt; numerische Höhen durch geordnete Helligkeit.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Welche Eigenschaft wird sichtbar?</text>
+<text x="24" y="84" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Punkt</text>
+<text x="196" y="84" font-size="23" font-weight="400" fill="#263238" text-anchor="start">A</text>
+<text x="356" y="84" font-size="23" font-weight="400" fill="#263238" text-anchor="start">B</text>
+<text x="528" y="84" font-size="23" font-weight="400" fill="#263238" text-anchor="start">C</text>
+<text x="24" y="116" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Typ</text>
+<text x="196" y="116" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Wald</text>
+<text x="356" y="116" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Offenland</text>
+<text x="528" y="116" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Wald</text>
+<text x="24" y="148" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Höhe</text>
+<text x="196" y="148" font-size="23" font-weight="400" fill="#263238" text-anchor="start">200 m</text>
+<text x="356" y="148" font-size="23" font-weight="400" fill="#263238" text-anchor="start">250 m</text>
+<text x="528" y="148" font-size="23" font-weight="400" fill="#263238" text-anchor="start">300 m</text>
+<rect x="24" y="183" width="592" height="251" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="219" font-size="25" font-weight="700" fill="#263238" text-anchor="start">Typ zeigen · Formen unterscheiden</text>
+<text x="115" y="263" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">A</text>
+<circle cx="115" cy="302" r="17" fill="#1565a7" stroke="#263238" stroke-width="1.5"/>
+<text x="320" y="263" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">B</text>
+<path d="M320 283L338 316H302Z" fill="#1565a7"/>
+<text x="526" y="263" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">C</text>
+<circle cx="526" cy="302" r="17" fill="#1565a7" stroke="#263238" stroke-width="1.5"/>
+<text x="44" y="369" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Kreis = Wald · Dreieck = Offenland</text>
+<text x="44" y="401" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Gleichrangige Kategorien, keine Zahlenfolge.</text>
+<rect x="24" y="456" width="592" height="251" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="492" font-size="25" font-weight="700" fill="#263238" text-anchor="start">Höhe zeigen · Helligkeit ordnen</text>
+<text x="115" y="536" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">A</text>
+<circle cx="115" cy="575" r="17" fill="#e4eff7" stroke="#263238" stroke-width="1.5"/>
+<text x="320" y="536" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">B</text>
+<circle cx="320" cy="575" r="17" fill="#7eb3d1" stroke="#263238" stroke-width="1.5"/>
+<text x="526" y="536" font-size="24" font-weight="700" fill="#263238" text-anchor="middle">C</text>
+<circle cx="526" cy="575" r="17" fill="#164568" stroke="#263238" stroke-width="1.5"/>
+<text x="115" y="620" font-size="23" font-weight="400" fill="#263238" text-anchor="middle">200 m</text>
+<text x="320" y="620" font-size="23" font-weight="400" fill="#263238" text-anchor="middle">250 m</text>
+<text x="526" y="620" font-size="23" font-weight="400" fill="#263238" text-anchor="middle">300 m</text>
+<text x="44" y="676" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Hell → dunkel: niedrige → hohe Geländehöhe</text>
+<text x="24" y="749" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Positionen unverändert; nur das gezeigte Attribut</text>
+<text x="24" y="781" font-size="23" font-weight="400" fill="#263238" text-anchor="start">wechselt. Erfundene Beispieldaten.</text>
+</g>
+</svg>

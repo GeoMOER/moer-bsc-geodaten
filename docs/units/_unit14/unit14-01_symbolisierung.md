@@ -54,6 +54,10 @@ Kartensymbole können sich durch verschiedene sichtbare Eigenschaften unterschei
 
 Nicht jede Variable ist gleich gut lesbar. Sehr kleine Unterschiede in Form oder Sättigung lassen sich beispielsweise schwer vergleichen.
 
+[![Dieselben drei Positionen mit den Kategorien Wald, Offenland und Wald sowie Höhen von 200, 250 und 300 Metern: Formen unterscheiden die Kategorien, geordnete Helligkeit zeigt die numerischen Höhen.]({{ '/assets/images/unit14/symbol-und-datenart.svg' | relative_url }})]({{ '/assets/images/unit14/symbol-und-datenart.svg' | relative_url }})
+
+*Die Tabelle enthält erfundene Beispieldaten. Kreise und Dreiecke unterscheiden gleichrangige Kategorien; die Helligkeitsfolge zeigt eine geordnete Zahlengröße. Die Positionen bleiben gleich. Wählen Sie die Darstellung danach, welches Attribut die Kartenfrage beantwortet.*
+
 ## Einzelne Symbole
 
 Die Darstellung **Einzelsymbol** verwendet für alle Features eines Layers dasselbe Symbol. Sie eignet sich, wenn:

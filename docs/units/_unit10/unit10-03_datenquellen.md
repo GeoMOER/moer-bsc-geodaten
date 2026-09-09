@@ -136,6 +136,10 @@ WFS wird in dieser Unit nur zur Abgrenzung eingeführt. Die gemeinsame Demonstra
 
 <!-- WMTS und WCS nur ergänzen, wenn sie im weiteren Kurs tatsächlich verwendet werden. -->
 
+[![Dasselbe schematische Gebiet wird vom WMS als gerendertes Kartenbild geliefert, vom WFS als Geometrien mit Attributen wie ID und Gebietstyp. Einzelne WMS-Sachabfragen ersetzen keinen vollständigen Featurelayer.]({{ '/assets/images/unit10/wms-wfs.svg' | relative_url }})]({{ '/assets/images/unit10/wms-wfs.svg' | relative_url }})
+
+*Der sichtbare Inhalt allein verrät nicht, welche Daten geliefert wurden. Für die räumliche Auswahl von Schutzgebieten brauchen wir die Geometrien, beispielsweise aus einem WFS oder einem Vektordownload.*
+
 ## Dienstadresse und Portalseite unterscheiden
 
 Für die Verbindung in QGIS benötigen Sie die **Dienstadresse** des WMS. Das ist nicht immer dieselbe URL wie die sichtbare Seite des Geoportals.

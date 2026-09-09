@@ -49,6 +49,8 @@ Ein **WFS** überträgt dagegen Features: Wir erhalten Geometrien und Attribute 
 
 > Für die Übungen dieser Unit benötigen wir **Vektordaten**, also einen Download oder einen geeigneten Feature-Dienst – nicht nur ein Kartenbild.
 
+Der [Bildvergleich WMS und WFS aus Unit 10]({{ '/unit10/unit10-03_datenquellen.html#wfs-vektorobjekte-als-dienst' | relative_url }}) zeigt denselben Inhalt einmal als Kartenbild und einmal als Features mit Attributen.
+
 ## Geeignete Daten suchen
 
 Eine gute Suche beginnt nicht beim Dateiformat, sondern bei der benötigten Information. Für unser Beispiel suchen wir:

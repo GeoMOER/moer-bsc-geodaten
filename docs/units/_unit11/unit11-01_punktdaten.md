@@ -84,6 +84,10 @@ Mehrere Zeilen können:
 
 Deshalb benötigt jeder Datensatz möglichst eine **stabile eindeutige ID**. Eine ID hilft, Datensätze zu unterscheiden und Verarbeitungsschritte nachvollziehbar zu dokumentieren. Sie beweist allein jedoch noch nicht, dass zwei sehr ähnliche Zeilen unterschiedliche Beobachtungen darstellen.
 
+[![Drei Beispielrecords A, B und C liegen an zwei Positionen. A und B besitzen dieselben Koordinaten, aber unterschiedliche Beobachtungsdaten; ihre gleich großen Kartensymbole überdecken sich.]({{ '/assets/images/unit11/beobachtungen-gleicher-ort.svg' | relative_url }})]({{ '/assets/images/unit11/beobachtungen-gleicher-ort.svg' | relative_url }})
+
+*Das Schema zeigt erfundene Beobachtungen in lokalen Koordinaten. Drei Records können wie zwei Punkte aussehen. Prüfen Sie IDs, Zeit und Herkunft, bevor Sie über Dubletten oder die Anzahl beobachteter Individuen urteilen.*
+
 ## Aus einer Tabelle wird ein Punktlayer
 
 Eine Text- oder Tabellenstruktur mit Koordinatenspalten ist zunächst noch keine dauerhaft gespeicherte Geodatendatei. Damit eine GIS-Software daraus Punkte erzeugen kann, müssen mindestens bekannt sein:
@@ -181,6 +185,8 @@ Eine Karte mit Beobachtungspunkten zeigt zunächst, **wo Nachweise dokumentiert 
 Viele Beobachtungsdaten sind räumlich ungleich verteilt. In gut erreichbaren, dicht besiedelten oder besonders intensiv untersuchten Gebieten werden häufig mehr Beobachtungen gemeldet. Eine hohe Punktdichte kann deshalb sowohl ein biologisches Muster als auch hohe Beobachtungsaktivität widerspiegeln.
 
 > **Interpretationsregel:** „Keine Beobachtung“ bedeutet ohne dokumentierte Suche nicht automatisch „kein Vorkommen“.
+
+Das [Gedankenexperiment zum Beobachtungsbias]({{ '/unit11/unit11-02_gbif.html#beobachtungsbias' | relative_url }}) zeigt, wie bei unverändertem Vorkommen unterschiedliche Nachweiskarten entstehen können.
 
 ## Punkte und Maßstab
 

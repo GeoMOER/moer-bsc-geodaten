@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="710" viewBox="0 0 640 710" role="img" aria-labelledby="title description">
+<title id="title">Gleiche Zellgröße, anderes Gitter</title>
+<desc id="description">Zwei 10-Meter-Gitter im gleichen lokalen Meterkoordinatensystem. Gitter B beginnt fünf Meter weiter östlich. Die erste Zelle beider Gitter deckt verschiedene Flächen ab.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Gleiche Zellgröße, anderes Gitter</text>
+<text x="24" y="83" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Gitter A: durchgezogen · Gitter B: gestrichelt</text>
+<text x="24" y="115" font-size="23" font-weight="400" fill="#263238" text-anchor="start">B ist um 5 m nach Osten verschoben.</text>
+<path d="M85 170L85 410" fill="none" stroke="#1565a7" stroke-width="3"/>
+<path d="M145 170L145 410" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M205 170L205 410" fill="none" stroke="#1565a7" stroke-width="3"/>
+<path d="M265 170L265 410" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M325 170L325 410" fill="none" stroke="#1565a7" stroke-width="3"/>
+<path d="M385 170L385 410" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M445 170L445 410" fill="none" stroke="#1565a7" stroke-width="3"/>
+<path d="M505 170L505 410" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M85 410L445 410" fill="none" stroke="#1565a7" stroke-width="3"/>
+<path d="M145 410L505 410" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="65" y="418" font-size="23" font-weight="400" fill="#263238" text-anchor="end">0</text>
+<path d="M85 290L445 290" fill="none" stroke="#1565a7" stroke-width="3"/>
+<path d="M145 290L505 290" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="65" y="298" font-size="23" font-weight="400" fill="#263238" text-anchor="end">10</text>
+<path d="M85 170L445 170" fill="none" stroke="#1565a7" stroke-width="3"/>
+<path d="M145 170L505 170" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="65" y="178" font-size="23" font-weight="400" fill="#263238" text-anchor="end">20</text>
+<text x="85" y="445" font-size="23" font-weight="400" fill="#263238" text-anchor="middle">0</text>
+<text x="205" y="445" font-size="23" font-weight="400" fill="#263238" text-anchor="middle">10</text>
+<text x="325" y="445" font-size="23" font-weight="400" fill="#263238" text-anchor="middle">20</text>
+<text x="445" y="445" font-size="23" font-weight="400" fill="#263238" text-anchor="middle">30</text>
+<text x="505" y="484" font-size="23" font-weight="400" fill="#263238" text-anchor="end">x (m)</text>
+<text x="32" y="150" font-size="23" font-weight="400" fill="#263238" text-anchor="start">y (m)</text>
+<path d="M85 473L145 473" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="157" y="482" font-size="23" font-weight="400" fill="#263238" text-anchor="start">5 m Versatz</text>
+<text x="24" y="542" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Erste Zelle A: x = 0 bis 10 m</text>
+<text x="24" y="574" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Erste Zelle B: x = 5 bis 15 m</text>
+<text x="24" y="606" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Dieselbe Spaltennummer ≠ dieselbe Bodenfläche.</text>
+<text x="24" y="638" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Vor Zellberechnungen auch Ausrichtung prüfen.</text>
+<text x="24" y="670" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Lokales Meterkoordinatensystem; schematisch.</text>
+</g>
+</svg>

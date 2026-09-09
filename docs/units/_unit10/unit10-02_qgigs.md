@@ -190,6 +190,10 @@ Probieren Sie aus:
 
 Ein umbenannter Layer erhält im Projekt lediglich einen neuen Anzeigenamen. Der Name der ursprünglichen Datendatei wird dadurch nicht verändert.
 
+[![Dieselben zwei Punkte sind unter einer deckenden Polygonfläche verborgen. Werden die Punkte im Layerstapel nach oben verschoben, sind beide sichtbar. Daten und Ausschnitt bleiben unverändert.]({{ '/assets/images/unit10/layerreihenfolge.svg' | relative_url }})]({{ '/assets/images/unit10/layerreihenfolge.svg' | relative_url }})
+
+*Im schematischen Vergleich ändert sich ausschließlich die Reihenfolge zweier Layer. Ein verdeckter Punkt ist weiterhin in der Attributtabelle vorhanden. Prüfen Sie bei scheinbar fehlenden Daten deshalb auch Reihenfolge und Füllung.*
+
 ## Features und Attribute untersuchen
 
 Bei einem Vektorlayer können Sie räumliche Objekte und ihre Sachdaten gemeinsam untersuchen.

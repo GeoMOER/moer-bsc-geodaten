@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="715" viewBox="0 0 640 715" role="img" aria-labelledby="title description">
+<title id="title">Stützpunkte bestimmen den Verlauf</title>
+<desc id="description">Ein Linienzug aus neun Stützpunkten wird auf fünf dieser Punkte reduziert. Anfang und Ende bleiben erhalten, dazwischen entfallen Details.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Stützpunkte bestimmen den Verlauf</text>
+<rect x="24" y="75" width="592" height="256" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="111" font-size="25" font-weight="700" fill="#263238" text-anchor="start">Detailliert · 9 Stützpunkte</text>
+<polyline points="55,200 112,143 173,175 225,132 294,165 367,213 433,154 501,186 583,141" fill="none" stroke="#1565a7" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="55" cy="200" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="112" cy="143" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="173" cy="175" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="225" cy="132" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="294" cy="165" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="367" cy="213" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="433" cy="154" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="501" cy="186" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="583" cy="141" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<text x="44" y="282" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Punkte werden durch gerade Segmente verbunden.</text>
+<text x="44" y="313" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Endpunkte gleich; Details dazwischen verändern sich.</text>
+<rect x="24" y="358" width="592" height="256" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="394" font-size="25" font-weight="700" fill="#263238" text-anchor="start">Vereinfacht · 5 Stützpunkte</text>
+<polyline points="55,483 112,426 173,458 225,415 294,448 367,496 433,437 501,469 583,424" fill="none" stroke="#94a3ad" stroke-width="2" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polyline points="55,483 173,458 294,448 433,437 583,424" fill="none" stroke="#1565a7" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="55" cy="483" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="173" cy="458" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="294" cy="448" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="433" cy="437" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<circle cx="583" cy="424" r="7" fill="#1565a7" stroke="white" stroke-width="2"/>
+<text x="44" y="565" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Punkte werden durch gerade Segmente verbunden.</text>
+<text x="44" y="596" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Endpunkte gleich; Details dazwischen verändern sich.</text>
+<text x="24" y="658" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Gestrichelt: ursprünglicher Linienzug zum Vergleich.</text>
+<text x="24" y="690" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Schematisch; mehr Punkte belegen keine Genauigkeit.</text>
+</g>
+</svg>

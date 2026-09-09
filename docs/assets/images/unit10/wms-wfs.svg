@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="844" viewBox="0 0 640 844" role="img" aria-labelledby="title description">
+<title id="title">Kartenbild oder Vektorobjekte?</title>
+<desc id="description">Dasselbe schematische Gebiet mit Fluss und Fläche: WMS liefert ein gerendertes Bild, WFS liefert Geometrien mit Attributen. Begrenzte WMS-Objektabfragen sind möglich.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+<rect width="640" height="100%" fill="#f7f8fa"/>
+<g font-family="sans-serif" fill="#263238">
+<text x="24" y="42" font-size="28" font-weight="700" fill="#263238" text-anchor="start">Kartenbild oder Vektorobjekte?</text>
+<rect x="24" y="74" width="592" height="277" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="110" font-size="25" font-weight="700" fill="#263238" text-anchor="start">WMS · gerendertes Kartenbild</text>
+<rect x="44" y="139" width="220" height="140" fill="#edf3ed" stroke="#b7c4cc" stroke-width="1.5" rx="0"/>
+<rect x="83" y="165" width="112" height="84" fill="#cfdfbe" stroke="#227564" stroke-width="2" rx="0"/>
+<polyline points="54,151 114,204 154,215 250,264" fill="none" stroke="#1565a7" stroke-width="5" stroke-linejoin="round"/>
+<path d="M277 206L315 206" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="334" y="180" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Bild für den</text>
+<text x="334" y="212" font-size="24" font-weight="400" fill="#263238" text-anchor="start">angefragten</text>
+<text x="334" y="244" font-size="24" font-weight="400" fill="#263238" text-anchor="start">Ausschnitt</text>
+<text x="44" y="323" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Gut für Orientierung und Hintergrund.</text>
+<rect x="24" y="376" width="592" height="277" fill="white" stroke="#b7c4cc" stroke-width="1.5" rx="10"/>
+<text x="44" y="412" font-size="25" font-weight="700" fill="#263238" text-anchor="start">WFS · Features mit Attributen</text>
+<rect x="44" y="441" width="220" height="140" fill="#edf3ed" stroke="#b7c4cc" stroke-width="1.5" rx="0"/>
+<rect x="83" y="467" width="112" height="84" fill="#cfdfbe" stroke="#227564" stroke-width="2" rx="0"/>
+<polyline points="54,453 114,506 154,517 250,566" fill="none" stroke="#1565a7" stroke-width="5" stroke-linejoin="round"/>
+<path d="M277 508L315 508" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="334" y="462" font-size="22" font-weight="400" fill="#263238" text-anchor="start">ID 17 · Polygon</text>
+<text x="334" y="504" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Typ: Schutzgebiet</text>
+<text x="334" y="542" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Geometrie +</text>
+<text x="334" y="574" font-size="22" font-weight="400" fill="#263238" text-anchor="start">Attributwerte</text>
+<text x="44" y="625" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Objekte auswählen und analysieren.</text>
+<text x="24" y="698" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Gleicher sichtbarer Inhalt, andere Lieferung.</text>
+<text x="24" y="730" font-size="23" font-weight="400" fill="#263238" text-anchor="start">WMS kann einzelne Sachinfos abfragen;</text>
+<text x="24" y="762" font-size="23" font-weight="400" fill="#263238" text-anchor="start">das ersetzt keinen vollständigen Featurelayer.</text>
+<text x="24" y="794" font-size="23" font-weight="400" fill="#263238" text-anchor="start">Schematisches Beispiel, keine Dienstaufnahme.</text>
+</g>
+</svg>

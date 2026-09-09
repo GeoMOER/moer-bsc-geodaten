@@ -199,6 +199,10 @@ Die verbindlichen Layernamen sind:
 
 Prüfen Sie nach dem Export, ob Featureanzahl, Geometrie und CRS plausibel sind.
 
+[![Dieselbe Linie schneidet dasselbe Polygon. Intersects markiert die vollständige Linie einschließlich der äußeren Abschnitte; Clip erzeugt eine neue, an der Polygongrenze gekürzte Ausgabegeometrie.]({{ '/assets/images/unit12/auswahl-zuschneiden.svg' | relative_url }})]({{ '/assets/images/unit12/auswahl-zuschneiden.svg' | relative_url }})
+
+*Auch die 106 ausgewählten Gewässer-Features des Kurssnapshots werden beim Auswahlexport vollständig gespeichert. Ihre Gesamtlänge wäre deshalb nicht automatisch die Gewässerlänge innerhalb der Schutzgebiete. Zuschneiden dient hier nur der begrifflichen Abgrenzung und ist kein zusätzlicher Pflichtschritt.*
+
 ## Ergebnisse vorsichtig interpretieren
 
 Die räumliche Auswahl liefert ein technisch eindeutiges Ergebnis. Die fachliche Aussage kann dennoch unsicher sein.
