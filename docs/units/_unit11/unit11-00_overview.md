@@ -164,3 +164,7 @@ Geplante Unterseiten:
 - unit11-03_punkte_qgis.md
 - unit11-04_assignment.md
 -->
+
+## Folien zu dieser Unit
+
+{% include pdf pdf="Geodaten_Slides_Unit11.pdf" %}

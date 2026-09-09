@@ -173,3 +173,7 @@ Geplante Unterseiten:
 - unit13-03_raster_qgis.md
 - unit13-04_assignment.md
 -->
+
+## Folien zu dieser Unit
+
+{% include pdf pdf="Geodaten_Slides_Unit13.pdf" %}

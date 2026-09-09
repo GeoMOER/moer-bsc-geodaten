@@ -164,3 +164,7 @@ Geplante Unterseiten:
 - unit12-03_vektoren_qgis.md
 - unit12-04_assignment.md
 -->
+
+## Folien zu dieser Unit
+
+{% include pdf pdf="Geodaten_Slides_Unit12.pdf" %}

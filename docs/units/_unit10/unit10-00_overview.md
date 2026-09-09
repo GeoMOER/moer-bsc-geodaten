@@ -162,3 +162,7 @@ Unterseiten:
 - unit10-03_datenquellen.html
 - unit10-04_assignment.html
 -->
+
+## Folien zu dieser Unit
+
+{% include pdf pdf="Geodaten_Slides_Unit10.pdf" %}
