@@ -9,43 +9,51 @@ header:
 ---
 
 <!-- Themenblock 02-01: Einführung in Excel, Grundlagen -->
-Hier sollte ein Einführungstext zum Thema "Einführung in Excel, Grundlagen" stehen.
+Nachdem wir uns mit Datentypen und -formaten befasst haben, geht es in diesem Kapitel um das Werkzeug, mit dem wir diese in der Praxis anwenden: Microsoft Excel. Bevor wir mit konkreten Formeln und Funktionen arbeiten, verschaffen wir uns zunächst einen Überblick über die Herkunft, die Oberfläche und die grundlegenden Möglichkeiten des Programms – als Grundlage für alle folgenden Übungen.
 
-## Themenüberschrift 01
+## Die Excel-Oberfläche
+ 
+| Element | Beschreibung |
+|---|---|
+| **Menüband (Ribbon)** | Oben angeordnete Registerkarten (Start, Einfügen, Formeln, Daten, Überprüfen, Ansicht …), jede mit thematisch gruppierten Befehlen. |
+| **Namensfeld** | Zeigt links oben die Adresse der aktuell markierten Zelle (z. B. `B3`) – kann auch genutzt werden, um direkt zu einer Zelle zu springen. |
+| **Bearbeitungsleiste (Formelleiste)** | Zeigt den tatsächlichen Inhalt der aktiven Zelle (Formel statt Ergebnis) – wichtig, um zu prüfen, ob eine Zelle eine Formel oder einen festen Wert enthält. |
+| **Tabellenblatt-Reiter** | Unten am Bildschirmrand, zum Wechseln zwischen mehreren Sheets einer Arbeitsmappe (wie in unserer Übungsdatei: Anleitung, Rohdaten, Bearbeitung …). |
+| **Statusleiste** | Unten, zeigt bei markierten Zellbereichen automatisch Summe, Mittelwert und Anzahl an – praktisch für einen schnellen Check ohne extra Formel. |
+| **Schnellzugriffsleiste** | Oben links, frei anpassbar mit häufig genutzten Befehlen (z. B. Speichern, Rückgängig). |
 
-A brief introduction to Excel
+## Überblick über Excels Möglichkeiten
+ 
+Ein kurzer Ausblick, was Excel neben den Grundfunktionen alles kann – Details dazu folgen in späteren Einheiten:
+ 
+- **Formeln & Funktionen**: mathematisch (`SUMME`, `MITTELWERT`), logisch (`WENN`), Text (`TEIL`, `GLÄTTEN`, `ERSETZEN`), sowie Nachschlage-Funktionen (`SVERWEIS`, `INDEX`+`VERGLEICH`).
+- **PivotTables**: fassen große Datensätze interaktiv per Drag-and-Drop zusammen, ganz ohne eigene Formel.
+- **Diagramme**: visuelle Darstellung von Zahlenreihen (Balken, Linien, Streudiagramme).
+- **Bedingte Formatierung**: färbt Zellen automatisch abhängig vom Wert – nützlich, um Auffälligkeiten auf einen Blick zu erkennen.
+- **Datenvalidierung**: schränkt erlaubte Zelleingaben ein und verhindert so Fehler direkt an der Quelle.
+- **Power Query**: importiert und bereinigt Daten aus externen Quellen automatisiert – im Grunde eine grafische Oberfläche für Datenbereinigung.
+- **Makros/VBA**: automatisiert wiederkehrende Arbeitsschritte per Code.
+- **Solver/Zielwertsuche**: sucht automatisch den Eingabewert, der zu einem gewünschten Ergebnis führt.
+## Nützliche Shortcuts
+ 
+| Shortcut | Funktion |
+|---|---|
+| `Strg` + `C` / `V` / `X` | Kopieren / Einfügen / Ausschneiden |
+| `Strg` + `Z` / `Y` | Rückgängig / Wiederholen |
+| `Strg` + `S` | Speichern |
+| `F2` | Aktive Zelle bearbeiten |
+| `F4` | Beim Bearbeiten einer Formel: zwischen relativem und absolutem Zellbezug wechseln (`A1` → `$A$1` → `A$1` → `$A1`) |
+| `Alt` + `=` | AutoSumme für markierten Bereich einfügen |
+| `Strg` + `Pfeiltaste` | Zum Rand des zusammenhängenden Datenbereichs springen |
+| `Strg` + `Shift` + `Pfeiltaste` | Bereich bis zum Rand der Daten markieren |
+| `Strg` + `Pos1` | Zur Zelle A1 springen |
+| `Strg` + `Ende` | Zur letzten benutzten Zelle springen |
+| `Strg` + `1` | Dialog „Zellen formatieren" öffnen |
+| `Strg` + `Shift` + `L` | Autofilter ein-/ausschalten |
+| `Strg` + `;` | Aktuelles Datum einfügen |
+| `F9` | Arbeitsmappe neu berechnen |
+ 
+Besonders **F4** lohnt sich früh einzuprägen, da absolute und relative Zellbezüge eines der zentralen Lernziele dieser Einheit sind.
 
-- Geschichte
-- Oberfläche
-- Unterschiede zu open software
-
-- Überblick über Möglichkeiten (pivot etc pp)
 
 
-Menüband (Ribbon): oben angeordnete Registerkarten (Start, Einfügen, Formeln, Daten, Überprüfen, Ansicht …), jede mit thematisch gruppierten Befehlen
-Namensfeld: zeigt links oben die Adresse der aktuell markierten Zelle (z. B. B3) – kann auch genutzt werden, um direkt zu einer Zelle zu springen
-Bearbeitungsleiste (Formelleiste): zeigt den tatsächlichen Inhalt der aktiven Zelle (Formel statt Ergebnis) – wichtig, um zu prüfen, ob eine Zelle eine Formel oder einen festen Wert enthält
-Tabellenblatt-Reiter: unten am Bildschirmrand, zum Wechseln zwischen mehreren Sheets einer Arbeitsmappe (wie in unserer Übungsdatei: Anleitung, Rohdaten, Bearbeitung …)
-Statusleiste: unten, zeigt bei markierten Zellbereichen automatisch Summe, Mittelwert und Anzahl an – praktisch für einen schnellen Check ohne extra Formel
-Schnellzugriffsleiste: oben links, frei anpassbar mit häufig genutzten Befehlen (z. B. Speichern, Rückgängig)
-Excel vs. Open-Source-Software
-Wichtigste Alternative: LibreOffice Calc (kostenlos, quelloffen) – funktional ähnlich, aber nicht identisch
-Formelkompatibilität: LibreOffice unterstützt einen etwas kleineren Funktionsumfang als Excel; manche neuere Excel-Funktionen (z. B. XVERWEIS) werden von LibreOffice nicht immer korrekt berechnet – das haben wir bei der Erstellung eurer Übungsdatei bewusst berücksichtigt (nur "klassische" Funktionen verwendet)
-Dateiformate: Excel nutzt standardmäßig .xlsx, LibreOffice .ods – beide können das jeweils andere Format öffnen/speichern, aber komplexe Formatierungen oder Makros gehen dabei manchmal verloren
-Makros/Automatisierung: Excel nutzt VBA (Visual Basic for Applications), LibreOffice eine eigene Basic-Variante – Code ist nicht 1:1 übertragbar
-Kosten: Excel/Microsoft 365 ist kostenpflichtig (Abo), LibreOffice komplett kostenlos
-Zusammenarbeit: Excel (über Microsoft 365/OneDrive) und Google Sheets (cloudbasiert, ebenfalls nicht Open Source) bieten Echtzeit-Zusammenarbeit; LibreOffice ist primär für lokale Einzelnutzung ausgelegt
-Support & Verbreitung: Excel ist im professionellen/universitären Umfeld der De-facto-Standard – wichtig zu wissen, wenn ihr später Dateien mit anderen austauscht
-Überblick über Excels Möglichkeiten
-Formeln & Funktionen: mathematische (SUMME, MITTELWERT), logische (WENN, UND/ODER), Text- (die schon behandelten TEIL, GLÄTTEN, ERSETZEN), Datums- sowie Nachschlage-Funktionen (SVERWEIS, INDEX+VERGLEICH) zum Verknüpfen mehrerer Tabellen
-PivotTables (Pivot-Tabellen): fassen große Datensätze interaktiv zusammen, ohne eine einzige Formel zu schreiben – Beispiel mit unserem Datensatz: durchschnittliche Temperatur automatisch gruppiert nach Ort_Typ (Stadtzentrum/Vorort/Dorf), einfach per Drag-and-Drop
-Diagramme/Charts: visuelle Darstellung von Zahlenreihen (Balken, Linien, Streudiagramme) – z. B. Temperaturverlauf über die Messstationen hinweg
-Bedingte Formatierung: Zellen färben sich automatisch abhängig vom Wert (z. B. hohe Temperaturen rot, niedrige blau) – nützlich, um Auffälligkeiten im Datensatz auf einen Blick zu erkennen
-Datenvalidierung: schränkt ein, was in eine Zelle eingegeben werden darf (z. B. nur Zahlen zwischen -20 und 50 für Temperaturwerte) – verhindert Eingabefehler direkt an der Quelle
-Power Query: Werkzeug zum Importieren und automatisierten Bereinigen/Transformieren von Daten aus externen Quellen (CSV, Datenbanken, Webseiten) – im Grunde eine grafische Oberfläche für genau die Art von Datenbereinigung, die wir in dieser Unit von Hand gemacht haben
-Makros/VBA: Automatisierung wiederkehrender Arbeitsschritte per aufgezeichnetem oder selbst geschriebenem Code
-Solver / Zielwertsuche: Werkzeuge zur Optimierung – Excel sucht automatisch den Eingabewert, der zu einem gewünschten Ergebnis führt
-
-
-<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
-<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
