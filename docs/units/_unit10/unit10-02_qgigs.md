@@ -10,6 +10,8 @@ header:
 
 <!-- Introtext: Vom konzeptionellen Datenmodell zur praktischen Arbeit in einem GIS. -->
 
+> **Verbindlicher Praxisweg:** Die [QGIS-Kurzcheckliste für Unit 10]({{ '/material/qgis-kernpfade.html#unit10' | relative_url }}) führt vom neuen Projekt bis zur Kontrolle nach dem erneuten Öffnen. Die ausführlichen Abschnitte auf dieser Seite dienen zugleich zum Nachschlagen.
+
 ## Was ist ein GIS?
 
 Ein **Geoinformationssystem**, kurz **GIS**, ist eine Softwareumgebung zum Erfassen, Verwalten, Darstellen, Untersuchen und Analysieren von Geodaten. Es verbindet räumliche Geometrien und Rasterwerte mit den zugehörigen Sachdaten.

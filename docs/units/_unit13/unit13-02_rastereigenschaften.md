@@ -65,6 +65,10 @@ Unterscheiden Sie deshalb:
 
 > Viele kleine Zellen können eine sehr detaillierte Darstellung erzeugen, aber keine fehlende Genauigkeit ersetzen.
 
+![Schematisches Raster mit 10 mal 10 Meter großen Zellen: 0 ist ein gültiger Höhenwert, NoData bezeichnet einen fehlenden gültigen Wert und wird beim Abtasten zu NULL. Die Zellgröße allein belegt keine Lage- oder Höhengenauigkeit.]({{ '/assets/images/unit13/zellgroesse-nodata-genauigkeit.svg' | relative_url }})
+
+*Die Beispielwerte dienen der Begriffsklärung. Im Marburger Lehrprodukt ist NoData mit −9999 gekennzeichnet; beim Abtasten bleiben die 21 fehlenden Höhen als `NULL` erhalten. Die hier gezeigte gültige Null ist kein Messwert aus dem Marburger Ausschnitt.*
+
 ## Ausdehnung
 
 Die **räumliche Ausdehnung** – häufig als *extent* bezeichnet – beschreibt das vom Raster abgedeckte Rechteck. Sie wird durch minimale und maximale Koordinaten begrenzt:

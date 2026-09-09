@@ -27,10 +27,12 @@ Entpacken Sie das ZIP an einem anderen Speicherort und prüfen Sie es mit den no
 QT_QPA_PLATFORM=offscreen /usr/bin/python3 scripts/marburg/check_package.py /tmp/anderer-ort/marburg_geodaten
 ```
 
-Die Prüfung kontrolliert CSV-Feldtypen und IDs, die Koordinatentransformation, beide räumlichen Auswahlen, alle abgetasteten Höhenwerte und die relativen Datenquellen beider Kartenprojekte. Sie rendert außerdem das verschobene Beispielprojekt in einen temporären Ordner.
+Die Prüfung kontrolliert CSV-Feldtypen und IDs, die Koordinatentransformation, beide räumlichen Auswahlen, alle abgetasteten Höhenwerte und die relativen Datenquellen beider Kartenprojekte. In einer weiteren temporären Kopie durchläuft sie außerdem die technischen Kernpfade: Für Unit 10 legt sie ein Projekt mit Vektor und Raster an und öffnet es erneut; für Unit 14 speichert sie die Arbeitskopie und exportiert PDF und PNG mit 150 dpi. Die ausgegebenen Laufzeiten messen nur die automatisierten technischen Operationen und sind keine Bearbeitungszeiten für Studierende.
 
 ## Paket erstellen
 
 Alle Dateien unter einem gemeinsamen Ordner `marburg_geodaten/` zippen. Nicht in das ZIP gehören temporäre GDAL-Dateien (`*.aux.xml`), QGIS-Sicherungen oder Python-Caches. Der leere Ordner `data_output/` soll enthalten sein.
 
 Die Kurswebsite verweist auf `docs/assets/data/marburg/marburg_geodaten.zip`. Daneben liegt die Beispielkarte als Vorschau. Der Einstieg erfolgt über `docs/material/marburg.md`. Das Einchecken/Veröffentlichen gehört nicht zum Builder.
+
+Die Unit-14-Seite zur Klassifizierung zeigt außerdem `klassifizierung_intervalle.png` und `klassifizierung_quantile.png` direkt aus `docs/assets/data/marburg/`. Diese beiden Dateien sind unveränderte Kopien der gleichnamigen Exporte aus `ersatz/` im ZIP. Bei einem neuen Paketstand beide Website-Kopien mit aktualisieren und Karten, Legenden sowie Alternativtexte gemeinsam prüfen.

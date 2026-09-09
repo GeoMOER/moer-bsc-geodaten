@@ -16,9 +16,9 @@ Die folgenden Rückmeldungen gehören zur Abschlusssitzung. Sie sind freiwillig,
 
 ## Kursfeedback: Was hat Ihnen beim Lernen geholfen?
 
-Für diesen Teil sind **15 Minuten** vorgesehen: etwa 6 Minuten für die anonyme Rückmeldung und 9 Minuten für die gemeinsame Besprechung ausgewählter Ergebnisse. Bitte geben Sie keine Namen oder andere personenbezogenen Angaben in Freitextfeldern an. Ihre persönliche Lernreflexion müssen Sie nicht abgeben.
+Für diesen Teil sind **15 Minuten** vorgesehen: etwa 8 Minuten für den anonymen Papierfragebogen und 7 Minuten für freiwillige Ergänzungen im Plenum. Bitte schreiben Sie weder Ihren Namen noch andere personenbezogene Angaben auf den Fragebogen. Ihre persönliche Lernreflexion müssen Sie nicht abgeben.
 
-**Zugang zur Rückmeldung:** [Link oder QR-Code zur anonymen Befragung ergänzen; alternativ Papierfragebogen in der Sitzung].
+Die Lehrperson gibt den Fragebogen in der Sitzung aus. Geben Sie ihn anschließend gefaltet in die Sammelbox. Die Bögen werden erst nach der Sitzung ausgewertet; handschriftliche Freitexte werden nicht gezeigt.
 
 ### Einschätzungen zum Kurs
 
@@ -30,16 +30,7 @@ Bitte bewerten Sie die folgenden Aussagen mit **„trifft gar nicht zu“, „tr
 4. Die asynchrone Arbeit und die Präsenzsitzungen waren gut aufeinander abgestimmt.
 5. Die ILIAS-Fragen haben mir gezeigt, welche Inhalte ich noch nicht sicher verstanden hatte.
 6. Die Besprechung der ILIAS-Ergebnisse zu Beginn der nächsten Sitzung hat mir beim Klären dieser Unsicherheiten geholfen.
-
-### Bearbeitungszeit der ILIAS-Fragen
-
-Wenn Sie vorbereitet waren: Wie passte die vorgesehene Bearbeitungszeit von **30 Minuten pro Sitzungstest** zum Umfang der Fragen?
-
-- Deutlich zu kurz.
-- Eher zu kurz.
-- Passend.
-- Mehr Zeit als benötigt.
-- Kann ich nicht beurteilen.
+7. Der zeitliche Umfang der Fragen zwischen den Sitzungen war angemessen.
 
 ### Zwei offene Rückmeldungen
 
@@ -48,24 +39,21 @@ Wenn Sie vorbereitet waren: Wie passte die vorgesehene Bearbeitungszeit von **30
 
 ## Gemeinsame Rückmeldung
 
-Wir betrachten die zusammengefassten Einschätzungen und wiederkehrende Themen. Die Lehrperson ordnet ein, welche Anregungen sich für einen nächsten Kursdurchlauf aufgreifen lassen und wo noch Klärungsbedarf besteht.
+Die schriftlichen Rückmeldungen werden nach der Sitzung zusammengefasst und für den nächsten Kursdurchlauf ausgewertet. In der verbleibenden Zeit können Sie freiwillig mündlich ergänzen, was Ihnen beim Lernen geholfen hat oder was Sie verändern würden.
 
-Wir besprechen keine individuellen Leistungen. Freitext wird nur ohne identifizierende Angaben und vorzugsweise als thematische Zusammenfassung aufgegriffen. Falls die Rückmeldungen nicht sofort ausgewertet werden können, nutzen wir die verbleibende Zeit für freiwillige mündliche Ergänzungen; diese sind im Plenum nicht anonym.
+Wir besprechen keine individuellen Leistungen. Die mündlichen Ergänzungen im Plenum sind nicht anonym.
 
 <!-- Vorbereitung der Lehrperson:
-- Rückmeldung getrennt vom benoteten Fragenpool organisieren. Anonymität in den
-  Einstellungen der gewählten Befragung tatsächlich prüfen; nicht aus dem Fehlen
-  eines Namensfeldes ableiten. Keine Verknüpfung mit individuellen Testergebnissen.
-- Falls kein verlässlich anonymes digitales Verfahren bereitsteht, Fragebogen
-  ohne Namensangaben auf Papier einsetzen. Handschriftliche Antworten nicht zeigen.
-- Zugang bzw. Papierverfahren vor der Sitzung oben ergänzen.
+- Fragebogen ohne Namensangaben ausdrucken und eine Sammelbox bereitstellen.
+- Rückmeldung getrennt vom benoteten Fragenpool organisieren. Keine Verknüpfung
+  mit individuellen Testergebnissen.
 - Freitexte vor einer Anzeige sichten, nicht ungeprüft live projizieren.
 - Bei über 100 Studierenden Rückmeldungen bündeln; keine Einzelrunde durchführen.
 -->
 
 ## Abschluss: Was bleibt aus dem Kurs?
 
-In den letzten **10 Minuten** halten wir drei zentrale Gedanken fest:
+In den letzten **15 Minuten** halten wir drei zentrale Gedanken fest:
 
 1. **Gute Ergebnisse beginnen mit gut verstandenen Daten.** Datentypen, Einheiten, Herkunft und räumlicher Bezug gehören zur Interpretation dazu.
 2. **Ein nachvollziehbarer Arbeitsweg ist Teil des Ergebnisses.** Datenprüfung, Bearbeitung und wichtige Entscheidungen müssen auch später verständlich bleiben.
@@ -73,7 +61,7 @@ In den letzten **10 Minuten** halten wir drei zentrale Gedanken fest:
 
 Über den [Kursrückblick]({{ '/unit15/unit15-01_rueckblick.html' | relative_url }}) erreichen Sie die Materialien der bisherigen Units zum Nachschlagen. Sie müssen zum Abschluss keine neue Karte erstellen und keine zusätzliche Analyse abgeben.
 
-Zum Schluss klären wir gegebenenfalls noch offene organisatorische Fragen: **[Bereits geltende offene Termine, Abgabewege und Kontaktmöglichkeiten ergänzen; falls keine offen sind, diesen Hinweis entfernen].**
+Offene organisatorische Termine, Abgabewege und Kontaktmöglichkeiten werden bei Bedarf über die regulären Kurskanäle bekannt gegeben.
 
 Vielen Dank für Ihre Mitarbeit und Ihre Rückmeldungen!
 

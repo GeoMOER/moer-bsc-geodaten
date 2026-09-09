@@ -195,7 +195,7 @@ Welche der folgenden Koordinatenpaare sind für einen Ort in Deutschland plausib
 
 Beachten Sie dabei die angegebene Reihenfolge `(Längengrad, Breitengrad)`.
 
-### 3. Schreibweisen umrechnen
+### 3. Schreibweisen umrechnen – freiwillige Vertiefung
 
 Rechnen Sie `8° 46′ 12″ E` in Dezimalgrad um. Prüfen Sie anschließend, ob das Ergebnis ungefähr zum Längengrad von Marburg passt.
 

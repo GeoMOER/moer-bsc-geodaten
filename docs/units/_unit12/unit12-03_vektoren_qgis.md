@@ -10,6 +10,8 @@ header:
 
 <!-- Rückblick: Welche Inhalte aus den vorherigen Seiten werden benötigt? -->
 
+> **Verbindlicher Praxisweg:** Die [QGIS-Kurzcheckliste für Unit 12]({{ '/material/qgis-kernpfade.html#unit12' | relative_url }}) bündelt die Attributauswahl, beide räumlichen Auswahlen und die drei zu speichernden Ergebnislayer.
+
 ## Rückblick
 
 Wir kennen nun drei Vektorgeometrien:

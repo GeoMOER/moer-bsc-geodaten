@@ -10,6 +10,8 @@ header:
 
 <!-- Rückblick: Welche Inhalte aus den vorherigen Seiten werden benötigt? -->
 
+> **Verbindlicher Praxisweg:** Die [QGIS-Kurzcheckliste für Unit 13]({{ '/material/qgis-kernpfade.html#unit13' | relative_url }}) bündelt Rasterprüfung, Abtasten, Ergebniskontrolle und Ausgabe. Histogramme und weitere Rastervergleiche sind freiwillige Vertiefung.
+
 ## Rückblick
 
 Wir wissen nun, dass ein Raster aus räumlich verorteten Zellen und Zellwerten besteht. Für seine Interpretation benötigen wir unter anderem Zellgröße, CRS, Ausdehnung, Bandbedeutung, Einheit und NoData-Definition.

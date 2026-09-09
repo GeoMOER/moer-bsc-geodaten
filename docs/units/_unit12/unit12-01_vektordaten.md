@@ -173,6 +173,10 @@ Die Richtung der Frage ist wichtig:
 
 Bei einem Punkt genau auf der Polygongrenze können die Ergebnisse je nach gewählter Beziehung unterschiedlich sein. In der Praxis muss die Auswahlregel deshalb ausdrücklich dokumentiert werden.
 
+![A liegt im Polygon, B genau auf dessen Grenze und C außerhalb. Intersects wählt A und B aus; within wählt nur A. Die Unsicherheit der ursprünglichen Koordinaten bleibt bestehen.]({{ '/assets/images/unit12/punkt-auf-polygongrenze.svg' | relative_url }})
+
+*Für unsere Punktauswahl berücksichtigt „schneidet“ (`intersects`) auch den Randpunkt. „Liegt innerhalb“ (`within`) schließt ihn aus. Die Tabelle gilt für Punkte relativ zum Polygon.*
+
 ## Räumliche Auswahl und räumliche Überlagerung
 
 Zwei ähnliche Arbeitsschritte müssen unterschieden werden:

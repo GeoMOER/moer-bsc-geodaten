@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="714" viewBox="0 0 640 714" role="img" aria-labelledby="title description">
+  <title id="title">Beobachtung, Punktfeature und Koordinatenunsicherheit</title>
+  <desc id="description">Ein Nachweis enthält Art, Zeitpunkt, Koordinate und Herkunft. Ein Punkt repräsentiert die gemeldete Koordinate; ein gestrichelter Kreis kennzeichnet separat ihre angegebene räumliche Unsicherheit. Zwei unterschiedlich große Symbole ändern weder die Koordinate noch deren Genauigkeit.</desc>
+  <rect width="640" height="714" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="24" y="40" font-size="28" font-weight="700">Beobachtung, Punkt und Unsicherheit</text>
+    <rect x="24" y="64" width="592" height="168" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="2"/>
+    <text x="42" y="97" font-size="25" font-weight="700">1  Ein Nachweis wird dokumentiert</text>
+    <text x="42" y="136" font-size="24">Art + Zeitpunkt + Koordinate + Herkunft</text>
+    <text x="42" y="176" font-size="24">Daraus entsteht ein Punktfeature im GIS.</text>
+    <text x="42" y="211" font-size="22">Die Koordinate repräsentiert den gemeldeten Ort.</text>
+    <rect x="24" y="254" width="592" height="254" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="2"/>
+    <text x="42" y="288" font-size="25" font-weight="700">2  Die Lage kann unsicher sein</text>
+    <circle cx="154" cy="391" r="72" fill="#e3f2fd" stroke="#1565c0" stroke-width="3" stroke-dasharray="8 6"/>
+    <circle cx="154" cy="391" r="8" fill="#1565c0" stroke="#ffffff" stroke-width="2"/>
+    <path d="M154 391L226 391" stroke="#1565c0" stroke-width="2"/>
+    <text x="174" y="381" font-size="24" font-weight="700">r</text>
+    <text x="258" y="352" font-size="22">Punkt: gemeldete Koordinate</text>
+    <text x="258" y="388" font-size="22">Kreis: angegebene räumliche</text>
+    <text x="258" y="419" font-size="22">Unsicherheit mit Radius r</text>
+    <text x="42" y="487" font-size="22">Schematisch; kein Aufenthaltsgebiet der Art.</text>
+    <rect x="24" y="530" width="592" height="160" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="2"/>
+    <text x="42" y="566" font-size="24" font-weight="700">3  Das Symbol ist eine Darstellungswahl</text>
+    <circle cx="79" cy="610" r="6" fill="#1565c0" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="169" cy="610" r="18" fill="#1565c0" stroke="#ffffff" stroke-width="2"/>
+    <text x="225" y="618" font-size="22">Gleiche Position, anderes Symbol</text>
+    <text x="42" y="664" font-size="21">Ein größeres Symbol bedeutet nicht mehr Unsicherheit.</text>
+  </g>
+</svg>

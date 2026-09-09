@@ -14,8 +14,6 @@ Wir wiederholen die vergangenen Units in ihrer Reihenfolge. Die folgenden Statio
 
 Es kommen keine neuen Inhalte hinzu. Wir rechnen keine neuen Beispiele durch und beginnen keinen neuen Software-Arbeitsablauf. Notieren Sie während des Rückblicks Fragen, die Sie anschließend besprechen möchten.
 
-> **Redaktioneller Hinweis vor der Durchführung:** Bei Units 3–8 stimmen die Themenzuordnungen im Kursplan und in den Unit-Dateien teilweise nicht überein. Dieser Entwurf folgt den vorhandenen Unit-Dateien. [Reihenfolge mit dem tatsächlich durchgeführten Kurs abgleichen; für Unit 8 das behandelte Beispiel ergänzen.]
-
 <!-- Moderation: Pro Unit eine kompakte Folie bzw. den entsprechenden Abschnitt
 dieser Seite zeigen. Etwa zwei Minuten je Unit und zwei Minuten für die abschließende
 Verbindung einplanen. Die genannten Erinnerungsanker sind Vorschläge zur Auswahl
@@ -91,7 +89,7 @@ verteilen; längere Diskussionen in die anschließende Fragerunde verschieben.
 ## Unit 8: Automatisierung – bekannte Schritte wiederholen
 
 - **Worum ging es?** Um die im Kurs behandelte Automatisierung wiederkehrender Arbeitsschritte.
-- **Woran erinnern wir uns?** [Das tatsächlich behandelte Beispiel aus Unit 8 ergänzen. Die vorhandene Unit-Seite enthält bislang nur einen Themenplatzhalter; hier keine zusätzliche Technik einführen.]
+- **Woran erinnern wir uns?** An die Abfolge aus Eingabe, Verarbeitung, Ausgabe und Kontrolle eines wiederkehrenden Arbeitsschritts.
 
 **Merksatz:** Auch wiederholt ausgeführte Arbeitsschritte benötigen passende Eingabedaten und eine Kontrolle der Ergebnisse.
 

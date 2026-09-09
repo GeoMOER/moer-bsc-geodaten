@@ -29,11 +29,11 @@ Für die Abschlusssitzung sind **90 Minuten** vorgesehen.
 
 | Zeit | Phase | Was machen wir? |
 |---|---|---|
-| 0–15 Minuten | JiTT-Auswertung zu Unit 14 | Auffällige Antworten besprechen und zentrale Missverständnisse klären. |
-| 15–45 Minuten | Einmal durch den Kurs | Ein kompakter, von der Lehrperson moderierter Rückblick auf Units 1–14 mit bekannten Beispielen und Kernaussagen. |
-| 45–65 Minuten | Offene Fragen und persönliche Rückschau | Lernfortschritt reflektieren, Fragen sammeln und häufige Fragen gemeinsam klären. |
-| 65–80 Minuten | Kursfeedback | Kurze anonyme Rückmeldung geben und ausgewählte Ergebnisse besprechen. |
-| 80–90 Minuten | Abschluss | Die wichtigsten Botschaften mitnehmen, Materialien zum Nachschlagen finden und organisatorische Fragen klären. |
+| 0–10 Minuten | JiTT-Auswertung zu Unit 14 | Auffällige Antworten besprechen und zentrale Missverständnisse klären. |
+| 10–40 Minuten | Einmal durch den Kurs | Ein kompakter, von der Lehrperson moderierter Rückblick auf Units 1–14 mit bekannten Beispielen und Kernaussagen. |
+| 40–60 Minuten | Offene Fragen und persönliche Rückschau | Lernfortschritt reflektieren, Fragen sammeln und häufige Fragen gemeinsam klären. |
+| 60–75 Minuten | Kursfeedback | Anonymen Papierfragebogen ausfüllen und freiwillige Ergänzungen besprechen. |
+| 75–90 Minuten | Abschluss | Die wichtigsten Botschaften mitnehmen, Materialien zum Nachschlagen finden und organisatorische Fragen klären. |
 
 ## 1. JiTT: Was zeigen die Antworten zu Unit 14?
 
@@ -48,7 +48,7 @@ Zwei bis drei Fragen anhand des Anteils vollständig richtiger Antworten und, so
 verfügbar, der Antwortverteilung auswählen. Bei Teilpunkten mittlere Punktquote und
 Anteil vollständig richtiger Antworten unterscheiden. Nur aggregierte Ergebnisse
 zeigen. Für jede ausgewählte Frage eine kurze Erklärung vorbereiten. Insgesamt
-15 Minuten einhalten; keine neue Abstimmung und kein zusätzlicher Test erforderlich.
+10 Minuten einhalten; keine neue Abstimmung und kein zusätzlicher Test erforderlich.
 -->
 
 ## 2. Recap: Einmal durch den Kurs
@@ -78,5 +78,5 @@ Auf der Seite [Feedback und Abschluss]({{ '/unit15/unit15-05_assignment.html' | 
 - Bearbeiten Sie vor der Sitzung die bereits vorgesehenen ILIAS-Fragen zu Unit 14 im dafür angekündigten Zeitraum.
 - Halten Sie Ihre bisherigen Notizen und Arbeitsergebnisse zum Nachschlagen bereit. Eine zusätzliche Vorbereitung auf neue Inhalte ist nicht erforderlich.
 - Für den Recap werden bekannte Ergebnisse gezeigt; Sie müssen währenddessen keinen neuen QGIS-Arbeitsablauf durchführen.
-- **Noch zu ergänzen:** [Zugang zur anonymen Kursrückmeldung bzw. Hinweis auf Papierfragebogen].
-- **Falls noch relevant:** [Bereits geltende offene Termine, Abgabewege oder Kontaktmöglichkeiten zum Kursende ergänzen].
+- Der freiwillige Papierfragebogen wird in der Sitzung ausgegeben und ohne Namen eingesammelt.
+- Offene organisatorische Termine und Kontaktwege werden bei Bedarf über die regulären Kurskanäle bekannt gegeben.

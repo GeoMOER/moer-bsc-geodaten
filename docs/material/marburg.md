@@ -20,6 +20,8 @@ Stand: **08.09.2026**. Paket und Kartenprojekte sind mit **QGIS 3.40.15** geprü
 
 Die Originaldateien in `data_raw/` bleiben unverändert. Die bereitgestellten Ersatzdateien in `ersatz/` ermöglichen die gemeinsame Weiterarbeit, wenn ein eigener Arbeitsschritt noch nicht gelungen ist. Notieren Sie ihre Verwendung im Protokoll.
 
+Die [QGIS-Kurzchecklisten für Units 10–14]({{ '/material/qgis-kernpfade.html' | relative_url }}) zeigen die verbindlichen Arbeitsschritte, erwarteten Kontrollwerte und vorbereiteten Ausweichwege auf einer Seite.
+
 ## Was verwenden wir in welcher Unit?
 
 | Unit | Material | Gemeinsamer Arbeitsschritt |

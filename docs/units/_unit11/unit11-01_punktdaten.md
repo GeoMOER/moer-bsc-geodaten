@@ -105,6 +105,10 @@ Sind die Werte in WGS 84 als Dezimalgrad gespeichert, wird beim Import `EPSG:432
 
 ## Räumliche Genauigkeit und Präzision
 
+![Ein Nachweis wird als Punkt mit Attributen gespeichert. Ein separat dargestellter Unsicherheitskreis bezieht sich auf die gemeldete Koordinate; die Größe des Kartensymbols verändert diese Unsicherheit nicht.]({{ '/assets/images/unit11/punkt-beobachtung-unsicherheit.svg' | relative_url }})
+
+*Die Abbildung trennt Beobachtung, gespeicherte Position und Darstellung. Der gestrichelte Kreis veranschaulicht die angegebene räumliche Unsicherheit; er beschreibt kein Aufenthaltsgebiet der Art.*
+
 Viele Koordinaten sehen genauer aus, als sie tatsächlich sind. Die Anzahl der Dezimalstellen beschreibt nur die **numerische Präzision**. Sie sagt nicht automatisch, wie genau der Ort erfasst wurde.
 
 Ein GPS-Gerät kann mehrere Dezimalstellen ausgeben, obwohl die reale Positionsunsicherheit einige Meter beträgt. Historische Fundangaben wurden vielleicht nur einer Gemeinde zugeordnet und später durch deren Mittelpunkt repräsentiert. Beide Datensätze können ähnlich aussehende Koordinaten besitzen, aber eine sehr unterschiedliche räumliche Qualität.

@@ -10,6 +10,8 @@ header:
 
 <!-- Introtext: Eine tabellarische GBIF-Auswahl kontrolliert in einen Punktlayer überführen. -->
 
+> **Verbindlicher Praxisweg:** Die [QGIS-Kurzcheckliste für Unit 11]({{ '/material/qgis-kernpfade.html#unit11' | relative_url }}) bündelt Import, Qualitätsauswahl, Export und Kontrolle. Weitere Filter und Symbolisierungen sind freiwillige Vertiefung.
+
 ## Von der Tabelle zur Karte
 
 Der vorbereitete GBIF-Datensatz enthält für jeden Nachweis eine Tabellenzeile. Die Spalten `decimalLongitude` und `decimalLatitude` beschreiben die räumliche Position. QGIS kann daraus Punktgeometrien erzeugen.

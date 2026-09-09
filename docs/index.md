@@ -164,43 +164,43 @@ Nach erfolgreichem Abschluss des Moduls sind Studierende in der Lage,
       <tr>
         <td class="term-number"><a href="unit03/unit03-00_overview.html">03</a></td>
         <td class="date-cell">28.10.2026</td>
-        <td class="topic-cell">Datenübersicht in Excel I</td>
-        <td>Mittelwert und Co, Zusammenfassen</td>
+        <td class="topic-cell">Daten organisieren und bereinigen</td>
+        <td>Ordnerstrukturen, Sortieren und Filtern, Datenbereinigung und Protokollierung</td>
       </tr>
       <!-- Termin 04 -->
       <tr>
         <td class="term-number"><a href="unit04/unit04-00_overview.html">04</a></td>
         <td class="date-cell">04.11.2026</td>
-        <td class="topic-cell">Datenübersicht in Excel II</td>
-        <td>Histogramme und weitere Diagramme, Daten zusammenfassen</td>
+        <td class="topic-cell">Daten mit Kennwerten beschreiben</td>
+        <td>Mittelwert, Median und Modus, Streuung und Verteilungen</td>
       </tr>
       <!-- Termin 05 -->
       <tr>
         <td class="term-number"><a href="unit05/unit05-00_overview.html">05</a></td>
         <td class="date-cell">11.11.2026</td>
-        <td class="topic-cell">Datenbereinigung und Protokollierung</td>
-        <td>Daten filtern, Änderungen protokollieren</td>
+        <td class="topic-cell">Daten zusammenfassen und Zusammenhänge betrachten</td>
+        <td>Häufigkeits- und Pivot-Tabellen, Streudiagramme und Pearson-Korrelation</td>
       </tr>
       <!-- Termin 06 -->
       <tr>
         <td class="term-number"><a href="unit06/unit06-00_overview.html">06</a></td>
         <td class="date-cell">18.11.2026</td>
-        <td class="topic-cell">Daten nutzbar machen - offline Erfahrung</td>
-        <td>Pearson-Korrelation, Streudiagramme (Scatterplots), Pivot-Tabellen, Häufigkeitstabellen und Histogramme</td>
+        <td class="topic-cell">Wiederkehrende Schritte in Excel</td>
+        <td>Formeln, Kopieren und Serien in Excel</td>
       </tr>
       <!-- Termin 07 -->
       <tr>
         <td class="term-number"><a href="unit07/unit07-00_overview.html">07</a></td>
         <td class="date-cell">25.11.2026</td>
-        <td class="topic-cell">FAIR & Metadaten</td>
-        <td>Formeln in Excel, Kopieren in Excel, Serien in Excel</td>
+        <td class="topic-cell">FAIR, README und Versionskontrolle</td>
+        <td>FAIR-Prinzipien, README-Dokumentation und Versionskontrolle mit Git</td>
       </tr>
       <!-- Termin 08 -->
       <tr>
         <td class="term-number"><a href="unit08/unit08-00_overview.html">08</a></td>
         <td class="date-cell">02.12.2026</td>
         <td class="topic-cell">Automatisierung</td>
-        <td>FAIR-Prinzipien, README-Dokumentation, Versionskontrolle mit Git</td>
+        <td>Wiederkehrende Arbeitsschritte automatisieren und Ergebnisse kontrollieren</td>
       </tr>
       <!-- Termin 09 -->
       <tr>

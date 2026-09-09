@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="752" viewBox="0 0 640 752" role="img" aria-labelledby="title description">
+  <title id="title">Rasterzellen: Zellgröße, gültige Null und NoData</title>
+  <desc id="description">Ein Rastergitter hat beispielhaft 10 mal 10 Meter große Zellen. Eine Zelle enthält den gültigen Höhenwert null, eine andere NoData. NoData führt beim Abtasten zu NULL. Die Zellgröße bestimmt keine horizontale oder vertikale Genauigkeit. Die gezeigten Werte sind schematisch.</desc>
+  <rect width="640" height="752" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="24" y="40" font-size="28" font-weight="700">Zellgröße, NoData und Genauigkeit</text>
+    <rect x="24" y="64" width="592" height="275" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="2"/>
+    <text x="42" y="99" font-size="25" font-weight="700">1  Zellgröße beschreibt das Gitter</text>
+    <rect x="48" y="127" width="78" height="78" rx="0" fill="#e3f2fd" stroke="#455a64" stroke-width="2"/>
+    <text x="53" y="172" font-size="20">180</text>
+    <rect x="126" y="127" width="78" height="78" rx="0" fill="#e3f2fd" stroke="#455a64" stroke-width="2"/>
+    <text x="131" y="172" font-size="20">192</text>
+    <rect x="204" y="127" width="78" height="78" rx="0" fill="#e3f2fd" stroke="#455a64" stroke-width="2"/>
+    <text x="209" y="172" font-size="20">205</text>
+    <rect x="48" y="205" width="78" height="78" rx="0" fill="#e3f2fd" stroke="#455a64" stroke-width="2"/>
+    <text x="53" y="250" font-size="20">0</text>
+    <rect x="126" y="205" width="78" height="78" rx="0" fill="#eeeeee" stroke="#455a64" stroke-width="2"/>
+    <text x="131" y="250" font-size="20">NoData</text>
+    <rect x="204" y="205" width="78" height="78" rx="0" fill="#e3f2fd" stroke="#455a64" stroke-width="2"/>
+    <text x="209" y="250" font-size="20">214</text>
+    <path d="M48 299L126 299" stroke="#455a64" stroke-width="2"/>
+    <path d="M48 292L48 306" stroke="#455a64" stroke-width="2"/>
+    <path d="M126 292L126 306" stroke="#455a64" stroke-width="2"/>
+    <text x="58" y="326" font-size="22">10 m</text>
+    <text x="347" y="159" font-size="23" font-weight="700">Beispielwerte</text>
+    <text x="347" y="197" font-size="24">10 m × 10 m</text>
+    <text x="347" y="234" font-size="22">pro Rasterzelle</text>
+    <rect x="24" y="361" width="592" height="149" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="2"/>
+    <text x="42" y="399" font-size="24" font-weight="700">2  Null ist ein Wert; NoData ist keiner</text>
+    <text x="42" y="439" font-size="22">0 m: gültiger Höhenwert im Bezugssystem</text>
+    <text x="42" y="480" font-size="21">NoData: kein gültiger Wert → beim Abtasten NULL</text>
+    <rect x="24" y="532" width="592" height="159" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="2"/>
+    <text x="42" y="570" font-size="23" font-weight="700">3  Ein feines Gitter belegt keine Genauigkeit</text>
+    <text x="42" y="610" font-size="22">10-m-Zellen bedeuten nicht „auf 10 m genau“.</text>
+    <text x="42" y="650" font-size="22">Dafür sind Erfassung und Fehlerangaben nötig.</text>
+    <text x="24" y="728" font-size="21">Schematische Werte; 0 m ist kein Marburger Messwert.</text>
+  </g>
+</svg>

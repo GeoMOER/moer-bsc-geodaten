@@ -10,6 +10,8 @@ header:
 
 <!-- Introtext: Von der QGIS-Kartenansicht zum zielgerichteten, exportierbaren Kartenlayout. -->
 
+> **Verbindlicher Praxisweg:** Die [QGIS-Kurzcheckliste für Unit 14]({{ '/material/qgis-kernpfade.html#unit14' | relative_url }}) bündelt Arbeitskopie, Klassifikationsvergleich, Layoutkontrolle, Export und Partnercheck. Das neue Anlegen eines Layouts bleibt Vertiefung.
+
 ## Kartenansicht und Kartenlayout
 
 ![Ein vollständiger Kartenworkflow verbindet Fragestellung, Datenprüfung, Analyse, Gestaltung, Export und Interpretation.]({{ '/assets/images/unit14/karten-workflow.svg' | relative_url }})

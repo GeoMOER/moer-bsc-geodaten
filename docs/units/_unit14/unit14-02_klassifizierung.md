@@ -235,6 +235,33 @@ Speichern Sie vor dem Vergleich gegebenenfalls Screenshots oder notieren Sie die
 
 In der Sitzung vergleichen wir `ersatz/klassifizierung_intervalle.png` und `ersatz/klassifizierung_quantile.png` aus dem [Marburger Übungspaket und Anleitung]({{ '/material/marburg.html' | relative_url }}). Beide zeigen dieselben 35 Nachweise mit fünf Klassen und derselben Farbpalette. Dadurch untersuchen wir gezielt den Einfluss der Methode. Anschließend setzen wir eine der beiden Methoden mit ebenfalls fünf Klassen in QGIS um; weitere Varianten gehören nicht zum Pflichtumfang.
 
+<style>
+.classification-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.classification-comparison figure { display: block; min-width: 0; margin: 0; }
+.classification-comparison img { display: block; width: 100%; height: auto; }
+.classification-comparison figcaption { margin-top: .5rem; }
+@media (max-width: 1100px) { .classification-comparison { grid-template-columns: minmax(0, 1fr); } }
+</style>
+
+<div class="classification-comparison" aria-label="Vergleich derselben Nachweise mit zwei Klassifizierungsmethoden">
+  <figure>
+    <a href="{{ '/assets/data/marburg/klassifizierung_intervalle.png' | relative_url }}" aria-label="Karte mit gleichen Intervallen in voller Größe öffnen">
+      <img src="{{ '/assets/data/marburg/klassifizierung_intervalle.png' | relative_url }}" alt="35 Feuersalamander-Nachweise bei Marburg, nach Geländehöhe in fünf gleich breite Werteintervalle von etwa 178,5 bis 323,9 Metern eingeteilt. Die Klassen können unterschiedlich viele Nachweise enthalten." loading="lazy">
+    </a>
+    <figcaption><strong>Gleiche Intervalle:</strong> gleiche Breite der Werteintervalle.</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/assets/data/marburg/klassifizierung_quantile.png' | relative_url }}" aria-label="Karte mit Quantilen in voller Größe öffnen">
+      <img src="{{ '/assets/data/marburg/klassifizierung_quantile.png' | relative_url }}" alt="Dieselben 35 Nachweise mit gleicher Farbpalette und fünf Quantilklassen: Die Klassengrenzen liegen bei etwa 178,5, 214,3, 230,0, 245,0, 267,7 und 323,9 Metern. Die Werteintervalle sind unterschiedlich breit." loading="lazy">
+    </a>
+    <figcaption><strong>Quantile:</strong> möglichst gleich viele Nachweise je Klasse.</figcaption>
+  </figure>
+</div>
+
+*Auf schmalen Bildschirmen stehen die Karten untereinander. Öffnen Sie eine Karte für die vollständige Größe. Beide Exporte stammen unverändert aus dem Übungspaket; Daten, Ausschnitt, Symbolgröße und Farbpalette sind identisch.*
+
+Vergleichen Sie einen Nachweis, dessen Farbe sich verändert: Hat sich seine Höhe geändert oder nur seine Zuordnung zu einer Farbklasse? Prüfen Sie dazu die beiden Legenden. Die 21 geprüften Nachweise ohne gültige Höhe sind in beiden Karten nicht dargestellt.
+
 Als freiwillige Vertiefung können Sie für denselben Punktlayer drei Varianten erstellen:
 
 1. gleiche Intervalle,

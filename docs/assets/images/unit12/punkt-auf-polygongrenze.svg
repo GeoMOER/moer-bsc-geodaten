@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="736" viewBox="0 0 640 736" role="img" aria-labelledby="title description">
+  <title id="title">Punkt auf der Polygongrenze: intersects und within</title>
+  <desc id="description">Punkt A liegt im Inneren des Polygons, B genau auf dem Rand und C außerhalb. Intersects wählt A und B aus; within nur A. Die Aussagen beziehen sich auf die gespeicherten Geometrien und beseitigen keine Koordinatenunsicherheit.</desc>
+  <rect width="640" height="736" fill="#f7f8fa"/>
+  <g font-family="sans-serif" fill="#263238">
+    <text x="24" y="40" font-size="28" font-weight="700">Zählt ein Punkt auf der Grenze mit?</text>
+    <rect x="24" y="64" width="592" height="240" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="2"/>
+    <rect x="68" y="103" width="342" height="155" rx="0" fill="#dceedd" stroke="#2e7d32" stroke-width="2"/>
+    <text x="88" y="138" font-size="23" font-weight="700">Schutzgebiet</text>
+    <circle cx="189" cy="203" r="9" fill="#1565c0" stroke="#ffffff" stroke-width="2"/>
+    <text x="170" y="184" font-size="24" font-weight="700">A</text>
+    <circle cx="410" cy="203" r="9" fill="#1565c0" stroke="#ffffff" stroke-width="2"/>
+    <text x="401" y="184" font-size="24" font-weight="700">B</text>
+    <circle cx="542" cy="203" r="9" fill="#1565c0" stroke="#ffffff" stroke-width="2"/>
+    <text x="533" y="184" font-size="24" font-weight="700">C</text>
+    <text x="122" y="283" font-size="22">innen</text>
+    <text x="366" y="283" font-size="22">am Rand</text>
+    <text x="509" y="283" font-size="22">außen</text>
+    <text x="24" y="347" font-size="24" font-weight="700">Auswahl der Punkte relativ zum Polygon</text>
+    <rect x="24" y="368" width="592" height="184" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="2"/>
+    <text x="42" y="402" font-size="22" font-weight="700">Punkt</text>
+    <text x="208" y="402" font-size="22" font-weight="700">intersects</text>
+    <text x="434" y="402" font-size="22" font-weight="700">within</text>
+    <path d="M24 419L616 419" stroke="#455a64" stroke-width="2"/>
+    <text x="42" y="451" font-size="22">A: innen</text>
+    <text x="243" y="451" font-size="22">ja</text>
+    <text x="457" y="451" font-size="22">ja</text>
+    <text x="42" y="492" font-size="22" font-weight="700">B: Rand</text>
+    <text x="243" y="492" font-size="22" font-weight="700">ja</text>
+    <text x="457" y="492" font-size="22" font-weight="700">nein</text>
+    <text x="42" y="533" font-size="22">C: außen</text>
+    <text x="243" y="533" font-size="22">nein</text>
+    <text x="457" y="533" font-size="22">nein</text>
+    <text x="24" y="590" font-size="22">intersects: gemeinsamer Ort, auch auf der Grenze.</text>
+    <text x="24" y="626" font-size="22">within: Ein Punkt muss im Inneren liegen.</text>
+    <text x="24" y="674" font-size="23" font-weight="700">Die Auswahl ist rechnerisch eindeutig.</text>
+    <text x="24" y="708" font-size="22">Unsichere Koordinaten bleiben fachlich unsicher.</text>
+  </g>
+</svg>
