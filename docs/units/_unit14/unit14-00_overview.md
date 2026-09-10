@@ -175,3 +175,7 @@ Geplante Unterseiten:
 - unit14-04_workflow.md
 - unit14-04_assignment.md
 -->
+
+## Folien zu dieser Unit
+
+{% include pdf pdf="Geodaten_Slides_Unit14.pdf" %}
