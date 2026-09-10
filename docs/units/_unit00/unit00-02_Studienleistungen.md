@@ -12,7 +12,7 @@ Für den erfolgreichen Abschluss dieses Moduls müssen sowohl Studien- als auch 
 
 ## Studienleistung: 14 Hausaufgaben
 
-Zu jedem der 14 Termine gehört eine unbenotete Hausaufgabe in ILIAS. Für das Bestehen der Studienleistung müssen Sie **mindestens 7 der 14 Hausaufgaben** erfolgreich bearbeiten.
+Zu den Terminen 1 bis 14 gehört eine unbenotete Hausaufgabe in ILIAS. Für das Bestehen der Studienleistung müssen Sie **mindestens 7 der 14 Hausaufgaben** bestehen.
 
 Für jede Hausaufgabe gelten folgende Bedingungen:
 
@@ -20,16 +20,16 @@ Für jede Hausaufgabe gelten folgende Bedingungen:
 - **ein Bearbeitungsversuch**
 - maximal **30 Minuten Bearbeitungszeit**
 - mindestens **50 %** der erreichbaren Punkte zum Bestehen
-- Bearbeitung jeweils **bis zum folgenden Montag 23:59 Uhr**
+- Bearbeitung jeweils **bis zum folgenden Sonntag 23:59 Uhr**
 
 Eine Hausaufgabe gilt ab einschließlich 50 % als erfolgreich bearbeitet. Nicht bestandene Hausaufgaben können durch andere bestandene Hausaufgaben ausgeglichen werden.
 
 
 ## Prüfungsleistung: vier zusätzliche Tests
 
-Zusätzlich zu den 14 Hausaufgaben bearbeiten Sie vier Tests in ILIAS. Die Tests werden direkt nach den Terminen 4, 8, 12 und 14 freigeschaltet.
+Als Teil ihres Portfolios bearbeiten sie zusätzlich zu den 14 Hausaufgaben vier Tests in ILIAS. Die Tests werden direkt nach den Terminen 4, 8, 12 und 14 freigeschaltet.
 
-Für jeden Test gelten dieselben Bedingungen wie für die Hausaufgaben: ein Bearbeitungsversuch, maximal 30 Minuten Bearbeitungszeit und eine Bearbeitungsfrist bis zum folgenden Montag um 23:59 Uhr.
+Für jeden Test gelten dieselben Bedingungen wie für die Hausaufgaben: ein Bearbeitungsversuch, maximal 30 Minuten Bearbeitungszeit und eine Bearbeitungsfrist bis zum folgenden Sonntag um 23:59 Uhr.
 
 | Test | Geprüfte Inhalte | Freischaltung |
 | --- | --- | --- |
