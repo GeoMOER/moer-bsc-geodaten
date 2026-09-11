@@ -1,5 +1,5 @@
 --- 
-title: HA | Hausaufgabe Abschnitt 04
+title: ÜA | Übungsaufgabe Abschnitt 04
 published: true
 toc: true
 header:
@@ -8,10 +8,10 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Hausaufgabe 04: Deskriptive Statistik -->
-## Hausaufgabe 04
+<!-- Übungsaufgabe 04: Deskriptive Statistik -->
+## Übungsaufgabe 04
 
-In dieser Hausaufgabe sollen Studierende ...
+In dieser Übungsaufgabe sollen Studierende ...
 
 - das gelernte selbstständig anwenden
 

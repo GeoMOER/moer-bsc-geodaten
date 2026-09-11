@@ -1,5 +1,5 @@
 --- 
-title: HA | Hausaufgabe Abschnitt 08
+title: ÜA | Übungsaufgabe Abschnitt 08
 published: true
 toc: true
 header:
@@ -8,10 +8,10 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Hausaufgabe 08: Automation -->
-## Hausaufgabe 08
+<!-- Übungsaufgabe 08: Automation -->
+## Übungsaufgabe 08
 
-In dieser Hausaufgabe sollen Studierende ...
+In dieser Übungsaufgabe sollen Studierende ...
 
 - das gelernte selbstständig anwenden
 

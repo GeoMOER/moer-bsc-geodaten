@@ -8,9 +8,9 @@ header:
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
-## Hausaufgabe: JiTT-Fragen zu Unit 10
+## Übungsaufgabe: JiTT-Fragen zu Unit 10
 
-Beantworten Sie zwischen diesem und dem nächsten Kurstermin die **JiTT-Fragen zu Unit 10 im ILIAS-Kurs**. Die Beantwortung dieser Fragen ist Ihre einzige Hausaufgabe zu dieser Unit.
+Beantworten Sie zwischen diesem und dem nächsten Kurstermin die **JiTT-Fragen zu Unit 10 im ILIAS-Kurs**. Die Beantwortung dieser Fragen ist Ihre einzige Übungsaufgabe zu dieser Unit.
 
 Mit den Fragen bereiten Sie die Inhalte zu Geodatenmodellen, QGIS und WMS nach. Ihre Antworten zeigen uns, welche Verständnisfragen wir zu Beginn des nächsten Präsenztermins gemeinsam klären sollten.
 

@@ -8,9 +8,9 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-## Keine neue Hausaufgabe
+## Keine neue Übungsaufgabe
 
-Unit 15 schließt den Kurs ab. Es gibt keine neue Hausaufgabe, keine zusätzliche Abgabe und keinen weiteren verpflichtenden ILIAS-Fragenpool zu dieser Unit. Bereits geltende Fristen für die JiTT-Fragen früherer Units bleiben davon unberührt.
+Unit 15 schließt den Kurs ab. Es gibt keine neue Übungsaufgabe, keine zusätzliche Abgabe und keinen weiteren verpflichtenden ILIAS-Fragenpool zu dieser Unit. Bereits geltende Fristen für die JiTT-Fragen früherer Units bleiben davon unberührt.
 
 Die folgenden Rückmeldungen gehören zur Abschlusssitzung. Sie sind freiwillig, werden nicht benotet und fließen nicht in den Mittelwert Ihrer Sitzungsprozente ein.
 
@@ -66,5 +66,5 @@ Offene organisatorische Termine, Abgabewege und Kontaktmöglichkeiten werden bei
 Vielen Dank für Ihre Mitarbeit und Ihre Rückmeldungen!
 
 <!-- Der Dateiname bleibt zur Erhaltung vorhandener Links unverändert.
-Die frühere Hausaufgaben-Vorlage ist inhaltlich durch Feedback und Abschluss ersetzt.
+Die frühere Übungsaufgaben-Vorlage ist inhaltlich durch Feedback und Abschluss ersetzt.
 -->

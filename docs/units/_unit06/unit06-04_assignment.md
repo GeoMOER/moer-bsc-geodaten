@@ -1,5 +1,5 @@
 --- 
-title: HA | Hausaufgabe Abschnitt 06
+title: ÜA | Übungsaufgabe Abschnitt 06
 published: true
 toc: true
 header:
@@ -8,10 +8,10 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Hausaufgabe 06: Fuktionen und Automatisierung -->
-## Hausaufgabe 06
+<!-- Übungsaufgabe 06: Fuktionen und Automatisierung -->
+## Übungsaufgabe 06
 
-In dieser Hausaufgabe sollen Studierende ...
+In dieser Übungsaufgabe sollen Studierende ...
 
 - das gelernte selbstständig anwenden
 

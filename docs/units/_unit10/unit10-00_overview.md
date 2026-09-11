@@ -106,7 +106,7 @@ Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für 
 * **Freiwillige Vertiefung:** Die selbstständige WMS-Einrichtung, freie Geoportalsuche, weitere Dienste, alternative Ladewege und zusätzliche Modellierungsbeispiele bleiben zum Nachschlagen verfügbar.
 * **Ergebnissicherung:** Das gespeicherte Projekt lässt sich mit den lokalen Daten erneut öffnen. Ein kurzes Protokoll enthält Datenquellen, Datenmodelle, CRS und das Ergebnis des Öffnungstests.
 
-Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Hausaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 10 in ILIAS**.
+Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Übungsaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 10 in ILIAS**.
 
 <!-- Hinweise für Lehrende zur 90-Minuten-Sitzung:
 QGIS muss zu Sitzungsbeginn startbereit sein. Ein kleines Datenpaket mit Ordnerstruktur und vorausgefüllter Dokumentationsvorlage vorbereiten; das Verteilen und Öffnen gehört zum Praxisblock. Das geprüfte lokale Projekt ist das verbindliche Ergebnis der Sitzung und wird vor dem WMS behandelt. Die WMS-Demonstration beginnt spätestens in Minute 78 und endet in Minute 85. Bei Verbindungsproblemen sofort am Ersatzmaterial vergleichen, ohne eine andere Adresse oder einen anderen Dienst zu suchen.

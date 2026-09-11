@@ -1,5 +1,5 @@
 --- 
-title: HA | Hausaufgabe Abschnitt 07
+title: ÜA | Übungsaufgabe Abschnitt 07
 published: true
 toc: true
 header:
@@ -8,10 +8,10 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Hausaufgabe 07: Daten zugänglich machen -->
-## Hausaufgabe 07
+<!-- Übungsaufgabe 07: Daten zugänglich machen -->
+## Übungsaufgabe 07
 
-In dieser Hausaufgabe sollen Studierende ...
+In dieser Übungsaufgabe sollen Studierende ...
 
 - das gelernte selbstständig anwenden
 

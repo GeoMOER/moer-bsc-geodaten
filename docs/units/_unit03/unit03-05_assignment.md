@@ -1,5 +1,5 @@
 --- 
-title: HA | Hausaufgabe Abschnitt 03
+title: ÜA | Übungsaufgabe Abschnitt 03
 published: true
 toc: true
 header:
@@ -8,10 +8,10 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Hausaufgabe 03: Daten bereinigen & Protokollieren -->
-## Hausaufgabe 03
+<!-- Übungsaufgabe 03: Daten bereinigen & Protokollieren -->
+## Übungsaufgabe 03
 
-In dieser Hausaufgabe sollen Studierende ...
+In dieser Übungsaufgabe sollen Studierende ...
 
 - das gelernte selbstständig anwenden
 

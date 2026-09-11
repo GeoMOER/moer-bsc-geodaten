@@ -19,17 +19,17 @@ Die Kurswebseite ist öffentlich zugänglich. Für den Zugriff benötigen Sie ke
 
 ## ILIAS
 
-ILIAS ist der geschützte digitale Kursraum der Universität Marburg. Dort bearbeiten Sie die 14 Hausaufgaben und die vier Tests. Außerdem finden Sie dort organisatorische Informationen und weitere Kursdokumente.
+ILIAS ist der geschützte digitale Kursraum der Universität Marburg. Dort bearbeiten Sie die 14 Übungsaufgaben und die vier Tests. Außerdem finden Sie dort organisatorische Informationen und weitere Kursdokumente.
 
 Für den Zugriff auf ILIAS benötigen Sie Ihren Studierendenaccount.
 
 **[PLATZHALTER: Link zum ILIAS-Kurs]**
 
-## Warum gibt es regelmäßig Hausaufgaben?
+## Warum gibt es regelmäßig Übungsaufgaben?
 
-Die Hausaufgaben helfen Ihnen, die Inhalte des letzten Termins nachzubereiten und sich auf den nächsten Termin vorzubereiten. Ihre Antworten zeigen uns, bei welchen Themen noch Verständnisprobleme bestehen. Diese greifen wir zu Beginn des folgenden Präsenztermins auf und klären sie gemeinsam.
+Die Übungsaufgaben helfen Ihnen, die Inhalte des letzten Termins nachzubereiten und sich auf den nächsten Termin vorzubereiten. Ihre Antworten zeigen uns, bei welchen Themen noch Verständnisprobleme bestehen. Diese greifen wir zu Beginn des folgenden Präsenztermins auf und klären sie gemeinsam.
 
-Dieses Vorgehen wird **Just-in-Time Teaching (JiTT)** genannt. Ihre Bearbeitung der Hausaufgaben hilft uns somit, gezielt auf auftretende Schwierigkeiten einzugehen.
+Dieses Vorgehen wird **Just-in-Time Teaching (JiTT)** genannt. Ihre Bearbeitung der Übungsaufgaben hilft uns somit, gezielt auf auftretende Schwierigkeiten einzugehen.
 
 ## Präsenztermine
 
@@ -37,7 +37,7 @@ In den Präsenzterminen werden Ihnen die Lerninhalte praktisch vermittelt. Dort 
 
 ## Tutorium
 
-Zusätzlich zum Kurs bieten wir ein freiwilliges Tutorium an. Dort erhalten Sie Unterstützung bei Fragen zu den Lerninhalten und Hausaufgaben.
+Zusätzlich zum Kurs bieten wir ein freiwilliges Tutorium an. Dort erhalten Sie Unterstützung bei Fragen zu den Lerninhalten und Übungsaufgaben.
 
 - Termin: **[PLATZHALTER]**
 - Raum oder Zugangslink: **[PLATZHALTER]**

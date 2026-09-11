@@ -108,7 +108,7 @@ Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für 
 * **Freiwillige Vertiefung:** Eigene GBIF-Suche und Downloads, weitere Filtervarianten, systematische Dublettenprüfung und zusätzliche Symbolisierungen sind nicht Teil der Kernübung.
 * **Ergebnissicherung:** `unit11_results.gpkg/gbif_checked` sowie Quellenangabe, Auswahlregel und Recordzahlen werden in der Sitzung gesichert. Die Punktkarte wird als Karte dokumentierter Nachweise interpretiert.
 
-Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Hausaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 11 in ILIAS**.
+Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Übungsaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 11 in ILIAS**.
 
 <!-- Hinweise für Lehrende zur 90-Minuten-Sitzung:
 Einen kleinen dokumentierten GBIF-Ausschnitt, eine passende Qualitätsregel und eine Dokumentationsvorlage mit DOI und Lizenz vorbereiten. Die Regel muss zum tatsächlichen Schema passen; keine pauschale Löschung aller Records mit Qualitätsflags. Schemaidentischen Ersatzlayer für technische Probleme bereithalten, damit Exportprüfung und Interpretation gemeinsam abgeschlossen werden können.

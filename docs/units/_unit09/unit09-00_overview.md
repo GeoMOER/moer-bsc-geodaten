@@ -102,7 +102,7 @@ Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für 
 * **Freiwillige Vertiefung:** Eigenständige Ortsrecherche, weitere EPSG-Recherchen und das Umrechnen von Grad-Minuten-Sekunden gehören nicht zum Pflichtumfang der Sitzung.
 * **Ergebnissicherung:** Am Ende halten wir fest, welche Angaben Koordinaten eindeutig machen und wann Zuweisen beziehungsweise Transformieren erforderlich ist.
 
-Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Hausaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 09 in ILIAS**.
+Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Übungsaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 09 in ILIAS**.
 
 <!-- Hinweise für Lehrende zur 90-Minuten-Sitzung:
 Zahlenpaare, zwei Projektionsdarstellungen und zwei CRS-Fehlerfälle vorab für den Beamer bereithalten. Keine Softwareinstallation oder individuelle Portalsuche in dieser Sitzung einplanen.

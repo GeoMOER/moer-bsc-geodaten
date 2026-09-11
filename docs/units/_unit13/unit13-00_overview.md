@@ -115,7 +115,7 @@ Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für 
 * **Freiwillige Vertiefung:** Ausführlicher Vergleich mehrerer Raster, Histogrammvarianten, Mehrkanalbilder und eigenes Neuabtasten eines Rasters bleiben zusätzliche Vertiefungen.
 * **Ergebnissicherung:** `unit13_results.gpkg/gbif_mit_hoehe` enthält das kontrollierte Feld `hoehe_m`. Rasterquelle, Einheit, Höhenbezug und die Unsicherheiten von Raster und Beobachtungspunkten werden festgehalten.
 
-Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Hausaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 13 in ILIAS**.
+Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Übungsaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 13 in ILIAS**.
 
 <!-- Hinweise für Lehrende zur 90-Minuten-Sitzung:
 Einen kleinen DGM-Ausschnitt mit Metadaten, den geprüften Punkteingang und eine Dokumentationsvorlage vorbereiten. Rechenzeit und erzeugten Feldnamen vorher prüfen. Einen NoData-Fall und einen schemaidentischen Ergebnislayer als Ersatz bereithalten. Bei technischen Verzögerungen das Abtasten am Beamer zeigen; Stichproben und Interpretation gemeinsam am Ersatzlayer durchführen.

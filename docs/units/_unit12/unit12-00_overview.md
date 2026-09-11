@@ -109,7 +109,7 @@ Die Sitzung dauert **90 Minuten**: 10 Minuten JiTT-Besprechung, 75 Minuten für 
 * **Freiwillige Vertiefung:** Eigene Portalsuche, WFS-Einrichtung, das Berechnen zusätzlicher Längen- und Flächenattribute sowie weitere Auswahlvarianten gehören nicht zum Pflichtumfang.
 * **Ergebnissicherung:** `schutzgebiete_auswahl`, `gbif_in_schutzgebieten` und `gewaesser_an_schutzgebieten` werden in `unit12_results.gpkg` gespeichert. Auswahlregeln und Featurezahlen werden kurz protokolliert.
 
-Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Hausaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 12 in ILIAS**.
+Die ausführlichen Unterseiten dienen auch als Nachschlagewerk. Für die Sitzung gilt die oben beschriebene Auswahl; weitere Übungen sind freiwillige Vertiefung. Nicht abgeschlossene Arbeit wird nicht als Übungsaufgabe nachgeholt. Zwischen den Terminen beantworten Sie ausschließlich die **JiTT-Fragen zu Unit 12 in ILIAS**.
 
 <!-- Hinweise für Lehrende zur 90-Minuten-Sitzung:
 Kleine räumliche Ausschnitte, eine konkrete Attributregel und ein Quellenblatt vorbereiten. Die ausgewählten Schutzgebiete vor der räumlichen Auswahl als eigenen Layer sichern und als Vergleichslayer verwenden. Für Portalprobleme eine lokale Metadatenseite oder einen Screenshot sowie geprüfte Ergebnislayer bereithalten. Bei Zeitverlust die zweite räumliche Auswahl gemeinsam demonstrieren und das geprüfte Ergebnis bereitstellen.

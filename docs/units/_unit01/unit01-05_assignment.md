@@ -1,5 +1,5 @@
 --- 
-title: HA | Hausaufgabe Abschnitt 01
+title: ÜA | Übungsaufgabe Abschnitt 01
 published: true
 toc: true
 header:
@@ -8,8 +8,8 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Hausaufgabe 01: Temperaturen heraus schreiben -->
-## Hausaufgabe 01
+<!-- Übungsaufgabe 01: Temperaturen heraus schreiben -->
+## Übungsaufgabe 01
 
 - Kapitel "Betriebssystem und BIOS" lesen
 - textfile <!-- hier titel/Pfad einfügen --> herunterladen, die richtige Codierung finden
