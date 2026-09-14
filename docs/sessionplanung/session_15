@@ -3,18 +3,18 @@ Datum: 10.02.2027, 90 Minuten
 
 
 # Vorbereitung
-- Für Unit 15 liegt derzeit keine Präsentation vor. Alle Foliennummern sind deshalb sichtbare Platzhalter; vor dem Einsatz Folien erstellen und Nummern sowie Titel mit diesem Ablauf abgleichen.
+- Die 27 Folien mit diesem Ablauf abgleichen; die PowerPoint-Notizen und `docs/slides/unit15/moderation.md` enthalten dieselben Zeitfenster. Folie 26 ist Reserve, Folie 27 der Schluss.
 - Die aggregierten JiTT-Ergebnisse zu Unit 14 sichten und zwei bis drei Fragen mit unsicheren Lernzielen auswählen. Nur zusammengefasste Antworten ohne Namen oder individuelle Noten zeigen; insgesamt zehn Minuten einhalten.
-- Für den Rückblick vertraute Tabellen, Abbildungen oder Karten aus den tatsächlich behandelten Units 01–14 auswählen. Pro Unit ungefähr zwei Minuten und für die Verbindung am Ende zwei Minuten vorsehen; längere Fragen für Minute 40–60 sammeln.
+- Für die frühen Units 01–08 auf den Folien 03–10 nur tatsächlich behandelte Beispiele einsetzen; ihre Fachseiten sind noch in Arbeit. Units 09–14 mit den vorhandenen Kursabbildungen und geprüften Ergebnissen zeigen. Pro Unit ungefähr zwei Minuten und für die Verbindung am Ende zwei Minuten vorsehen; längere Fragen für Minute 40–60 sammeln.
 - Den freiwilligen anonymen Papierfragebogen von `unit15-05_assignment.md` ohne Namensfeld ausdrucken und eine Sammelbox bereitstellen. Organisatorische Termine und Kontaktwege nur mit verifizierten Angaben nennen oder auf die regulären Kurskanäle verweisen.
 
 
 # Themenblock: Einstieg und JiTT
 
-## Folie [Nummer offen] (vor Beginn) – Rückblick, offene Fragen und Kursabschluss
+## Folie 01 (vor Beginn) – Rückblick, offene Fragen und Kursabschluss
 - Beim Ankommen zeigen. Für Bachelor- und Lehramtsstudierende ist derselbe gemeinsame Abschluss vorgesehen.
 
-## Folie [Nummer offen] (0–10 min) – JiTT: Rückblick auf Unit 14
+## Folie 02 (0–10 min) – JiTT: Rückblick auf Unit 14
 - Zwei bis drei anhand der tatsächlichen Antworten ausgewählte Fragen zu Klassierung, Symbolisierung, Layout oder der Aussagegrenze der Abschlusskarte besprechen.
 - Jeweils Begründung und typisches Missverständnis klären; übergreifende Fragen für die spätere Runde notieren. Keine neue Abstimmung und keinen weiteren Test beginnen.
 - Überleitung: „Die Abschlusskarte verbindet viele Schritte unseres Kurses. Wir gehen nun den Weg von den ersten Daten bis zu dieser Karte noch einmal durch.“
@@ -22,63 +22,63 @@ Datum: 10.02.2027, 90 Minuten
 
 # Themenblock: Einmal durch den Kurs
 
-## Folie [Nummer offen] (10–12 min) – Unit 01: Digitale Daten und Computer
+## Folie 03 (10–12 min) – Unit 01: Digitale Daten und Computer
 - Einen bekannten Datei- oder Pfadfall zeigen. Fragen: „Was musste gespeichert werden, und wo finden wir es wieder?“
 - Sichern: Daten müssen lesbar kodiert und als Datei auffindbar sein; Prozessor und Arbeitsspeicher ersetzen dauerhafte Speicherung nicht.
 
-## Folie [Nummer offen] (12–14 min) – Unit 02: Daten in Tabellen erfassen
+## Folie 04 (12–14 min) – Unit 02: Daten in Tabellen erfassen
 - An einer bekannten Tabelle eine Beobachtung pro Zeile und ein Merkmal pro Spalte wiedererkennen lassen.
 - Datentyp und Bedeutung prüfen: Eine einheitliche Anzeige macht Textzahlen oder falsch gelesene Datumswerte nicht automatisch korrekt.
 
-## Folie [Nummer offen] (14–16 min) – Unit 03: Daten organisieren und bereinigen
+## Folie 05 (14–16 min) – Unit 03: Daten organisieren und bereinigen
 - Ausgangs- und bereinigte Tabelle kurz gegenüberstellen. Fragen: „Woran sehen wir, was verändert wurde?“ Erwartet: erhaltene Rohdaten und Bearbeitungsprotokoll.
 - Fehlend, gefiltert und gelöscht sprachlich auseinanderhalten.
 
-## Folie [Nummer offen] (16–18 min) – Unit 04: Daten mit Kennwerten beschreiben
+## Folie 06 (16–18 min) – Unit 04: Daten mit Kennwerten beschreiben
 - Eine bekannte Verteilung zeigen. Mittelwert und Median als Lagemaße, Streuung als zusätzliche Beschreibung abrufen.
 - Sichern: Ein Mittelwert allein beschreibt Verteilung und Ausreißer nicht.
 
-## Folie [Nummer offen] (18–20 min) – Unit 05: Zusammenfassen und Zusammenhänge betrachten
+## Folie 07 (18–20 min) – Unit 05: Zusammenfassen und Zusammenhänge betrachten
 - Bekanntes Streudiagramm oder Pivot-Beispiel zeigen. Frage: „Was ergänzt die Grafik zur Kennzahl?“ Erwartet: Muster, Ausreißer oder Nichtlinearität.
 - Korrelation nicht als Beweis für Ursache formulieren.
 
-## Folie [Nummer offen] (20–22 min) – Unit 06: Wiederkehrende Schritte in Excel
+## Folie 08 (20–22 min) – Unit 06: Wiederkehrende Schritte in Excel
 - Eine bekannte kopierte Formel mit relativem und festem Zellbezug zeigen.
 - Merksatz: Wiederholung spart Arbeit, aber jeder kopierte Bezug muss noch auf die beabsichtigten Zellen verweisen.
 
-## Folie [Nummer offen] (22–24 min) – Unit 07: FAIR, README und Versionierung
+## Folie 09 (22–24 min) – Unit 07: FAIR, README und Versionierung
 - An einem bekannten Datenordner fragen: „Welche Angaben braucht jemand anderes für die Weiterverwendung?“ Erwartet: Herkunft, Struktur, Bearbeitung und Version.
 - FAIR, README und Git als Hilfen zum Finden, Verstehen und Nachvollziehen bündeln.
 
-## Folie [Nummer offen] (24–26 min) – Unit 08: Wiederkehrende Schritte automatisieren
+## Folie 10 (24–26 min) – Unit 08: Wiederkehrende Schritte automatisieren
 - Den bekannten Ablauf Eingabe → Regel → Ausgabe → Kontrolle zeigen.
 - Sichern: Automatisierung wiederholt einen Schritt; sie prüft nicht von selbst, ob Eingangsdaten und Ergebnis fachlich passen.
 
-## Folie [Nummer offen] (26–28 min) – Unit 09: Koordinaten und CRS
+## Folie 11 (26–28 min) – Unit 09: Koordinaten und CRS
 - Das bekannte Zahlenpaar in Grad und Metern wieder aufgreifen. Fragen: „Welche Angaben machen den Ort eindeutig lesbar?“ Erwartet: Achsen, Einheit und CRS.
 - Zuweisen und Transformieren nur als bekannten Unterschied erinnern, keine neue Rechnung beginnen.
 
-## Folie [Nummer offen] (28–30 min) – Unit 10: Datenmodelle und QGIS-Projekt
+## Folie 12 (28–30 min) – Unit 10: Datenmodelle und QGIS-Projekt
 - Punkt/Linie/Polygon und Raster am ersten QGIS-Projekt wiederfinden lassen.
 - Merksatz: Die `.qgz`-Projektdatei organisiert Layer und Darstellung; die Datenquellen müssen ebenfalls erreichbar bleiben.
 
-## Folie [Nummer offen] (30–32 min) – Unit 11: GBIF-Punkte prüfen
+## Folie 13 (30–32 min) – Unit 11: GBIF-Punkte prüfen
 - Den Weg 79 Rohrecords → 56 ausgewählte Records erinnern lassen. Nach der Regel fragen: positive dokumentierte Koordinatenunsicherheit bis 100 Meter.
 - Sichern: Ein Nachweispunkt ist ein Record, kein vollständiges Bild der Artenverbreitung.
 
-## Folie [Nummer offen] (32–34 min) – Unit 12: Räumliche Auswahl
+## Folie 14 (32–34 min) – Unit 12: Räumliche Auswahl
 - Die bekannten 10 FFH-Flächen, 4 von 56 Punkten und 106 von 412 Gewässerfeatures zeigen.
 - Fragen: „Welche Regel bestimmte die Treffer?“ Erwartet: `schneidet` mit den ausgewählten FFH-Polygonen; Auswahl ist kein Zuschneiden.
 
-## Folie [Nummer offen] (34–36 min) – Unit 13: Rasterwerte abtasten
+## Folie 15 (34–36 min) – Unit 13: Rasterwerte abtasten
 - Den Layer mit 56 Punkten und `hoehe_m` zeigen: 35 gültige Modellhöhen, 21 `NULL`.
 - Sichern: NoData ist nicht 0; der Rasterwert gilt für die getroffene Zelle an der dokumentierten Punktkoordinate.
 
-## Folie [Nummer offen] (36–38 min) – Unit 14: Abschlusskarte gestalten
+## Folie 16 (36–38 min) – Unit 14: Abschlusskarte gestalten
 - Die bekannte Abschlusskarte zeigen. Nach der Wirkung von Klassengrenzen, Farben, Legende und Quelle auf die Lesbarkeit fragen.
 - Sichern: 35 klassierte Höhenpunkte erlauben eine begrenzte Aussage über diese Nachweise, keine vollständige Verbreitungskarte.
 
-## Folie [Nummer offen] (38–40 min) – Was verbindet die Units?
+## Folie 17 (38–40 min) – Was verbindet die Units?
 - Den Kursweg an der Folie schließen: Daten verstehen → strukturieren und prüfen → auswerten → räumlich einordnen → verständlich darstellen.
 - Dokumentation und Ergebniskontrolle als Begleiter aller Schritte hervorheben. Nur zwei bis drei kurze Rückfragen über den gesamten Rückblick zulassen.
 - Überleitung: „Welche dieser Schritte können Sie inzwischen selbst erklären, und wo ist noch etwas offen?“
@@ -86,15 +86,15 @@ Datum: 10.02.2027, 90 Minuten
 
 # Themenblock: Persönliche Rückschau und offene Fragen
 
-## Folie [Nummer offen] (40–43 min) – Für sich nachdenken
+## Folie 18 (40–43 min) – Für sich nachdenken
 - Drei Minuten geben: Jede Person notiert einen inzwischen erklärbaren Arbeitsschritt und eine verbliebene Unsicherheit; bei Bedarf Unit oder bekanntes Beispiel dazuschreiben.
 - Die Notizen bleiben privat, werden nicht eingesammelt und nicht bewertet.
 
-## Folie [Nummer offen] (43–47 min) – Zu zweit eine Frage formulieren
+## Folie 19 (43–47 min) – Zu zweit eine Frage formulieren
 - Vier Minuten Partneraustausch. Aus den Notizen höchstens eine gemeinsame, möglichst konkrete Frage formulieren lassen.
 - Bei großen Gruppen nur die gemeinsame Frage ins Plenum mitnehmen, keine Einzelrunde starten.
 
-## Folie [Nummer offen] (47–60 min) – Häufige Fragen gemeinsam klären
+## Folie 20 (47–60 min) – Häufige Fragen gemeinsam klären
 - Fragen sammeln, ähnliche bündeln und die häufigsten anhand bereits behandelter Beispiele klären; bei Bedarf auf die passende Unit-Seite verweisen.
 - Offenbleibende Fragen samt Materialhinweis festhalten. Keine neue Analyse, QGIS-Demo oder Prüfungsbesprechung beginnen.
 - Überleitung: „Neben Ihren Fragen interessiert uns, welche Teile des Kurses beim Lernen geholfen haben und was wir verbessern sollten.“
@@ -102,11 +102,11 @@ Datum: 10.02.2027, 90 Minuten
 
 # Themenblock: Freiwilliges Kursfeedback
 
-## Folie [Nummer offen] (60–68 min) – Anonymen Papierfragebogen ausfüllen
+## Folie 21 (60–68 min) – Anonymen Papierfragebogen ausfüllen
 - Bogen ohne Namensfeld ausgeben. Acht Minuten für sieben Einschätzungen und zwei offene Rückmeldungen einräumen; „kann ich nicht beurteilen“ ist eine zulässige Antwort.
 - Darum bitten, keine Namen oder anderen personenbezogenen Angaben zu notieren. Gefaltete Bögen in die Sammelbox geben lassen; erst nach der Sitzung auswerten.
 
-## Folie [Nummer offen] (68–75 min) – Freiwillige Ergänzungen im Plenum
+## Folie 22 (68–75 min) – Freiwillige Ergänzungen im Plenum
 - Sieben Minuten für konkrete mündliche Ergänzungen anbieten: Was behalten, was verändern? Wortmeldungen bündeln.
 - Mündliche Beiträge sind nicht anonym. Keine individuellen Leistungen oder handschriftlichen Freitexte live zeigen.
 - Überleitung: „Zum Kursende halten wir drei Gedanken fest, die Sie bei späteren Datenprojekten wiederverwenden können.“
@@ -114,23 +114,23 @@ Datum: 10.02.2027, 90 Minuten
 
 # Themenblock: Drei Kernbotschaften und Kursabschluss
 
-## Folie [Nummer offen] (75–80 min) – Gute Ergebnisse beginnen mit verstandenen Daten
+## Folie 23 (75–80 min) – Gute Ergebnisse beginnen mit verstandenen Daten
 - An der Kurskette Datentypen, Einheiten, Herkunft und Raumbezug nennen lassen.
 - Einen bekannten Fehlerfall aufgreifen: Eine scheinbar plausible Tabelle oder Karte kann bei falschem Datentyp oder CRS irreführen.
 
-## Folie [Nummer offen] (80–85 min) – Der nachvollziehbare Arbeitsweg gehört zum Ergebnis
+## Folie 24 (80–85 min) – Der nachvollziehbare Arbeitsweg gehört zum Ergebnis
 - Rohdaten, Prüfregel, Zwischenergebnis und Protokoll an Unit 11–14 wiedererkennen lassen.
 - Sichern: Andere müssen später verstehen können, wie eine Zahl, ein Layer oder eine Karte entstanden ist.
 
-## Folie [Nummer offen] (85–90 min) – Aussagen aus Tabellen, Diagrammen und Karten begründen
+## Folie 25 (85–90 min) – Aussagen aus Tabellen, Diagrammen und Karten begründen
 - Den dritten Gedanken sichern: Darstellung und Datengrundlage bestimmen, was eine Aussage trägt und wo ihre Grenze liegt.
 - Auf den Rückblick und die früheren Unit-Materialien zum Nachschlagen verweisen. Keine neue Übungsaufgabe, Abgabe oder Pflicht-JiTT zu Unit 15 ankündigen; bereits bestehende Fristen früherer Units bleiben bestehen. Organisatorische Fragen nur mit bestätigten Angaben beantworten, sonst auf reguläre Kurskanäle verweisen.
 
-## Folie [Nummer offen] (am Ende) – Abschluss
+## Folie 27 (am Ende) – Vielen Dank für Ihre Aufmerksamkeit
 - Für Mitarbeit und Rückmeldungen danken und die Sitzung beenden. Kein zusätzlicher Zeitblock.
 
 
 # Reserve
 
-## Folie [Nummer offen] – Materialien zum Nachschlagen
-- Optional die vorhandene Unit-15-Rückblicksseite und Links zu Units 01–14 zeigen, falls am Ende Zeit bleibt; nicht zusätzlich in die 90 Minuten aufnehmen.
+## Folie 26 – Materialien zum Nachschlagen
+- Optional vor der Schlussfolie die vorhandene Unit-15-Rückblicksseite und die direkten Links zu Units 09–14 zeigen, falls Zeit bleibt; nicht zusätzlich in die 90 Minuten aufnehmen. Die Rückblicksseite verlinkt auch Units 01–08.

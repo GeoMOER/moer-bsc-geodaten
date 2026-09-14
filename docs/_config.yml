@@ -36,8 +36,8 @@ description: >- # this means to ignore newlines until next item
   physical-geography environmental-science nature-conservation r
 
 ##### Social Sharing ##########################################################
-#twitter:
-#  username         : &twitter "EnvIn_UMR"
+# twitter:
+# username         : &twitter "EnvIn_UMR"
 
 ##### Lecturer settings #######################################################
 # see _data/authors.yml
@@ -45,7 +45,7 @@ description: >- # this means to ignore newlines until next item
 ##### Site configuration ######################################################
 title_separator          : "|"
 excerpt_separator        : <!--more-->
-locale                   : "en-EN"
+locale                   : "de-DE"
 repository               : "geomoer/moer-bsc-geodaten"
 
 

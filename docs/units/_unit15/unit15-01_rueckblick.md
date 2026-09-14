@@ -3,9 +3,9 @@ title: Rückblick durch den Kurs
 published: true
 toc: true
 header:
-  image: /assets/images/unit03/streuobst.jpg
-  image_description: "Fallen apples under a tree"
-  caption: "Image: manfredrichter via [pixabay.com](https://pixabay.com/de/photos/%C3%A4pfel-streuobst-obstbaum-apfelbaum-3684775/)"
+  image: /assets/images/unit15/hero-unit15.jpg
+  image_description: "Kursrückblick als Flusslandschaft mit überlagerter Tabelle, Streudiagramm, Beobachtungspunkten, Polygonflächen, Rasterzellen und Höhenlinien"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 ## Einmal durch den Kurs – in 30 Minuten

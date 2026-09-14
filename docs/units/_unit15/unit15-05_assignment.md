@@ -3,9 +3,9 @@ title: Feedback und Abschluss
 published: true
 toc: true
 header:
-  image: /assets/images/01-splash.jpg
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image: /assets/images/unit15/hero-unit15.jpg
+  image_description: "Kursrückblick als Flusslandschaft mit überlagerter Tabelle, Streudiagramm, Beobachtungspunkten, Polygonflächen, Rasterzellen und Höhenlinien"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 ## Keine neue Übungsaufgabe

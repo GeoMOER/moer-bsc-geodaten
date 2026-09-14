@@ -3,9 +3,9 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/unit03/streuobst.jpg
-  image_description: "Fallen apples under a tree"
-  caption: "Image: manfredrichter via [pixabay.com](https://pixabay.com/de/photos/%C3%A4pfel-streuobst-obstbaum-apfelbaum-3684775/)"
+  image: /assets/images/unit15/hero-unit15.jpg
+  image_description: "Kursrückblick als Flusslandschaft mit überlagerter Tabelle, Streudiagramm, Beobachtungspunkten, Polygonflächen, Rasterzellen und Höhenlinien"
+  caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
 ## Kursabschluss: Rückblick, offene Fragen und Feedback
@@ -80,3 +80,7 @@ Auf der Seite [Feedback und Abschluss]({{ '/unit15/unit15-05_assignment.html' | 
 - Für den Recap werden bekannte Ergebnisse gezeigt; Sie müssen währenddessen keinen neuen QGIS-Arbeitsablauf durchführen.
 - Der freiwillige Papierfragebogen wird in der Sitzung ausgegeben und ohne Namen eingesammelt.
 - Offene organisatorische Termine und Kontaktwege werden bei Bedarf über die regulären Kurskanäle bekannt gegeben.
+
+## Folien zu dieser Unit
+
+{% include pdf pdf="Geodaten_Slides_Unit15.pdf" %}
