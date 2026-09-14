@@ -8,16 +8,16 @@ header:
   overlay_filter: 0.6
   overlay_image: "/assets/images/title.png"
   caption: 'Image: [solar.empire via flickr.com](https://www.flickr.com/photos/solar-empire/23815961328/) [CC BY-NC 2.0 DEED](https://creativecommons.org/licenses/by-nc/2.0/)'
-  cta_label: go to course units
+  cta_label: Zu den Lerninhalten
   cta_url: "/units.html"
-excerpt: Einführung in die Arbeit mit Geodaten.
+excerpt: Einführung in die Arbeit mit (Geo)daten.
 feature_row_intro:
-- excerpt: Bachelor level course at the Department of Geography at the University of Marburg.
-feature_row_ilos:
-- image_path: "/assets/images/envobs_ilos.jpg"
-  alt: PC monitor laying in the garden of the institute.
-  title: Intended learning outcomes
-  excerpt: "Template..."
+- excerpt: Kurs für Studierende im Bachelor und Lehramt am Fachbereich Geographie der Philipps-Universität Marburg.
+#feature_row_ilos:
+#- image_path: "/assets/images/envobs_ilos.jpg"
+#  alt: PC monitor laying in the garden of the institute.
+#  title: Intended learning outcomes
+#  excerpt: "Template..."
 ---
 
 {% include feature_row id="feature_row_intro" type="center" %}
@@ -28,8 +28,6 @@ feature_row_ilos:
 ## This page is under construction! Do not use!
 
 ## Motivation
-
-
 Raumbezogene Daten spielen in Wissenschaft, Planung und Gesellschaft eine zentrale Rolle. Sie helfen dabei, räumliche Zusammenhänge zu erkennen, Entwicklungen zu analysieren und Entscheidungen zu unterstützen.
 
 Durch neue Möglichkeiten der Datenerhebung und -analyse wächst die verfügbare Datenmenge stetig. Gleichzeitig wird gutes Datenmanagement immer wichtiger. Ein **Data Lake** ist ein gemeinsamer Speicher für unterschiedliche Daten, die sich für verschiedene Auswertungen nutzen lassen. Dafür müssen die Daten auffindbar, verständlich und technisch nutzbar sein. Auch ihre Qualität muss sich beurteilen lassen.
@@ -322,11 +320,6 @@ Der Kurs umfasst 9 Units:
    * Dokumentation / ReadMe zu erstellen
    * Git nachzuvollziehen
 
-8) QGIS & WMS
-   eine Einführung
-
-9) Besonderheiten Geodaten: point, raster und vector Daten
-   (3 Kurstage)
 
 <!-- Probleme: anfangs zur Übung, shortcuts, Datenorganisation -->
 <!-- nur als Idee (nicht einbauen) QField, Laptop oder nur Tablets? -> vllt. Umfrage erstellen, bis jetzt noch keine Beschwerde dass es daheim kein Laptop/PC vorhanden ist, einen link zu Android oder IOS erstellen vs. keine Tür öffnen, Anspruchshaltung auch in anderen Kursen -->
