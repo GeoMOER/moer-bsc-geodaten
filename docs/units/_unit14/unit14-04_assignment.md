@@ -1,5 +1,5 @@
 ---
-title: HA | JiTT-Fragen zu Abschnitt 14
+title: UE | JiTT-Fragen zu Abschnitt 14
 published: true
 toc: true
 header:
