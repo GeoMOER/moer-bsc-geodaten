@@ -1,0 +1,172 @@
+Session 10 – Geodatenmodelle, QGIS und Datenquellen
+Datum: 16.12.2026, 90 Minuten
+
+
+# Vorbereitung
+- Folie 02 mit den tatsächlichen JiTT-Ergebnissen zu Unit 09 füllen.
+- QGIS 3.40 und das vollständig entpackte Marburger Übungspaket auf den verwendeten Rechnern bereithalten; `data_raw/marburg_basis.gpkg`, `data_raw/dgm_marburg_10m.tif` und `documentation/processing_notes.md` prüfen.
+- Dienstadresse und Layer `Naturschutzgebiete` für die WMS-Demo bereithalten; `ersatz/wms_schutzgebiete.png`, `ersatz/wms_capabilities.xml` und `documentation/quellen.md` als Offline-Ersatz öffnen können.
+
+
+# Themenblock: Einstieg und JiTT
+
+## Folie 01 (vor Beginn) – Geodatenmodelle, QGIS und Datenquellen
+- Beim Ankommen zeigen.
+
+## Folie 02 (0–10 min) – JiTT: Rückblick auf Unit 09
+- Ein bis zwei ausgewählte Fragen anhand der tatsächlichen Antworten zu Koordinaten, CRS oder Projektionen besprechen. Offene Punkte klären.
+- Überleitung: „Wir wissen jetzt, wo Geodaten liegen können. Heute schauen wir, wie wir räumliche Informationen darstellen und in QGIS verwenden.“
+
+## Folie 03 (10–11 min) – Von Datenmodellen zum ersten QGIS-Projekt
+- Den Weg der Sitzung ankündigen: Vektor und Raster unterscheiden, zwei lokale Layer in QGIS prüfen und ein Projekt speichern, schließen und erneut öffnen.
+- Das verbindliche Ergebnis nennen: `unit10_einstieg.qgz` öffnet beide lokalen Layer. Die WMS-Demo folgt erst danach.
+- Überleitung: „Zuerst entscheiden wir, welches Datenmodell die gesuchte Information beschreiben kann.“
+
+
+# Themenblock: Vektor und Raster auswählen
+
+## Folie 04 (11–14 min) – Zwei Modelle räumlicher Wirklichkeit
+- Die Abbildung gemeinsam lesen: Vektor beschreibt einzelne Features mit Geometrie und Attributen; Raster ordnet Werten regelmäßige Zellen zu.
+- Festhalten: Fragestellung, Maßstab und vorhandene Daten bestimmen die Modellwahl.
+
+## Folie 05 (14–16 min) – Vektor: Punkt, Linie und Polygon
+- Punkt als Position, Linie als Verlauf und Polygon als Fläche an den drei Folienbeispielen erklären.
+- Frage: „Welche Information ginge verloren, wenn wir ein Schutzgebiet nur als Punkt darstellen?“ Erwartet: seine Fläche und Grenze.
+
+## Folie 06 (16–18 min) – Raster: Zellen speichern Werte
+- Links Höhenwerte in Metern und rechts Landbedeckungsklassen vergleichen. Beide Beispiele sind Raster, obwohl die Werte Unterschiedliches bedeuten.
+- Festhalten: Kleinere Zellen bieten mehr Detail, garantieren aber keine höhere Genauigkeit.
+
+## Folie 07 (18–20 min) – Welches Modell passt zur Frage?
+- A Schutzgebietsgrenze, B Höhe im gesamten Ausschnitt und C einzelne Feuersalamander-Fundorte vorlesen.
+- 30 Sekunden allein entscheiden, eine Minute zu zweit begründen, dann drei kurze Antworten sammeln. Die Begründung soll die benötigte räumliche Information nennen.
+
+## Folie 08 (20–22 min) – Die benötigte Information entscheidet
+- A → Polygonvektor für Fläche und Grenze; B → Höhenraster für flächendeckende Werte; C → Punktvektor für einzelne Fundorte.
+- Andere Modellierungen nur dann gelten lassen, wenn eine andere Frage oder Datengrundlage begründet wird.
+- Überleitung: „Wir haben das Modell gewählt. Nun müssen wir in QGIS unterscheiden, was Projekt, Layer und eigentliche Datenquelle sind.“
+
+
+# Themenblock: Projekt, Layer und Datenquelle unterscheiden
+
+## Folie 09 (22–26 min) – Projekt, Layer und Datenquelle
+- Die Grafik von links nach rechts erklären: Eine `.qgz`-Datei speichert den Arbeitsstand und Verweise; Layer sind Informationsebenen; die Daten liegen in lokalen Dateien oder kommen von Webdiensten.
+- Frage: „Sind die vollständigen Geodaten normalerweise in der Projektdatei enthalten?“ Erwartet: nein.
+
+## Folie 10 (26–28 min) – Warum fehlen die Layer?
+- Den Fall vorlesen: Nur `unit10_einstieg.qgz` wurde auf einen anderen Rechner kopiert; dort fehlen die Layer.
+- 30 Sekunden allein entscheiden, dann A/B/C per Handzeichen abfragen. Eine Begründung anhören.
+
+## Folie 11 (28–30 min) – Projekt und Daten gemeinsam erhalten
+- B ist richtig: Gespeicherte Datenpfade sind auf dem anderen Rechner nicht erreichbar. QGIS hat keine Geometrien gelöscht.
+- Den vollständigen Arbeitsordner zusammenhalten und das Projekt nach dem Speichern erneut öffnen. Das ist die Kontrolle, ob beide Layer gefunden werden.
+- Überleitung: „Damit das gelingt, legen wir jetzt unseren Arbeitsordner und das erste QGIS-Projekt an.“
+
+
+# Themenblock: Lokales QGIS-Projekt aufbauen
+
+## Folie 12 (30–33 min) – Die wichtigsten Bereiche in QGIS
+- In der schematischen Oberfläche Browser, Layer-Bereich, Kartenansicht und Projekt-CRS in der Statusleiste zeigen.
+- Dieselben Bereiche im geöffneten QGIS finden lassen. Unterschiede in der Anordnung von Symbolen sind möglich.
+
+## Folie 13 (33–35 min) – Unser verbindlicher Praxisweg
+- Die Reihenfolge festlegen: `unit10_einstieg.qgz` speichern, `gewaesser` und `dgm_marburg_10m.tif` laden und prüfen, anschließend speichern, schließen und wieder öffnen.
+- Fertig heißt: Beide lokalen Quellen sind nach dem erneuten Öffnen ohne Pfadreparatur erreichbar. Die eigene WMS-Einrichtung gehört nicht dazu.
+
+## Folie 14 (35–38 min) – Arbeitsordner und Projekt vorbereiten
+- Den vollständig entpackten Ordner `marburg_geodaten/` öffnen. Neues QGIS-Projekt anlegen, `EPSG:25832` als Projekt-CRS prüfen und als `unit10_einstieg.qgz` im Hauptordner speichern.
+- `data_raw/` für die unveränderten Ausgangsdaten belassen; keinen zusätzlichen Arbeitsordner innerhalb des Pakets anlegen.
+
+## Folie 15 (38–42 min) – Gewässerlayer laden
+- Im QGIS-Browser `data_raw/marburg_basis.gpkg` öffnen und den Layer `gewaesser` hinzufügen. Auf den Layer zoomen.
+- Kontrollwert nennen und prüfen lassen: 412 Linienfeatures, Layer-CRS `EPSG:25832`.
+
+## Folie 16 (42–46 min) – Höhenraster laden
+- `data_raw/dgm_marburg_10m.tif` hinzufügen und prüfen, ob es räumlich zum Gewässerlayer passt.
+- Eigenschaften kurz zeigen: Raster mit 2000 × 2000 Zellen à 10 Meter, CRS `EPSG:25832`. Nun ist genau ein Vektor- und ein Rasterlayer geladen.
+
+## Folie 17 (46–49 min) – Verdeckt heißt nicht gelöscht
+- An der Foliengrafik zeigen, dass ein oben liegender Layer darunterliegende Inhalte verdecken kann, ohne Daten zu löschen.
+- Im eigenen Projekt `gewaesser` über `dgm_marburg_10m` anordnen und beide Layer sichtbar prüfen.
+
+## Folie 18 (49–55 min) – Beide Layer kurz bedienen
+- Beide Layer nacheinander ein- und ausblenden, auf `gewaesser` zoomen und den Kartenausschnitt verschieben lassen.
+- Abfragen: Welcher Layer ist Vektor, welcher Raster? Erwartet: `gewaesser` ist Vektor; das DGM ist Raster.
+- Überleitung: „Beide Layer sind sichtbar. Jetzt prüfen wir, welche Objekte, Dateien und Bezugssysteme dahinterstehen.“
+
+
+# Themenblock: Layer prüfen und Kontrollen dokumentieren
+
+## Folie 19 (55–59 min) – Feature und Tabellenzeile verbinden
+- Die Attributtabelle von `gewaesser` öffnen. Ein sichtbares Linienfeature in der Karte auswählen und die zugehörige Tabellenzeile zeigen lassen.
+- Keine konkreten Attributwerte vorgeben; sie hängen vom ausgewählten Feature ab. Das Raster hat keine gewöhnliche Featuretabelle.
+
+## Folie 20 (59–64 min) – Datenquelle, Modell und CRS prüfen
+- Für beide Layer in den Eigenschaften Datenquelle, Datenmodell, Layer-CRS und räumliche Ausdehnung suchen lassen.
+- Kontrollieren: `gewaesser` kommt aus `marburg_basis.gpkg` und ist ein Linienvektor; das DGM kommt aus `.tif` und ist ein Raster. Beide Layer nutzen `EPSG:25832`.
+- Projekt-CRS und Layer-CRS sprachlich unterscheiden; tatsächliche Ausdehnungen nicht vorgeben, sondern ablesen lassen.
+
+## Folie 21 (64–68 min) – Kontrollen dokumentieren
+- In `documentation/processing_notes.md` die vorbereitete Tabelle verwenden. Projektdatei, Datenquellen, Modelle, CRS und Ausdehnungen eintragen.
+- Das Feld für den Öffnungstest noch offen lassen; es wird unmittelbar danach ausgefüllt.
+- Überleitung: „Die Quellen sind dokumentiert. Ob unser Projekt zuverlässig funktioniert, zeigt erst das erneute Öffnen.“
+
+
+# Themenblock: Projekt erneut öffnen und Datenpfade kontrollieren
+
+## Folie 22 (68–72 min) – Speichern, schließen, erneut öffnen
+- Projekt speichern, QGIS schließen und `unit10_einstieg.qgz` direkt aus dem Hauptordner erneut öffnen.
+- Prüfen lassen: Sind Gewässerlayer und DGM ohne Reparatur ihrer Datenpfade erreichbar und sichtbar?
+
+## Folie 23 (72–75 min) – Was prüfen Sie bei einem roten Ausrufezeichen?
+- Den Folienfall als nicht erreichbare Datenquelle lesen. A/B/C auswählen lassen: Welcher erste Prüfschritt passt zur Ursache?
+- Kurz zu zweit begründen lassen. Ein zufälliges CRS zuzuweisen behebt keinen fehlenden Dateipfad.
+
+## Folie 24 (75–78 min) – Ablage prüfen – dann Ergebnis sichern
+- A ist richtig: Datenpfad, Dateiname und Lage von `data_raw/` prüfen. Falls eine Reparatur nötig war, erneut speichern, schließen und öffnen.
+- In `processing_notes.md` das Ergebnis des Öffnungstests als ja oder nein eintragen. Verbindlicher Endzustand: Beide lokalen Layer öffnen ohne Pfadreparatur.
+- Überleitung: „Das lokale Projekt funktioniert. Als Nächstes vergleichen wir diese Dateien mit einem Webdienst.“
+
+
+# Themenblock: WMS am Beamer vergleichen
+
+## Folie 25 (78–79 min) – Download oder Webdienst?
+- Die Grafik lesen: Beim Download liegt eine dokumentierbare Kopie lokal; ein Webdienst beantwortet Anfragen über das Netz.
+- Für beide Wege Quelle, Datenstand, Lizenz und Metadaten festhalten. Die lokale Kernübung ist abgeschlossen.
+
+## Folie 26 (79–81 min) – Ein WMS liefert ein Kartenbild
+- WMS als Web Map Service benennen: QGIS fragt einen Ausschnitt, eine Bildgröße und ein CRS an; der Server liefert ein gerendertes Kartenbild.
+- Festhalten: Das Bild eignet sich für Orientierung und Hintergrund, liefert aber normalerweise keinen frei analysierbaren Vektorlayer.
+
+## Folie 27 (81–84 min) – HLNUG-WMS gemeinsam einbinden
+- Am Beamer Datenquellenmanager → WMS/WMTS öffnen, die Dienstadresse aus der Kursseite als Verbindung `HLNUG Schutzgebiete Hessen` eintragen und den Layer `Naturschutzgebiete` wählen.
+- Den WMS unter `gewaesser` anordnen. Studierende mit geprüftem lokalem Projekt können freiwillig mitmachen.
+- Wenn der Dienst nicht unmittelbar reagiert, ohne weitere Fehlersuche zur nächsten Folie wechseln.
+
+## Folie 28 (84–85 min) – Offline-Ersatz: derselbe Vergleich bleibt möglich
+- Bei Ausfall `ersatz/wms_schutzgebiete.png`, `ersatz/wms_capabilities.xml` und `documentation/quellen.md` zeigen; den Ausfall als Dienstausfall notieren.
+- Online oder mit Ersatzmaterial denselben Unterschied sichern: Ein lokaler Vektorlayer enthält Features; der WMS liefert für den Ausschnitt ein Kartenbild.
+- Überleitung: „Zum Schluss halten wir fest, was unser Projekt speichert und wie sich seine Datenquellen unterscheiden.“
+
+
+# Themenblock: Abschluss und Nachbereitung
+
+## Folie 29 (85–88 min) – Exit-Ticket: Was nehmen Sie mit?
+- Nur eine der drei sichtbaren Fragen auswählen. Nach dem lokalen Öffnungstest bietet sich A an: „Was enthält eine qgz-Datei – und was nicht?“
+- Eine Minute zu zweit formulieren lassen, dann sichern: Die Projektdatei speichert Arbeitsstand und Verweise, normalerweise nicht die vollständigen Geodatendateien.
+
+## Folie 30 (88–90 min) – Nachbereitung und nächster Schritt
+- Auf die JiTT-Fragen zu Unit 10 in ILIAS hinweisen; Fragen und Frist stehen dort. Dies ist die einzige Übungsaufgabe zu Unit 10.
+- Ausblick: Unit 11 beginnt nach der Winterpause mit kurzem QGIS-Wiedereinstieg und dem Import einer CSV als Punktlayer. Danach direkt zu Folie 33 springen.
+
+## Folie 33 (am Ende) – Vielen Dank für eure Aufmerksamkeit
+- Sitzung beenden. Kein zusätzlicher Zeitblock.
+
+
+# Reserve
+
+## Folie 31 – WMS oder WFS?
+- Nur bei Bedarf zur begrifflichen Abgrenzung zeigen: WMS liefert primär ein Kartenbild; WFS liefert Vektorfeatures mit Geometrien und Attributen. Keine zusätzliche Praxisaufgabe daraus machen.
+
+## Folie 32 – Materialien und Quellen
+- Zum Nachschlagen; im regulären Vortrag überspringen.

@@ -1,0 +1,177 @@
+Session 12 – Linien, Polygone und räumliche Auswahl
+Datum: 20.01.2027, 90 Minuten
+
+
+# Vorbereitung
+- Folie 02 mit den tatsächlichen JiTT-Ergebnissen zu Unit 11 füllen.
+- QGIS 3.40 und das entpackte Übungspaket bereithalten: den Punktlayer `gbif_checked` mit 56 Features aus Unit 11 oder dem Ersatz sowie `gewaesser` mit 412 Linien und `schutzgebiete` mit 22 Polygonfeatures. `unit12_vectors.qgz` wird in der Sitzung angelegt.
+- `data_output/` und `documentation/processing_notes.md` prüfen. Für den Praxisweg die Kontrollwerte 10 FFH-Flächen, 4 Punkte und 106 Linien bereithalten.
+
+
+# Themenblock: Einstieg und JiTT
+
+## Folie 01 (vor Beginn) – Linien, Polygone und räumliche Auswahl
+- Beim Ankommen zeigen.
+
+## Folie 02 (0–10 min) – JiTT · Rückblick auf Unit 11
+- Ein bis zwei tatsächliche JiTT-Fragen zu GBIF-Records, Koordinatenunsicherheit oder dem exportierten Layer besprechen. Offene Punkte klären.
+- Überleitung: „Die 56 geprüften Punkte sind unser Eingang. Heute fragen wir, welche davon räumlich mit Schutzgebieten zusammenhängen.“
+
+## Folie 03 (10–11 min) – Drei Geometrien gemeinsam auswerten
+- Den Ablauf ankündigen: Punkt, Linie und Polygon unterscheiden, FFH-Flächen auswählen, räumliche Beziehungen prüfen und drei Ergebnislayer sichern.
+- Festhalten: Das Ergebnis ist eine dokumentierte Auswahl, keine Aussage über sichere Tierstandorte.
+- Überleitung: „Zuerst klären wir, was die drei Geometrien überhaupt abbilden.“
+
+
+# Themenblock: Geometrien und räumliche Beziehungen verstehen
+
+## Folie 04 (11–13 min) – Punkt, Linie und Polygon
+- Die drei Folienbeispiele lesen: Fundnachweis als Punkt, Gewässerverlauf als Linie, Schutzgebiet als Polygon.
+- Nachfragen: „Welche Information zur Fläche fehlt einem bloßen Schutzgebietspunkt?“ Erwartet: Grenze und Ausdehnung.
+
+## Folie 05 (13–15 min) – Welche Geometrie passt zur Frage?
+- Ort, Verlauf und Fläche den drei Fällen kurz allein zuordnen lassen; eine Begründung je Geometrie hören.
+
+## Folie 06 (15–17 min) – Lösung: Ort, Verlauf und Fläche
+- Zuordnung sichern: Punkt für Ort, Linie für Verlauf, Polygon für Fläche. Auf den Zweck der jeweiligen Frage verweisen.
+
+## Folie 07 (17–20 min) – Stützpunkte steuern den Linienverlauf
+- Die Stützpunkte in der Zeichnung verfolgen und fragen: „Wird aus einer Linie durch mehr Stützpunkte ein Polygon?“ Erwartet: nein.
+- Eine Linie modelliert einen Verlauf; ihr Verlauf hängt von gesetzten Stützpunkten und Generalisierung ab.
+
+## Folie 08 (20–22 min) – Ein Feature kann Loch oder mehrere Teile besitzen
+- Links Polygon mit Loch, rechts Multipart-Polygon mit getrennten Teilen unterscheiden.
+- Jeweils die eine zugehörige Tabellenzeile betonen: Die Zahl sichtbarer Flächenteile ist nicht zwingend die Zahl der Features.
+
+## Folie 09 (22–24 min) – Räumliche Beziehungen unterscheiden
+- „Liegt innerhalb?“, „berührt die Grenze?“ und „schneidet?“ an der Skizze zeigen.
+- Die Rollen benennen: Welcher Layer wird ausgewählt, welcher ist Vergleichsfläche?
+
+## Folie 10 (24–25 min) – Zählt ein Punkt auf der Grenze mit?
+- Die Grenzpunktfrage stehen lassen und zwei Vermutungen sammeln. Auflösung für Folien 32 und 33 ankündigen.
+- Überleitung: „Vor der Analyse müssen wir außerdem klären, ob die verwendeten Daten überhaupt auswertbare Features liefern.“
+
+
+# Themenblock: Datenquellen und Eignung prüfen
+
+## Folie 11 (25–27 min) – Ein Geoportal ist noch kein Datensatz
+- Zwischen Portal als Zugang und dem konkreten heruntergeladenen Datensatz unterscheiden.
+- Frage: „Welche Angabe brauchen wir, um denselben Datenstand wiederzufinden?“ Erwartet: Quelle und Stand beziehungsweise Metadaten.
+
+## Folie 12 (27–30 min) – Kartenbild oder analysierbare Features?
+- WMS-Bild und Vektorfeatures gegenüberstellen. Eine Pixelansicht ersetzt für die heutige Auswahl keine Polygongeometrien.
+- An Unit 10 erinnern: Ein WMS eignet sich als Hintergrund; die heutigen räumlichen Operatoren brauchen lokale analysierbare Features.
+
+## Folie 13 (30–32 min) – Metadaten beantworten die Eignungsfrage
+- Quelle, Datenstand, Lizenz, CRS, Geometrietyp und mögliche Grenzen der Genauigkeit ansprechen.
+- Nicht allein nach einer plausiblen Kartendarstellung über die Eignung entscheiden.
+
+## Folie 14 (32–34 min) – Unsere vorbereiteten Vektordaten
+- Die drei Eingänge samt Zahlen nennen: 56 geprüfte GBIF-Punkte, 412 Gewässerlinien, 22 Schutzgebietsflächen; alle im regionalen Arbeits-CRS `EPSG:25832`.
+- Der Punktlayer kommt aus Unit 11; bei fehlender eigener Datei den Paket-Ersatz nutzen. Die Ursprungsquellen im Kursmaterial zeigen.
+
+## Folie 15 (34–35 min) – Vom Layer zur dokumentierten Auswahl
+- Die Reihenfolge an der Folie entlang ansagen: Eingänge kontrollieren → FFH-Flächen nach Attribut wählen → räumlich auswählen → ausgewählte Features exportieren → neu laden und dokumentieren.
+- Überleitung: „Jetzt öffnen wir die vorbereiteten Layer und prüfen zunächst die Eingänge.“
+
+
+# Themenblock: FFH-Flächen als Vergleichslayer vorbereiten
+
+## Folie 16 (35–38 min) – Projekt und drei Eingangslayer vorbereiten
+- Neues QGIS-Projekt als `unit12_vectors.qgz` speichern, `EPSG:25832` setzen und die drei Layer aus dem entpackten Paket laden.
+- Projekt und Datenquellen unterscheiden; fehlende Layer über den entpackten Arbeitsordner korrigieren.
+
+## Folie 17 (38–41 min) – Kontrollpunkt vor jeder Auswahl
+- Für `gbif_checked`, `gewaesser` und `schutzgebiete` Featurezahlen 56, 412 und 22 sowie `EPSG:25832` kontrollieren.
+- Bei anderen Zahlen Eingänge prüfen, statt die spätere Auswahlregel anzupassen.
+
+## Folie 18 (41–43 min) – Layerreihenfolge macht Beziehungen sichtbar
+- Punkte über den Schutzgebietsflächen, Gewässerlinien erkennbar und Hintergrund zurückhaltend anordnen.
+- Eine kurz verdeckte Geometrie per Sichtbarkeit und Reihenfolge wiederfinden lassen.
+
+## Folie 19 (43–47 min) – Zuerst nach dem Attribut kategorie auswählen
+- Im Layer `schutzgebiete` „Nach Ausdruck auswählen“ mit `"kategorie" = 'FFH'` ausführen.
+- Ergebnis prüfen: 10 von 22 Polygonfeatures. Die Attributauswahl betrifft Schutzgebiete, noch keine Punkte oder Gewässer.
+
+## Folie 20 (47–50 min) – Zehn FFH-Flächen als Vergleichslayer sichern
+- Nur ausgewählte Schutzgebiete in `data_output/unit12_results.gpkg` als `schutzgebiete_auswahl` exportieren und den Layer neu laden.
+- Die 10 Features kontrollieren; die weiteren räumlichen Schritte benutzen diesen gesicherten Vergleichslayer.
+- Überleitung: „Mit dem FFH-Layer als fester Vergleichsfläche können wir jetzt zwei unterschiedliche Eingangslayer räumlich auswählen.“
+
+
+# Themenblock: Punkte und Gewässer räumlich auswählen
+
+## Folie 21 (50–53 min) – „Nach Position selektieren“ braucht klare Rollen
+- Im QGIS-Dialog die Rollen zeigen: Features aus einem Eingabelayer auswählen, die eine räumliche Beziehung zu `schutzgebiete_auswahl` haben.
+- Für heute das Prädikat `schneidet`/`intersects` wählen. Vor Ausführung nachfragen, welche Features markiert werden sollen.
+
+## Folie 22 (53–58 min) – GBIF-Punkte gegen FFH-Flächen auswählen
+- Eingabelayer `gbif_checked`, Vergleichslayer `schutzgebiete_auswahl`, Prädikat `schneidet` einstellen und ausführen.
+- Auswahl visuell prüfen. Nicht den 4-Punkte-Layer aus diesem Schritt als Eingang für die spätere Rasteranalyse in Unit 13 verwenden.
+
+## Folie 23 (58–60 min) – Prüfwert: 4 von 56 Punkten
+- Die Zahl 4 von 56 kontrollieren. Bei Abweichung Layerrollen, 10 FFH-Flächen und Prädikat prüfen.
+- Sichern: Vier dokumentierte Punktkoordinaten schneiden die gewählten Polygongeometrien; wegen Ortsunsicherheit ist die tatsächliche Beobachtungsposition nicht zwingend in der Fläche.
+
+## Folie 24 (60–65 min) – Gewässer gegen dieselben FFH-Flächen auswählen
+- Eingabelayer auf `gewaesser` umstellen, Vergleichslayer `schutzgebiete_auswahl` und `schneidet` beibehalten.
+- Ausführen und markieren lassen, wo Gewässerlinien FFH-Flächen treffen; nicht zusätzlich auf die vier Punkte filtern.
+
+## Folie 25 (65–67 min) – Prüfwert: 106 von 412 Linienfeatures
+- Auswahlanzeige 106 von 412 prüfen. Bei anderer Zahl prüfen, ob wirklich alle Gewässer und genau die 10 FFH-Flächen verwendet wurden.
+- „Features“ sagen: Ein Linienfeature kann mehrere Teile oder Abschnitte umfassen.
+
+## Folie 26 (67–69 min) – Auswahl ist nicht Zuschneiden
+- Die ausgewählte Linie über die Polygonkante hinaus verfolgen. Die Auswahl markiert das ganze Feature.
+- Ein tatsächlicher Ausschnitt der Liniengeometrie würde ein anderes Werkzeug und ein anderes Ergebnis erzeugen.
+
+## Folie 27 (69–70 min) – Was dürfen wir aus 106 Treffern folgern?
+- Eine zulässige Aussage formulieren lassen: 106 der 412 Gewässerfeatures schneiden mindestens eine gewählte FFH-Fläche.
+- Keine Summe der Gewässerlängen innerhalb der Gebiete und keine Aussage über Gewässerqualität daraus ableiten.
+- Überleitung: „Die Markierungen sind noch kein dauerhaftes Ergebnis. Wir speichern und kontrollieren beide Auswahlen.“
+
+
+# Themenblock: Ergebnislayer sichern und Grenzfall klären
+
+## Folie 28 (70–74 min) – Beide räumlichen Auswahlen exportieren
+- Jeweils nur die ausgewählten Features exportieren: Punkte als `gbif_in_schutzgebieten`, Gewässer als `gewaesser_an_schutzgebieten` in `data_output/unit12_results.gpkg`.
+- `EPSG:25832` beibehalten und nicht den gesamten Eingabelayer speichern.
+
+## Folie 29 (74–77 min) – Das GeoPackage enthält drei Ergebnislayer
+- Die Namen nebeneinander lesen: `schutzgebiete_auswahl`, `gbif_in_schutzgebieten`, `gewaesser_an_schutzgebieten`.
+- Fragen: „Warum liegen drei Layer in einer Datei?“ Erwartet: Das GeoPackage ist der Behälter; jeder Layer bleibt fachlich getrennt.
+
+## Folie 30 (77–80 min, gemeinsam mit 31) – Neu laden, Auswahl lösen, Ergebnis prüfen
+- Im gemeinsamen Dreiminutenblock mit Folie 31 alle drei Ergebnislayer neu laden, alte Markierungen lösen und 10/4/106 sowie `EPSG:25832` kontrollieren.
+
+## Folie 31 (77–80 min, gemeinsam mit 30) – Ein Ergebnis braucht Regel, Zahl und Grenze
+- In `documentation/processing_notes.md` Attributregel `kategorie = FFH`, räumliches Prädikat `schneidet`, Eingänge, Ergebniszahlen und Aussagegrenze notieren lassen.
+
+## Folie 32 (80–82 min) – Grenzfall · erst zu zweit erklären
+- Zur offenen Frage aus Folie 10 zurückkehren: Punkt A innen, B auf der Grenze, C außen einordnen.
+- Vermutung zu `schneidet` und `innerhalb` getrennt abfragen.
+
+## Folie 33 (82–85 min) – Intersects zählt den Rand – Unsicherheit bleibt
+- Auflösen: A erfüllt beide Beziehungen, B `schneidet`, aber nicht `innerhalb`, C keine von beiden.
+- Die Koordinatenunsicherheit bleibt auch bei eindeutigem geometrischem Testergebnis eine fachliche Grenze.
+- Überleitung: „Zum Schluss unterscheiden wir noch einmal die genaue räumliche Regel von der Aussage, die wir daraus machen dürfen.“
+
+
+# Themenblock: Abschluss und Nachbereitung
+
+## Folie 34 (85–88 min) – Exit Ticket · eine Frage auswählen
+- Nur eine der sichtbaren Fragen wählen; hier bietet sich an: „Welche räumliche Beziehung nutzten wir, und was bedeutet sie am Rand?“
+- Eine Minute allein antworten lassen; sichern: `schneidet` zählt auch einen Punkt auf der Polygonkante, belegt aber keinen sicheren Tierstandort.
+
+## Folie 35 (88–90 min) – Nachbereitung · JiTT zu Unit 12
+- JiTT-Fragen zu Unit 12 in ILIAS nennen; Fragen und Frist stehen dort. Das ist die einzige Übungsaufgabe zu dieser Unit.
+- Ausblick: Unit 13 ergänzt Höhenwerte aus einem Raster an den 56 geprüften Punkten aus Unit 11, nicht nur an den vier ausgewählten Punkten. Danach zu Folie 37 springen.
+
+## Folie 37 (am Ende) – Vielen Dank für Ihre Aufmerksamkeit
+- Sitzung beenden. Kein zusätzlicher Zeitblock.
+
+
+# Reserve
+
+## Folie 36 – Quellen und Arbeitsstand
+- Zum Nachschlagen; im regulären Vortrag überspringen.

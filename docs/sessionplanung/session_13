@@ -1,0 +1,167 @@
+Session 13 – Rasterdaten und Höhenwerte
+Datum: 27.01.2027, 90 Minuten
+
+
+# Vorbereitung
+- Folie 02 mit den tatsächlichen JiTT-Ergebnissen zu Unit 12 füllen.
+- QGIS 3.40, `data_raw/dgm_marburg_10m.tif` und den Layer `gbif_checked` mit allen 56 Punkten aus Unit 11 oder dem Paket-Ersatz bereithalten; nicht nur die vier in Unit 12 ausgewählten Punkte verwenden. `unit13_raster.qgz` wird in der Sitzung angelegt.
+- `documentation/processing_notes.md`, `documentation/quellen.md` und für technische Probleme `ersatz/unit13_results.gpkg/gbif_mit_hoehe` prüfen. Kontrollwerte: 35 gültige Höhen, 21 `NULL` unter 56 Punkten.
+
+
+# Themenblock: Einstieg und JiTT
+
+## Folie 01 (vor Beginn) – Rasterdaten und Höhenwerte
+- Beim Ankommen zeigen.
+
+## Folie 02 (0–10 min) – JiTT · Rückblick auf Unit 12
+- Ein bis zwei tatsächliche Fragen zu Linien, Polygonen, FFH-Auswahl oder `schneidet` besprechen. Offene Punkte klären.
+- Überleitung: „Wir haben Punkt-, Linien- und Polygongeometrien verglichen. Heute kommt ein flächendeckendes Wertefeld hinzu: das Höhenraster.“
+
+## Folie 03 (10–11 min) – Vom Höhenraster zum Punktattribut
+- Den Weg ankündigen: DGM verstehen und prüfen, einzelne Zellwerte lesen, für 56 Punkte abtasten und das Ergebnis als `hoehe_m` dokumentieren.
+- Das Ziel begrenzen: Ein abgetasteter Rasterwert ist ein Modellwert an der Punktkoordinate, keine vor Ort gemessene Höhe des Tieres.
+- Überleitung: „Zuerst unterscheiden wir einzelne Objekte von einem Rasterfeld.“
+
+
+# Themenblock: Raster als Wertefeld verstehen
+
+## Folie 04 (11–13 min) – Objekte oder flächendeckendes Wertefeld?
+- Punkte, Linien und Flächen aus Unit 12 gegen das Rasterbild halten. Frage: „Welches Modell beantwortet für jede Zelle eine Höhenfrage?“ Erwartet: Raster.
+
+## Folie 05 (13–15 min) – Ein Raster ordnet jeder Zelle einen Wert zu
+- Zellen, Reihen und Spalten zeigen; jede gültige Zelle enthält hier einen Höhenwert.
+- Die Zellgröße beschreibt die Abtastung des Rasters, nicht automatisch die Genauigkeit des Ursprungsprodukts.
+
+## Folie 06 (15–18 min) – Kontinuierlich oder kategorial?
+- Höhenwerte und Landbedeckungsklassen vergleichen. Zahlen können Messwerte oder Codes für Kategorien bedeuten.
+- Eine Antwort begründen lassen: Für das heutige DGM sind Meterwerte sinnvoll; bei Klassen-Codes wären arithmetische Mittel häufig sinnlos.
+
+## Folie 07 (18–21 min) – DGM und DOM beschreiben verschiedene Oberflächen
+- DGM als modellierte Geländeoberfläche, DOM als Oberfläche einschließlich Objekten wie Bäumen oder Gebäuden erklären.
+- An der Profildarstellung fragen, warum dieselbe Position in beiden Modellen unterschiedliche Höhen haben kann.
+
+## Folie 08 (21–22 min) – Rasterzelle und Bildschirmpixel sind nicht dasselbe
+- Zellgröße der Daten und Pixel der Anzeige trennen. Beim Hineinzoomen entstehen keine zusätzlichen Höhenmessungen.
+
+## Folie 09 (22–25 min) – Vergröbern fasst Werte zusammen
+- An der Folie zeigen, wie mehrere kleine Zellen zu einer gröberen Zelle zusammengefasst werden.
+- Fragen: „Welche Einzelheiten verschwinden?“ Erwartet: kleinräumige Unterschiede; das verwendete Verfahren kann die neuen Werte beeinflussen.
+- Überleitung: „Mit diesem Modellwissen prüfen wir jetzt das konkrete DGM des Übungspakets.“
+
+
+# Themenblock: DGM in QGIS prüfen und darstellen
+
+## Folie 10 (25–28 min) – Projekt, DGM und Punkte vorbereiten
+- Neues QGIS-Projekt als `unit13_raster.qgz` speichern, `EPSG:25832` setzen, DGM und alle 56 `gbif_checked`-Punkte laden sowie die Layer-CRS prüfen.
+- Falls eigene Unit-11-Datei fehlt, den Paket-Ersatz verwenden. Die vier Unit-12-Treffer sind nicht der Eingang.
+
+## Folie 11 (28–31 min) – Das DGM ist ein abgeleitetes Lehrprodukt
+- Herkunft erklären: 162 DGM1-Kacheln wurden zu einem 10-Meter-Raster für die Lehre zusammengefasst.
+- Es handelt sich nicht um ein unverändertes amtliches DGM10. Höhenbezug `DHHN2016_NH` nennen und auf die Quellenangabe verweisen.
+
+## Folie 12 (31–34 min) – Rastereigenschaften gemeinsam kontrollieren
+- In QGIS Eigenschaften öffnen und 2000 × 2000 Zellen, 10 × 10 Meter Zellgröße, `EPSG:25832`, NoData-Wert `-9999` prüfen.
+- Den Höhenbezug von Lage-CRS und Zellgröße unterscheiden.
+
+## Folie 13 (34–37 min) – Das Rasterrechteck ist nicht vollständig belegt
+- Den gültigen Datenbereich vom rechteckigen Rasterrahmen unterscheiden: Rund 40,01 Prozent der Zellen tragen gültige Höhenwerte.
+- Frage: „Was erwarten Sie beim Abtasten eines Punktes außerhalb der gültigen Abdeckung?“ Erwartet: keinen Höhenwert.
+
+## Folie 14 (37–40 min) – Gleiche Zellgröße genügt nicht
+- Rastervergleich an der Folie lesen: Gleiche 10-Meter-Zellgröße reicht nicht, wenn Ursprung, Rasterausrichtung oder CRS verschieden sind.
+- Für Zell-für-Zell-Vergleiche braucht es ein passendes Rastergitter; für die heutige Punktabtastung wird das vorhandene DGM direkt verwendet.
+
+## Folie 15 (40–43 min) – Einzelne Zellwerte zuerst direkt abfragen
+- Im Identifizieren-Werkzeug eine gültige Rasterzelle abfragen und den Wert als Höhe in Metern lesen.
+- Eine zweite Stelle außerhalb der gültigen Abdeckung anklicken und das Ausbleiben eines gültigen Höhenwerts zeigen.
+
+## Folie 16 (43–46 min) – NoData ist nicht der gültige Wert 0
+- `-9999` als technische NoData-Kennzeichnung des DGM zeigen; daraus wird beim Punktresultat ein fehlender Wert, kein Geländewert von minus 9999 Metern.
+- Frage: „Warum darf eine fehlende Höhe nicht als 0 Meter eingehen?“ Erwartet: 0 wäre ein wirklicher Höhenwert und verfälschte die Analyse.
+
+## Folie 17 (46–49 min) – Höhenwerte mit Pseudofarbe darstellen
+- In QGIS eine abgestufte Farbdarstellung des DGM einstellen und Legende sowie Wertebereich lesen.
+- NoData transparent beziehungsweise als fehlende Fläche erkennbar lassen.
+
+## Folie 18 (49–51 min) – Andere Farben, gleiche Werte
+- Zwei Darstellungen derselben Rasterwerte vergleichen. Farbe ändert die Wahrnehmung, nicht die gespeicherten Höhen.
+
+## Folie 19 (51–53 min) – Eine kleine Zelle beweist keine hohe Genauigkeit
+- Zellgröße, ursprüngliche Messqualität und Verarbeitungsweg getrennt nennen lassen.
+- Die 10-Meter-Zellen des abgeleiteten Lehrprodukts nicht als 10-Meter-Lagegenauigkeit oder Zentimeter-Höhengenauigkeit ausgeben.
+
+## Folie 20 (53–55 min) – Auflösung, Lage und Wert getrennt beurteilen
+- An der Folie drei Fragen sichern: Wie groß ist die Zelle? Wie genau liegt die Punktkoordinate? Wie zuverlässig ist der Höhenwert?
+- Überleitung: „Jetzt hängen wir an jede der 56 Punktkoordinaten den Wert der getroffenen Rasterzelle an.“
+
+
+# Themenblock: Höhenwerte an alle geprüften Punkte abtasten
+
+## Folie 21 (55–58 min) – Punkteeingang: alle 56 aus Unit 11
+- Den Eingabelayer `gbif_checked` und die Zahl 56 nochmals prüfen. Unit 12 hat vier Punkte für eine andere Frage ausgewählt; sie ersetzen den vollständigen Eingang nicht.
+- Punkt- und Raster-CRS `EPSG:25832` kontrollieren.
+
+## Folie 22 (58–62 min) – Werkzeug „Rasterwerte abtasten“ einstellen
+- In QGIS „Rasterwerte abtasten“ öffnen. Eingabepunkte `gbif_checked`, Raster `dgm_marburg_10m`, Feldpräfix `hoehe_` einstellen.
+- Vor Start fragen, ob neue Punktgeometrien oder nur zusätzliche Attribute erwartet werden. Erwartet: dieselben Punktpositionen mit neuem Feld.
+
+## Folie 23 (62–65 min) – Der getroffene Zellwert wird zum Attribut
+- Werkzeug ausführen und an einem Beispielpunkt den getroffenen Zellwert mit der neuen Tabellenzelle verbinden.
+- Erklären: Es wird der Rasterwert an der Koordinate übernommen, nicht eine Höhe im Umkreis gemittelt.
+
+## Folie 24 (65–68 min) – QGIS erzeugt zunächst hoehe_1
+- Attributtabelle öffnen und das neue Feld `hoehe_1` lokalisieren.
+- Prüfen, dass die anderen GBIF-Felder und alle 56 Zeilen erhalten geblieben sind.
+
+## Folie 25 (68–72 min) – Nur das Höhenfeld kontrolliert umbenennen
+- Über „Felder überarbeiten“ ausschließlich `hoehe_1` in `hoehe_m` umbenennen; andere Feldnamen und Werte beibehalten.
+- Den Namen begründen: Er nennt Inhalt und Einheit. Danach Tabellenstruktur vor dem Export noch einmal prüfen.
+
+## Folie 26 (72–75 min) – Prüfwert: 35 Höhen und 21 NULL
+- In der Ergebnistabelle 56 Punktfeatures, davon 35 gültige `hoehe_m`-Werte und 21 `NULL`, kontrollieren.
+- Bei Abweichung Eingangspunkte, Rasterabdeckung und Feldwahl prüfen; `NULL` nicht durch 0 ersetzen.
+
+## Folie 27 (75–78 min) – Ergebnis speichern und neu laden
+- Ergebnis in `data_output/unit13_results.gpkg` als `gbif_mit_hoehe` speichern und neu laden.
+- Wieder 56 Zeilen, Feld `hoehe_m`, 35 gültige und 21 fehlende Werte prüfen. Projekt speichern.
+
+## Folie 28 (78–81 min) – Zwei konkrete Punkte als Stichprobe
+- Die zwei auf der Folie gezeigten Fälle mit der eigenen Ergebnistabelle vergleichen: ein Punkt mit gültiger Höhe, ein Punkt mit `NULL`.
+- Bei `NULL` die Rasterabdeckung prüfen; keinen Wert erfinden oder interpolieren.
+
+## Folie 29 (81–82 min) – Gültige Punkthöhen liegen zwischen 178,55 und 323,90 m
+- Den Bereich nur für die 35 gültigen Punkthöhen nennen und in der Tabelle plausibilisieren.
+- Nicht als Höhenbereich des gesamten Untersuchungsgebiets oder aller 56 Punkte ausgeben.
+- Überleitung: „Ein berechnetes Attribut ist nützlich, wenn wir zugleich erklären, welche Unsicherheiten darin stecken.“
+
+
+# Themenblock: Ergebnis einordnen und abschließen
+
+## Folie 30 (82–84 min) – Welche Unsicherheiten treffen zusammen?
+- Koordinatenunsicherheit des GBIF-Records, räumliche Rasterauflösung und Unsicherheit des abgeleiteten DGM zusammenführen.
+- Fragen: „Was heißt `hoehe_m` genau?“ Erwartet: Modellwert der getroffenen Zelle an der dokumentierten Koordinate.
+
+## Folie 31 (84–85 min) – Quelle, Verarbeitung und Ergebnis dokumentieren
+- In `documentation/processing_notes.md` DGM-Herkunft, 10-Meter-Verarbeitung, 56 Eingänge, Feld `hoehe_m`, 35/21 und Ausgabeort festhalten lassen.
+- Fehlende Höhen und Aussagegrenze ausdrücklich notieren.
+- Überleitung: „Zum Abschluss prüfen wir, ob Rasterwert und Genauigkeitsaussage auseinandergehalten werden.“
+
+## Folie 32 (85–88 min) – Exit Ticket · eine Frage auswählen
+- Nur eine der sichtbaren Fragen wählen; nach diesem Weg bietet sich an: „Welche Unsicherheiten treffen bei `hoehe_m` zusammen?“
+- Eine Minute allein schreiben lassen, dann Koordinatenlage, Rasterauflösung und Höhenmodell als Antwort sichern.
+
+## Folie 33 (88–90 min) – Nachbereitung · JiTT zu Unit 13
+- JiTT-Fragen zu Unit 13 in ILIAS nennen; Fragen und Frist stehen dort. Das ist die einzige Übungsaufgabe zu dieser Unit.
+- Ausblick: Unit 14 gestaltet aus den 35 Punkten mit gültiger Höhe eine lesbare Abschlusskarte. Danach zu Folie 36 springen.
+
+## Folie 36 (am Ende) – Vielen Dank für Ihre Aufmerksamkeit
+- Sitzung beenden. Kein zusätzlicher Zeitblock.
+
+
+# Reserve
+
+## Folie 34 – Vertiefung: Neuabtastung bewusst wählen
+- Nur bei einer konkreten Frage zum Vergröbern oder Interpolieren aufrufen; im regulären Ablauf überspringen.
+
+## Folie 35 – Quellen und Arbeitsstand
+- Zum Nachschlagen; im regulären Vortrag überspringen.

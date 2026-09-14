@@ -1,0 +1,167 @@
+Session 09 – Geodaten, Koordinaten und Projektionen
+Datum: 09.12.2026, 90 Minuten
+
+
+# Vorbereitung
+- Folie 02 mit den tatsächlichen JiTT-Ergebnissen zu Unit 08 füllen.
+
+
+# Themenblock: Einstieg und JiTT
+
+## Folie 01 (vor Beginn) – Titel
+- Beim Ankommen zeigen.
+
+## Folie 02 (0–10 min) – JiTT: Rückblick
+- Ein bis zwei ausgewählte Fragen zu Unit 08 anhand der tatsächlichen Antworten besprechen. Offene Punkte klären.
+- Überleitung: „Bisher haben wir Daten verarbeitet. Heute fragen wir zusätzlich, wo etwas liegt.“
+
+## Folie 03 (10–11 min) – Orientierung
+- Die drei Schritte der Sitzung ankündigen: Raumbezug erkennen, Koordinaten prüfen, CRS passend zum Zweck auswählen.
+- Kurze Aufgaben werden allein und mit der Sitznachbarin oder dem Sitznachbarn bearbeitet.
+- Überleitung: „Beginnen wir mit einem Zahlenpaar: Wo ist das, und welche Angaben fehlen uns noch?“
+
+
+# Themenblock: Raumbezug erkennen
+
+## Folie 04 (11–14 min) – Wo ist das?
+- „50,81 / 8,77“ zeigen. 30 Sekunden nachdenken lassen und zwei Vermutungen sammeln.
+- Fragen: „Welche Zahl ist Breite, welche Länge? Welche Einheit haben die Werte?“
+- Festhalten: Das unbeschriftete Paar bestimmt den Ort noch nicht eindeutig. Auflösung bei Folie 14.
+
+## Folie 05 (14–16 min) – Was macht Daten zu Geodaten?
+- Die zwei Tabellen vergleichen lassen. ID, Datum und Messwert bleiben gleich; rechts kommt der Raumbezug hinzu.
+- Sachdaten und Ortsinformation unterscheiden.
+- Koordinaten sind nicht die einzige mögliche Form von Raumbezug.
+
+## Folie 06 (16–18 min) – Wie bilden wir die Wirklichkeit ab?
+- Messstation als Punkt, Straße als Linie und Stadtgebiet als Fläche zeigen.
+- Frage: „Wie würden Sie Marburg auf einer Deutschlandkarte darstellen?“
+- Antwort: Modell und Detailgrad hängen von Fragestellung und Maßstab ab.
+
+## Folie 07 (18–19 min) – Welche Beispiele haben Raumbezug?
+- A bis C erst allein beurteilen, dann kurz zu zweit besprechen.
+- Per Handzeichen abfragen und eine Begründung zur Genauigkeit hören.
+
+## Folie 08 (19–20 min) – Auflösung
+- A hat Raumbezug über die Gemeinde; B hat ohne Messort keinen; C hat einen ungefähren Raumbezug.
+- Merksatz: Zusätzlich zum „Wo?“ müssen wir fragen, ob die Ortsangabe genau genug ist.
+- Überleitung: „Wenn wir einen Ort genauer angeben wollen, brauchen wir Koordinaten. Wie lesen und prüfen wir sie?“
+
+
+# Themenblock: Koordinaten lesen und prüfen
+
+## Folie 09 (20–25 min) – Breite und Länge beschreiben Winkel
+- Gradnetz mit Äquator, Nullmeridian, Breitenkreisen und Meridianen lesen.
+- Marburg ungefähr bei 50,81° N und 8,77° E zeigen.
+- Wertebereiche für Breite und Länge gemeinsam nennen lassen.
+
+## Folie 10 (25–30 min) – Marburg: Welche Zahl steht zuerst?
+- Die zwei beschrifteten Schreibweisen vergleichen: Beide meinen denselben Ort.
+- Kurskonvention für Tabellen festhalten: `(longitude, latitude) = (x, y)`.
+- Bei fremden Daten Spaltennamen, Reihenfolge und CRS-Angabe prüfen.
+
+## Folie 11 (30–35 min) – Vertauscht, aber formal gültig
+- A und B im Gradnetz zeigen.
+- Frage: „Warum fällt der Fehler bei einer reinen Wertebereichsprüfung nicht auf?“
+- Beide Paare sind formal möglich, aber nur A liegt bei Marburg. Erwartete Region mitprüfen.
+
+## Folie 12 (35–41 min) – Fünf Koordinatenpaare prüfen
+- Vorgabe laut nennen: Dezimalgrad, Reihenfolge (Länge, Breite), Orte sollen in Deutschland liegen.
+- Eine Minute allein Auffälligkeiten markieren, zwei Minuten zu zweit begründen, danach Verdachtsfälle sammeln.
+- Noch keine Werte korrigieren lassen.
+
+## Folie 13 (41–45 min) – Auflösung der fünf Paare
+- 1 plausibel; 2 möglicherweise vertauscht; 3 ungültiger Längengrad; 4 Südhalbkugel; 5 formal gültig, aber nicht in Deutschland.
+- Betonen: Befund dokumentieren, Quelle prüfen, erst danach korrigieren.
+- Überleitung: „Auch plausible Zahlen sagen uns noch nicht eindeutig, wo ein Punkt liegt. Dazu müssen wir sein Bezugssystem kennen.“
+
+
+# Themenblock: CRS und Kartenprojektionen verstehen
+
+## Folie 14 (45–48 min) – Koordinaten brauchen ein Bezugssystem
+- Zur Einstiegsfrage auf Folie 04 zurückkehren. Die Grad- und Meterwerte für denselben ungefähren Ort bei Marburg vergleichen.
+- CRS als Koordinatenreferenzsystem einführen: Es gibt den Zahlen eine eindeutige räumliche Bedeutung.
+
+## Folie 15 (48–50 min) – Winkel oder Meter?
+- Geographische Koordinaten in Grad und projizierte Koordinaten in einer Ebene, hier in Metern, gegenüberstellen.
+- „Meter“ allein garantiert noch keine geeignete Entfernungsmessung.
+
+## Folie 16 (50–53 min) – Von der gekrümmten Erde auf die Ebene
+- Fragen: „Wie bekommen Sie eine Orangenschale flach auf den Tisch?“ Antworten aufnehmen.
+- Übertragen: Jede ebene Weltkarte verzerrt bestimmte Eigenschaften.
+
+## Folie 17 (53–56 min) – Gleich große Gebiete, anders dargestellt
+- Zuerst beobachten lassen, wie dieselben Ausgangsflächen bei 0° und 70° Nord in beiden Karten aussehen.
+- Dann auflösen: World Mercator vergrößert polnah; Equal Earth erhält die Flächenverhältnisse, verändert aber Formen.
+
+## Folie 18 (56–58 min) – Abstimmung zum Flächenvergleich
+- Für den Vergleich von Länderflächen zwischen A, B und C wählen lassen: 30 Sekunden allein entscheiden, kurz zu zweit begründen, dann Handzeichen.
+- Eine Begründung anhören.
+
+## Folie 19 (58–60 min) – Auflösung
+- B ist richtig: Eine flächentreue Projektion eignet sich für den Flächenvergleich. Formen und Winkel können dafür verändert sein.
+- Überleitung: „Die Fragestellung bestimmt die Wahl der Projektion. Welches Koordinatenreferenzsystem passt nun zu welchem Zweck?“
+
+
+# Themenblock: Ein CRS passend zum Zweck auswählen
+
+## Folie 20 (60–65 min) – Drei CRS des Kurses
+- EPSG:4326 für weltweite Positionen in Grad, EPSG:25832 für regionale Arbeit um Marburg in Metern, EPSG:3857 für viele Webkarten vorstellen.
+- Ein EPSG-Code benennt ein CRS; er bewertet seine Eignung nicht.
+
+## Folie 21 (65–68 min) – UTM-Zone
+- Marburg bei 8,77° Ost auf der schematischen Achse zeigen.
+- Zone 32 liegt hier zwischen 6° und 12° Ost.
+- Die vollständige Kursangabe sichern: ETRS89 / UTM Zone 32N, EPSG:25832.
+
+## Folie 22 (68–72 min) – CRS auswählen
+- A weltweite Artenbeobachtungen, B Entfernungen um Marburg, C Darstellung mit üblichen Webkartenkacheln.
+- 45 Sekunden allein, 90 Sekunden zu zweit entscheiden; anschließend drei begründete Vorschläge sammeln.
+
+## Folie 23 (72–75 min) – Auflösung
+- A → EPSG:4326; B → EPSG:25832; C → EPSG:3857.
+- Jede Entscheidung anhand von Gebiet, Einheit und Zweck begründen.
+- Bei C ergänzen: Die ursprünglichen Fachdaten müssen nicht selbst in EPSG:3857 gespeichert sein.
+- Überleitung: „Bevor wir Daten in einem passenden CRS nutzen, müssen wir das CRS ihrer vorhandenen Koordinaten richtig behandeln.“
+
+
+# Themenblock: CRS-Fehler vermeiden
+
+## Folie 24 (75–79 min) – Zuweisen und Transformieren
+- Die Wege in der Grafik verfolgen.
+- Beim Zuweisen bleiben die Zahlen gleich; beim Transformieren werden sie umgerechnet und der reale Ort bleibt gleich.
+- Den Fehler unten zeigen: Gradwerte bloß als UTM-Meter zu etikettieren ist keine Transformation.
+
+## Folie 25 (79–82 min) – Was ist der richtige nächste Schritt?
+- Den gesamten Fall vorlesen: Die Quelle nennt WGS 84 und `(longitude, latitude)`, aber in der Datei fehlt die CRS-Angabe.
+- 30 Sekunden überlegen, dann A/B/C per Handzeichen abstimmen.
+- Bei Uneinigkeit kurz zu zweit beraten und erneut abstimmen.
+
+## Folie 26 (82–85 min) – Auflösung
+- B ist richtig: Quelle prüfen → EPSG:4326 zuweisen → bei Bedarf nach EPSG:25832 transformieren.
+- Direkt UTM zuzuweisen würde die Gradwerte falsch interpretieren; verschiedene CRS auszuprobieren wäre Raten.
+- Überleitung: „Zum Schluss halten wir die wichtigste Regel für den Umgang mit Koordinaten und CRS in einem Satz fest.“
+
+
+# Themenblock: Abschluss und Nachbereitung
+
+## Folie 27 (85–88 min) – Exit-Ticket
+- Nur eine sichtbare Frage auswählen. Nach diesem Ablauf bietet sich C an: „Was passiert beim Transformieren?“
+- Eine Minute zu zweit formulieren lassen, dann sichern: Koordinatenwerte ändern sich, der reale Ort bleibt gleich.
+
+## Folie 28 (88–90 min) – Nachbereitung und nächster Schritt
+- JiTT-Fragen zu Unit 09 in ILIAS nennen; Fragen und Frist stehen dort.
+- Dies ist die einzige Übungsaufgabe zu Unit 09.
+- Ausblick auf QGIS in Unit 10. Danach direkt zu Folie 31 springen.
+
+## Folie 31 (am Ende) – Abschluss
+- Sitzung beenden. Kein zusätzlicher Zeitblock.
+
+
+# Reserve
+
+## Folie 29 – Dezimalgrad selbst berechnen
+- Nur bei Bedarf anstelle einer anderen kurzen Übung einsetzen. Nicht zusätzlich in die 90 Minuten aufnehmen.
+
+## Folie 30 – Materialien und Quellen
+- Zum Nachschlagen; im regulären Vortrag überspringen.

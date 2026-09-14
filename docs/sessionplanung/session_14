@@ -1,0 +1,189 @@
+Session 14 – Kartengestaltung und Abschlusskarte
+Datum: 03.02.2027, 90 Minuten
+
+
+# Vorbereitung
+- Folie 02 mit den tatsächlichen JiTT-Ergebnissen zu Unit 13 füllen.
+- QGIS 3.40 und das entpackte Übungspaket mit `unit14_start.qgz`, dem Layer mit 35 gültigen `hoehe_m`-Werten, dem vorhandenen Layout `abschlusskarte_unit14` und dem Beispiel `unit14_beispiel.qgz` bereithalten.
+- Ausgabeverzeichnis `figures/`, `documentation/processing_notes.md`, vorbereitete Vergleichsbilder für gleiche Intervalle und Quantile sowie eine PDF-/PNG-Ansicht außerhalb von QGIS prüfen.
+
+
+# Themenblock: Einstieg und JiTT
+
+## Folie 01 (vor Beginn) – Kartengestaltung und Abschlusskarte
+- Beim Ankommen zeigen.
+
+## Folie 02 (0–10 min) – JiTT · Rückblick auf Unit 13
+- Ein bis zwei Fragen anhand der tatsächlichen Antworten zu Rasterwerten, `NULL` oder der Bedeutung von `hoehe_m` besprechen. Offene Punkte klären.
+- Überleitung: „Aus dem Höhenraster haben wir 35 gültige Punkthöhen erhalten. Heute entscheiden wir, wie daraus eine verständliche und ehrliche Karte wird.“
+
+## Folie 03 (10–11 min) – Von geprüften Höhenpunkten zur lesbaren Karte
+- Den Arbeitsweg nennen: Datenstand prüfen, Klassierung vergleichen, Symbole und Layout bearbeiten, PDF/PNG exportieren und gegenseitig lesen lassen.
+- Endprodukte ankündigen: QGIS-Projekt, dokumentierte Entscheidung und zwei geprüfte Kartenexporte.
+- Überleitung: „Damit wir die vorbereitete Grundlage erhalten, sichern wir zuerst eine eigene Arbeitskopie.“
+
+
+# Themenblock: Datenstand und Kartenfrage festlegen
+
+## Folie 04 (11–14 min) – Startprojekt sofort als Arbeitskopie speichern
+- `unit14_start.qgz` öffnen und unmittelbar als `unit14_abschluss.qgz` speichern. Das vorbereitete Layout nicht neu anlegen.
+- Prüfen, ob die Datenlayer gefunden werden; bei technischen Problemen `unit14_beispiel.qgz` als Referenz öffnen.
+
+## Folie 05 (14–16 min) – Kartenfrage und Zielgruppe zuerst festlegen
+- An der Folie die Frage formulieren: Wie verteilen sich die Höhenwerte der geprüften Feuersalamander-Nachweispunkte im Marburger Ausschnitt?
+- Die Zielgruppe als fachlich interessierte Kursöffentlichkeit benennen. Titel, Legende und Quellen sollen ohne mündliche Erklärung verständlich sein.
+
+## Folie 06 (16–18 min) – Der Karteneingang umfasst 35 gültige Höhenwerte
+- Im Punktlayer `hoehe_m` prüfen: 35 gültige Werte; 21 weitere geprüfte Punkte haben keine Rasterhöhe und gehen nicht in die Höhenklassierung ein.
+- Die 35 Punkte als Nachweise mit Modellhöhen, nicht als alle Tiere oder alle Vorkommen bezeichnen.
+- Überleitung: „Bei denselben 35 Zahlen kann die Wahl der Klassengrenzen ein anderes sichtbares Muster erzeugen.“
+
+
+# Themenblock: Klassengrenzen und Symbole begründet wählen
+
+## Folie 07 (18–20 min) – Klassengrenzen verändern die sichtbare Aussage
+- Die beiden Klassierungen des gleichen Datensatzes vergleichen lassen. Erst beschreiben, wo Unterschiede sichtbar werden, dann die Methode nennen.
+- Festhalten: Die Daten bleiben gleich; die Gruppierung steuert, welche Kontraste hervortreten.
+
+## Folie 08 (20–22 min) – Gleiche Intervalle: gleiche Breite
+- Zeigen, dass der gesamte Wertebereich in fünf gleich breite Höhenintervalle geteilt wird.
+- Nachfragen: „Sind dann auch gleich viele Punkte in jeder Klasse?“ Erwartet: nein.
+
+## Folie 09 (22–24 min) – Quantile: ungefähr gleich viele Punkte
+- Die alternative Regel erklären: Klassengrenzen so setzen, dass die fünf Klassen ungefähr gleich viele der 35 Punkte enthalten.
+- Darauf hinweisen, dass dafür die Klassenbreiten unterschiedlich sein können.
+
+## Folie 10 (24–27 min) – Dieselben 35 Punkte – zwei sichtbare Muster
+- Die vorbereiteten Karten bei gleichem Ausschnitt und vergleichbarer Palette nebeneinander zeigen.
+- 45 Sekunden allein beobachten, dann zu zweit eine sichtbare Differenz und eine mögliche Fehldeutung benennen lassen.
+
+## Folie 11 (27–29 min) – Rechenprinzip und Klassenbesetzung
+- An den zehn Beispielwerten die Verteilung vergleichen: Gleich breite Intervalle verteilen sich hier 8/1/0/0/1, Quantile ungefähr zwei Werte pro Klasse.
+- Leere Klassen bei gleichen Intervallen als mögliches Ergebnis und nicht als Rechenfehler erklären.
+
+## Folie 12 (29–30 min) – Die realen Klassengrenzen vergleichen
+- Bei den 35 echten Werten die inneren Grenzen der Quantile ungefähr 214,3/230,0/245,0/267,7 Meter und der gleichen Intervalle ungefähr 207,6/236,7/265,8/294,8 Meter zeigen.
+- Nur kurz lesen lassen: Die Klassennamen müssen zur tatsächlich gewählten Methode passen.
+
+## Folie 13 (30–33 min) – Abgestufte Darstellung in QGIS einstellen
+- Für `hoehe_m` eine abgestufte Symbolisierung mit fünf Klassen öffnen und beide Methoden kurz einstellen beziehungsweise vorbereitete Ergebnisse vergleichen.
+- Bei abweichender QGIS-Oberfläche nach Funktionsnamen statt nach Symbolposition navigieren.
+
+## Folie 14 (33–36 min) – Eine Methode auswählen und begründen
+- Jede Person wählt gleiche Intervalle oder Quantile für die eigene Karte und notiert einen Satz zur Wirkung auf genau diese 35 Punkte.
+- Zwei unterschiedliche begründete Entscheidungen anhören; beide Methoden sind möglich, wenn Darstellung und Begründung zusammenpassen.
+
+## Folie 15 (36–38 min) – Klassen eindeutig und lesbar beschriften
+- In der Legende fünf Klassen mit Meterwerten und eindeutigen Grenzen benennen; keine unklaren Kurzlabels oder Feldnamen als alleinige Erklärung.
+- Prüfen, ob Werte an einer Klassengrenze eindeutig zugeordnet sind.
+
+## Folie 16 (38–40 min) – Für Höhenwerte eine sequentielle Palette wählen
+- Eine geordnete Folge von hell nach dunkel beziehungsweise schwach nach stark für niedrige bis hohe Werte wählen.
+- Die gewählte Richtung in Legende und Kartensymbolen durchhalten; keine kategorialen Regenbogenfarben nötig.
+
+## Folie 17 (40–42 min) – Symbolwahl folgt der Datenart
+- Die 35 Höhenwerte als Punktzeichen mit abgestuften Farben zeigen. Punktgröße so wählen, dass benachbarte Punkte und Hintergrund lesbar bleiben.
+- Keine Flächenwirkung suggerieren: Die Klasse gehört zum Nachweispunkt, nicht zur gesamten Umgebung.
+
+## Folie 18 (42–44 min) – Die Hauptinformation muss zuerst auffallen
+- Karte aus einiger Entfernung prüfen lassen: Fallen Höhenpunkte zuerst auf, während Untersuchungsgebiet und Gewässer Orientierung geben?
+- Bei Konkurrenz die Hintergrundlinien oder -flächen zurücknehmen.
+
+## Folie 19 (44–45 min) – Vor dem Layout die Kartenansicht prüfen
+- Ausschnitt, sichtbare Layer, 35 Punkte und verständliche Legende in der QGIS-Kartenansicht kontrollieren.
+- Überleitung: „Die Datenansicht steht. Nun übertragen wir sie in das vorbereitete Drucklayout und prüfen jedes Textelement.“
+
+
+# Themenblock: Vorbereitetes Layout ausarbeiten
+
+## Folie 20 (45–46 min) – Das vorbereitete Layout gezielt ausarbeiten
+- Das vorhandene Layout `abschlusskarte_unit14` öffnen; keine neue Seite anlegen.
+- A4-Querformat und die vorbereiteten Karten- und Textelemente lokalisieren.
+
+## Folie 21 (46–49 min) – Die Beispielkarte ist eine Prüfreferenz
+- Die fertige Beispielkarte kurz als Orientierung zeigen: Welche Angaben muss eine außenstehende Person finden?
+- Eigene fachliche Entscheidungen zu Klassierung und Texten trotzdem begründen; die Vorlage ist kein Ersatz für die Kontrolle.
+
+## Folie 22 (49–51 min) – Der Titel benennt den tatsächlichen Inhalt
+- Titel so bearbeiten, dass Nachweispunkte, Höhe und Untersuchungsraum erkennbar werden.
+- Nicht „Verbreitung des Feuersalamanders“ als ungesicherte Aussage übernehmen.
+
+## Folie 23 (51–54 min) – Die Legende erklärt Klassen statt Dateinamen
+- Legende auf die wirklich sichtbaren Layer und die fünf `hoehe_m`-Klassen begrenzen. Meter als Einheit und Methode erkennbar machen.
+- Dateinamen, interne Feldnamen oder leere Klassenbezeichnungen entfernen beziehungsweise verständlich umbenennen.
+
+## Folie 24 (54–56 min) – Kartenausschnitt und Maßstab funktional prüfen
+- Kontrollieren, ob alle relevanten Punkte im Kartenausschnitt liegen und der Maßstab zur Ausgabegröße passt.
+- Keine zusätzliche Genauigkeit aus vielen Nachkommastellen des Maßstabs ableiten.
+
+## Folie 25 (56–59 min) – Quellen und Bearbeitung gehören in die Karte
+- Quellenzeile prüfen: Nachweise aus NABU|naturgucker über GBIF, Höhe aus dem abgeleiteten hessischen DGM-Lehrprodukt; Bearbeitung und Stand entsprechend den Paketangaben eintragen. Die 35 dargestellten und 21 nicht dargestellten Punkte sichtbar benennen.
+- Keine nicht belegten Download-DOIs, Datumsangaben oder Genauigkeitsversprechen ergänzen.
+
+## Folie 26 (59–62 min) – Layout in tatsächlicher Ausgabegröße prüfen
+- A4-Querformat in der Ausgabegröße ansehen: Titel, Legende, Quellen, Maßstab und Punktklassen müssen ohne Zoomen lesbar sein.
+- Wenn Elemente überlaufen oder verdecken, im Layout nachjustieren; nicht allein der QGIS-Vorschau vertrauen.
+- Überleitung: „Ein lesbares Layout muss auch in den exportierten Dateien bestehen. Jetzt erstellen und öffnen wir beide Formate.“
+
+
+# Themenblock: PDF und PNG exportieren und prüfen
+
+## Folie 27 (62–65 min) – Zwei Formate mit verbindlichen Dateinamen exportieren
+- `figures/abschlusskarte_unit14.pdf` und `figures/abschlusskarte_unit14.png` erzeugen; PNG mit 150 dpi exportieren.
+- Dateinamen vor dem Speichern laut kontrollieren. Bei abweichenden Vorgaben im Paket die vorhandenen Vorgaben prüfen.
+
+## Folie 28 (65–68 min) – PDF und PNG außerhalb von QGIS öffnen
+- Beide Dateien in einem separaten Programm öffnen. Auf abgeschnittene Legende, unscharfen Text, fehlende Quellen und verschiedene Kartenausschnitte achten.
+- Bei Fehlern zum Layout zurückgehen, neu exportieren und erneut öffnen.
+
+## Folie 29 (68–70 min) – Vier Produkte vor dem Partnercheck sichern
+- Projekt `unit14_abschluss.qgz`, PDF, PNG und `documentation/processing_notes.md` als vier abzugebende Arbeitsprodukte benennen und Speicherorte prüfen.
+- Noch einmal speichern; nur existierende, tatsächlich geöffnete Exportdateien als fertig zählen.
+- Überleitung: „Jetzt lesen wir die Karte wie eine Person, die ihre Entstehung nicht gesehen hat.“
+
+
+# Themenblock: Partnercheck, Korrektur und Aussagegrenze
+
+## Folie 30 (70–73 min) – Partnercheck: Karte ohne Zusatzwissen lesen
+- Karten zu zweit tauschen. Partnerin oder Partner nennt ohne Erläuterung Thema, dargestellte Punktmenge, Höhenklassen und Quelle.
+- Eine unklare Stelle konkret markieren, etwa zu kleine Legende oder ungenauer Titel.
+
+## Folie 31 (73–76 min) – Eine konkrete Verbesserung priorisieren
+- Aus der Rückmeldung genau eine wichtige Änderung wählen und kurz begründen: Welche Fehlinterpretation vermeidet sie?
+- Bei schon gut lesbarer Karte eine Quellen- oder Grenzenaussage prüfen, statt kosmetisch zu ändern.
+
+## Folie 32 (76–80 min) – Korrektur übernehmen und betroffenen Export erneuern
+- Änderung im QGIS-Projekt umsetzen, speichern und betroffene PDF-/PNG-Dateien erneut exportieren.
+- Die neue Datei außerhalb von QGIS öffnen; der Partnercheck gilt erst nach diesem Test als abgeschlossen.
+
+## Folie 33 (80–83 min) – Entscheidungen im vorhandenen Protokoll festhalten
+- In `documentation/processing_notes.md` gewählte Klassierung, fünf Klassen, Palette, Layoutanpassung, Quellen, Exportformate und die Änderung nach Partnercheck eintragen.
+- Die 21 Punkte ohne gültige Höhe als Grenze dokumentieren.
+
+## Folie 34 (83–85 min) – Beobachtungen beschreiben – keine Verbreitung behaupten
+- Zulässige Aussage an der eigenen Karte formulieren lassen: 35 ausgewählte Nachweispunkte mit gültigen modellierten Höhen werden klassiert gezeigt.
+- Keine vollständige Artenverbreitung, Bestandshäufigkeit oder präzise Fundhöhe behaupten; Koordinaten- und DGM-Unsicherheit mitdenken.
+- Überleitung: „Die letzte Frage prüft, ob wir Kartengestaltung und Aussagegrenze zusammenhalten.“
+
+
+# Themenblock: Abschluss und Nachbereitung
+
+## Folie 35 (85–88 min) – Exit Ticket · eine Frage auswählen
+- Nur eine sichtbare Frage wählen; nach diesem Ablauf bietet sich die Frage an, welche Behauptung die Abschlusskarte nicht trägt.
+- Eine Minute allein formulieren lassen; sichern: Aus den 35 modellierten Punkthöhen folgt keine vollständige Verbreitung oder sichere genaue Fundhöhe.
+
+## Folie 36 (88–90 min) – Nachbereitung · JiTT zu Unit 14
+- JiTT-Fragen zu Unit 14 in ILIAS nennen; Fragen und Frist stehen dort. Das ist die einzige Übungsaufgabe zu dieser Unit.
+- Ausblick: Unit 15 dient Rückblick, offenen Fragen und Kursabschluss. Danach zu Folie 39 springen.
+
+## Folie 39 (am Ende) – Vielen Dank für Ihre Aufmerksamkeit
+- Sitzung beenden. Kein zusätzlicher Zeitblock.
+
+
+# Reserve
+
+## Folie 37 – Vertiefung: den vollständigen Workflow rekonstruieren
+- Nur bei Bedarf anstelle eines anderen kurzen Schritts einsetzen; nicht zusätzlich in die 90 Minuten aufnehmen.
+
+## Folie 38 – Quellen und Arbeitsstand
+- Zum Nachschlagen; im regulären Vortrag überspringen.

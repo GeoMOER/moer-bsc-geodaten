@@ -1,0 +1,171 @@
+Session 11 – Punktdaten, GBIF und Datenqualität
+Datum: 13.01.2027, 90 Minuten
+
+
+# Vorbereitung
+- Folie 02 mit den tatsächlichen JiTT-Ergebnissen zu Unit 10 füllen.
+- QGIS 3.40 und das entpackte Übungspaket bereithalten. `data_raw/gbif_feuersalamander_marburg.csv` samt `.csvt`, `data_raw/marburg_basis.gpkg`, `documentation/quellen.md` und `documentation/processing_notes.md` prüfen.
+- Die Kontrollwerte 79 Rohdatensätze, 56 ausgewählte und 23 ausgeschlossene Records sowie `ersatz/unit11_results.gpkg/gbif_checked` für technische Probleme bereithalten.
+
+
+# Themenblock: Einstieg und JiTT
+
+## Folie 01 (vor Beginn) – Punktdaten, GBIF und Datenqualität
+- Beim Ankommen zeigen.
+
+## Folie 02 (0–10 min) – JiTT · Rückblick auf Unit 10
+- Ein bis zwei Fragen anhand der tatsächlichen Antworten zu Datenmodellen, QGIS-Projekten oder Datenquellen besprechen. Offene Punkte klären.
+- Überleitung: „In Unit 10 haben wir einen Punktlayer als Datenmodell kennengelernt. Heute prüfen wir, was die einzelnen Punkte tatsächlich belegen.“
+
+## Folie 03 (10–11 min) – Vom Nachweis zum geprüften Punktlayer
+- Den Arbeitsweg nennen: GBIF-Records verstehen, CSV als Punkte importieren, eine begründete Qualitätsregel anwenden und die Auswahl als neuen Layer sichern.
+- Ergebnis ankündigen: `gbif_checked` enthält ausgewählte Nachweise, nicht die vollständige Verbreitung des Feuersalamanders.
+- Überleitung: „Bevor wir importieren, müssen wir einen Punkt auf der Karte richtig lesen.“
+
+
+# Themenblock: Punkt und Occurrence Record richtig deuten
+
+## Folie 04 (11–14 min) – Ein Punkt ist eine Repräsentation
+- Den Punkt auf der Folie zeigen und fragen: „Was wissen wir durch dieses Symbol über den tatsächlichen Aufenthaltsort?“
+- Sichern: Die Karte stellt eine dokumentierte Koordinate dar; Symbolgröße und Lagegenauigkeit sind verschiedene Dinge.
+
+## Folie 05 (14–17 min) – Ein Record ist nicht automatisch ein Tier
+- Einen Occurrence Record als dokumentierten Nachweis erklären. Frage: „Dürfen wir aus drei Records drei verschiedene Tiere folgern?“ Erwartet: nein.
+- Mehrfachmeldungen, Beobachtungsweise und räumliche Unsicherheit als mögliche Gründe nennen.
+
+## Folie 06 (17–20 min) – Drei Records können wie zwei Punkte aussehen
+- Die überlagerten Punkte zählen lassen und mit den drei Tabellenzeilen vergleichen.
+- Festhalten: Gleiche oder nahe Koordinaten machen Records weder automatisch identisch noch unabhängig.
+
+## Folie 07 (20–22 min) – Was dokumentiert ein GBIF Occurrence Record?
+- An der Folie zeigen, welche Angaben einen Nachweis beschreiben: Art, Quelle, Zeitpunkt, Koordinaten und Unsicherheit.
+- Die Quelle sauber benennen: Der vorbereitete Ausschnitt stammt über GBIF aus dem NABU|naturgucker-Datensatz; `10.15468/uc1apo` ist dessen Datensatz-DOI, kein eigener DOI des Downloads.
+
+## Folie 08 (22–23 min, gemeinsam mit 09–10) – Welche Felder brauchen wir heute?
+- Im gemeinsamen einminütigen Kurzblock mit Folien 09 und 10 Artname, Längen- und Breitengrad sowie `coordinateUncertaintyInMeters` zeigen.
+
+## Folie 09 (22–23 min, gemeinsam mit 08 und 10) – Kurz prüfen: Was zeigt eine Punktkarte?
+- Frage in den Raum: „Zeigt die Karte jedes Tier oder die Koordinaten vorhandener Records?“ Eine kurze Antwort aufnehmen.
+
+## Folie 10 (22–23 min, gemeinsam mit 08–09) – Die Karte zeigt dokumentierte Nachweise
+- Auflösen: Die Punkte zeigen gemeldete Nachweise. Fundhäufigkeit und Suchaufwand können die Karte beeinflussen.
+- Überleitung: „Jetzt importieren wir genau diese dokumentierten Records und prüfen zunächst, ob QGIS die Koordinaten richtig liest.“
+
+
+# Themenblock: CSV prüfen und Punktlayer importieren
+
+## Folie 11 (23–26 min) – QGIS-Wiedereinstieg nach der Pause
+- QGIS öffnen und die Bereiche Browser, Layerliste, Kartenansicht und Projekt-CRS wiederfinden lassen.
+- Bei Problemen nur die benötigten Schritte vormachen; den vorbereiteten Ersatzlayer für den späteren Anschluss nennen.
+
+## Folie 12 (26–28 min) – Projekt anlegen und Basis laden
+- Neues Projekt im entpackten Arbeitsordner speichern, Projekt-CRS `EPSG:25832` prüfen und das Untersuchungsgebiet aus `data_raw/marburg_basis.gpkg` laden.
+- Fragen: „Wo liegen die Daten, wo liegt nur der Projektstand?“ Erwartet: Datenquelle im GeoPackage, Projektstand in `.qgz`.
+
+## Folie 13 (28–30 min) – Woher kommen die heutigen 79 Records?
+- Den vorbereiteten GBIF-Ausschnitt als festes, dokumentiertes Lehrbeispiel einordnen; keine Live-Abfrage starten.
+- `documentation/quellen.md` für Herkunft und `processing_notes.md` für Entscheidungen öffnen lassen.
+
+## Folie 14 (30–33 min) – CSV zuerst als Tabelle lesen
+- CSV zunächst ohne Geometrie ansehen: Kopfzeile, 79 Records und die Spalten `decimalLongitude`, `decimalLatitude`, `coordinateUncertaintyInMeters` prüfen.
+- Darauf achten, dass Zahlen als Zahlen und fehlende Werte nicht als Nullwerte mit Bedeutung gelesen werden; `.csvt` gehört zum Paket.
+
+## Folie 15 (33–37 min) – Textdatei als Punktlayer importieren
+- In QGIS „Getrennten Text hinzufügen“ öffnen, die vorbereitete CSV wählen und die Importvorschau zeigen.
+- Studierende die Einstellungen selbst setzen lassen; bei stockendem Import zuerst Trennzeichen und Spaltenvorschau prüfen.
+
+## Folie 16 (37–40 min) – Vier Importangaben müssen zusammenpassen
+- Gemeinsam kontrollieren: UTF-8, Komma, X=`decimalLongitude`, Y=`decimalLatitude`; Quell-CRS der Gradkoordinaten `EPSG:4326` zuweisen.
+- Projekt-CRS `EPSG:25832` davon unterscheiden: QGIS kann für die Anzeige umrechnen, die CSV-Koordinaten werden dadurch nicht umgeschrieben.
+
+## Folie 17 (40–43 min) – Erstkontrolle nach dem Import
+- Den temporären Rohpunktlayer `gbif_feuersalamander_raw` benennen und auf die Punkte zoomen.
+- Prüfen lassen: 79 Tabellenzeilen, Lage um Marburg, plausibles Koordinatenbild. Bei Abweichung X/Y, Trennzeichen und Quell-CRS erneut prüfen.
+- Überleitung: „Die Punkte liegen am erwarteten Ort. Für die Auswahl brauchen wir nun eine fachlich erklärte Qualitätsregel.“
+
+
+# Themenblock: Koordinatenunsicherheit prüfen und auswählen
+
+## Folie 18 (43–47 min) – Was bedeutet Koordinatenunsicherheit?
+- Den Unsicherheitsradius auf der Folie lesen: Ein gemeldeter Punkt ist keine millimetergenaue Ortsangabe.
+- `coordinateUncertaintyInMeters` als dokumentierte Ortsunsicherheit erläutern; ein kleinerer Wert bedeutet hier eine engere Ortsangabe, nicht automatisch einen zweifelsfrei richtigen Nachweis.
+
+## Folie 19 (47–51 min) – Eine Qualitätsregel braucht eine Begründung
+- Für die heutige Übung die Bedingung erklären: dokumentierte positive Unsicherheit von höchstens 100 Metern.
+- Nachfragen: „Warum nehmen wir 0 und fehlende Werte nicht stillschweigend als sehr genaue Angabe?“ Erwartet: 0 ist kein sinnvoll dokumentierter Radius; fehlend ist unbekannt.
+
+## Folie 20 (51–55 min) – Auswahl mit einem Ausdruck
+- In QGIS „Nach Ausdruck auswählen“ öffnen und genau `"coordinateUncertaintyInMeters" > 0 AND "coordinateUncertaintyInMeters" <= 100` eingeben.
+- Vor dem Ausführen das Ergebnis für 50, 250, 0 und fehlend kurz vorhersagen lassen.
+
+## Folie 21 (55–58 min) – Prüfwert: 56 ausgewählt, 23 ausgeschlossen
+- Die Auswahlanzeige prüfen: 56 von 79 Records ausgewählt, 23 ausgeschlossen. Im Paket haben die 23 ausgeschlossenen Records 250 Meter Unsicherheit.
+- Bei anderer Zahl Ausdruck, Zahlentyp und Rohdatensatz prüfen; keine Regel passend zur gewünschten Zahl verändern.
+
+## Folie 22 (58–60 min) – Flags und fehlende Werte nicht pauschal behandeln
+- An den Folienbeispielen unterscheiden: Qualitätsflags und fehlende Angaben müssen jeweils interpretiert werden; sie sind keine allgemeine automatische Löschanweisung.
+- Die heutige Auswahl ist ausdrücklich nur die dokumentierte Unsicherheitsregel.
+
+## Folie 23 (60–62 min) – Partnercheck vor dem Export
+- Zu zweit die Regel in Worten wiederholen lassen: „größer als 0 und höchstens 100 Meter“. Partnerin oder Partner prüft 56 ausgewählte Records.
+- Eine Begründung für die Grenze anhören; danach erst exportieren.
+- Überleitung: „Die Auswahl existiert bisher nur im laufenden QGIS-Projekt. Jetzt speichern wir sie als überprüfbares Ergebnis.“
+
+
+# Themenblock: Geprüften Punktlayer sichern und kontrollieren
+
+## Folie 24 (62–64 min) – Auswahl exportieren – Rohdaten erhalten
+- „Ausgewählte Objekte speichern als …“ wählen, nicht den gesamten Rohpunktlayer exportieren.
+- Die CSV unverändert lassen und den neuen Layer getrennt davon anlegen.
+
+## Folie 25 (64–68 min) – GeoPackage und Layer eindeutig benennen
+- Ziel `data_output/unit11_results.gpkg` und Layername `gbif_checked` eintragen.
+- Nachfragen: „Welche Datei ist das Behältnis, welcher Name bezeichnet den Layer darin?“ Erwartet: `.gpkg`-Datei und `gbif_checked`.
+
+## Folie 26 (68–71 min) – Beim Export wird wirklich transformiert
+- Für den Export `EPSG:25832` als Ziel-CRS wählen und den Unterschied zur bloßen CRS-Zuweisung aus Unit 09 wiederholen.
+- Sichern: Koordinatenwerte ändern sich, der reale Ort soll gleich bleiben.
+
+## Folie 27 (71–75 min) – Neu laden und Ergebnis kontrollieren
+- Exportierten Layer neu laden, die Auswahl im Rohlayer lösen und `gbif_checked` prüfen: 56 Features, plausibler Ort, Layer-CRS `EPSG:25832`.
+- Bei 79 Features wurde die Auswahl nicht exportiert; bei falscher Lage die CRS-Schritte kontrollieren. Projekt speichern.
+
+## Folie 28 (75–78 min) – Die Qualitätsentscheidung dokumentieren
+- In `documentation/processing_notes.md` Quelle, Regel, Grenze, 79/56/23, Ausgabedatei, Layername und Ziel-CRS eintragen lassen.
+- Deutlich machen: Die Zahl ist ein Kontrollwert dieses Pakets und erklärt noch keine ökologische Verteilung.
+- Überleitung: „Mit dem geprüften Layer können wir eine Karte lesen. Welche Aussage trägt sie, und wo endet sie?“
+
+
+# Themenblock: Kartenaussage begrenzen und abschließen
+
+## Folie 29 (78–81 min) – Viele Punkte können viel Suchaufwand bedeuten
+- Zwei mögliche Erklärungen für eine Punktkonzentration sammeln: tatsächliche Vorkommen und unterschiedliche Beobachtungs- oder Meldeintensität.
+- Nicht aus mehr Records unmittelbar auf mehr Tiere schließen.
+
+## Folie 30 (81–83 min) – Die Ausgangsaussage erneut bewerten
+- Die Einstiegsbehauptung mit den jetzt bekannten Grenzen noch einmal vorlesen und vorsichtig umformulieren lassen.
+- Erwartet: Die Karte dokumentiert ausgewählte Nachweise im Ausschnitt; sie beweist weder Vollständigkeit noch genaue Verbreitungsgrenzen.
+
+## Folie 31 (83–85 min) – Eine vorsichtige Kartenaussage
+- Einen Satz gemeinsam sichern: „Die Karte zeigt 56 nach einer Koordinatenunsicherheitsregel ausgewählte GBIF-Records für den Marburger Ausschnitt.“
+- Nachweisquelle, Auswahlregel und Aussagegrenze bei Bedarf ergänzen; keine Dichte- oder Bestandsbehauptung formulieren.
+
+## Folie 32 (85–88 min) – Exit Ticket · eine Frage auswählen
+- Nur eine sichtbare Frage wählen; nach diesem Ablauf bietet sich die Frage an, warum `gbif_checked` nicht die vollständige Verbreitung zeigt.
+- Eine Minute allein formulieren lassen, dann eine Antwort hören: Auswahl, Suchaufwand und unvollständige Beobachtung begrenzen die Aussage.
+
+## Folie 33 (88–90 min) – Nachbereitung · JiTT zu Unit 11
+- JiTT-Fragen zu Unit 11 in ILIAS nennen; Fragen und Frist stehen dort. Das ist die einzige Übungsaufgabe zu dieser Unit.
+- Ausblick: In Unit 12 werden diese Punkte mit Linien und Schutzgebietsflächen räumlich verglichen. Danach direkt zu Folie 36 springen.
+
+## Folie 36 (am Ende) – Vielen Dank für Ihre Aufmerksamkeit
+- Sitzung beenden. Kein zusätzlicher Zeitblock.
+
+
+# Reserve
+
+## Folie 34 – GBIF-Felder als Lesehilfe
+- Nur bei konkreten Rückfragen zu Feldern aufrufen; im regulären 90-Minuten-Ablauf überspringen.
+
+## Folie 35 – Quellen und Arbeitsstand
+- Zum Nachschlagen; im regulären Vortrag überspringen.

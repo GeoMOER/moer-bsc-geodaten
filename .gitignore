@@ -10,7 +10,8 @@ Gemfile.lock
 /lib/bundler/man/
 _site/
 
-/docs/slides/
+#/docs/slides/
+
 /docs/ilias/
 
 # History files
