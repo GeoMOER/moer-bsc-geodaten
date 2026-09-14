@@ -28,7 +28,7 @@ baseurl: "/moer-bsc-geodaten"
 
 search: true
 ##### Title ###################################################################
-title: Einführung in die Arbeit mit (Geo)daten
+title: Geodaten
 name: &name "Geodaten" # &name is a YAML anchor which can be *referenced later
 #email: nauss@geo.uni-marburg.de
 description: >- # this means to ignore newlines until next item
