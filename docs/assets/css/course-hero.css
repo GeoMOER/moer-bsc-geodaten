@@ -1,0 +1,80 @@
+/* Loaded only for the course homepage. Keep the complete 3:1 panorama visible. */
+.page__hero--overlay {
+  box-sizing: border-box;
+  aspect-ratio: 3 / 1;
+  padding: clamp(20px, 2.4vw, 48px);
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.page__hero--overlay .wrapper {
+  max-width: 1280px;
+}
+
+.page__hero--overlay .page__title {
+  margin: 0 0 0.2em;
+  font-size: clamp(32px, 3.2vw, 56px);
+  line-height: 1.1;
+}
+
+.page__hero--overlay .page__lead {
+  max-width: 32em;
+  margin: 0 0 0.8em;
+  font-size: clamp(16px, 1.35vw, 22px);
+  line-height: 1.45;
+}
+
+.page__hero--overlay .page__title,
+.page__hero--overlay .page__lead {
+  color: #fff;
+  text-shadow: 0 1px 4px #142528, 0 0 14px #142528;
+}
+
+.page__hero--overlay .btn {
+  background: #142f30;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: none;
+}
+
+.page__hero--overlay .btn:hover {
+  background: #fff;
+  color: #142f30;
+}
+
+.page__hero--overlay .btn:focus-visible {
+  outline: 3px solid #ffdc73;
+  outline-offset: 4px;
+}
+
+.page__hero--overlay .page__hero-caption {
+  max-width: 100%;
+  background: #142f30;
+  color: #fff;
+  font-size: 11px;
+  font-family: inherit;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* Text sits above the uncropped panorama on tablets and phones. */
+@media (max-width: 900px) {
+  .page__hero--overlay {
+    aspect-ratio: auto;
+    padding: 24px 20px calc(100vw / 3 + 38px);
+    background-position: center bottom 28px;
+  }
+
+  .page__hero--overlay .page__title,
+  .page__hero--overlay .page__lead {
+    text-shadow: none;
+  }
+
+  .page__hero--overlay .page__hero-caption {
+    width: 100%;
+    min-height: 28px;
+    text-align: right;
+  }
+}

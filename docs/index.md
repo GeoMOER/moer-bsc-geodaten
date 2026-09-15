@@ -2,15 +2,17 @@
 title: Geodaten
 published: true
 layout: splash
+course_hero: true
 date: '2026-10-12 09:15:00 +0100'
 header:
-  overlay_color: "#000"
-  overlay_filter: 0.6
-  overlay_image: "/assets/images/title.png"
-  caption: 'Image: [solar.empire via flickr.com](https://www.flickr.com/photos/solar-empire/23815961328/) [CC BY-NC 2.0 DEED](https://creativecommons.org/licenses/by-nc/2.0/)'
+  overlay_color: "#142f30"
+  overlay_filter: 0
+  overlay_image: "/assets/images/home/hero-data-swamp-data-lake.png"
+  image_description: "Pixelgrafik: Vom Datensumpf mit ungeordneten Dateien über Netz, Filter und sortierte Datenkisten zum klaren See mit nutzbaren Kartenebenen."
+  caption: 'KI-generierte Illustration nach einer Skizze von Lisa Schepers'
   cta_label: Zu den Lerninhalten
   cta_url: "/units.html"
-excerpt: Einführung in die Arbeit mit (Geo)daten.
+excerpt: "Vom Data Swamp zum Data Lake.<br>Daten ordnen, verstehen und als Karten sichtbar machen."
 feature_row_intro:
 - excerpt: Kurs für Studierende im Bachelor und Lehramt am Fachbereich Geographie der Philipps-Universität Marburg.
 #feature_row_ilos:
