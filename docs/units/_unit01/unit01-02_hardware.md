@@ -14,7 +14,7 @@ Jetzt wo wir das Grundprinzip von Signal zu Codierung vertsannden haben, gehen w
 
 ## Wie funktioniert ein Computer?
 
-Sie etwas auf Ihrer Tastatur ein, die zum Beispiel über USB mit Ihrem Computer verbunden ist. Sobald Sie eine Taste anschlagen, wird ein Kontakt geschlossen. Ein kleiner Mikrocontroller in Ihrer Tastatur erkennt, an welcher Position dieser Kontakt entstanden ist. Daraus erzeugt er einen sogenannten Scan Code – eine Zahl, die codiert, welche Taste gedrückt wurde (s. vorheriges Kapitel) – und sendet diesen über USB an Ihren PC.
+Sie geben etwas auf Ihrer Tastatur ein, die zum Beispiel über USB mit Ihrem Computer verbunden ist. Sobald Sie eine Taste anschlagen, wird ein Kontakt geschlossen. Ein kleiner Mikrocontroller in Ihrer Tastatur erkennt, an welcher Position dieser Kontakt entstanden ist. Daraus erzeugt er einen sogenannten Scan Code – eine Zahl, die codiert, welche Taste gedrückt wurde (s. vorheriges Kapitel) – und sendet diesen über USB an Ihren PC.
 
 ### Arbeitsspeicher (RAM)
 
@@ -75,6 +75,6 @@ Sobald Sie die Datei speichern, wird sie dauerhaft auf der Festplatte bzw. SSD a
 
 ## Übung
 > Rufen Sie den Taskmanager mittels shortcut (STR + ALT + ENTF) auf
-> Finden Sie heraus, welche specs ihr PC hat
+> Finden Sie heraus, welche specs Ihr PC hat
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

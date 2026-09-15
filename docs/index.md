@@ -327,7 +327,7 @@ Der Kurs umfasst 9 Units:
 <!-- Datenverknüpfung (als Verweis gespeichert) in QGIS als wichtiger Punkt wenn Dateipfade erklärt werden,
 H Laufwerk, Beispiel: Daten die auf einem Server gespeichert sind, gleichnamige Datei ein Mal auf Server, ein Mal lokal, Verknüpfung zu Server -->
 
-<!-- vermutlich besser Teil 3 zu 2 vorzuziehen, damit die Studis schon Mal Daten in der Hand hatten (Aufgabe dann in Datenmanagement: Findet die Daten der letzten ~ 6 sessions wieder) -->
+<!-- vermutlich besser Teil 3 zu 2 vorzuziehen, damit die Studis schon Mal Daten in der Hand hatten (Aufgabe dann in Datenmanagement: Finden Sie die Daten der letzten ~ 6 sessions wieder) -->
 
 <!-- statt Karten (ist schon in QGIS) noch andere open source + coding/scriptsteuerung Möglichkeiten anteasen, bsp. R/python. Hier nur wirklich ganz grob das Prinip solcher programmiersprachen als Möglichkeit der automatisierung darstellen, Level "Hello World", einbinden wie zB im R Kurs, auf die Aufbauenden Kurse (BaseR, python, Grass: Chris? Christiane vllt?) verweisen 
 

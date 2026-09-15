@@ -193,7 +193,7 @@ Zwei ähnliche Arbeitsschritte müssen unterschieden werden:
 
 Eine räumliche Auswahl markiert vollständige Features anhand ihrer Beziehung zu einem zweiten Layer. Beispiel:
 
-> Wähle alle GBIF-Punkte, die Schutzgebietspolygone schneiden.
+> Wählen Sie alle GBIF-Punkte, die Schutzgebietspolygone schneiden.
 
 Die Geometrien der ausgewählten Punkte werden dabei nicht verändert.
 

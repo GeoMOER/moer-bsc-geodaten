@@ -288,7 +288,7 @@ https://proj.org/en/stable/operations/projections/merc.html
 https://proj.org/en/stable/operations/projections/cea.html
 https://proj.org/en/stable/operations/projections/webmerc.html
 
-## 31 · Vielen Dank für eure Aufmerksamkeit
+## 31 · Vielen Dank für Ihre Aufmerksamkeit
 
 Abschluss nach der Nachbereitung; kein zusätzlicher Zeitblock.
 

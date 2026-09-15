@@ -504,11 +504,11 @@ def build():
         hyperlink(sh,url)
     text(p,110,676,1390,124,'Paketstand: 08.09.2026 · Abgleich der Folien: 09.09.2026\nLayout: Universität-Marburg-Vorlage · Titel-/Abschlussbild: FB19-Vorlage\nLehrabbildungen: vorhandene SVGs der Unit 10',17,MUTED)
 
-    p=slide('Vielen Dank für eure Aufmerksamkeit','Abschluss',90,90,
+    p=slide('Vielen Dank für Ihre Aufmerksamkeit','Abschluss',90,90,
         'Die Sitzung mit dieser Folie beenden. Die Abschlussgestaltung nutzt den Kontakt-Master der universitären Vorlage sowie das originale Foto-/Kartenmotiv aus der FB19-Titelseite.',str(TEMPLATE),kind='closing')
     box(p,44,44,809,807,0xF7DEED)
     picture(p,FB19_IMAGE,915,350,640,640*135/394)
-    text(p,100,380,700,250,'Vielen Dank für eure Aufmerksamkeit',41,INK)
+    text(p,100,380,700,250,'Vielen Dank für Ihre Aufmerksamkeit',41,INK)
     text(p,165,710,620,110,'Geodaten · Unit 10\nFachbereich 19 · Geographie',18,INK)
 
 

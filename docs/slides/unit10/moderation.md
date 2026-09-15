@@ -312,7 +312,7 @@ https://docs.qgis.org/3.40/en/docs/user_manual/
 https://www.hlnug.de/themen/geografische-informationssysteme/geodienste/naturschutz
 https://geodienste-umwelt.hessen.de/arcgis/services/inspire/schutzgebiete/MapServer/WmsServer
 
-## 33 · Vielen Dank für eure Aufmerksamkeit
+## 33 · Vielen Dank für Ihre Aufmerksamkeit
 
 Abschluss nach der Nachbereitung; kein zusätzlicher Zeitblock.
 

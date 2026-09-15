@@ -6,7 +6,7 @@ Für einen Termin von 90 Minuten mit etwa 100–150 Studierenden aus Bachelor un
 - [PDF der Folien](unit09_praesenz.pdf)
 - [Moderationshinweise lesen](moderation.md)
 
-Die Präsentation enthält 31 Folien: eine Titelfolie, 27 Hauptfolien, zwei Reserve-/Quellenfolien und als letzte Folie „Vielen Dank für eure Aufmerksamkeit“. Die PowerPoint-Notizen enthalten Zeitfenster, Durchführungshinweise, erwartete Antworten und Quellen. Auf den Folien stehen keine Zeitangaben in der Fußzeile. Die PDF enthält dieselben sichtbaren Folien einschließlich der Auflösungen und Reservefolien, aber keine Moderationsnotizen. Aufgaben und Auflösungen stehen auf getrennten Folien; Animationen sind nicht erforderlich.
+Die Präsentation enthält 31 Folien: eine Titelfolie, 27 Hauptfolien, zwei Reserve-/Quellenfolien und als letzte Folie „Vielen Dank für Ihre Aufmerksamkeit“. Die PowerPoint-Notizen enthalten Zeitfenster, Durchführungshinweise, erwartete Antworten und Quellen. Auf den Folien stehen keine Zeitangaben in der Fußzeile. Die PDF enthält dieselben sichtbaren Folien einschließlich der Auflösungen und Reservefolien, aber keine Moderationsnotizen. Aufgaben und Auflösungen stehen auf getrennten Folien; Animationen sind nicht erforderlich.
 
 Vor dem Termin auf Folie 2 den gesamten JiTT-Platzhalter durch die aktuelle Auswertung zur vorherigen Sitzung ersetzen. Der Block enthält bewusst keine vorgegebenen Fragen oder Ergebnisse und kann durch Duplizieren erweitert werden. Die ersten zehn Minuten sind für JiTT vorgesehen. Weitere organisatorische Angaben kommen aus der aktuellen Kursorganisation; die Folien legen keine neuen Leistungs- oder Abgaberegeln fest.
 

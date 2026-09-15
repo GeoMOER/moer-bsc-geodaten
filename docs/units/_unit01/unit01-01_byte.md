@@ -83,10 +83,9 @@ Größe von TXT Datei
 ## Kurze Übung
 **Durchführung:**
  
-1. Öffnet einen neuen Texteditor und schreibt einen kurzen Satz mit möglichst vielen Umlauten und Sonderzeichen, z. B.: *„Übermäßig große Änderungen kosten viel Geld – über 100 €."*
-2. Speichert die Datei einmal explizit als **UTF-8** (z. B. `text_utf8.txt`) und einmal als **ANSI/Windows-1252** (z. B. `text_ansi.txt`). Die meisten Editoren bieten dafür ein Dropdown-Menü im Speichern-Dialog.
-3. Schließt beide Dateien und öffnet dann `text_utf8.txt` erneut – aber stellt dabei im Editor bewusst die Kodierung auf **ANSI/Windows-1252** um (bei vielen Editoren geht das über rechtsklick „Erneut öffnen mit Kodierung …" oder eine Codierungs-Auswahl unten in der Statusleiste).
-4. Beobachtet, was mit den Umlauten passiert – vergleicht das Ergebnis mit dem Original
+1. Öffnen Sie einen neuen Texteditor und schreiben Sie einen kurzen Satz mit möglichst vielen Umlauten und Sonderzeichen, z. B.: *„Übermäßig große Änderungen kosten viel Geld – über 100 €."*
+2. Speichern Sie die Datei einmal explizit als **UTF-8** (z. B. `text_utf8.txt`) und einmal als **ANSI/Windows-1252** (z. B. `text_ansi.txt`). Die meisten Editoren bieten dafür ein Dropdown-Menü im Speichern-Dialog.
+3. Schließen Sie beide Dateien und öffnen Sie dann `text_utf8.txt` erneut – aber stellen Sie dabei im Editor bewusst die Kodierung auf **ANSI/Windows-1252** um (bei vielen Editoren geht das über rechtsklick „Erneut öffnen mit Kodierung …" oder eine Codierungs-Auswahl unten in der Statusleiste).
+4. Beobachten Sie, was mit den Umlauten passiert – vergleichen Sie das Ergebnis mit dem Original
 -->
-
 

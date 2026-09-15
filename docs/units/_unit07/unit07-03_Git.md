@@ -13,7 +13,7 @@ Hier sollte ein Einführungstext zum Thema "Versionskontrolle mit Git" stehen.
 
 ## Themenüberschrift 01
 
-Finde immer die beste Version deines Projekts ...
+Finden Sie immer die beste Version Ihres Projekts ...
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

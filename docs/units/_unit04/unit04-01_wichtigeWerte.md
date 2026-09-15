@@ -13,9 +13,8 @@ Hier sollte ein Einführungstext zum Thema "Mittelwert, Median und Modus" stehen
 
 ## Themenüberschrift 01
 
-Stell dir vor, du wärst ein Boxplot ...
+Stellen Sie sich vor, Sie wären ein Boxplot ...
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
-
 
