@@ -7,30 +7,29 @@ header:
   image_description: "Streuobstwiese"
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---
+!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
 
-<!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
-## Rückblick & Fragen (Just-in-time)
-In der letzten Kurssitzung habe ich gelernt, dass ...
+## Rückblick & Fragen
+In der letzten Kurssitzung haben wir uns mit der grundlegenden Bedienung von Excel beschäftigt (Markieren, Bewegen, Kopieren/Einfügen, Drag & Drop) und dabei insbesondere gelernt, worauf beim Einfügen einzelner Zellen zu achten ist. Anschließend haben wir Excels technische Zellformate kennen gelernt. Zum Abschluss haben wir uns mit Import und Export von Text- und CSV-Dateien befasst, insbesondere mit dem Text-Import-Assistenten und seinen drei Schritten (Kodierung, Trennzeichen, Datentyp je Spalte).
 
-<!-- Introtext: Allgemeine Einleitung zum Thema "Aufbereitung von Daten mit Textfunktionen, Sortieren, Filterfunktion" und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
+> Fragen?
+
 ## Einführung in Lernabschnitt 03
-Hier könnte Ihr Intro zum Lernabschnitt 03 stehen ...
 
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...
-Heute lernen wir, dass ...
+
 
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
+
 ## Lernziele
 Am Ende dieser Unit sind Studierende in der Lage ...
 
-* Daten filtern
-* Bereinigungsschritte dokumentieren
 * Daten sortieren und filtern
-* Doppelte Einträge identifizieren
-* Fehlende Werte identifizieren
+* Doppelte Einträge zu identifizieren
+* Fehlende Werte zu identifizieren
 * einfache Qualitätskontrollen durchführen
-* Bereinigungsschritte dokumentieren
+* Bereinigungsschritte durchzuführen
 
 {% include video id="3WcUTMWa9fU" provider="youtube" %}
 

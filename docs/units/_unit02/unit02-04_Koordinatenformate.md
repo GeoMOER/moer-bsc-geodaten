@@ -8,14 +8,36 @@ header:
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
 
-<!-- Themenblock 02-03: Koordinatenformate bearbeiten/vereinheitlichen -->
-Hier sollte ein Einführungstext zum Thema "Koordinatenformate bearbeiten/vereinheitlichen" stehen.
+Ihre Klimadaten enthalten Koordinaten (Latitude, Longitude) – vermutlich bereits im Dezimalgrad-Format, wie Sie es bei der Eingabe erfasst haben. Sobald Sie jedoch Daten aus anderen Quellen einbinden (GPS-Geräte, andere Messstationen, händisch abgelesene Karten, Kommiliton:innen mit anderer Erfassungsmethode), werden Sie feststellen: **Koordinaten kommen selten einheitlich formatiert an.** Das ist kein Nischenproblem – es ist einer der häufigsten Gründe, warum sich Geodaten aus unterschiedlichen Quellen nicht ohne Weiteres kombinieren, in einer Karte darstellen oder in Analyse-Software importieren lassen.
 
-## Themenüberschrift 01
+## Themenüberschrift 01: Warum das Koordinatenformat für die Weiterverarbeitung entscheidend ist
 
-- Rohdaten liefern Koordinaten selten einheitlich – je nach Quelle (GPS-Gerät, Website, händische Erfassung) unterschiedlich formatiert
-- Umrechnung in der Praxis meist in zwei Schritten: (1) Grad-, Minuten- (ggf. Sekunden-)Anteil aus dem Text herauslösen, (2) daraus die Dezimalzahl berechnen
-- Dafür sind Textfunktionen nötig, die einzelne Zeichen bzw. Positionen innerhalb eines Textstrings ansprechen können – siehe nächster Abschnitt
+Ihre Excel-Tabelle ist in diesem Kurs nur die **erste Station** Ihrer Daten. Realistischerweise werden Geodaten im weiteren Studienverlauf (oder danach) an anderer Stelle weiterverarbeitet:
+
+- **QGIS** (und andere GIS-Software) erwartet für den Import von Punktdaten aus einer Tabelle in der Regel **Dezimalgrad** in zwei getrennten Spalten (z. B. `Longitude`/`X` und `Latitude`/`Y`) – ein Format wie `50°48'12"N` in einer einzigen Zelle kann QGIS beim direkten CSV-Import nicht automatisch interpretieren
+- In **R**  müssen Koordinaten als numerische Werte vorliegen, damit sie überhaupt für räumliche Berechnungen (Distanzen, Pufferzonen, Projektionen) oder Kartendarstellungen nutzbar sind – ein Text wie `"50,80"` (mit Komma als Dezimaltrennzeichen und als Text formatiert) führt beim Einlesen in R zu Fehlern oder zumindest zu einer falschen Interpretation
+- Auch der **Datenaustausch mit anderen Personen oder Institutionen** setzt meist ein standardisiertes Format voraus – international übliche Geodatenformate (z. B. WGS84, das Referenzsystem, das auch GPS und die meisten Online-Karten verwenden) nutzen durchgehend Dezimalgrad mit Punkt als Dezimaltrennzeichen.
+
+Weitere Hintergünde werden Sie dazu im Verlauf des Kurses lernen, ebenso, wie Sie innerhalb in Excel ihr Format anpassen können.
+
+Entscheident für dieses Kapitel ostFFolgendes:
+
+> Für die Spalten `Latitude`/`Longitude`, die Sie später in QGIS oder R weiterverwenden wollen, sollten Sie **kein** benutzerdefiniertes Format mit angehängtem Symbol verwenden (also nicht `0,0000" °"` o. ä.). Der Grund: Diese Spalten sollen als **reine Zahl ohne jede zusätzliche Anzeige** vorliegen, damit ein späterer Export (z. B. als CSV für den Import in QGIS) garantiert nur den nackten Zahlenwert enthält. Ein angehängtes Gradzeichen wird zwar nur *angezeigt*, aber manche Exportwege oder Programme lesen die *sichtbare* Zeichenkette statt des internen Werts aus – dann scheitert der Import.
+
+> Formatieren Sie die Koordinatenspalten stattdessen als einfaches **Zahlenformat mit ausreichend Nachkommastellen** (`Zellen formatieren → Zahl → 6 Dezimalstellen`, z. B. `50,803330`). Sechs Nachkommastellen entsprechen einer Genauigkeit von unter einem Meter – deutlich mehr Stellen bringen keinen praktischen Mehrwert, deutlich weniger (z. B. nur 2 Nachkommastellen) können bei kleinräumigen Distanzen bereits spürbare Ungenauigkeiten verursachen.
+
+
+<!-->
+
+
+> Ein zweiter Fallstrick: Das Dezimaltrennzeichen (Komma vs. Punkt), das Sie in der Zelle sehen, ist eine reine **Anzeige-Einstellung Ihres Excel bzw. Betriebssystems** – gespeichert ist intern immer derselbe Zahlenwert. Erst beim **Export** (z. B. Speichern als CSV) wird das tatsächlich verwendete Trennzeichen relevant, und das hängt wiederum von den Regionseinstellungen Ihres Rechners ab. Prüfen Sie deshalb nach einem CSV-Export in einem einfachen Texteditor (nicht wieder in Excel!), welches Trennzeichen tatsächlich in der Datei steht – das ist das Zeichen, das QGIS oder R beim Einlesen sehen werden.
+
+
+**Praktische Konsequenz:** Wenn Ihre Koordinaten uneinheitlich vorliegen – manche im DMS-Format, manche mit Komma statt Punkt, manche als Text statt als Zahl – müssen Sie diese **vor jeder Weiterverarbeitung** in Excel bereinigen und vereinheitlichen. Das ist die Aufgabe, die Sie in diesem Kapitel üben.
+
+- Rohdaten liefern Koordinaten also typischerweise **nicht** einheitlich – je nach Quelle (GPS-Gerät, Website, händische Erfassung) unterschiedlich formatiert
+- Die Umrechnung von DMS in Dezimalgrad erfolgt in der Praxis meist in zwei Schritten: (1) Grad-, Minuten- (ggf. Sekunden-)Anteil aus dem Text herauslösen, (2) daraus die Dezimalzahl berechnen
+- Dafür werden Textfunktionen benötigt, die einzelne Zeichen bzw. Positionen innerhalb eines Textstrings ansprechen können – siehe nächster Abschnitt
 
 ## Textfunktionen (TEIL, GLÄTTEN, ERSETZEN)
 
@@ -27,14 +49,25 @@ Hier sollte ein Einführungstext zum Thema "Koordinatenformate bearbeiten/verein
 | `FINDEN(Suchtext; Text)` | Findet die *Position* eines Zeichens (wird oft mit `TEIL`/`ERSETZEN` kombiniert, da diese eine Positionsangabe brauchen) | `FINDEN(",";"8,4")` → `2` |
 | `WERT(Text)` | Wandelt einen Text, der wie eine Zahl aussieht, in eine echte, rechenfähige Zahl um | `WERT("8.4")` → `8.4` |
 
-## Konsistente Formatierung
+> **Screenshot 9:** Excel-Tabelle mit einer Spalte `Koordinaten_roh` (z. B. `50°48'12"N`) und daneben mehreren Hilfsspalten, in denen schrittweise mit `TEIL`, `FINDEN` und `WERT` die Grad-, Minuten- und Sekundenanteile extrahiert werden – jede Hilfsspalte mit sichtbarer Formel in der Bearbeitungsleiste.
 
-- **Dezimaltrennzeichen:** Deutschland nutzt standardmäßig das Komma (`8,4`), viele internationale/technische Quellen den Punkt (`8.4`) – für Berechnungen muss ein Datensatz einheitlich sein
-- **Datumsformate:** `14.03.2024` (DE), `2024-03-14` (ISO 8601), `3/14/2024` (US) sehen unterschiedlich aus und werden von Excel nicht automatisch vereinheitlicht – vor allem `TT.MM.JJJJ` vs. `MM/TT/JJJJ` ist eine häufige Fehlerquelle, weil beide Formate wie eine gültige Zahlenfolge aussehen, aber unterschiedlich interpretiert werden
-- Empfehlung: Datensätze früh in ein einheitliches Format bringen (idealerweise ISO 8601 für Daten, Punkt als Dezimaltrennzeichen für den internationalen Austausch), bevor weiterverarbeitet oder mit anderen Datensätzen kombiniert wird
+### Praxisbeispiel: DMS-Koordinate in Dezimalgrad umrechnen
 
-## Additional resources
+Angenommen, eine Kommilitonin hat ihre Messung mit `50°48'12"N` erfasst, statt wie Sie selbst direkt in Dezimalgrad. Um daraus einen für QGIS oder R nutzbaren Wert zu machen, gehen Sie in Teilschritten vor (angenommen, der Text steht in Zelle `A2`):
 
+1. **Grad extrahieren:** `=WERT(TEIL(A2;1;FINDEN("°";A2)-1))` → `50`
+2. **Minuten extrahieren:** `=WERT(TEIL(A2;FINDEN("°";A2)+1;FINDEN("'";A2)-FINDEN("°";A2)-1))` → `48`
+3. **Sekunden extrahieren:** analog zwischen `'` und `"`
+4. **Umrechnung in Dezimalgrad:** `Dezimalgrad = Grad + Minute/60 + Sekunde/3600` → `50 + 48/60 + 12/3600 = 50,80333...`
+5. **Vorzeichen beachten:** Ein „S" (Süd) oder „W" (West) am Ende bedeutet einen **negativen** Wert in Dezimalgrad – wichtig, da QGIS und R negative Werte für die südliche bzw. westliche Hemisphäre erwarten, nicht den Buchstaben `S`/`W`
 
-<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
-<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
+**Warum das wichtig ist:** Genau in diesem letzten Punkt liegt eine häufige Fehlerquelle beim Datenimport in GIS-Software: Ein Punkt mit `Latitude = 50,80` und dem Buchstaben `S` in einer separaten Spalte wird von QGIS beim direkten Import als nördliche Hemisphäre interpretiert, wenn das Vorzeichen nicht vorher korrekt in der Zahl selbst abgebildet wurde.
+
+## Konsistente Formatierung – Voraussetzung für jede Weiterverarbeitung
+
+- **Dezimaltrennzeichen:** Deutschland nutzt standardmäßig das Komma (`8,4`), viele internationale/technische Quellen (darunter GPS-Geräte, R, Python, die meisten GIS-Programme) den Punkt (`8.4`) – für Berechnungen und insbesondere für den Export/Import in andere Software muss ein Datensatz einheitlich sein. Ein Datensatz mit gemischten Trennzeichen wird von R oder QGIS im schlimmsten Fall nicht als Fehler erkannt, sondern **falsch interpretiert** (z. B. `8.400` als „achttausendvierhundert" statt „8,4").
+- **Datumsformate:** `14.03.2024` (DE), `2024-03-14` (ISO 8601), `3/14/2024` (US) sehen unterschiedlich aus und werden von Excel nicht automatisch vereinheitlicht – vor allem `TT.MM.JJJJ` vs. `MM/TT/JJJJ` ist eine häufige Fehlerquelle, weil beide Formate wie eine gültige Zahlenfolge aussehen, aber unterschiedlich interpretiert werden (der 3. Januar wird so leicht zum 1. März)
+- **Koordinatenreferenzsystem (kurz erwähnt):** Dezimalgrad allein legt noch nicht fest, auf welches Referenzsystem sich die Koordinate bezieht. Für die meisten alltäglichen Anwendungen (GPS, Google Maps, OpenStreetMap) ist das **WGS84** (EPSG-Code 4326) der Standard, auf den sich auch QGIS beim Import ohne weitere Angaben meist bezieht. Für diesen Kurs reicht es zu wissen, dass dieser Standard existiert – bei Bedarf finden Sie in QGIS unter den Layer-Eigenschaften, welches System aktuell verwendet wird.
+
+**Empfehlung für die Praxis:** Bringen Sie Ihre Datensätze möglichst früh in ein einheitliches Format – idealerweise **Dezimalgrad mit Punkt als Trennzeichen** für Koordinaten und **ISO 8601** (`JJJJ-MM-TT`) für Datumsangaben –, bevor Sie sie weiterverarbeiten, mit anderen Datensätzen kombinieren oder in eine andere Software importieren. Diese beiden Formate sind die am weitesten verbreiteten Standards im internationalen und technischen Datenaustausch und ersparen Ihnen spätere Fehlersuche.
+-->

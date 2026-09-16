@@ -11,6 +11,7 @@ header:
 <!-- Übungsaufgabe 01: Temperaturen heraus schreiben -->
 ## Übungsaufgabe 01
 
+- Messen Sie die Temperatur an einem Ort und zu einem Zeitpunkt ihrer Wahl, Notieren Sie Datum,Uhrzeit und Standort in latitude/longitude. Wenn Sie kein Thermometer zur Verfügung haben, lesen Sie einen Wert aus einer Wetterapp ab. 
 - Kapitel "Betriebssystem und BIOS" lesen
 - textfile <!-- hier titel/Pfad einfügen --> herunterladen, die richtige Codierung finden
 - Welche Codierung wurde genutzt? (SingleChoice)
@@ -20,6 +21,8 @@ header:
 - Wie viele Byte belegt der Buchstabe „ü“ typischerweise in der UTF-8-Kodierung?
 - Was bedeutet es, wenn ein Betriebssystem als „64-Bit-System“ bezeichnet wird?
 - Was ist ein Netzlaufwerk (z. B. Laufwerk H: im Uninetz) technisch gesehen?
+
+
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
