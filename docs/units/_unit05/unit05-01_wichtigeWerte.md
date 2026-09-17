@@ -8,7 +8,7 @@ header:
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---
 
-<!-- Themenblock 02-08: Lage- und Streuungsmaße -->
+<!-- Kapitel 05-01: Lage- und Streuungsmaße -->
 
 Um Datenqualität sicher zu stellen benötigt man auch einen zahlenbasierten Überblick. Bei **quantitativen** Daten macht es Sinn, sich mehrere Kennzahlen anzuschauen.
 

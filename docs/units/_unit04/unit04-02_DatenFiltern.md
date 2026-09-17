@@ -6,7 +6,7 @@ header:
   caption: "Image: [Neil Conway](https://www.flickr.com/photos/neilconway/) [(Public Domain Mark 1.0)](https://creativecommons.org/publicdomain/mark/1.0/deed.en) via [flickr.com](https://www.flickr.com/photos/neilconway/5625707813/in/photostream/)"
 ---
 
-<!-- Themenblock 02-06: Filtern und Sortieren -->
+<!-- Kapitel 04-02: Filtern und Sortieren -->
 
 Ihre Excel-Tabelle wächst mit jeder weiteren Messung. Um darin gezielt einzelne Werte zu finden, Auffälligkeiten zu erkennen oder die Tabelle für eine bestimmte Fragestellung einzugrenzen, benötigen Sie zwei grundlegende Werkzeuge: **Sortieren** (die Reihenfolge der Zeilen verändern) und **Filtern** (nur bestimmte Zeilen anzeigen, ohne die übrigen zu löschen). Beide Funktionen verändern nicht die Daten selbst, sondern nur deren Darstellung.
 

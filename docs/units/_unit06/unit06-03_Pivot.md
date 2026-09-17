@@ -7,7 +7,7 @@ header:
   image_description: "Streuobstwiese"
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---
-Eine einfache Pivot-Tabelle erstellen
+## Eine einfache Pivot-Tabelle erstellen
 
 Eine Pivot-Tabelle fasst große Datenmengen per Drag-and-Drop zusammen, ganz ohne eigene Formel – ideal, um schnell zu sehen, wie viele Messungen pro Station vorliegen oder wie hoch die durchschnittliche Temperatur je Station ist.
 

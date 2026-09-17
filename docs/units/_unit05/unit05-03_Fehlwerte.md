@@ -9,7 +9,7 @@ header:
 ---
 
 
-<!-- Themenblock 02-11: Fehlende Werte (NA) erkennen und behandeln -->
+<!-- Kapitel 05-03: Fehlende Werte (NA) erkennen und behandeln -->
 
 In einem über mehrere Personen und mehrere Tage erhobenen Datensatz wie Ihrem sind fehlende Werte der **Normalfall, nicht die Ausnahme**: Eine Messung wurde vergessen, ein Gerät war defekt, oder eine Angabe wurde schlicht nicht notiert. Entscheidend ist, wie Sie mit diesen Lücken umgehen – unbemerkte Fehlwerte können Kennzahlen und Diagramme erheblich verfälschen.
 
@@ -29,7 +29,7 @@ Das ist tückischer, als es zunächst scheint – **drei verschiedene Zustände*
 
 **Empfehlung:** Legen Sie sich bereits **vor** der Dateneingabe eine einheitliche Konvention fest – fehlende Werte am besten als leere Zelle lassen (nicht als `0`, nicht als Text `"NA"`), da dies von den meisten Excel-Funktionen automatisch korrekt ignoriert wird. Falls Sie kennzeichnen möchten, *warum* ein Wert fehlt, nutzen Sie dafür eine **separate Spalte** (z. B. `Anmerkung`), statt die Information in die Wertespalte selbst zu schreiben.
 
-<!-- Ergänzung zu Themenblock 02-11: Fehlende Werte (NA) erkennen und behandeln -->
+<!-- Ergänzung zu Kapitel 05-03: Fehlende Werte -->
 
 ## Fehlwerte, die absichtlich anders codiert wurden
 

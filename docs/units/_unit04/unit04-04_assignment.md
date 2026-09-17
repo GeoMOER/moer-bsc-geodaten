@@ -1,5 +1,5 @@
 --- 
-title: ÜA | Übungsaufgabe Abschnitt 03
+title: ÜA | Übungsaufgabe Abschnitt 04
 published: true
 toc: true
 header:
@@ -7,9 +7,9 @@ header:
   image_description: "Dr. John Snow's map"
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
-## Übungsaufgabe 03
+## Übungsaufgabe 04
 
-In dieser Übungsaufgabe wenden Sie das Gelernte aus Lernabschnitt 03 selbstständig an. Grundlage ist erneut `Abschlusstest_Datensatz.xlsx` (Tabellenblatt „Testdaten") – ein neuer, eigenständiger Datensatz, der auf denselben echten Sensordaten wie die Kursübungen beruht.
+In dieser Übungsaufgabe wenden Sie das Gelernte aus Lernabschnitt 04 selbstständig an. Grundlage ist erneut `Abschlusstest_Datensatz.xlsx` (Tabellenblatt „Testdaten") – ein neuer, eigenständiger Datensatz, der auf denselben echten Sensordaten wie die Kursübungen beruht.
 
 ---
 
@@ -46,3 +46,20 @@ d) `v1_Mueller_Sensordaten.xlsx`
 **14.** Wozu dient die bedingte Formatierung „Doppelte Werte", und warum ist sie vor dem endgültigen Löschen von Duplikaten sinnvoll?
 
 **15.** Nach Anwendung von „Duplikate entfernen": Welche der beiden identischen Zeilen (die ursprüngliche oder die weiter unten stehende Kopie) bleibt erhalten?
+<!-- Musterlösung (nicht für Studierende sichtbar):
+1. c)
+2. 3-4 Ebenen
+3. 01_Rohdaten (bzw. Raw_Data) - wird nie ueberschrieben
+4. Absoluter Pfad: vollstaendiger Weg vom Laufwerk aus; Relativer Pfad: ausgehend vom aktuellen Ordner. Relative Pfade sind robuster, da sie nicht von individuellem Nutzernamen/Laufwerksbuchstaben abhaengen
+5. 6 Zeilen
+6. 21,01
+7. Nur die Temperaturspalte wird umsortiert, alle anderen Spalten bleiben an ihrer Position -> Datensaetze passen nicht mehr zusammen
+8. SUMME bezieht ausgeblendete/gefilterte Zeilen weiterhin mit ein, TEILERGEBNIS(9;...) nur die aktuell sichtbaren Zeilen
+9. 20 Zeilen (eine exakte Duplikat-Zeile wird entfernt)
+10. 6 (Firmaneiplatz, FIRMANEIPLATZ, Friedhofsweg, Friedhofsweg (Ost), Neuhöfe, Wilhelm-Roser-Str.)
+11. "Firmaneiplatz"
+12. Entfernt fuehrende/nachfolgende sowie doppelte Leerzeichen; in der Bearbeitungsleiste ist ein Leerzeichen als kleiner Abstand nach dem letzten sichtbaren Zeichen erkennbar
+13. 19 Zeichen
+14. Markiert Duplikate farblich, ohne sie zu loeschen, sodass man vorab pruefen kann, ob es sich wirklich um Duplikate handelt
+15. Die ursprüngliche (weiter oben stehende) Zeile bleibt erhalten, die später stehende Kopie wird entfernt
+-->

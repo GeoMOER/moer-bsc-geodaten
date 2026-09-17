@@ -14,25 +14,24 @@ In der letzten Kurssitzung haben wir gelernt, dass Computer alle Informationen b
 
 > Fragen?
 
-<!-- Introtext: Allgemeine Einleitung zum Thema "Datentypen und -Formate (in Excel)" und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
+<!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 ## Einführung in Lernabschnitt 02
-Nachdem wir wissen, wie Computer Daten grundsätzlich codieren, wenden wir dieses Wissen jetzt praktisch an: In diesem Lernabschnitt geht es um Datentypen und -formate im Umgang mit Excel. Saubere, konsistent formatierte Daten sind die Voraussetzung für jede korrekte Auswertung – Encoding-Fehler, uneinheitliche Formate oder unklare Datenstrukturen führen sonst schnell zu falschen Ergebnissen.
+Nachdem wir wissen, wie Computer Daten grundsätzlich codieren, wenden wir dieses Wissen jetzt praktisch an: In diesem Lernabschnitt lernen Sie Microsoft Excel als Arbeitswerkzeug kennen – von der grundlegenden Bedienung über das Rechnen mit Formeln und Zellbezügen bis zu den wichtigsten eingebauten Funktionen. Das ist die Grundlage für alles Weitere im Kurs: Ohne ein sicheres Verständnis von Formeln, Zellbezügen und Funktionen lassen sich auch die späteren Themen (Datenformate, Textfunktionen, Statistik) nicht sinnvoll umsetzen.
 
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...
-lernen wir, verschiedene Datentypen zu unterscheiden, typische Encoding- und Formatierungsprobleme zu erkennen, Daten nach dem „Tidy Data"-Prinzip zu strukturieren und in Excel mit Zellbezügen sowie Textfunktionen effizient zu arbeiten.
+lernen wir die Excel-Oberfläche und grundlegende Bedienung kennen, üben den Umgang mit mathematischen Operatoren und Zellbezügen (relativ und absolut), und lernen die Struktur von Excel-Funktionen sowie die wichtigsten Datums- und mathematischen Funktionen kennen.
 
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
 ## Lernziele
 Am Ende dieser Unit sind Studierende in der Lage, ...
 
-* Unterschiede zwischen numerischen, kategorialen, ordinalen und Datumsdaten zu erklären
-* Encoding-Probleme (z. B. Umlaute) zu erkennen
-* das „Tidy Data"-Prinzip zu verstehen (eine Beobachtung pro Zeile)
-* Koordinatenformate (dezimal vs. Grad/Minute/Sekunde) zu unterscheiden
-* grundlegende Excel-Funktionalitäten zu beherrschen (z. B. absolute vs. relative Zellbezüge)
-* Textfunktionen anzuwenden (z. B. TEIL, GLÄTTEN, ERSETZEN)
-* Daten konsistent zu formatieren (Datum, Dezimaltrennzeichen)
+* die Excel-Oberfläche zu benennen und grundlegend zu bedienen (Markieren, Kopieren, Einfügen, Zellen einfügen)
+* mathematische Operatoren korrekt anzuwenden (inkl. Punkt-vor-Strich-Regel)
+* den Unterschied zwischen relativem und absolutem Zellbezug zu erklären und beide gezielt einzusetzen
+* die Struktur einer Excel-Funktion zu benennen (Funktionsname, Argumente, optionale Argumente)
+* Datumsfunktionen und grundlegende mathematische Funktionen anzuwenden
+* den Unterschied zwischen mathematischem Runden (`RUNDEN`) und rein optischer Anzeige-Rundung zu erklären
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->

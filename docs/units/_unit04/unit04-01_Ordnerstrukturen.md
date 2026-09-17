@@ -8,7 +8,7 @@ header:
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
 
-<!-- Themenblock 02-05: Ordnerstrukturen, Dateibenennung, Dateipfade -->
+<!-- Kapitel 04-01: Ordnerstrukturen, Dateibenennung, Dateipfade -->
 
 Sie haben in den letzten Kapiteln gelernt, wie Sie einzelne Dateien sauber formatieren, exportieren und importieren. Doch spätestens wenn Sie über mehrere Wochen hinweg Messdaten sammeln, Zwischenstände speichern und mit anderen austauschen, entsteht ein neues Problem: **Wo liegt eigentlich was, und welche Version ist die aktuelle?** Eine einzelne unsauber formatierte Zelle lässt sich meist noch reparieren – ein Datensatz, der in zwanzig verschieden benannten Dateien über drei Ordner verteilt ist, kostet dagegen im Zweifel Stunden, ihn wieder zusammenzusetzen. Dieses Kapitel behandelt deshalb, wie Sie Dateien von Anfang an so organisieren, dass genau das nicht passiert.
 

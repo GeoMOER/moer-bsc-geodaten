@@ -6,7 +6,7 @@ header:
   caption: "Image: [Neil Conway](https://www.flickr.com/photos/neilconway/) [(Public Domain Mark 1.0)](https://creativecommons.org/publicdomain/mark/1.0/deed.en) via [flickr.com](https://www.flickr.com/photos/neilconway/5625707813/in/photostream/)"
 ---
 
-<!-- Themenblock 02-07: Datenbereinigung -->
+<!-- Kapitel 04-03: Datenbereinigung -->
 
 Sie haben in den letzten Kapiteln gelernt, wie Sie Daten korrekt formatieren, filtern und sortieren. Doch bevor eine Tabelle überhaupt zuverlässig ausgewertet werden kann, muss sie **bereinigt** sein – gerade wenn Daten aus mehreren Quellen zusammengeführt wurden (wie Ihre beiden bereitgestellten Datensätze), schleichen sich fast zwangsläufig Inkonsistenzen ein: doppelte Einträge, uneinheitliche Schreibweisen, überflüssige Leerzeichen. Diese Fehler sind besonders tückisch, weil sie auf den ersten Blick oft **nicht auffallen** – die Tabelle sieht vollständig und plausibel aus, liefert aber bei Auswertungen falsche Ergebnisse.
 

@@ -7,7 +7,7 @@ header:
   image_description: "Streuobstwiese"
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---
-Mit SVERWEIS Informationen nachschlagen
+## Mit SVERWEIS Informationen nachschlagen
 
 Sie erhalten eine zusätzliche kleine Tabelle `Stationsmetadaten.xlsx` mit der Höhenlage jeder Station über Normalnull (NN). Diese Information steht in einer **separaten Tabelle**, nicht in Ihren Messdaten – ein sehr häufiger Fall: Stammdaten (die sich selten ändern, z. B. die Höhenlage einer Station) werden getrennt von Messdaten (die sich laufend ändern) gepflegt.
 

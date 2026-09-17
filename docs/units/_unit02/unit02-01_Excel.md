@@ -7,7 +7,7 @@ header:
   image_description: "Cloudscape Over the Philippine Sea"
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
-<!-- Themenblock 02-01: Einführung in Excel, Grundlagen -->
+<!-- Kapitel 02-01: Einführung in Excel, Grundlagen -->
  Bevor wir mit konkreten Datentypen und -formaten arbeiten, verschaffen wir uns zunächst einen Überblick über das Werkzeug, mit dem wir diese in diesem Kurs anwenden: Microsoft Excel. Wir lernen die Oberfläche und die grundlegenden Möglichkeiten des Programms kennen – als Grundlage für alle folgenden Übungen.
 
 > Hinweis: je nach späterem Verlauf Ihres Studiums werden Sie mit anderen Programmen für die Bearbeitung von Daten arbeiten, beispielsweise R. Excel eignet sich jedoch hervorragend, um sich als Einsteiger:in mit grundlegenden Konzepten der Datenverarbeitung vertraut zu machen, da die Ergebnisse jeder Eingabe sofort sichtbar sind und man ohne Programmierkenntnisse direkt loslegen kann. 
@@ -120,7 +120,7 @@ Das kann dazu führen, dass Ihre Daten **nicht mehr zusammenpassen**: Eine Zelle
 
 Sie erhalten zwei Dateien mit echten Messdaten aus dem Marburger Umweltsensoren-Netzwerk: `Datensatz1.xlsx` und `Datensatz2.xlsx`. Beide enthalten Temperaturmessungen mehrerer Stationen – **aber mit unterschiedlich benannten und unterschiedlich angeordneten Spalten**. Das ist Absicht: Genau dieses Problem – Daten aus verschiedenen Quellen mit uneinheitlicher Struktur – begegnet Ihnen in der Praxis ständig, und Sie werden diese beiden Datensätze im späteren Kursverlauf zusammenführen.
 
-**Wichtig:** Beide Dateien sind bewusst **unaufbereitet** – mit doppelten Zeilen, uneinheitlicher Schreibweise bei Standortn und einer noch nicht aufgetrennten Koordinatenspalte. Das ist kein Fehler, sondern Absicht: Sie werden diese Dateien in den kommenden Kapiteln Schritt für Schritt bereinigen. In diesem Kapitel geht es zunächst nur um die reine Handhabung, nicht darum, die Fehler bereits zu beheben.
+**Wichtig:** Beide Dateien sind bewusst **unaufbereitet** – mit doppelten Zeilen, uneinheitlicher Schreibweise bei Standorten und einer noch nicht aufgetrennten Koordinatenspalte. Das ist kein Fehler, sondern Absicht: Sie werden diese Dateien in den kommenden Kapiteln Schritt für Schritt bereinigen. In diesem Kapitel geht es zunächst nur um die reine Handhabung, nicht darum, die Fehler bereits zu beheben.
 
 1. Öffnen Sie beide Dateien in Excel.
 2. Vergleichen Sie die Spaltenüberschriften: Welche Spalten aus `Datensatz1` entsprechen welchen Spalten aus `Datensatz2`, obwohl sie unterschiedlich heißen (z. B. `Standort` vs. `Ort`)? Notieren Sie sich diese Zuordnung – Sie brauchen sie später beim Zusammenführen.

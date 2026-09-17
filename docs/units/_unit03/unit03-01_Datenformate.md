@@ -7,7 +7,7 @@ header:
   image_description: "Cloudscape Over the Philippine Sea"
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
-<!-- Themenblock 02-02: Datentypen, Encoding-Probleme, Tidy Data, Koordinatenformate (Basic) -->
+<!-- Kapitel 03-01: Datentypen, Skalenniveau, Zellformate -->
 
 Im letzten Kapitel haben Sie Ihre beiden bereitgestellten Sensordatensätze kennengelernt und in einer gemeinsamen Arbeitsmappe organisiert. Nun müssen Sie verstehen, **wie Excel diese Daten intern behandelt** – denn nicht jede Zelle, die wie eine Zahl aussieht, wird von Excel auch als Zahl erkannt. Genau hier entstehen die häufigsten Fehlerquellen bei der Datenerfassung: falsch erkannte Datentypen, unsichtbare Zeichencodierungsprobleme, z.B. bei Ortsnamen, uneinheitlich strukturierte Koordinatenspalten und Einheiten, die versehentlich direkt mit in die Zahl geschrieben werden. Dieses Kapitel schafft die Grundlage, um solche Probleme künftig zu erkennen und zu vermeiden.
 

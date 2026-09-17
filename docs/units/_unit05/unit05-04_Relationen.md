@@ -10,7 +10,7 @@ header:
 
 
 
-<!-- Themenblock 02-12: Ausblick – Zusammenhänge zwischen zwei Variablen -->
+<!-- Kapitel 05-04: Ausblick – Zusammenhänge zwischen zwei Variablen -->
 
 Mittelwert, Median, Histogramm und Boxplot beschreiben bisher immer **eine einzelne Variable** für sich. Oft sind Werte - und die Identifikation von Werten, die auffällig sind - von mehreren Variablen abhängig. Eine Temperatur von -10°C ist im Winter zu erwarten, im Sommer aber nicht - eine Begutachtung der Werte im zeitlichen Kontext kann also hilfreich sein.
 
