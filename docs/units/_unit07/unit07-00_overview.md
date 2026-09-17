@@ -35,6 +35,10 @@ Am Ende dieser Unit sind Studierende in der Lage, ...
 {% include video id="B6Yn-U1Ff60" provider="youtube" %}
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
+
+## Warum? Let's play a game!
+
+<iframe src="{{ '/assets/games/Datenchaos.html' | relative_url }}" width="100%" height="700" style="border:none;"></iframe>
 ## Organisatorisches
 
 Halten Sie Daten, README-Datei und zugehörige Bearbeitungshinweise in einer gemeinsamen, klar benannten Ordnerstruktur zusammen.

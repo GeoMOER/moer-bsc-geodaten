@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIKROKLIMA // MARBURG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0d1417; --bg-alt: #101a1e; --panel: #17242a; --panel-raised: #1e3138;
+    --border: #3a5560; --border-light: #4d6d78; --accent: #6fd6a8; --accent-dark: #3f8f6c;
+    --warm: #e8a33d; --warm-dark: #a5731f; --text: #dcece6; --text-dim: #83a29a;
+    --danger: #e0645a; --folder-c: #e8c468; --tif-c: #6fa8d6; --csv-c: #8fd66f;
+    --doc-c: #b98fd6; --pipe-metal: #5a747d;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0; min-height:100vh; background: var(--bg);
+    background-image: linear-gradient(var(--bg-alt) 1px, transparent 1px), linear-gradient(90deg, var(--bg-alt) 1px, transparent 1px);
+    background-size: 24px 24px; color: var(--text); font-family: 'VT323', monospace; font-size: 22px;
+    display:flex; justify-content:center; padding: 16px;
+  }
+  h1,h2,h3, .pixel-label, button{ font-family: 'Press Start 2P', monospace; }
+  #game{
+    width: 100%; max-width: 960px; background: var(--panel); border: 4px solid var(--border-light);
+    box-shadow: 0 0 0 4px var(--bg), 8px 8px 0 0 rgba(0,0,0,0.5); min-height: 660px;
+    display:flex; flex-direction:column;
+  }
+  #topbar{ background: var(--panel-raised); border-bottom: 4px solid var(--border); padding: 10px 16px; display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+  #topbar .title{ font-size: 12px; color: var(--accent); letter-spacing: 1px; }
+  #topbar .scene-indicator{ font-family:'VT323', monospace; font-size: 18px; color: var(--text-dim); }
+  #stage{ flex:1; padding: 24px; position:relative; overflow:auto; }
+  button{
+    cursor:pointer; font-size: 11px; color: var(--bg); background: var(--accent); border: none;
+    border-bottom: 4px solid var(--accent-dark); border-right: 3px solid var(--accent-dark); padding: 12px 16px; line-height:1.4;
+  }
+  button:active{ border-bottom-width: 1px; border-right-width: 1px; transform: translate(2px,2px); }
+  button:disabled{ background: #3a4a4d; border-bottom-color:#28343a; border-right-color:#28343a; color:#6a7c80; cursor:not-allowed; }
+  button.secondary{ background: var(--panel-raised); color: var(--text); border-bottom: 4px solid var(--border); border-right: 3px solid var(--border); }
+  p, li{ line-height:1.5; font-size: 22px; }
+
+  .intro-box{ max-width: 700px; margin: 0 auto; }
+  .intro-box h1{ font-size: 20px; color: var(--accent); margin-bottom: 20px; line-height:1.6;}
+  .badge-row{ display:flex; gap:10px; margin: 20px 0; flex-wrap:wrap; }
+  .badge{ font-family:'VT323'; font-size:16px; border:2px solid var(--border-light); padding:4px 10px; color:var(--text-dim);}
+
+  .version-grid{ display:flex; gap:16px; flex-wrap:wrap; margin-top:24px; }
+  .version-card{ flex:1; min-width:220px; background:var(--bg-alt); border:3px solid var(--border); padding:16px; display:flex; flex-direction:column; }
+  .version-card h3{ font-size:13px; color:var(--warm); margin:0 0 10px 0; }
+  .version-card p{ font-size:17px; color:var(--text-dim); flex:1; }
+  .version-card .best-time{ font-size:16px; color:var(--accent); margin:10px 0; }
+  .diff-tag{ display:inline-block; font-size:14px; padding:2px 8px; border:1px solid var(--border-light); color:var(--text-dim); margin-bottom:10px; align-self:flex-start;}
+
+  .explorer-layout{ display:flex; gap:20px; height:100%; flex-wrap:wrap; }
+  .tree-panel{ flex:2; min-width:280px; background:var(--bg-alt); border:3px solid var(--border); padding:14px; overflow:auto; max-height: 460px;}
+  .backpack-panel{ flex:1; min-width:200px; background:var(--bg-alt); border:3px solid var(--warm); padding:14px; display:flex; flex-direction:column; }
+  .folder{ margin-bottom: 4px; }
+  .folder-head{ cursor:pointer; color: var(--folder-c); display:flex; align-items:center; gap:8px; padding:4px 2px;}
+  .folder-head:hover{ background: rgba(255,255,255,0.05); }
+  .folder-children{ margin-left: 26px; border-left: 1px dashed var(--border-light); padding-left: 10px;}
+  .file-row{ display:flex; align-items:center; gap:8px; padding:4px 2px; cursor:pointer; border-radius:2px;}
+  .file-row:hover{ background: rgba(255,255,255,0.06); }
+  .file-row.in-bag{ background: rgba(111,214,168,0.15); }
+  .file-row.in-bag .filename{ color: var(--accent); }
+  .icon{ width:18px; height:18px; flex:none; }
+  .filename{ color: var(--text); }
+  .filename.tif{ color: var(--tif-c); }
+  .filename.csv{ color: var(--csv-c); }
+  .filename.doc{ color: var(--doc-c); }
+  .check{ margin-left:auto; color: var(--accent); font-family:'Press Start 2P'; font-size:10px; }
+  .bag-list{ flex:1; overflow:auto; }
+  .bag-item{ font-size:18px; padding:3px 0; color:var(--text); border-bottom:1px dotted var(--border);}
+  .bag-empty{ color:var(--text-dim); font-style:italic; }
+  .bag-count{ color:var(--warm); font-family:'Press Start 2P'; font-size:11px; margin-bottom:10px;}
+
+  .modal-overlay{ position:fixed; inset:0; background:rgba(0,0,0,0.7); display:none; align-items:center; justify-content:center; z-index:50; padding:16px;}
+  .modal-overlay.open{ display:flex; }
+  .modal-box{ background: var(--panel-raised); border:3px solid var(--accent); max-width:560px; width:100%; padding:20px; max-height:80vh; overflow:auto;}
+  .modal-box h3{ font-size:13px; color:var(--accent); margin-top:0; word-break:break-all;}
+  .modal-box pre{ background: var(--bg-alt); padding:10px; overflow:auto; font-family:'VT323'; font-size:18px; color: var(--csv-c); border:1px solid var(--border); white-space:pre-wrap;}
+  .modal-box .close-row{ text-align:right; margin-top:14px; display:flex; justify-content:flex-end; gap:10px; flex-wrap:wrap;}
+
+  .target-badge{ background: var(--bg-alt); border:3px solid var(--warm); padding:14px; margin-bottom:20px; display:flex; align-items:center; gap:16px; flex-wrap:wrap;}
+  .target-badge .t-label{ color:var(--warm); font-size:11px; }
+  .target-badge .t-value{ color:var(--text); font-size:20px; }
+  .pipeline-visual{ position:relative; padding-left: 26px; }
+  .pipeline-visual::before{
+    content:''; position:absolute; left:8px; top:0; bottom:0; width:10px;
+    background: repeating-linear-gradient(180deg, var(--pipe-metal) 0 10px, #43585f 10px 14px);
+    border-left:2px solid #2a383e; border-right:2px solid #2a383e;
+  }
+  .pipeline-list{ display:flex; flex-direction:column; gap:16px; }
+  .pipe-card{ position:relative; background: var(--bg-alt); border:3px solid var(--border); padding:14px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+  .pipe-card::before{ content:''; position:absolute; left:-26px; top:50%; width:24px; height:8px; background: var(--pipe-metal); transform:translateY(-50%); }
+  .pipe-card.correct{ border-color: var(--accent); }
+  .pipe-card.wrong{ border-color: var(--danger); }
+  .pipe-name{ flex:1; min-width:200px; font-size:19px; }
+  .pipe-status{ width:16px; height:16px; border-radius:50%; background:#3a4a4d; flex:none; }
+  .pipe-status.ok{ background: var(--accent); }
+  .pipe-status.bad{ background: var(--danger); }
+  .dial{ display:flex; flex-direction:column; align-items:center; cursor:pointer; user-select:none; flex:none;}
+  .dial svg{ width:64px; height:64px; }
+  .dial-label{ font-size:15px; color:var(--warm); margin-top:4px; text-align:center; min-width:100px;}
+
+  .report-text{ background: var(--bg-alt); border:3px solid var(--border); padding:20px; font-size:22px; line-height:2.1; }
+  .report-letterhead{ font-size:16px; color:var(--text-dim); margin-bottom:14px; border-bottom:1px dashed var(--border-light); padding-bottom:10px;}
+  .blank{ display:inline-block; min-width:110px; padding:2px 8px; margin:0 2px; border-bottom:2px solid var(--warm); color: var(--warm); font-family:'VT323'; text-align:center; cursor:pointer;}
+  .blank.filled{ color: var(--accent); border-bottom-color: var(--accent); }
+  .word-bank{ display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+  .chip{ background: var(--panel-raised); border:2px solid var(--border-light); padding:6px 12px; font-size:18px; cursor:pointer; }
+  .chip.selected{ border-color: var(--warm); color: var(--warm); }
+  .chip.used{ opacity:0.25; pointer-events:none; }
+
+  .map-wrap{ display:flex; gap:20px; flex-wrap:wrap; }
+  .map-svg-box{ flex:2; min-width:320px; background: var(--bg-alt); border:3px solid var(--border); padding:10px;}
+  .legend-box{ flex:1; min-width:200px; background: var(--bg-alt); border:3px solid var(--border); padding:14px; }
+  .legend-bar{ height:18px; width:100%; background: linear-gradient(90deg, #4f8fd6, #8fd66f, #e8a33d, #e0645a); border:1px solid var(--border-light); margin: 10px 0;}
+  .legend-scale{ display:flex; justify-content:space-between; font-size:16px; color:var(--text-dim); }
+  .point-tip{ font-size:18px; color: var(--accent); min-height: 30px; margin-top:10px; }
+
+  .end-box{ text-align:center; max-width:520px; margin:20px auto; }
+  .time-display{ font-size: 40px; color: var(--accent); margin: 20px 0; font-family:'Press Start 2P'; }
+  .compare-list{ text-align:left; max-width:340px; margin:16px auto; font-size:19px; }
+  .compare-list div{ display:flex; justify-content:space-between; border-bottom:1px dotted var(--border); padding:3px 0;}
+
+  .footer-nav{ padding: 14px 24px; border-top:4px solid var(--border); display:flex; justify-content:space-between; align-items:center; background:var(--panel-raised); flex-wrap:wrap; gap:10px;}
+  .footer-left{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .footer-msg{ font-size:18px; color: var(--warm); }
+
+  ::-webkit-scrollbar{ width:10px; height:10px; }
+  ::-webkit-scrollbar-thumb{ background: var(--border-light); }
+  ::-webkit-scrollbar-track{ background: var(--bg-alt); }
+</style>
+</head>
+<body>
+
+<div id="game">
+  <div id="topbar">
+    <div class="title">MIKROKLIMA // MARBURG</div>
+    <button id="notesBtn" class="secondary" style="font-size:10px; padding:8px 12px;">📌 Notizen (<span id="notesCount">0</span>)</button>
+    <div class="scene-indicator" id="sceneIndicator">Versionsauswahl</div>
+  </div>
+  <div id="stage"></div>
+  <div class="footer-nav" id="footerNav"></div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox"></div>
+</div>
+
+<script>
+/* =========================================================
+   MIKROKLIMA // MARBURG — Lernspiel: Datenordnung
+   Drei Versionen (A sauber, B teilweise unordentlich, C totales
+   Chaos) liegen komplett getrennt in LEVELS.*, damit die Spiel-
+   logik unangetastet bleibt. ACTIVE_LEVEL zeigt auf die gerade
+   gewaehlte Version.
+   ========================================================= */
+
+const MAP_POINTS = [
+  {x:22,y:30,temp:19.8},{x:35,y:22,temp:21.4},{x:48,y:35,temp:24.6},
+  {x:60,y:28,temp:22.9},{x:70,y:40,temp:26.1},{x:40,y:50,temp:23.2},
+  {x:55,y:55,temp:25.0},{x:28,y:60,temp:20.5},{x:65,y:62,temp:24.8},
+  {x:75,y:20,temp:21.0},{x:50,y:15,temp:20.1},{x:33,y:70,temp:22.0}
+];
+
+const LEVELS = {
+
+/* ======================= VERSION A — SAUBER ======================= */
+A: {
+  key:'A',
+  versionName: "Version A — Saubere Datenablage",
+  diffTag: "Leicht",
+  blurb: "Alles ordentlich benannt und dokumentiert. Gute Übung, um die Stationen kennenzulernen.",
+  targetCRS: "EPSG:25832",
+  crsOptions: ["EPSG:4326", "EPSG:25832", "EPSG:3857", "EPSG:31467"],
+  mapPoints: MAP_POINTS,
+  folders: [
+    { name:"00_rohdaten", files: [
+      { id:'a_raw1', name:'dwd_stationsdaten.txt', type:'doc', collectible:false,
+        note:"Unbearbeiteter Export der Wetterstationen. Die bereinigte Messpunkt-CSV liegt schon in 01_verarbeitet." },
+      { id:'a_raw2', name:'wetterstation_export_2023-08.csv', type:'csv', collectible:false,
+        note:"Roh-Export, noch nicht bereinigt: keine CRS-Angabe, Fehlwerte nicht markiert, Duplikate enthalten.",
+        preview:"station,datum,wert\nHBG01,2023-08-03,19.8\nHBG01,2023-08-03,19.8\nHBG02,2023-08-03,\nHBG03,2023-08-03,999" },
+      { id:'a_raw3', name:'sentinel2_ndvi_szene_2023-07-14.tif', type:'tif', collectible:false,
+        note:"Rohszene des Vegetationsindex direkt vom Satelliten-Kartendienst - unbeschnitten, noch nicht auf das Untersuchungsgebiet zugeschnitten." },
+      { id:'a_raw4', name:'dgm_download_original.tif', type:'tif', collectible:false,
+        note:"Originaler Download des Geländemodells vor dem Zuschnitt und der Aufbereitung." },
+      { id:'a_raw5', name:'versiegelung_klassifikation_roh.tif', type:'tif', collectible:false,
+        note:"Unklassifizierte Rohklassifikation der versiegelten Flächen, vor der Bereinigung." },
+      { id:'a_raw6', name:'lst_szene_unbearbeitet.tif', type:'tif', collectible:false,
+        note:"Unbearbeitete Landoberflächentemperatur-Szene, noch mit Wolkenpixeln." }
+    ]},
+    { name:"01_verarbeitet", files: [
+      { id:'a_tif1', name:'layer_versiegelung_2023_epsg25832.tif', type:'tif', collectible:true, crs:'EPSG:25832',
+        note:"Versiegelungsgrad, bereits im Bezugssystem des Projekts erhoben." },
+      { id:'a_tif2', name:'layer_ndvi_2023_epsg3857.tif', type:'tif', collectible:true, crs:'EPSG:3857',
+        note:"Vegetationsindex (NDVI). Stammt aus einem Web-Kartendienst, daher Web Mercator." },
+      { id:'a_tif3', name:'layer_dgm1_1998_epsg31467.tif', type:'tif', collectible:true, crs:'EPSG:31467',
+        note:"Digitales Geländemodell aus dem Bestandsarchiv (Gauss-Krüger, vor der ETRS89-Umstellung erhoben)." },
+      { id:'a_tif4', name:'layer_lst_sommer2023_epsg4326.tif', type:'tif', collectible:true, crs:'EPSG:4326',
+        note:"Landoberflächentemperatur, abgeleitet aus Satellitendaten (Rohlieferung in geografischen Koordinaten)." },
+      { id:'a_csv1', name:'messpunkte_temperatur_2023_epsg25832.csv', type:'csv', collectible:true, crs:'EPSG:25832',
+        note:"Bereinigte Temperaturmesspunkte. Fehlwerte sind als -999 kodiert.",
+        preview:"id,x,y,temp_c\n1,478213,5615432,19.8\n2,479001,5615890,21.4\n3,478650,5614920,-999\n4,480102,5616210,24.6" }
+    ]},
+    { name:"02_dokumentation", files: [
+      { id:'a_doc1', name:'README.md', type:'doc', collectible:false, isReadme:true, note:"README" },
+      { id:'a_doc2', name:'metadaten.json', type:'doc', collectible:false, isMeta:true, note:"Metadaten" },
+      { id:'a_doc3', name:'bezugsraum_marburg.shp', type:'doc', collectible:false, isRef:true, note:"Referenzgeometrie" },
+      { id:'a_doc4', name:'projektlog.txt', type:'doc', collectible:false,
+        note:"Persönliches Arbeitsprotokoll deines Kollegen.",
+        preview:"12.03. Messkampagne abgeschlossen, 12 Stationen ausgewertet.\n14.03. NDVI-Layer vom Kartendienst bezogen, noch nicht reprojiziert.\n15.03. DGM aus dem Archiv geholt - ist noch im alten System." }
+    ]},
+    { name:"99_archiv", files: [
+      { id:'a_arc1', name:'alte_version_v1_epsg4326.tif', type:'tif', collectible:false, note:"Alte Version vor der Neuerhebung — veraltet." },
+      { id:'a_arc2', name:'Kopie_von_layer_ndvi.tif', type:'tif', collectible:false, note:"Ungeprüfte Kopie ohne gesicherte Metadaten." },
+      { id:'a_arc3', name:'test_export.csv', type:'csv', collectible:false, note:"Testdatei aus einem früheren Durchlauf." }
+    ]}
+  ],
+  readmeText:
+`# Projekt Mikroklima Marburg
+
+Die fertig aufbereiteten Daten liegen in 01_verarbeitet/. Achtung: die
+Layer stammen aus unterschiedlichen Quellen und liegen NICHT alle im
+gleichen Koordinatensystem vor. Die jeweilige Quell-CRS steht in
+metadaten.json.
+
+Der gemeinsame Bezugsraum für die Analyse ist in
+bezugsraum_marburg.shp definiert - alle Layer müssen in der Pipeline
+darauf reprojiziert werden.
+
+Für die Modellierung werden vier Rasterebenen benötigt (alle in
+01_verarbeitet): Versiegelungsgrad, Vegetationsindex, Geländehöhe
+und Landoberflächentemperatur.
+
+Fehlwerte in den Temperaturmessungen sind als -999 kodiert und
+müssen vor der Interpolation entfernt werden.
+
+00_rohdaten/ enthält nur unbearbeitete Originaldaten - nicht nötig,
+wenn direkt weitergearbeitet wird.
+
+99_archiv/ ist Ablage für alte Zwischenstände, bitte nicht mehr
+verwenden.`,
+  metaText:
+`{
+  "01_verarbeitet/layer_versiegelung_2023_epsg25832.tif": { "crs": "EPSG:25832" },
+  "01_verarbeitet/layer_ndvi_2023_epsg3857.tif":          { "crs": "EPSG:3857" },
+  "01_verarbeitet/layer_dgm1_1998_epsg31467.tif":         { "crs": "EPSG:31467" },
+  "01_verarbeitet/layer_lst_sommer2023_epsg4326.tif":     { "crs": "EPSG:4326" },
+  "01_verarbeitet/messpunkte_temperatur_2023_epsg25832.csv": { "crs": "EPSG:25832", "nodata": -999 }
+}`,
+  refText:
+`Referenzgeometrie: bezugsraum_marburg.shp
+
+Definiert den gemeinsamen Bezugsraum für dieses Projekt.
+Koordinatensystem: EPSG:25832 (ETRS89 / UTM Zone 32N)
+
+Alle Rasterebenen und Punktdaten müssen vor der Analyse auf dieses
+System gebracht werden. In der Pipeline wird pro Layer die jeweilige
+Quellprojektion eingestellt - die Reprojektion übernimmt das System
+automatisch.`,
+  report: {
+    template: "Grundlage der vorliegenden Modellierung waren die im Projektordner bereitgestellten Rasterebenen sowie die Temperaturmesspunkte. Der gemeinsame Bezugsraum für die Analyse liegt in {b1}; alle Eingangsdaten wurden vor der Weiterverarbeitung auf dieses System reprojiziert. Fehlende Messwerte wurden anhand des Codes {b2} identifiziert und vor der Interpolation aus dem Datensatz entfernt. Der Berechnung liegen Messungen von {b3} Stationen im Stadtgebiet zugrunde. Als weitere Eingangsdaten dienten {b4} Rasterebenen: Versiegelungsgrad, Vegetationsindex, Geländehöhe und Landoberflächentemperatur. Die resultierende {b5} wurde mittels Interpolation (IDW) zwischen den Messpunkten berechnet.",
+    blanks: { b1:"EPSG:25832", b2:"-999", b3:"12", b4:"vier", b5:"Mikroklimakarte" },
+    distractors: {
+      b1: ["EPSG:4326","EPSG:3857","EPSG:31467"],
+      b2: ["NA","NULL","0","-1","9999"],
+      b3: ["7","10","15","18","20"],
+      b4: ["zwei","drei","fünf","sechs"],
+      b5: ["Luftbildmosaik","Hitzeindex","Versiegelungskarte","Niederschlagskarte"]
+    }
+  }
+},
+
+/* ======================= VERSION B — TEILWEISE UNORDENTLICH ======================= */
+B: {
+  key:'B',
+  versionName: "Version B — Teilweise unordentlich",
+  diffTag: "Mittel",
+  blurb: "Flache Ordnerstruktur, kryptische Namen, Metadaten lückenhaft. Genaues Hinsehen ist gefragt.",
+  targetCRS: "EPSG:25832",
+  crsOptions: ["EPSG:4326", "EPSG:25832", "EPSG:3857", "EPSG:31467"],
+  mapPoints: MAP_POINTS,
+  folders: [
+    { name:"daten", files: [
+      { id:'b_l1', name:'layer1.tif', type:'tif', collectible:true, crs:'EPSG:3857',
+        note:"Vermutlich der Versiegelungsgrad - im Dateinamen nicht erkennbar. CRS steht nicht in den Metadaten, siehe notizen_zwischenstand.txt." },
+      { id:'b_l2old', name:'layer2.tif', type:'tif', collectible:false,
+        note:"Ältere Version, laut notizen_zwischenstand.txt durch layer2_final.tif ersetzt." },
+      { id:'b_l2', name:'layer2_final.tif', type:'tif', collectible:true, crs:'EPSG:4326',
+        note:"Vermutlich NDVI, aktuellere Version von layer2.tif." },
+      { id:'b_dgm', name:'dgm_marburg.tif', type:'tif', collectible:true, crs:'EPSG:31467',
+        note:"Geländehöhe, laut Metadaten in Gauss-Krüger." },
+      { id:'b_dgmcopy', name:'dgm_marburg_kopie.tif', type:'tif', collectible:false,
+        note:"Unklare Kopie ohne weitere Angaben - Ursprung nicht nachvollziehbar." },
+      { id:'b_lst', name:'LST_2023.tif', type:'tif', collectible:true, crs:'EPSG:25832',
+        note:"Landoberflächentemperatur, laut Metadaten bereits im Projekt-Bezugssystem." },
+      { id:'b_scan', name:'scan_temp.tif', type:'tif', collectible:false,
+        note:"Eingescannter Notizzettel, versehentlich als .tif exportiert. Kein Geodatum." },
+      { id:'b_msv2', name:'messwerte_v2.csv', type:'csv', collectible:true, crs:'EPSG:25832',
+        note:"Aktuelle Version der Temperaturmesspunkte laut README.",
+        preview:"id,x,y,temp_c\n1,478210,5615400,20.1\n2,478900,5615700,-9999\n3,479200,5614950,23.0\n4,479950,5616100,24.2\n(9 Zeilen gesamt)" },
+      { id:'b_ms1', name:'messwerte.csv', type:'csv', collectible:false,
+        note:"Ältere Version - weniger Zeilen, keine erkennbare Fehlwert-Markierung." },
+      { id:'b_notiz', name:'notizen_zwischenstand.txt', type:'doc', collectible:false,
+        note:"Kurze Notiz zum Bearbeitungsstand.",
+        preview:"layer1 ist jetzt in Web Mercator, weil ich's direkt vom Kartendienst gezogen hab.\nlayer2_final.tif ersetzt layer2.tif (war noch nicht fertig).\nmesswerte_v2.csv ist die aktuelle Version, 9 Stationen liefern noch Daten.\nFehlwerte in den Messwerten sind mit -9999 markiert." }
+    ]},
+    { name:"alt", files: [
+      { id:'b_readme', name:'README.txt', type:'doc', collectible:false, isReadmeB:true, note:"README" },
+      { id:'b_meta', name:'metadata.json', type:'doc', collectible:false, isMetaB:true, note:"Metadaten (unvollständig)" }
+    ]}
+  ],
+  readmeText:
+`Hey,
+
+musste schnell weg, daher nur kurz: die aktuellen Layer liegen in
+daten/, aber ich bin nicht mehr dazu gekommen alles ordentlich zu
+benennen - sorry!
+
+layer2_final.tif ist die neuere Version von layer2.tif.
+Bei den Messwerten ist messwerte_v2.csv die aktuelle.
+
+Bezugssystem für die Analyse ist wie immer EPSG:25832. Den Rest
+(welche Quellprojektion welcher Layer hat) müsstest du dir aus den
+Metadaten bzw. meiner Notiz zusammensuchen.`,
+  metaText:
+`{
+  "daten/layer1.tif": {},
+  "daten/layer2_final.tif": { "crs": "EPSG:4326" },
+  "daten/dgm_marburg.tif": { "crs": "EPSG:31467" },
+  "daten/LST_2023.tif": { "crs": "EPSG:25832" },
+  "daten/messwerte_v2.csv": { "crs": "EPSG:25832" }
+}`,
+  report: {
+    template: "Grundlage der vorliegenden Modellierung waren die im Projektordner bereitgestellten Rasterebenen sowie die Temperaturmesspunkte. Der gemeinsame Bezugsraum für die Analyse liegt in {b1}; alle Eingangsdaten wurden vor der Weiterverarbeitung auf dieses System reprojiziert. Fehlende Messwerte wurden anhand des Codes {b2} identifiziert und vor der Interpolation aus dem Datensatz entfernt. Der Berechnung liegen Messungen von {b3} Stationen im Stadtgebiet zugrunde. Als weitere Eingangsdaten dienten {b4} Rasterebenen: Versiegelungsgrad, Vegetationsindex, Geländehöhe und Landoberflächentemperatur. Die resultierende {b5} wurde mittels Interpolation (IDW) zwischen den Messpunkten berechnet.",
+    blanks: { b1:"EPSG:25832", b2:"-9999", b3:"9", b4:"vier", b5:"Mikroklimakarte" },
+    distractors: {
+      b1: ["EPSG:4326","EPSG:3857","EPSG:31467"],
+      b2: ["-999","NA","NULL","0","-1"],
+      b3: ["12","8","7","15","20"],
+      b4: ["zwei","drei","fünf","sechs"],
+      b5: ["Luftbildmosaik","Hitzeindex","Versiegelungskarte","Niederschlagskarte"]
+    }
+  }
+},
+
+/* ======================= VERSION C — TOTALES CHAOS ======================= */
+C: {
+  key:'C',
+  versionName: "Version C — Totales Chaos",
+  diffTag: "Schwer",
+  blurb: "Keine verlässliche Doku, doppelte Dateien, widersprüchliche Hinweise. Willkommen im Ernstfall.",
+  targetCRS: "EPSG:25832",
+  crsOptions: ["EPSG:4326", "EPSG:25832", "EPSG:3857", "EPSG:31467"],
+  mapPoints: MAP_POINTS,
+  folders: [
+    { name:"NEU", files: [
+      { id:'c_flae', name:'flaeche_2023.tif', type:'tif', collectible:true, crs:'EPSG:25832',
+        note:"Keine Angaben auffindbar. Da die drei anderen Quellprojektionen sich aus Notizen ergeben, bleibt für diesen Layer nur noch eine der vier Optionen übrig." },
+      { id:'c_flaetest', name:'flaeche_2023_TEST.tif', type:'tif', collectible:false, note:"Laut Dateiname ein Testlauf - nicht die finale Version." },
+      { id:'c_img', name:'IMG_0451.tif', type:'tif', collectible:false, note:"Sieht aus wie ein versehentlich hochgeladenes Handyfoto vom Feldtag." },
+      { id:'c_temp', name:'oberflaeche_temp.tif', type:'tif', collectible:true, crs:'EPSG:4326',
+        note:"Landoberflächentemperatur - laut Notiz vom Satellitendienst, in Grad (WGS84)." },
+      { id:'c_tempwolken', name:'oberflaeche_temp_wolken.tif', type:'tif', collectible:false,
+        note:"Diese Version hat noch Wolkenpixel und wurde später neu berechnet (siehe oberflaeche_temp.tif)." }
+    ]},
+    { name:"ENDGUELTIG_wirklich", files: [
+      { id:'c_gruen', name:'karte_gruen.tif', type:'tif', collectible:true, crs:'EPSG:3857',
+        note:"Vermutlich NDVI (Vegetation). Laut Notiz direkt vom Kartendienst, Web Mercator." },
+      { id:'c_gruenv1', name:'karte_gruen_v1.tif', type:'tif', collectible:false, note:"Ältere Version, laut Notiz überholt." },
+      { id:'c_stat3', name:'stationen_2023_v3.csv', type:'csv', collectible:true, crs:'EPSG:25832',
+        note:"Temperaturmesspunkte, aktuellste auffindbare Version.",
+        preview:"id,x,y,temp_c\n1,478300,5615500,20.4\n2,478990,5615850,-999\n3,479250,5614980,NA\n4,480000,5616200,\n5,480500,5615000,24.9\n(7 Zeilen gesamt, uneinheitliche Fehlwert-Kennzeichnung)" },
+      { id:'c_stat2', name:'stationen_2023_v2.csv', type:'csv', collectible:false, note:"Ältere Version, weniger Zeilen, keine erkennbare Fehlwert-Markierung." },
+      { id:'c_notiz', name:'notizen.txt', type:'doc', collectible:false,
+        note:"Chaotische Notiz, halb Gedankenprotokoll.",
+        preview:"Puh, komplettes Chaos hier, sorry im Voraus.\nDie Höhendaten sind noch im alten System, glaub Gauss-Krüger.\nDie 'Grün-Karte' hab ich direkt von der Kartendienst-Seite gezogen, sollte Web Mercator sein.\nOberflächentemperatur kommt vom Satellitendienst, meine die war in Grad (WGS84).\nZur Versiegelungsfläche fällt mir grad nichts mehr ein, müsstest du selbst schauen.\nBei den Temperaturmessungen sind die Fehlwerte leider nicht einheitlich - mal -999, mal NA, mal einfach leer.\nAktuell sollten noch 7 Stationen laufen." }
+    ]},
+    { name:"ARCHIV_ALT", files: [
+      { id:'c_hoehe2', name:'hoehe_alt2.tif', type:'tif', collectible:true, crs:'EPSG:31467',
+        note:"Geländedaten ändern sich kaum - laut Notiz ist das noch die im alten System (Gauss-Krüger), aber inhaltlich weiterhin gültig." },
+      { id:'c_hoehe1', name:'hoehe_alt.tif', type:'tif', collectible:false, note:"Noch ältere, gröber aufgelöste Version." },
+      { id:'c_praesi', name:'alte_praesentation_notizen.txt', type:'doc', collectible:false, note:"Notizen zu einer alten Präsentation, ohne Bezug zu den aktuellen Geodaten." }
+    ]}
+  ],
+  readmeText: `TODO: dokumentieren`,
+  report: {
+    template: "Grundlage der vorliegenden Modellierung waren die im Projektordner auffindbaren Rasterebenen sowie die Temperaturmesspunkte. Der gemeinsame Bezugsraum für die Analyse liegt in {b1}; alle Eingangsdaten wurden vor der Weiterverarbeitung auf dieses System reprojiziert. Die Kennzeichnung fehlender Messwerte war im Datensatz {b2} vorzufinden und musste vor der Interpolation manuell geprüft werden. Der Berechnung liegen Messungen von {b3} Stationen im Stadtgebiet zugrunde. Als weitere Eingangsdaten dienten {b4} Rasterebenen: Versiegelungsgrad, Vegetationsindex, Geländehöhe und Landoberflächentemperatur. Die resultierende {b5} wurde mittels Interpolation (IDW) zwischen den Messpunkten berechnet.",
+    blanks: { b1:"EPSG:25832", b2:"uneinheitlich", b3:"7", b4:"vier", b5:"Mikroklimakarte" },
+    distractors: {
+      b1: ["EPSG:4326","EPSG:3857","EPSG:31467"],
+      b2: ["-999","NA","-9999","NULL","0"],
+      b3: ["12","9","8","15","20"],
+      b4: ["zwei","drei","fünf","sechs"],
+      b5: ["Luftbildmosaik","Hitzeindex","Versiegelungskarte","Niederschlagskarte"]
+    }
+  }
+}
+};
+
+/* ---------------- STATE ---------------- */
+let LEVEL_DATA = null;
+
+const state = {
+  scene: 'select',
+  bag: new Set(),
+  infoNotes: new Set(),
+  pipelineCRS: {},
+  pipelineChecked: false,
+  reportFilled: {},
+  reportWordOrder: null,
+  selectedChip: null,
+  startTime: null,
+  endTime: null,
+  openFolders: new Set(),
+  completedRuns: {}
+};
+
+const SCENE_ORDER = ['select','explorer','pipeline','report','map','end'];
+
+const stage = document.getElementById('stage');
+const footerNav = document.getElementById('footerNav');
+const sceneIndicator = document.getElementById('sceneIndicator');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalBox = document.getElementById('modalBox');
+
+function openModal(html){ modalBox.innerHTML = html; modalOverlay.classList.add('open'); }
+function closeModal(){ modalOverlay.classList.remove('open'); }
+modalOverlay.addEventListener('click', (e)=>{ if(e.target===modalOverlay) closeModal(); });
+
+function icon(type){
+  const colors = { folder:'var(--folder-c)', tif:'var(--tif-c)', csv:'var(--csv-c)', doc:'var(--doc-c)' };
+  const c = colors[type] || '#888';
+  if(type==='folder'){
+    return `<svg class="icon" viewBox="0 0 16 16"><rect x="1" y="4" width="14" height="10" fill="${c}"/><rect x="1" y="2" width="6" height="3" fill="${c}"/></svg>`;
+  }
+  if(type==='tif'){
+    return `<svg class="icon" viewBox="0 0 16 16"><rect x="1" y="1" width="14" height="14" fill="#1e3138" stroke="${c}" stroke-width="1.5"/><path d="M2 11 L6 7 L9 10 L14 4 L14 13 L2 13 Z" fill="${c}" opacity="0.85"/></svg>`;
+  }
+  if(type==='csv'){
+    return `<svg class="icon" viewBox="0 0 16 16"><rect x="1" y="1" width="14" height="14" fill="#1e3138" stroke="${c}" stroke-width="1.5"/><line x1="1" y1="6" x2="15" y2="6" stroke="${c}" stroke-width="1"/><line x1="1" y1="10" x2="15" y2="10" stroke="${c}" stroke-width="1"/><line x1="6" y1="1" x2="6" y2="15" stroke="${c}" stroke-width="1"/><line x1="11" y1="1" x2="11" y2="15" stroke="${c}" stroke-width="1"/></svg>`;
+  }
+  return `<svg class="icon" viewBox="0 0 16 16"><rect x="2" y="1" width="10" height="14" fill="#1e3138" stroke="${c}" stroke-width="1.5"/><line x1="4" y1="5" x2="10" y2="5" stroke="${c}"/><line x1="4" y1="8" x2="10" y2="8" stroke="${c}"/><line x1="4" y1="11" x2="8" y2="11" stroke="${c}"/></svg>`;
+}
+
+function allFiles(){ return LEVEL_DATA.folders.flatMap(f=>f.files); }
+
+function fileContentText(f){
+  if(f.isReadme || f.isReadmeB) return LEVEL_DATA.readmeText;
+  if(f.isMeta || f.isMetaB) return LEVEL_DATA.metaText || "(keine Metadaten vorhanden)";
+  if(f.isRef) return LEVEL_DATA.refText;
+  return f.note + (f.preview ? ('\n\n'+f.preview) : '');
+}
+
+/* ---------------- FILE PREVIEW MODAL ---------------- */
+function openFilePreview(f){
+  const inBag = state.bag.has(f.id);
+  const inNotes = state.infoNotes.has(f.id);
+  const contentHtml = (()=>{
+    let html = `<p style="font-size:18px; color:var(--text-dim);">${f.isReadme||f.isReadmeB||f.isMeta||f.isMetaB||f.isRef ? '' : f.note}</p>`;
+    if(f.isReadme||f.isReadmeB||f.isMeta||f.isMetaB||f.isRef) html = `<pre>${fileContentText(f)}</pre>`;
+    else {
+      if(f.crs) html += `<p style="font-size:18px;">CRS-Angabe im Dateikopf: <strong style="color:var(--csv-c)">${f.crs}</strong></p>`;
+      if(f.preview) html += `<pre>${f.preview}</pre>`;
+    }
+    return html;
+  })();
+  const bagLabel = inBag ? 'Aus Datenablage entfernen' : 'In Datenablage legen';
+  const notesLabel = inNotes ? '📌 Aus Notizen entfernen' : '📌 Zur Info ablegen';
+  openModal(`<h3>${f.name}</h3>${contentHtml}
+    <div class="close-row">
+      <button id="toggleBagBtn">${bagLabel}</button>
+      <button class="secondary" id="toggleNotesBtn">${notesLabel}</button>
+      <button class="secondary" id="closeModalBtn">Schließen</button>
+    </div>`);
+  document.getElementById('closeModalBtn').onclick = closeModal;
+  document.getElementById('toggleBagBtn').onclick = ()=>{
+    if(state.bag.has(f.id)) state.bag.delete(f.id); else state.bag.add(f.id);
+    render(); openFilePreview(f);
+  };
+  document.getElementById('toggleNotesBtn').onclick = ()=>{
+    if(state.infoNotes.has(f.id)) state.infoNotes.delete(f.id); else state.infoNotes.add(f.id);
+    render(); openFilePreview(f);
+  };
+}
+
+function openNotesModal(){
+  const files = [...state.infoNotes].map(id=>allFiles().find(x=>x.id===id));
+  let body;
+  if(files.length===0){
+    body = `<p style="color:var(--text-dim);">Noch keine Dateien zur Info abgelegt. Öffne eine Datei im Explorer und klicke "Zur Info ablegen".</p>`;
+  } else {
+    body = files.map(f=>`
+      <div style="margin-bottom:16px; border-bottom:1px dashed var(--border); padding-bottom:12px;">
+        <div style="color:var(--doc-c); font-size:13px; margin-bottom:6px;">${f.name}</div>
+        <pre>${fileContentText(f)}</pre>
+      </div>`).join('');
+  }
+  openModal(`<h3>📌 Notizen</h3>${body}<div class="close-row"><button class="secondary" id="closeModalBtn">Schließen</button></div>`);
+  document.getElementById('closeModalBtn').onclick = closeModal;
+}
+document.getElementById('notesBtn').onclick = openNotesModal;
+
+/* ---------------- NAVIGATION HELPERS ---------------- */
+function goBack(){
+  const idx = SCENE_ORDER.indexOf(state.scene);
+  if(idx>0){ state.scene = SCENE_ORDER[idx-1]; render(); }
+}
+function footerLeft(msgText){
+  return `<div class="footer-left">${state.scene!=='select' ? '<button class="secondary" id="backBtn">&laquo; Zurück</button>' : ''}<span class="footer-msg" id="footerMsg">${msgText||''}</span></div>`;
+}
+function bindBack(){
+  const b = document.getElementById('backBtn');
+  if(b) b.onclick = goBack;
+}
+
+/* ---------------- SCENES ---------------- */
+function render(){
+  document.getElementById('notesCount').textContent = state.infoNotes.size;
+  sceneIndicator.textContent = ({
+    select:'Versionsauswahl', explorer:'Station 1 · Dateiablage', pipeline:'Station 2 · Pipeline',
+    report:'Station 3 · Bericht', map:'Station 4 · Karte', end:'Feierabend'
+  })[state.scene];
+
+  if(state.scene==='select') renderSelect();
+  else if(state.scene==='explorer') renderExplorer();
+  else if(state.scene==='pipeline') renderPipeline();
+  else if(state.scene==='report') renderReport();
+  else if(state.scene==='map') renderMap();
+  else if(state.scene==='end') renderEnd();
+}
+
+function startLevel(key){
+  LEVEL_DATA = LEVELS[key];
+  state.bag = new Set();
+  state.infoNotes = new Set();
+  state.pipelineCRS = {};
+  state.pipelineChecked = false;
+  state.reportFilled = {};
+  state.reportWordOrder = null;
+  state.selectedChip = null;
+  state.openFolders = new Set(LEVEL_DATA.folders.map(f=>f.name));
+  state.startTime = Date.now();
+  state.endTime = null;
+  state.scene = 'explorer';
+  render();
+}
+
+function renderSelect(){
+  stage.innerHTML = `
+    <div class="intro-box">
+      <h1>Nach acht Wochen Elternzeit bist du zurück im Büro des Geo-Instituts.</h1>
+      <p>Dein Kollege hat in der Zwischenzeit die Feldarbeit für die geplante
+      <strong>Mikroklimakarte von Marburg</strong> erledigt und die Daten irgendwo
+      im Projektordner abgelegt. Bevor du die Karte modellieren und einen
+      Bericht für die Vorgesetzten schreiben kannst, musst du erstmal
+      herausfinden, was er dir hinterlassen hat.</p>
+      <div class="badge-row">
+        <span class="badge">📁 Dateiablage prüfen</span>
+        <span class="badge">🛰 Pipeline & Projektionen</span>
+        <span class="badge">📝 Bericht schreiben</span>
+        <span class="badge">🗺 Karte ablesen</span>
+      </div>
+      <p style="color:var(--text-dim); font-size:18px;">Wähle, wie dein Kollege diesmal gearbeitet hat:</p>
+      <div class="version-grid" id="versionGrid"></div>
+    </div>`;
+
+  document.getElementById('versionGrid').innerHTML = ['A','B','C'].map(key=>{
+    const lv = LEVELS[key];
+    const best = state.completedRuns[key];
+    return `<div class="version-card">
+      <div class="diff-tag">${lv.diffTag}</div>
+      <h3>${lv.versionName}</h3>
+      <p>${lv.blurb}</p>
+      <div class="best-time">${best!==undefined ? 'Bisherige Zeit: '+formatTime(best) : 'Noch nicht gespielt'}</div>
+      <button data-level="${key}">Starten &raquo;</button>
+    </div>`;
+  }).join('');
+
+  stage.querySelectorAll('[data-level]').forEach(btn=>{
+    btn.onclick = ()=> startLevel(btn.dataset.level);
+  });
+
+  footerNav.innerHTML = `<div></div><div></div>`;
+}
+
+function isCorrectFile(f){ return f.collectible === true; }
+
+function renderExplorer(){
+  const foldersHtml = LEVEL_DATA.folders.map(folder=>{
+    const isOpen = state.openFolders.has(folder.name);
+    const filesHtml = folder.files.map(f=>{
+      const inBag = state.bag.has(f.id);
+      return `<div class="file-row ${inBag?'in-bag':''}" data-fileid="${f.id}">
+        ${icon(f.type)}<span class="filename ${f.type}">${f.name}</span>
+        ${inBag ? '<span class="check">✓</span>' : ''}
+      </div>`;
+    }).join('');
+    return `<div class="folder">
+      <div class="folder-head" data-folder="${folder.name}">${icon('folder')}<span>${isOpen?'▾':'▸'} ${folder.name}/</span></div>
+      ${isOpen ? `<div class="folder-children">${filesHtml}</div>` : ''}
+    </div>`;
+  }).join('');
+
+  stage.innerHTML = `
+    <p style="color:var(--text-dim); margin-top:0; font-size:18px;">Klicke eine Datei an, um sie zu öffnen. Im Vorschaufenster kannst du sie in die Datenablage legen oder dir zur Info merken (📌 oben, jederzeit nachlesbar).</p>
+    <div class="explorer-layout">
+      <div class="tree-panel">${foldersHtml}</div>
+      <div class="backpack-panel">
+        <div class="bag-count">DATENABLAGE: ${state.bag.size} DATEIEN</div>
+        <div class="bag-list" id="bagList"></div>
+      </div>
+    </div>`;
+
+  const bagList = document.getElementById('bagList');
+  if(state.bag.size===0){
+    bagList.innerHTML = `<div class="bag-empty">Noch leer.</div>`;
+  } else {
+    bagList.innerHTML = [...state.bag].map(id=>{
+      const f = allFiles().find(x=>x.id===id);
+      return `<div class="bag-item">${f.name}</div>`;
+    }).join('');
+  }
+
+  stage.querySelectorAll('.folder-head').forEach(el=>{
+    el.onclick = ()=>{
+      const name = el.dataset.folder;
+      if(state.openFolders.has(name)) state.openFolders.delete(name);
+      else state.openFolders.add(name);
+      render();
+    };
+  });
+  stage.querySelectorAll('.file-row').forEach(el=>{
+    el.onclick = ()=> openFilePreview(allFiles().find(x=>x.id===el.dataset.fileid));
+  });
+
+  footerNav.innerHTML = `${footerLeft('')}<button id="continueExplorer">Weiter zur Pipeline &raquo;</button>`;
+  bindBack();
+
+  document.getElementById('continueExplorer').onclick = ()=>{
+    const correctIds = new Set(allFiles().filter(isCorrectFile).map(f=>f.id));
+    const bagArr = [...state.bag];
+    const missing = [...correctIds].filter(id=>!state.bag.has(id));
+    const extra = bagArr.filter(id=>!correctIds.has(id));
+    const msg = document.getElementById('footerMsg');
+    if(missing.length===0 && extra.length===0){
+      state.scene='pipeline'; render();
+    } else {
+      let text = "Deine Datenablage passt noch nicht ganz. ";
+      if(extra.length>0) text += `${extra.length} Datei(en) gehören nicht zur aufbereiteten Datengrundlage. `;
+      if(missing.length>0) text += `Es fehlen noch ${missing.length} Datei(en). `;
+      msg.textContent = text;
+    }
+  };
+}
+
+/* ---------------- PIPELINE ---------------- */
+function dialAngle(idx, total){ return -60 + (idx/(total-1))*120; }
+
+function renderPipeline(){
+  const items = [...state.bag].map(id=>allFiles().find(f=>f.id===id));
+  items.forEach(f=>{ if(!state.pipelineCRS[f.id]) state.pipelineCRS[f.id] = LEVEL_DATA.crsOptions[0]; });
+
+  stage.innerHTML = `
+    <div class="target-badge">
+      <div>${icon('doc')}</div>
+      <div>
+        <div class="t-label">ZIEL-BEZUGSSYSTEM</div>
+        <div class="t-value">${LEVEL_DATA.targetCRS} · alle Layer werden hierauf reprojiziert</div>
+      </div>
+    </div>
+    <p style="color:var(--text-dim); font-size:18px; margin-top:0;">Stelle pro Layer die tatsächliche <strong>Quellprojektion</strong> ein (Dial anklicken zum Weiterschalten).</p>
+    <div class="pipeline-visual"><div class="pipeline-list">
+      ${items.map(f=>{
+        const val = state.pipelineCRS[f.id];
+        const idx = LEVEL_DATA.crsOptions.indexOf(val);
+        const angle = dialAngle(idx, LEVEL_DATA.crsOptions.length);
+        const showStatus = state.pipelineChecked;
+        const isOk = val === f.crs;
+        const cls = showStatus ? (isOk ? 'correct' : 'wrong') : '';
+        const dotCls = showStatus ? (isOk ? 'ok' : 'bad') : '';
+        return `<div class="pipe-card ${cls}">
+          <div class="pipe-status ${dotCls}"></div>
+          ${icon(f.type)}
+          <div class="pipe-name">${f.name}</div>
+          <div class="dial" data-fileid="${f.id}" title="Klicken zum Weiterschalten">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="27" fill="var(--panel)" stroke="var(--border-light)" stroke-width="3"/>
+              <circle cx="30" cy="30" r="27" fill="none" stroke="var(--pipe-metal)" stroke-width="1" stroke-dasharray="2 4"/>
+              <line x1="30" y1="30" x2="30" y2="8" stroke="var(--warm)" stroke-width="3" transform="rotate(${angle} 30 30)"/>
+              <circle cx="30" cy="30" r="4" fill="var(--warm)"/>
+            </svg>
+            <div class="dial-label">${val}</div>
+          </div>
+          <button class="secondary" data-fileid2="${f.id}">Datei öffnen</button>
+        </div>`;
+      }).join('')}
+    </div></div>`;
+
+  stage.querySelectorAll('.dial').forEach(dial=>{
+    dial.onclick = ()=>{
+      const fid = dial.dataset.fileid;
+      const opts = LEVEL_DATA.crsOptions;
+      const cur = opts.indexOf(state.pipelineCRS[fid]);
+      state.pipelineCRS[fid] = opts[(cur+1)%opts.length];
+      state.pipelineChecked = false;
+      render();
+    };
+  });
+  stage.querySelectorAll('[data-fileid2]').forEach(btn=>{
+    btn.onclick = ()=> openFilePreview(allFiles().find(x=>x.id===btn.dataset.fileid2));
+  });
+
+  const allCorrect = items.every(f=>state.pipelineCRS[f.id]===f.crs);
+
+  footerNav.innerHTML = `${footerLeft(state.pipelineChecked && !allCorrect ? 'Mindestens ein Layer ist noch falsch eingestellt (rot markiert).' : '')}<button id="runPipeline">Pipeline prüfen &amp; starten &raquo;</button>`;
+  bindBack();
+  document.getElementById('runPipeline').onclick = ()=>{
+    state.pipelineChecked = true;
+    if(allCorrect){ state.scene='report'; }
+    render();
+  };
+}
+
+/* ---------------- REPORT ---------------- */
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+
+function renderReport(){
+  const t = LEVEL_DATA.report;
+  if(!state.reportWordOrder){
+    const pool = [];
+    Object.keys(t.blanks).forEach(key=>{
+      pool.push(t.blanks[key]);
+      (t.distractors[key]||[]).forEach(d=>pool.push(d));
+    });
+    state.reportWordOrder = shuffle(pool);
+  }
+
+  let html = t.template.replace(/\{(b\d)\}/g, (m,key)=>{
+    const filled = state.reportFilled[key];
+    return `<span class="blank ${filled?'filled':''}" data-blank="${key}">${filled ? filled : '____'}</span>`;
+  });
+
+  stage.innerHTML = `
+    <div class="report-text">
+      <div class="report-letterhead">An: Institutsleitung · Betreff: Modellierung Mikroklimakarte Marburg</div>
+      ${html}
+    </div>
+    <div class="word-bank" id="wordBank"></div>`;
+
+  const usedWords = new Set(Object.values(state.reportFilled));
+  document.getElementById('wordBank').innerHTML = state.reportWordOrder.map(w=>{
+    const used = usedWords.has(w);
+    return `<div class="chip ${used?'used':''} ${state.selectedChip===w?'selected':''}" data-word="${w}">${w}</div>`;
+  }).join('');
+
+  stage.querySelectorAll('.chip').forEach(chip=>{
+    chip.onclick = ()=>{
+      if(chip.classList.contains('used')) return;
+      state.selectedChip = state.selectedChip===chip.dataset.word ? null : chip.dataset.word;
+      render();
+    };
+  });
+  stage.querySelectorAll('.blank').forEach(b=>{
+    b.onclick = ()=>{
+      const key = b.dataset.blank;
+      if(state.selectedChip){ state.reportFilled[key] = state.selectedChip; state.selectedChip = null; }
+      else if(state.reportFilled[key]){ delete state.reportFilled[key]; }
+      render();
+    };
+  });
+
+  const allFilled = Object.keys(t.blanks).every(k=>state.reportFilled[k]);
+  const allCorrect = Object.keys(t.blanks).every(k=>state.reportFilled[k]===t.blanks[k]);
+
+  footerNav.innerHTML = `${footerLeft(allFilled && !allCorrect ? 'Prüfe die Lücken nochmal — nicht alles passt.' : 'Wort anklicken, dann Lücke anklicken.')}<button id="submitReport" ${allFilled && allCorrect ? '' : 'disabled'}>Bericht abschicken &raquo;</button>`;
+  bindBack();
+  document.getElementById('submitReport').onclick = ()=>{ state.scene='map'; render(); };
+}
+
+/* ---------------- MAP ---------------- */
+function tempColor(t){
+  const clamp = Math.max(18, Math.min(27, t));
+  const ratio = (clamp-18)/(27-18);
+  const stops = [{r:79,g:143,b:214},{r:143,g:214,b:111},{r:232,g:163,b:61},{r:224,g:100,b:90}];
+  const idx = Math.min(stops.length-2, Math.floor(ratio*(stops.length-1)));
+  const localT = ratio*(stops.length-1)-idx;
+  const a = stops[idx], b = stops[idx+1];
+  const r = Math.round(a.r+(b.r-a.r)*localT);
+  const g = Math.round(a.g+(b.g-a.g)*localT);
+  const bl = Math.round(a.b+(b.b-a.b)*localT);
+  return `rgb(${r},${g},${bl})`;
+}
+
+function renderMap(){
+  const points = LEVEL_DATA.mapPoints;
+  const svgPoints = points.map((p,i)=>`<circle cx="${p.x*3}" cy="${p.y*2.4}" r="6" fill="${tempColor(p.temp)}" stroke="#0d1417" stroke-width="1.5" data-idx="${i}" class="mapdot" style="cursor:pointer;"/>`).join('');
+
+  stage.innerHTML = `
+    <p style="color:var(--text-dim); margin-top:0;">Fertig interpoliert: die Mikroklimakarte von Marburg. Klicke auf einen Punkt für den genauen Messwert.</p>
+    <div class="map-wrap">
+      <div class="map-svg-box">
+        <svg viewBox="0 0 300 240" width="100%" height="320">
+          <rect x="0" y="0" width="300" height="240" fill="#132227"/>
+          <path d="M0 130 Q 80 110 150 140 T 300 120" stroke="#3a5560" stroke-width="6" fill="none" opacity="0.5"/>
+          <rect x="10" y="10" width="280" height="220" fill="none" stroke="#3a5560" stroke-width="2" stroke-dasharray="4 3"/>
+          ${svgPoints}
+        </svg>
+        <div class="point-tip" id="pointTip">Klicke auf einen Punkt, um den Wert zu sehen.</div>
+      </div>
+      <div class="legend-box">
+        <div class="pixel-label" style="font-size:11px; color:var(--accent);">TEMPERATUR (°C)</div>
+        <div class="legend-bar"></div>
+        <div class="legend-scale"><span>18</span><span>21</span><span>24</span><span>27+</span></div>
+        <p style="font-size:16px; color:var(--text-dim); margin-top:16px;">Blau = kühler, Rot = wärmer.</p>
+      </div>
+    </div>`;
+
+  stage.querySelectorAll('.mapdot').forEach(dot=>{
+    dot.onclick = ()=>{
+      const p = points[dot.dataset.idx];
+      document.getElementById('pointTip').textContent = `Messpunkt ${Number(dot.dataset.idx)+1}: ${p.temp.toFixed(1)} °C`;
+    };
+  });
+
+  footerNav.innerHTML = `${footerLeft('')}<button id="finishBtn">Feierabend &raquo;</button>`;
+  bindBack();
+  document.getElementById('finishBtn').onclick = ()=>{ state.endTime = Date.now(); state.scene='end'; render(); };
+}
+
+function formatTime(ms){
+  const total = Math.floor(ms/1000);
+  const m = Math.floor(total/60).toString().padStart(2,'0');
+  const s = (total%60).toString().padStart(2,'0');
+  return `${m}:${s}`;
+}
+
+function renderEnd(){
+  const elapsed = state.endTime - state.startTime;
+  state.completedRuns[LEVEL_DATA.key] = elapsed;
+
+  const others = ['A','B','C'].filter(k=>k!==LEVEL_DATA.key && state.completedRuns[k]!==undefined);
+  let compareHtml = '';
+  if(others.length>0){
+    compareHtml = `<div class="compare-list">${['A','B','C'].filter(k=>state.completedRuns[k]!==undefined).map(k=>
+      `<div><span>${LEVELS[k].versionName}</span><span>${formatTime(state.completedRuns[k])}</span></div>`).join('')}</div>`;
+  }
+
+  stage.innerHTML = `
+    <div class="end-box">
+      <h2 style="color:var(--accent); font-size:16px;">Feierabend.</h2>
+      <p>Karte fertig, Bericht abgeschickt.</p>
+      <div class="time-display">${formatTime(elapsed)}</div>
+      <p style="color:var(--text-dim); font-size:18px;">${LEVEL_DATA.versionName}</p>
+      ${compareHtml}
+    </div>`;
+  footerNav.innerHTML = `<div></div><div style="display:flex; gap:10px;">
+      <button class="secondary" id="restartBtn">Nochmal spielen</button>
+      <button id="selectBtn">Andere Version wählen</button>
+    </div>`;
+  document.getElementById('restartBtn').onclick = ()=> startLevel(LEVEL_DATA.key);
+  document.getElementById('selectBtn').onclick = ()=>{ state.scene='select'; render(); };
+}
+
+render();
+</script>
+</body>
+</html>
