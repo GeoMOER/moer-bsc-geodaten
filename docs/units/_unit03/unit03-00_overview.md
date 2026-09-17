@@ -31,8 +31,6 @@ Am Ende dieser Unit sind Studierende in der Lage ...
 * einfache Qualitätskontrollen durchführen
 * Bereinigungsschritte durchzuführen
 
-{% include video id="3WcUTMWa9fU" provider="youtube" %}
-
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 ## Organisatorisches
 Zeit für Feedback unsererseits!

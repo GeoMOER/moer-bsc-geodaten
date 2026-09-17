@@ -11,7 +11,6 @@ header:
 <!-- Übungsaufgabe 01: Temperaturen heraus schreiben -->
 ## Übungsaufgabe 01
 
-- Messen Sie die Temperatur an einem Ort und zu einem Zeitpunkt ihrer Wahl, Notieren Sie Datum,Uhrzeit und Standort in latitude/longitude. Wenn Sie kein Thermometer zur Verfügung haben, lesen Sie einen Wert aus einer Wetterapp ab. 
 - Kapitel "Betriebssystem und BIOS" lesen
 - textfile <!-- hier titel/Pfad einfügen --> herunterladen, die richtige Codierung finden
 - Welche Codierung wurde genutzt? (SingleChoice)

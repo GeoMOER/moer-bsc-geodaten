@@ -27,9 +27,9 @@ Beim Sortieren wird die Reihenfolge der **gesamten Zeilen** nach dem Inhalt eine
 -->
 
 **Nach mehreren Kriterien sortieren:**
-Über **Daten → Sortieren** (nicht A–Z/Z–A, sondern die Schaltfläche „Sortieren" selbst) öffnet sich ein Dialog, in dem Sie mehrere Sortierebenen festlegen können – z. B. zunächst nach `Standortname` (alphabetisch), und innerhalb jedes Standorts zusätzlich nach `Datum` (chronologisch). Über „Ebene hinzufügen" fügen Sie weitere Sortierkriterien hinzu.
+Über **Daten → Sortieren** (nicht A–Z/Z–A, sondern die Schaltfläche „Sortieren" selbst) öffnet sich ein Dialog, in dem Sie mehrere Sortierebenen festlegen können – z. B. zunächst nach `Standort` (alphabetisch), und innerhalb jedes Standorts zusätzlich nach `Datum` (chronologisch). Über „Ebene hinzufügen" fügen Sie weitere Sortierkriterien hinzu.
 
-<!-- **Screenshot 18:** Dialogfenster „Sortieren" mit zwei definierten Ebenen: „Sortieren nach: Standortname, A bis Z" und „Dann nach: Datum, Älteste zuerst", inklusive der Schaltfläche „Ebene hinzufügen".
+<!-- **Screenshot 18:** Dialogfenster „Sortieren" mit zwei definierten Ebenen: „Sortieren nach: Standort, A bis Z" und „Dann nach: Datum, Älteste zuerst", inklusive der Schaltfläche „Ebene hinzufügen".
 -->
 
 ##  Filtern
@@ -40,7 +40,7 @@ Während Sortieren die Reihenfolge verändert, blendet **Filtern** einzelne Zeil
 1. Klicken Sie in eine beliebige Zelle innerhalb Ihrer Datentabelle
 2. Menüband: **Daten → Filtern** – in der Kopfzeile jeder Spalte erscheint nun ein kleines Dropdown-Symbol (Pfeil)
 
-<!-- **Screenshot 19:** Tabellenkopf mit sichtbaren Filter-Dropdown-Pfeilen neben jeder Spaltenüberschrift (Standortname, Latitude, Longitude, Datum, Uhrzeit, Temperatur, Messmethode).
+<!-- **Screenshot 19:** Tabellenkopf mit sichtbaren Filter-Dropdown-Pfeilen neben jeder Spaltenüberschrift (Standort, Latitude, Longitude, Datum, Uhrzeit, Temperatur, Messmethode).
 -->
 **Filter anwenden:**
 - Klick auf das Dropdown-Symbol einer Spalte öffnet eine Liste aller in dieser Spalte vorkommenden Werte, jeweils mit Checkbox
@@ -69,15 +69,15 @@ Während Sortieren die Reihenfolge verändert, blendet **Filtern** einzelne Zeil
 
 ---
 
-## Übung: Klimadaten filtern und sortieren
+## Übung: Sensordaten filtern und sortieren
 
-Nutzen Sie Ihre zusammengeführte Excel-Tabelle mit den eigenen und den zusätzlichen Klimadaten aus den vorherigen Kapiteln.
+Nutzen Sie Ihre Arbeitsmappe mit den beiden Sensordatensätzen aus den vorherigen Kapiteln (Blatt `Datensatz_1` bzw. `Datensatz_2`).
 
 1. Aktivieren Sie den Filter für Ihre gesamte Tabelle (**Daten → Filtern**).
 2. Filtern Sie die Tabelle so, dass **nur Messungen eines einzigen Standorts** angezeigt werden. Notieren Sie, wie viele Zeilen danach sichtbar sind (Statusleiste).
 3. Erweitern Sie den Filter der Spalte „Temperatur" um einen **Zahlenfilter**, der nur Werte über einem von Ihnen gewählten Schwellenwert anzeigt (z. B. „größer als 10").
 4. Setzen Sie beide Filter wieder zurück, sodass alle Zeilen sichtbar sind.
-5. Sortieren Sie die gesamte Tabelle **zuerst nach Standortname (A–Z), dann nach Datum (älteste zuerst)** über den Dialog „Daten → Sortieren" mit zwei Sortierebenen.
+5. Sortieren Sie die gesamte Tabelle **zuerst nach Standort (A–Z), dann nach Datum (älteste zuerst)** über den Dialog „Daten → Sortieren" mit zwei Sortierebenen.
 6. Markieren Sie versuchsweise **nur die Spalte „Temperatur"** (nicht die ganze Tabelle) und sortieren Sie diese für sich allein. Bestätigen Sie im erscheinenden Warndialog bewusst **„Mit der aktuellen Auswahl fortfahren"** statt „Auswahl erweitern". Beobachten Sie, was mit den anderen Spalten passiert – prüfen Sie anhand einer Ihnen bekannten Zeile, ob Standort und Temperatur noch zusammenpassen.
 7. Machen Sie diesen letzten Schritt mit `Strg` + `Z` rückgängig und wiederholen Sie die Sortierung korrekt, diesmal mit „Auswahl erweitern".
 8. Speichern Sie Ihre Datei abschließend.

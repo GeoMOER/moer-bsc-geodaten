@@ -9,7 +9,7 @@ header:
 ---
 <!-- Themenblock 02-02: Datentypen, Encoding-Probleme, Tidy Data, Koordinatenformate (Basic) -->
 
-Im letzten Kapitel haben Sie Ihre eigenen Klimadaten in Excel eingegeben. Nun müssen Sie verstehen, **wie Excel diese Daten intern behandelt** – denn nicht jede Zelle, die wie eine Zahl aussieht, wird von Excel auch als Zahl erkannt. Genau hier entstehen die häufigsten Fehlerquellen bei der Datenerfassung: falsch erkannte Datentypen, unsichtbare Zeichencodierungsprobleme, z.B. bei Ortsnamen, uneinheitlich strukturierte Koordinatenspalten und Einheiten, die versehentlich direkt mit in die Zahl geschrieben werden. Dieses Kapitel schafft die Grundlage, um solche Probleme künftig zu erkennen und zu vermeiden.
+Im letzten Kapitel haben Sie Ihre beiden bereitgestellten Sensordatensätze kennengelernt und in einer gemeinsamen Arbeitsmappe organisiert. Nun müssen Sie verstehen, **wie Excel diese Daten intern behandelt** – denn nicht jede Zelle, die wie eine Zahl aussieht, wird von Excel auch als Zahl erkannt. Genau hier entstehen die häufigsten Fehlerquellen bei der Datenerfassung: falsch erkannte Datentypen, unsichtbare Zeichencodierungsprobleme, z.B. bei Ortsnamen, uneinheitlich strukturierte Koordinatenspalten und Einheiten, die versehentlich direkt mit in die Zahl geschrieben werden. Dieses Kapitel schafft die Grundlage, um solche Probleme künftig zu erkennen und zu vermeiden.
 
 ## Skalenniveau und Excel Zellformat
 
@@ -24,7 +24,7 @@ Beide Ebenen hängen zusammen, sind aber nicht dasselbe: Eine Variable auf Verh�
 
 | Skalenniveau | Bedeutung | Beispiel aus unserem Datensatz |
 |---|---|---|
-| Nominal | Kategorie ohne Rangfolge | Standortname, Messmethode (Thermometer, Wetter-App) |
+| Nominal | Kategorie ohne Rangfolge | Standort, Messmethode (Thermometer, Wetter-App) |
 | Ordinal | Kategorie *mit* sinnvoller Rangfolge, aber ohne gleichmäßige Abstände | *(kommt in unserem bisherigen Datensatz nicht vor)* – z. B. Bewölkungsgrad (klar < leicht bewölkt < bewölkt < bedeckt), falls Sie diesen zusätzlich erheben würden |
 | Intervall | Numerisch, gleiche Abstände vergleichbar, aber **kein echter Nullpunkt** | Temperatur in °C, Uhrzeit |
 | Verhältnis (Ratio) | Numerisch, **echter Nullpunkt** vorhanden, auch Verhältnisse sinnvoll interpretierbar | Luftdruck (hPa), Distanz/Höhe |
@@ -46,7 +46,7 @@ Beide Ebenen hängen zusammen, sind aber nicht dasselbe: Eine Variable auf Verh�
 
 | Skalenniveau | Sinnvolles Excel-Zellformat | Beispiel |
 |---|---|---|
-| Nominal | Text | Standortname |
+| Nominal | Text | Standort |
 | Ordinal | Text (ggf. mit benutzerdefinierter Sortierreihenfolge) oder Zahl als Rang-Code | Bewölkungsgrad, falls erhoben |
 | Intervall | Zahl bzw. Datum/Uhrzeit | Temperatur, Uhrzeit |
 | Verhältnis | Zahl | Luftdruck |
@@ -94,9 +94,9 @@ Format `00` zeigt den Wert `1` in einer Spalte `Unit` als `01` an, `12` bleibt `
 
 ---
 
-## Übung: Units und Zellformate in den Klimadaten
+## Übung: Units und Zellformate in den Sensordaten
 
-Nutzen Sie Ihre Excel-Datei mit den Klimadaten (bzw. die im letzten Kapitel zusammengeführte Tabelle mit den zusätzlichen Messungen Ihrer Kommiliton:innen).
+Nutzen Sie Ihre Excel-Arbeitsmappe mit den beiden Sensordatensätzen aus dem letzten Kapitel.
 
 1. Ergänzen Sie, falls noch nicht vorhanden, ganz links eine Spalte **„ID“** mit fortlaufender Nummerierung Ihrer Messungen (1, 2, 3, …).
 2. Formatieren Sie **die IDs** so, dass einstellige Zahlen zweistellig angezeigt werden (aus „1“ soll „01“ werden, aus „2“ „02“, aus „3“ „03“).

@@ -7,7 +7,6 @@ header:
   image_description: "Cloudscape Over the Philippine Sea"
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
-
 <!-- Themenblock 02-01: Einführung in Excel, Grundlagen -->
  Bevor wir mit konkreten Datentypen und -formaten arbeiten, verschaffen wir uns zunächst einen Überblick über das Werkzeug, mit dem wir diese in diesem Kurs anwenden: Microsoft Excel. Wir lernen die Oberfläche und die grundlegenden Möglichkeiten des Programms kennen – als Grundlage für alle folgenden Übungen.
 
@@ -28,12 +27,7 @@ header:
 
 ## Grundlegende Bearbeitung in Excel
 
-
-> Aufgabe (7 min)
-* Öffnen Sie MS Excel
-* Geben Sie die Daten, die Sie als Hausaufgabe messen sollten, in die Tabelle ein. Erwartete Werte: Standortname, Latuitude, Longitude, Datum, Uhrzeit, Temperatur (°C), Messmethode (Bsp. Thermometer, Wetter App)
-
-Nachdem Sie sich einen ersten Überblick über die Excel-Oberfläche verschafft haben, lernen wir nun die grundlegenden Techniken kennen, mit denen Sie in Excel Daten bearbeiten, verschieben und organisieren.
+Nachdem Sie sich einen ersten Überblick über die Excel-Oberfläche verschafft haben, lernen wir nun die grundlegenden Techniken kennen, mit denen Sie in Excel Daten bearbeiten, verschieben und organisieren. Sie erhalten dafür zwei reale Datensätze aus dem Marburger Umweltsensoren-Netzwerk (automatisch erfasste Temperaturmessungen mehrerer Stationen im Stadtgebiet), mit denen Sie durch den gesamten weiteren Kursverlauf arbeiten werden.
 
 ### Zellen markieren
 
@@ -122,22 +116,23 @@ Das kann dazu führen, dass Ihre Daten **nicht mehr zusammenpassen**: Eine Zelle
 
 ---
 
-> Übung: Klimadaten organisieren (15 min)
+> Übung: Sensordaten organisieren (15 min)
 
-Sie haben bereits Ihre eigenen Klimadaten (Standortname, Latitude, Longitude, Datum, Uhrzeit, Temperatur, Messmethode) in eine Excel-Tabelle eingetragen. Um mit einer größeren Datenmenge üben zu können, erhalten Sie zusätzlich ein zweites Tabellenblatt mit Messdaten von Kommiliton:innen.
+Sie erhalten zwei Dateien mit echten Messdaten aus dem Marburger Umweltsensoren-Netzwerk: `Datensatz1.xlsx` und `Datensatz2.xlsx`. Beide enthalten Temperaturmessungen mehrerer Stationen – **aber mit unterschiedlich benannten und unterschiedlich angeordneten Spalten**. Das ist Absicht: Genau dieses Problem – Daten aus verschiedenen Quellen mit uneinheitlicher Struktur – begegnet Ihnen in der Praxis ständig, und Sie werden diese beiden Datensätze im späteren Kursverlauf zusammenführen.
 
-**Wichtig:** Die Spalten auf dem zweiten Blatt sind nicht unbedingt identisch benannt oder gleich angeordnet wie auf Ihrem eigenen Blatt. Überlegen Sie sich selbst, wie Sie die Daten sinnvoll und einheitlich strukturieren wollen, bevor Sie sie zusammenführen.
+**Wichtig:** Beide Dateien sind bewusst **unaufbereitet** – mit doppelten Zeilen, uneinheitlicher Schreibweise bei Standortn und einer noch nicht aufgetrennten Koordinatenspalte. Das ist kein Fehler, sondern Absicht: Sie werden diese Dateien in den kommenden Kapiteln Schritt für Schritt bereinigen. In diesem Kapitel geht es zunächst nur um die reine Handhabung, nicht darum, die Fehler bereits zu beheben.
 
-1. Öffnen Sie Ihre bestehende Excel-Datei mit den eigenen Messdaten.
-2. Fügen Sie ein neues Tabellenblatt hinzu und kopieren Sie die bereitgestellten zusätzlichen Messdaten hinein (Rechtsklick auf ein Tabellenblatt → „Verschieben oder kopieren“, oder Daten direkt kopieren/einfügen).
-3. Formatieren Sie auf beiden Blättern die Überschriften der Spalten erkennbar (z. B. fett), sodass klar ist, wo die Tabelle beginnt.
-4. Prüfen Sie mit `Strg` + `Ende`, wie weit die Tabelle auf dem zweiten Blatt tatsächlich reicht.
-5. Vergleichen Sie die Spaltennamen und -reihenfolge beider Blätter. Passen Sie die Spaltenüberschriften des zweiten Blatts so an, dass sie zu Ihrer eigenen Struktur passen (z. B. „Ort“ → „Standortname“).
-6. Duplizieren Sie auf Ihrem eigenen Blatt die Spalte „Messmethode“ (kopieren und einfügen als neue Spalte).
+1. Öffnen Sie beide Dateien in Excel.
+2. Vergleichen Sie die Spaltenüberschriften: Welche Spalten aus `Datensatz1` entsprechen welchen Spalten aus `Datensatz2`, obwohl sie unterschiedlich heißen (z. B. `Standort` vs. `Ort`)? Notieren Sie sich diese Zuordnung – Sie brauchen sie später beim Zusammenführen.
+3. Kopieren Sie das Tabellenblatt aus `Datensatz2.xlsx` in Ihre `Datensatz1.xlsx`-Datei (Rechtsklick auf den Tabellenblatt-Reiter → „Verschieben oder kopieren…" → Häkchen bei „Kopie erstellen"), sodass beide Tabellen in einer Arbeitsmappe liegen.
+4. Formatieren Sie auf beiden Blättern die Überschriften der Spalten erkennbar (z. B. fett), sodass klar ist, wo die Tabelle beginnt.
+5. Prüfen Sie mit `Strg` + `Ende` auf beiden Blättern, wie weit die jeweilige Tabelle tatsächlich reicht.
+6. Duplizieren Sie auf dem Blatt `Datensatz_1` die Spalte „Messmethode" (kopieren und einfügen als neue Spalte).
 7. Löschen Sie die soeben duplizierte Spalte wieder und speichern Sie die Datei. Prüfen Sie erneut mit `Strg` + `Ende`, ob sich die Größe der Tabelle verändert hat.
-8. Fügen Sie ganz links eine neue Spalte ein und benennen Sie sie „ID“. Vergeben Sie fortlaufende Nummern für Ihre Messungen.
-9. Verschieben Sie testweise eine einzelne Zeile per Drag & Drop an eine andere Position im Tabellenblatt – und machen Sie diese Änderung anschließend mit `Strg` + `Z` wieder rückgängig.
-10. Speichern Sie Ihre Datei abschließend.
+8. Fügen Sie auf beiden Blättern ganz links eine neue Spalte ein und benennen Sie sie „ID". Vergeben Sie fortlaufende Nummern für die Messungen.
+9. Fügen Sie testweise **eine einzelne Zelle** (nicht eine ganze Zeile!) mitten in eine der Tabellen ein und beobachten Sie, was mit den umliegenden Werten passiert. Machen Sie die Aktion anschließend mit `Strg` + `Z` rückgängig und wiederholen Sie den Vorgang korrekt mit einer **ganzen Zeile**.
+10. Speichern Sie Ihre Datei ab – Sie arbeiten in den kommenden Kapiteln mit genau dieser Datei weiter.
+
 
 
 <!--

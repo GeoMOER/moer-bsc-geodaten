@@ -8,7 +8,6 @@ header:
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
 
-
 Bisher haben Sie ausschließlich innerhalb einer Excel-Datei (.xlsx) gearbeitet. In der Praxis werden Daten jedoch häufig als **Textdatei** ausgetauscht – etwa wenn Sie Messdaten von einem Sensor, einer Website oder einer anderen Software erhalten, die kein Excel-Format unterstützt. Textdateien sind das kleinste gemeinsame Format, das praktisch jede Software lesen kann – dafür müssen Sie beim Import selbst festlegen, wie die Datei strukturiert ist und welche Datentypen die einzelnen Spalten haben sollen. Genau das üben Sie in diesem Kapitel.
 
 ## Themenüberschrift 01: Textdatei vs. CSV-Datei
@@ -24,7 +23,7 @@ Beide Dateien enthalten **keine Formatierung** (keine Schriftart, keine Zellfarb
 
 ## Übung: Export einer Tabelle
 
-Nutzen Sie eine die Beispieltabelle 
+Nutzen Sie einen kleinen Ausschnitt (10–15 Zeilen) aus Ihrem Blatt `Datensatz_1`.
 
 1. Speichern Sie die Tabelle über **Datei → Speichern unter** als **Textdatei (Tabstopp-getrennt)** (`.txt`) mit dem Dateinamen `IhrName_export_Datum_Version.txt` (z. B. `Mueller_export_20250316_v1.txt`).
 2. Speichern Sie dieselbe Tabelle zusätzlich als **CSV (Comma Separated Values)** (`.csv`) mit dem Dateinamen `IhrName_export_Datum_Version.csv`.
@@ -43,7 +42,7 @@ Wenn Sie umgekehrt eine `.txt`- oder `.csv`-Datei erhalten und in Excel öffnen 
 
 Excel zeigt zunächst eine Vorschau der Datei und schlägt eine Zeichenkodierung vor (meist „Windows" oder „UTF-8"). Genau hier setzt das Encoding-Problem aus einem früheren Kapitel an: Wird die falsche Kodierung gewählt, erscheinen Umlaute bereits in dieser Vorschau verstümmelt (`Cölbe` → `CÃ¶lbe`). **Prüfen Sie die Vorschau sorgfältig, bevor Sie fortfahren** – ein falsch gewähltes Encoding lässt sich zwar später korrigieren, aber deutlich umständlicher, als es hier gleich richtig einzustellen.
 
-<!-- Screetshot Erster Schritt des Text-Import-Assistenten mit Dropdown-Menü „Dateiursprung", in dem „UTF-8" ausgewählt ist, und einer Datenvorschau darunter, in der ein Standortname mit Umlaut korrekt angezeigt wird (Vergleich: falsch gewählte Kodierung mit verstümmelter Vorschau daneben). -->
+<!-- Screetshot Erster Schritt des Text-Import-Assistenten mit Dropdown-Menü „Dateiursprung", in dem „UTF-8" ausgewählt ist, und einer Datenvorschau darunter, in der ein Standort mit Umlaut korrekt angezeigt wird (Vergleich: falsch gewählte Kodierung mit verstümmelter Vorschau daneben). -->
 
 ### Schritt 2: Trennzeichen festlegen
 
@@ -55,7 +54,7 @@ Hier geben Sie an, welches Zeichen die Spalten in der Datei voneinander trennt �
 
 Im letzten Schritt können Sie für **jede Spalte einzeln** festlegen, welchen Datentyp Excel beim Import verwenden soll: Standard, Text, Datum (mit wählbarem Datumsformat, z. B. `TMJ` oder `MTJ` – wichtig bei importierten Dateien aus dem englischsprachigen Raum!), oder die Spalte komplett überspringen.
 
-**Das ist der entscheidende Schritt, um spätere Probleme zu vermeiden:** Legen Sie hier z. B. Ihre Spalte `Standortname` explizit als **Text** fest (auch wenn sie nur Zahlen wie Postleitzahlen enthielte, die keine führenden Nullen verlieren sollen), und Ihre Spalte `Datum` mit dem passenden Format, falls die Quelldatei ein anderes Datumsformat verwendet als in Deutschland üblich (z. B. `MM/TT/JJJJ` bei einer aus den USA stammenden Datei). Ein nachträgliches Ändern des Datentyps nach dem Import ist – wie Sie bereits aus dem Kapitel zu Zellformaten wissen – deutlich fehleranfälliger, als ihn gleich beim Import korrekt festzulegen.
+**Das ist der entscheidende Schritt, um spätere Probleme zu vermeiden:** Legen Sie hier z. B. Ihre Spalte `Standort` explizit als **Text** fest (auch wenn sie nur Zahlen wie Postleitzahlen enthielte, die keine führenden Nullen verlieren sollen), und Ihre Spalte `Datum` mit dem passenden Format, falls die Quelldatei ein anderes Datumsformat verwendet als in Deutschland üblich (z. B. `MM/TT/JJJJ` bei einer aus den USA stammenden Datei). Ein nachträgliches Ändern des Datentyps nach dem Import ist – wie Sie bereits aus dem Kapitel zu Zellformaten wissen – deutlich fehleranfälliger, als ihn gleich beim Import korrekt festzulegen.
 
 <!-- **Screenshot 13:** Dritter Schritt des Assistenten, eine Spalte ist markiert und im Dropdown „Spaltendatenformat" ist „Datum: MTJ" ausgewählt, sichtbar als Kopfzeile über der jeweiligen Spalte in der Vorschau. -->
 
@@ -65,3 +64,38 @@ Im letzten Schritt können Sie für **jede Spalte einzeln** festlegen, welchen D
 3. Richtiges Trennzeichen wählen (sonst Tidy-Data-Verstoß)
 4. Datentyp pro Spalte gezielt festlegen, statt „Standard" für alles zu belassen
 
+### Zusatz zu Schritt 3: Dezimaltrennzeichen explizit festlegen
+
+Neben dem Datentyp je Spalte lohnt sich bei importierten Zahlenwerten ein zweiter Blick auf das **Dezimaltrennzeichen**. Deutsche Excel-Installationen erwarten standardmäßig das **Komma** (`8,4`), viele internationale Quellen – GPS-Geräte, R-Exporte, viele Web-APIs – liefern Zahlen dagegen mit **Punkt** (`8.4`). Wird das nicht korrigiert, liest Excel `23.65` im schlimmsten Fall als „2365" statt „23,65" – ohne Fehlermeldung.
+
+**Weg 1 – Aktuelle Excel-Version (Microsoft 365, Power-Query-Import):**
+1. Im Vorschaufenster **„Daten transformieren"** klicken (öffnet den Power-Query-Editor), nicht direkt „Laden"
+2. Betroffene Spalte anklicken
+3. Falls Power Query die Spalte bereits automatisch (und falsch) umgewandelt hat: Im Bereich „Angewendete Schritte" rechts den Schritt „Geänderter Typ" per X **löschen**, sodass die Spalte wieder als Text vorliegt
+4. Rechtsklick auf die Spalte → **„Datentyp ändern" → „Unter Verwendung von Gebietsschema…"**
+5. Gebietsschema **„Englisch (USA)"** wählen, Zieldatentyp „Dezimalzahl"
+
+<!-- Screenshot: Power-Query-Editor, rechter Bereich "Angewendete Schritte" mit dem Schritt "Geänderter Typ" zum Löschen markiert, darunter das Dialogfenster "Datentyp ändern mit Gebietsschema" mit Auswahl "Englisch (USA)". -->
+
+**Weg 2 – Ältere Excel-Version (klassischer Text-Import-Assistent):**
+Im letzten Schritt des Assistenten die Schaltfläche **„Erweitert…"** anklicken, dort **Dezimaltrennzeichen** (Punkt) und **1000er-Trennzeichen** direkt festlegen.
+
+<!-- Screenshot: Dritter Schritt des klassischen Text-Import-Assistenten mit Schaltfläche "Erweitert…" und dem sich öffnenden Dialog "Erweiterte Texterkennungseinstellungen". -->
+
+> Welchen der beiden Wege Sie sehen, hängt von Ihrer Excel-Version und Konfiguration ab – prüfen Sie zuerst, welcher Dialog bei Ihnen erscheint (unter „Datei → Optionen → Daten" lässt sich der „Legacy-Datenimport-Assistent" bei Bedarf reaktivieren).
+
+**Kontrolle nach dem Import:** Prüfen Sie mit `=MIN(...)`/`=MAX(...)`, ob die Werte plausibel sind (z. B. Temperaturwerte im einstelligen bis niedrigen zweistelligen Bereich, nicht im Tausenderbereich).
+
+---
+
+## Übung: Import einer fehlerhaften Sensordaten-Datei
+
+Sie erhalten die Datei `Import_roh.csv` – einen Export aus dem Sensor-System, der **absichtlich mehrere typische Fehlerquellen** enthält: falsches Encoding, ein untypisches Trennzeichen und US-Datumsformat. Ihre Aufgabe: die Datei so importieren, dass am Ende Standortname, Zeitpunkt und Temperatur korrekt und rechenfähig in Excel vorliegen.
+
+1. Importieren Sie die Datei über **Daten → Aus Text/CSV** (nicht per Doppelklick).
+2. Prüfen Sie die Zeichenkodierung anhand der Stationsnamen mit Umlaut/ß (z. B. `Schloßpark`, `Neuhöfe`) – erscheinen diese verstümmelt, wechseln Sie die Kodierung.
+3. Prüfen und korrigieren Sie das Trennzeichen.
+4. Legen Sie die Datumsspalte mit dem passenden Format fest (US-Format `MM/DD/YYYY`).
+5. Prüfen und korrigieren Sie ggf. das Dezimaltrennzeichen der Temperaturspalte (siehe oben).
+6. Kontrollieren Sie Ihr Ergebnis mit `=MIN(...)`/`=MAX(...)` auf Plausibilität.
+7. Speichern Sie das importierte Ergebnis als eigene `.xlsx`-Datei.

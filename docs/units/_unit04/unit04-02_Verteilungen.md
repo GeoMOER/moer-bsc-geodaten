@@ -14,7 +14,7 @@ Zahlen allein zeigen nicht, *wie* die Werte verteilt sind – ob sie sich um ein
 
 Ein Histogramm teilt den Wertebereich einer Variable in gleich breite Intervalle („Klassen" oder „Bins") ein und zeigt als Balkenhöhe, wie viele Beobachtungen in jedes Intervall fallen. Anders als bei einem gewöhnlichen Balkendiagramm gibt es zwischen den Balken **keine Lücken** – das macht deutlich, dass es sich um eine fortlaufende, keine kategoriale Skala handelt.
 
-> **Screenshot 29:** Histogramm der Temperaturwerte mit x-Achse „Temperatur (°C)" in Intervallen von 2 °C (z. B. 4–6, 6–8, 8–10, …) und y-Achse „Anzahl Messungen", Balken lückenlos aneinandergereiht, eine leichte Rechtsschiefe der Verteilung erkennbar.
+<!-- **Screenshot 29:** Histogramm der Temperaturwerte mit x-Achse „Temperatur (°C)" in Intervallen von 2 °C (z. B. 4–6, 6–8, 8–10, …) und y-Achse „Anzahl Messungen", Balken lückenlos aneinandergereiht, eine leichte Rechtsschiefe der Verteilung erkennbar. -->
 
 ## Histogramm in Excel erstellen
 
@@ -22,7 +22,7 @@ Ein Histogramm teilt den Wertebereich einer Variable in gleich breite Intervalle
 2. Menüband: **Einfügen → Diagramme → Statistikdiagramm → Histogramm**
 3. Excel wählt automatisch eine Klassenbreite („Bin-Breite") – diese lässt sich über Rechtsklick auf die x-Achse → „Achse formatieren" manuell anpassen
 
-> **Screenshot 30:** Rechte Seitenleiste „Achse formatieren" mit Eingabefeldern „Bin-Breite" und „Anzahl der Bins", sichtbar mit Beispielwert `2` bei der Bin-Breite.
+<!-- **Screenshot 30:** Rechte Seitenleiste „Achse formatieren" mit Eingabefeldern „Bin-Breite" und „Anzahl der Bins", sichtbar mit Beispielwert `2` bei der Bin-Breite. -->
 
 **Warum die Klassenbreite wichtig ist:** Zu breite Klassen verschleiern Muster in den Daten (alles landet in 2–3 Balken), zu schmale Klassen erzeugen ein „zerklüftetes" Bild mit vielen einzelnen, kaum interpretierbaren Balken. Probieren Sie bei eigenen Daten ruhig 2–3 verschiedene Bin-Breiten aus, bevor Sie sich für eine Darstellung entscheiden.
 
@@ -34,7 +34,7 @@ Zwei Datensätze können denselben Mittelwert und dieselbe Standardabweichung ha
 
 # Boxplot
 
-Der Boxplot fasst dieselbe Information wie ein Histogramm – Lage, Streuung, Ausreißer – kompakter zusammen und eignet sich dadurch besonders gut, um **mehrere Gruppen nebeneinander zu vergleichen** (z. B. Ihre Klimadaten je Standort), was mit mehreren Histogrammen nebeneinander schnell unübersichtlich würde.
+Der Boxplot fasst dieselbe Information wie ein Histogramm – Lage, Streuung, Ausreißer – kompakter zusammen und eignet sich dadurch besonders gut, um **mehrere Gruppen nebeneinander zu vergleichen** (z. B. Ihre Sensordaten je Standort), was mit mehreren Histogrammen nebeneinander schnell unübersichtlich würde.
 
 ## Aufbau eines Boxplots
 
@@ -43,15 +43,15 @@ Der Boxplot fasst dieselbe Information wie ein Histogramm – Lage, Streuung, Au
 - Die „**Whisker**" (Antennen) reichen bis zum kleinsten bzw. größten Wert **innerhalb** des 1,5-fachen Interquartilsabstands
 - Einzelne Punkte **außerhalb** der Whisker gelten als statistische **Ausreißer**
 
-> **Screenshot 31:** Schematischer Boxplot mit beschrifteten Elementen: unterer Whisker, Q1 (untere Boxkante), Medianlinie in der Box, Q3 (obere Boxkante), oberer Whisker, sowie ein einzelner Punkt oberhalb des oberen Whiskers, beschriftet als „Ausreißer".
+<!-- **Screenshot 31:** Schematischer Boxplot mit beschrifteten Elementen: unterer Whisker, Q1 (untere Boxkante), Medianlinie in der Box, Q3 (obere Boxkante), oberer Whisker, sowie ein einzelner Punkt oberhalb des oberen Whiskers, beschriftet als „Ausreißer". -->
 
 ## Boxplot in Excel erstellen
 
-1. Markieren Sie die Datenspalte (z. B. `Temperatur`), ggf. gruppiert nach einer zweiten Spalte (z. B. `Standortname`), wenn Sie mehrere Boxplots nebeneinander vergleichen möchten
+1. Markieren Sie die Datenspalte (z. B. `Temperatur`), ggf. gruppiert nach einer zweiten Spalte (z. B. `Standort`), wenn Sie mehrere Boxplots nebeneinander vergleichen möchten
 2. Menüband: **Einfügen → Diagramme → Statistikdiagramm → Kastengrafik (Box-Whisker)**
 3. Excel berechnet Quartile und Ausreißer automatisch und stellt sie grafisch dar
 
-> **Screenshot 32:** Excel mit markiertem Datenbereich (zwei Spalten: „Standortname" und „Temperatur"), Menüband-Reiter „Einfügen" mit hervorgehobener Schaltfläche „Statistikdiagramm" und Untermenü, in dem „Kastengrafik" sichtbar ist.
+<!-- **Screenshot 32:** Excel mit markiertem Datenbereich (zwei Spalten: „Standort" und „Temperatur"), Menüband-Reiter „Einfügen" mit hervorgehobener Schaltfläche „Statistikdiagramm" und Untermenü, in dem „Kastengrafik" sichtbar ist. -->
 
 **Praxisnutzen für Ihren Datensatz:** Stellen Sie die Temperaturwerte mehrerer Standorte als Boxplots nebeneinander dar, erkennen Sie auf einen Blick, welcher Standort stärker schwankende Werte hat (breitere Box) oder einzelne untypische Ausreißer-Messungen enthält – deutlich schneller als beim Vergleich einzelner Mittelwerte in einer Tabelle.
 

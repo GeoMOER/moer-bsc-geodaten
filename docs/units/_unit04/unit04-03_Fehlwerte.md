@@ -69,17 +69,17 @@ Bevor Sie überhaupt mit den Daten rechnen, sollten Sie sich einen Überblick ve
 **Fehlende Werte pro Station zählen:** Mit `ZÄHLENWENNS` lässt sich das direkt lösen:
 
 ```
-=ZÄHLENWENNS(Standortname_Bereich;"Marburg";Temperatur_Bereich;"")
+=ZÄHLENWENNS(Standort_Bereich;"Firmaneiplatz";Temperatur_Bereich;"")
 ```
 
 
-Diese Formel zählt, wie viele Zeilen mit `Standortname = "Marburg"` gleichzeitig eine leere Temperaturspalte haben.
+Diese Formel zählt, wie viele Zeilen mit `Standort = "Firmaneiplatz"` gleichzeitig eine leere Temperaturspalte haben.
 
 **Übersichtlicher: eine kleine Fehlwert-Übersichtstabelle je Station**
 
 | Standort | Anzahl Messungen gesamt | Davon fehlend (Temperatur) | Anteil fehlend |
 |---|---|---|---|
-| Marburg | `=ZÄHLENWENN(Standortname_Bereich;"Marburg")` | `=ZÄHLENWENNS(Standortname_Bereich;"Marburg";Temperatur_Bereich;"")` | `=C2/B2` (als Prozent formatiert) |
+| Firmaneiplatz | `=ZÄHLENWENN(Standort_Bereich;"Firmaneiplatz")` | `=ZÄHLENWENNS(Standort_Bereich;"Firmaneiplatz";Temperatur_Bereich;"")` | `=C2/B2` (als Prozent formatiert) |
 
 <!-- **Screenshot 34:** Kleine Excel-Übersichtstabelle mit Spalten „Standort", „Anzahl Messungen gesamt", „Davon fehlend", „Anteil fehlend (%)", für 3–4 Stationen, wobei eine Zeile mit auffällig hohem Anteil fehlender Werte (z. B. 40 %) farblich hervorgehoben ist (bedingte Formatierung). -->
 

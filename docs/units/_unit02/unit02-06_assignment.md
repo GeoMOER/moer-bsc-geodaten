@@ -7,41 +7,57 @@ header:
   image_description: "Cutout from Measured carbon dioxide concentrations in Vancouver"
   caption: "Bild: [jekyll](https://jekyllrb.com/)"
 ---
+---
+title: ÜA | Übungsaufgabe Abschnitt 02
+published: true
+toc: true
+header:
+  image: /assets/images/01-splash.jpg
+  image_description: "Dr. John Snow's map"
+  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+---
 
-<!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
+<!-- Übungsaufgabe 02: Excel-Grundlagen, Datentypen, Zellformate, Textfunktionen, Import/Export -->
+## Übungsaufgabe 02
 
-## Rückblick & Fragen
+In dieser Übungsaufgabe wenden Sie das Gelernte aus Lernabschnitt 02 selbstständig an. Grundlage sind zwei neue, eigenständige Dateien – nicht identisch mit den Übungsdatensätzen aus dem Kurs, aber aus denselben echten Sensordaten:
 
-In der letzten Kurssitzung haben wir uns damit beschäftigt, wie sich wiederkehrende Arbeitsschritte automatisieren und dadurch schneller, zuverlässiger und nachvollziehbarer ausführen lassen. Dabei haben wir gesehen, warum ein gut strukturierter und reproduzierbarer Arbeitsablauf meist besser ist als die wiederholte manuelle Bearbeitung einzelner Daten.
+* `Abschlusstest_Datensatz.xlsx` (Tabellenblatt „Testdaten")
+* `Abschlusstest_Import_roh.csv`
 
-Bevor wir mit dem neuen Lernabschnitt beginnen, klären wir offene Fragen zur letzten Sitzung.
+Beantworten Sie die folgenden 15 Fragen, indem Sie die jeweils beschriebene Bearbeitung tatsächlich in Excel durchführen.
 
-<!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
+---
 
-## Einführung in Lernabschnitt 09
+**1.** Öffnen Sie `Abschlusstest_Datensatz.xlsx` und springen Sie mit `Strg`+`Ende` zur letzten benutzten Zelle. In welcher Zeile befindet sich diese?
 
-Bisher haben wir vor allem Daten betrachtet, die in Tabellen oder Dateien gespeichert sind. Viele Fragestellungen in der Geographie enthalten jedoch zusätzlich eine räumliche Information: **Wo befindet sich etwas? Wie groß ist ein Gebiet? Welche Eigenschaften besitzt ein bestimmter Ort?**
+**2.** Auf welchem Skalenniveau liegt die Variable `Standort`?
 
-Solche Daten werden als **Geodaten** bezeichnet. Neben den eigentlichen Messwerten oder Eigenschaften enthalten sie einen Bezug zu einem Ort oder einem räumlichen Objekt. Dieser Raumbezug kann beispielsweise durch Koordinaten, Adressen, administrative Gebiete oder ein Koordinatenreferenzsystem beschrieben werden.
+**3.** Auf welchem Skalenniveau liegt die Variable `Temperatur`?
 
-In diesem Lernabschnitt schaffen wir die Grundlagen für die weitere Arbeit mit Geodaten. Wir untersuchen, was Geodaten von anderen Daten unterscheidet, wie Positionen durch Koordinaten angegeben werden und warum die gekrümmte Erdoberfläche nicht ohne Verzerrungen auf einer ebenen Karte dargestellt werden kann.
+**4.** Auf welchem Skalenniveau liegt die Variable `Datum`?
 
-<!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
+**5.** Fügen Sie ganz links eine Spalte `ID` mit fortlaufender Nummerierung (1, 2, 3, …) ein und formatieren Sie sie mit dem benutzerdefinierten Format `00`. Wie wird der Wert der zweiten Datenzeile angezeigt?
 
-## In dieser Lerneinheit ...
+**6.** Formatieren Sie die Spalte `Temperatur` mit dem benutzerdefinierten Format `0,0" °C"`. Wie wird der Wert in Zeile 8 danach angezeigt?
 
-In dieser Lerneinheit beschäftigen wir uns mit drei grundlegenden Fragen:
+**7.** Geben Sie in eine leere Zelle `+49` ein (ohne Hochkomma). Was passiert, und warum?
 
-1. **Was sind Geodaten?**  
-   Wir betrachten, wodurch Daten einen räumlichen Bezug erhalten und welche besonderen Eigenschaften sich daraus ergeben.
+**8.** Extrahieren Sie mit `TEIL` und `FINDEN` den Gradanteil der Latitude aus `Koordinaten_roh` in Zeile 5. Welcher Wert kommt heraus?
 
-2. **Wie werden Orte durch Koordinaten beschrieben?**  
-   Wir lernen geographische Koordinaten kennen und üben, Längen- und Breitengrade zu lesen und richtig zuzuordnen.
+**9.** Extrahieren Sie auf dieselbe Weise den Minutenanteil der Longitude aus Zeile 5. Welcher Wert kommt heraus?
 
-3. **Warum gibt es unterschiedliche Koordinatensysteme und Kartenprojektionen?**  
-   Wir untersuchen, weshalb die Erde für Karten in eine Ebene übertragen werden muss, welche Verzerrungen dabei entstehen und warum das Koordinatenreferenzsystem eines Datensatzes wichtig ist.
+**10.** In welcher Zeile der Spalte `Koordinaten_roh` liegt ein Formatfehler vor (Hochkomma `'` anstelle des Anführungszeichens `"`)?
 
-Dabei arbeiten wir mit anschaulichen Beispielen und typischen Problemen aus der Praxis. Im Mittelpunkt steht nicht die Mathematik von Kartenprojektionen, sondern ein sicherer erster Umgang mit räumlich referenzierten Daten.
+**11.** Wozu dient die Funktion `WERT`, und was würde ohne sie bei den Ergebnissen aus Frage 8/9 fehlen?
+
+**12.** Importieren Sie `Abschlusstest_Import_roh.csv` über „Daten → Aus Text/CSV". Welche Zeichenkodierung müssen Sie wählen, damit „Schloßpark" korrekt angezeigt wird?
+
+**13.** Welches Datum steht nach korrektem Import in Zeile 4 (Format TT.MM.JJJJ)?
+
+**14.** Welches Zeichen trennt die Spalten in `Abschlusstest_Import_roh.csv`?
+
+**15.** Warum ist eine `.xlsx`-Datei bei identischem Inhalt in der Regel größer als eine vergleichbare `.csv`-Datei?
 
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
 
