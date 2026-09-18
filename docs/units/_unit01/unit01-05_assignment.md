@@ -3,9 +3,9 @@ title: ÜA | Übungsaufgabe Abschnitt 01
 published: true
 toc: true
 header:
-  image: /assets/images/01-splash.jpg
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image: /assets/images/unit01/DataSwamp01.png
+  image_description: "Datensumpf"
+  caption: "Gummistiefel an! Lasst die Datenwäsche beginnen."
 ---
 
 <!-- Übungsaufgabe 01: Temperaturen heraus schreiben -->

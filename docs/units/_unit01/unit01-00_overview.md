@@ -3,9 +3,9 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/01-splash.jpg
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image: /assets/images/unit01/DataSwamp_Start.png
+  image_description: "Datensumpf"
+  caption: "Gummistiefel an! Lasst die Datenwäsche beginnen."
 ---
 
 Zunächst geht es um die Frage, wie Daten auf unseren Computern überhaupt gespeichert und bearbeitet werden.
