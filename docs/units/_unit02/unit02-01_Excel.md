@@ -39,6 +39,7 @@ Bevor Sie eine Zelle bearbeiten, formatieren oder kopieren können, müssen Sie 
 * **Mehrere, nicht zusammenhängende Zellen:** erste Auswahl treffen, dann weitere Zellen bei gedrückter `Strg`-Taste anklicken
 
 <!-- **Screenshot 1:** Excel-Tabellenblatt mit markiertem Zellbereich (z. B. B2:D5), die Markierung ist farblich hervorgehoben, Zeilennummern und Spaltenbuchstaben der markierten Bereiche sind ebenfalls hervorgehoben zu sehen.-->
+![Screenshot einer Excel-Tabellenblatt mit markiertem Zellbereich.]({{ '/assets/images/unit02/Screenshot01_Excel.png' | relative_url }})
 
 ### Bewegung auf dem Tabellenblatt
 
@@ -63,6 +64,7 @@ Wenn eine Spalte zu schmal ist, um den Inhalt anzuzeigen (Sie sehen dann z. B. `
 * Doppelklick auf die Trennlinie passt die Breite automatisch an den Inhalt an
 
 <!-- **Screenshot 2:** Nahaufnahme der Spaltenköpfe (z. B. C und D), Mauszeiger als Doppelpfeil auf der Trennlinie positioniert, evtl. Vorher/Nachher-Vergleich einer zu schmalen Spalte mit `###`. -->
+![Screenshot eines Excel-Spaltenkopfs mit Doppelpfeil-Mauszeiger.]({{ '/assets/images/unit02/Screenshot02_Excel.png' | relative_url }})
 
 ### Drag & Drop
 
@@ -76,6 +78,7 @@ Achtung: Zellen an der Zielposition werden dabei überschrieben, falls dort bere
 
 <!-- **Screenshot 3:** Markierter Zellbereich mit sichtbarem Verschiebe-Cursor am Rand der Markierung, gestrichelter Rahmen zeigt die Zielposition beim Ziehen an.
 -->
+![Screenshot eines markierten Zellbereichs mit sichtbarem Verschiebe-Cursor.]({{ '/assets/images/unit02/Screenshot03_Excel.png' | relative_url }})
 
 ### Kopieren und Einfügen über das Kontextmenü
 
@@ -88,6 +91,7 @@ Statt der Tastenkombinationen können Sie auch die rechte Maustaste nutzen:
 
 <!-- **Screenshot 4:** Geöffnetes Kontextmenü nach Rechtsklick auf eine markierte Zelle, mit sichtbaren Optionen „Ausschneiden“, „Kopieren“ und „Einfügeoptionen“.
 -->
+![Screenshot eines Kontextmenüs nach Rechtsklick auf eine markierte Zelle.]({{ '/assets/images/unit02/Screenshot04_Excel.png' | relative_url }})
 
 ### Vorsicht: Einzelne Zellen statt ganzer Zeilen einfügen
 
@@ -96,6 +100,7 @@ Wenn Sie über das Kontextmenü (Rechtsklick → „Zellen einfügen“) eine ne
 Das kann dazu führen, dass Ihre Daten **nicht mehr zusammenpassen**: Eine Zelle in Spalte C rutscht z. B. eine Zeile nach unten, während die dazugehörigen Werte in Spalte B, D und E an ihrer ursprünglichen Position bleiben. Ihre Datensätze sind dann nicht mehr korrekt zugeordnet, ohne dass Sie das auf den ersten Blick sehen.
 
 <!-- **Screenshot 5:** Dialogfenster „Zellen einfügen“ mit den Optionen „Zellen nach unten verschieben“ / „Zellen nach rechts verschieben“, idealerweise mit einem Beispiel-Tabellenausschnitt im Hintergrund, in dem eine Zeile durch fehlerhaftes Einfügen bereits verrutscht ist. -->
+![Screenshot eines Kontextmenüs nach Klick auf "Zelle rechts einfügen".]({{ '/assets/images/unit02/Screenshot05_Excel.png' | relative_url }})
 
 **Wenn Sie eine ganze Datenzeile einfügen möchten**, markieren Sie stattdessen die komplette Zeile (Klick auf die Zeilennummer) und wählen dann „Zeilen einfügen“ – so bleiben alle Spalten synchron.
 
