@@ -10,24 +10,25 @@ header:
 
 <!-- Themenblock 01-01: Binärsystem, Bits & Bytes / Grundlegende Kodierung (Text, Zahlen, Bilder) / Dateiformate als Strukturierungsprinzip -->
 
-Um zu verstehen, wie ein Computer funktioniert, müssen wir zunächst verstehen, wie Informationen überhaupt transportiert werden können. Ein Computer kann nur zwischen hoher bzw. niedriger elektrische Spannung unterscheiden, oder - anders gesagt - zwischen Strom an (1) und Strom aus (0). Diesen Zustand nennt man ein *Bit* (kurz für Binary Digit, also „Binärziffer").  
+Um zu verstehen, wie ein Computer funktioniert, müssen wir zunächst verstehen, wie Informationen überhaupt transportiert werden können. Ein Computer kann nur zwischen hoher und niedriger elektrischer Spannung unterscheiden, oder anders gesagt, zwischen Strom an (1) und Strom aus (0). Diesen Zustand nennt man ein *Bit* (kurz für Binary Digit, also „Binärziffer").  
 
 ## Codierung
 
-Mit diesen zwei Zuständen lässt sich grundsätzlich jede Information darstellen – man muss sich nur vorher auf eine feste Zuordnung, einen Code, einigen.
+Mit diesen zwei Zuständen lässt sich grundsätzlich jede Information darstellen, wobei man sich vorher auf eine feste Zuordnung, einen Code, einigen muss.
 Dieses Prinzip wurde bereits kurz nach der Entwicklung des ersten Telegraphen genutzt, welcher 1837 von Samuel Morse entwickelt wurde. 
 
 Morses Telegraph bestand im Kern aus zwei Stationen, die über einen einzelnen Draht miteinander verbunden waren – Sender und Empfänger konnten dabei mehrere Kilometer voneinander entfernt sein.
 
-Der Sender drückte  die sogenannte Morsetaste – im Grunde ein einfacher Schalter. wodurchder Stromkreis geschlossen wurde und Strom durch die Leitung floss; ließ man los, wurde der Kreis wieder unterbrochen. Je nachdem, wie lange die Taste gedrückt wurde, entstand ein kurzer oder ein langer elektrischer Impuls.
-Diese Impulse liefen als Stromstöße durch den Draht zur Empfangsstation – mehr als „Strom an" oder „Strom aus" wurde dabei nicht übertragen.
+Der Sender drückte die sogenannte Morsetaste, die im Grunde ein einfacher Schalter ist. Dadurch wurde der Stromkreis geschlossen und Strom floss durch die Leitung. Beim Loslassen wurde der Kreis wieder unterbrochen. Je nachdem, wie lange die Taste gedrückt wurde, entstand ein kurzer oder ein langer elektrischer Impuls.
+Diese Impulse liefen als Stromstöße durch den Draht zur Empfangsstation, wobei mehr als „Strom an" oder „Strom aus" dabei nicht übertragen wurde.
 Am anderen Ende saß ein Elektromagnet mit einem beweglichen Anker, an dem ein Schreibstift befestigt war. Kam ein Stromimpuls an, wurde der Anker vom Elektromagneten angezogen und drückte den Stift gegen einen Papierstreifen, der von einem Uhrwerk gleichmäßig weitergezogen wurde. Je nachdem, wie lange der Strom floss, entstand so ein kurzer Punkt oder ein längerer Strich auf dem Papier.
 
-Damit beruhte schon dieser rund 100 Jahre vor dem Computer entwickelte Apparat auf genau demselben Grundprinzip: Es gibt nur zwei mögliche Zustände – Stromkreis geschlossen oder offen –, und erst eine vorher vereinbarte Zuordnung (welche Folge aus Punkten und Strichen welchen Buchstaben bedeutet) macht daraus lesbare Information. Morse hatte ursprünglich sogar vor, ganzen Wörtern aus einem Wörterbuch einfach durchnummerierte Zahlencodes zuzuordnen; erst gemeinsam mit seinem Mitarbeiter Alfred Vail entwickelte er das bekannte Alphabet aus kurzen und langen Signalen, das wir heute als Morsecode kennen.
+Damit beruhte schon dieser rund 100 Jahre vor dem Computer entwickelte Apparat auf genau demselben Grundprinzip, denn er nutzte nur die zwei möglichen Zustände eines offenen oder geschlossenen Stromkreises. Erst eine vorab vereinbarte Zuordnung, welche Folge aus Punkten und Strichen welchen Buchstaben bedeutet, verwandelte diese Impulse in lesbare Information. Ursprünglich wollte Morse ganzen Wörtern aus einem Wörterbuch durchnummerierte Zahlencodes zuordnen. Erst gemeinsam mit seinem Mitarbeiter Alfred Vail entwickelte er das bekannte System aus kurzen und langen Signalen, das wir heute als Morsecode kennen.
 
 <!-- copyright free Bild einfügen -->
+![Eine Zeichnung des Morsecode Geräts.]({{ '/assets/images/unit01/El_mundo_fisico_1882_Manipulador_Morse.jpg' | relative_url }})
 
-SOS ist ein gutes Einstiegsbeispiel für "Codierung": ... --- ... – drei kurze, drei lange, drei kurze Signale. Es werden nur zwei Zustände gebraucht (kurz/lang, bzw. Ton an/aus). 
+SOS ist ein gutes Einstiegsbeispiel für "Codierung": [ ... --- ... ] drei kurze, drei lange, drei kurze Signale. Es werden nur zwei Zustände gebraucht (kurz/lang, bzw. Ton an/aus). 
 Zwar übersetzen sowohl der Morsecode als auch der Computer diese binären Zeichen in Zahlen bzw. Buchstaben, es gibt aber wichtige Unterschiede:
 
 1. Im Morsecode entsteht die Information durch die Dauer eines Signals: kurz = Punkt, lang = Strich. Zusätzlich braucht es unterschiedlich lange Pausen, um einzelne Signale, Buchstaben und Wörter voneinander zu trennen – genau genommen kommt der Morsecode also nicht mit zwei, sondern mit mehreren unterscheidbaren Elementen aus (Punkt, Strich, kurze Pause, lange Pause). 

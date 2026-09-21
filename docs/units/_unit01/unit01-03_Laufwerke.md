@@ -32,6 +32,7 @@ Es gibt verschiedene Varianten lokaler, also direkt am eigenen Gerät angeschlos
 - USB-Stick / externe SSD/HDD: tragbarer Speicher, wird über USB angeschlossen und vom Betriebssystem wie ein zusätzliches Laufwerk erkannt.
 - Optische Laufwerke (CD/DVD/Blu-ray): lesen bzw. schreiben Daten per Laserlicht auf eine reflektierende Scheibe – heute wegen SSDs, USB-Sticks und Cloud-Speicher stark rückläufig und kaum noch in neuen Geräten verbaut.
 - Speicherkarten (SD-Karte etc.): ähnlich wie SSDs, aber kompakter – häufig in Kameras oder als Speichererweiterung bei Laptops/Tablets.
+
 ### Netzwerk
  
 Ein Netzwerk verbindet mehrere Geräte, damit sie Daten austauschen können – vom kleinen Heimnetzwerk bis zum weltweiten Internet. Jedes Gerät im Netzwerk bekommt dabei eine eindeutige Adresse, die **IP-Adresse**, damit Datenpakete gezielt zugestellt werden können – vergleichbar mit einer Postanschrift.
@@ -48,7 +49,10 @@ Damit man mit diesem Ordner genauso einfach arbeiten kann wie mit einer lokalen 
  
 Das hat einen praktischen Vorteil: Melden Sie sich an einem beliebigen Uni-Rechner an, taucht Ihr H:-Laufwerk mit denselben Dateien wieder auf – die Daten „folgen" Ihnen also über Ihren Account, unabhängig vom Gerät.
 Es hat aber auch den Nachteil, dass Ihr verfügbarer Speicherplatz begrenzt ist. 
-<!-- Aufgabe an Lisa: herausfinden, ob das noch aktuell ist und wie viel Platz zur Verfügung steht -->
+An der Uni Marburg liegt dieser Platz bei 1 GB pro Person.
+<!-- Aufgabe an Lisa: herausfinden, ob das noch aktuell ist und wie viel Platz zur Verfügung steht 
+Notiz von Lisa: Ist laut HRZ aktuell (https://www.uni-marburg.de/de/hrz/dienste/fileservice/speicherplatz-fuer-studierende). Habe die Menge ergänzt.-->
+
 ### Pfade
  
 Damit ein Programm oder Betriebssystem eine bestimmte Datei unter den vielen Millionen Dateien auf einem oder mehreren Laufwerken eindeutig finden kann, braucht es eine genaue Adresse – den **Pfad**. Ein Pfad beschreibt, über welche Laufwerke und Ordner (Verzeichnisse) hinweg man zu einer Datei gelangt.

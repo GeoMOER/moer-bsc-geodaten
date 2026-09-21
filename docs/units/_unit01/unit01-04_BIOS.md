@@ -20,6 +20,7 @@ Konkret übernimmt das Betriebssystem im Hintergrund vor allem vier zentrale Auf
 - **Prozessverwaltung:** verteilt die Rechenzeit der CPU auf die gleichzeitig laufenden Programme (Prozesse) – dadurch entsteht der Eindruck, dass mehrere Programme parallel laufen.
 - **Dateisystemverwaltung:** organisiert, wie und wo Dateien auf Laufwerken abgelegt werden, und stellt darüber die Ordner- und Pfadstruktur bereit, die wir im vorherigen Abschnitt besprochen haben.
 - **Treiberkommunikation:** vermittelt zwischen der eigentlichen Anwendungssoftware und den Treibern, die wiederum mit der konkreten Hardware sprechen (siehe das Tastatur-Beispiel aus dem Kapitel „Wie funktioniert ein Computer?").
+
 ### Gängige Betriebssysteme im Vergleich
  
 | | Windows | macOS | Linux | Android | iOS |
