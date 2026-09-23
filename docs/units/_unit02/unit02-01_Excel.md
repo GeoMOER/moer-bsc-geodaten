@@ -38,8 +38,15 @@ Bevor Sie eine Zelle bearbeiten, formatieren oder kopieren können, müssen Sie 
 * **Ganze Zeile/Spalte:** auf die Zeilennummer bzw. den Spaltenbuchstaben klicken
 * **Mehrere, nicht zusammenhängende Zellen:** erste Auswahl treffen, dann weitere Zellen bei gedrückter `Strg`-Taste anklicken
 
-<!-- **Screenshot 1:** Excel-Tabellenblatt mit markiertem Zellbereich (z. B. B2:D5), die Markierung ist farblich hervorgehoben, Zeilennummern und Spaltenbuchstaben der markierten Bereiche sind ebenfalls hervorgehoben zu sehen.-->
-![Screenshot einer Excel-Tabellenblatt mit markiertem Zellbereich.]({{ '/assets/images/unit02/Screenshot01_Excel.png' | relative_url }})
+<!-- **Screenshot 1:** Excel-Tabellenblatt mit markiertem Zellbereich (z. B. B2:D5), die Markierung ist farblich hervorgehoben, Zeilennummern und Spaltenbuchstaben der markierten Bereiche sind ebenfalls hervorgehoben zu sehen.
+Markdownlösung: ![Screenshot einer Excel-Tabellenblatt mit markiertem Zellbereich.]({{ '/assets/images/unit02/Screenshot01_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit02/Screenshot01_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot01_Excel" 
+   title="Screenshot einer Excel-Tabellenblatt mit markiertem Zellbereich.">
+  <img src="{{ '/assets/images/unit02/Screenshot01_Excel.png' | relative_url }}" alt="Screenshot einer Excel-Tabellenblatt mit markiertem Zellbereich.">
+</a>
 
 ### Bewegung auf dem Tabellenblatt
 
@@ -63,8 +70,15 @@ Wenn eine Spalte zu schmal ist, um den Inhalt anzuzeigen (Sie sehen dann z. B. `
 * Mit der Maus auf die Trennlinie zwischen zwei Spaltenköpfen gehen, bis sich der Cursor in einen Doppelpfeil verwandelt, dann klicken und ziehen
 * Doppelklick auf die Trennlinie passt die Breite automatisch an den Inhalt an
 
-<!-- **Screenshot 2:** Nahaufnahme der Spaltenköpfe (z. B. C und D), Mauszeiger als Doppelpfeil auf der Trennlinie positioniert, evtl. Vorher/Nachher-Vergleich einer zu schmalen Spalte mit `###`. -->
-![Screenshot eines Excel-Spaltenkopfs mit Doppelpfeil-Mauszeiger.]({{ '/assets/images/unit02/Screenshot02_Excel.png' | relative_url }})
+<!-- **Screenshot 2:** Nahaufnahme der Spaltenköpfe (z. B. C und D), Mauszeiger als Doppelpfeil auf der Trennlinie positioniert, evtl. Vorher/Nachher-Vergleich einer zu schmalen Spalte mit `###`.
+Markdownlösung: ![Screenshot eines Excel-Spaltenkopfs mit Doppelpfeil-Mauszeiger.]({{ '/assets/images/unit02/Screenshot02_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit02/Screenshot02_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot02_Excel" 
+   title="Screenshot eines Excel-Spaltenkopfs mit Doppelpfeil-Mauszeiger.">
+  <img src="{{ '/assets/images/unit02/Screenshot02_Excel.png' | relative_url }}" alt="Screenshot eines Excel-Spaltenkopfs mit Doppelpfeil-Mauszeiger.">
+</a>
 
 ### Drag & Drop
 
@@ -77,8 +91,14 @@ Markierte Zellen lassen sich mit der Maus verschieben:
 Achtung: Zellen an der Zielposition werden dabei überschrieben, falls dort bereits Werte stehen.
 
 <!-- **Screenshot 3:** Markierter Zellbereich mit sichtbarem Verschiebe-Cursor am Rand der Markierung, gestrichelter Rahmen zeigt die Zielposition beim Ziehen an.
--->
-![Screenshot eines markierten Zellbereichs mit sichtbarem Verschiebe-Cursor.]({{ '/assets/images/unit02/Screenshot03_Excel.png' | relative_url }})
+Markdownlösung: ![Screenshot eines markierten Zellbereichs mit sichtbarem Verschiebe-Cursor.]({{ '/assets/images/unit02/Screenshot03_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit02/Screenshot03_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot03_Excel" 
+   title="Screenshot eines markierten Zellbereichs mit sichtbarem Verschiebe-Cursor.">
+  <img src="{{ '/assets/images/unit02/Screenshot03_Excel.png' | relative_url }}" alt="Screenshot eines markierten Zellbereichs mit sichtbarem Verschiebe-Cursor.">
+</a>
 
 ### Kopieren und Einfügen über das Kontextmenü
 
@@ -90,8 +110,14 @@ Statt der Tastenkombinationen können Sie auch die rechte Maustaste nutzen:
 4. Rechtsklick → **Einfügen**
 
 <!-- **Screenshot 4:** Geöffnetes Kontextmenü nach Rechtsklick auf eine markierte Zelle, mit sichtbaren Optionen „Ausschneiden“, „Kopieren“ und „Einfügeoptionen“.
--->
-![Screenshot eines Kontextmenüs nach Rechtsklick auf eine markierte Zelle.]({{ '/assets/images/unit02/Screenshot04_Excel.png' | relative_url }})
+Markdownlösung: ![Screenshot eines Kontextmenüs nach Rechtsklick auf eine markierte Zelle.]({{ '/assets/images/unit02/Screenshot04_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit02/Screenshot04_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot04_Excel" 
+   title="Screenshot eines Kontextmenüs nach Rechtsklick auf eine markierte Zelle.">
+  <img src="{{ '/assets/images/unit02/Screenshot04_Excel.png' | relative_url }}" alt="Screenshot eines Kontextmenüs nach Rechtsklick auf eine markierte Zelle.">
+</a>
 
 ### Vorsicht: Einzelne Zellen statt ganzer Zeilen einfügen
 
@@ -99,8 +125,15 @@ Wenn Sie über das Kontextmenü (Rechtsklick → „Zellen einfügen“) eine ne
 
 Das kann dazu führen, dass Ihre Daten **nicht mehr zusammenpassen**: Eine Zelle in Spalte C rutscht z. B. eine Zeile nach unten, während die dazugehörigen Werte in Spalte B, D und E an ihrer ursprünglichen Position bleiben. Ihre Datensätze sind dann nicht mehr korrekt zugeordnet, ohne dass Sie das auf den ersten Blick sehen.
 
-<!-- **Screenshot 5:** Dialogfenster „Zellen einfügen“ mit den Optionen „Zellen nach unten verschieben“ / „Zellen nach rechts verschieben“, idealerweise mit einem Beispiel-Tabellenausschnitt im Hintergrund, in dem eine Zeile durch fehlerhaftes Einfügen bereits verrutscht ist. -->
-![Screenshot eines Kontextmenüs nach Klick auf "Zelle rechts einfügen".]({{ '/assets/images/unit02/Screenshot05_Excel.png' | relative_url }})
+<!-- **Screenshot 5:** Dialogfenster „Zellen einfügen“ mit den Optionen „Zellen nach unten verschieben“ / „Zellen nach rechts verschieben“, idealerweise mit einem Beispiel-Tabellenausschnitt im Hintergrund, in dem eine Zeile durch fehlerhaftes Einfügen bereits verrutscht ist.
+Markdownlösung: ![Screenshot eines Kontextmenüs nach Klick auf "Zelle rechts einfügen".]({{ '/assets/images/unit02/Screenshot05_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit02/Screenshot05_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot05_Excel" 
+   title="Screenshot eines Kontextmenüs nach Klick auf *Zelle rechts einfügen*.">
+  <img src="{{ '/assets/images/unit02/Screenshot05_Excel.png' | relative_url }}" alt="Screenshot eines Kontextmenüs nach Klick auf *Zelle rechts einfügen*.">
+</a>
 
 **Wenn Sie eine ganze Datenzeile einfügen möchten**, markieren Sie stattdessen die komplette Zeile (Klick auf die Zeilennummer) und wählen dann „Zeilen einfügen“ – so bleiben alle Spalten synchron.
 
