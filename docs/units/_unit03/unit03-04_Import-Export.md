@@ -30,7 +30,15 @@ Nutzen Sie einen kleinen Ausschnitt (10–15 Zeilen) aus Ihrem Blatt `Datensatz_
 3. Öffnen Sie Ihren Datei-Explorer (Windows) bzw. Finder (Mac) und vergleichen Sie die **Dateigröße** beider Dateien sowie der ursprünglichen `.xlsx`-Datei. Notieren Sie sich die Größenunterschiede.
 4. Öffnen Sie **beide** Dateien (`.txt` und `.csv`) mit einem einfachen **Texteditor** (z. B. Editor/Notepad unter Windows, TextEdit im „Nur-Text"-Modus unter Mac) – **nicht** mit Excel. Vergleichen Sie, wie die Spalten jeweils getrennt sind, und woran Sie das im reinen Text erkennen (Tabstopp ist im Texteditor meist als größere Lücke sichtbar, Komma/Semikolon als sichtbares Zeichen).
 
-<!-- **Screenshot 10:** Nebeneinander geöffnetes Fenster des Datei-Explorers mit den drei Dateien (`.xlsx`, `.txt`, `.csv`) und sichtbarer Größenangabe in einer Spalte, sowie ein Texteditor-Fenster, das den Inhalt der `.csv`-Datei mit sichtbaren Kommas/Semikolons zwischen den Werten zeigt. -->
+<!-- **Screenshot 12:** Nebeneinander geöffnetes Fenster des Datei-Explorers mit den drei Dateien (`.xlsx`, `.txt`, `.csv`) und sichtbarer Größenangabe in einer Spalte, sowie ein Texteditor-Fenster, das den Inhalt der `.csv`-Datei mit sichtbaren Kommas/Semikolons zwischen den Werten zeigt.
+Markdownlösung: ![Screenshot einer CSV-Tabelle mit Semikolon als Trennzeichen und Dateigrößen zum Vergleich.]({{ '/assets/images/unit03/Screenshot12_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit03/Screenshot12_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot12_Excel" 
+   title="Screenshot einer CSV-Tabelle mit Semikolon als Trennzeichen und Dateigrößen zum Vergleich.">
+  <img src="{{ '/assets/images/unit03/Screenshot12_Excel.png' | relative_url }}" alt="Screenshot einer CSV-Tabelle mit Semikolon als Trennzeichen und Dateigrößen zum Vergleich.">
+</a>
 
 **Reflexionsfrage:** Warum ist die `.xlsx`-Datei vermutlich die größte der drei Dateien, obwohl sie dieselben Daten enthält?
 
@@ -42,13 +50,29 @@ Wenn Sie umgekehrt eine `.txt`- oder `.csv`-Datei erhalten und in Excel öffnen 
 
 Excel zeigt zunächst eine Vorschau der Datei und schlägt eine Zeichenkodierung vor (meist „Windows" oder „UTF-8"). Genau hier setzt das Encoding-Problem aus einem früheren Kapitel an: Wird die falsche Kodierung gewählt, erscheinen Umlaute bereits in dieser Vorschau verstümmelt (`Cölbe` → `CÃ¶lbe`). **Prüfen Sie die Vorschau sorgfältig, bevor Sie fortfahren** – ein falsch gewähltes Encoding lässt sich zwar später korrigieren, aber deutlich umständlicher, als es hier gleich richtig einzustellen.
 
-<!-- Screetshot Erster Schritt des Text-Import-Assistenten mit Dropdown-Menü „Dateiursprung", in dem „UTF-8" ausgewählt ist, und einer Datenvorschau darunter, in der ein Standort mit Umlaut korrekt angezeigt wird (Vergleich: falsch gewählte Kodierung mit verstümmelter Vorschau daneben). -->
+<!-- Screetshot 13: Erster Schritt des Text-Import-Assistenten mit Dropdown-Menü „Dateiursprung", in dem „UTF-8" ausgewählt ist, und einer Datenvorschau darunter, in der ein Standort mit Umlaut korrekt angezeigt wird (Vergleich: falsch gewählte Kodierung mit verstümmelter Vorschau daneben).
+Markdownlösung: ![Screenshot des Text-Import-Assistenten mit unterschiedlichen Dateiursprüngen und Darstellungen der Daten.]({{ '/assets/images/unit03/Screenshot13_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit03/Screenshot13_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot13_Excel" 
+   title="Screenshot des Text-Import-Assistenten mit unterschiedlichen Dateiursprüngen und Darstellungen der Daten.">
+  <img src="{{ '/assets/images/unit03/Screenshot13_Excel.png' | relative_url }}" alt="Screenshot des Text-Import-Assistenten mit unterschiedlichen Dateiursprüngen und Darstellungen der Daten.">
+</a>
 
 ### Schritt 2: Trennzeichen festlegen
 
 Hier geben Sie an, welches Zeichen die Spalten in der Datei voneinander trennt – üblicherweise Tabstopp, Komma oder Semikolon. Excel zeigt bereits eine Vorschau, wie die Datei mit dem gewählten Trennzeichen in Spalten zerlegt würde. Ist das falsche Trennzeichen gewählt, landen mehrere eigentlich getrennte Werte in einer einzigen Spalte – ein direkter Verstoß gegen das Tidy-Data-Prinzip aus dem vorherigen Kapitel.
 
-<!-- **Screenshot 12:** Zweiter Schritt des Assistenten mit Checkbox-Auswahl der Trennzeichen (Tab, Semikolon, Komma, Leerzeichen, Andere), darunter eine Vorschau mit bereits sichtbaren Spaltentrennlinien. -->
+<!-- **Screenshot 14:** Zweiter Schritt des Assistenten mit Checkbox-Auswahl der Trennzeichen (Tab, Semikolon, Komma, Leerzeichen, Andere), darunter eine Vorschau mit bereits sichtbaren Spaltentrennlinien. 
+Markdownlösung: ![Screenshot des Text-Import-Assistenten mit Checkbox-Auswahl der Trennzeichen.]({{ '/assets/images/unit03/Screenshot14_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit03/Screenshot14_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot14_Excel" 
+   title="Screenshot des Text-Import-Assistenten mit Checkbox-Auswahl der Trennzeichen.">
+  <img src="{{ '/assets/images/unit03/Screenshot14_Excel.png' | relative_url }}" alt="Screenshot des Text-Import-Assistenten mit Checkbox-Auswahl der Trennzeichen.">
+</a>
 
 ### Schritt 3: Datentyp je Spalte festlegen
 
@@ -56,7 +80,18 @@ Im letzten Schritt können Sie für **jede Spalte einzeln** festlegen, welchen D
 
 **Das ist der entscheidende Schritt, um spätere Probleme zu vermeiden:** Legen Sie hier z. B. Ihre Spalte `Standort` explizit als **Text** fest (auch wenn sie nur Zahlen wie Postleitzahlen enthielte, die keine führenden Nullen verlieren sollen), und Ihre Spalte `Datum` mit dem passenden Format, falls die Quelldatei ein anderes Datumsformat verwendet als in Deutschland üblich (z. B. `MM/TT/JJJJ` bei einer aus den USA stammenden Datei). Ein nachträgliches Ändern des Datentyps nach dem Import ist – wie Sie bereits aus dem Kapitel zu Zellformaten wissen – deutlich fehleranfälliger, als ihn gleich beim Import korrekt festzulegen.
 
-<!-- **Screenshot 13:** Dritter Schritt des Assistenten, eine Spalte ist markiert und im Dropdown „Spaltendatenformat" ist „Datum: MTJ" ausgewählt, sichtbar als Kopfzeile über der jeweiligen Spalte in der Vorschau. -->
+<!-- **Screenshot 15:** Dritter Schritt des Assistenten, eine Spalte ist markiert und im Dropdown „Spaltendatenformat" ist „Datum: MTJ" ausgewählt, sichtbar als Kopfzeile über der jeweiligen Spalte in der Vorschau.
+Markdownlösung: ![Screenshot des Text-Import-Assistenten mit „Datum: MTJ" als Spaltendatenformat.]({{ '/assets/images/unit03/Screenshot15_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:
+
+<a href="{{ '/assets/images/unit03/Screenshot15_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot15_Excel" 
+   title="Screenshot des Text-Import-Assistenten mit *Datum: MTJ* als Spaltendatenformat.">
+  <img src="{{ '/assets/images/unit03/Screenshot15_Excel.png' | relative_url }}" alt="Screenshot des Text-Import-Assistenten mit *Datum: MTJ* als Spaltendatenformat.">
+</a>
+
+-->
+<!-- Notiz von Lisa S.: Ich habe kein Dropdownmenü mit "Spaltendatenformat" im Assistenten gefunden. Das letzte Dropdownmenü heißt bei mir "Datentyperkennung" und enthält die Auswahl "Basierend auf den ersten 200 Zeilen", "Basierend auf dem gesamten Datensatz", "Datentypen nicht ermitteln". -->
 
 **Zusammenfassung des Imports in vier Punkten:**
 1. Nicht per Doppelklick öffnen, sondern über „Daten → Aus Text/CSV"
@@ -75,12 +110,31 @@ Neben dem Datentyp je Spalte lohnt sich bei importierten Zahlenwerten ein zweite
 4. Rechtsklick auf die Spalte → **„Datentyp ändern" → „Unter Verwendung von Gebietsschema…"**
 5. Gebietsschema **„Englisch (USA)"** wählen, Zieldatentyp „Dezimalzahl"
 
-<!-- Screenshot: Power-Query-Editor, rechter Bereich "Angewendete Schritte" mit dem Schritt "Geänderter Typ" zum Löschen markiert, darunter das Dialogfenster "Datentyp ändern mit Gebietsschema" mit Auswahl "Englisch (USA)". -->
+<!-- Screenshot 16: Power-Query-Editor, rechter Bereich "Angewendete Schritte" mit dem Schritt "Geänderter Typ" zum Löschen markiert, darunter das Dialogfenster "Datentyp ändern mit Gebietsschema" mit Auswahl "Englisch (USA)".
+Markdownlösung: ![Screenshot des Power-Query-Editor mit Typ-Vorauswahl durch Excel, Dropdownmenü zur Typänderung und Dialogfenster zum einstellen des Gebietsschemas.]({{ '/assets/images/unit03/Screenshot16_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit03/Screenshot16_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot16_Excel" 
+   title="Screenshot des Power-Query-Editor mit Typ-Vorauswahl durch Excel, Dropdownmenü zur Typänderung und Dialogfenster zum einstellen des Gebietsschemas.">
+  <img src="{{ '/assets/images/unit03/Screenshot16_Excel.png' | relative_url }}" alt="Screenshot des Power-Query-Editor mit Typ-Vorauswahl durch Excel, Dropdownmenü zur Typänderung und Dialogfenster zum einstellen des Gebietsschemas.">
+</a>
 
 **Weg 2 – Ältere Excel-Version (klassischer Text-Import-Assistent):**
 Im letzten Schritt des Assistenten die Schaltfläche **„Erweitert…"** anklicken, dort **Dezimaltrennzeichen** (Punkt) und **1000er-Trennzeichen** direkt festlegen.
 
-<!-- Screenshot: Dritter Schritt des klassischen Text-Import-Assistenten mit Schaltfläche "Erweitert…" und dem sich öffnenden Dialog "Erweiterte Texterkennungseinstellungen". -->
+<!-- Screenshot 17: Dritter Schritt des klassischen Text-Import-Assistenten mit Schaltfläche "Erweitert…" und dem sich öffnenden Dialog "Erweiterte Texterkennungseinstellungen".
+Markdownlösung: ![Screenshot des des klassischen Text-Import-Assistenten mit der Schaltfläche "Erweitert" un dem zugehörigen Dialogfeld.]({{ '/assets/images/unit03/Screenshot17_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:
+
+<a href="{{ '/assets/images/unit03/Screenshot17_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot17_Excel" 
+   title="Screenshot des des klassischen Text-Import-Assistenten mit der Schaltfläche *Erweitert* un dem zugehörigen Dialogfeld.">
+  <img src="{{ '/assets/images/unit03/Screenshot17_Excel.png' | relative_url }}" alt="Screenshot des des klassischen Text-Import-Assistenten mit der Schaltfläche *Erweitert* un dem zugehörigen Dialogfeld.">
+</a>
+ -->
+
+ <!-- Notiz von Lisa S.: Dazu muss ich erst eine ältere Exelversion finden. -->
 
 > Welchen der beiden Wege Sie sehen, hängt von Ihrer Excel-Version und Konfiguration ab – prüfen Sie zuerst, welcher Dialog bei Ihnen erscheint (unter „Datei → Optionen → Daten" lässt sich der „Legacy-Datenimport-Assistent" bei Bedarf reaktivieren).
 

@@ -79,8 +79,17 @@ Deswegen gilt: Einheiten werden **nicht** direkt mit in die Zelle geschrieben, z
 6. Mit „OK" bestätigen
 
 
-<!-- **Screenshot 7:** Geöffneter Dialog „Zellen formatieren“ auf dem Reiter „Zahlen“, Kategorie „Benutzerdefiniert“ markiert, im Eingabefeld ein Beispiel-Format wie `0" °C"`, rechts die Live-Vorschau des formatierten Werts. -->
+<!-- **Screenshot 8:** Geöffneter Dialog „Zellen formatieren“ auf dem Reiter „Zahlen“, Kategorie „Benutzerdefiniert“ markiert, im Eingabefeld ein Beispiel-Format wie `0" °C"`, rechts die Live-Vorschau des formatierten Werts.
+Markdownlösung: ![Screenshot des geöffneten Dialogfelds "Zellen formatieren" mit Beispiel.]({{ '/assets/images/unit03/Screenshot08_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
 
+<a href="{{ '/assets/images/unit03/Screenshot08_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot08_Excel" 
+   title="Screenshot des geöffneten Dialogfelds *Zellen formatieren* mit Beispiel.">
+  <img src="{{ '/assets/images/unit03/Screenshot08_Excel.png' | relative_url }}" alt="Screenshot des geöffneten Dialogfelds *Zellen formatieren* mit Beispiel.">
+</a>
+
+<!-- Notiz von Lisa S.: Bei mir wird keine Vorschau angezeigt -->
 
 ### Benutzerdefinierte Formate – zwei Beispiele aus unserem Datensatz
 
