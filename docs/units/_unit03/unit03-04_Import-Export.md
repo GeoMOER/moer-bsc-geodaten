@@ -124,13 +124,13 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 Im letzten Schritt des Assistenten die Schaltfläche **„Erweitert…"** anklicken, dort **Dezimaltrennzeichen** (Punkt) und **1000er-Trennzeichen** direkt festlegen.
 
 <!-- Screenshot 17: Dritter Schritt des klassischen Text-Import-Assistenten mit Schaltfläche "Erweitert…" und dem sich öffnenden Dialog "Erweiterte Texterkennungseinstellungen".
-Markdownlösung: ![Screenshot des des klassischen Text-Import-Assistenten mit der Schaltfläche "Erweitert" un dem zugehörigen Dialogfeld.]({{ '/assets/images/unit03/Screenshot17_Excel.png' | relative_url }}) 
+Markdownlösung: ![Screenshot des klassischen Text-Import-Assistenten mit der Schaltfläche "Erweitert" un dem zugehörigen Dialogfeld.]({{ '/assets/images/unit03/Screenshot17_Excel.png' | relative_url }}) 
 Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:
 
 <a href="{{ '/assets/images/unit03/Screenshot17_Excel.png' | relative_url }}" 
    data-lightbox="Screenshot17_Excel" 
-   title="Screenshot des des klassischen Text-Import-Assistenten mit der Schaltfläche *Erweitert* un dem zugehörigen Dialogfeld.">
-  <img src="{{ '/assets/images/unit03/Screenshot17_Excel.png' | relative_url }}" alt="Screenshot des des klassischen Text-Import-Assistenten mit der Schaltfläche *Erweitert* un dem zugehörigen Dialogfeld.">
+   title="Screenshot des klassischen Text-Import-Assistenten mit der Schaltfläche *Erweitert* un dem zugehörigen Dialogfeld.">
+  <img src="{{ '/assets/images/unit03/Screenshot17_Excel.png' | relative_url }}" alt="Screenshot des klassischen Text-Import-Assistenten mit der Schaltfläche *Erweitert* un dem zugehörigen Dialogfeld.">
 </a>
  -->
 

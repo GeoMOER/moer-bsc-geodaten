@@ -18,19 +18,40 @@ Beim Sortieren wird die Reihenfolge der **gesamten Zeilen** nach dem Inhalt eine
 1. Klicken Sie in eine beliebige Zelle der Spalte, nach der sortiert werden soll (z. B. `Temperatur`)
 2. Menüband: **Daten → Sortieren A–Z** (aufsteigend) oder **Sortieren Z–A** (absteigend) – bei Zahlen entsprechend „kleinster bis größter Wert" bzw. umgekehrt
 
-<!-- **Screenshot 16:** Excel-Menüband, Reiter „Daten", mit hervorgehobenen Schaltflächen „A-Z" und „Z-A" in der Gruppe „Sortieren & Filtern".
--->
+<!-- Screenshot 19: Excel-Menüband, Reiter „Daten", mit hervorgehobenen Schaltflächen „A-Z" und „Z-A" in der Gruppe „Sortieren & Filtern".
+Markdownlösung: ![Screenshot des Excel-Menübands mit dem Reiter „Daten" sowie der Schaltflächen „A-Z" und „Z-A" in der Gruppe „Sortieren & Filtern".]({{ '/assets/images/unit04/Screenshot19_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot19_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot19_Excel" 
+   title="Screenshot des Excel-Menübands mit dem Reiter *Daten* sowie der Schaltflächen *A-Z* und *Z-A* in der Gruppe *Sortieren & Filtern*.">
+  <img src="{{ '/assets/images/unit04/Screenshot19_Excel.png' | relative_url }}" alt="Screenshot des Excel-Menübands mit dem Reiter *Daten* sowie der Schaltflächen *A-Z* und *Z-A* in der Gruppe *Sortieren & Filtern*.">
+</a>
 
 **Wichtig – der häufigste Anfängerfehler beim Sortieren:** Wird nur eine einzelne Spalte markiert (statt die ganze Tabelle bzw. mindestens eine Zelle darin) und sortiert, kann Excel nachfragen, ob die „Auswahl erweitert" werden soll. Wählen Sie in diesem Fall immer **„Auswahl erweitern"** – andernfalls wird nur die markierte Spalte umsortiert, während alle anderen Spalten unverändert an ihrer Position bleiben. Die Folge: Ihre Datensätze passen nicht mehr zusammen – eine Temperatur steht dann plötzlich beim falschen Standort und Datum.
 
-<!-- **Screenshot 17:** Excel-Dialogfenster „Sortierwarnung" mit den zwei Optionen „Auswahl erweitern" (markiert/empfohlen) und „Mit der aktuellen Auswahl fortfahren".
--->
+<!-- Screenshot 20: Excel-Dialogfenster „Sortierwarnung" mit den zwei Optionen „Auswahl erweitern" (markiert/empfohlen) und „Mit der aktuellen Auswahl fortfahren".
+Markdownlösung: ![Screenshot des Excel-Dialogfenster „Sortierwarnung" mit den zwei Auswahl Optionen.]({{ '/assets/images/unit04/Screenshot20_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot20_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot20_Excel" 
+   title="Screenshot des Excel-Dialogfenster *Sortierwarnung* mit den zwei Auswahl Optionen.">
+  <img src="{{ '/assets/images/unit04/Screenshot20_Excel.png' | relative_url }}" alt="Screenshot des Excel-Dialogfenster *Sortierwarnung* mit den zwei Auswahl Optionen.">
+</a>
 
 **Nach mehreren Kriterien sortieren:**
 Über **Daten → Sortieren** (nicht A–Z/Z–A, sondern die Schaltfläche „Sortieren" selbst) öffnet sich ein Dialog, in dem Sie mehrere Sortierebenen festlegen können – z. B. zunächst nach `Standort` (alphabetisch), und innerhalb jedes Standorts zusätzlich nach `Datum` (chronologisch). Über „Ebene hinzufügen" fügen Sie weitere Sortierkriterien hinzu.
 
-<!-- **Screenshot 18:** Dialogfenster „Sortieren" mit zwei definierten Ebenen: „Sortieren nach: Standort, A bis Z" und „Dann nach: Datum, Älteste zuerst", inklusive der Schaltfläche „Ebene hinzufügen".
--->
+<!-- Screenshot 21: Dialogfenster „Sortieren" mit zwei definierten Ebenen: „Sortieren nach: Standort, A bis Z" und „Dann nach: Datum, Älteste zuerst", inklusive der Schaltfläche „Ebene hinzufügen".
+Markdownlösung: ![Screenshot des Excel-Dialogfensters "Sortieren" mit zwei definierten Ebenen.]({{ '/assets/images/unit04/Screenshot21_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot21_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot21_Excel" 
+   title="Screenshot des Excel-Dialogfensters *Sortieren* mit zwei definierten Ebenen.">
+  <img src="{{ '/assets/images/unit04/Screenshot21_Excel.png' | relative_url }}" alt="Screenshot des Excel-Dialogfensters *Sortieren* mit zwei definierten Ebenen.">
+</a>
 
 ##  Filtern
 
@@ -40,14 +61,30 @@ Während Sortieren die Reihenfolge verändert, blendet **Filtern** einzelne Zeil
 1. Klicken Sie in eine beliebige Zelle innerhalb Ihrer Datentabelle
 2. Menüband: **Daten → Filtern** – in der Kopfzeile jeder Spalte erscheint nun ein kleines Dropdown-Symbol (Pfeil)
 
-<!-- **Screenshot 19:** Tabellenkopf mit sichtbaren Filter-Dropdown-Pfeilen neben jeder Spaltenüberschrift (Standort, Latitude, Longitude, Datum, Uhrzeit, Temperatur, Messmethode).
--->
+<!-- Screenshot 22: Tabellenkopf mit sichtbaren Filter-Dropdown-Pfeilen neben jeder Spaltenüberschrift (Standort, Latitude, Longitude, Datum, Uhrzeit, Temperatur, Messmethode).
+Markdownlösung: ![Screenshot des Excel-Tabellenkopfs mit sichtbaren Filter-Dropdown-Pfeilen neben jeder Spaltenüberschrift.]({{ '/assets/images/unit04/Screenshot22_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot22_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot22_Excel" 
+   title="Screenshot des Excel-Tabellenkopfs mit sichtbaren Filter-Dropdown-Pfeilen neben jeder Spaltenüberschrift.">
+  <img src="{{ '/assets/images/unit04/Screenshot22_Excel.png' | relative_url }}" alt="Screenshot des Excel-Tabellenkopfs mit sichtbaren Filter-Dropdown-Pfeilen neben jeder Spaltenüberschrift.">
+</a>
+
 **Filter anwenden:**
 - Klick auf das Dropdown-Symbol einer Spalte öffnet eine Liste aller in dieser Spalte vorkommenden Werte, jeweils mit Checkbox
 - Häkchen bei den gewünschten Werten setzen (bzw. „Alles auswählen" entfernen und dann gezielt einzelne Werte auswählen) → nur Zeilen mit diesen Werten bleiben sichtbar
 - Bei Zahlen- und Datumsspalten stehen zusätzlich **Zahlenfilter** bzw. **Datumsfilter** zur Verfügung (z. B. „größer als", „zwischen", „letzte 7 Tage")
 
-<!-- Geöffnetes Filter-Dropdown der Spalte „Temperatur" mit sichtbarer Werteliste (Checkboxen) im oberen Bereich und dem Untermenü „Zahlenfilter" mit Optionen wie „Größer als…", „Zwischen…" im unteren Bereich. -->
+<!-- Screenshot 23: Geöffnetes Filter-Dropdown der Spalte „Temperatur" mit sichtbarer Werteliste (Checkboxen) im oberen Bereich und dem Untermenü „Zahlenfilter" mit Optionen wie „Größer als…", „Zwischen…" im unteren Bereich.
+Markdownlösung: ![Screenshot des geöffneten Filter-Dropdown der Spalte „Temperatur" und dem Untermenü „Zahlenfilter".]({{ '/assets/images/unit04/Screenshot23_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot23_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot23_Excel" 
+   title="Screenshot des geöffneten Filter-Dropdown der Spalte *Temperatur* und dem Untermenü *Zahlenfilter*.">
+  <img src="{{ '/assets/images/unit04/Screenshot23_Excel.png' | relative_url }}" alt="Screenshot des geöffneten Filter-Dropdown der Spalte *Temperatur* und dem Untermenü *Zahlenfilter*.">
+</a>
 
 **Woran erkennt man, dass gefiltert wurde?**
 - Das Filter-Symbol der aktiven Spalte ändert sich sichtbar (Trichter-Symbol statt einfachem Pfeil)
