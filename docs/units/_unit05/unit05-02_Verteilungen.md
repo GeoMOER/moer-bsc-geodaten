@@ -14,7 +14,15 @@ Zahlen allein zeigen nicht, *wie* die Werte verteilt sind – ob sie sich um ein
 
 Ein Histogramm teilt den Wertebereich einer Variable in gleich breite Intervalle („Klassen" oder „Bins") ein und zeigt als Balkenhöhe, wie viele Beobachtungen in jedes Intervall fallen. Anders als bei einem gewöhnlichen Balkendiagramm gibt es zwischen den Balken **keine Lücken** – das macht deutlich, dass es sich um eine fortlaufende, keine kategoriale Skala handelt.
 
-<!-- **Screenshot 29:** Histogramm der Temperaturwerte mit x-Achse „Temperatur (°C)" in Intervallen von 2 °C (z. B. 4–6, 6–8, 8–10, …) und y-Achse „Anzahl Messungen", Balken lückenlos aneinandergereiht, eine leichte Rechtsschiefe der Verteilung erkennbar. -->
+<!-- Screenshot 27: Histogramm der Temperaturwerte mit x-Achse „Temperatur (°C)" in Intervallen von 2 °C (z. B. 4–6, 6–8, 8–10, …) und y-Achse „Anzahl Messungen", Balken lückenlos aneinandergereiht, eine leichte Rechtsschiefe der Verteilung erkennbar.
+Markdownlösung: ![Screenshot eines Histogramms mit Temperaturwerten.]({{ '/assets/images/unit05/Screenshot27_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit05/Screenshot27_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot27_Excel" 
+   title="Screenshot eines Histogramms mit Temperaturwerten.">
+  <img src="{{ '/assets/images/unit05/Screenshot27_Excel.png' | relative_url }}" alt="Screenshot eines Histogramms mit Temperaturwerten.">
+</a>
 
 ## Histogramm in Excel erstellen
 
@@ -22,7 +30,15 @@ Ein Histogramm teilt den Wertebereich einer Variable in gleich breite Intervalle
 2. Menüband: **Einfügen → Diagramme → Statistikdiagramm → Histogramm**
 3. Excel wählt automatisch eine Klassenbreite („Bin-Breite") – diese lässt sich über Rechtsklick auf die x-Achse → „Achse formatieren" manuell anpassen
 
-<!-- **Screenshot 30:** Rechte Seitenleiste „Achse formatieren" mit Eingabefeldern „Bin-Breite" und „Anzahl der Bins", sichtbar mit Beispielwert `2` bei der Bin-Breite. -->
+<!-- Screenshot 28: Rechte Seitenleiste „Achse formatieren" mit Eingabefeldern „Bin-Breite" und „Anzahl der Bins", sichtbar mit Beispielwert `2` bei der Bin-Breite.
+Markdownlösung: ![Screenshot des Andockfensters „Achse formatieren" mit Eingabefeldern.]({{ '/assets/images/unit05/Screenshot28_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit05/Screenshot28_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot28_Excel" 
+   title="Screenshot des Andockfensters *Achse formatieren* mit Eingabefeldern.">
+  <img src="{{ '/assets/images/unit05/Screenshot28_Excel.png' | relative_url }}" alt="Screenshot des Andockfensters *Achse formatieren* mit Eingabefeldern.">
+</a>
 
 **Warum die Klassenbreite wichtig ist:** Zu breite Klassen verschleiern Muster in den Daten (alles landet in 2–3 Balken), zu schmale Klassen erzeugen ein „zerklüftetes" Bild mit vielen einzelnen, kaum interpretierbaren Balken. Probieren Sie bei eigenen Daten ruhig 2–3 verschiedene Bin-Breiten aus, bevor Sie sich für eine Darstellung entscheiden.
 
@@ -43,7 +59,15 @@ Der Boxplot fasst dieselbe Information wie ein Histogramm – Lage, Streuung, Au
 - Die „**Whisker**" (Antennen) reichen bis zum kleinsten bzw. größten Wert **innerhalb** des 1,5-fachen Interquartilsabstands
 - Einzelne Punkte **außerhalb** der Whisker gelten als statistische **Ausreißer**
 
-<!-- **Screenshot 31:** Schematischer Boxplot mit beschrifteten Elementen: unterer Whisker, Q1 (untere Boxkante), Medianlinie in der Box, Q3 (obere Boxkante), oberer Whisker, sowie ein einzelner Punkt oberhalb des oberen Whiskers, beschriftet als „Ausreißer". -->
+<!-- Screenshot 29: Schematischer Boxplot mit beschrifteten Elementen: unterer Whisker, Q1 (untere Boxkante), Medianlinie in der Box, Q3 (obere Boxkante), oberer Whisker, sowie ein einzelner Punkt oberhalb des oberen Whiskers, beschriftet als „Ausreißer".
+Markdownlösung: ![Screenshot eines schematischen Boxplot mit beschrifteten Elementen.]({{ '/assets/images/unit05/Screenshot29_Boxplot.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit05/Screenshot29_Boxplot.png' | relative_url }}" 
+   data-lightbox="Screenshot29_Boxplot" 
+   title="Screenshot eines schematischen Boxplot mit beschrifteten Elementen.">
+  <img src="{{ '/assets/images/unit05/Screenshot29_Boxplot.png' | relative_url }}" alt="Screenshot eines schematischen Boxplot mit beschrifteten Elementen.">
+</a>
 
 ## Boxplot in Excel erstellen
 
@@ -51,7 +75,15 @@ Der Boxplot fasst dieselbe Information wie ein Histogramm – Lage, Streuung, Au
 2. Menüband: **Einfügen → Diagramme → Statistikdiagramm → Kastengrafik (Box-Whisker)**
 3. Excel berechnet Quartile und Ausreißer automatisch und stellt sie grafisch dar
 
-<!-- **Screenshot 32:** Excel mit markiertem Datenbereich (zwei Spalten: „Standort" und „Temperatur"), Menüband-Reiter „Einfügen" mit hervorgehobener Schaltfläche „Statistikdiagramm" und Untermenü, in dem „Kastengrafik" sichtbar ist. -->
+<!-- Screenshot 30: Excel mit markiertem Datenbereich (zwei Spalten: „Standort" und „Temperatur"), Menüband-Reiter „Einfügen" mit hervorgehobener Schaltfläche „Statistikdiagramm" und Untermenü, in dem „Kastengrafik" sichtbar ist.
+Markdownlösung: ![Screenshot eines Kastendiagramms mit markiertem Datenbereich und Menüband.]({{ '/assets/images/unit05/Screenshot30_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit05/Screenshot30_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot30_Excel" 
+   title="Screenshot eines Kastendiagramms mit markiertem Datenbereich und Menüband.">
+  <img src="{{ '/assets/images/unit05/Screenshot30_Excel.png' | relative_url }}" alt="Screenshot eines Kastendiagramms mit markiertem Datenbereich und Menüband.">
+</a>
 
 **Praxisnutzen für Ihren Datensatz:** Stellen Sie die Temperaturwerte mehrerer Standorte als Boxplots nebeneinander dar, erkennen Sie auf einen Blick, welcher Standort stärker schwankende Werte hat (breitere Box) oder einzelne untypische Ausreißer-Messungen enthält – deutlich schneller als beim Vergleich einzelner Mittelwerte in einer Tabelle.
 
