@@ -51,7 +51,7 @@ Das hat einen praktischen Vorteil: Melden Sie sich an einem beliebigen Uni-Rechn
 Es hat aber auch den Nachteil, dass Ihr verfügbarer Speicherplatz begrenzt ist. 
 An der Uni Marburg liegt dieser Platz bei 1 GB pro Person.
 <!-- Aufgabe an Lisa: herausfinden, ob das noch aktuell ist und wie viel Platz zur Verfügung steht 
-Notiz von Lisa: Ist laut HRZ aktuell (https://www.uni-marburg.de/de/hrz/dienste/fileservice/speicherplatz-fuer-studierende). Habe die Menge ergänzt.-->
+Notiz von Lisa S.: Ist laut HRZ aktuell (https://www.uni-marburg.de/de/hrz/dienste/fileservice/speicherplatz-fuer-studierende). Habe die Menge ergänzt.-->
 
 ### Pfade
  

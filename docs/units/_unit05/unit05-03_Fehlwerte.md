@@ -25,7 +25,15 @@ Das ist tückischer, als es zunächst scheint – **drei verschiedene Zustände*
 
 **Die gefährlichste Variante ist die dritte:** Eine `0` anstelle eines fehlenden Temperaturwerts sieht für Excel wie eine gültige Messung von `0 °C` aus und wird ganz normal in den Mittelwert eingerechnet – ein stiller, aber erheblicher Fehler, der beim bloßen Betrachten der Tabelle nicht auffällt.
 
-<!--**Screenshot 33:** Tabellenausschnitt mit einer Temperaturspalte, in der eine Zelle eine `0` enthält (rot markiert als Warnhinweis), daneben zum Vergleich eine tatsächlich leere Zelle – mit einer Anmerkung/Sprechblase „Sieht aus wie ein Messwert, ist aber vermutlich ein fehlender Wert!" -->
+<!--Screenshot 31: Tabellenausschnitt mit einer Temperaturspalte, in der eine Zelle eine `0` enthält (rot markiert als Warnhinweis), daneben zum Vergleich eine tatsächlich leere Zelle – mit einer Anmerkung/Sprechblase „Sieht aus wie ein Messwert, ist aber vermutlich ein fehlender Wert!"
+Markdownlösung: ![Screenshot eines Tabellenausschnitts mit einer Temperaturspalte, welche eine Zelle mit `0` und eine tatsächlich leere Zelle enthält.]({{ '/assets/images/unit05/Screenshot31_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit05/Screenshot31_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot31_Excel" 
+   title="Screenshot eines Tabellenausschnitts mit einer Temperaturspalte, welche eine Zelle mit `0` und eine tatsächlich leere Zelle enthält.">
+  <img src="{{ '/assets/images/unit05/Screenshot31_Excel.png' | relative_url }}" alt="Screenshot eines Tabellenausschnitts mit einer Temperaturspalte, welche eine Zelle mit `0` und eine tatsächlich leere Zelle enthält.">
+</a>
 
 **Empfehlung:** Legen Sie sich bereits **vor** der Dateneingabe eine einheitliche Konvention fest – fehlende Werte am besten als leere Zelle lassen (nicht als `0`, nicht als Text `"NA"`), da dies von den meisten Excel-Funktionen automatisch korrekt ignoriert wird. Falls Sie kennzeichnen möchten, *warum* ein Wert fehlt, nutzen Sie dafür eine **separate Spalte** (z. B. `Anmerkung`), statt die Information in die Wertespalte selbst zu schreiben.
 
@@ -37,8 +45,15 @@ Neben leeren Zellen, Text (`"NA"`) und versehentlichen Nullen gibt es eine viert
 
 **Warum das besonders gefährlich ist:** Ein Wert wie `-999` sieht für Excel wie ein ganz normaler, gültiger Zahlenwert aus und wird anstandslos in Mittelwert, Summe oder Boxplot miteingerechnet – mit drastischen Auswirkungen. Eine einzelne `-999` in einer Temperaturspalte reißt den Mittelwert massiv nach unten und lässt im Boxplot einen dramatischen, aber inhaltlich bedeutungslosen Ausreißer entstehen.
 
-<!-- **Screenshot 38:** Boxplot einer Temperaturspalte mit einem extremen Ausreißer weit unterhalb aller anderen Werte (z. B. bei `-999`, während alle übrigen Werte zwischen 0 und 20 °C liegen), mit einer Anmerkung „Kein echter Messwert – Platzhalter für fehlende Messung!".
--->
+<!-- Screenshot 32: Boxplot einer Temperaturspalte mit einem extremen Ausreißer weit unterhalb aller anderen Werte (z. B. bei `-999`, während alle übrigen Werte zwischen 0 und 20 °C liegen), mit einer Anmerkung „Kein echter Messwert – Platzhalter für fehlende Messung!".
+Markdownlösung: ![Screenshot eines Platzhalters für fehlende Messwerte.]({{ '/assets/images/unit05/Screenshot32_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit05/Screenshot32_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot32_Excel" 
+   title="Screenshot eines Platzhalters für fehlende Messwerte.">
+  <img src="{{ '/assets/images/unit05/Screenshot32_Excel.png' | relative_url }}" alt="Screenshot eines Platzhalters für fehlende Messwerte.">
+</a>
 
 **Woher weiß man, dass ein Wert ein Platzhalter ist und kein echter Messwert?**
 - **Physikalisch unmögliche oder unrealistische Werte:** Eine Lufttemperatur von `-999 °C` ist physikalisch unmöglich (absoluter Nullpunkt liegt bei etwa −273 °C) – ein klares Signal für einen Platzhalter
@@ -81,7 +96,15 @@ Diese Formel zählt, wie viele Zeilen mit `Standort = "Firmaneiplatz"` gleichzei
 |---|---|---|---|
 | Firmaneiplatz | `=ZÄHLENWENN(Standort_Bereich;"Firmaneiplatz")` | `=ZÄHLENWENNS(Standort_Bereich;"Firmaneiplatz";Temperatur_Bereich;"")` | `=C2/B2` (als Prozent formatiert) |
 
-<!-- **Screenshot 34:** Kleine Excel-Übersichtstabelle mit Spalten „Standort", „Anzahl Messungen gesamt", „Davon fehlend", „Anteil fehlend (%)", für 3–4 Stationen, wobei eine Zeile mit auffällig hohem Anteil fehlender Werte (z. B. 40 %) farblich hervorgehoben ist (bedingte Formatierung). -->
+<!-- Screenshot 33: Kleine Excel-Übersichtstabelle mit Spalten „Standort", „Anzahl Messungen gesamt", „Davon fehlend", „Anteil fehlend (%)", für 3–4 Stationen, wobei eine Zeile mit auffällig hohem Anteil fehlender Werte (z. B. 40 %) farblich hervorgehoben ist (bedingte Formatierung).
+Markdownlösung: ![Screenshot einer Excel-Übersichtstabelle mit Spalten über fehlende Werte und deren Anteil.]({{ '/assets/images/unit05/Screenshot33_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit05/Screenshot33_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot33_Excel" 
+   title="Screenshot einer Excel-Übersichtstabelle mit Spalten über fehlende Werte und deren Anteil.">
+  <img src="{{ '/assets/images/unit05/Screenshot33_Excel.png' | relative_url }}" alt="Screenshot einer Excel-Übersichtstabelle mit Spalten über fehlende Werte und deren Anteil.">
+</a>
 
 **Ausblick:** Es gibt in Excel ein deutlich schnelleres Werkzeug, um solche Übersichten auf Knopfdruck statt mit einzelnen Formeln zu erstellen – die **Pivot-Tabelle**, die Sie in einem späteren Kapitel kennenlernen. Für den Moment reicht die manuelle Lösung über Formeln völlig aus.
 

@@ -18,7 +18,15 @@ Mittelwert, Median, Histogramm und Boxplot beschreiben bisher immer **eine einze
 
 Ein Streudiagramm stellt zwei numerische Variablen als Punktwolke dar – jeder Punkt entspricht einer Messung, seine Position ergibt sich aus den Werten der beiden gewählten Variablen (z. B. x-Achse: Jahreszeit, y-Achse: Temperatur).
 
-<!-- **Screenshot 35:** Streudiagramm mit x-Achse „Uhrzeit" und y-Achse „Temperatur (°C)", Punktwolke zeigt einen klar erkennbaren Anstieg der Temperatur über den Vormittag hinweg (Tagesgang). -->
+<!-- Screenshot 34: Streudiagramm mit x-Achse „Uhrzeit" und y-Achse „Temperatur (°C)", Punktwolke zeigt einen klar erkennbaren Anstieg der Temperatur über den Vormittag hinweg (Tagesgang).
+Markdownlösung: ![Screenshot eines Streudiagramms mit Uhrzeit und Temperatur als Punktwolke.]({{ '/assets/images/unit05/Screenshot34_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit05/Screenshot34_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot34_Excel" 
+   title="Screenshot eines Streudiagramms mit Uhrzeit und Temperatur als Punktwolke.">
+  <img src="{{ '/assets/images/unit05/Screenshot34_Excel.png' | relative_url }}" alt="Screenshot eines Streudiagramms mit Uhrzeit und Temperatur als Punktwolke.">
+</a>
 
 **Erstellen in Excel:** Beide Spalten markieren (z. B. `Uhrzeit` und `Temperatur`) → **Einfügen → Diagramme → Punkt (XY)**.
 

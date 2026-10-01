@@ -40,8 +40,15 @@ Beantworten Sie folgende Fragen, indem Sie die passende Formel direkt in eine Ze
 1. Wie viel Grad Celsius entsprechen `298,15` Kelvin? (Die Kelvin-Skala beginnt beim absoluten Nullpunkt `-273,15 °C` mit `0 K`.)
 2. `25 °C` entsprechen `25 * 9/5 + 32` Fahrenheit: Wie viel Fahrenheit sind das?
 
-<!-- Screenshot: Excel-Zelle mit der Formel =25*9/5+32 in der Bearbeitungsleiste, das berechnete Ergebnis 77 in der Zelle sichtbar; daneben zum Vergleich dieselbe Tabelle mit eingeblendeter Formelansicht (Strg+#), in der statt Ergebnissen die Formeln selbst in den Zellen sichtbar sind. -->
-![Screenshot einer Excel-Zelle mit der Formel =25*9/5+32 in der Bearbeitungsleiste und zum Vergleich dieselbe Tabelle mit eingeblendeter Formelansicht.]({{ '/assets/images/unit02/Screenshot06_Excel.png' | relative_url }})
+<!-- Screenshot 6: Excel-Zelle mit der Formel =25*9/5+32 in der Bearbeitungsleiste, das berechnete Ergebnis 77 in der Zelle sichtbar; daneben zum Vergleich dieselbe Tabelle mit eingeblendeter Formelansicht (Strg+#), in der statt Ergebnissen die Formeln selbst in den Zellen sichtbar sind.
+Markdownlösung: ![Screenshot einer Excel-Zelle mit der Formel =25*9/5+32 in der Bearbeitungsleiste und zum Vergleich dieselbe Tabelle mit eingeblendeter Formelansicht.]({{ '/assets/images/unit02/Screenshot06_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit02/Screenshot06_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot06_Excel" 
+   title="Screenshot einer Excel-Zelle mit der Formel =25*9/5+32 in der Bearbeitungsleiste und zum Vergleich dieselbe Tabelle mit eingeblendeter Formelansicht.">
+  <img src="{{ '/assets/images/unit02/Screenshot06_Excel.png' | relative_url }}" alt="Screenshot einer Excel-Zelle mit der Formel =25*9/5+32 in der Bearbeitungsleiste und zum Vergleich dieselbe Tabelle mit eingeblendeter Formelansicht.">
+</a>
 
 <!--Anmerkung von Lisa S.: Ich habe "Strg+#" ausprobiert aber die Ansicht hat nicht gewechselt. -->
 
@@ -80,8 +87,15 @@ Um Ihre Formel flexibler zu machen – z. B. um die Umrechnungskonstanten jederz
 
 5. Kopieren Sie nun **nur** die Spalte mit Ihrer Fahrenheit-Formel auf ein zweites Tabellenblatt (z. B. `Datensatz_2`). Was passiert mit dem Ergebnis? Woran liegt das, und wie lösen Sie die Situation?
 
-<!-- Screenshot: Excel-Tabelle mit den Konstanten (Faktor, Offset) in den Zellen G1/G2 oben rechts, daneben eine Formel in der Bearbeitungsleiste mit den absoluten Bezügen $G$1 und $G$2 sowie dem relativen Bezug auf die Temperaturspalte; zum Vergleich dasselbe nach dem Kopieren auf ein zweites Tabellenblatt, auf dem die Formel einen Fehler oder ein falsches Ergebnis zeigt, da die Konstanten dort fehlen. -->
-![Screenshot zweier Excel-Tabellen mit und ohne Zellbezug.]({{ '/assets/images/unit02/Screenshot07_Excel.png' | relative_url }})
+<!-- Screenshot 7: Excel-Tabelle mit den Konstanten (Faktor, Offset) in den Zellen G1/G2 oben rechts, daneben eine Formel in der Bearbeitungsleiste mit den absoluten Bezügen $G$1 und $G$2 sowie dem relativen Bezug auf die Temperaturspalte; zum Vergleich dasselbe nach dem Kopieren auf ein zweites Tabellenblatt, auf dem die Formel einen Fehler oder ein falsches Ergebnis zeigt, da die Konstanten dort fehlen.
+Markdownlösung: ![Screenshot zweier Excel-Tabellen mit und ohne Zellbezug.]({{ '/assets/images/unit02/Screenshot07_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit02/Screenshot07_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot07_Excel" 
+   title="Screenshot zweier Excel-Tabellen mit und ohne Zellbezug.">
+  <img src="{{ '/assets/images/unit02/Screenshot07_Excel.png' | relative_url }}" alt="Screenshot zweier Excel-Tabellen mit und ohne Zellbezug.">
+</a>
 
 **Lösungshinweis (nicht vorab verraten, ggf. als Tipp nutzen):** Wird nur die Formel-Spalte kopiert, ohne die Zellen `G1`/`G2` mit auf das neue Blatt zu übernehmen, verweist `$G$1`/`$G$2` dort ins Leere oder auf andere, dort zufällig vorhandene Werte. Lösung: entweder die Konstanten auf dem Zielblatt ebenfalls bereitstellen, oder die Formel vor dem Kopieren mit **„Einfügen als Werte"** von der Formel in einen festen Zahlenwert umwandeln.
 

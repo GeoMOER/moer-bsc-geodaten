@@ -54,7 +54,15 @@ Beispiel: `Mueller_Klimadaten_20250316_v2.xlsx`
 | Versionsnummer statt „final", „neu", „aktuell" | Wörter wie „final" verlieren ihre Bedeutung, sobald eine weitere Änderung nötig wird | `v1`, `v2`, `v3` statt `final`, `final_neu` |
 | Konsistente Reihenfolge der Bestandteile | Erleichtert das Sortieren und Wiederfinden über viele Dateien hinweg | immer `Name_Inhalt_Datum_Version` |
 
-<!-- **Screenshot 14:** Datei-Explorer-Fenster mit zwei Ordnern nebeneinander im Vergleich: links ein chaotischer Ordner mit Dateinamen wie `Daten_neu2_FINAL.xlsx`, rechts derselbe Datenbestand konsistent benannt nach dem Schema `Name_Inhalt_Datum_Version.xlsx`, dabei automatisch chronologisch sortiert. -->
+<!-- Screenshot 18: Datei-Explorer-Fenster mit zwei Ordnern nebeneinander im Vergleich: links ein chaotischer Ordner mit Dateinamen wie `Daten_neu2_FINAL.xlsx`, rechts derselbe Datenbestand konsistent benannt nach dem Schema `Name_Inhalt_Datum_Version.xlsx`, dabei automatisch chronologisch sortiert.
+Markdownlösung: ![Screenshot des Datei-Explorer-Fensters mit zwei Ordnern nebeneinander im Vergleich: rechts chaotisch benannte Dateien, links konsistent benannte Daten.]({{ '/assets/images/unit04/Screenshot18_Struktur.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot18_Struktur.png' | relative_url }}" 
+   data-lightbox="Screenshot18_Struktur" 
+   title="Screenshot des Datei-Explorer-Fensters mit zwei Ordnern nebeneinander im Vergleich: rechts chaotisch benannte Dateien, links konsistent benannte Daten.">
+  <img src="{{ '/assets/images/unit04/Screenshot18_Struktur.png' | relative_url }}" alt="Screenshot des Datei-Explorer-Fensters mit zwei Ordnern nebeneinander im Vergleich: rechts chaotisch benannte Dateien, links konsistent benannte Daten.">
+</a>
 
 ## Themenüberschrift 03: Ordnerstrukturen
 

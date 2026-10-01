@@ -19,7 +19,15 @@ Wenn Sie Daten aus mehreren Quellen zusammenführen, kann derselbe Datensatz ver
 2. Menüband: **Daten → Duplikate entfernen**
 3. Im folgenden Dialog wählen Sie aus, **welche Spalten** zur Prüfung auf Duplikate herangezogen werden sollen
 
-<!-- **Screenshot 21:** Dialogfenster „Duplikate entfernen" mit Liste aller Spaltenüberschriften (Standort, Latitude, Longitude, Datum, Uhrzeit, Temperatur, Messmethode), jede mit Checkbox, alle standardmäßig angehakt. -->
+<!-- Screenshot 24: Dialogfenster „Duplikate entfernen" mit Liste aller Spaltenüberschriften (Standort, Latitude, Longitude, Datum, Uhrzeit, Temperatur, Messmethode), jede mit Checkbox, alle standardmäßig angehakt.
+Markdownlösung: ![Screenshot des Dialogfenster „Duplikate entfernen" mit der Liste aller Spaltenüberschriften.]({{ '/assets/images/unit04/Screenshot24_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot24_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot24_Excel" 
+   title="Screenshot des Dialogfenster *Duplikate entfernen* mit der Liste aller Spaltenüberschriften.">
+  <img src="{{ '/assets/images/unit04/Screenshot24_Excel.png' | relative_url }}" alt="Screenshot des Dialogfenster *Duplikate entfernen* mit der Liste aller Spaltenüberschriften.">
+</a>
 
 **Wichtige Überlegung vor dem Löschen:** Was genau als „Duplikat" gilt, hängt davon ab, welche Spalten Sie zum Vergleich auswählen. Vergleichen Sie **alle** Spalten, gelten nur exakt identische Zeilen als Duplikat. Vergleichen Sie dagegen nur `Standort` und `Datum`, würde Excel bereits zwei Zeilen als Duplikat behandeln, die sich nur in der Temperatur unterscheiden – das wäre in Ihrem Fall vermutlich falsch, da unterschiedliche Uhrzeiten am selben Tag durchaus unterschiedliche, beide gültige Messungen sein können.
 
@@ -27,7 +35,15 @@ Wenn Sie Daten aus mehreren Quellen zusammenführen, kann derselbe Datensatz ver
 
 **Duplikate zunächst nur sichtbar machen, statt sofort zu löschen:** Über **Start → Bedingte Formatierung → Regeln zum Hervorheben von Zellen → Doppelte Werte** lassen sich doppelte Einträge farblich markieren, ohne sie zu entfernen. So können Sie zunächst prüfen, ob es sich tatsächlich um echte Duplikate handelt, bevor Sie sie löschen.
 
-<!-- **Screenshot 22:** Tabellenausschnitt mit einer Spalte „Standort", in der zwei identische Einträge (z. B. „Firmaneiplatz") rot hinterlegt sind durch die bedingte Formatierung „Doppelte Werte". -->
+<!-- Screenshot 25: Tabellenausschnitt mit einer Spalte „Standort", in der zwei identische Einträge (z. B. „Firmaneiplatz") rot hinterlegt sind durch die bedingte Formatierung „Doppelte Werte".
+Markdownlösung: ![Screenshot eines Tabellenausschnitts mit der Spalte „Standort", in welcher zwei identische Einträge rot hinterlegt sind.]({{ '/assets/images/unit04/Screenshot25_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot25_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot25_Excel" 
+   title="Screenshot eines Tabellenausschnitts mit der Spalte *Standort*, in welcher zwei identische Einträge rot hinterlegt sind.">
+  <img src="{{ '/assets/images/unit04/Screenshot25_Excel.png' | relative_url }}" alt="Screenshot eines Tabellenausschnitts mit der Spalte *Standort*, in welcher zwei identische Einträge rot hinterlegt sind.">
+</a>
 
 ## Groß-/Kleinschreibung und uneinheitliche Schreibweisen
 
@@ -43,7 +59,15 @@ Ein Standort wie `Firmaneiplatz`, `firmaneiplatz` und `FIRMANEIPLATZ` sieht für
 
 **Praktisches Vorgehen:** Legen Sie sich eine Hilfsspalte an, in der Sie z. B. `=GROSS2(A2)` auf die Spalte `Standort` anwenden, prüfen Sie das Ergebnis, und ersetzen Sie anschließend die ursprüngliche Spalte durch die bereinigten Werte (Kopieren → Einfügen als Werte, damit die Formel nicht erhalten bleibt, sondern nur das berechnete Ergebnis).
 
-<!--Tabelle mit Spalte A „Standort" (uneinheitlich: „firmaneiplatz", „FIRMANEIPLATZ", „Firmaneiplatz") und daneben Spalte B mit der Formel `=GROSS2(A2)`, sichtbar in der Bearbeitungsleiste, Ergebnis in Spalte B einheitlich „Firmaneiplatz". -->
+<!-- Screenshot 26: Tabelle mit Spalte A „Standort" (uneinheitlich: „firmaneiplatz", „FIRMANEIPLATZ", „Firmaneiplatz") und daneben Spalte B mit der Formel `=GROSS2(A2)`, sichtbar in der Bearbeitungsleiste, Ergebnis in Spalte B einheitlich „Firmaneiplatz".
+Markdownlösung: ![Screenshot eines Tabellenausschnitts mit dem uneinheitlich benannten Inhalt der Spalte „Standort" und der Formel `=GROSS2(A2)` zur einheitlichen Umbenennung.]({{ '/assets/images/unit04/Screenshot26_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit04/Screenshot26_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot26_Excel" 
+   title="Screenshot eines Tabellenausschnitts mit dem uneinheitlich benannten Inhalt der Spalte *Standort* und der Formel `=GROSS2(A2)` zur einheitlichen Umbenennung.">
+  <img src="{{ '/assets/images/unit04/Screenshot26_Excel.png' | relative_url }}" alt="Screenshot eines Tabellenausschnitts mit dem uneinheitlich benannten Inhalt der Spalte *Standort* und der Formel `=GROSS2(A2)` zur einheitlichen Umbenennung.">
+</a>
 
 ## Überflüssige Leer- und Sonderzeichen
 

@@ -42,13 +42,23 @@ Nehmen wir den Wert `50°48'51.43"N` (aus Ihrer Spalte `Koordinaten_roh`, Zelle 
 ```
 Hier wird die Startposition um eins **hinter** das `°`-Zeichen gelegt, und die Länge ergibt sich aus dem Abstand zwischen den beiden Positionen von `°` und `'`.
 
+<!-- Notiz von Lisa S.: Müssten hier nicht noch weitere Teile extrahiert werden? -->
+
 **Schritt 3 – In eine echte Zahl umwandeln:**
 ```
 =WERT(TEIL(B2;1;FINDEN("°";B2)-1))
 ```
 Ohne `WERT` bliebe das Ergebnis von `TEIL` immer **Text** – auch wenn es wie eine Zahl aussieht. Erst `WERT` macht daraus eine Zahl, mit der Sie z. B. `MITTELWERT` oder eine weitere Berechnung durchführen könnten.
 
-<!-- Screenshot: Excel-Tabelle mit Spalte Koordinaten_roh und daneben drei Hilfsspalten "Teil 1", "Teil 2", "Teil 3", in denen schrittweise mit TEIL und FINDEN einzelne Textabschnitte extrahiert werden - jede Hilfsspalte mit sichtbarer Formel in der Bearbeitungsleiste. -->
+<!-- Screenshot 9: Excel-Tabelle mit Spalte Koordinaten_roh und daneben drei Hilfsspalten "Teil 1", "Teil 2", "Teil 3", in denen schrittweise mit TEIL und FINDEN einzelne Textabschnitte extrahiert werden - jede Hilfsspalte mit sichtbarer Formel in der Bearbeitungsleiste.
+Markdownlösung: ![Screenshot einer Excel-Tabelle mit der Spalte Koordinaten_roh, drei Hilfsspalten und Formeln zur Textextraktion.]({{ '/assets/images/unit03/Screenshot09_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit03/Screenshot09_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot09_Excel" 
+   title="Screenshot einer Excel-Tabelle mit der Spalte Koordinaten_roh, drei Hilfsspalten und Formeln zur Textextraktion.">
+  <img src="{{ '/assets/images/unit03/Screenshot09_Excel.png' | relative_url }}" alt="Screenshot einer Excel-Tabelle mit der Spalte Koordinaten_roh, drei Hilfsspalten und Formeln zur Textextraktion.">
+</a>
 
 ## Achtung – Formatfehler innerhalb der Spalte
 
@@ -59,7 +69,15 @@ Wenn Sie Ihre Formeln auf die **gesamte Spalte** `Koordinaten_roh` anwenden, wer
 2. Prüfen Sie den Original-Text in der Zelle genau – zählen Sie die Anführungszeichen/Hochkommas
 3. Korrigieren Sie den Tippfehler manuell in der Ursprungsspalte, bevor Sie die Formel erneut anwenden
 
-<!-- Screenshot: Excel-Tabelle mit einer Zeile, in der die Formel #WERT! anzeigt, daneben die Ursprungszelle mit dem fehlerhaften Text 50°50'16.5'N (zwei Hochkommas statt Grad-Minuten-Sekunden-Zeichen). -->
+<!-- Screenshot 10: Excel-Tabelle mit einer Zeile, in der die Formel #WERT! anzeigt, daneben die Ursprungszelle mit dem fehlerhaften Text 50°50'16.5'N (zwei Hochkommas statt Grad-Minuten-Sekunden-Zeichen).
+Markdownlösung: ![Screenshot einer Excel-Tabelle mit der Fehlermeldung #WERT!.]({{ '/assets/images/unit03/Screenshot10_Excel.png' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit03/Screenshot10_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot10_Excel" 
+   title="Screenshot einer Excel-Tabelle mit der Fehlermeldung #WERT!.">
+  <img src="{{ '/assets/images/unit03/Screenshot10_Excel.png' | relative_url }}" alt="Screenshot einer Excel-Tabelle mit der Fehlermeldung #WERT!.">
+</a>
 
 ---
 

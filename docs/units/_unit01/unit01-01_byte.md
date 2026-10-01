@@ -25,8 +25,17 @@ Am anderen Ende saß ein Elektromagnet mit einem beweglichen Anker, an dem ein S
 
 Damit beruhte schon dieser rund 100 Jahre vor dem Computer entwickelte Apparat auf genau demselben Grundprinzip, denn er nutzte nur die zwei möglichen Zustände eines offenen oder geschlossenen Stromkreises. Erst eine vorab vereinbarte Zuordnung, welche Folge aus Punkten und Strichen welchen Buchstaben bedeutet, verwandelte diese Impulse in lesbare Information. Ursprünglich wollte Morse ganzen Wörtern aus einem Wörterbuch durchnummerierte Zahlencodes zuordnen. Erst gemeinsam mit seinem Mitarbeiter Alfred Vail entwickelte er das bekannte System aus kurzen und langen Signalen, das wir heute als Morsecode kennen.
 
-<!-- copyright free Bild einfügen -->
-![Eine Zeichnung des Morsecode Geräts.]({{ '/assets/images/unit01/El_mundo_fisico_1882_Manipulador_Morse.jpg' | relative_url }})
+<!-- copyright free Bild einfügen 
+Markdownlösung: ![Eine Zeichnung des Morsecode Geräts.]({{ '/assets/images/unit01/El_mundo_fisico_1882_Manipulador_Morse.jpg' | relative_url }})
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+
+<a href="{{ '/assets/images/unit01/El_mundo_fisico_1882_Manipulador_Morse.jpg' | relative_url }}" 
+   data-lightbox="Morsecodegeraet" 
+   title="Eine Zeichnung des Morsecode Geräts.">
+  <img src="{{ '/assets/images/unit01/El_mundo_fisico_1882_Manipulador_Morse.jpg' | relative_url }}" alt="Eine Zeichnung des Morsecode Geräts.">
+</a>
+
+
 
 SOS ist ein gutes Einstiegsbeispiel für "Codierung": [ ... --- ... ] drei kurze, drei lange, drei kurze Signale. Es werden nur zwei Zustände gebraucht (kurz/lang, bzw. Ton an/aus). 
 Zwar übersetzen sowohl der Morsecode als auch der Computer diese binären Zeichen in Zahlen bzw. Buchstaben, es gibt aber wichtige Unterschiede:
