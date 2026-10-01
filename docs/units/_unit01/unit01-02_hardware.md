@@ -75,6 +75,6 @@ Sobald Sie die Datei speichern, wird sie dauerhaft auf der Festplatte bzw. SSD a
 
 ## Übung
 > Rufen Sie den Taskmanager mittels shortcut (STR + ALT + ENTF) auf
-> Finden Sie heraus, welche specs Ihr PC hat
+> Finden Sie heraus, wie viele Ihr PC hat und wie groß der Arbeitsspeicher ist
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
