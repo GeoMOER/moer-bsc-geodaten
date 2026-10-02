@@ -11,6 +11,10 @@ Dieser Kurs verbindet selbstständiges Lernen mit gemeinsamen Präsenzterminen. 
 
 Zur Lehr- und Lernumgebung gehören diese öffentliche Kurswebseite (=HTML Lernumgebung), der geschützte ILIAS-Kurs und die Präsenztermine. Diese drei Bestandteile erfüllen unterschiedliche Aufgaben.
 
+## Präsenztermine
+
+In den Präsenzterminen werden Ihnen die Lerninhalte praktisch vermittelt. Dort können Sie Fragen stellen, Verständnisprobleme klären und sich je nach Format mit anderen Studierenden austauschen. Die Materialien auf der Kurswebseite unterstützen Sie beim Lernen, ersetzen aber nicht die aktive Teilnahme am Kurs.
+
 ## HTML Lernumgebung
 
 Diese Kurswebseite ist Ihre wichtigste Lernumgebung. Hier finden Sie Einführungen, Erklärungen, Beispiele und Aufgabenstellungen. Sie können damit die Präsenztermine vor- und nachbereiten oder einzelne Inhalte noch einmal wiederholen.
@@ -21,7 +25,7 @@ Die Kurswebseite ist öffentlich zugänglich. Für den Zugriff benötigen Sie ke
 
 ILIAS ist der geschützte digitale Kursraum der Universität Marburg. Dort bearbeiten Sie die 14 Übungsaufgaben und die vier Tests. Außerdem finden Sie dort organisatorische Informationen und weitere Kursdokumente.
 
-Für den Zugriff auf ILIAS benötigen Sie Ihren Studierendenaccount.
+Für den Zugriff auf ILIAS benötigen Sie Ihren Studierendenaccount und Ihr entsprechendes Zugriffs-Token. 
 
 **[PLATZHALTER: Link zum ILIAS-Kurs]**
 
@@ -31,13 +35,16 @@ Die Übungsaufgaben helfen Ihnen, die Inhalte des letzten Termins nachzubereiten
 
 Dieses Vorgehen wird **Just-in-Time Teaching (JiTT)** genannt. Ihre Bearbeitung der Übungsaufgaben hilft uns somit, gezielt auf auftretende Schwierigkeiten einzugehen.
 
-## Präsenztermine
-
-In den Präsenzterminen werden Ihnen die Lerninhalte praktisch vermittelt. Dort können Sie Fragen stellen, Verständnisprobleme klären und sich je nach Format mit anderen Studierenden austauschen. Die Materialien auf der Kurswebseite unterstützen Sie beim Lernen, ersetzen aber nicht die aktive Teilnahme am Kurs.
-
 ## Tutorium
 
-Zusätzlich zum Kurs bieten wir ein freiwilliges Tutorium an. Dort erhalten Sie Unterstützung bei Fragen zu den Lerninhalten und Übungsaufgaben.
+Zusätzlich zum Kurs bieten wir ein freiwilliges Tutorium an. Die Plätze sind räumlich und personell begrenzt. 
+<!-- genauer drauf eingehen (Elias bereitet was vor) -->
+Dort erhalten Sie Unterstützung bei Fragen zu den Lerninhalten und Übungsaufgaben.
 
 - Termin: **[PLATZHALTER]**
 - Raum oder Zugangslink: **[PLATZHALTER]**
+
+<!--
+das Tutorium ist KEINE Gruppenarbeit
+Etherpad zur Sammlung von Problemen
+-->

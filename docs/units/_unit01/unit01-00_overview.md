@@ -15,7 +15,7 @@ Zunächst geht es um die Frage, wie Daten auf unseren Computern überhaupt gespe
 Am Ende dieser Unit sind Studierende in der Lage ...
 
 * Binärsystem, Bits & Bytes erklären
-* Kodierung (Text, Zahlen, Bilder) grundlegend erklären
+* Codierung (Text, Zahlen, Bilder) grundlegend erklären
 * Unterschied zwischen Speicher, RAM und Prozessor verstehen
 * Funktionen von Laufwerken, Netzwerken und Pfaden verstehen
 
@@ -29,6 +29,7 @@ Um diese Lernziele zu erreichen, werden wir Daten von der Eingabe hin zum Speich
 Live Voting in Ilias zu Vorerfahrungen 
 kurze Besprechung, ca 5 min
 
+DATEIEN SPEICHERN
 -->
 
 
