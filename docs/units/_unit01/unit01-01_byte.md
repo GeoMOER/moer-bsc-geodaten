@@ -85,16 +85,14 @@ Erst durch diese zusätzliche Strukturierungsebene wird aus einer bloßen Bitfol
  
 Man sieht hier bereits das Kernproblem, das die folgende Übung greifbar macht: Dasselbe Zeichen „ü" wird je nach Format durch völlig unterschiedliche Bytefolgen dargestellt. Ein Programm kann eine Datei nur dann korrekt anzeigen, wenn es weiß (oder richtig rät), in welchem Format sie gespeichert wurde.
 
-<!--
-
-Größe von TXT Datei
 
 ## Kurze Übung
 **Durchführung:**
  
-1. Öffnen Sie einen neuen Texteditor und schreiben Sie einen kurzen Satz mit möglichst vielen Umlauten und Sonderzeichen, z. B.: *„Übermäßig große Änderungen kosten viel Geld – über 100 €."*
-2. Speichern Sie die Datei einmal explizit als **UTF-8** (z. B. `text_utf8.txt`) und einmal als **ANSI/Windows-1252** (z. B. `text_ansi.txt`). Die meisten Editoren bieten dafür ein Dropdown-Menü im Speichern-Dialog.
-3. Schließen Sie beide Dateien und öffnen Sie dann `text_utf8.txt` erneut – aber stellen Sie dabei im Editor bewusst die Kodierung auf **ANSI/Windows-1252** um (bei vielen Editoren geht das über rechtsklick „Erneut öffnen mit Kodierung …" oder eine Codierungs-Auswahl unten in der Statusleiste).
-4. Beobachten Sie, was mit den Umlauten passiert – vergleichen Sie das Ergebnis mit dem Original
--->
+1. Laden Sie die "Uebung01.txt Datei aus [ILIAS PFAD ]
+2. Öffnen Sie die Datei per Rechtsklick -> öffnen mit Notepad++
+3. In Notepad ++ können Sie unterschiedliche Codierungen auswählen. Testen Sie verschiedene Codierungen.
+4. Erstellen Sie im Texteditor eine Datei, und schreiben Sie 0! hinein und speichern Sie diese als txt.
+5. Machen Sie das gleiche mit einer Worddatei
+6. Vergleichen Sie die Dateigröße beider Dateien durch Aufrufen der Details in den Eigenschaften (ALT + ENTER)
 
