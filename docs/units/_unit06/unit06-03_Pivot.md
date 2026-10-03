@@ -18,7 +18,15 @@ Eine Pivot-Tabelle fasst große Datenmengen per Drag-and-Drop zusammen, ganz ohn
 4. Im Bereich „PivotTable-Felder" rechts: Ziehen Sie `Standort` in den Bereich **„Zeilen"**
 5. Ziehen Sie `Temperatur` in den Bereich **„Werte"** – Excel summiert standardmäßig; klicken Sie auf das Werte-Feld → „Wertfeldeinstellungen" → **„Mittelwert"** wählen
 
-<!-- Screenshot: Excel mit geöffnetem Bereich "PivotTable-Felder" rechts, "Standort" im Feld "Zeilen", "Temperatur" im Feld "Werte" mit der Aggregation "Mittelwert", links die daraus resultierende Pivot-Tabelle mit einer Zeile pro Station und der jeweiligen Durchschnittstemperatur. -->
+<!-- Screenshot 37: Excel mit geöffnetem Bereich "PivotTable-Felder" rechts, "Standort" im Feld "Zeilen", "Temperatur" im Feld "Werte" mit der Aggregation "Mittelwert", links die daraus resultierende Pivot-Tabelle mit einer Zeile pro Station und der jeweiligen Durchschnittstemperatur.
+Markdownlösung: ![Screenshot des Bereichs "PivotTable-Felder" mit zugeordneten Parametern und resultierender Pivot-Tabelle.]({{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit06/Screenshot37_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot37_Excel" 
+   title="Screenshot des Bereichs *PivotTable-Felder* mit zugeordneten Parametern und resultierender Pivot-Tabelle.">
+  <img src="{{ '/assets/images/unit06/Screenshot37_Excel.png' | relative_url }}" alt="Screenshot des Bereichs *PivotTable-Felder* mit zugeordneten Parametern und resultierender Pivot-Tabelle.">
+</a>
 
 **Zweites Wertefeld ergänzen:** Ziehen Sie zusätzlich `Temperatur` ein zweites Mal in den Bereich „Werte" und stellen Sie dort auf **„Anzahl"** – so sehen Sie in einer Tabelle sowohl die Durchschnittstemperatur als auch die Anzahl der Messungen je Station.
 

@@ -32,7 +32,16 @@ Sie erhalten eine zusätzliche kleine Tabelle `Stationsmetadaten.xlsx` mit der H
 
 sucht den Wert aus `A2` in Spalte A des Blatts `Stationsmetadaten`, findet die passende Zeile und gibt den Wert aus deren zweiter Spalte zurück (die Höhe über NN).
 
-<!-- Screenshot: Excel-Formel =SVERWEIS(A2;Stationsmetadaten!A:B;2;FALSCH) in der Bearbeitungsleiste, daneben in der Zelle das korrekte Ergebnis (eine Höhenangabe in Metern), sowie ein zweites Tabellenblatt "Stationsmetadaten" mit der Nachschlage-Tabelle im Hintergrund sichtbar. -->
+<!-- Screenshot 36: Excel-Formel =SVERWEIS(A2;Stationsmetadaten!A:B;2;FALSCH) in der Bearbeitungsleiste, daneben in der Zelle das korrekte Ergebnis (eine Höhenangabe in Metern), sowie ein zweites Tabellenblatt "Stationsmetadaten" mit der Nachschlage-Tabelle im Hintergrund sichtbar.
+Markdownlösung: ![Screenshot der angeglichenen Datensätze nebeneinander.]({{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:
+
+<a href="{{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot36_Excel" 
+   title="Screenshot der angeglichenen Datensätze nebeneinander.">
+  <img src="{{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}" alt="Screenshot der angeglichenen Datensätze nebeneinander.">
+</a>  
+Notiz von Lisa S.: Tabelle "Standortmetadaten" fehlt. -->
 
 **Wichtige Stolperfalle:** `FALSCH` (exakte Übereinstimmung) sollten Sie fast immer verwenden. Mit `WAHR` sortiert Excel die Suche anders und liefert bei nicht exakt passenden Werten stillschweigend ein falsches Ergebnis, statt einen Fehler zu melden – das fällt oft erst bei einer späteren Prüfung auf.
 

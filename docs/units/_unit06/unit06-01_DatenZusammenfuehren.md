@@ -33,7 +33,15 @@ Bevor Sie beide Tabellen zusammenführen können, müssen Sie sich für **ein** 
    - `Uhrzeit`: `=A2-GANZZAHL(A2)` (übrig bleibt nur der Nachkomma-Anteil, der die Uhrzeit repräsentiert) – anschließend als Uhrzeit formatieren
 3. **Spaltenreihenfolge angleichen:** Ordnen Sie die Spalten auf `Datensatz_2` in derselben Reihenfolge an wie auf `Datensatz_1` (per Drag & Drop der Spaltenköpfe oder Ausschneiden/Einfügen ganzer Spalten).
 
-<!-- Screenshot: Zwei Excel-Tabellenblätter nebeneinander, links Datensatz_1 mit den Spalten Standort/Koordinaten_roh/Datum/Uhrzeit/Temperatur/Messmethode, rechts Datensatz_2 nach der Angleichung mit identischer Spaltenreihenfolge und identischen Überschriften. -->
+<!-- Screenshot 35: Zwei Excel-Tabellenblätter nebeneinander, links Datensatz_1 mit den Spalten Standort/Koordinaten_roh/Datum/Uhrzeit/Temperatur/Messmethode, rechts Datensatz_2 nach der Angleichung mit identischer Spaltenreihenfolge und identischen Überschriften.
+Markdownlösung: ![Screenshot der angeglichenen Datensätze nebeneinander.]({{ '/assets/images/unit06/Screenshot35_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken: -->
+
+<a href="{{ '/assets/images/unit06/Screenshot35_Excel.png' | relative_url }}" 
+   data-lightbox="Screenshot35_Excel" 
+   title="Screenshot der angeglichenen Datensätze nebeneinander.">
+  <img src="{{ '/assets/images/unit06/Screenshot35_Excel.png' | relative_url }}" alt="Screenshot der angeglichenen Datensätze nebeneinander.">
+</a>
 
 ## Zeilen anhängen
 

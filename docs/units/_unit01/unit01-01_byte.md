@@ -36,7 +36,6 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 </a>
 
 
-
 SOS ist ein gutes Einstiegsbeispiel für "Codierung": [ ... --- ... ] drei kurze, drei lange, drei kurze Signale. Es werden nur zwei Zustände gebraucht (kurz/lang, bzw. Ton an/aus). 
 Zwar übersetzen sowohl der Morsecode als auch der Computer diese binären Zeichen in Zahlen bzw. Buchstaben, es gibt aber wichtige Unterschiede:
 
