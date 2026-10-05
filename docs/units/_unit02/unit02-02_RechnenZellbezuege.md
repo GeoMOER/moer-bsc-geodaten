@@ -12,7 +12,7 @@ Excel ist im Kern ein programmierbarer Taschenrechner: Jede Zelle kann eine fest
 
 <!-- Hinweis zur Excel-Version: Rechenoperatoren und Zellbezüge (relativ/absolut) sind in allen aktuellen Excel-Versionen identisch. -->
 
-## Themenüberschrift 01: Mathematische Operatoren
+## Mathematische Operatoren
 
 | Operation | Zeichen | Beispiel |
 |---|---|---|
@@ -52,7 +52,7 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 
 <!--Anmerkung von Lisa S.: Ich habe "Strg+#" ausprobiert aber die Ansicht hat nicht gewechselt. -->
 
-## Themenüberschrift 02: Variable Werte über Zellbezüge
+##Variable Werte über Zellbezüge
 
 Eine Formel kann sich auch auf den Inhalt anderer Zellen beziehen, statt feste Zahlen zu enthalten. Das wird als **Zellbezug** bezeichnet – und ist der eigentliche Grund, warum Tabellenkalkulation so mächtig ist: Ändert sich der Wert einer Zelle, aktualisiert sich automatisch jede Formel, die sich darauf bezieht.
 
@@ -97,6 +97,10 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
   <img src="{{ '/assets/images/unit02/Screenshot07_Excel.png' | relative_url }}" alt="Screenshot zweier Excel-Tabellen mit und ohne Zellbezug.">
 </a>
 
+<!--
 **Lösungshinweis (nicht vorab verraten, ggf. als Tipp nutzen):** Wird nur die Formel-Spalte kopiert, ohne die Zellen `G1`/`G2` mit auf das neue Blatt zu übernehmen, verweist `$G$1`/`$G$2` dort ins Leere oder auf andere, dort zufällig vorhandene Werte. Lösung: entweder die Konstanten auf dem Zielblatt ebenfalls bereitstellen, oder die Formel vor dem Kopieren mit **„Einfügen als Werte"** von der Formel in einen festen Zahlenwert umwandeln.
+-->
 
+<!--
 ## Additional resources
+-->

@@ -42,7 +42,7 @@ Nehmen wir den Wert `50°48'51.43"N` (aus Ihrer Spalte `Koordinaten_roh`, Zelle 
 ```
 Hier wird die Startposition um eins **hinter** das `°`-Zeichen gelegt, und die Länge ergibt sich aus dem Abstand zwischen den beiden Positionen von `°` und `'`.
 
-<!-- Notiz von Lisa S.: Müssten hier nicht noch weitere Teile extrahiert werden? -->
+<!-- Notiz von Lisa S.: Müssten hier nicht noch weitere Teile extrahiert werden? LH: ich will nicht zu tiel in Koordinaten einsteigen, weil das Dirks Teil ist-->
 
 **Schritt 3 – In eine echte Zahl umwandeln:**
 ```

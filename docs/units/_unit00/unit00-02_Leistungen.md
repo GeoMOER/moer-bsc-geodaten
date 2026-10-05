@@ -88,7 +88,7 @@ Für das Bestehen des Moduls müssen Sie ebenfalls
 Der Mittelwert der vier Tests wird anhand des Notenschlüssels in Notenpunkte umgerechnet. Diese Notenpunkte werden für Lehramtsstudierende in MARVIN eingetragen.
 
 
-## Anmeldung in MARVIN
+## Anmeldung und Abmeldung in MARVIN
 
 Bitte melden Sie sich **selbstständig und fristgerecht** für die Studien- und die Prüfungsleistung in Marvin an.
 
@@ -98,6 +98,9 @@ Bitte melden Sie sich **selbstständig und fristgerecht** für die Studien- und 
 Die Teilnahme am Kurs oder der Zugang zum ILIAS-Kurs ersetzt die Anmeldung in MARVIN nicht.
 
 Für die einzelnen Übungsaufgaben und Tests ist keine gesonderte Anmeldung erforderlich.
+
+Sollten Sie vom Kurs zurücktreten, melden Sie sich bitte selbst in MARVIN vom Kurs ab!
+
 
 ## Technische Voraussetzungen
 

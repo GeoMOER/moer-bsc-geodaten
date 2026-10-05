@@ -12,7 +12,7 @@ header:
 
 Sie haben in den letzten Kapiteln gelernt, wie Sie einzelne Dateien sauber formatieren, exportieren und importieren. Doch spätestens wenn Sie über mehrere Wochen hinweg Messdaten sammeln, Zwischenstände speichern und mit anderen austauschen, entsteht ein neues Problem: **Wo liegt eigentlich was, und welche Version ist die aktuelle?** Eine einzelne unsauber formatierte Zelle lässt sich meist noch reparieren – ein Datensatz, der in zwanzig verschieden benannten Dateien über drei Ordner verteilt ist, kostet dagegen im Zweifel Stunden, ihn wieder zusammenzusetzen. Dieses Kapitel behandelt deshalb, wie Sie Dateien von Anfang an so organisieren, dass genau das nicht passiert.
 
-## Themenüberschrift 01: Warum Ordnung essentiell ist
+## Warum Ordnung essentiell ist
 
 Stellen Sie sich vor, Sie erhalten für ein Projekt Daten von drei Kommiliton:innen sowie zwei eigene Zwischenstände Ihrer Analyse. Ohne klare Struktur landen typischerweise Dateien wie diese in einem einzigen Ordner:
 
@@ -33,7 +33,7 @@ Daten_final_FINAL_wirklich.xlsx
 
 Das ist kein hypothetisches Problem: Fehlerhafte Datenanalysen aufgrund verwechselter Dateiversionen sind einer der häufigsten und am leichtesten vermeidbaren Fehler in Projekt- und Forschungsarbeiten. Eine konsistente Ordner- und Namensstruktur kostet zu Beginn ein paar Minuten mehr Aufwand – sie erspart Ihnen aber, im Zweifel eine ganze Analyse noch einmal neu zu machen, weil unklar ist, mit welchem Datenstand Sie eigentlich gearbeitet haben. 
 
-## Themenüberschrift 02: Namensregeln für Dateien
+## Namensregeln für Dateien
 
 Ein guter Dateiname beantwortet auf einen Blick: **Was ist das, von wem, wann, welche Version?** Ein bewährtes Schema, das Sie bereits aus der Export-Übung kennen:
 
@@ -64,7 +64,7 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
   <img src="{{ '/assets/images/unit04/Screenshot18_Struktur.png' | relative_url }}" alt="Screenshot des Datei-Explorer-Fensters mit zwei Ordnern nebeneinander im Vergleich: rechts chaotisch benannte Dateien, links konsistent benannte Daten.">
 </a>
 
-## Themenüberschrift 03: Ordnerstrukturen
+##  Ordnerstrukturen
 
 Neben dem Dateinamen selbst ist auch die **Ablage in Ordnern** entscheidend. Eine bewährte Grundstruktur für ein Datenprojekt:
 
