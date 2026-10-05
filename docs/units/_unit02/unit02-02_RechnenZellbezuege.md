@@ -3,7 +3,7 @@ title: Rechnen und Zellbezüge
 published: true
 toc: true
 header:
-  image: /assets/images/unit02/31031723265_0890cd9547_o.jpg
+  image: /assets/images/unit02/DataSwamp_Stage02.png
   image_description: "Cloudscape Over the Philippine Sea"
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
