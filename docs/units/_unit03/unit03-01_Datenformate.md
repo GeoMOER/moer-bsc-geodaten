@@ -75,7 +75,7 @@ Deswegen gilt: Einheiten werden **nicht** direkt mit in die Zelle geschrieben, z
 2. `Strg` + `1` drücken (öffnet den Dialog „Zellen formatieren") – oder Rechtsklick → „Zellen formatieren…"
 3. Im Reiter „Zahlen" die Kategorie **„Benutzerdefiniert"** auswählen (meist unterster Eintrag in der Liste)
 4. Im Feld „Typ" den gewünschten Formatcode eingeben (siehe Beispiele unten)
-5. Vorschau rechts im Dialog prüfen – zeigt bereits, wie der aktuelle Zellwert aussehen würde
+5. Vorschau rechts im Beispiel prüfen – zeigt bereits, wie der aktuelle Zellwert aussehen würde
 6. Mit „OK" bestätigen
 
 
@@ -89,7 +89,7 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
   <img src="{{ '/assets/images/unit03/Screenshot08_Excel.png' | relative_url }}" alt="Screenshot des geöffneten Dialogfelds *Zellen formatieren* mit Beispiel.">
 </a>
 
-<!-- Notiz von Lisa S.: Bei mir wird keine Vorschau angezeigt -->
+<!-- Notiz von Lisa S.: Bei mir wird keine Vorschau angezeigt / LH: ist im Beispiel, habe ich jetzt konkretisiert-->
 
 ### Benutzerdefinierte Formate – zwei Beispiele aus unserem Datensatz
 

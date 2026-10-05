@@ -10,7 +10,7 @@ header:
 
 Sie haben in den letzten Kapiteln gelernt, wie Sie Daten korrekt formatieren, filtern und sortieren. Doch bevor eine Tabelle überhaupt zuverlässig ausgewertet werden kann, muss sie **bereinigt** sein – gerade wenn Daten aus mehreren Quellen zusammengeführt wurden (wie Ihre beiden bereitgestellten Datensätze), schleichen sich fast zwangsläufig Inkonsistenzen ein: doppelte Einträge, uneinheitliche Schreibweisen, überflüssige Leerzeichen. Diese Fehler sind besonders tückisch, weil sie auf den ersten Blick oft **nicht auffallen** – die Tabelle sieht vollständig und plausibel aus, liefert aber bei Auswertungen falsche Ergebnisse.
 
-## Themenüberschrift 01: Doppelte Einträge
+## Doppelte Einträge
 
 Wenn Sie Daten aus mehreren Quellen zusammenführen, kann derselbe Datensatz versehentlich mehrfach in der Tabelle landen – z. B. weil eine Messung sowohl in `Datensatz_1` als auch in `Datensatz_2` erfasst wurde, oder weil beim Kopieren ein Bereich doppelt eingefügt wurde.
 

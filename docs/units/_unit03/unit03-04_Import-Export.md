@@ -10,7 +10,7 @@ header:
 
 Bisher haben Sie ausschließlich innerhalb einer Excel-Datei (.xlsx) gearbeitet. In der Praxis werden Daten jedoch häufig als **Textdatei** ausgetauscht – etwa wenn Sie Messdaten von einem Sensor, einer Website oder einer anderen Software erhalten, die kein Excel-Format unterstützt. Textdateien sind das kleinste gemeinsame Format, das praktisch jede Software lesen kann – dafür müssen Sie beim Import selbst festlegen, wie die Datei strukturiert ist und welche Datentypen die einzelnen Spalten haben sollen. Genau das üben Sie in diesem Kapitel.
 
-## Themenüberschrift 01: Textdatei vs. CSV-Datei
+## Textdatei vs. CSV-Datei
 
 Beide Formate speichern reinen Text, unterscheiden sich aber in der Art, wie Spalten getrennt werden:
 
@@ -42,7 +42,7 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 
 **Reflexionsfrage:** Warum ist die `.xlsx`-Datei vermutlich die größte der drei Dateien, obwohl sie dieselben Daten enthält?
 
-## Themenüberschrift 02: Import einer Textdatei in Excel
+## Import einer Textdatei in Excel
 
 Wenn Sie umgekehrt eine `.txt`- oder `.csv`-Datei erhalten und in Excel öffnen möchten, sollten Sie **nicht** per Doppelklick öffnen, sondern über **Daten → Aus Text/CSV** –  so erhalten Sie Zugriff auf den Import-Assistenten, der Ihnen die Kontrolle über Kodierung, Trennzeichen und Datentyp gibt. Der Assistent führt Sie durch drei Schritte:
 

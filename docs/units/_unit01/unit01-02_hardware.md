@@ -10,7 +10,7 @@ header:
 
 <!-- Themenblock 01-02: Unterschied zwischen Speicher, RAM und Prozessor -->
 
-Jetzt wo wir das Grundprinzip von Signal zu Codierung vertsannden haben, gehen wir auf die physischen Aspekte ein 
+Jetzt wo wir das Grundprinzip von Signal zu Codierung verstanden haben, gehen wir auf die physischen Aspekte ein .
 
 ## Wie funktioniert ein Computer?
 

@@ -12,7 +12,7 @@ Im letzten Kapitel haben Sie eigene Formeln mit Grundrechenarten und Zellbezüge
 
 <!-- Hinweis zur Excel-Version: Funktionssyntax und alle in diesem Kapitel gezeigten Funktionen sind in allen aktuellen Excel-Versionen identisch verfügbar. -->
 
-## Themenüberschrift 01: Struktur von Funktionen
+## Struktur von Funktionen
 
 Jede Funktion folgt demselben Grundaufbau:
 
@@ -26,7 +26,7 @@ Jede Funktion folgt demselben Grundaufbau:
 
 **Wichtig – Trennzeichen ist sprachabhängig:** Ob Argumente durch Semikolon `;` oder Komma `,` getrennt werden, hängt von der **Spracheinstellung** Ihres Excel ab. Mit deutscher/europäischer Einstellung gilt `;` (da `,` bereits als Dezimaltrennzeichen verwendet wird), mit angloamerikanischer Einstellung gilt `,`. Öffnen Sie eine Datei mit anderer Spracheinstellung als Ihrer eigenen, kann es deshalb zunächst zu Fehlermeldungen kommen, bis Excel die Trennzeichen automatisch anpasst.
 
-## Themenüberschrift 02: Datumsfunktionen
+## Datumsfunktionen
 
 | Funktion | Bedeutung |
 |---|---|
@@ -51,7 +51,7 @@ Berechnen Sie mit einem Zellbezug, wie alt Sie (oder eine andere Person) **in Ta
 
 *(Zeitbedarf: ca. 10 Minuten)*
 
-## Themenüberschrift 03: Mathematische Funktionen
+## Mathematische Funktionen
 
 | Funktion | Bedeutung |
 |---|---|
@@ -72,7 +72,7 @@ Nutzen Sie Ihre Arbeitsmappe mit `Datensatz_1`.
 
 Berechnen Sie Mittelwert, Minimum und Maximum der Temperatur. Nutzen Sie dazu jeweils eine Zelle oben rechts neben dem Tabellenkopf.
 
-## Themenüberschrift 04: Runden — zwei grundverschiedene Wege
+## Runden — zwei grundverschiedene Wege
 
 Es gibt zwei Möglichkeiten, eine Zahl mit weniger Nachkommastellen anzuzeigen – die aber **nicht dasselbe** bewirken:
 
@@ -96,4 +96,6 @@ Die durchschnittliche Temperatur soll übersichtlich zusammengefasst werden:
 
 **Das ist eine verschachtelte Funktion:** Das Ergebnis von `MITTELWERT(...)` wird direkt als Argument an `RUNDEN(...)` weitergegeben, ohne den Umweg über eine Hilfszelle. Excel wertet dabei zuerst die innere Funktion aus (`MITTELWERT`), und übergibt deren Ergebnis an die äußere (`RUNDEN`).
 
+<!--
 ## Additional resources
+-->
