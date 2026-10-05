@@ -24,10 +24,20 @@ feature_row_intro:
 
 {% include feature_row id="feature_row_intro" type="center" %}
 
+## Wann und wo findet der Kurs statt?
+{: #kurszeiten-und-ort }
 
-## Diese Seite ist in Bearbeitung! Bitte bis auf weiteres nicht verwenden!
+* **Zeit:** mittwochs, 09:15–10:45 Uhr.
+* **Erster Termin:** Mittwoch, 14. Oktober 2026.
+* **Letzter Termin:** Mittwoch, 10. Februar 2027.
+* **Ort:** [Campus Lahnberge, Hans-Meerwein-Straße 6, Institutsgebäude H \| 04, **Raum 03D25**.](https://www.uni-marburg.de/de/hrz/dienste/e-klausuren/lage-des-pc-saals-e-klausuren)
+* **Winterpause:** keine Kurstermine am 23. und 30. Dezember 2026 sowie am 6. Januar 2027. Weiter geht es am 13. Januar 2027.
 
-## This page is under construction! Do not use!
+**Freiwilliges Tutorium:** freitags, 14:00–15:00 Uhr, an einem anderen Standort: Deutschhausstraße 10, PC-Pool. Angaben zum Raum, zur Online-Teilnahme und zur Vorbereitung finden Sie auf der [Tutoriumsseite]({{ '/unit00/unit00-03_Tutorium.html' | relative_url }}).
+
+**Lehrveranstaltungsnummer in MARVIN:** LV-19-050-270.
+
+**Neu im Kurs?** Beginnen Sie mit [Unit 00: Lehr- und Lernumgebung]({{ '/unit00/unit00-01_Digitales_Lernen.html' | relative_url }}). Dort erfahren Sie, wie Kurswebseite, ILIAS und Präsenztermine zusammenwirken.
 
 ## Motivation
 Raumbezogene Daten spielen in Wissenschaft, Planung und Gesellschaft eine zentrale Rolle. Sie helfen dabei, räumliche Zusammenhänge zu erkennen, Entwicklungen zu analysieren und Entscheidungen zu unterstützen.
@@ -56,7 +66,8 @@ Nach erfolgreichem Abschluss des Moduls sind Studierende in der Lage,
 * geographische Fragestellungen in nachvollziehbaren Schritten zu bearbeiten – von der Datenrecherche bis zur Dokumentation der räumlichen Ergebnisse.
 
 
-## Syllabus
+## Semesterplan: Termine und Themen
+{: #syllabus }
 
 <style>
 .syllabus-table {
@@ -334,10 +345,6 @@ H Laufwerk, Beispiel: Daten die auf einem Server gespeichert sind, gleichnamige 
 <!-- statt Karten (ist schon in QGIS) noch andere open source + coding/scriptsteuerung Möglichkeiten anteasen, bsp. R/python. Hier nur wirklich ganz grob das Prinip solcher programmiersprachen als Möglichkeit der automatisierung darstellen, Level "Hello World", einbinden wie zB im R Kurs, auf die Aufbauenden Kurse (BaseR, python, Grass: Chris? Christiane vllt?) verweisen 
 
 -->
-
-
-
-
 
 ## Team
 
