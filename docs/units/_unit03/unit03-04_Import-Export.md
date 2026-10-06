@@ -3,7 +3,7 @@ title: Import und Export
 published: true
 toc: true
 header:
-  image: /assets/images/unit02/DataSwamp_Stage03.png
+  image: /assets/images/unit03/DataSwamp_Stage03.png
   image_description: "Cloudscape Over the Philippine Sea"
   caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
 ---
