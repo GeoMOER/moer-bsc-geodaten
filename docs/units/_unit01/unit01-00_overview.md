@@ -25,6 +25,10 @@ Um diese Lernziele zu erreichen, werden wir Daten von der Eingabe hin zum Speich
 ## Organisatorisches
 > Bevor wir starten, nehmen Sie bitte an dem VotingSession 01 (Erfahrungen) in Ilias teil.
 
+
+
+{% include pdf pdf="Geodaten_Slides_Unit01.pdf" %}
+
 <!--
 Live Voting in Ilias zu Vorerfahrungen 
 kurze Besprechung, ca 5 min
