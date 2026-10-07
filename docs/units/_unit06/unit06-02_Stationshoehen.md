@@ -1,5 +1,5 @@
 ---
-title: SVERWEIS
+title: Stationshöhen
 published: true
 toc: true
 header:
@@ -9,7 +9,7 @@ header:
 ---
 ## Mit SVERWEIS Informationen nachschlagen
 
-Sie erhalten eine zusätzliche kleine Tabelle `Stationsmetadaten.xlsx` mit der Höhenlage jeder Station über Normalnull (NN). Diese Information steht in einer **separaten Tabelle**, nicht in Ihren Messdaten – ein sehr häufiger Fall: Stammdaten (die sich selten ändern, z. B. die Höhenlage einer Station) werden getrennt von Messdaten (die sich laufend ändern) gepflegt.
+Sie erhalten eine zusätzliche kleine Tabelle `Stationshoehen.xlsx` mit der Höhenlage jeder Station über Normalnull (NN). Diese Information steht in einer **separaten Tabelle**, nicht in Ihren Messdaten – ein sehr häufiger Fall: Stammdaten (die sich selten ändern, z. B. die Höhenlage einer Station) werden getrennt von Messdaten (die sich laufend ändern) gepflegt.
 
 `SVERWEIS` ("Senkrechter Verweis") sucht einen Wert in der **ersten Spalte** einer Tabelle und gibt einen Wert aus einer **anderen Spalte derselben Zeile** zurück:
 
@@ -24,24 +24,23 @@ Sie erhalten eine zusätzliche kleine Tabelle `Stationsmetadaten.xlsx` mit der H
 | `Spaltenindex` | Die wievielte Spalte der Matrix (von links gezählt) den gewünschten Wert enthält |
 | `Bereich_Verweis` | `FALSCH` für eine **exakte** Übereinstimmung (fast immer die richtige Wahl); `WAHR` sucht nur eine ungefähre Übereinstimmung |
 
-**Beispiel:** In Ihrer zusammengeführten Tabelle steht in Zelle `A2` der Standortname. In `Stationsmetadaten.xlsx` steht in Spalte A der Standortname, in Spalte B die Höhe über NN. Die Formel
+**Beispiel:** In Ihrer zusammengeführten Tabelle steht in Zelle `A2` der Standortname. In `Stationshoehen.xlsx` steht in Spalte A der Standortname, in Spalte B die Höhe über NN. Die Formel
 
 ```
-=SVERWEIS(A2;Stationsmetadaten!A:B;2;FALSCH)
+=SVERWEIS(A2;Stationshoehen!A:B;2;FALSCH)
 ```
 
-sucht den Wert aus `A2` in Spalte A des Blatts `Stationsmetadaten`, findet die passende Zeile und gibt den Wert aus deren zweiter Spalte zurück (die Höhe über NN).
+sucht den Wert aus `A2` in Spalte A des Blatts `Stationshoehen`, findet die passende Zeile und gibt den Wert aus deren zweiter Spalte zurück (die Höhe über NN).
 
 <!-- Screenshot 36: Excel-Formel =SVERWEIS(A2;Stationsmetadaten!A:B;2;FALSCH) in der Bearbeitungsleiste, daneben in der Zelle das korrekte Ergebnis (eine Höhenangabe in Metern), sowie ein zweites Tabellenblatt "Stationsmetadaten" mit der Nachschlage-Tabelle im Hintergrund sichtbar.
-Markdownlösung: ![Screenshot der angeglichenen Datensätze nebeneinander.]({{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}) 
-Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:
+Markdownlösung: ![Screenshot der SVERWEIS Formel mit Daten aus zwei Tabellen.]({{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}) 
+Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:  -->
 
 <a href="{{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}" 
    data-lightbox="Screenshot36_Excel" 
-   title="Screenshot der angeglichenen Datensätze nebeneinander.">
-  <img src="{{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}" alt="Screenshot der angeglichenen Datensätze nebeneinander.">
-</a>  
-Notiz von Lisa S.: Tabelle "Standortmetadaten" fehlt. -->
+   title="Screenshot der SVERWEIS Formel mit Daten aus zwei Tabellen.">
+  <img src="{{ '/assets/images/unit06/Screenshot36_Excel.png' | relative_url }}" alt="Screenshot der SVERWEIS Formel mit Daten aus zwei Tabellen.">
+</a>
 
 **Wichtige Stolperfalle:** `FALSCH` (exakte Übereinstimmung) sollten Sie fast immer verwenden. Mit `WAHR` sortiert Excel die Suche anders und liefert bei nicht exakt passenden Werten stillschweigend ein falsches Ergebnis, statt einen Fehler zu melden – das fällt oft erst bei einer späteren Prüfung auf.
 
