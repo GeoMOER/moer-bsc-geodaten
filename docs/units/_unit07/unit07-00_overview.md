@@ -3,7 +3,7 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/unit03/streuobst.jpg
+  image: assets/images/unit07/DataSwamp_Stage07.png
   image_description: "Fallen apples under a tree"
   caption: "Image: manfredrichter via [pixabay.com](https://pixabay.com/de/photos/%C3%A4pfel-streuobst-obstbaum-apfelbaum-3684775/)"
  
