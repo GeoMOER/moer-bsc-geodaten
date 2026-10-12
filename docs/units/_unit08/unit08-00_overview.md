@@ -10,18 +10,17 @@ header:
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
 ## Rückblick & Fragen
-In der letzten Kurssitzung habe ich gelernt, dass ...
+In der letzten Kurssitzung haben wir Daten anhand der FAIR-Prinzipien eingeordnet, Metadaten auf Datensatz- und Spalten-Ebene unterschieden und die Wichtigkeit von Backups (3-2-1) kennengelernt.
 
-<!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
+
 ## Einführung in Lernabschnitt 08
 
-In dieser Unit geht es darum, wiederkehrende Arbeitsschritte so zu beschreiben, dass sie zuverlässig ausgeführt und ihre Ergebnisse kontrolliert werden können.
+Die Bearbeitungsschritte in Ihrer README haben Sie bisher von Hand in Excel durchgeführt. Das funktioniert bei einer Tabelle mit wenigen Zeilen. Bei großen Datenmengen oder regelmäßig eintreffenden Exporten wird es mühsam und fehleranfällig. Wer die Schritte stattdessen als Anleitung aufschreibt, die der Computer ausführt, spart Zeit und erhält zugleich eine Dokumentation, die nicht veralten kann.
 
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit ...
 
-Wir betrachten Automatisierung als nachvollziehbare Abfolge aus Eingabe, Verarbeitung und Ergebniskontrolle. Die konkrete Umsetzung knüpft an bereits bekannte Arbeitsschritte aus den vorherigen Units an.
-
+... lernen wir das Prinzip kennen, Arbeitsschritte als „Rezept“ aufzuschreiben, das ein Computer ausführt. Zwei kurze Aufgaben probieren Sie direkt im Browser aus. Mit Git betrachten wir, wie Änderungen und Bearbeitungsstände eines Projekts nachvollziehbar werden.
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
 ## Lernziele
 
@@ -29,12 +28,9 @@ Am Ende dieser Unit sind Studierende in der Lage, ...
 
 * einen wiederkehrenden Arbeitsschritt in einzelne, eindeutige Schritte zu zerlegen,
 * Ein- und Ausgaben eines automatisierten Ablaufs zu benennen und
-* Ergebnisse durch geeignete Kontrollpunkte zu prüfen.
+* den Zweck von Versionskontrolle mit Git zu erläutern und einen Verlauf zu lesen.
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
-## Organisatorisches
-
-Verwenden Sie für die gemeinsame Übung die in der Sitzung bereitgestellten Eingabedaten. Bewahren Sie Ausgangsdaten und erzeugte Ergebnisse getrennt auf.
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

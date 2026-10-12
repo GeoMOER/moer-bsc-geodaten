@@ -74,8 +74,8 @@ Sobald Sie die Datei speichern, wird sie dauerhaft auf der Festplatte bzw. SSD a
 
 
 ## Übung
-> Rufen Sie den Taskmanager mittels shortcut (STR + ALT + ENTF) auf
+> Rufen Sie den Taskmanager mittels shortcut (Windows: STR + ALT + ENTF; Mac: Akr+Cmd+Esc) auf
 > Welcher Prozess benutzt gerade am meisten Arbeitsspeicher?
-> Finden Sie unter "Leistung" heraus, wie viele Kerne Ihr PC hat und wie groß der Arbeitsspeicher ist
+> Finden Sie unter "Leistung" heraus, wie viele Kerne Ihr PC hat und wie groß der Arbeitsspeicher ist (Windows)
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

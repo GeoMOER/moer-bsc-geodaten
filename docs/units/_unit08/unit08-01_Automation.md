@@ -8,7 +8,7 @@ header:
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---
 
-<!-- Themenblock 08-01: Automatisierung wiederkehrender Arbeitsschritte -->
+Im letzten Kapitel haben Sie in der README festgehalten, welche Schritte Sie mit Ihren Rohdaten durchgeführt haben: importieren, Spalten angleichen, Duplikate entfernen, Namen vereinheitlichen, Platzhalter ersetzen. Jeder dieser Schritte war Handarbeit in Excel. Dieses Kapitel zeigt das Prinzip, wie man solche Schritte aufschreibt, damit ein Computer sie ausführt. 
 
 ## Was bedeutet Automatisierung?
 
@@ -18,7 +18,7 @@ Ein automatisierter Ablauf kann Zeit sparen und Flüchtigkeitsfehler verringern.
 
 > **Merksatz:** Automatisierung macht einen Arbeitsablauf wiederholbar; sie macht ihn nicht automatisch richtig.
 
-## Einen Ablauf beschreiben
+## Einen Ablauf beschreiben ~ ein Rezept erstellen
 
 Halten Sie für einen wiederkehrenden Arbeitsschritt fest:
 
@@ -27,7 +27,7 @@ Halten Sie für einen wiederkehrenden Arbeitsschritt fest:
 3. **Ausgabe:** Welche Datei oder welches Ergebnis soll entstehen?
 4. **Kontrolle:** Woran erkennen Sie, dass das Ergebnis vollständig und plausibel ist?
 
-Speichern Sie Ausgangsdaten unverändert. Schreiben Sie Ergebnisse in einen getrennten Ordner und dokumentieren Sie die verwendeten Einstellungen.
+>Wichtig: Speichern Sie Ausgangsdaten unverändert. Schreiben Sie Ergebnisse in einen getrennten Ordner und dokumentieren Sie die verwendeten Einstellungen.
 
 ## Zusammenfassung
 

@@ -40,10 +40,7 @@ FAIR steht für **F**indable, **A**ccessible, **I**nteroperable und **R**eusable
 | R1.2 | Die Herkunft der Daten ist ausführlich dokumentiert |
 | R1.3 | Die Daten erfüllen die Standards der jeweiligen Fachgemeinschaft |
  
-<!-- Screenshot [Nr]: Beispielseite eines Repositoriums (z. B. Zenodo) mit sichtbarer DOI, Lizenzangabe und Beschreibung des Datensatzes. Markierungen: DOI (F1), Beschreibung und Schlagwörter (F2), Lizenz (R1.1).
-Markdownlösung: ![Screenshot einer Repositoriums-Seite mit markierter DOI, Beschreibung und Lizenz.]({{ '/assets/images/unit07/Screenshot[Nr]_FAIR.png' | relative_url }})
-Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
- 
- 
-## Übung: FAIR-Check
- Überprüfen Sie den bisher erstellten Datensatz auf die einzelnen Kriterien? In wie weit ist er FAIR? (Diskussionen mit den Sitznachbar:innen willkommen)
+
+## Übung: FAIR-Check (10 + 10 min)
+ Überprüfen Sie Ihre bisher unternommenen Schritte und Ihren Projektordner auf die einzelnen Kriterien? In wie weit ist er FAIR? Machen Sie sich zu den o.g. Punkte Notizen.
+ Nach 10 Minuten werden wir Ihre Einschätzung in einem LiveVoting abfragen und diskutieren.

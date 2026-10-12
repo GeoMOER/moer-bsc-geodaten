@@ -32,8 +32,7 @@ Am Ende dieser Unit sind Studierende in der Lage ...
 * Bereinigungsschritte durchzuführen
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
-## Organisatorisches
-Zeit für Feedback unsererseits!
+
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

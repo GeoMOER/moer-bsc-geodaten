@@ -11,7 +11,9 @@ header:
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
 ## Rückblick & Fragen
-In der letzten Kurssitzung haben wir Daten zusammengefasst
+In der letzten Kurssitzung haben wir mittels SVERWEIS Daten  zusammengeführt und mittels Pivot Daten zusammengefasst. Dabei wurde deutlich, dass Stammdaten und Messdaten selten auf den gleichen Datenblättern zu finden sind. Jetzt, wo Sie ihre Daten aufbereitet haben geht es um die Frage, ob auch andere Personen (oder Sie selbst, nachdem Sie den Kurs abgeschlossen haben) nachvollziehen können, WAS genau Sie gemacht haben
+
+> Fragen?
 
 <!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 ## Einführung in Lernabschnitt 07
@@ -21,7 +23,7 @@ Daten bleiben nur dann langfristig nutzbar, wenn andere Personen sie finden, ver
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit ...
 
-Wir ordnen Daten anhand der FAIR-Prinzipien ein, halten die wichtigsten Informationen zu einem Datenbestand in einer README-Datei fest und betrachten mit Git, wie Änderungen und Bearbeitungsstände nachvollziehbar werden.
+ ... ordnen wir Daten anhand der FAIR-Prinzipien ein und halten die wichtigsten Informationen zu einem Datenbestand in einer README-Datei fest.
 
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
 ## Lernziele
@@ -30,7 +32,7 @@ Am Ende dieser Unit sind Studierende in der Lage, ...
 
 * die FAIR-Prinzipien zu erklären und auf einen einfachen Datenbestand zu beziehen,
 * eine README-Datei mit den für Verständnis und Nachnutzung nötigen Angaben zu erstellen und
-* den Zweck von Versionskontrolle mit Git für nachvollziehbare Bearbeitungsstände zu erläutern.
+* Metadaten zu erstellen
 
 {% include video id="B6Yn-U1Ff60" provider="youtube" %}
 

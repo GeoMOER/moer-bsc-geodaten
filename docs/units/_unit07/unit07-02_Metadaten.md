@@ -9,8 +9,7 @@ header:
 ---
 
 
-Im letzten Kapitel haben wir gesehen, dass unserem Sensordatensatz für „findbar“ und „wiederverwendbar“ vor allem Beschreibungen fehlen. In diesem Kapitel lernen Sie, wie man diese Beschreibungen aufschreibt: als Metadaten, die in einer README-Datei festgehalten werden.
- 
+Im letzten Kapitel haben wir gesehen, dass unserem Sensordatensatz für „findbar“ und „wiederverwendbar“ vor allem Beschreibungen fehlen. In diesem Kapitel lernen Sie, wie man diese Beschreibungen aufschreibt: als Metadaten,- 
 ## Fragen, die die Daten nicht beantworten
  
 Eine Tabelle mit Spalten wie `Standort;Datum;Temperatur` sieht selbsterklärend aus, solange man sie selbst erzeugt hat. Eine fremde Person hat dagegen viele Fragen:
@@ -51,8 +50,8 @@ Diese Fragen beantworten die Daten selbst nicht. Die Antworten heißen **Metadat
 | Messmethode | Art der Messung | – | Text / nominal | nicht vorgesehen |
  
 
-## Übung: Metadaten (Ebene 2)
+## Übung: Metadaten (Ebene 2) (~ 15 min)
  
 Arbeiten Sie mit Ihrer zusammengeführten Tabelle aus dem letzten Lernabschnitt.
  
-1. Erstellen Sie ein Datenwörterbuch mit einer Zeile pro Spalte (Bedeutung, Einheit, Datentyp und Skalenniveau, Codierung fehlender Werte). Falls Ihre Tabelle weitere Spalten hat, etwa die Höhe über NN, ergänzen Sie diese.
+Erstellen Sie ein Datenwörterbuch mit einer Zeile pro Spalte (Bedeutung, Einheit, Datentyp und Skalenniveau, Codierung fehlender Werte). Falls Ihre Tabelle weitere Spalten hat, etwa die Höhe über NN, ergänzen Sie diese.
