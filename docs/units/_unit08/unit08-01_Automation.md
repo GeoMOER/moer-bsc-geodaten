@@ -3,7 +3,7 @@ title: Automation
 published: true
 toc: true
 header:
-  image: /assets/images/unit04/streuobst.jpg
+  image: assets/images/unit08/DataSwamp_Stage08.png
   image_description: "Streuobstwiese"
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---

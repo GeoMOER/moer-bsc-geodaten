@@ -3,7 +3,7 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/spotlight01/jekyll_github_pages.png
+  image: assets/images/unit08/DataSwamp_Stage08.png
   image_description: "Cutout from  Measured carbon dioxide concentrations in Vancouver"
   caption: "Bild: [jekyll](https://jekyllrb.com/)"
 ---
