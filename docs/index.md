@@ -7,9 +7,9 @@ date: '2026-10-12 09:15:00 +0100'
 header:
   overlay_color: "#142f30"
   overlay_filter: 0
-  overlay_image: "/assets/images/home/hero-data-swamp-data-lake.png"
+  overlay_image: "/assets/images/home/GeoData_Webbanner_Front.png"
   image_description: "Pixelgrafik: Vom Datensumpf mit ungeordneten Dateien über Netz, Filter und sortierte Datenkisten zum klaren See mit nutzbaren Kartenebenen."
-  caption: 'KI-generierte Illustration nach einer Skizze von Lisa Schepers'
+  caption: 'Vom Datensumpf zum Datensee.'
   cta_label: Zu den Lerninhalten
   cta_url: "/units.html"
 excerpt: "Vom Data Swamp zum Data Lake.<br>Daten ordnen, verstehen und als Karten sichtbar machen."
@@ -21,6 +21,8 @@ feature_row_intro:
 #  title: Intended learning outcomes
 #  excerpt: "Template..."
 ---
+
+<!-- # caption: 'KI-generierte Illustration nach einer Skizze von Lisa Schepers' -->
 
 {% include feature_row id="feature_row_intro" type="center" %}
 

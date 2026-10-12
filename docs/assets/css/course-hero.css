@@ -1,8 +1,8 @@
 /* Loaded only for the course homepage. Keep the complete 3:1 panorama visible. */
 .page__hero--overlay {
   box-sizing: border-box;
-  aspect-ratio: 3 / 1;
-  padding: clamp(20px, 2.4vw, 48px);
+  /* aspect-ratio: 6 / 1; */
+  padding: clamp(20px, 2.4vw, 18px);
   background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
