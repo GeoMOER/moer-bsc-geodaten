@@ -11,7 +11,7 @@ header:
 
 <!-- Rückblick: Welche Themeninhalte wurden in der letzten Kurssitzung bearbeitet? Sind Fragen zur letzten Kurssitzung offen geblieben? -->
 ## Rückblick & Fragen
-In der letzten Kurssitzung haben wir Formeln, Zellbezüge und Serien verwendet, um wiederkehrende Arbeitsschritte in Excel kontrolliert auszuführen.
+In der letzten Kurssitzung haben wir Daten zusammengefasst
 
 <!-- Introtext: Allgemeine Einleitung zum Thema im neuen Lernabschnitt und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 ## Einführung in Lernabschnitt 07

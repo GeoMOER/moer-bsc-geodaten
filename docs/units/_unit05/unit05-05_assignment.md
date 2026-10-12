@@ -8,7 +8,5 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 <!-- Übungsaufgabe 05: Kennzahlen, Verteilungen, Fehlwerte, Relationen -->
-## Übungsaufgabe 05
 
-In dieser Übungsaufgabe wenden Sie das Gelernte aus Lernabschnitt 05 selbstständig an. Grundlage ist erneut `Abschlusstest_Datensatz.xlsx` (Tabellenblatt „Testdaten").
-
+TBA

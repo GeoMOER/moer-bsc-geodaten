@@ -29,10 +29,6 @@ Halten Sie für einen wiederkehrenden Arbeitsschritt fest:
 
 Speichern Sie Ausgangsdaten unverändert. Schreiben Sie Ergebnisse in einen getrennten Ordner und dokumentieren Sie die verwendeten Einstellungen.
 
-## Kurze Übung
-
-Wählen Sie einen bereits bekannten, wiederkehrenden Arbeitsschritt aus den vorherigen Units. Beschreiben Sie ihn mit den vier Punkten Eingabe, Verarbeitung, Ausgabe und Kontrolle. Markieren Sie anschließend eine Stelle, an der ein ungeeigneter Eingabewert oder eine falsche Regel zu einem unplausiblen Ergebnis führen würde.
-
 ## Zusammenfassung
 
 * Automatisierung benötigt eindeutige Eingaben und Regeln.

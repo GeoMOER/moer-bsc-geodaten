@@ -8,12 +8,7 @@ header:
   caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
 ---
 
-<!-- Übungsaufgabe 07: Daten zugänglich machen -->
-## Übungsaufgabe 07
-
-In dieser Übungsaufgabe sollen Studierende ...
-
-- das gelernte selbstständig anwenden
+TBA
 
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
