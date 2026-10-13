@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit03/DataSwamp_Stage03.png
-  image_description: "Cloudscape Over the Philippine Sea"
-  caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
+  image_description: "Datensumpf Level 03"
+  caption: "Level 3: Die Struktur der Seeelemente."
 ---
 
 Im letzten Kapitel haben Sie mit `TEIL`, `FINDEN` und `WERT` einen zusammengesetzten Text in seine Zahlen-Bestandteile zerlegt. Jetzt drehen wir die Richtung um: Sie berechnen zunächst mit den mathematischen Funktionen aus dem vorletzten Kapitel neue Werte und stellen diese anschließend mit weiteren Textfunktionen in einer lesbaren Form dar.

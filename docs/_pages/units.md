@@ -2,8 +2,8 @@
 title: Course units
 id: Units
 header:
-  image: "/assets/images/hero-units.png"
-  caption: 'KI-generierte Illustration für den Kursbereich Geodaten'
+  image: "/assets/images/home/GeoData_Webbanner_Front.png"
+  caption: 'Vom Datensumpf zum Datensee.'
 
 permalink: /units.html
 sidebar:

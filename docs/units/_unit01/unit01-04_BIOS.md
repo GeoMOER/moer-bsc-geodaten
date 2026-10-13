@@ -3,9 +3,9 @@ title: Betriebssystem und BIOS
 published: true
 toc: true
 header:
-  image: /assets/images/unit01/DataSwamp01.png
-  image_description: "Datensumpf"
-  caption: "Gummistiefel an! Lasst die Datenwäsche beginnen."
+  image: /assets/images/unit01/DataSwamp_Stage01.png
+  image_description: "Datensumpf Level 01"
+  caption: "Level 1: Der Seegrund."
 ---
 
 

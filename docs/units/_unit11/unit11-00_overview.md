@@ -3,7 +3,7 @@ title: Überblick
 published: true
 toc: true
 header:
-  image: /assets/images/unit11/hero-unit11.jpg
+  image: assets/images/unit11/DataSwamp_Stage11.png
   image_description: "Wald- und Kulturlandschaft mit verteilten Beobachtungspunkten und angedeuteten Unsicherheitsbereichen"
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---

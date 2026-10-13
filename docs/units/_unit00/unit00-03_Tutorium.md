@@ -3,8 +3,8 @@ title: Tutorium
 published: true
 toc: true
 header:
-  image: "/assets/images/unit00/hero-unit00-digital-learning.png"
-  caption: 'KI-generierte Illustration für digitales Lernen und How-to-Materialien'
+  image: "/assets/images/home/GeoData_Webbanner_Front.png"
+  caption: 'Vom Datensumpf zum Datensee.'
 ---
 Das Tutorium ist ein freiwilliges Angebot für Fragen zu den Kursinhalten und für Schwierigkeiten beim selbstständigen Üben. Sie erhalten Unterstützung dabei, Zusammenhänge zu verstehen, Fehler einzugrenzen und selbst weiterzuarbeiten. Sie müssen das Tutorium nicht besuchen.
 

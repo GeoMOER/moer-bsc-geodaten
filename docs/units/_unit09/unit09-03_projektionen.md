@@ -3,7 +3,7 @@ title: Koordinatenreferenzsysteme & Projektionen
 published: true
 toc: true
 header:
-  image: /assets/images/unit09/hero-unit09.jpg
+  image: assets/images/unit09/DataSwamp_Stage09.png
   image_description: "Breiter Blick auf Europa auf einer gekrümmten Erde mit feinem Koordinatengitter und markiertem Ort"
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---

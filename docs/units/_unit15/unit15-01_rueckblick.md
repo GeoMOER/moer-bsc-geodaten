@@ -3,7 +3,7 @@ title: Rückblick durch den Kurs
 published: true
 toc: true
 header:
-  image: /assets/images/unit15/hero-unit15.jpg
+  image: assets/images/unit15/DataSwamp_Stage15.png
   image_description: "Kursrückblick als Flusslandschaft mit überlagerter Tabelle, Streudiagramm, Beobachtungspunkten, Polygonflächen, Rasterzellen und Höhenlinien"
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---

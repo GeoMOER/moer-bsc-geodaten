@@ -3,7 +3,7 @@ title: Vektordaten aus Geoportalen
 published: true
 toc: true
 header:
-  image: /assets/images/unit12/hero-unit12.jpg
+  image: assets/images/unit12/DataSwamp_Stage12.png
   image_description: "Flusslandschaft mit Schutzgebietsfläche und Beobachtungspunkten innerhalb und außerhalb des Gebietes"
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---

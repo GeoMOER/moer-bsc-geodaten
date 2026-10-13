@@ -3,7 +3,7 @@ title: UE | JiTT-Fragen zu Abschnitt 13
 published: true
 toc: true
 header:
-  image: /assets/images/unit13/hero-unit13.jpg
+  image: assets/images/unit13/DataSwamp_Stage13.png
   image_description: "Digitales Geländemodell, das in sichtbare Rasterzellen mit markierten Beobachtungspunkten übergeht"
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---

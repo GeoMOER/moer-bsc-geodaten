@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit03/DataSwamp_Stage03.png
-  image_description: "Cloudscape Over the Philippine Sea"
-  caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
+  image_description: "Datensumpf Level 03"
+  caption: "Level 3: Die Struktur der Seeelemente."
 ---
 
 Bisher haben Sie ausschließlich innerhalb einer Excel-Datei (.xlsx) gearbeitet. In der Praxis werden Daten jedoch häufig als **Textdatei** ausgetauscht – etwa wenn Sie Messdaten von einem Sensor, einer Website oder einer anderen Software erhalten, die kein Excel-Format unterstützt. Textdateien sind das kleinste gemeinsame Format, das praktisch jede Software lesen kann – dafür müssen Sie beim Import selbst festlegen, wie die Datei strukturiert ist und welche Datentypen die einzelnen Spalten haben sollen. Genau das üben Sie in diesem Kapitel.

@@ -3,7 +3,7 @@ title: Geodaten finden und einbinden
 published: true
 toc: true
 header:
-  image: /assets/images/unit10/hero-unit10.jpg
+  image: assets/images/unit10/DataSwamp_Stage10.png
   image_description: "Luftbildlandschaft mit überlagerten Punkten, Linien, Polygonflächen und Rasterzellen"
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---

@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit04/DataSwamp_Stage04.png
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image_description: "Datensumpf Level 04"
+  caption: "Level 4: Gesunkene Teilchen wiederfinden."
 ---
 
 TBA

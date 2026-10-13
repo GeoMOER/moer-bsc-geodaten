@@ -2,9 +2,9 @@
 .page__hero--overlay {
   box-sizing: border-box;
   /* aspect-ratio: 6 / 1; */
-  padding: clamp(20px, 2.4vw, 18px);
+  padding: clamp(20px, 2.4vw, 48px);
   background-size: 100% auto;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
 }
 

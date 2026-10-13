@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit02/DataSwamp_Stage02.png
-  image_description: "Cloudscape Over the Philippine Sea"
-  caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
+  image_description: "Datensumpf Level 02"
+  caption: "Level 2: Die Schwebeteilchen."
 ---
 <!-- Kapitel 02-01: Einführung in Excel, Grundlagen -->
  Bevor wir mit konkreten Datentypen und -formaten arbeiten, verschaffen wir uns zunächst einen Überblick über das Werkzeug, mit dem wir diese in diesem Kurs anwenden: Microsoft Excel. Wir lernen die Oberfläche und die grundlegenden Möglichkeiten des Programms kennen – als Grundlage für alle folgenden Übungen.

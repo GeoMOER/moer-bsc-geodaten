@@ -3,7 +3,7 @@ title: Werte klassifizieren
 published: true
 toc: true
 header:
-  image: /assets/images/unit14/hero-unit14.jpg
+  image: assets/images/unit14/DataSwamp_Stage14.png
   image_description: "Fertig gestaltete thematische Karte mit Höhenrelief, Flusslauf und kartographischen Nebenelementen"
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---

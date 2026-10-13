@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit03/DataSwamp_Stage03.png
-  image_description: "Dr. John Snow's map"
-  caption: "Map: [**Dr. John Snow**](https://en.wikipedia.org/wiki/John_Snow) [Wellcome Library via wikimedia](https://w.wiki/QtV)"
+  image_description: "Datensumpf Level 03"
+  caption: "Level 3: Die Struktur der Seeelemente."
 ---
 
 <!-- Übungsaufgabe 03: Excel-Grundlagen, Datentypen, Zellformate, Textfunktionen, Import/Export -->

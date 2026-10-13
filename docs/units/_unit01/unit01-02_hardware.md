@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit01/DataSwamp_Stage01.png
-  image_description: "Datensumpf"
-  caption: "Gummistiefel an! Lasst die Datenwäsche beginnen."
+  image_description: "Datensumpf Level 01"
+  caption: "Level 1: Der Seegrund."
 ---
 
 <!-- Themenblock 01-02: Unterschied zwischen Speicher, RAM und Prozessor -->

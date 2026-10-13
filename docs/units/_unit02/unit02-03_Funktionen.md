@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit02/DataSwamp_Stage02.png
-  image_description: "Cloudscape Over the Philippine Sea"
-  caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
+  image_description: "Datensumpf Level 02"
+  caption: "Level 2: Die Schwebeteilchen."
 ---
 
 Im letzten Kapitel haben Sie eigene Formeln mit Grundrechenarten und Zellbezügen gebaut. Für viele wiederkehrende Berechnungen – Datum, Mittelwert, Runden – müssen Sie diese Formeln aber nicht jedes Mal neu erfinden: Excel bringt dafür **Funktionen** mit, vordefinierte Formeln mit festgelegtem Namen und festgelegten Argumenten.

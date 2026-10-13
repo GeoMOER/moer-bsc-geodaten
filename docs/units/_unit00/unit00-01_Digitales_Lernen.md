@@ -3,8 +3,8 @@ title: Lehr- und Lernumgebung
 published: true
 toc: true
 header:
-  image: "/assets/images/unit00/hero-unit00-digital-learning.png"
-  caption: 'KI-generierte Illustration für digitales Lernen und How-to-Materialien'
+  image: "/assets/images/home/GeoData_Webbanner_Front.png"
+  caption: 'Vom Datensumpf zum Datensee.'
 ---
 
 Dieser Kurs verbindet selbstständiges Lernen mit gemeinsamen Präsenzterminen. Diese Kombination wird **Blended Learning** genannt.

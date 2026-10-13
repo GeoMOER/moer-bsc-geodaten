@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit04/DataSwamp_Stage04.png
-  image_description: "Cloudscape Over the Philippine Sea"
-  caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
+  image_description: "Datensumpf Level 04"
+  caption: "Level 4: Gesunkene Teilchen wiederfinden."
 ---
 
 <!-- Kapitel 04-01: Ordnerstrukturen, Dateibenennung, Dateipfade -->

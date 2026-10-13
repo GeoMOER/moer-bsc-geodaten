@@ -4,8 +4,8 @@ published: true
 toc: true
 header:
   image: /assets/images/unit02/DataSwamp_Stage02.png
-  image_description: "Cloudscape Over the Philippine Sea"
-  caption: "Image: [NASA's Marshall Space Flight Center](https://www.nasa.gov/centers/marshall/home/index.html) [CC BY-NC 2.0] via [flickr.com](https://www.flickr.com/photos/nasamarshall/31031723265/)"
+  image_description: "Datensumpf Level 02"
+  caption: "Level 2: Die Schwebeteilchen."
 ---
 
 Excel ist im Kern ein programmierbarer Taschenrechner: Jede Zelle kann eine feste Zahl enthalten – oder eine **Formel**, die aus anderen Zellen einen Wert berechnet. Bevor wir mit Textfunktionen oder Statistik weiterarbeiten, brauchen Sie dafür zwei Grundlagen: wie Excel rechnet, und wie sich eine Formel auf andere Zellen bezieht.

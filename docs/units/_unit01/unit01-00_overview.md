@@ -4,7 +4,7 @@ published: true
 toc: true
 header:
   image: /assets/images/unit01/DataSwamp_Start.png
-  image_description: "Datensumpf"
+  image_description: "Datensumpf Level 01"
   caption: "Gummistiefel an! Lasst die Datenwäsche beginnen."
 ---
 
