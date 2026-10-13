@@ -11,10 +11,13 @@ header:
 <!-- Übungsaufgabe 01: Temperaturen heraus schreiben -->
 ## Übungsaufgabe 01
 
-1) Lesen Sie das Kapitel "Betriebssystem und BIOS"  
-2) Laden Sie die Datei Uebungsaufgabe01_satz.txt <!-- hier titel/Pfad einfügen --> herunter, und versuchen Sie, mittels Notepad++ (Windows, https://notepad-plus-plus.org/ ) bzw. Nextpad++ (Mac, https://nextpad.org/ ) die richtige Codierung zu finden - notieren Sie sich diese für die Ilias-Übung.  
-3) Erstellen Sie eine txt-Datei, in der Sie einzig und allein den Buchstaben "Ü" abspeichern - wie viele Bytes hat diese Datei? Notieren Sie sich die Antwort für die Ilias-Übung.  
-4) Führen Sie die Ilias-Übung durch.  
+1) Lesen Sie das Kapitel "BIOS"  
+
+2) Laden Sie die Datei [Uebungsaufgabe01_satz.txt](https://ilias.uni-marburg.de/goto.php/file/4851120/download)  herunter, und versuchen Sie, mittels Notepad++ (Windows, https://notepad-plus-plus.org/ ) bzw. Nextpad++ (Mac, https://nextpad.org/ ) die richtige Codierung zu finden - notieren Sie sich diese für die Ilias-Übungsaufgabe.  
+
+3) Erstellen Sie eine txt-Datei, in der Sie einzig und allein den Buchstaben "Ü" abspeichern - wie viele Bytes hat diese Datei? Notieren Sie sich die Antwort für die Ilias-Übungsaufgabe.  
+
+4) Führen Sie die Ilias-Übungsaufgabe [Test Unit 01](https://ilias.uni-marburg.de/goto.php/tst/4850926) durch.  ACHTUNG: Sie können diese nur ein Mal ausführen und haben dafür nur 30 Minuten Zeit!
 
 <!--
 - Welche Codierung wurde in Frage 1 genutzt? 
