@@ -52,6 +52,11 @@ Gutes Datenmanagement verhindert dieses Versumpfen. Es verbindet die strukturier
 
 Der Kurs vermittelt deshalb grundlegende Kompetenzen für den strukturierten und kritischen Umgang mit Daten. Von digitalen Grundlagen über Tabellen, Datenbereinigung und Dokumentation führt er bis zur Arbeit mit Geodaten im Geoinformationssystem QGIS. Anhand geographischer Fragestellungen lernen Sie, Daten zu recherchieren, zu beurteilen, aufzubereiten, zu analysieren und aussagekräftig zu visualisieren.
 
+<a href="{{ '/assets/images/courseplan_overview.png' | relative_url }}" 
+   data-lightbox="Fahrplan" 
+   title="Der Fahrplan des Kurses">
+  <img src="{{ '/assets/images/courseplan_overview.png' | relative_url }}" alt="Der Fahrplan des Kurses">
+</a>
 
 ## Lernziele
 

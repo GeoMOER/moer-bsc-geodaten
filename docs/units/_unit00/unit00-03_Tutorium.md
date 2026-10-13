@@ -31,4 +31,4 @@ Die verfügbare Zeit wird auf alle Teilnehmenden verteilt. Bitte nehmen Sie Rüc
 * Letztes Tutorium: Freitag, 12. Februar 2027
 * Uhrzeit: wöchentlich freitags, 14:00 Uhr bis 15:00 Uhr (pünktlich!)
 * Ort: [Deutschhausstraße 10, PC-Saal I, Raum 00 0010](https://maps.app.goo.gl/GnwRPXAbUAD9QHQw9)
-* Studentische Hilfskräfte: Giovanna Leinung (leinungg@students.uni-marburg.de), Elias Parbel (Parbel@students.uni-marburg.de)
+* Studentische Hilfskräfte: Giovanna Leinung <!--(leinungg@students.uni-marburg.de)-->, Elias Parbel <!--(Parbel@students.uni-marburg.de)-->

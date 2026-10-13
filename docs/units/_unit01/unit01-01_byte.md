@@ -28,13 +28,23 @@ Damit beruhte schon dieser rund 100 Jahre vor dem Computer entwickelte Apparat a
 <!-- copyright free Bild einfügen 
 Markdownlösung: ![Eine Zeichnung des Morsecode Geräts.]({{ '/assets/images/unit01/El_mundo_fisico_1882_Manipulador_Morse.jpg' | relative_url }})
 Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
-
+ 
 <a href="{{ '/assets/images/unit01/El_mundo_fisico_1882_Manipulador_Morse.jpg' | relative_url }}" 
    data-lightbox="Morsecodegeraet" 
    title="Eine Zeichnung des Morsecode Geräts.">
   <img src="{{ '/assets/images/unit01/El_mundo_fisico_1882_Manipulador_Morse.jpg' | relative_url }}" alt="Eine Zeichnung des Morsecode Geräts.">
 </a>
-
+<a href="{{ '/assets/images/unit01/morse_apparat_1837.jpg' | relative_url }}" 
+   data-lightbox="Morsecodegeraet" 
+   title="Morses erster Apparat (1837).">
+  <img src="{{ '/assets/images/unit01/morse_apparat_1837.jpg' | relative_url }}" alt="Morses erster Apparat (1837).">
+</a>
+<p class="caption">Morses erster Apparat (1837) – Abbildung aus der Präsenzsitzung.</p>
+<a href="{{ '/assets/images/unit01/international_morse_code.png' | relative_url }}" 
+   data-lightbox="Morsecodegeraet" 
+   title="Der internationale Morsecode: Jeder Buchstabe und jede Ziffer als Folge aus kurzen und langen Signalen.">
+  <img src="{{ '/assets/images/unit01/international_morse_code.png' | relative_url }}" alt="Der internationale Morsecode: Jeder Buchstabe und jede Ziffer als Folge aus kurzen und langen Signalen.">
+</a>
 
 SOS ist ein gutes Einstiegsbeispiel für "Codierung": [ ... --- ... ] drei kurze, drei lange, drei kurze Signale. Es werden nur zwei Zustände gebraucht (kurz/lang, bzw. Ton an/aus). 
 Zwar übersetzen sowohl der Morsecode als auch der Computer diese binären Zeichen in Zahlen bzw. Buchstaben, es gibt aber wichtige Unterschiede:
@@ -62,6 +72,15 @@ Jedes zusätzliche Bit verdoppelt die Anzahl der darstellbaren Kombinationen:
 | 32	  | über 4,3 Milliarden    |
 
 <!-- 2^x -->
+
+<a href="{{ '/assets/images/unit01/bit_byte_ascii.jpg' | relative_url }}" 
+   data-lightbox="BitByte" 
+   title="8 Bit bilden 1 Byte; die Bitfolge 01000001 steht in ASCII für „A“.">
+  <img src="{{ '/assets/images/unit01/bit_byte_ascii.jpg' | relative_url }}" alt="8 Bit bilden 1 Byte; die Bitfolge 01000001 steht in ASCII für „A“.">
+</a>
+ 
+
+
 Die Anzahl von Bits in Bytes ist dabei grundsätzlich nicht festgelegt, allerdings hat sich mit dem IBM System/360 (1964) eine Anzahl von 8 durchgesetzt, da es sich sowohl gut adressieren als auch mit den damals gängigen Zeichensätzen sinnvoll kombinieren ließ.
 
 ## Dateiformate als Strukturierungsprinzip
@@ -83,8 +102,10 @@ Erst durch diese zusätzliche Strukturierungsebene wird aus einer bloßen Bitfol
 | **UTF-8** | 8–32 Bit (variabel, 1–4 Byte) | über 1 Mio. Zeichen (ganzer Unicode-Standard) | 2 Byte: `C3 BC` | heutiger Web-/Dateistandard, abwärtskompatibel zu ASCII |
 | **UTF-16** | 16–32 Bit (variabel, 2 oder 4 Byte) | über 1 Mio. Zeichen (ganzer Unicode-Standard) | 2 Byte: `FC 00` (Little Endian) | intern u. a. in Windows, Java, JavaScript |
  
-Man sieht hier bereits das Kernproblem, das die folgende Übung greifbar macht: Dasselbe Zeichen „ü" wird je nach Format durch völlig unterschiedliche Bytefolgen dargestellt. Ein Programm kann eine Datei nur dann korrekt anzeigen, wenn es weiß (oder richtig rät), in welchem Format sie gespeichert wurde.
+Man sieht hier bereits das Kernproblem, das die folgende Übung greifbar macht: Dasselbe Zeichen „ü" wird je nach Format durch völlig unterschiedliche Bytefolgen dargestellt. Ein Programm kann eine Datei nur dann korrekt anzeigen, wenn es weiß (oder richtig rät), in welchem Format sie gespeichert wurde. Wird z. B. eine UTF-8-Datei (`C3 BC`) fälschlich als Windows-1252 gelesen, erscheint statt „ü" die Zeichenfolge „Ã¼".
 
+> **Hinweis zu Notepad++:** Die Kodierung Windows-1252 heißt in Notepad++ (und vielen Windows-Programmen) einfach **„ANSI"**. Außerdem gibt es die Option **„UTF-8 mit BOM"**: Dann schreibt der Editor zusätzlich eine unsichtbare 3-Byte-Kennung (`EF BB BF`) an den Anfang der Datei – eine Datei mit nur einem „ü" ist dann 5 statt 2 Byte groß.
+ 
 
 ## Kurze Übung
 **Durchführung:**

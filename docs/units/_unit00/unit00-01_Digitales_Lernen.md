@@ -27,7 +27,7 @@ ILIAS ist der geschützte digitale Kursraum der Universität Marburg. Dort bearb
 
 Für den Zugriff auf ILIAS benötigen Sie Ihren Studierendenaccount und Ihr entsprechendes Zugriffs-Token. 
 
-**[PLATZHALTER: Link zum ILIAS-Kurs]**
+[ILIAS](https://ilias.uni-marburg.de/goto.php/crs/4845804)
 
 ## Warum gibt es regelmäßig Übungsaufgaben?
 
@@ -39,10 +39,8 @@ Dieses Vorgehen wird **Just-in-Time Teaching (JiTT)** genannt. Ihre Bearbeitung 
 
 Zusätzlich zum Kurs bieten wir ein freiwilliges Tutorium an. Die Plätze sind räumlich und personell begrenzt. 
 <!-- genauer drauf eingehen (Elias bereitet was vor) -->
-Dort erhalten Sie Unterstützung bei Fragen zu den Lerninhalten und Übungsaufgaben.
+Dort erhalten Sie Unterstützung bei Fragen zu den Lerninhalten und Übungsaufgaben. [Tutoriumsseite]({{ '/unit00/unit00-03_Tutorium.html' | relative_url }}).
 
-- Termin: **[PLATZHALTER]**
-- Raum oder Zugangslink: **[PLATZHALTER]**
 
 <!--
 das Tutorium ist KEINE Gruppenarbeit
