@@ -18,7 +18,7 @@ In der letzten Kurssitzung haben wir uns mit der grundlegenden Bedienung von Exc
 
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...
-lernen wir, jetzt wo wir selbst Daten einlesen und abspeichern können, die Grundlagen wie dies **strukturiert** geschieht. Außerdem 
+lernen wir, jetzt wo wir selbst Daten einlesen und abspeichern können, die Grundlagen wie dies **strukturiert** geschieht. Außerdem verschaffen wir uns einen Überblick über Daten in dem wir sie sortieren, filtern und bereinigen sie anschließend.
 
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
 

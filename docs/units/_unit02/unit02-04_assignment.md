@@ -10,7 +10,7 @@ header:
 
 ## Übungsaufgabe 02
 
-1) Öffnen Sie noch ein Mal die -unbearbeitete- Version von Datensatz_1 und speichern Sie diese mit "Datei -> Speichern unter" unter einem neuen Namen.   
+1) Öffnen Sie noch ein Mal die -unbearbeitete- Version von Datensatz_1 (Datei: UE_Temperatur_07-07_FP-FW-NH_20260916_v1.xlsx) und speichern Sie diese mit "Datei -> Speichern unter" unter einem neuen Namen.   
 2) Fügen Sie nach Temperatur eine Spalte hinzu, die Sie mit "Fahrenheit" betiteln.  
 3) Auch wenn es Ihnen unsinnig erscheint:
     - geben Sie die Formel =E2*9/5+32 in F2 ein.

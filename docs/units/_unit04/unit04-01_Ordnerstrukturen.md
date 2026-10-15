@@ -69,11 +69,11 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 Neben dem Dateinamen selbst ist auch die **Ablage in Ordnern** entscheidend. Eine bewährte Grundstruktur für ein Datenprojekt:
 
 ```
-Projektordner/
-├── 01_Rohdaten/
-├── 02_Bearbeitete_Daten/
-├── 03_Analyse/
-└── 04_Ergebnisse/
+Projektordner/  
+├── 01_Rohdaten/  
+├── 02_Bearbeitete_Daten/  
+├── 03_Analyse/  
+└── 04_Ergebnisse/  
 ```
 
 
@@ -96,15 +96,15 @@ Eine gängige Faustregel: **maximal 3–4 Ordnerebenen** unterhalb des Projektor
 
 ```
 Projektordner
-  |- 01_Rohdaten
-      |- Klimadaten_Giessen
-      |- Klimadaten_Marburg
-          |-2025
-          |-2026
-            |- Klimadaten_20260301-20260331_v0.xlsx
-            |- Klimadaten_20260401-20260430_v0.xlsx
+  | 01_Rohdaten
+      ├──  Klimadaten_Giessen
+      ├──  Klimadaten_Marburg
+          ├── 2025
+          ├── 2026
+            ├──  Klimadaten_20260301-20260331_v0.xlsx
+            ├──  Klimadaten_20260401-20260430_v0.xlsx
 
-
+```
 **Warum eine Obergrenze sinnvoll ist:**
 - **Kognitive Überlastung:** Ab etwa 4–5 Ebenen verlieren die meisten Menschen den Überblick, wo sich eine bestimmte Datei befindet, ohne die Ordnerstruktur aktiv zu durchsuchen
 - **Technische Pfadlängen-Begrenzung (Windows):** Windows begrenzt den vollständigen Pfad (Laufwerk + alle Ordner + Dateiname) historisch auf 260 Zeichen. Bei tief verschachtelten Ordnern mit langen, sprechenden Namen wird dieses Limit überraschend schnell erreicht – die Folge sind Dateien, die sich nicht mehr öffnen, verschieben oder manchmal nicht einmal löschen lassen

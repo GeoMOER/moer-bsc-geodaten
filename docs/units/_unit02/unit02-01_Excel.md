@@ -156,20 +156,15 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 
 > Übung: Sensordaten organisieren (15 min)
 
-Sie erhalten zwei Dateien mit echten Messdaten aus dem Marburger Umweltsensoren-Netzwerk: `Datensatz1.xlsx` und `Datensatz2.xlsx`. Beide enthalten Temperaturmessungen mehrerer Stationen – **aber mit unterschiedlich benannten und unterschiedlich angeordneten Spalten**. Das ist Absicht: Genau dieses Problem – Daten aus verschiedenen Quellen mit uneinheitlicher Struktur – begegnet Ihnen in der Praxis ständig, und Sie werden diese beiden Datensätze im späteren Kursverlauf zusammenführen.
+Sie erhalten zwei Dateien mit echten Messdaten aus dem Marburger Umweltsensoren-Netzwerk: `UE_Temperatur_07-07_FP-FW-NH_20260916_v1.xlsx` und `UE_Temperatur_01-02_GS-SP-WR_20260916_v1.xlsx`. Beide enthalten Temperaturmessungen mehrerer Stationen – **aber mit unterschiedlich benannten und unterschiedlich angeordneten Spalten**. Das ist Absicht: Genau dieses Problem – Daten aus verschiedenen Quellen mit uneinheitlicher Struktur – begegnet Ihnen in der Praxis ständig, und Sie werden diese beiden Datensätze im späteren Kursverlauf zusammenführen.
 
 **Wichtig:** Beide Dateien sind bewusst **unaufbereitet** – mit doppelten Zeilen, uneinheitlicher Schreibweise bei Standorten und einer noch nicht aufgetrennten Koordinatenspalte. Das ist kein Fehler, sondern Absicht: Sie werden diese Dateien in den kommenden Kapiteln Schritt für Schritt bereinigen. In diesem Kapitel geht es zunächst nur um die reine Handhabung, nicht darum, die Fehler bereits zu beheben.
 
-1. Öffnen Sie beide Dateien in Excel.
-2. Vergleichen Sie die Spaltenüberschriften: Welche Spalten aus `Datensatz1` entsprechen welchen Spalten aus `Datensatz2`, obwohl sie unterschiedlich heißen (z. B. `Standort` vs. `Ort`)? Notieren Sie sich diese Zuordnung – Sie brauchen sie später beim Zusammenführen.
-3. Kopieren Sie das Tabellenblatt aus `Datensatz2.xlsx` in Ihre `Datensatz1.xlsx`-Datei (Rechtsklick auf den Tabellenblatt-Reiter → „Verschieben oder kopieren…" → Häkchen bei „Kopie erstellen"), sodass beide Tabellen in einer Arbeitsmappe liegen.
-4. Formatieren Sie auf beiden Blättern die Überschriften der Spalten erkennbar (z. B. fett), sodass klar ist, wo die Tabelle beginnt.
-5. Prüfen Sie mit `Strg` + `Ende` auf beiden Blättern, wie weit die jeweilige Tabelle tatsächlich reicht.
-6. Duplizieren Sie auf dem Blatt `Datensatz_1` die Spalte „Messmethode" (kopieren und einfügen als neue Spalte).
-7. Löschen Sie die soeben duplizierte Spalte wieder und speichern Sie die Datei. Prüfen Sie erneut mit `Strg` + `Ende`, ob sich die Größe der Tabelle verändert hat.
-8. Fügen Sie auf beiden Blättern ganz links eine neue Spalte ein und benennen Sie sie „ID". Vergeben Sie fortlaufende Nummern für die Messungen.
-9. Fügen Sie testweise **eine einzelne Zelle** (nicht eine ganze Zeile!) mitten in eine der Tabellen ein und beobachten Sie, was mit den umliegenden Werten passiert. Machen Sie die Aktion anschließend mit `Strg` + `Z` rückgängig und wiederholen Sie den Vorgang korrekt mit einer **ganzen Zeile**.
-10. Speichern Sie Ihre Datei ab – Sie arbeiten in den kommenden Kapiteln mit genau dieser Datei weiter.
+1. Öffnen Sie beide Dateien in Excel.  
+2. Kopieren Sie das Tabellenblatt aus `Datensatz2.xlsx` in Ihre `Datensatz1.xlsx`-Datei (Rechtsklick auf den Tabellenblatt-Reiter → „Verschieben oder kopieren…" → Häkchen bei „Kopie erstellen"), sodass beide Tabellen in einer Arbeitsmappe liegen.
+3. Fügen Sie auf beiden Blättern ganz links eine neue Spalte ein und benennen Sie sie „ID". Vergeben Sie fortlaufende Nummern für die Messungen.
+4. Fügen Sie testweise **eine einzelne Zelle** (nicht eine ganze Zeile!) mitten in eine der Tabellen ein und beobachten Sie, was mit den umliegenden Werten passiert. Machen Sie die Aktion anschließend mit `Strg` + `Z` rückgängig und wiederholen Sie den Vorgang korrekt mit einer **ganzen Zeile**.
+5. Speichern Sie Ihre Datei ab.
 
 
 
