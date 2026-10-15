@@ -21,7 +21,7 @@ Namen verändert
 * `Abschlusstest_Import_roh.csv`
 -->
 
-Beantworten Sie die folgenden Fragen, indem Sie die jeweils beschriebene Bearbeitung tatsächlich in Excel durchführen. Notieren Sie sich Ihre Antworten und führen Sie im Anschluss "Übungsaufgabe 03" in Ilias durch-
+Beantworten Sie die folgenden Fragen, indem Sie die jeweils beschriebene Bearbeitung tatsächlich in Excel durchführen. Notieren Sie sich Ihre Antworten und führen Sie im Anschluss "Übungsaufgabe 03" in Ilias durch
 
 ---
 

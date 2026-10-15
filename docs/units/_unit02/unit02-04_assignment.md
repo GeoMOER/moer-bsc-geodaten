@@ -10,11 +10,11 @@ header:
 
 ## Übungsaufgabe 02
 
-1) Öffnen Sie noch ein Mal die -unbearbeitete- Version von Datensatz_1 und speichern Sie diese mit "Datei -> Speichern unter" unter einem neuen Namen. 
-2) Fügen Sie nach Temperatur eine Spalte hinzu, die Sie mit "Fahrenheit" betiteln.
+1) Öffnen Sie noch ein Mal die -unbearbeitete- Version von Datensatz_1 und speichern Sie diese mit "Datei -> Speichern unter" unter einem neuen Namen.   
+2) Fügen Sie nach Temperatur eine Spalte hinzu, die Sie mit "Fahrenheit" betiteln.  
 3) Auch wenn es Ihnen unsinnig erscheint:
     - geben Sie die Formel =E2*9/5+32 in F2 ein.
     - Kopieren Sie diese Formel (zB über Str+C) und fügen Sie diese Formel auch von F3 bis F5 ein. Nutzen Sie hier nicht drag + drop.
     - Für F6 bis F12 nutzen Sie die drag und drop Funktion von F5 ausgehend um die restlichen Zellen auszufüllen.
-    - Notieren Sie sich die Formeln in F5 und F8 auf einem Stück Papier
-4) Führen Sie jetzt de Ilias Übung durch.
+    - Notieren Sie sich die Formeln in F5 und F8 auf einem Stück Papier  
+4) Führen Sie jetzt de Ilias Übung durch.  

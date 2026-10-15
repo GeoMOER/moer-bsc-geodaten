@@ -157,7 +157,7 @@ defaults:
       path: ""
       type: unit02
     values:
-      category: "02 Daten basics - Datentypen und -Formate (in Excel)"
+      category: "02 Daten basics - Datentypen (in Excel)"
       tags: "Unit 02"
       layout: single
       sidebar:
@@ -167,7 +167,7 @@ defaults:
       path: ""
       type: unit03
     values:
-      category: "03 Daten organisieren - Aufbereitung von Daten mit Textfunktionen, Sortieren, Filterfunktion"
+      category: "03 Daten lesen - strukturierte Daten und Textbearbeitung, Import und Export"
       tags: "Unit 03"
       layout: single
       sidebar:
@@ -177,7 +177,7 @@ defaults:
       path: ""
       type: unit04
     values:
-      category: "04 Daten verstehen - deskriptive Statistik (Streuung, Mittelwerte, Korrelationen)"
+      category: "04 Daten organisieren - Aufbereitung von Daten mit Sortier- und Filterfunktion"
       tags: "Unit 04"
       layout: single
       sidebar:
@@ -187,7 +187,7 @@ defaults:
       path: ""
       type: unit05
     values:
-      category: "05 Zusammenhänge erkennen - Korrelationen und Zusammenhänge"
+      category: "05 Daten beschreiben - Datenübersicht durch simple deskriptive Statistik"
       tags: "Unit 05"
       layout: single
       sidebar:
@@ -197,7 +197,7 @@ defaults:
       path: ""
       type: unit06
     values:
-      category: "06 Exkurs: Fuktionen und Automatisierung"
+      category: "06 Daten zusammenfassen - SVERWEIS und Pivot"
       tags: "Unit 06"
       layout: single
       sidebar:
@@ -207,7 +207,7 @@ defaults:
       path: ""
       type: unit07
     values:
-      category: "07 Daten zugänglich machen"
+      category: "07 Daten zugänglich machen - die FAIR Prinzipien"
       tags: "Unit 07"
       layout: single
       sidebar:
@@ -217,7 +217,7 @@ defaults:
       path: ""
       type: unit08
     values:
-      category: "08 Automatisierung"
+      category: "08 Ausblick - Aufgaben automatisieren"
       tags: "Unit 08"
       layout: single
       sidebar:
