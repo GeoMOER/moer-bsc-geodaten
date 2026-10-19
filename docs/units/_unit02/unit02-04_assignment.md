@@ -3,7 +3,7 @@ title: ÜA | Übungsaufgabe Abschnitt 02
 published: true
 toc: true
 header:
-  image: /assets/images/unit02/DataSwamp02_2.png
+  image: /assets/images/unit02/DataSwamp_Stage02_2.png
   image_description: "Datensumpf"
   caption: "Level 2: Die Schwebeteilchen."
 ---
