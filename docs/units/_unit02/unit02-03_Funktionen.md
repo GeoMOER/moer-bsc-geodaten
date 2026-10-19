@@ -3,7 +3,7 @@ title: Funktionen
 published: true
 toc: true
 header:
-  image: /assets/images/unit02/DataSwamp_Stage02.png
+  image: /assets/images/unit02/DataSwamp_Stage02_2.png
   image_description: "Datensumpf Level 02"
   caption: "Level 2: Die Schwebeteilchen."
 ---

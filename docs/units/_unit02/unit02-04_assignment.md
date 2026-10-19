@@ -3,9 +3,9 @@ title: ÜA | Übungsaufgabe Abschnitt 02
 published: true
 toc: true
 header:
-  image: /assets/images/unit01/DataSwamp02.png
+  image: /assets/images/unit02/DataSwamp02_2.png
   image_description: "Datensumpf"
-  caption: "Gummistiefel an! Lasst die Datenwäsche beginnen."
+  caption: "Level 2: Die Schwebeteilchen."
 ---
 
 ## Übungsaufgabe 02
