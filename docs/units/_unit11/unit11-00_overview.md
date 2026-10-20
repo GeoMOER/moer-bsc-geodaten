@@ -26,6 +26,12 @@ Als reales Forschungsbeispiel verwenden wir Beobachtungsdaten aus der **Global B
 
 Am Beispiel des Feuersalamanders untersuchen wir, wie aus einer Tabelle mit Längen- und Breitengraden ein Punktlayer entsteht. Gleichzeitig beschäftigen wir uns mit Datenqualität und Interpretation: Ein Punkt auf der Karte ist ein Nachweis – nicht automatisch eine vollständige Aussage über die tatsächliche Verbreitung einer Art.
 
+<a href="{{ '/assets/images/unit11/Overview_Unit11-14.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 11" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 11">
+  <img src="{{ '/assets/images/unit11/Overview_Unit11-14.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 11" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 
 ## In dieser Lerneinheit ...

@@ -18,6 +18,12 @@ In der letzten Kurssitzung haben wir die Excel-Oberfläche und grundlegende Bedi
 ## Einführung in Lernabschnitt 03
 Nachdem Sie wissen, wie man in Excel rechnet und Funktionen einsetzt, wenden wir dieses Wissen jetzt auf echte Daten an: In diesem Lernabschnitt geht es um Datentypen und -formate im Umgang mit Excel. Saubere, konsistent formatierte Daten sind die Voraussetzung für jede korrekte Auswertung – Encoding-Fehler, uneinheitliche Formate oder unklare Datenstrukturen führen sonst schnell zu falschen Ergebnissen.
 
+<a href="{{ '/assets/images/unit03/Overview_Unit03.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 03" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 03">
+  <img src="{{ '/assets/images/unit03/Overview_Unit03.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 03" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...
 lernen wir, verschiedene Datentypen und Skalenniveaus zu unterscheiden, Zellen benutzerdefiniert zu formatieren, mit Textfunktionen zusammengesetzte Texte in ihre Bestandteile zu zerlegen und wieder neu zusammenzusetzen, und Daten korrekt zwischen Excel und Textdateien (CSV/TXT) zu importieren und exportieren.

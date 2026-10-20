@@ -10,6 +10,12 @@ header:
 
 Zunächst geht es um die Frage, wie Daten auf unseren Computern überhaupt gespeichert und bearbeitet werden.
 
+<a href="{{ '/assets/images/unit01/Overview_Unit01.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 01" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 01">
+  <img src="{{ '/assets/images/unit01/Overview_Unit01.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 01" width="800px">
+</a>
+
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
 ## Lernziele
 Am Ende dieser Unit sind Studierende in der Lage ...

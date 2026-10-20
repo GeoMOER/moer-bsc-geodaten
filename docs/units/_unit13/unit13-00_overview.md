@@ -30,6 +30,12 @@ In dieser Unit untersuchen wir ein digitales Geländemodell und verbinden es mit
 
 So lernen wir nicht nur einen neuen Geodatentyp kennen, sondern führen erstmals Vektor- und Rasterdaten in einer gemeinsamen Auswertung zusammen.
 
+<a href="{{ '/assets/images/unit13/Overview_Unit11-14.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 13" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 13">
+  <img src="{{ '/assets/images/unit13/Overview_Unit11-14.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 13" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 
 ## In dieser Lerneinheit ...

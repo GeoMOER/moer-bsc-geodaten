@@ -28,6 +28,12 @@ In dieser Unit lernen wir deshalb, Geodaten **sachgerecht, verständlich und nac
 
 Aus dieser Frage entwickeln wir eine Karte für eine festgelegte Zielgruppe. Dazu prüfen wir die vorbereiteten Daten, begründen Symbolisierung und Klassifizierung, arbeiten ein vorhandenes Kartenlayout aus und dokumentieren unsere Entscheidungen.
 
+<a href="{{ '/assets/images/unit14/Overview_Unit11-14.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 14" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 14">
+  <img src="{{ '/assets/images/unit14/Overview_Unit11-14.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 14" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 
 ## In dieser Lerneinheit ...

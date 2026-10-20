@@ -16,6 +16,12 @@ In der letzten Kurssitzung haben wir gelernt, wie man einen zahlenbasierten Übe
 ## Einführung in Lernabschnitt 06
 Seit Beginn dieses Kurses arbeiten Sie mit zwei separaten Sensordatensätzen – bewusst unterschiedlich strukturiert, um ein reales Problem zu zeigen: Daten aus verschiedenen Quellen passen selten ohne Weiteres zusammen. In diesem Lernabschnitt schließen wir diesen Kreis: Sie führen Ihre beiden Datensätze endlich zu einer gemeinsamen Tabelle zusammen und lernen dabei einige der nützlichsten Excel-Werkzeuge kennen, um Informationen aus mehreren Tabellen zu verknüpfen und schnell zusammenzufassen. Außerdem untermauern Sie den optischen Eindruck aus dem Streudiagramm des letzten Lernabschnitts mit einer konkreten Kennzahl: der Korrelation.
 
+<a href="{{ '/assets/images/unit06/Overview_Unit05_06.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 06" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 06">
+  <img src="{{ '/assets/images/unit06/Overview_Unit05_06.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 06" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...
 lernen wir, wie man zwei unterschiedlich strukturierte Tabellen angleicht und zusammenführt, wie man mit `SVERWEIS` Informationen aus einer zweiten Tabelle nachschlägt, wie man mit einer einfachen Pivot-Tabelle und mit Häufigkeitstabellen große Datenmengen zusammenfasst, und wie man mit der Pearson-Korrelation einen Zusammenhang zwischen zwei Variablen quantifiziert.

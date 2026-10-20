@@ -26,6 +26,12 @@ Geodaten sind deshalb keine vollständigen Abbilder der Realität, sondern zweck
 
 In diesem Lernabschnitt lernen wir die beiden grundlegenden Geodatenmodelle **Vektor** und **Raster** kennen. Anschließend beginnen wir praktisch mit **QGIS**, einem freien Geoinformationssystem. Darin können wir Geodaten öffnen, gemeinsam darstellen, untersuchen und später auch bearbeiten und analysieren.
 
+<a href="{{ '/assets/images/unit10/Overview_Unit10.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 10" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 10">
+  <img src="{{ '/assets/images/unit10/Overview_Unit10.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 10" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 
 ## In dieser Lerneinheit ...

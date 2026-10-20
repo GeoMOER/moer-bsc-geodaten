@@ -20,6 +20,12 @@ In der letzten Kurssitzung haben wir uns mit der grundlegenden Bedienung von Exc
 ## In dieser Lerneinheit...
 lernen wir, jetzt wo wir selbst Daten einlesen und abspeichern können, die Grundlagen wie dies **strukturiert** geschieht. Außerdem verschaffen wir uns einen Überblick über Daten in dem wir sie sortieren, filtern und bereinigen sie anschließend.
 
+<a href="{{ '/assets/images/unit04/Overview_Unit04.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 04" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 04">
+  <img src="{{ '/assets/images/unit04/Overview_Unit04.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 04" width="800px">
+</a>
+
 <!-- Lernziele: Was sollten Studierende am Ende dieser Lerneinheit wissen und anwenden können? -->
 
 ## Lernziele

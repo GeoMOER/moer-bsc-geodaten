@@ -28,6 +28,12 @@ Anschließend beschaffen wir reale Vektordaten über Geoportale und kombinieren 
 
 > **Welche dokumentierten Artennachweise liegen innerhalb von Schutzgebieten, und welche Gewässer schneiden diese Flächen?**
 
+<a href="{{ '/assets/images/unit12/Overview_Unit11-14.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 12" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 12">
+  <img src="{{ '/assets/images/unit12/Overview_Unit11-14.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 12" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 
 ## In dieser Lerneinheit ...

@@ -8,6 +8,12 @@ header:
   caption: "KI-generierte Illustration, bearbeitet für diesen Kurs"
 ---
 
+<a href="{{ '/assets/images/unit15/Overview_Unit15.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 15" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 15">
+  <img src="{{ '/assets/images/unit15/Overview_Unit15.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 15" width="800px">
+</a>
+
 ## Kursabschluss: Rückblick, offene Fragen und Feedback
 
 In der letzten Sitzung blicken wir gemeinsam auf den Kurs zurück: von digitalen Daten und Tabellen über räumliche Analysen bis zur fertigen Karte. Wir wiederholen die wichtigsten Begriffe, Methoden und Erkenntnisse der vergangenen Units und klären offene Fragen. Zum Abschluss ist Zeit für Ihre Rückmeldung zum Kurs.

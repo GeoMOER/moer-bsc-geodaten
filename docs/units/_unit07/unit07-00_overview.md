@@ -20,6 +20,12 @@ In der letzten Kurssitzung haben wir mittels SVERWEIS Daten  zusammengeführt un
 
 Daten bleiben nur dann langfristig nutzbar, wenn andere Personen sie finden, verstehen und ihre Bearbeitung nachvollziehen können. Die FAIR-Prinzipien, eine verständliche README-Datei und Versionskontrolle unterstützen diese Anforderungen aus unterschiedlichen Blickwinkeln.
 
+<a href="{{ '/assets/images/unit07/Overview_Unit07_08.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 07" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 07">
+  <img src="{{ '/assets/images/unit07/Overview_Unit07_08.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 07" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit ...
 

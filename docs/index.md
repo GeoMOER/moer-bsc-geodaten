@@ -55,7 +55,7 @@ Der Kurs vermittelt deshalb grundlegende Kompetenzen für den strukturierten und
 <a href="{{ '/assets/images/courseplan_overview.png' | relative_url }}" 
    data-lightbox="Fahrplan" 
    title="Der Fahrplan des Kurses">
-  <img src="{{ '/assets/images/courseplan_overview.png' | relative_url }}" alt="Der Fahrplan des Kurses">
+  <img src="{{ '/assets/images/courseplan_overview.png' | relative_url }}" alt="Der Fahrplan des Kurses" width="1000px">
 </a>
 
 ## Lernziele

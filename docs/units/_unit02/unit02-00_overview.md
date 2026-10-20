@@ -18,6 +18,12 @@ In der letzten Kurssitzung haben wir gelernt, dass Computer alle Informationen b
 ## Einführung in Lernabschnitt 02
 Nachdem wir wissen, wie Computer Daten grundsätzlich codieren, wenden wir dieses Wissen jetzt praktisch an: In diesem Lernabschnitt lernen Sie Microsoft Excel als Arbeitswerkzeug kennen – von der grundlegenden Bedienung über das Rechnen mit Formeln und Zellbezügen bis zu den wichtigsten eingebauten Funktionen. Das ist die Grundlage für alles Weitere im Kurs: Ohne ein sicheres Verständnis von Formeln, Zellbezügen und Funktionen lassen sich auch die späteren Themen (Datenformate, Textfunktionen, Statistik) nicht sinnvoll umsetzen.
 
+<a href="{{ '/assets/images/unit02/Overview_Unit02.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 02" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 02">
+  <img src="{{ '/assets/images/unit02/Overview_Unit02.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 02" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...
 lernen wir die Excel-Oberfläche und grundlegende Bedienung kennen, üben den Umgang mit mathematischen Operatoren und Zellbezügen (relativ und absolut), und lernen die Struktur von Excel-Funktionen sowie die wichtigsten Datums- und mathematischen Funktionen kennen.

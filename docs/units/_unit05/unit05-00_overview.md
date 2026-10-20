@@ -16,6 +16,12 @@ In der letzten Kurssitzung haben wir gelernt, wie man Ordner und Dateien sinnvol
 ## Einführung in Lernabschnitt 05
 Ihre Daten sind jetzt sauber formatiert und bereinigt. Um Datenqualität sicherzustellen und erste inhaltliche Aussagen zu treffen, benötigen Sie zusätzlich einen zahlenbasierten Überblick. Bei **quantitativen** Daten macht es Sinn, sich Lage- und Streuungsmaße wie Mittelwert, Median, Minimum, Maximum und Quartile anzuschauen, um zu erkennen, wo die Werte liegen, wie stark sie streuen und ob es Ausreißer gibt. In diesem Lernabschnitt lernen Sie außerdem, Verteilungen zu visualisieren, mit fehlenden Werten sachgerecht umzugehen und erste Zusammenhänge zwischen zwei Variablen zu erkennen.
 
+<a href="{{ '/assets/images/unit05/Overview_Unit05_06.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 05" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 05">
+  <img src="{{ '/assets/images/unit05/Overview_Unit05_06.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 05" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...
 lernen wir, Lage- und Streuungsmaße zu berechnen und zu interpretieren, Verteilungen mit Histogramm und Boxplot zu visualisieren, unterschiedliche Arten fehlender Werte zu erkennen und sachgerecht zu behandeln, und erste Zusammenhänge zwischen zwei Variablen mit einem Streudiagramm zu untersuchen.

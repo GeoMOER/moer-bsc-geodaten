@@ -17,6 +17,12 @@ In der letzten Kurssitzung haben wir Daten anhand der FAIR-Prinzipien eingeordne
 
 Die Bearbeitungsschritte in Ihrer README haben Sie bisher von Hand in Excel durchgeführt. Das funktioniert bei einer Tabelle mit wenigen Zeilen. Bei großen Datenmengen oder regelmäßig eintreffenden Exporten wird es mühsam und fehleranfällig. Wer die Schritte stattdessen als Anleitung aufschreibt, die der Computer ausführt, spart Zeit und erhält zugleich eine Dokumentation, die nicht veralten kann.
 
+<a href="{{ '/assets/images/unit08/Overview_Unit07_08.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 08" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 08">
+  <img src="{{ '/assets/images/unit08/Overview_Unit07_08.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 08" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit ...
 

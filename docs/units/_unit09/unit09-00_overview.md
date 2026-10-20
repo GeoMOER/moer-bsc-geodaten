@@ -26,6 +26,12 @@ Solche Daten werden als **Geodaten** bezeichnet. Neben den eigentlichen Messwert
 
 In diesem Lernabschnitt schaffen wir die Grundlagen für die weitere Arbeit mit Geodaten. Wir untersuchen, was Geodaten von anderen Daten unterscheidet, wie Positionen durch Koordinaten angegeben werden und warum die gekrümmte Erdoberfläche nicht ohne Verzerrungen auf einer ebenen Karte dargestellt werden kann.
 
+<a href="{{ '/assets/images/unit09/Overview_Unit09.png' | relative_url }}" 
+   data-lightbox="Fahrplan Abschnitt 09" 
+   title="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 09">
+  <img src="{{ '/assets/images/unit09/Overview_Unit09.png' | relative_url }}" alt="Der Fahrplan des Kurses mit dem Fokus auf Abschnitt 09" width="800px">
+</a>
+
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 
 ## In dieser Lerneinheit ...
