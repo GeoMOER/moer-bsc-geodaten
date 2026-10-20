@@ -16,7 +16,7 @@ In der letzten Kurssitzung haben wir die Excel-Oberfläche und grundlegende Bedi
 
 <!-- Introtext: Allgemeine Einleitung zum Thema "Datentypen und -Formate (in Excel)" und Verbindung zum vorangegangenen Thema. Worum geht es, welche Inhalte werden bearbeitet und warum sind diese wichtig? -->
 ## Einführung in Lernabschnitt 03
-Nachdem Sie wissen, wie man in Excel rechnet und Funktionen einsetzt, wenden wir dieses Wissen jetzt auf echte Daten an: In diesem Lernabschnitt geht es um Datentypen und -formate im Umgang mit Excel. Saubere, konsistent formatierte Daten sind die Voraussetzung für jede korrekte Auswertung – Encoding-Fehler, uneinheitliche Formate oder unklare Datenstrukturen führen sonst schnell zu falschen Ergebnissen.
+In diesem Lernabschnitt geht es um Datentypen und -formate im Umgang mit Excel. Saubere, konsistent formatierte Daten sind die Voraussetzung für jede korrekte Auswertung – Encoding-Fehler, uneinheitliche Formate oder unklare Datenstrukturen führen sonst schnell zu falschen Ergebnissen.
 
 <!-- Aktuelle Lerneinheit: Welcher konkrete Inhalt erwartet die Studierenden? -->
 ## In dieser Lerneinheit...

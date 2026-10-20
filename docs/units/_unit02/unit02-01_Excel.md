@@ -161,10 +161,11 @@ Sie erhalten zwei Dateien mit echten Messdaten aus dem Marburger Umweltsensoren-
 **Wichtig:** Beide Dateien sind bewusst **unaufbereitet** – mit doppelten Zeilen, uneinheitlicher Schreibweise bei Standorten und einer noch nicht aufgetrennten Koordinatenspalte. Das ist kein Fehler, sondern Absicht: Sie werden diese Dateien in den kommenden Kapiteln Schritt für Schritt bereinigen. In diesem Kapitel geht es zunächst nur um die reine Handhabung, nicht darum, die Fehler bereits zu beheben.
 
 1. Öffnen Sie beide Dateien in Excel.  
-2. Kopieren Sie das Tabellenblatt aus `Datensatz2.xlsx` in Ihre `Datensatz1.xlsx`-Datei (Rechtsklick auf den Tabellenblatt-Reiter → „Verschieben oder kopieren…" → Häkchen bei „Kopie erstellen"), sodass beide Tabellen in einer Arbeitsmappe liegen.
-3. Fügen Sie auf beiden Blättern ganz links eine neue Spalte ein und benennen Sie sie „ID". Vergeben Sie fortlaufende Nummern für die Messungen.
-4. Fügen Sie testweise **eine einzelne Zelle** (nicht eine ganze Zeile!) mitten in eine der Tabellen ein und beobachten Sie, was mit den umliegenden Werten passiert. Machen Sie die Aktion anschließend mit `Strg` + `Z` rückgängig und wiederholen Sie den Vorgang korrekt mit einer **ganzen Zeile**.
-5. Speichern Sie Ihre Datei ab.
+2. Kopieren Sie das Tabellenblatt aus `... GS-SP-WR ....xlsx` in Ihre `...FP-FW-NH....xlsx`-Datei (Rechtsklick auf den Tabellenblatt-Reiter → „Verschieben oder kopieren…" → Häkchen bei „Kopie erstellen"), sodass beide Tabellen in einer Arbeitsmappe liegen.
+3. Speichern Sie diese Datei als UE_Temperatur_07-07_gesamt_20260916_v1.xlsx ab.  
+4. Fügen Sie auf beiden Blättern ganz links eine neue Spalte ein und benennen Sie sie „ID". Vergeben Sie fortlaufende Nummern für die Messungen.
+5. Fügen Sie testweise **eine einzelne Zelle** (nicht eine ganze Zeile!) mitten in eine der Tabellen ein und beobachten Sie, was mit den umliegenden Werten passiert. Machen Sie die Aktion anschließend mit `Strg` + `Z` rückgängig und wiederholen Sie den Vorgang korrekt mit einer **ganzen Zeile**.
+65. Speichern Sie Ihre Datei erneut ab.
 
 
 

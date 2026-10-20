@@ -74,6 +74,7 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 
 Häufig enthalten Zellen unsichtbare überflüssige Leerzeichen – etwa am Anfang, Ende oder doppelt zwischen Wörtern (z. B. durch Copy-Paste aus einer Webseite oder einem PDF entstanden). Diese fallen beim bloßen Betrachten der Zelle **nicht auf**, führen aber dazu, dass `"Firmaneiplatz"` und `"Firmaneiplatz "` (mit Leerzeichen am Ende) von Excel als zwei unterschiedliche Werte behandelt werden.
 
+
 **Funktionen zur Bereinigung:**
 
 | Funktion | Wirkung | Beispiel |
@@ -83,6 +84,7 @@ Häufig enthalten Zellen unsichtbare überflüssige Leerzeichen – etwa am Anfa
 
 **So finden Sie versteckte Leerzeichen, bevor Sie bereinigen:** Markieren Sie eine verdächtige Zelle und schauen Sie in die Bearbeitungsleiste – ein Leerzeichen am Ende ist dort oft als kleiner Abstand nach dem letzten sichtbaren Zeichen erkennbar. Alternativ hilft die Formel `=LÄNGE(A2)`, um die tatsächliche Zeichenanzahl einer Zelle zu prüfen und mit der erwarteten Länge zu vergleichen.
 
+<!--
 ## Textaufbereitung am Beispiel Koordinaten
 
 Angenommen, eine Kommilitonin hat ihre Messung mit `50°48'12"N` erfasst, statt wie Sie selbst direkt in Dezimalgrad. Um daraus einen für QGIS oder R nutzbaren Wert zu machen, gehen Sie in Teilschritten vor (angenommen, der Text steht in Zelle `A2`):
@@ -94,11 +96,15 @@ Angenommen, eine Kommilitonin hat ihre Messung mit `50°48'12"N` erfasst, statt 
 5. **Vorzeichen beachten:** Ein „S" (Süd) oder „W" (West) am Ende bedeutet einen **negativen** Wert in Dezimalgrad – wichtig, da QGIS und R negative Werte für die südliche bzw. westliche Hemisphäre erwarten, nicht den Buchstaben `S`/`W`
 
 **Warum das wichtig ist:** Genau in diesem letzten Punkt liegt eine häufige Fehlerquelle beim Datenimport in GIS-Software: Ein Punkt mit `Latitude = 50,80` und dem Buchstaben `S` in einer separaten Spalte wird von QGIS beim direkten Import als nördliche Hemisphäre interpretiert, wenn das Vorzeichen nicht vorher korrekt in der Zahl selbst abgebildet wurde.
-
+-->
 ## Konsistente Formatierung – Voraussetzung für jede Weiterverarbeitung
 
 - **Dezimaltrennzeichen:** Deutschland nutzt standardmäßig das Komma (`8,4`), viele internationale/technische Quellen (darunter GPS-Geräte, R, Python, die meisten GIS-Programme) den Punkt (`8.4`) – für Berechnungen und insbesondere für den Export/Import in andere Software muss ein Datensatz einheitlich sein. Ein Datensatz mit gemischten Trennzeichen wird von R oder QGIS im schlimmsten Fall nicht als Fehler erkannt, sondern **falsch interpretiert** (z. B. `8.400` als „achttausendvierhundert" statt „8,4").
 - **Datumsformate:** `14.03.2024` (DE), `2024-03-14` (ISO 8601), `3/14/2024` (US) sehen unterschiedlich aus und werden von Excel nicht automatisch vereinheitlicht – vor allem `TT.MM.JJJJ` vs. `MM/TT/JJJJ` ist eine häufige Fehlerquelle, weil beide Formate wie eine gültige Zahlenfolge aussehen, aber unterschiedlich interpretiert werden (der 3. Januar wird so leicht zum 1. März)
-- **Koordinatenreferenzsystem (kurz erwähnt):** Dezimalgrad allein legt noch nicht fest, auf welches Referenzsystem sich die Koordinate bezieht. Für die meisten alltäglichen Anwendungen (GPS, Google Maps, OpenStreetMap) ist das **WGS84** (EPSG-Code 4326) der Standard, auf den sich auch QGIS beim Import ohne weitere Angaben meist bezieht. Für diesen Kurs reicht es zu wissen, dass dieser Standard existiert – bei Bedarf finden Sie in QGIS unter den Layer-Eigenschaften, welches System aktuell verwendet wird.
+- **Koordinatenreferenzsystem (kurz erwähnt):** Dezimalgrad allein legt noch nicht fest, auf welches Referenzsystem sich die Koordinate bezieht. Für die meisten alltäglichen Anwendungen (GPS, Google Maps, OpenStreetMap) ist das **WGS84** (EPSG-Code 4326) der Standard, auf den sich auch QGIS beim Import ohne weitere Angaben meist bezieht.
 
 **Empfehlung für die Praxis:** Bringen Sie Ihre Datensätze möglichst früh in ein einheitliches Format bevor Sie sie weiterverarbeiten, mit anderen Datensätzen kombinieren oder in eine andere Software importieren.
+
+## Übung (10 min)
+
+Bereinigen Sie ihre beiden Datensätze (s. auch "Textfunktionen_Vertiefung"). Sammeln Sie auf dem Etherpad <!-- Alternative? -->alle gefundenen Fehler in Text und bzgl. Dezimaltrennzeichen. 

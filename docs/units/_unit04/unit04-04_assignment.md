@@ -30,27 +30,24 @@ Arbeiten Sie bei allen Aufgaben, die Daten verändern (Sortieren, Duplikate entf
 * Ordner- und Dateinamen enthalten keine Leerzeichen.
 
 **2.** Notieren Sie den **relativen** Pfad der Datei `Messungen_Juni.xlsx`, ausgehend vom Projektordner `Sensorprojekt_Marburg`.
+
  
-**3.** Prüfen Sie die Dateinamen im Ordner gegen das Schema `NAME_INHALT_DATUM_VERSION`. Notieren Sie, welche Dateien dem Schema entsprechen.
+**3.** Öffnen Sie `Uebungsaufgabe04_Datensatz.xlsx`. Sortieren Sie die gesamte Tabelle zuerst nach `Standort` (A–Z), dann nach `Datum` (aufsteigend). Notieren Sie den Wert der Spalte `Temperatur` in Zeile 15.
  
-**3 4.** Öffnen Sie `Uebungsaufgabe04_Datensatz.xlsx`. Sortieren Sie die gesamte Tabelle zuerst nach `Standort` (A–Z), dann nach `Datum` (aufsteigend). Notieren Sie den Wert der Spalte `Temperatur` in Zeile 15.
- 
-**4 5.** Filtern Sie die Spalte `Standort` so, dass **alle Schreibweisen** von „Firmaneiplatz“ gemeinsam angezeigt werden. Notieren Sie, wie viele Datensätze (Zeilen ohne Überschrift) sichtbar sind. Die Statusleiste zeigt „x von 21 Datensätzen gefunden“. Entfernen Sie den Filter danach wieder.
+**4.** Filtern Sie die Spalte `Standort` so, dass **alle Schreibweisen** von „Firmaneiplatz“ gemeinsam angezeigt werden. Notieren Sie, wie viele Datensätze (Zeilen ohne Überschrift) sichtbar sind. Die Statusleiste zeigt „x von 21 Datensätzen gefunden“. Entfernen Sie den Filter danach wieder.
  
 <!-- Screenshot [Nr]: Filter-Dropdown der Spalte Standort mit angehakten Einträgen für Firmaneiplatz; im Hintergrund die gefilterte Tabelle, unten links die Statusleiste mit der Anzahl der gefundenen Datensätze.
 Markdownlösung: ![Screenshot des Filter-Dropdowns der Spalte Standort mit gefilterter Tabelle und Statusleiste.]({{ '/assets/images/unit04/Screenshot[Nr]_Filter.png' | relative_url }})
 Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
  
-**5 6.** Filtern Sie die Spalte `Temperatur` mit dem Zahlenfilter „größer als“ 25. Notieren Sie, wie viele Datensätze sichtbar sind. Entfernen Sie den Filter danach wieder.
+**5.** Filtern Sie die Spalte `Temperatur` mit dem Zahlenfilter „größer als“ 25. Notieren Sie, wie viele Datensätze sichtbar sind. Entfernen Sie den Filter danach wieder.
  
-**6 7.** Probieren Sie einen typischen Fallstrick auf einer Kopie aus: Markieren Sie **nur** die Spalte `Temperatur`, sortieren Sie sie aufsteigend und wählen Sie im Warndialog „Mit der aktuellen Auswahl fortfahren“. Beobachten Sie, welche Werte danach zu welchem Standort und Datum gehören. In Ilias wird Ihnen dazu ein Bild gezeigt.
+**6.** Filtern Sie wie in Aufgabe 5 nach allen Schreibweisen von „Firmaneiplatz“. Tragen Sie unterhalb der Tabelle in zwei freie Zellen die Formeln `=SUMME(E2:E22)` und `=TEILERGEBNIS(9;E2:E22)` ein. Notieren Sie beide Ergebnisse.
  
-**7 8.** Filtern Sie wie in Aufgabe 5 nach allen Schreibweisen von „Firmaneiplatz“. Tragen Sie unterhalb der Tabelle in zwei freie Zellen die Formeln `=SUMME(E2:E22)` und `=TEILERGEBNIS(9;E2:E22)` ein. Notieren Sie beide Ergebnisse.
+**7.** Wenden Sie auf einer **Kopie** „Daten → Duplikate entfernen“ an (alle Spalten). Notieren Sie, wie viele Datenzeilen (ohne Überschrift) danach übrig bleiben.
  
-**7 9.** Wenden Sie auf einer Kopie „Daten → Duplikate entfernen“ an (alle Spalten). Notieren Sie, wie viele Datenzeilen (ohne Überschrift) danach übrig bleiben.
+** 8.** Bestimmen Sie mit `=LÄNGE(...)` die Länge des Eintrags XXX. Notieren Sie das Ergebnis.
  
-**10.** Wenden Sie in einer freien Zelle `=GROSS2(...)` auf den Eintrag „FIRMANEIPLATZ“ an. Notieren Sie das Ergebnis.
- 
-** 9 11.** Bestimmen Sie mit `=LÄNGE(...)` die Länge des Eintrags „Friedhofsweg (Ost)“. Notieren Sie das Ergebnis.
- 
-**10 s12.** Bereinigen Sie die Spalte `Standort` auf einer Kopie, wie im Kapitel zur Datenreinigung beschrieben: Schreibweise vereinheitlichen, überflüssige Leerzeichen entfernen, Klammerzusatz entfernen. Notieren Sie, wie viele verschiedene Standortnamen danach übrig bleiben.
+** 9.** Bereinigen Sie die Spalte `Standort` auf einer Kopie, wie im Kapitel zur Datenreinigung beschrieben: Schreibweise vereinheitlichen, überflüssige Leerzeichen entfernen, Klammerzusatz entfernen. Notieren Sie, wie viele verschiedene Standortnamen danach übrig bleiben.
+
+** 10. ** Führen Sie den Ilias-Test durch. 
