@@ -30,6 +30,7 @@ Im letzten Kapitel haben Sie mit `TEIL`, `FINDEN` und `WERT` einen zusammengeset
 
 **`IDENTISCH` statt `=`:** Der einfache Vergleich `A1=A2` behandelt `"Text"` und `"text"` in Excel meist als gleich. Wenn Sie dagegen wirklich prüfen wollen, ob zwei Texte inklusive Groß-/Kleinschreibung exakt übereinstimmen, brauchen Sie `IDENTISCH`.
 
+<!--
 ## Übung: Koordinaten als Gradminuten darstellen
 
 Sie erhalten die Datei `Stationskoordinaten.xlsx` mit den Dezimalgrad-Koordinaten aller sechs Marburger Sensorstationen. Diese sollen für eine ansehnlichere Ausgabe in **Gradminuten** dargestellt werden. Zur Vereinfachung vernachlässigen wir die Gradsekunden und bearbeiten nur die geografische Breite (`Latitude`).
@@ -71,6 +72,8 @@ Stellen Sie nun Gradzahl und Gradminuten für jede Station in der üblichen Form
 ```
 <!-- Notiz von Lisa S.: Sollten hier nicht C2 (Gradzahl aus Schritt 1) und F2 (Gradminuten) aus Schritt 4 miteinander verknüpft werden? -->
 
+<!--
+
 Dabei ist `E2` Ihre Gradspalte und `F2` Ihre Gradminuten-Spalte aus der vorherigen Übung; das kaufmännische Und-Zeichen `&` verkettet Text und Zahlenwerte zu einem gemeinsamen Textstring.
 
 **Kontrolle:** Prüfen Sie mit `LÄNGE(...)`, ob alle Einträge Ihrer neuen Spalte eine plausible, einheitliche Zeichenlänge haben — ein auffällig abweichender Wert kann auf ein Problem bei einer der vorherigen Berechnungen hindeuten (z. B. eine einstellige statt zweistellige Gradminuten-Zahl).
@@ -78,6 +81,7 @@ Dabei ist `E2` Ihre Gradspalte und `F2` Ihre Gradminuten-Spalte aus der vorherig
 <!-- Screenshot 11: Excel-Tabelle mit Spalten Standort, Latitude, Grad, Minuten_Dezimal, Minuten_x60, Gradminuten und einer letzten Spalte "Darstellung" mit Werten wie "50° 49'", jede Formel in der Bearbeitungsleiste sichtbar.
 Markdownlösung: ![Screenshot einer Excel-Tabelle mit Spalten und Formeln zur berechnung und Darstellung von Standortkoordinaten.]({{ '/assets/images/unit03/Screenshot11_Excel.png' | relative_url }})
 Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
+<!--
 
 <a href="{{ '/assets/images/unit03/Screenshot11_Excel.png' | relative_url }}" 
    data-lightbox="Screenshot11_Excel" 
@@ -86,5 +90,5 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 </a>
 
 *(Zeitbedarf: ca. 10 Minuten für beide Übungen zusammen)*
-
 ## Additional resources
+-->

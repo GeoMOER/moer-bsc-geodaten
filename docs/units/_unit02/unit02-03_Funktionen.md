@@ -66,12 +66,6 @@ Berechnen Sie mit einem Zellbezug, wie alt Sie (oder eine andere Person) **in Ta
 | `ZUFALLSZAHL()` | Zufallszahl zwischen 0 und 1 |
 | `GANZZAHL(Zahl)` | Rundet **ab** auf die nächste ganze Zahl (kappt alle Nachkommastellen) |
 
-## Übung: Mathematische Funktionen I
-
-Nutzen Sie Ihre Arbeitsmappe mit `Datensatz_1`.
-
-Berechnen Sie Mittelwert, Minimum und Maximum der Temperatur. Nutzen Sie dazu jeweils eine Zelle oben rechts neben dem Tabellenkopf.
-
 ## Runden — zwei grundverschiedene Wege
 
 Es gibt zwei Möglichkeiten, eine Zahl mit weniger Nachkommastellen anzuzeigen – die aber **nicht dasselbe** bewirken:
@@ -85,17 +79,18 @@ Es gibt zwei Möglichkeiten, eine Zahl mit weniger Nachkommastellen anzuzeigen �
 
 **Warum der Unterschied wichtig ist:** Wenn Sie mit einer optisch gerundeten Zahl weiterrechnen, rechnet Excel weiterhin mit dem **vollen, ungerundeten** Wert – das kann zu Ergebnissen führen, die auf den ersten Blick nicht zur Anzeige zu passen scheinen (z. B. wenn `2,4 + 2,4` als `5` statt `4,8` angezeigt wird, weil beide Ausgangswerte eigentlich `2,45` waren und nur optisch auf eine Nachkommastelle gerundet angezeigt wurden). Möchten Sie dagegen sicherstellen, dass **wirklich** mit dem gerundeten Wert weitergerechnet wird, müssen Sie `RUNDEN(...)` verwenden.
 
-## Übung: Mathematische Funktionen II
+## Verschachteln
+
+Statt für eine Berechnung mehrere Spalten nacheinander zu nutzen, kann man auch Funktionen verschachteln. Dazu setzt man eine Funktion als Argument in eine andere Funktion ein. Excel berechnet dabei immer zuerst die innere Funktion und gibt ihr Ergebnis an die äußere weiter, beispielsweise =RUNDEN(MITTELWERT(A1:A10);2)
+
+## Übung: Mathematische Funktionen 
 
 Nutzen Sie erneut Ihre Arbeitsmappe mit `Datensatz_1`.
 
 Die durchschnittliche Temperatur soll übersichtlich zusammengefasst werden:
 
-1. Berechnen Sie in einer Zelle oben rechts die **durchschnittliche Temperatur** aller Messungen mit `MITTELWERT`.
-2. Verschachteln Sie diese Formel mit `RUNDEN`, sodass das Ergebnis auf **zwei Nachkommastellen** mathematisch gerundet direkt in derselben Zelle steht (nicht nur optisch): `=RUNDEN(MITTELWERT(Bereich);2)`.
-
-**Das ist eine verschachtelte Funktion:** Das Ergebnis von `MITTELWERT(...)` wird direkt als Argument an `RUNDEN(...)` weitergegeben, ohne den Umweg über eine Hilfszelle. Excel wertet dabei zuerst die innere Funktion aus (`MITTELWERT`), und übergibt deren Ergebnis an die äußere (`RUNDEN`).
-
+1. Berechnen Sie in einer Zelle oben rechts die **durchschnittliche, maximale und minimale Temperatur** aller Messungen.
+2. Verschachteln Sie diese Formel mit `RUNDEN`, sodass das Ergebnis auf **zwei Nachkommastellen** mathematisch gerundet direkt in derselben Zelle steht (nicht nur optisch).
 <!--
 ## Additional resources
 -->

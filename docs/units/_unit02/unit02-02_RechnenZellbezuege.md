@@ -63,14 +63,16 @@ Statt `=25*9/5+32` können Sie also schreiben: `=A2*9/5+32`, wobei `A2` die Temp
 
 ## Übung: Relativer Zellbezug
 
-Nutzen Sie Ihre Arbeitsmappe mit `Datensatz_1` aus dem letzten Kapitel.
+Nutzen Sie Ihre Arbeitsmappe mit `Datensatz_1` ( `UE_Temperatur_07-07_FP-FW-NH_20260916_v1.xlsx`) aus dem letzten Kapitel.
 
 Berechnen Sie die Temperatur zusätzlich in **Fahrenheit** – dieselbe Umrechnung, die Sie bereits aus der Taschenrechner-Übung kennen (`°C * 9/5 + 32`), jetzt aber mit einem Zellbezug statt einer festen Zahl.
 
 1. Legen Sie eine neue Spalte mit einer sinnvollen Überschrift an (z. B. `Temperatur (°F)`).
-2. Tragen Sie für die **erste** Zeile Ihrer Tabelle eine passende Formel ein, die sich auf die Temperaturzelle derselben Zeile bezieht (z. B. `=E2*9/5+32`, falls die Temperatur in Spalte `E` steht).
+2. Tragen Sie für die **erste** Zeile Ihrer Tabelle eine passende Formel ein, die sich auf die Temperaturzelle derselben Zeile bezieht.
 3. Markieren Sie die Zelle mit Ihrer Formel und ziehen Sie sie am kleinen Quadrat unten rechts (dem „Ausfüllkästchen") über alle folgenden Zeilen der Tabelle – das ist **relatives Kopieren**.
-4. Prüfen Sie in der Bearbeitungsleiste, wie sich der Zellbezug in den kopierten Formeln automatisch angepasst hat (aus `E2` wird z. B. `E3`, `E4`, …).
+4. Prüfen Sie in der Bearbeitungsleiste, wie sich der Zellbezug in den kopierten Formeln automatisch angepasst hat
+5. Fallen Ihnen Besonderheiten auf?
+
 
 **Warum das „relativ" heißt:** Excel merkt sich beim Kopieren nicht die absolute Zelladresse, sondern die **Position relativ** zur Formelzelle ("die Zelle eine Spalte links, in derselben Zeile"). Genau deshalb passt sich der Bezug beim Kopieren automatisch an.
 
