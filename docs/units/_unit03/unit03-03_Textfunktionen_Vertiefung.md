@@ -3,7 +3,7 @@ title: Textfunktionen – Vertiefung
 published: true
 toc: true
 header:
-  image: /assets/images/unit03/DataSwamp_Stage03.png
+  image: /assets/images/unit03/DataSwamp_Stage03_2.png
   image_description: "Datensumpf Level 03"
   caption: "Level 3: Die Struktur der Seeelemente."
 ---
