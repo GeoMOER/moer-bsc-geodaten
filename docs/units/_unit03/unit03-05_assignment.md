@@ -24,19 +24,20 @@ Namen verändert
 Beantworten Sie die folgenden Fragen, indem Sie die jeweils beschriebene Bearbeitung tatsächlich in Excel durchführen. Notieren Sie sich Ihre Antworten und führen Sie im Anschluss "Übungsaufgabe 03" in Ilias durch
 
 ---
+**1.** Lesen Sie alle Kapitel dieser Unit noch ein Mal in Ruhe durch.
 
-**1.** Führen Sie die Übung in Unit03-02 `Datenformate` durch. Notieren Sie sich, was Sie nach der Formatierung in der Temperaturspalte in Zeile 15 sehen.  Notieren Sie sich auch den ursprünglichen Wert.
+**2.** Führen Sie die Übung in Unit03-02 `Datenformate` durch. Notieren Sie sich, was Sie nach der Formatierung in der Temperaturspalte in Zeile 15 sehen.  Notieren Sie sich auch den ursprünglichen Wert.
 
-**2.** Führen Sie die Übung in Unit03-03 `Textbearbeitung` durch. Notieren Sie sich Ihre genutzte Formel für die dritte Zeile.
+**3.** Führen Sie die Übung in Unit03-03 `Textbearbeitung` durch. Notieren Sie sich Ihre genutzte Formel für die dritte Zeile.
 
-**3.** Laden Sie die Datei "UE_Temperaturexport_20260916_v1.csv" in Excel ein. 
+**4.** Laden Sie die Datei "UE_Temperaturexport_20260916_v1.csv" in Excel ein. 
 a) Notieren Sie sich welcher Dateiursprung erkannt wurde.  
 b) Sorgen Sie dafür, dass das Datum im deutschen Datumsformat dargestellt wird.  
 c) Sorgen Sie dafür, dass die Temperatur korrekt dargestellt wird.
 d) Notieren Sie sich das Datum in Zeile 4. 
 e) Notieren Sie sich den Temperaturwert in Zeile 7. Was zeigt diese an?
 
-
+**5.** Führen Sie den Ilias-Test durch.
 <!--
 **1.** Öffnen Sie `Uebungsaufgabe03_Datensatz.xlsx` und springen Sie mit `Strg`+`Ende` zur letzten benutzten Zelle. In welcher Zeile befindet sich diese?
 
