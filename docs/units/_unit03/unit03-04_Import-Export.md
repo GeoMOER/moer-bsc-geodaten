@@ -21,6 +21,7 @@ Beide Formate speichern reinen Text, unterscheiden sich aber in der Art, wie Spa
 
 Beide Dateien enthalten **keine Formatierung** (keine Schriftart, keine Zellfarben, keine Formeln) – nur die reinen Werte und das Trennzeichen. Das ist auch der Grund, warum solche Dateien in der Regel deutlich kleiner sind als eine vergleichbare `.xlsx`-Datei.
 
+<!--
 ## Übung: Export einer Tabelle
 
 Nutzen Sie einen kleinen Ausschnitt (10–15 Zeilen) aus Ihrem Blatt `Datensatz_1`.
@@ -33,15 +34,16 @@ Nutzen Sie einen kleinen Ausschnitt (10–15 Zeilen) aus Ihrem Blatt `Datensatz_
 <!-- **Screenshot 12:** Nebeneinander geöffnetes Fenster des Datei-Explorers mit den drei Dateien (`.xlsx`, `.txt`, `.csv`) und sichtbarer Größenangabe in einer Spalte, sowie ein Texteditor-Fenster, das den Inhalt der `.csv`-Datei mit sichtbaren Kommas/Semikolons zwischen den Werten zeigt.
 Markdownlösung: ![Screenshot einer CSV-Tabelle mit Semikolon als Trennzeichen und Dateigrößen zum Vergleich.]({{ '/assets/images/unit03/Screenshot12_Excel.png' | relative_url }})
 Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
-
+<!--
 <a href="{{ '/assets/images/unit03/Screenshot12_Excel.png' | relative_url }}" 
    data-lightbox="Screenshot12_Excel" 
    title="Screenshot einer CSV-Tabelle mit Semikolon als Trennzeichen und Dateigrößen zum Vergleich.">
   <img src="{{ '/assets/images/unit03/Screenshot12_Excel.png' | relative_url }}" alt="Screenshot einer CSV-Tabelle mit Semikolon als Trennzeichen und Dateigrößen zum Vergleich.">
 </a>
-
+-->
+<!--
 **Reflexionsfrage:** Warum ist die `.xlsx`-Datei vermutlich die größte der drei Dateien, obwohl sie dieselben Daten enthält?
-
+-->
 ## Import einer Textdatei in Excel
 
 Wenn Sie umgekehrt eine `.txt`- oder `.csv`-Datei erhalten und in Excel öffnen möchten, sollten Sie **nicht** per Doppelklick öffnen, sondern über **Daten → Aus Text/CSV** –  so erhalten Sie Zugriff auf den Import-Assistenten, der Ihnen die Kontrolle über Kodierung, Trennzeichen und Datentyp gibt. Der Assistent führt Sie durch drei Schritte:
@@ -141,7 +143,7 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 **Kontrolle nach dem Import:** Prüfen Sie mit `=MIN(...)`/`=MAX(...)`, ob die Werte plausibel sind (z. B. Temperaturwerte im einstelligen bis niedrigen zweistelligen Bereich, nicht im Tausenderbereich).
 
 ---
-
+<!--
 ## Übung: Import einer fehlerhaften Sensordaten-Datei
 
 Sie erhalten die Datei `Import_roh.csv` – einen Export aus dem Sensor-System, der **absichtlich mehrere typische Fehlerquellen** enthält: falsches Encoding, ein untypisches Trennzeichen und US-Datumsformat. Ihre Aufgabe: die Datei so importieren, dass am Ende Standortname, Zeitpunkt und Temperatur korrekt und rechenfähig in Excel vorliegen.
@@ -153,3 +155,4 @@ Sie erhalten die Datei `Import_roh.csv` – einen Export aus dem Sensor-System, 
 5. Prüfen und korrigieren Sie ggf. das Dezimaltrennzeichen der Temperaturspalte (siehe oben).
 6. Kontrollieren Sie Ihr Ergebnis mit `=MIN(...)`/`=MAX(...)` auf Plausibilität.
 7. Speichern Sie das importierte Ergebnis als eigene `.xlsx`-Datei.
+-->

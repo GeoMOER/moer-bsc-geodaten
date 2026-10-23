@@ -25,6 +25,19 @@ Beantworten Sie die folgenden Fragen, indem Sie die jeweils beschriebene Bearbei
 
 ---
 
+**1.** Führen Sie die Übung in Unit03-02 `Datenformate` durch. Notieren Sie sich, was Sie nach der Formatierung in der Temperaturspalte in Zeile 15 sehen.  Notieren Sie sich auch den ursprünglichen Wert.
+
+**2.** Führen Sie die Übung in Unit03-03 `Textbearbeitung` durch. Notieren Sie sich Ihre genutzte Formel für die dritte Zeile.
+
+**3.** Laden Sie die Datei "UE_Temperaturexport_20260916_v1.csv" in Excel ein. 
+a) Notieren Sie sich welcher Dateiursprung erkannt wurde.  
+b) Sorgen Sie dafür, dass das Datum im deutschen Datumsformat dargestellt wird.  
+c) Sorgen Sie dafür, dass die Temperatur korrekt dargestellt wird.
+d) Notieren Sie sich das Datum in Zeile 4. 
+e) Notieren Sie sich den Temperaturwert in Zeile 7. Was zeigt diese an?
+
+
+<!--
 **1.** Öffnen Sie `Uebungsaufgabe03_Datensatz.xlsx` und springen Sie mit `Strg`+`Ende` zur letzten benutzten Zelle. In welcher Zeile befindet sich diese?
 
 **2.** Fügen Sie ganz links eine Spalte `ID` mit fortlaufender Nummerierung (1, 2, 3, …) ein und formatieren Sie sie mit dem benutzerdefinierten Format `00`. Wie wird der Wert der zweiten Datenzeile angezeigt?
@@ -44,3 +57,4 @@ Beantworten Sie die folgenden Fragen, indem Sie die jeweils beschriebene Bearbei
 **9.** Welches Zeichen trennt die Spalten in `Uebungsaufgabe03_Import_roh.csv`?
 
 **10.** Warum ist eine `.xlsx`-Datei bei identischem Inhalt in der Regel größer als eine vergleichbare `.csv`-Datei?
+-->

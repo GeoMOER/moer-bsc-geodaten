@@ -111,7 +111,7 @@ Nutzen Sie Ihre Excel-Arbeitsmappe mit den beiden Sensordatensätzen aus dem let
 2. Formatieren Sie **die IDs** so, dass einstellige Zahlen zweistellig angezeigt werden (aus „1“ soll „01“ werden, aus „2“ „02“, aus „3“ „03“).
    - *Hinweis:* Excel verwendet standardmäßig den Zellentyp „Zahl“, führende Nullen werden dabei automatisch entfernt. Lösen Sie die Aufgabe **nicht** durch Eingabe von Text (also nicht `'01`), sondern über ein passendes **Zahlenformat**.
 3. Prüfen Sie in der Bearbeitungsleiste (bei markierter Zelle), welcher Wert tatsächlich gespeichert ist – unterscheidet sich der gespeicherte Wert von der Anzeige in der Zelle?
-4. Sorgen Sie dafür, dass **hinter jedem Temperatur-Wert** dieser Spalte automatisch `°C` angezeigt wird – der Zellinhalt soll aber eine **echte Zahl** bleiben, mit der weitergerechnet werden kann.
+4. Sorgen Sie dafür, dass jeder Temperaturwert **zwei Nachkommastellen** anzeigt und **hinter jedem Temperatur-Wert** dieser Spalte automatisch `[Wert] °C` angezeigt wird – der Zellinhalt soll aber eine **echte Zahl** bleiben, mit der weitergerechnet werden kann.
    - *Hinweis:* Nutzen Sie dafür ein benutzerdefiniertes Zellformat, **nicht** die Einheit direkt im Zelltext oder nur in der Überschrift.
 6. Übertragen Sie das neu erstellte Format mit dem **Pinsel** auf alle weiteren Zellen der Spalte, ohne den Dialog erneut zu öffnen.
 7. Speichern Sie Ihre Datei abschließend.

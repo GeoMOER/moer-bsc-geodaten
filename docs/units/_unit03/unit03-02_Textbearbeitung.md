@@ -85,11 +85,9 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 
 Arbeiten Sie weiter mit Ihrer Arbeitsmappe aus den letzten Kapiteln (Blatt `Datensatz_1`, Spalte `Koordinaten_roh` bzw. Blatt `Datensatz_2`, Spalte `Koordinaten`).
 
-1. Legen Sie auf **beiden** Blättern je drei Hilfsspalten an und extrahieren Sie mit `TEIL`/`FINDEN` schrittweise die drei Zahlen-Anteile (Grad, Minuten, Sekunden) aus der jeweiligen Koordinatenspalte – zunächst nur für eine einzelne Zeile.
-2. Wandeln Sie jeden der drei extrahierten Textwerte mit `WERT` in eine echte Zahl um. Prüfen Sie an der Ausrichtung (rechtsbündig = Zahl), ob die Umwandlung funktioniert hat.
-3. Ziehen Sie Ihre Formeln über die gesamte jeweilige Spalte. Identifizieren Sie die Zeile mit dem Formatfehler und korrigieren Sie den Tippfehler in der Ursprungsspalte.
-4. Speichern Sie Ihre Datei – Sie arbeiten in den kommenden Kapiteln mit denselben Hilfsspalten weiter.
-
-**Reflexionsfrage:** An welcher Stelle Ihrer Formeln hätte sich der Formatfehler (`'` statt `"`) auf das Ergebnis auswirken müssen – auch ohne dass Sie bereits wissen, was die einzelnen Zahlenanteile inhaltlich bedeuten?
+1. Bitte stellen Sie sicher, dass die Spalte "Koordinaten_roh" in B verbleibt. Erstellen Sie eine Spalte namens “Sekunden” als Spalte C – hier sollen die Werte zwischen ‘ und ‘’ herein, Bsp: 50°48’0.24’’N -> 0,24. Erstellen Sie ggf. zusätzlich eine Hilfsspalte. Bitte stellen Sie sicher, dass die Spalte "Koordinaten_roh" in 
+2. (In der Hilfspalte) nutzen Sie die Funktion `FINDEN` um die Position von ‘ ‘’N ‘ zu finden 
+3. Nutzen Sie die Funktion `TEIL` in Kombination mit der Hilfspalte um die Sekunden zu extrahieren.
+4. Eine Zeile fällt auf. Notieren Sie Zeilennummer und den Sekunden-Text.
 
 > Im nächsten Kapitel lernen Sie weitere Textfunktionen kennen und stellen damit Koordinaten in einer lesbaren Form dar.
