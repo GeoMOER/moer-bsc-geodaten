@@ -20,7 +20,7 @@ Im letzten Kapitel haben Sie mit `TEIL`, `FINDEN` und `WERT` einen zusammengeset
 | `LÄNGE(Text)` | Gibt die Anzahl der Zeichen eines Texts zurück | `LÄNGE("Firmaneiplatz")` → `13` |
 | `GROSS(Text)` | Wandelt Text vollständig in Großbuchstaben um | `GROSS("firmaneiplatz")` → `"FIRMANEIPLATZ"` |
 | `SUCHEN(Suchtext; Text)` | Findet die Position eines Zeichens, **Groß-/Kleinschreibung wird ignoriert** | `SUCHEN("f";"Firmaneiplatz")` → `1` |
-| `FINDEN(Suchtext; Text)` | Findet die Position eines Zeichens, **Groß-/Kleinschreibung wird beachtet** | `FINDEN("f";"Firmaneiplatz")` → `9` (das kleine „f", nicht das große „F") |
+| `FINDEN(Suchtext; Text)` | Findet die Position eines Zeichens, **Groß-/Kleinschreibung wird beachtet** | `FINDEN("s";"Georg-Gassman-Stadium")` → `9`;  `FINDEN("S";"Georg-Gassman-Stadium")` → `15` |
 | `IDENTISCH(Wert1; Wert2)` | Prüft, ob zwei Texte **exakt** übereinstimmen (inkl. Groß-/Kleinschreibung) | `IDENTISCH("Text";"text")` → `FALSCH` |
 | `LINKS(Text; Anzahl_Zeichen)` | Extrahiert die ersten `n` Zeichen von links | `LINKS("Firmaneiplatz";4)` → `"Firm"` |
 | `RECHTS(Text; Anzahl_Zeichen)` | Extrahiert die letzten `n` Zeichen von rechts | `RECHTS("Firmaneiplatz";4)` → `"latz"` |
