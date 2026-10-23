@@ -33,7 +33,7 @@ Jede Formel beginnt mit einem Gleichheitszeichen `=` – ohne dieses interpretie
 
 ## Übung: Taschenrechner-Funktionalität
 
-Probieren Sie die Taschenrechner-Funktionalität von Excel aus. Blenden Sie dazu über **Formeln → Formeln anzeigen** (oder `Strg`+`#`) die Formelansicht ein und wieder aus, um zu sehen, wie sich angezeigtes Ergebnis und tatsächliche Formel unterscheiden.
+Probieren Sie die Taschenrechner-Funktionalität von Excel aus. Blenden Sie dazu über **Formeln → Formeln anzeigen** die Formelansicht ein und wieder aus, um zu sehen, wie sich angezeigtes Ergebnis und tatsächliche Formel unterscheiden.
 
 Beantworten Sie folgende Fragen, indem Sie die passende Formel direkt in eine Zelle eintippen:
 
