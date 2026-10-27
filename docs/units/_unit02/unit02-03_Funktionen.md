@@ -91,6 +91,8 @@ Die durchschnittliche Temperatur soll übersichtlich zusammengefasst werden:
 
 1. Berechnen Sie in einer Zelle oben rechts die **durchschnittliche, maximale und minimale Temperatur** aller Messungen.
 2. Verschachteln Sie diese Formel mit `RUNDEN`, sodass das Ergebnis auf **zwei Nachkommastellen** mathematisch gerundet direkt in derselben Zelle steht (nicht nur optisch).
+
+
 <!--
 ## Additional resources
 -->

@@ -26,9 +26,10 @@ Beantworten Sie die folgenden Fragen, indem Sie die jeweils beschriebene Bearbei
 ---
 **1.** Lesen Sie alle Kapitel dieser Unit noch ein Mal in Ruhe durch.
 
-**2.** Führen Sie die Übung in Unit03-02 `Datenformate` durch. Notieren Sie sich, was Sie nach der Formatierung in der Temperaturspalte in Zeile 15 sehen.  Notieren Sie sich auch den ursprünglichen Wert.
+**2.** Führen Sie die Übung in Unit03-01 `Datenformate` durch, falls Sie diese noch nicht gemacht haben. Notieren Sie sich, was Sie nach der Formatierung in der Temperaturspalte in Zeile 15 sehen.  Notieren Sie sich auch den ursprünglichen Wert. Schon gemacht und Werte notiert? Dann besteht kein Handlungsbedarf, außer Ihre Notizen bereit zu legen 
 
-**3.** Führen Sie die Übung in Unit03-03 `Textbearbeitung` durch. Notieren Sie sich Ihre genutzte Formel für die dritte Zeile.
+**3.** Führen Sie die Übung in Unit03-02 `Textbearbeitung` durch, falls Sie diese noch nicht gemacht haben. Notieren Sie sich Ihre genutzte Formel für die dritte Zeile. Schon gemacht und Werte notiert? Dann besteht kein Handlungsbedarf, außer Ihre Notizen bereit zu legen.
+
 
 **4.** Laden Sie die Datei "UE_Temperaturexport_20260916_v1.csv" in Excel ein. 
 a) Notieren Sie sich welcher Dateiursprung erkannt wurde.  

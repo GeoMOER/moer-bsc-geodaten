@@ -85,9 +85,10 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 
 Arbeiten Sie weiter mit Ihrer Arbeitsmappe aus den letzten Kapiteln (Blatt `Datensatz_1`, Spalte `Koordinaten_roh` bzw. Blatt `Datensatz_2`, Spalte `Koordinaten`).
 
-1. Bitte stellen Sie sicher, dass die Spalte "Koordinaten_roh" in B verbleibt. Erstellen Sie eine Spalte namens “Sekunden” als Spalte C – hier sollen die Werte zwischen ‘ und ‘’ herein, Bsp: 50°48’0.24’’N -> 0,24. Erstellen Sie ggf. zusätzlich eine Hilfsspalte. Bitte stellen Sie sicher, dass die Spalte "Koordinaten_roh" in 
+1. Bitte stellen Sie sicher, dass die Spalte "Koordinaten_roh" in C steht. Erstellen Sie eine Spalte namens “Sekunden” als Spalte D – hier sollen die Werte zwischen ‘ und ‘’ herein, Bsp: 50°48’0.24’’N -> 0,24. Erstellen Sie ggf. zusätzlich eine Hilfsspalte.
 2. (In der Hilfspalte) nutzen Sie die Funktion `FINDEN` um die Position von ‘ ‘’N ‘ zu finden 
 3. Nutzen Sie die Funktion `TEIL` in Kombination mit der Hilfspalte um die Sekunden zu extrahieren.
 4. Eine Zeile fällt auf. Notieren Sie Zeilennummer und den Sekunden-Text.
+5. Notieren Sie sich Ihre genutzte Formel für die dritte Zeile. Sie werden diese Angaben für die Übung benötigen.
 
 > Im nächsten Kapitel lernen Sie weitere Textfunktionen kennen und stellen damit Koordinaten in einer lesbaren Form dar.

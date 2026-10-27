@@ -114,4 +114,5 @@ Nutzen Sie Ihre Excel-Arbeitsmappe mit den beiden Sensordatensätzen aus dem let
 4. Sorgen Sie dafür, dass jeder Temperaturwert **zwei Nachkommastellen** anzeigt und **hinter jedem Temperatur-Wert** dieser Spalte automatisch `[Wert] °C` angezeigt wird – der Zellinhalt soll aber eine **echte Zahl** bleiben, mit der weitergerechnet werden kann.
    - *Hinweis:* Nutzen Sie dafür ein benutzerdefiniertes Zellformat, **nicht** die Einheit direkt im Zelltext oder nur in der Überschrift.
 6. Übertragen Sie das neu erstellte Format mit dem **Pinsel** auf alle weiteren Zellen der Spalte, ohne den Dialog erneut zu öffnen.
-7. Speichern Sie Ihre Datei abschließend.
+7. Notieren Sie sich, was Sie nach der Formatierung in der Temperaturspalte in Zeile 15 sehen.  Notieren Sie sich auch den ursprünglichen Wert. Sie werden diese Angaben für die Übung benötigen.
+8. Speichern Sie Ihre Datei abschließend.
