@@ -39,6 +39,13 @@ d) Notieren Sie sich das Datum in Zeile 4.
 e) Notieren Sie sich den Temperaturwert in Zeile 7. Was zeigt diese an?
 
 **5.** Führen Sie den Ilias-Test durch.
+
+
+> ZUSATZ: Führen Sie in Ilias, unter "Prüfungsleistung" Test 1 von 4 aus!
+
+
+
+
 <!--
 **1.** Öffnen Sie `Uebungsaufgabe03_Datensatz.xlsx` und springen Sie mit `Strg`+`Ende` zur letzten benutzten Zelle. In welcher Zeile befindet sich diese?
 
