@@ -12,13 +12,14 @@ header:
  
 <!-- Übungsaufgabe 04: Ordnerstrukturen, Sortieren, Filtern, Datenbereinigung -->
 ## Übungsaufgabe 04
- 
+
 In dieser Übungsaufgabe wenden Sie das Gelernte aus Lernabschnitt 04 selbstständig an. Grundlage sind zwei Dateien:
  
 * `Uebungsaufgabe04_Ordnerstruktur.zip`
-* `Uebungsaufgabe04_Datensatz.xlsx` (Tabellenblatt „Testdaten“)
-Führen Sie die folgenden zwölf Aufgaben tatsächlich durch. Notieren Sie sich Ihre Antworten und führen Sie im Anschluss „Übungsaufgabe 04“ in Ilias durch. Dort werden Ihnen die Fragen mit Antwortmöglichkeiten gestellt, hier steht, was Sie dafür vorbereiten müssen.
- 
+* Die Datei, die Sie in der Übung zu Datenbereinigung erstellt haben.
+
+Führen Sie die folgenden Aufgaben durch. Notieren Sie sich Ihre Antworten und führen Sie im Anschluss „Übungsaufgabe 04“ in Ilias durch.
+
 Arbeiten Sie bei allen Aufgaben, die Daten verändern (Sortieren, Duplikate entfernen, Bereinigen), auf einer Kopie des Tabellenblatts. Zeilennummern zählen immer mit der Überschrift als Zeile 1.
  
 ---
@@ -31,23 +32,10 @@ Arbeiten Sie bei allen Aufgaben, die Daten verändern (Sortieren, Duplikate entf
 
 **2.** Notieren Sie den **relativen** Pfad der Datei `Messungen_Juni.xlsx`, ausgehend vom Projektordner `Sensorprojekt_Marburg`.
 
+**3.** Sortieren Sie die in der Übung "Datenbereinigung" erstellten Gesamttabelle zuerst nach dem bereinigten `Standort` (A–Z), dann nach `Datum` (**auf**steigend). Notieren Sie den Wert der Spalte `Temperatur` in Zeile 8.
  
-**3.** Öffnen Sie `Uebungsaufgabe04_Datensatz.xlsx`. Sortieren Sie die gesamte Tabelle zuerst nach `Standort` (A–Z), dann nach `Datum` (aufsteigend). Notieren Sie den Wert der Spalte `Temperatur` in Zeile 15.
+**4.** Filtern Sie nach allen Schreibweisen von „Friedhofsweg“. Berechnen Sie den Mittelwert dieser Werte.
  
-**4.** Filtern Sie die Spalte `Standort` so, dass **alle Schreibweisen** von „Firmaneiplatz“ gemeinsam angezeigt werden. Notieren Sie, wie viele Datensätze (Zeilen ohne Überschrift) sichtbar sind. Die Statusleiste zeigt „x von 21 Datensätzen gefunden“. Entfernen Sie den Filter danach wieder.
+**5.** Wenden Sie auf einer **Kopie** „Daten → Duplikate entfernen“ an (alle Spalten). Notieren Sie, wie viele Datenzeilen (ohne Überschrift) danach übrig bleiben.
  
-<!-- Screenshot [Nr]: Filter-Dropdown der Spalte Standort mit angehakten Einträgen für Firmaneiplatz; im Hintergrund die gefilterte Tabelle, unten links die Statusleiste mit der Anzahl der gefundenen Datensätze.
-Markdownlösung: ![Screenshot des Filter-Dropdowns der Spalte Standort mit gefilterter Tabelle und Statusleiste.]({{ '/assets/images/unit04/Screenshot[Nr]_Filter.png' | relative_url }})
-Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hovern und Galerie zum durchklicken:-->
- 
-**5.** Filtern Sie die Spalte `Temperatur` mit dem Zahlenfilter „größer als“ 25. Notieren Sie, wie viele Datensätze sichtbar sind. Entfernen Sie den Filter danach wieder.
- 
-**6.** Filtern Sie wie in Aufgabe 5 nach allen Schreibweisen von „Firmaneiplatz“. Tragen Sie unterhalb der Tabelle in zwei freie Zellen die Formeln `=SUMME(E2:E22)` und `=TEILERGEBNIS(9;E2:E22)` ein. Notieren Sie beide Ergebnisse.
- 
-**7.** Wenden Sie auf einer **Kopie** „Daten → Duplikate entfernen“ an (alle Spalten). Notieren Sie, wie viele Datenzeilen (ohne Überschrift) danach übrig bleiben.
- 
-** 8.** Bestimmen Sie mit `=LÄNGE(...)` die Länge des Eintrags XXX. Notieren Sie das Ergebnis.
- 
-** 9.** Bereinigen Sie die Spalte `Standort` auf einer Kopie, wie im Kapitel zur Datenreinigung beschrieben: Schreibweise vereinheitlichen, überflüssige Leerzeichen entfernen, Klammerzusatz entfernen. Notieren Sie, wie viele verschiedene Standortnamen danach übrig bleiben.
-
-** 10. ** Führen Sie den Ilias-Test durch. 
+**6.** Führen Sie den Ilias-Test durch. 

@@ -84,19 +84,7 @@ Häufig enthalten Zellen unsichtbare überflüssige Leerzeichen – etwa am Anfa
 
 **So finden Sie versteckte Leerzeichen, bevor Sie bereinigen:** Markieren Sie eine verdächtige Zelle und schauen Sie in die Bearbeitungsleiste – ein Leerzeichen am Ende ist dort oft als kleiner Abstand nach dem letzten sichtbaren Zeichen erkennbar. Alternativ hilft die Formel `=LÄNGE(A2)`, um die tatsächliche Zeichenanzahl einer Zelle zu prüfen und mit der erwarteten Länge zu vergleichen.
 
-<!--
-## Textaufbereitung am Beispiel Koordinaten
 
-Angenommen, eine Kommilitonin hat ihre Messung mit `50°48'12"N` erfasst, statt wie Sie selbst direkt in Dezimalgrad. Um daraus einen für QGIS oder R nutzbaren Wert zu machen, gehen Sie in Teilschritten vor (angenommen, der Text steht in Zelle `A2`):
-
-1. **Grad extrahieren:** `=WERT(TEIL(A2;1;FINDEN("°";A2)-1))` → `50`
-2. **Minuten extrahieren:** `=WERT(TEIL(A2;FINDEN("°";A2)+1;FINDEN("'";A2)-FINDEN("°";A2)-1))` → `48`
-3. **Sekunden extrahieren:** analog zwischen `'` und `"`
-4. **Umrechnung in Dezimalgrad:** `Dezimalgrad = Grad + Minute/60 + Sekunde/3600` → `50 + 48/60 + 12/3600 = 50,80333...`
-5. **Vorzeichen beachten:** Ein „S" (Süd) oder „W" (West) am Ende bedeutet einen **negativen** Wert in Dezimalgrad – wichtig, da QGIS und R negative Werte für die südliche bzw. westliche Hemisphäre erwarten, nicht den Buchstaben `S`/`W`
-
-**Warum das wichtig ist:** Genau in diesem letzten Punkt liegt eine häufige Fehlerquelle beim Datenimport in GIS-Software: Ein Punkt mit `Latitude = 50,80` und dem Buchstaben `S` in einer separaten Spalte wird von QGIS beim direkten Import als nördliche Hemisphäre interpretiert, wenn das Vorzeichen nicht vorher korrekt in der Zahl selbst abgebildet wurde.
--->
 ## Konsistente Formatierung – Voraussetzung für jede Weiterverarbeitung
 
 - **Dezimaltrennzeichen:** Deutschland nutzt standardmäßig das Komma (`8,4`), viele internationale/technische Quellen (darunter GPS-Geräte, R, Python, die meisten GIS-Programme) den Punkt (`8.4`) – für Berechnungen und insbesondere für den Export/Import in andere Software muss ein Datensatz einheitlich sein. Ein Datensatz mit gemischten Trennzeichen wird von R oder QGIS im schlimmsten Fall nicht als Fehler erkannt, sondern **falsch interpretiert** (z. B. `8.400` als „achttausendvierhundert" statt „8,4").
@@ -105,6 +93,24 @@ Angenommen, eine Kommilitonin hat ihre Messung mit `50°48'12"N` erfasst, statt 
 
 **Empfehlung für die Praxis:** Bringen Sie Ihre Datensätze möglichst früh in ein einheitliches Format bevor Sie sie weiterverarbeiten, mit anderen Datensätzen kombinieren oder in eine andere Software importieren.
 
-## Übung (10 min)
+### Tipp: Fehler mit dem Filter finden
 
-Bereinigen Sie ihre beiden Datensätze (s. auch "Textfunktionen_Vertiefung"). Sammeln Sie auf dem Etherpad <!-- Alternative? -->alle gefundenen Fehler in Text und bzgl. Dezimaltrennzeichen. 
+Das Filter-Dropdown führt jeden Eintrag einer Spalte nur **einmal** auf. So fallen Einträge auf, die von allen anderen abweichen, zum Beispiel ein Tippfehler in den Koordinaten.
+
+
+
+<!-- Screenshot [Nr]: Filter-Dropdown der Spalte Koordinaten_roh mit vier Einträgen; der Eintrag mit dem Hochkomma ist markiert (Pfeil oder Rahmen). -->
+
+
+
+## Übung (30 min)
+
+Erstellen Sie einen Ordner für diesen Kurs und speichern Sie alle bisher gegebenen Rohdaten entsprechend guter Ordnerregeln darin ab.
+
+Arbeiten Sie die beiden xlsx Datensätze so auf, dass Sie in einer neuen Datei, in einem Datenblatt, beide Datensätze untereinander zusammenfügen können.
+
+TIPP: Die Trennung von Datum und Uhrzeit können Sie auch über Daten -> Text in Spalten erreichen.
+
+Bereinigen Sie  die Standortnamen und Koordinaten (s. auch "Textfunktionen_Vertiefung"). Sammeln Sie auf dem Etherpad <!-- Alternative? --> alle gefundenen Fehler in Text. Sie können die Filteroption nutzen, um abweichende Werte einfacher zu finden (s. oben).
+
+Speichern Sie die Datei unter einem sinnigen Dateinamen in Ihrer Ordnerstruktur ab.

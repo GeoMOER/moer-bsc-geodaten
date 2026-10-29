@@ -35,7 +35,17 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
   <img src="{{ '/assets/images/unit05/Screenshot31_Excel.png' | relative_url }}" alt="Screenshot eines Tabellenausschnitts mit einer Temperaturspalte, welche eine Zelle mit `0` und eine tatsächlich leere Zelle enthält.">
 </a>
 
-**Empfehlung:** Legen Sie sich bereits **vor** der Dateneingabe eine einheitliche Konvention fest – fehlende Werte am besten als leere Zelle lassen (nicht als `0`, nicht als Text `"NA"`), da dies von den meisten Excel-Funktionen automatisch korrekt ignoriert wird. Falls Sie kennzeichnen möchten, *warum* ein Wert fehlt, nutzen Sie dafür eine **separate Spalte** (z. B. `Anmerkung`), statt die Information in die Wertespalte selbst zu schreiben.
+
+**Empfehlung:** Legen Sie sich bereits **vor** der Dateneingabe eine einheitliche Konvention fest: Fehlende Werte lassen Sie am besten als **leere Zelle** (nicht als `0`, nicht als Text `"NA"`). Funktionen, die einen Bereich auswerten, zum Beispiel `MITTELWERT`, `SUMME`, `MIN`, `MAX`, `MEDIAN` und `ANZAHL`, ignorieren leere Zellen automatisch korrekt.
+
+**Achtung bei Formeln mit direktem Zellbezug:** Rechnen Sie mit einem Bezug direkt auf die Zelle, zum Beispiel `=D3*9/5+32` wie bei der Umrechnung in Fahrenheit, behandelt Excel die leere Zelle als `0`. Im Beispiel steht dann 32 °F statt eines leeren Ergebnisses. Dieser Wert fließt später unbemerkt in Auswertungen der Spalte ein.
+
+Prüfen Sie deshalb nach jeder Umrechnung, ob in den Zeilen mit fehlendem Ausgangswert ein sinnvolles Ergebnis steht. Soll das Ergebnis dort leer bleiben, sichern Sie die Formel ab:
+
+`=WENN(ISTLEER(D3);"";D3*9/5+32)`
+
+Falls Sie kennzeichnen möchten, *warum* ein Wert fehlt, nutzen Sie dafür eine **separate Spalte** (z. B. `Anmerkung`), statt die Information in die Wertespalte selbst zu schreiben.
+
 
 <!-- Ergänzung zu Kapitel 05-03: Fehlende Werte -->
 

@@ -112,10 +112,8 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 Nutzen Sie Ihre Arbeitsmappe mit den beiden Sensordatensätzen aus den vorherigen Kapiteln (Blatt `Datensatz_1` bzw. `Datensatz_2`).
 
 1. Aktivieren Sie den Filter für Ihre gesamte Tabelle (**Daten → Filtern**).
-2. Filtern Sie die Tabelle so, dass **nur Messungen eines einzigen Standorts** angezeigt werden. Notieren Sie, wie viele Zeilen danach sichtbar sind (Statusleiste).
+2. Sortieren Sie die gesamte Tabelle **zuerst nach Standort (A–Z), dann nach Datum (älteste zuerst)** über den Dialog „Daten → Sortieren" mit zwei Sortierebenen.
+3. Filtern Sie die Tabelle so, dass **nur Messungen eines einzigen Standorts** angezeigt werden. Notieren Sie, wie viele Zeilen danach sichtbar sind (Statusleiste).
 3. Erweitern Sie den Filter der Spalte „Temperatur" um einen **Zahlenfilter**, der nur Werte über einem von Ihnen gewählten Schwellenwert anzeigt (z. B. „größer als 10").
-4. Setzen Sie beide Filter wieder zurück, sodass alle Zeilen sichtbar sind.
-5. Sortieren Sie die gesamte Tabelle **zuerst nach Standort (A–Z), dann nach Datum (älteste zuerst)** über den Dialog „Daten → Sortieren" mit zwei Sortierebenen.
-6. Markieren Sie versuchsweise **nur die Spalte „Temperatur"** (nicht die ganze Tabelle) und sortieren Sie diese für sich allein. Bestätigen Sie im erscheinenden Warndialog bewusst **„Mit der aktuellen Auswahl fortfahren"** statt „Auswahl erweitern". Beobachten Sie, was mit den anderen Spalten passiert – prüfen Sie anhand einer Ihnen bekannten Zeile, ob Standort und Temperatur noch zusammenpassen.
-7. Machen Sie diesen letzten Schritt mit `Strg` + `Z` rückgängig und wiederholen Sie die Sortierung korrekt, diesmal mit „Auswahl erweitern".
-8. Speichern Sie Ihre Datei abschließend.
+4. Berechnen Sie den `MITTELWERT` der Temperatur per Formel.
+5. Berechnen Sie den `MITTELWERT` der angezeigten Temperatur per Hand.
