@@ -27,19 +27,22 @@ Eine Übungsaufgabe gilt ab einschließlich 50 % als erfolgreich bearbeitet. Nic
 
 ## Prüfungsleistung: Portfolio aus 4 Tests
 
-Als Prüfungsleistung bearbeiten Sie zusätzlich zu den 14 Übungsaufgaben vier Tests in ILIAS. Die Tests werden direkt nach den Terminen 4, 8, 12 und 14 freigeschaltet.
+Als Prüfungsleistung bearbeiten Sie zusätzlich zu den 14 Übungsaufgaben vier Tests in ILIAS. <!--Die Tests werden direkt nach den Terminen 4, 8, 12 und 14 freigeschaltet.-->
 
 Für jeden Test gelten dieselben Bedingungen wie für die Übungsaufgaben: ein Bearbeitungsversuch, maximal 30 Minuten Bearbeitungszeit und eine Bearbeitungsfrist bis zum folgenden Sonntag um 23:59 Uhr.
 
+<!--
 | Test | Geprüfte Inhalte | Freischaltung |
 | --- | --- | --- |
 | Test 1 | Termine 1 bis 4 | nach Termin 4 |
 | Test 2 | Termine 5 bis 8 | nach Termin 8 |
 | Test 3 | Termine 9 bis 12 | nach Termin 12 |
 | Test 4 | Termine 13 und 14 | nach Termin 14 |
+-->
 
+<!--
 Nach den Terminen 4, 8, 12 und 14 müssen Sie daher jeweils die reguläre Übungsaufgabe und zusätzlich einen Test bearbeiten.
-
+-->
 Alle vier Tests fließen gleich gewichtet in die Bewertung ein. Addieren Sie dazu die vier erreichten Prozentwerte und teilen Sie die Summe durch vier. Ein nicht bearbeiteter Test wird mit **0 %** berücksichtigt. Die Prüfungsleistung ist bestanden, wenn der Mittelwert mindestens **50 %** beträgt.
 
 ### Vorläufiger Notenschlüssel
