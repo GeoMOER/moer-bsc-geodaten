@@ -42,3 +42,6 @@ Am Ende dieser Unit sind Studierende in der Lage ...
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
+
+
+{% include pdf pdf="Geodaten_Slides_Unit04.pdf" %}

@@ -127,7 +127,7 @@ Ein **Dateipfad** beschreibt, wo genau eine Datei im Dateisystem liegt – vergl
 ### Wie Sie den Pfad einer Datei herausfinden
 
 - **Windows:** Datei mit `Shift` + Rechtsklick anklicken → „Als Pfad kopieren" – oder in der Adressleiste des Explorers oben auf den Ordnerpfad klicken, er wird dann als Text angezeigt
-- **Mac:** Datei im Finder markieren, `Cmd` + `Option` (Alt) gedrückt halten, im Menü „Ablage" erscheint dann „[Dateiname] als Pfadname kopieren"
+- **Mac:** Datei im Finder markieren, `Cmd` + `Option` (Alt) gedrückt halten, im Menü „Darstellung" erscheint dann „[Dateiname] als Pfadname kopieren"
 - **In Excel selbst:** Über `Datei → Informationen` wird der vollständige Speicherort der aktuell geöffneten Datei angezeigt
 
 <!-- **Screenshot 15:** Windows-Explorer mit Rechtsklick-Kontextmenü auf eine Datei, in dem die Option „Als Pfad kopieren" sichtbar/hervorgehoben ist, sowie zum Vergleich die Adressleiste des Explorers, in der derselbe Pfad als klickbarer Text angezeigt wird. -->
