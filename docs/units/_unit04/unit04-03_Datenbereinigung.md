@@ -34,7 +34,7 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 
 **Vor dem Löschen: immer eine Kopie behalten.** `Daten → Duplikate entfernen` löscht unwiderruflich (abgesehen von `Strg`+`Z`, solange die Datei noch nicht erneut gespeichert wurde). Erstellen Sie sich vor diesem Schritt eine Sicherheitskopie der Datei, oder führen Sie die Bereinigung auf einer Kopie des Tabellenblatts durch.
 
-**Duplikate zunächst nur sichtbar machen, statt sofort zu löschen:** Über **Start → Bedingte Formatierung → Regeln zum Hervorheben von Zellen → Doppelte Werte** lassen sich doppelte Einträge farblich markieren, ohne sie zu entfernen. So können Sie zunächst prüfen, ob es sich tatsächlich um echte Duplikate handelt, bevor Sie sie löschen.
+**Duplikate zunächst nur sichtbar machen, statt sofort zu löschen:** Über **Start → Bedingte Formatierung → Regeln zum Hervorheben von Zellen → Doppelte Werte** lassen sich doppelte Einträge farblich markieren, ohne sie zu entfernen. So können Sie zunächst prüfen, ob es sich tatsächlich um echte Duplikate handelt, bevor Sie sie löschen. ACHTUNG: dies fragt die Werte pro Zelle, nicht pro Zeile ab!
 
 <!-- Screenshot 25: Tabellenausschnitt mit einer Spalte „Standort", in der zwei identische Einträge (z. B. „Firmaneiplatz") rot hinterlegt sind durch die bedingte Formatierung „Doppelte Werte".
 Markdownlösung: ![Screenshot eines Tabellenausschnitts mit der Spalte „Standort", in welcher zwei identische Einträge rot hinterlegt sind.]({{ '/assets/images/unit04/Screenshot25_Excel.png' | relative_url }}) 
