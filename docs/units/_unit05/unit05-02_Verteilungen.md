@@ -92,3 +92,6 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 Ein im Boxplot sichtbarer Ausreißer ist zunächst nur eine **statistische Auffälligkeit** – kein Beweis für einen Messfehler. Bevor Sie einen solchen Wert aus Ihrer Auswertung entfernen, prüfen Sie, ob es dafür eine inhaltliche Erklärung gibt (z. B. ein tatsächlicher Kälteeinbruch an einem bestimmten Tag) oder ob es sich um einen Erfassungsfehler handelt (z. B. Zahlendreher bei der Eingabe).
 
 > **Wichtig – Protokollierung:** Wenn Sie sich entscheiden, einen Ausreißer aus Ihrer Auswertung auszuschließen, dokumentieren Sie **welchen Wert**, **warum** und **wo** Sie diese Entscheidung getroffen haben. Wie eine solche Dokumentation sauber und nachvollziehbar aufgebaut wird, behandeln wir ausführlich in einem eigenen späteren Kapitel zur Protokollierung – halten Sie sich diese Angaben aber schon jetzt in einer Notiz oder Kommentarspalte fest, statt Ausreißer stillschweigend zu löschen.
+
+# Übung:
+Erstellen Sie einen Boxplot über alle Stationen hinweg

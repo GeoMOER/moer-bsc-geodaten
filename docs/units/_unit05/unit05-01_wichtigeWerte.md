@@ -34,5 +34,7 @@ Um Datenqualität sicher zu stellen benötigt man auch einen zahlenbasierten Üb
 
 Der **Interquartilsabstand (IQR)** — die Differenz zwischen Q3 und Q1 — beschreibt die Streuung der „mittleren" 50 % der Daten, ohne von einzelnen Extremwerten beeinflusst zu werden. Er ist die Grundlage für die Definition von Ausreißern, die Ihnen im nächsten Unterkapitel beim Boxplot wiederbegegnet.
 
-**Kurzcheck:** Berechnen Sie für Ihre Temperaturspalte Mittelwert, Median, Minimum und Maximum. Liegen Mittelwert und Median nah beieinander, oder deutet die Abweichung bereits auf Ausreißer hin?
+
+# Übung:
+Berechnen Sie für Ihre Temperaturspalte Mittelwert, Median, Minimum und Maximum. Liegen Mittelwert und Median nah beieinander? Machen Minimum und Maximum Sinn?
 
