@@ -34,10 +34,10 @@ Für jeden Test gelten dieselben Bedingungen wie für die Übungsaufgaben: ein B
 <!--
 | Test | Geprüfte Inhalte | Freischaltung |
 | --- | --- | --- |
-| Test 1 | Termine 1 bis 4 | nach Termin 4 |
-| Test 2 | Termine 5 bis 8 | nach Termin 8 |
-| Test 3 | Termine 9 bis 12 | nach Termin 12 |
-| Test 4 | Termine 13 und 14 | nach Termin 14 |
+| Test 1 | Termine 1 bis 3 | nach Termin 3 |
+| Test 2 | Termine 4 bis 7 | nach Termin 7 |
+| Test 3 | Termine 8 bis 11 | nach Termin 11 |
+| Test 4 | Termine 12 und 14 | nach Termin 14 |
 -->
 
 <!--
