@@ -43,3 +43,5 @@ Nutzen Sie für diese Lerneinheit Ihre bereinigte Arbeitsmappe aus dem letzten L
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
+
+{% include pdf pdf="Geodaten_Slides_Unit05.pdf" %}
