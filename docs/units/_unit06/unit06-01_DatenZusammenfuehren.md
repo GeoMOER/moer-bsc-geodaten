@@ -1,6 +1,6 @@
 ---
 title: Recap
-published: true
+published: false
 toc: true
 header:
   image: assets/images/unit06/DataSwamp_Stage06.png
@@ -8,6 +8,7 @@ header:
   caption: "Image: ulrichstill [CC BY-SA 2.0 DE] via [wikimedia.org](https://commons.wikimedia.org/wiki/File:Tuebingen_Streuobstwiese.jpg)"
 ---
 
+<!-- wurde früher notwendig, in nächstem Semester Reihenfolge anpassen -->
 
 Ihre beiden Sensordatensätze sind inzwischen bereinigt (keine Duplikate mehr, einheitliche Schreibweise, saubere Koordinatenspalten). Trotzdem lassen sie sich noch nicht einfach übereinanderkopieren – ihre Spalten heißen unterschiedlich und stehen in unterschiedlicher Reihenfolge. Genau das lösen wir in diesem Kapitel.
 

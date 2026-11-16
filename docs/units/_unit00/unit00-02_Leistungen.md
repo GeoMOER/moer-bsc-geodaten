@@ -31,14 +31,14 @@ Als Prüfungsleistung bearbeiten Sie zusätzlich zu den 14 Übungsaufgaben vier 
 
 Für jeden Test gelten dieselben Bedingungen wie für die Übungsaufgaben: ein Bearbeitungsversuch, maximal 30 Minuten Bearbeitungszeit und eine Bearbeitungsfrist bis zum folgenden Sonntag um 23:59 Uhr.
 
-<!--
+
 | Test | Geprüfte Inhalte | Freischaltung |
 | --- | --- | --- |
 | Test 1 | Termine 1 bis 3 | nach Termin 3 |
 | Test 2 | Termine 4 bis 7 | nach Termin 7 |
 | Test 3 | Termine 8 bis 11 | nach Termin 11 |
 | Test 4 | Termine 12 und 14 | nach Termin 14 |
--->
+
 
 <!--
 Nach den Terminen 4, 8, 12 und 14 müssen Sie daher jeweils die reguläre Übungsaufgabe und zusätzlich einen Test bearbeiten.

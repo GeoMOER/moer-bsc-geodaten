@@ -33,3 +33,7 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 **Warum das für die Fehlwert-Kontrolle nützlich ist:** Eine Pivot-Tabelle mit „Anzahl" pro Station zeigt Ihnen sofort, ob eine Station auffällig wenige Messwerte hat (Hinweis auf viele Fehlwerte) – deutlich schneller, als die `ZÄHLENWENN`-Formeln aus dem Fehlwerte-Kapitel manuell für jede Station einzeln zu bauen.
 
 **Pivot-Tabelle aktualisieren:** Ändern sich die Ausgangsdaten nachträglich, übernimmt die Pivot-Tabelle das **nicht automatisch** – Rechtsklick in die Pivot-Tabelle → **„Aktualisieren"**.
+
+# Übung
+
+Berechnen Sie mittels PIVOT Tabelle Anzahl der Messungen und mittlere Temperatur pro Standort und Monat.

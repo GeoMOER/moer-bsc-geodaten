@@ -9,7 +9,7 @@ header:
 ---
 ## Mit SVERWEIS Informationen nachschlagen
 
-Sie erhalten eine zusätzliche kleine Tabelle `Stationshoehen.xlsx` mit der Höhenlage jeder Station über Normalnull (NN). Diese Information steht in einer **separaten Tabelle**, nicht in Ihren Messdaten – ein sehr häufiger Fall: Stammdaten (die sich selten ändern, z. B. die Höhenlage einer Station) werden getrennt von Messdaten (die sich laufend ändern) gepflegt.
+Nehmen wir an, Sie würden eine weitere Datei namens `Stationshoehen.xlsx` mit der Höhenlage jeder Station über Normalnull (NN) bekommen. Diese Information steht in einer **separaten Tabelle**, nicht in Ihren Messdaten – ein sehr häufiger Fall: Stammdaten (die sich selten ändern, z. B. die Höhenlage einer Station) werden getrennt von Messdaten (die sich laufend ändern) gepflegt.
 
 `SVERWEIS` ("Senkrechter Verweis") sucht einen Wert in der **ersten Spalte** einer Tabelle und gibt einen Wert aus einer **anderen Spalte derselben Zeile** zurück:
 
@@ -47,3 +47,8 @@ Oder als HTML (lightbox) mit Vergrößerungsoption, Beschreibungstext beim Hover
 **Wenn `SVERWEIS` einen Fehler liefert (`#NV`):** Das bedeutet meist, dass der gesuchte Wert nicht exakt in der ersten Spalte der Matrix vorkommt – z. B. weil eine Schreibweise noch nicht bereinigt ist (siehe Kapitel zur Datenbereinigung) oder ein Leerzeichen übrig geblieben ist.
 
 > **Ausblick:** In neueren Excel-Versionen (Microsoft 365) gibt es mit `XVERWEIS` eine modernere, flexiblere Nachfolgefunktion von `SVERWEIS` – u. a. muss die Suchspalte dort nicht mehr zwingend die erste Spalte der Matrix sein. Für den Einstieg reicht `SVERWEIS` aber völlig aus, da es in jeder Excel-Version funktioniert und Sie das Grundprinzip des Nachschlagens ohnehin identisch verstehen müssen.
+
+
+# Übung
+
+Nutzen Sie SVERWEIS, um aus der in Ilias befindlichen Tabelle "Versiegelung.csv" den Mittleren Grad der Versiegelung (in %) in ihr Datenblatt als neue Spalte hinzuzufügen. Nutzen Sie ggf. eine Spalte mit korrigierten Standortnamen, um keine #NV Einträge zu erhalten.
