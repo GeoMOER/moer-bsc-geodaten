@@ -30,7 +30,6 @@ lernen wir, wie man zwei unterschiedlich strukturierte Tabellen angleicht und zu
 ## Lernziele
 Am Ende dieser Unit sind Studierende in der Lage ...
 
-* zwei unterschiedlich strukturierte Tabellen so anzugleichen, dass sie zusammengeführt werden können
 * mit `SVERWEIS` Werte aus einer zweiten Tabelle nachzuschlagen
 * eine einfache Pivot-Tabelle zu erstellen
 * Häufigkeitstabellen zu erzeugen
@@ -38,8 +37,8 @@ Am Ende dieser Unit sind Studierende in der Lage ...
 * Scatterplots gemeinsam mit dem Korrelationswert zu interpretieren
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
-## Organisatorisches
-Nutzen Sie Ihre bisherige Arbeitsmappe mit `Datensatz_1` und `Datensatz_2` weiter. Zusätzlich benötigen Sie die neue Datei `Stationsmetadaten.xlsx`.
 
 <!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
 <!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->
+
+{% include pdf pdf="Geodaten_Slides_Unit06.pdf" %}
