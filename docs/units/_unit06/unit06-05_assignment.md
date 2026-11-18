@@ -15,7 +15,11 @@ Arbeiten Sie auf Kopien der Blätter. Jeder Bearbeitungsstand bekommt ein eigene
 
 1) Laden Sie UE_Temperatur_07-07_GS-SP-WR_20260916_v1.csv (Daten → Aus Text/CSV). Prüfen Sie dabei Dateiursprung, Trennzeichen und die Darstellung von Zeit und Temperatur.
 
-2) Bereiten Sie die neuen Temperaturdaten so auf, dass Sie sie an Ihren bisherigen Datensatz anhängen können.
+2) Bereiten Sie die neuen Temperaturdaten so auf, dass Sie sie an Ihren bisherigen Datensatz anhängen können. Der bisherige Datensatz sollte zu diesem Zeitpunkt wie folgt aussehen:
+  a) Datensatz 1 und 2 zusammengefügt  
+  b) NAs sowie -999 entfernt  
+  c) Schreibweisen vereinheitlicht und Duplikate entfernt   
+An diesen werden die neuen Daten angefügt.
 
 3) Ergänzen Sie in einer neuen Spalte den mittleren Versiegelungsgrad (falls Sie dies schon in der Übung gemacht haben, sollten Sie diesen Schritt mittels drag&drop verkürzen können). Für jeden Standort wurde ein Versiegelungsgrad berechnet!
 
