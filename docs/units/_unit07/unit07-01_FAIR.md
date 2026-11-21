@@ -39,8 +39,5 @@ FAIR steht für **F**indable, **A**ccessible, **I**nteroperable und **R**eusable
 | R1.1 | Es gibt eine klare, zugängliche Nutzungslizenz |
 | R1.2 | Die Herkunft der Daten ist ausführlich dokumentiert |
 | R1.3 | Die Daten erfüllen die Standards der jeweiligen Fachgemeinschaft |
- 
 
-## Übung: FAIR-Check (10 + 10 min)
- Überprüfen Sie Ihre bisher unternommenen Schritte und Ihren Projektordner auf die einzelnen Kriterien? In wie weit ist er FAIR? Machen Sie sich zu den o.g. Punkte Notizen.
- Nach 10 Minuten werden wir Ihre Einschätzung in einem LiveVoting abfragen und diskutieren.
+**Reflexionsfrage:** Ein Datensatz liegt als CSV in UTF-8 in einem frei zugänglichen Repositorium mit DOI, aber ohne Lizenz und ohne Herkunftsangabe. Welcher Buchstabe ist am schwächsten erfüllt?

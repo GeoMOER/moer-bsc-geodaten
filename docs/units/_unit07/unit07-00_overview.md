@@ -44,12 +44,36 @@ Am Ende dieser Unit sind Studierende in der Lage, ...
 
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 
-## Warum? Let's play a game!
+
+## Gruppenarbeit
+
+Die Übung in dieser Unit läuft in der Präsenzsitzung in Gruppen (Gruppennummer 1 bis 12) und besteht aus zwei Runden. 
+
+Dazu werden Sie ein Los erhalten - Auf dem Los steht Ihre Gruppennummer. Die Farbe representiert den Datensatz mit dem Ihre Gruppe arbeitet. Zusätzlich kann es sein, dass Sie die Rolle der Reporterin / des Reporters zugewiesen bekommen haben, um in dem anschließenden Plenum Ihre Gruppe zu repräsentieren.
+
+
+Wir beginnen jetzt mit Runde 1.
+
+**Runde 1: Ordner prüfen (Gruppenarbeit)**
+
+Jede Gruppe bekommt ein Beispiel ein Datensatz aus Helsinki (rot, bitte herunter laden aus: https://fmi.b2share.csc.fi/records/83bgp-ngy77 ), Freiburg (blau, bitte herunter laden aus: https://zenodo.org/records/17675215), Novi Sad (gelb, bitte herunter laden aus: https://zenodo.org/records/7738094) und ein Ordner mit künstlich hergestellten Temperaturdaten (s. Ilias). Sie wissen nicht, wie gut Ihr Beispiel ist. Sie sind eine fremde Person, die die Daten morgen nutzen soll, und gehen nur anhand dessen, was dasteht, die sechs Prüffragen durch:
+
+1. Woher stammen die Daten, wer hat sie erzeugt, womit?
+2. Wann und wo wurde gemessen (Zeitraum, Ort, Messintervall, Zeitzone)?
+3. Was bedeuten die Spalten, in welcher Einheit stehen die Werte, was bedeuten Platzhalter und leere Zellen?
+4. Sind es bearbeitete Daten, Rohdaten, oder beides?
+5. Welche Bearbeitungsschritte wurden in welcher Reihenfolge durchgeführt?
+6. Welchen Datenumfang gibt es? Gibt es Datenlücken?
+6. Dürfen die Daten genutzt werden, und wie werden sie zitiert?
+
+Tragen Sie im Prüfblatt (`Pruefblatt_Runde1.docx`) je Frage ein, was dasteht und was fehlt, bewerten Sie mit ja, teils oder nein, und notieren Sie die drei wichtigsten Lücken und eine Sache, die gut gelöst ist. 
+
+Anschließend vergleichen wir die Beispiele gemeinsam und ordnen die Lücken den FAIR-Buchstaben zu: Welche Lücken liegen beim Datengeber, welche bei uns selbst?
+
+*(Zeitbedarf: ca. 17 Minuten Gruppenarbeit, danach Plenum)*
+
+
+##  Let's play a game!
 
 <iframe src="{{ '/assets/games/Datenchaos.html' | relative_url }}" width="100%" height="700" style="border:none;"></iframe>
 ## Organisatorisches
-
-Halten Sie Daten, README-Datei und zugehörige Bearbeitungshinweise in einer gemeinsamen, klar benannten Ordnerstruktur zusammen.
-
-<!-- Notizen: Ab hier folgen Vermerke, welche als Gedankenstütze oder Erinnerung dienen aber noch nicht in der vorhandenen Form veröffentlicht werden sollen. -->
-<!-- Bitte Gedanken innerhalb der Kommentarfunktion einfügen. -->

@@ -30,3 +30,5 @@ b) pro Monat und
 c) pro Monat und Standort.  
 
 Notieren Sie sich alle Werte bzw. speichern Sie die Tabelle(n) ab.
+
+Führen Sie die Schritte zuerst durch und beantworten Sie dann „Übungsaufgabe 06“ in Ilias.
