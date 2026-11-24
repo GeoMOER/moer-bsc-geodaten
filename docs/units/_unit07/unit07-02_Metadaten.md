@@ -139,12 +139,11 @@ Ein vollständiges Beispiel zu demselben fiktiven Projekt finden Sie in `README_
 
 ## Übung Runde 2: Lücken-README ausfüllen (Gruppenarbeit)**
 
-Jetzt wenden Sie es auf Daten an, die Sie kennen: die Marburger Kursdaten. Jede Gruppe erhält im Etherpad ein vorbereitetes README mit Lücken (`Lueckenreadme_Runde2.txt`). Teilen Sie die neun Abschnitte untereinander auf und tragen Sie ein, was Sie sicher wissen. Was Sie nicht wissen, schreiben Sie nicht vermutend hin, sondern als „[fehlt: …]“ und notieren, wen Sie fragen müssten. Am Ende lesen Sie den Text gemeinsam laut: Käme eine fremde Person damit zurecht? Die Gruppe gibt den Text in der ILIAS-Übung ab (Team = Ihre Gruppennummer + FARBE). Nach der Frist ist die Abgabe eingefroren.
+Jetzt wenden Sie es auf Daten an, die Sie kennen: die Marburger Kursdaten. Jede Gruppe wählt einen Projektordner aus. Zusammen ergänzen Sie das vorbereitetes README mit Lücken (`Lueckenreadme_Runde2.txt`). Was Sie nicht wissen, schreiben Sie nicht vermutend hin, sondern als „[fehlt: …]“ und notieren, wen Sie fragen müssten. Die Gruppe gibt den Ordner in der ILIAS-Übung ab (Team = Ihre Gruppennummer + FARBE). Nach der Frist ist die Abgabe eingefroren.
 
 
 Ausgefüllte Beispiele finden Sie in den Dateien `README_Beispiel_Sensordaten.txt` und `README_Beispiel_Niederschlag.txt`. Die Vorlage für die eigene Arbeit ist `README_Vorlage.txt`.
 
-**Reflexionsfrage:** Welche der sechs Prüffragen beantwortet einer Ihrer eigenen Ordner noch nicht?
 
 ## Additional resources
 

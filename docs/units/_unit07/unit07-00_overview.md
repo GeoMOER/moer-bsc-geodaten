@@ -39,9 +39,9 @@ Am Ende dieser Unit sind Studierende in der Lage, ...
 * die FAIR-Prinzipien zu erklären und auf einen einfachen Datenbestand zu beziehen,
 * eine README-Datei mit den für Verständnis und Nachnutzung nötigen Angaben zu erstellen und
 * Metadaten zu erstellen
-
+<!-- 
 {% include video id="B6Yn-U1Ff60" provider="youtube" %}
-
+-->
 <!-- Organisatorisches: Gibt es Formalitäten, welche noch geklärt werden sollten? -->
 
 
@@ -56,7 +56,7 @@ Wir beginnen jetzt mit Runde 1.
 
 **Runde 1: Ordner prüfen (Gruppenarbeit)**
 
-Jede Gruppe bekommt ein Beispiel ein Datensatz aus Helsinki (rot, bitte herunter laden aus: https://fmi.b2share.csc.fi/records/83bgp-ngy77 ), Freiburg (blau, bitte herunter laden aus: https://zenodo.org/records/17675215), Novi Sad (gelb, bitte herunter laden aus: https://zenodo.org/records/7738094) und ein Ordner mit künstlich hergestellten Temperaturdaten (s. Ilias). Sie wissen nicht, wie gut Ihr Beispiel ist. Sie sind eine fremde Person, die die Daten morgen nutzen soll, und gehen nur anhand dessen, was dasteht, die sechs Prüffragen durch:
+Jede Gruppe bekommt ein Beispiel ein Datensatz aus Helsinki (rot, bitte herunter laden aus: https://fmi.b2share.csc.fi/records/83bgp-ngy77 ), Freiburg (blau, bitte herunter laden aus: https://zenodo.org/records/17675215), Novi Sad (gelb, bitte herunter laden aus: https://zenodo.org/records/7738094) und ein Ordner mit künstlich hergestellten Temperaturdaten (grün, s. Ilias). Sie wissen nicht, wie gut Ihr Beispiel ist. Sie sind eine fremde Person, die die Daten morgen nutzen soll, und gehen nur anhand dessen, was dasteht, die sechs Prüffragen durch:
 
 1. Woher stammen die Daten, wer hat sie erzeugt, womit?
 2. Wann und wo wurde gemessen (Zeitraum, Ort, Messintervall, Zeitzone)?
@@ -66,7 +66,7 @@ Jede Gruppe bekommt ein Beispiel ein Datensatz aus Helsinki (rot, bitte herunter
 6. Welchen Datenumfang gibt es? Gibt es Datenlücken?
 6. Dürfen die Daten genutzt werden, und wie werden sie zitiert?
 
-Tragen Sie im Prüfblatt (`Pruefblatt_Runde1.docx`) je Frage ein, was dasteht und was fehlt, bewerten Sie mit ja, teils oder nein, und notieren Sie die drei wichtigsten Lücken und eine Sache, die gut gelöst ist. 
+Tragen Sie im Ilias Prüfblatt je Frage ein, was dasteht und was fehlt, bewerten Sie mit ja, teils oder nein, und notieren Sie die drei wichtigsten Lücken und eine Sache, die gut gelöst ist. 
 
 Anschließend vergleichen wir die Beispiele gemeinsam und ordnen die Lücken den FAIR-Buchstaben zu: Welche Lücken liegen beim Datengeber, welche bei uns selbst?
 
@@ -76,4 +76,4 @@ Anschließend vergleichen wir die Beispiele gemeinsam und ordnen die Lücken den
 ##  Let's play a game!
 
 <iframe src="{{ '/assets/games/Datenchaos.html' | relative_url }}" width="100%" height="700" style="border:none;"></iframe>
-## Organisatorisches
+
